@@ -1,0 +1,157 @@
+{
+    "user_id": "user_00039",
+    "raw_engagement_score": 51,
+    "normalized_engagement_score": 22,
+    "activities": [
+        {
+            "id": "afe1027e-7ba5-4bc5-ba07-44849350135c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00039",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "quantity": 1,
+                "price": 50000
+            },
+            "created_time": "2025-08-09T13:57:01.707999"
+        },
+        {
+            "id": "2e717fba-6a0d-4f0e-a8af-68d51067291d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00039",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "quantity": 3,
+                "price": 70000
+            },
+            "created_time": "2025-08-09T13:57:01.708002"
+        },
+        {
+            "id": "51dfe681-0ce0-47fc-b0af-2560ba20540e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00039",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.202.176"
+            },
+            "created_time": "2025-08-09T13:57:01.708006"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "15406903-ebd1-4150-b773-93f2c7398203",
+            "customer_id": "user_00039",
+            "product_id": "SUB_OLIVE_PREMIUM",
+            "rating": 4,
+            "review_title": "대만족!",
+            "review_content": "분기별 올리브유 구독 프리미엄은 최고입니다! 왜 이제 알았을까요.",
+            "created_at": "2024-12-29T14:00:03.216238",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [
+        {
+            "subscription_id": "24967c9f-c267-4171-b052-429765aa5b64",
+            "customer_id": "user_00039",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2025-04-20",
+            "end_date": "2025-10-17",
+            "status": "active"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "7bca4b78-b6bb-4939-949c-5b00def02fa0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "UserId": "user_00039",
+            "session_id": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "유기농 제품도 있나요?",
+            "CreatedTime": "2025-08-09T14:31:23.092198",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d6012abd-2a40-4593-8526-483bee197433",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "UserId": "user_00039",
+            "session_id": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "Intent": "일반",
+            "Role": "assistant",
+            "Content": "네, 저희 main_shop_1에서는 다양한 유기농 제품을 취급하고 있습니다. 유기농 식품부터 시작해 유기농 화장품까지 여러 가지가 준비되어 있으니, 필요한 제품의 종류를 말씀해 주시면 더욱 구체적으로 안내해 드리겠습니다!",
+            "CreatedTime": "2025-08-09T14:31:24.851537",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "8137b7d0-5154-48ab-8bda-8fa214f83db4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "UserId": "user_00039",
+            "session_id": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "유기농 식품 중에서 어떤 제품이 가장 인기 있나요?",
+            "CreatedTime": "2025-08-09T14:31:25.580088",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b2ab2aee-088d-4086-b656-bfbbdcd27dd6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "UserId": "user_00039",
+            "session_id": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "유기농 식품 중에서 가장 인기 있는 제품 중 하나는 '유기농 아카시아 꿀 1kg'입니다. 이 꿀은 자연에서 얻은 순수한 원료로 만들어져 건강에도 좋고, 다양한 요리에 활용할 수 있어 많은 고객님들께 사랑받고 있습니다. 더 궁금한 점이 있으면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:31:27.118290",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "e37435a3-aa64-47ea-9019-81f4988ff728",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "UserId": "user_00039",
+            "session_id": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "다른 유기농 식품도 추천해 주실 수 있나요? 예를 들어, 스낵이나 음료 같은 제품이요.",
+            "CreatedTime": "2025-08-09T14:31:28.023105",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "09d2c6c2-8770-4cd6-b37a-e40c09106e91",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "UserId": "user_00039",
+            "session_id": "e9fbb722-c40b-483a-8670-6c65a00a0880",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "물론입니다! 유기농 스낵으로는 '유기농 과일칩'이 인기 있으며, 자연 그대로의 맛과 영양을 제공합니다. 음료로는 '유기농 허브차'와 같은 제품이 추천됩니다. 다양한 허브의 향과 맛을 즐길 수 있어 많은 분들이 찾으십니다. 더 궁금한 제품이 있으시면 언제든지 문의해 주세요!",
+            "CreatedTime": "2025-08-09T14:31:30.088659",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.346153"
+}

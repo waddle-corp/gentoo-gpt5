@@ -1,0 +1,23 @@
+{
+    "user_id": "user_00053",
+    "raw_engagement_score": 3,
+    "normalized_engagement_score": 4,
+    "activities": [
+        {
+            "id": "3fdd603e-cc8d-4606-9dbf-1e17d6660464",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00053",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 10,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.708169"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.369705"
+}

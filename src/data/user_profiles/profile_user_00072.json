@@ -1,0 +1,96 @@
+{
+    "user_id": "user_00072",
+    "raw_engagement_score": 16,
+    "normalized_engagement_score": 9,
+    "activities": [
+        {
+            "id": "0e1372cf-0e14-412c-bde2-1632a56346e5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00072",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "category": "자기계발",
+                "product_name": "성공하는 사람들의 7가지 습관",
+                "view_duration_seconds": 20
+            },
+            "created_time": "2025-08-09T13:57:01.708374"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "17c8f3b2-eb31-4206-8d90-c1cbfdd1e9b1",
+            "customer_id": "user_00072",
+            "product_id": "PROD_BOOK_002",
+            "rating": 2,
+            "review_title": "실망했어요",
+            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
+            "created_at": "2025-07-19T14:00:03.216321",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "4ee6f15a-9dbb-4421-88b0-b55c99d7c816",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "70bd9b6e-53b9-4e45-b875-34b1cba2c2a7",
+            "UserId": "user_00072",
+            "session_id": "70bd9b6e-53b9-4e45-b875-34b1cba2c2a7",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "챗봇과 대화하는 것이 처음인데, 어떤 기능을 사용할 수 있나요?",
+            "CreatedTime": "2025-08-09T14:33:24.772358",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e12a9e3b-3f79-4d77-afd2-48ceaff1b260",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "70bd9b6e-53b9-4e45-b875-34b1cba2c2a7",
+            "UserId": "user_00072",
+            "session_id": "70bd9b6e-53b9-4e45-b875-34b1cba2c2a7",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "안녕하세요! 챗봇을 통해 다양한 기능을 이용하실 수 있습니다. 상품 추천, 제품 정보 제공, 주문 상태 확인, 반품 및 교환 안내, 그리고 일반적인 질문에 대한 답변을 도와드릴 수 있습니다. 필요한 것이 있으면 언제든지 말씀해 주세요! 예를 들어, 유기농 아카시아 꿀 1kg에 대해 궁금하신 점이 있다면 알려주세요.",
+            "CreatedTime": "2025-08-09T14:33:26.561065",
+            "ItemId": "PROD_HONEY_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c5799fc9-8f21-4d2a-a1a1-c2f14ba201d0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "70bd9b6e-53b9-4e45-b875-34b1cba2c2a7",
+            "UserId": "user_00072",
+            "session_id": "70bd9b6e-53b9-4e45-b875-34b1cba2c2a7",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "유기농 아카시아 꿀 1kg의 가격과 배송 옵션이 궁금해요!",
+            "CreatedTime": "2025-08-09T14:33:27.456008",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "92379c9b-933a-4e30-96e8-cc6c16f63742",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "70bd9b6e-53b9-4e45-b875-34b1cba2c2a7",
+            "UserId": "user_00072",
+            "session_id": "70bd9b6e-53b9-4e45-b875-34b1cba2c2a7",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "현재 유기농 아카시아 꿀 1kg의 가격은 15,000원입니다. 배송 옵션으로는 일반 배송과 빠른 배송이 있으며, 일반 배송은 2-3일 소요되고, 빠른 배송은 1-2일 내에 도착합니다. 추가로 궁금한 점이 있으시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:33:29.068499",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.401841"
+}

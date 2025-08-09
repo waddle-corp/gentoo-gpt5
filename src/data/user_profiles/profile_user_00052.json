@@ -1,0 +1,114 @@
+{
+    "user_id": "user_00052",
+    "raw_engagement_score": 15,
+    "normalized_engagement_score": 8,
+    "activities": [
+        {
+            "id": "45d17e5e-234d-4cb6-9a2e-b288d0437dfd",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00052",
+            "event_name": "search",
+            "event_data": {
+                "query": "베스트셀러",
+                "search_results_count": 5,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.708165"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "0d7370cb-cc37-48bb-b4f7-25c25c4ebc27",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "UserId": "user_00052",
+            "session_id": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "혹시 지금 할인하는 상품이 있나요?",
+            "CreatedTime": "2025-08-09T14:32:01.414061",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1b35a229-2254-41e0-82fb-2a35af691667",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "UserId": "user_00052",
+            "session_id": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "현재 진행 중인 할인 상품에 대한 정보는 매일 업데이트되므로, 홈페이지를 방문하시거나 고객 서비스 센터에 문의하시면 가장 정확한 정보를 확인하실 수 있습니다. 특히, 스페셜티 원두 커피 200g와 같은 인기 상품이 할인되는 경우도 있으니 확인해 보세요!",
+            "CreatedTime": "2025-08-09T14:32:02.937244",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "fccc7167-62b9-4232-a783-0c18d3b94c5e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "UserId": "user_00052",
+            "session_id": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "혹시 특정 카테고리나 브랜드의 할인 상품을 알고 싶다면 그에 대한 정보도 제공해 주실 수 있나요?",
+            "CreatedTime": "2025-08-09T14:32:03.706677",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "619a867b-9ef4-45ec-89e5-c001a2286e38",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "UserId": "user_00052",
+            "session_id": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "네, 특정 카테고리나 브랜드의 할인 상품에 대한 정보도 제공해 드릴 수 있습니다. 원하시는 카테고리나 브랜드를 말씀해 주시면, 현재 할인 중인 상품에 대한 정보를 확인해 드리겠습니다. 예를 들어, 패션, 뷰티, 전자기기 등 다양한 카테고리에 대한 할인 정보를 알려드릴 수 있습니다. 어떤 카테고리나 브랜드를 찾고 계신가요?",
+            "CreatedTime": "2025-08-09T14:32:05.779052",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ee79eb38-bb35-4cb3-899d-e8bb6ca8ccf4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "UserId": "user_00052",
+            "session_id": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "패션 카테고리의 할인 상품이 어떤 것이 있는지 알고 싶어요.",
+            "CreatedTime": "2025-08-09T14:32:06.415271",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ef172adc-168a-4a83-a7ae-95de8cb938b4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "UserId": "user_00052",
+            "session_id": "b4bc97a4-3ead-4a20-bff1-0af4ff1e7de6",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "패션 카테고리의 할인 상품은 다양하게 준비되어 있습니다. 특히 여름 시즌을 맞아 의류와 액세서리에서 많은 할인 혜택이 제공되고 있습니다. 구체적인 상품 목록은 매일 업데이트 되기 때문에, 홈페이지를 방문하시거나 고객 서비스 센터에 문의하시면 가장 정확한 정보를 얻으실 수 있습니다. 원하는 스타일이나 브랜드가 있다면 더 구체적으로 도와드릴 수 있습니다!",
+            "CreatedTime": "2025-08-09T14:32:08.503232",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.368257"
+}

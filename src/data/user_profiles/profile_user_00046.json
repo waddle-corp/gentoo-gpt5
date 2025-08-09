@@ -1,0 +1,128 @@
+{
+    "user_id": "user_00046",
+    "raw_engagement_score": 23,
+    "normalized_engagement_score": 11,
+    "activities": [
+        {
+            "id": "cdee5b50-06d3-4089-8b37-2ebc2a511820",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00046",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00046_708084",
+                "total_amount": 50000,
+                "items": [
+                    {
+                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "quantity": 1,
+                        "price": 50000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.708087"
+        },
+        {
+            "id": "9f325552-d9be-421c-ad9b-a1c8696a888a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00046",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.65.156"
+            },
+            "created_time": "2025-08-09T13:57:01.708091"
+        },
+        {
+            "id": "4d7f4aa5-a63d-43c0-8dee-48cde7e8bb79",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00046",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 57
+            },
+            "created_time": "2025-08-09T13:57:01.708094"
+        },
+        {
+            "id": "678a2a90-0684-4f4a-961e-4530a086e432",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00046",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.22.26"
+            },
+            "created_time": "2025-08-09T13:57:01.708098"
+        },
+        {
+            "id": "8aedfc96-241b-4900-b54e-62dbc0895b05",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00046",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "quantity": 2,
+                "price": 50000
+            },
+            "created_time": "2025-08-09T13:57:01.708101"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "df792423-4cbd-4f28-b092-c4f0ff203f73",
+            "customer_id": "user_00046",
+            "product_id": "SUB_OLIVE_PREMIUM",
+            "rating": 1,
+            "review_title": "비추천합니다",
+            "review_content": "분기별 올리브유 구독 프리미엄 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
+            "created_at": "2024-11-24T14:00:03.216263",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [
+        {
+            "subscription_id": "a248d8b4-80a9-489f-8390-72cacf5371ef",
+            "customer_id": "user_00046",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2024-11-20",
+            "end_date": "2025-03-20",
+            "status": "cancelled"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "5fa1b49d-a2f0-419c-bbb3-a450d1ea6dc9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "5ba800cb-7189-4281-8746-fccdc0961c28",
+            "UserId": "user_00046",
+            "session_id": "5ba800cb-7189-4281-8746-fccdc0961c28",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "혹시 지금 할인하는 상품이 있나요?",
+            "CreatedTime": "2025-08-09T14:31:43.824873",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "004b77c6-7b0b-481d-a3bd-6bb81fa543ab",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "5ba800cb-7189-4281-8746-fccdc0961c28",
+            "UserId": "user_00046",
+            "session_id": "5ba800cb-7189-4281-8746-fccdc0961c28",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "현재 진행 중인 할인 상품에 대한 정보는 매일 업데이트되므로, 공식 웹사이트나 앱을 통해 확인하시는 것이 가장 정확합니다. 또한, '월간 북클럽 베이직' 구독 상품은 많은 고객님들께서 좋아하시며, 종종 특별한 혜택을 제공하기도 합니다. 관심이 있으시면 확인해 보세요!",
+            "CreatedTime": "2025-08-09T14:31:45.421076",
+            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.358169"
+}

@@ -1,0 +1,145 @@
+{
+    "user_id": "user_00095",
+    "raw_engagement_score": 24,
+    "normalized_engagement_score": 12,
+    "activities": [
+        {
+            "id": "95e61f69-ec84-4000-bb24-59dc36068a29",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00095",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00095_709162",
+                "total_amount": 70000,
+                "items": [
+                    {
+                        "product_id": "SUB_OLIVE_PREMIUM",
+                        "quantity": 1,
+                        "price": 70000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.709165"
+        },
+        {
+            "id": "c7cd311a-32f2-4cea-88a4-f29f40f574a7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00095",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.100.27"
+            },
+            "created_time": "2025-08-09T13:57:01.709169"
+        },
+        {
+            "id": "06db84c9-35ee-4a92-a471-c84c5eccdf78",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00095",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "category": "구독",
+                "product_name": "분기별 올리브유 구독 프리미엄",
+                "view_duration_seconds": 88
+            },
+            "created_time": "2025-08-09T13:57:01.709172"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "acca8605-4272-466c-a0af-b5557af5b2db",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "UserId": "user_00095",
+            "session_id": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "이번 주 베스트셀러는 뭔가요?",
+            "CreatedTime": "2025-08-09T14:35:50.460182",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b75bbb04-e6dd-4a18-9184-9b3de3a8a9b0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "UserId": "user_00095",
+            "session_id": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "이번 주 베스트셀러 중 하나는 '시간의 틈새'라는 소설입니다. 이 책은 독특한 스토리와 깊이 있는 캐릭터들로 많은 사랑을 받고 있어요. 혹시 다른 장르의 베스트셀러나 추천을 원하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:52.387217",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6fa17064-351e-415a-83ab-c4df879e6d70",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "UserId": "user_00095",
+            "session_id": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "'시간의 틈새' 외에 다른 베스트셀러는 무엇이 있나요?",
+            "CreatedTime": "2025-08-09T14:35:53.049771",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "a0201660-391a-4225-8582-a84658a964b9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "UserId": "user_00095",
+            "session_id": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "'시간의 틈새' 외에도 이번 주 베스트셀러에는 '나는 나로 살기로 했다'라는 에세이와 '스페셜티 원두 커피 200g' 같은 인기 있는 식품이 포함되어 있습니다. 이 커피는 고품질 원두로 만들어져 많은 고객들에게 사랑받고 있어요. 추가로 궁금한 상품이 있으면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:54.772493",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "758ec22f-0067-4e42-841a-a19d138ac4b2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "UserId": "user_00095",
+            "session_id": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "혹시 '나는 나로 살기로 했다'라는 에세이에 대한 자세한 설명을 해주실 수 있나요? 어떤 내용인지 궁금합니다.",
+            "CreatedTime": "2025-08-09T14:35:55.923987",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "84278041-3353-481a-b836-f835d5efe79c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "UserId": "user_00095",
+            "session_id": "cc42acc6-b77c-47cc-923f-e8a68a4e1e21",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "'나는 나로 살기로 했다'는 에세이로, 자신의 삶과 정체성에 대한 깊은 성찰을 담고 있습니다. 저자는 사회적 압박과 타인의 기대를 넘어, 진정한 자신을 찾아가는 여정을 이야기합니다. 이 책은 자기 수용, 긍정적인 변화, 그리고 진정한 행복을 추구하는 내용을 중심으로 구성되어 있어 많은 독자들에게 큰 영감을 주고 있습니다. \n\n자신을 돌아보는 시간이 필요하다면 읽어보시기를 추천드립니다! 더 궁금한 점이 있으면 언제든지 질문해 주세요.",
+            "CreatedTime": "2025-08-09T14:35:58.210423",
+            "ItemId": "PROD_OLIVE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.437619"
+}

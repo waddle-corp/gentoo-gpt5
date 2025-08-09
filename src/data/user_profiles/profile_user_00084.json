@@ -1,0 +1,172 @@
+{
+    "user_id": "user_00084",
+    "raw_engagement_score": 36,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "06b48097-9936-4b7e-8800-a6084529bd25",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00084",
+            "event_name": "search",
+            "event_data": {
+                "query": "건강식품",
+                "search_results_count": 16,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708590"
+        },
+        {
+            "id": "f64dd562-3309-4c46-9a3c-5a6465271914",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00084",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "quantity": 1,
+                "price": 15000
+            },
+            "created_time": "2025-08-09T13:57:01.708593"
+        },
+        {
+            "id": "613b38f4-4d32-45a0-a23c-1136cf7d516d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00084",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "quantity": 2,
+                "price": 50000
+            },
+            "created_time": "2025-08-09T13:57:01.708597"
+        },
+        {
+            "id": "2ae2a8c0-b8b7-4af0-b7c0-848bd5bff0e5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00084",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "category": "올리브유",
+                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
+                "view_duration_seconds": 116
+            },
+            "created_time": "2025-08-09T13:57:01.708600"
+        },
+        {
+            "id": "1907e098-3390-409a-a552-ba132de189de",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00084",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00084_709032",
+                "total_amount": 70000,
+                "items": [
+                    {
+                        "product_id": "SUB_OLIVE_PREMIUM",
+                        "quantity": 1,
+                        "price": 70000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.709038"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "631e7216-9c31-4672-b9df-bfba94d99cbb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "UserId": "user_00084",
+            "session_id": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "혹시 지금 할인하는 상품이 있나요?",
+            "CreatedTime": "2025-08-09T14:34:32.670335",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "28258410-3bb6-4420-81d3-feb825f1f475",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "UserId": "user_00084",
+            "session_id": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "Intent": "제공",
+            "Role": "assistant",
+            "Content": "현재 할인 중인 상품으로는 스페셜티 원두 커피 200g가 있습니다. 이 커피는 특별한 품질을 자랑하며, 지금 구매하시면 할인 혜택을 누리실 수 있습니다. 추가로 다른 할인 상품이 궁금하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:34:34.238289",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "30baeb02-53c6-40b0-86f5-13d523fee6cb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "UserId": "user_00084",
+            "session_id": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "그 커피는 어떤 맛인가요? 원두의 종류나 특징에 대해 알려주세요.",
+            "CreatedTime": "2025-08-09T14:34:35.009754",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3ba81781-0088-46f9-897e-ee18205e28c0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "UserId": "user_00084",
+            "session_id": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "스페셜티 원두 커피 200g은 다양한 원두 종류를 사용하여 독특한 맛과 향을 제공합니다. 일반적으로 이 커피는 다음과 같은 특징을 가지고 있습니다:\n\n1. **맛 프로파일**: 과일, 초콜릿, 너트, 꽃향기 등의 복합적인 맛이 조화를 이루며, 부드럽고 풍부한 바디감을 느낄 수 있습니다.\n\n2. **원두 종류**: 아라비카와 로부스타 혼합 또는 순수 아라비카 원두로 구성되어 있으며, 각 원두가 지닌 고유의 맛을 살려줍니다.\n\n3. **산미**: 적당한 산미가 있어 깔끔한 끝맛을 제공합니다.\n\n4. **생산 지역**: 주로 고산지대에서 재배된 원두를 사용하여 품질이 뛰어나며, 생산 지역의 특성이 잘 드러납니다.\n\n이 커피는 특별한 순간이나 일상 속에서 즐기기에 적합한 선택입니다. 추가적인 정보가 필요하시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:34:40.010298",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e526feb1-56bd-416f-85d2-29da739a4a57",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "UserId": "user_00084",
+            "session_id": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "그 커피는 어떤 추출 방법으로 마시는 것이 좋을까요?",
+            "CreatedTime": "2025-08-09T14:34:40.758205",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "572782e2-63ef-421e-83a4-7dbc37fa2444",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "UserId": "user_00084",
+            "session_id": "f993fffa-b54a-43bb-aa7e-de242785edec",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "스페셜티 원두 커피 200g은 다양한 추출 방법으로 즐길 수 있지만, 몇 가지 추천 방법은 다음과 같습니다:\n\n1. **드립 커피**: 필터를 이용한 드립 방식으로 커피를 추출하면 원두의 풍미와 향미를 최대로 느낄 수 있습니다.\n\n2. **프렌치 프레스**: 원두의 기름과 맛을 잘 추출할 수 있어 진하고 풍부한 맛을 즐길 수 있는 방법입니다.\n\n3. **에스프레소**: 강한 맛과 크레마를 즐기고 싶다면 에스프레소 머신을 사용하는 것이 좋습니다. 이 방법은 커피의 복합적인 맛을 더욱 강조해줍니다.\n\n4. **하리오 V60**: 섬세한 맛을 원하신다면 하리오 V60을 사용하여 정교하게 추출해 보세요. 깔끔한 맛과 향이 잘 살아납니다.\n\n각각의 방법에 따라 커피의 맛이 조금씩 달라지므로, 다양한 방식으로 시도해 보시는 것도 좋습니다!",
+            "CreatedTime": "2025-08-09T14:34:45.660929",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.420739"
+}

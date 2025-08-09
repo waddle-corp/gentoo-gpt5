@@ -1,0 +1,97 @@
+{
+    "user_id": "user_00049",
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 9,
+    "activities": [
+        {
+            "id": "a711f43b-9102-4948-87e5-006403e7ef15",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00049",
+            "event_name": "search",
+            "event_data": {
+                "query": "건강식품",
+                "search_results_count": 5,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708136"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "bd6d7d7f-12d8-4d22-885e-5937b770b105",
+            "customer_id": "user_00049",
+            "product_id": "PROD_BOOK_001",
+            "rating": 2,
+            "review_title": "기대 이하였어요",
+            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
+            "created_at": "2024-08-10T14:00:03.216269",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "50242809-3d4f-4f58-90d4-e67f59f68185",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "UserId": "user_00049",
+            "session_id": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "이벤트는 없나요?",
+            "CreatedTime": "2025-08-09T14:31:53.254821",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "83f23c7f-94c4-4340-afd0-bb0977ea9b97",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "UserId": "user_00049",
+            "session_id": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "현재 진행 중인 특별 이벤트는 없습니다. 하지만 정기적으로 프로모션과 할인 행사를 진행하니 자주 확인해 주시면 좋겠습니다. 혹시 특정 상품에 대해 궁금한 점이 있으시면 말씀해 주세요! 예를 들어, 베스트셀러 소설인 '시간의 틈새' 같은 책도 추천해 드릴 수 있습니다.",
+            "CreatedTime": "2025-08-09T14:31:54.942939",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c7cc73f9-7ae3-46a3-90e9-6fea5c075655",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "UserId": "user_00049",
+            "session_id": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "그럼 다음 이벤트는 언제쯤 있을까요? 미리 알림 신청할 수 있는 방법이 있나요?",
+            "CreatedTime": "2025-08-09T14:31:55.777420",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0ab4bf80-7087-49de-8669-d8c98b4ff5c7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "UserId": "user_00049",
+            "session_id": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "Intent": "제공",
+            "Role": "assistant",
+            "Content": "다음 이벤트 일정은 아직 정해지지 않았습니다. 하지만 저희 쇼핑몰의 뉴스레터에 가입하시면 새로운 이벤트와 프로모션 소식을 가장 먼저 받아보실 수 있습니다. 홈페이지 하단에서 뉴스레터 구독을 신청하실 수 있습니다. 추가적으로 궁금한 점이 있으시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:31:57.433895",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.362959"
+}

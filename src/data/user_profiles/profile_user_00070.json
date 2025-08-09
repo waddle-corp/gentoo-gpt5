@@ -1,0 +1,124 @@
+{
+    "user_id": "user_00070",
+    "raw_engagement_score": 15,
+    "normalized_engagement_score": 8,
+    "activities": [
+        {
+            "id": "e3b0887c-11fc-4368-b014-60d1c37ddcb3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00070",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.235.131"
+            },
+            "created_time": "2025-08-09T13:57:01.708353"
+        },
+        {
+            "id": "49308952-6a03-49a2-b4d2-2e05ae56ed64",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00070",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.86.83"
+            },
+            "created_time": "2025-08-09T13:57:01.708357"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "e87b6443-07a1-4d77-9eb9-665c9a40c062",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "UserId": "user_00070",
+            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "책 구독 서비스에 대해 궁금합니다.",
+            "CreatedTime": "2025-08-09T14:33:13.580331",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8cdacf2a-bef0-493d-8bb9-2fd0fe31815a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "UserId": "user_00070",
+            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "Intent": "제공",
+            "Role": "assistant",
+            "Content": "저희 쇼핑몰에서는 다양한 책 구독 서비스를 제공하고 있습니다. 정기적으로 새로운 책을 받아보실 수 있으며, 장르나 주제를 선택할 수 있는 옵션도 있습니다. 구독에 따라 할인 혜택이나 특별한 이벤트에 참여할 수도 있습니다. \n\n특히, 요즘 베스트셀러 소설인 '시간의 틈새'와 같은 인기 도서도 포함될 수 있으니, 관심이 있으시면 구독 서비스를 고려해 보시는 것도 좋습니다. 추가로 궁금한 사항이 있으시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:33:15.702541",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f53c315c-0c6b-4aea-a4b9-949a5be06699",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "UserId": "user_00070",
+            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "구독 서비스의 가격대는 어떻게 되나요?",
+            "CreatedTime": "2025-08-09T14:33:16.349509",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "149a6cf0-851c-44f6-bbbd-dde6b4f2e99d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "UserId": "user_00070",
+            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "구독 서비스의 가격대는 제공되는 도서의 종류와 구독 기간에 따라 다릅니다. 일반적으로 월 구독 시 10,000원부터 시작하여, 프리미엄 옵션의 경우 30,000원 이상까지 다양합니다. \n\n특정 장르나 주제에 따라 가격이 달라질 수 있으니, 구체적인 정보가 필요하시면 저희 웹사이트를 방문하시거나 고객센터에 문의해 주시면 자세히 안내해 드리겠습니다. 다른 질문이 있으시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:33:19.205122",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "db764899-facb-4cd3-9dad-0e91543c7091",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "UserId": "user_00070",
+            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "혹시 구독 서비스에 포함되는 도서의 종류나 추천 도서 목록을 알고 싶으신가요?",
+            "CreatedTime": "2025-08-09T14:33:20.006868",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2006a7fa-7f2a-44d1-b7b1-e8715384eb7d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "UserId": "user_00070",
+            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "네, 구독 서비스에 포함되는 도서의 종류는 다양합니다! 일반적으로 소설, 비소설, 자기계발서, 아동 도서 등 여러 장르를 선택할 수 있습니다. \n\n추천 도서 목록 중에는 요즘 많은 사랑을 받고 있는 베스트셀러 소설 '시간의 틈새'도 포함될 수 있습니다. 이 외에도 인기 작가의 신작이나 독립 출판 도서 등 다양한 선택지가 마련되어 있습니다.\n\n구독 시 어떤 장르를 선호하시는지에 따라 맞춤형 도서를 추천받을 수 있으니, 이를 참고하시면 좋을 것 같습니다. 더 궁금한 점이 있으시면 언제든지 질문해 주세요!",
+            "CreatedTime": "2025-08-09T14:33:22.639261",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.398718"
+}

@@ -1,0 +1,74 @@
+{
+    "user_id": "user_00081",
+    "raw_engagement_score": 13,
+    "normalized_engagement_score": 8,
+    "activities": [
+        {
+            "id": "c3e5dab1-be8c-46d0-ba05-f5cb8c7b263c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00081",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "category": "구독",
+                "product_name": "분기별 올리브유 구독 프리미엄",
+                "view_duration_seconds": 32
+            },
+            "created_time": "2025-08-09T13:57:01.708533"
+        },
+        {
+            "id": "db3768be-5cd4-42f0-bc53-96804e1d20ec",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00081",
+            "event_name": "search",
+            "event_data": {
+                "query": "베스트셀러",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708537"
+        },
+        {
+            "id": "ff999edc-9773-4f32-b018-fcc359c34f7e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00081",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_BOOK_001",
+                "quantity": 3,
+                "price": 18000
+            },
+            "created_time": "2025-08-09T13:57:01.708540"
+        },
+        {
+            "id": "74214de5-9482-4ea0-937f-d4260f00a128",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00081",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "category": "자기계발",
+                "product_name": "성공하는 사람들의 7가지 습관",
+                "view_duration_seconds": 38
+            },
+            "created_time": "2025-08-09T13:57:01.708543"
+        },
+        {
+            "id": "9a91f099-cdca-4836-9c0a-781886598660",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00081",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.249.234"
+            },
+            "created_time": "2025-08-09T13:57:01.708547"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.416260"
+}

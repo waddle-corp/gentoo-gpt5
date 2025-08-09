@@ -1,0 +1,108 @@
+{
+    "user_id": "user_00026",
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "f36f08d7-35a9-4d24-9942-ef970593ca4b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00026",
+            "event_name": "search",
+            "event_data": {
+                "query": "구독",
+                "search_results_count": 10,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.707845"
+        },
+        {
+            "id": "1590d808-0f5f-4387-b160-a7ea9b5ac558",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00026",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00026_707847",
+                "total_amount": 53000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    },
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707852"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "a82c59ef-dd0d-4ee8-8866-c698613a670d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c423d241-910d-495e-a80b-865a07c218ae",
+            "UserId": "user_00026",
+            "session_id": "c423d241-910d-495e-a80b-865a07c218ae",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "제가 최근에 구매한 상품 배송 상태를 알고 싶어요.",
+            "CreatedTime": "2025-08-09T14:30:13.816758",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3b335734-7e4f-4cbf-b2f0-bf6977068535",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c423d241-910d-495e-a80b-865a07c218ae",
+            "UserId": "user_00026",
+            "session_id": "c423d241-910d-495e-a80b-865a07c218ae",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "고객님, 최근에 구매하신 상품의 배송 상태를 확인하기 위해서는 주문 번호나 이메일 주소를 제공해 주시면 더 정확한 정보를 안내해 드릴 수 있습니다. 감사합니다!",
+            "CreatedTime": "2025-08-09T14:30:15.105923",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b942467a-99bf-4597-a354-cd5afcd630aa",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c423d241-910d-495e-a80b-865a07c218ae",
+            "UserId": "user_00026",
+            "session_id": "c423d241-910d-495e-a80b-865a07c218ae",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "주문 번호는 123456입니다. 배송 상태는 어떻게 되나요?",
+            "CreatedTime": "2025-08-09T14:30:16.177213",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ba1b7322-cf2a-4d66-a8f3-ad4a420d740f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c423d241-910d-495e-a80b-865a07c218ae",
+            "UserId": "user_00026",
+            "session_id": "c423d241-910d-495e-a80b-865a07c218ae",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "주문 번호 123456에 대한 배송 상태를 확인해보겠습니다. 잠시만 기다려 주세요. \n\n(실제 시스템이 없으므로 가상의 상태를 안내드리겠습니다.) \n\n현재 주문은 배송 준비 중이며, 곧 발송될 예정입니다. 발송 후에는 추적 번호를 통해 실시간으로 배송 상태를 확인하실 수 있습니다. 추가 질문이 있으시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:30:18.035175",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.324735"
+}

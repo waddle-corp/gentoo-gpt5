@@ -1,0 +1,156 @@
+{
+    "user_id": "user_00020",
+    "raw_engagement_score": 31,
+    "normalized_engagement_score": 15,
+    "activities": [
+        {
+            "id": "04c260ac-6c1c-490b-a7e8-9ba289e83aa7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00020",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "category": "자기계발",
+                "product_name": "성공하는 사람들의 7가지 습관",
+                "view_duration_seconds": 57
+            },
+            "created_time": "2025-08-09T13:57:01.707764"
+        },
+        {
+            "id": "85ea3c6a-c076-4047-a1b3-0b0ef27b4c0f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00020",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00020_707766",
+                "total_amount": 53000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    },
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707771"
+        },
+        {
+            "id": "20c452ba-2cad-485d-802e-ab28de082fbd",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00020",
+            "event_name": "search",
+            "event_data": {
+                "query": "새로운 책",
+                "search_results_count": 3,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.707774"
+        },
+        {
+            "id": "c4f5fab7-db8e-4229-8c66-0cc391ff5c6b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00020",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.202.52"
+            },
+            "created_time": "2025-08-09T13:57:01.707778"
+        },
+        {
+            "id": "20dbf343-f99c-4272-8a98-89b8c6c0a495",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00020",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "category": "자기계발",
+                "product_name": "성공하는 사람들의 7가지 습관",
+                "view_duration_seconds": 47
+            },
+            "created_time": "2025-08-09T13:57:01.707782"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "3fb32c44-ce19-4e99-8b1a-4b52ac69b750",
+            "customer_id": "user_00020",
+            "product_id": "PROD_OLIVE_002",
+            "rating": 1,
+            "review_title": "비추천합니다",
+            "review_content": "유기농 엑스트라 버진 올리브유 750ml 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
+            "created_at": "2025-02-15T14:00:03.216184",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "6024495a-417a-427d-944c-e6948e3753ff",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "UserId": "user_00020",
+            "session_id": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "이벤트는 없나요?",
+            "CreatedTime": "2025-08-09T14:29:39.735224",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d095b290-3c82-4cd6-abc6-1d56547c79d0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "UserId": "user_00020",
+            "session_id": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "Intent": "제공",
+            "Role": "assistant",
+            "Content": "현재 진행 중인 이벤트는 없습니다. 하지만 가끔씩 특별 할인이나 프로모션을 진행하니, 자주 확인해 주세요. 스페셜티 원두 커피 200g과 같은 인기 상품도 할인 대상이 될 수 있습니다!",
+            "CreatedTime": "2025-08-09T14:29:40.970709",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0d01bdd4-e159-413a-9277-2ce8d35991bb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "UserId": "user_00020",
+            "session_id": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "그럼 다음 이벤트는 언제쯤 있을까요? 미리 알아두고 싶어요!",
+            "CreatedTime": "2025-08-09T14:29:41.779844",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "945dfa2f-be72-4c3b-8c47-4061eb098f53",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "UserId": "user_00020",
+            "session_id": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "다음 이벤트 일정은 아직 확정되지 않았습니다. 보통 월말이나 특별한 기념일에 맞춰 이벤트를 진행하는 경우가 많습니다. 저희 쇼핑몰의 뉴스레터를 구독하시면 최신 소식과 이벤트 정보를 빠르게 받아보실 수 있습니다. 스페셜티 원두 커피 200g 같은 인기 상품도 이벤트에 포함될 수 있으니, 관심 가져주세요!",
+            "CreatedTime": "2025-08-09T14:29:43.802450",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.313555"
+}

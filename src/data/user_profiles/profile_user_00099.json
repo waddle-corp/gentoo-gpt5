@@ -1,0 +1,158 @@
+{
+    "user_id": "user_00099",
+    "raw_engagement_score": 48,
+    "normalized_engagement_score": 21,
+    "activities": [
+        {
+            "id": "c9d7518b-6075-4107-9479-d9a55946be14",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00099",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_BOOK_001",
+                "quantity": 1,
+                "price": 18000
+            },
+            "created_time": "2025-08-09T13:57:01.709226"
+        },
+        {
+            "id": "b0aa9252-55fa-4347-b5fb-1e937e335a03",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00099",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.144.157"
+            },
+            "created_time": "2025-08-09T13:57:01.709229"
+        },
+        {
+            "id": "66b7c46f-e879-403b-a361-834c71521c6b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00099",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00099_709231",
+                "total_amount": 50000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_002",
+                        "quantity": 1,
+                        "price": 15000
+                    },
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.709236"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [
+        {
+            "subscription_id": "8c70dc04-8bb3-4e1e-8a9f-43293532aab9",
+            "customer_id": "user_00099",
+            "product_id": "SUB_OLIVE_PREMIUM",
+            "start_date": "2025-02-05",
+            "end_date": "2027-07-25",
+            "status": "active"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "43c4a659-c4e0-4487-b9e7-a687f3e000d4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "UserId": "user_00099",
+            "session_id": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "계정 정보를 변경하고 싶은데 어떻게 해야 하나요?",
+            "CreatedTime": "2025-08-09T14:36:14.897909",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "89aebdbb-0d34-4973-8060-6f44bb11f17e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "UserId": "user_00099",
+            "session_id": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "계정 정보를 변경하시려면, 먼저 로그인 후 '내 계정' 또는 '계정 설정' 메뉴로 이동하세요. 거기서 개인정보, 비밀번호, 배송 주소 등을 수정할 수 있습니다. 문제가 있으시면 고객센터에 문의해 주시면 도와드리겠습니다. 추가로 필요하신 정보가 있으신가요?",
+            "CreatedTime": "2025-08-09T14:36:16.814081",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9d1a747a-e35a-4269-afdc-2dcc1341f262",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "UserId": "user_00099",
+            "session_id": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "계정 정보를 변경하는 데 시간이 얼마나 걸릴까요?",
+            "CreatedTime": "2025-08-09T14:36:17.461898",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "80f15fb5-7a59-4610-8025-47eb3a36e9a1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "UserId": "user_00099",
+            "session_id": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "계정 정보 변경은 일반적으로 즉시 반영됩니다. 다만, 비밀번호 변경 시 보안 절차가 필요할 수 있으니, 확인 이메일을 받아보시는 과정이 있을 수 있습니다. 이 경우 몇 분 정도 소요될 수 있습니다. 추가로 도움이 필요하시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:36:18.778998",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a72ff597-cd4e-46f6-815f-6a8d65dd4c22",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "UserId": "user_00099",
+            "session_id": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "계정 정보를 변경하는 데 시간이 얼마나 걸릴까요?",
+            "CreatedTime": "2025-08-09T14:36:19.251625",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9f05bd49-cda6-4c30-958d-f8e04868a824",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "UserId": "user_00099",
+            "session_id": "1c5851f3-3256-4419-a0ca-52d0fe32e4a9",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "계정 정보 변경은 보통 즉시 반영됩니다. 비밀번호 변경 시 확인 이메일을 받을 수 있는데, 이 과정에서 몇 분 정도 소요될 수 있습니다. 만약 변경이 제대로 이루어지지 않았다면, 고객센터에 문의해 주시면 빠르게 도와드리겠습니다. 다른 질문이 있으신가요?",
+            "CreatedTime": "2025-08-09T14:36:21.428682",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.443696"
+}

@@ -1,0 +1,74 @@
+{
+    "user_id": "user_00042",
+    "raw_engagement_score": 13,
+    "normalized_engagement_score": 8,
+    "activities": [
+        {
+            "id": "09ee9c6a-bfa6-42ca-a03b-b66c0a942c0b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00042",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.13.36"
+            },
+            "created_time": "2025-08-09T13:57:01.708034"
+        },
+        {
+            "id": "9efb3787-904f-4719-af87-cb823ef2d491",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00042",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "category": "자기계발",
+                "product_name": "성공하는 사람들의 7가지 습관",
+                "view_duration_seconds": 29
+            },
+            "created_time": "2025-08-09T13:57:01.708037"
+        },
+        {
+            "id": "a3ff7b5d-e3af-49ae-a309-cc96e0c3ac84",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00042",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00042_708040",
+                "total_amount": 15000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_002",
+                        "quantity": 1,
+                        "price": 15000
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.708043"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "fb948cfe-1919-4ac7-b3e2-30615bb7b202",
+            "customer_id": "user_00042",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "rating": 1,
+            "review_title": "비추천합니다",
+            "review_content": "월간 북클럽 베이직 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
+            "created_at": "2025-07-23T14:00:03.216247",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [
+        {
+            "subscription_id": "049f4645-b4d4-4def-b5ee-fccd5f07bb86",
+            "customer_id": "user_00042",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2024-04-30",
+            "end_date": "2024-08-28",
+            "status": "cancelled"
+        }
+    ],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.351476"
+}

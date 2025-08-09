@@ -1,0 +1,198 @@
+{
+    "user_id": "user_00080",
+    "raw_engagement_score": 71,
+    "normalized_engagement_score": 30,
+    "activities": [
+        {
+            "id": "18500cc4-e6bd-417e-b960-2de5aa02ffe7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00080",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 18,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.708510"
+        },
+        {
+            "id": "bfbbee41-6337-488b-b698-d102753f8a41",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00080",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 6,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708514"
+        },
+        {
+            "id": "106bc702-0131-4e95-86f1-d916a406c12d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00080",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00080_708516",
+                "total_amount": 15000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_002",
+                        "quantity": 1,
+                        "price": 15000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.708520"
+        },
+        {
+            "id": "738867cd-3283-4413-ab08-9503e8734674",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00080",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_OLIVE_002",
+                "quantity": 3,
+                "price": 35000
+            },
+            "created_time": "2025-08-09T13:57:01.708523"
+        },
+        {
+            "id": "f32ce56d-60ff-4907-a134-4c25ae18797b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00080",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00080_708525",
+                "total_amount": 35000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T13:57:01.708529"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "e60498df-e56b-431f-98e5-909d31bbe72c",
+            "customer_id": "user_00080",
+            "product_id": "PROD_OLIVE_002",
+            "rating": 4,
+            "review_title": "대만족!",
+            "review_content": "유기농 엑스트라 버진 올리브유 750ml은 최고입니다! 왜 이제 알았을까요.",
+            "created_at": "2024-12-04T14:00:03.216353",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [
+        {
+            "subscription_id": "bb5102e4-b649-4d21-905d-8a86f74266a7",
+            "customer_id": "user_00080",
+            "product_id": "SUB_OLIVE_PREMIUM",
+            "start_date": "2025-07-01",
+            "end_date": "2027-03-23",
+            "status": "active"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "15f32d3c-e0fa-4843-82d7-7c3bfb3ebcce",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "UserId": "user_00080",
+            "session_id": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "새로 나온 책이 있나요?",
+            "CreatedTime": "2025-08-09T14:34:06.265856",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "125b6560-4e9e-4234-b1ae-bf498ed1d457",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "UserId": "user_00080",
+            "session_id": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "현재 저희 쇼핑몰에서는 최신 도서 정보가 업데이트되고 있지 않습니다. 하지만 다양한 장르의 인기 도서는 항상 준비되어 있습니다. 특정 장르나 제목을 원하시면 말씀해 주세요! 추가로, 저희는 유기농 아카시아 꿀 1kg도 추천드리며, 건강한 간식과 함께 읽기 좋은 책과 함께 즐기시면 좋을 것 같습니다.",
+            "CreatedTime": "2025-08-09T14:34:08.283710",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "92e6fa74-adee-48ca-91ab-949c3ab2c5a5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "UserId": "user_00080",
+            "session_id": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "그럼 최근에 나온 소설 중 추천할 만한 책이 있을까요?",
+            "CreatedTime": "2025-08-09T14:34:08.917111",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "15819a3e-d1e0-4e85-a3b0-cfd0b08c9fad",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "UserId": "user_00080",
+            "session_id": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "최근에 나온 소설 중에서는 \"내가 죽기를 바라는 사람들\"이라는 작품이 많은 사랑을 받고 있습니다. 이 책은 심리 스릴러 장르로, 긴장감 넘치는 전개와 깊이 있는 캐릭터가 매력적입니다. \n\n또한, 저희 월간 북클럽 베이직 구독 상품을 이용하시면 매달 다양한 신간 소설과 추천 도서를 받아보실 수 있습니다. 관심이 있으시면 더 자세한 정보를 드릴 수 있습니다!",
+            "CreatedTime": "2025-08-09T14:34:11.138024",
+            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c31f9803-4464-4fc8-8d06-45fcf73cba62",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "UserId": "user_00080",
+            "session_id": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "그 외에 다른 추천 작품이 있을까요?",
+            "CreatedTime": "2025-08-09T14:34:11.756630",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e440a1ec-ed12-4ba4-94b1-682358311abc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "UserId": "user_00080",
+            "session_id": "075f85ec-37c7-4dc7-a021-69e86d4c31b0",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "물론입니다! 최근 인기 있는 소설 몇 가지를 더 추천해드릴게요:\n\n1. **\"죽고 싶은 사람은 없다\"** - 삶과 죽음에 대한 깊은 고민을 담은 감동적인 이야기입니다.\n2. **\"미드나잇 라이브러리\"** - 다양한 삶의 선택을 통해 진정한 행복을 찾는 내용으로, 많은 독자들에게 사랑받고 있습니다.\n3. **\"너의 췌장을 먹고 싶어\"** - 독특한 제목과 감정적인 서사가 인상적인 작품입니다.\n\n이 외에도 다양한 장르의 책들이 있으니, 원하시는 스타일이나 테마가 있다면 더 구체적으로 추천해드릴 수 있습니다!",
+            "CreatedTime": "2025-08-09T14:34:15.066712",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.414551"
+}

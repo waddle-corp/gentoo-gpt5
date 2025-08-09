@@ -1,0 +1,60 @@
+{
+    "user_id": "user_00040",
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 9,
+    "activities": [
+        {
+            "id": "c5cae418-f36c-4762-84db-cb191f9df27d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00040",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00040_708009",
+                "total_amount": 88000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    },
+                    {
+                        "product_id": "SUB_OLIVE_PREMIUM",
+                        "quantity": 1,
+                        "price": 70000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.708013"
+        },
+        {
+            "id": "03e6aa54-dde5-443c-8130-e4c38fd25156",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00040",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "quantity": 1,
+                "price": 50000
+            },
+            "created_time": "2025-08-09T13:57:01.708016"
+        },
+        {
+            "id": "99c031c8-343d-41de-91ad-1b9162aaf0d5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00040",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 52
+            },
+            "created_time": "2025-08-09T13:57:01.708019"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.348183"
+}

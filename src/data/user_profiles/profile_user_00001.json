@@ -1,0 +1,74 @@
+{
+    "user_id": "user_00001",
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "74a4a393-25b8-4ca1-a248-92cbf57c4135",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00001",
+            "event_name": "search",
+            "event_data": {
+                "query": "건강식품",
+                "search_results_count": 11,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.707396"
+        },
+        {
+            "id": "b33a8b37-2d75-470c-8e81-4f45c1e51b67",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00001",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 14,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.707422"
+        },
+        {
+            "id": "6b4a480d-2e22-45e4-a16d-fb9cffb21d31",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00001",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00001_707438",
+                "total_amount": 40000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_002",
+                        "quantity": 1,
+                        "price": 15000
+                    },
+                    {
+                        "product_id": "PROD_OLIVE_001",
+                        "quantity": 1,
+                        "price": 25000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707452"
+        },
+        {
+            "id": "1e3273af-fa3b-4a35-8934-502b29922d25",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00001",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_001",
+                "category": "소설",
+                "product_name": "베스트셀러 소설: 시간의 틈새",
+                "view_duration_seconds": 41
+            },
+            "created_time": "2025-08-09T13:57:01.707457"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.264879"
+}

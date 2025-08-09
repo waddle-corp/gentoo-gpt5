@@ -1,0 +1,182 @@
+{
+    "user_id": "user_00027",
+    "raw_engagement_score": 43,
+    "normalized_engagement_score": 19,
+    "activities": [
+        {
+            "id": "254854ff-75e5-42a6-b235-164d270f7d67",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00027",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00027_707855",
+                "total_amount": 105000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    },
+                    {
+                        "product_id": "SUB_OLIVE_PREMIUM",
+                        "quantity": 1,
+                        "price": 70000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707859"
+        },
+        {
+            "id": "bdbf8f1e-6f0f-4eac-8d92-1b9c2c6059c8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00027",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00027_707861",
+                "total_amount": 43000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_001",
+                        "quantity": 1,
+                        "price": 25000
+                    },
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707865"
+        },
+        {
+            "id": "59ee1775-31de-4707-89ea-b120ab75657e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00027",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "quantity": 1,
+                "price": 50000
+            },
+            "created_time": "2025-08-09T13:57:01.707869"
+        },
+        {
+            "id": "e8cffeba-f985-4cbc-b249-bebd20ba6e3c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00027",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.173.144"
+            },
+            "created_time": "2025-08-09T13:57:01.707873"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [
+        {
+            "subscription_id": "0a88e1d3-e518-4831-8e59-ea86cb4ed253",
+            "customer_id": "user_00027",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2024-10-27",
+            "end_date": "2025-08-23",
+            "status": "paused"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "8b67d4bb-6ebc-4d71-8254-02b306627757",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "UserId": "user_00027",
+            "session_id": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "이번 주 베스트셀러는 뭔가요?",
+            "CreatedTime": "2025-08-09T14:30:18.035249",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6101f60c-c9f1-4cf7-b10a-e0608e92b4ec",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "UserId": "user_00027",
+            "session_id": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "이번 주 베스트셀러는 '프리미엄 엑스트라 버진 올리브유 500ml'입니다. 품질 좋은 올리브유로, 다양한 요리에 활용하기 좋습니다. 다른 베스트셀러 상품에 대해서도 궁금하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:30:19.641869",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "40732e74-b8b3-41f3-b311-984cc24da143",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "UserId": "user_00027",
+            "session_id": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "그럼 이번 주 베스트셀러 중에서 다른 추천 상품도 있을까요?",
+            "CreatedTime": "2025-08-09T14:30:20.667956",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c3ca1bdf-9d1f-435c-8f0e-62d8aa63975e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "UserId": "user_00027",
+            "session_id": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "물론입니다! 이번 주 베스트셀러 중에는 '스페셜티 원두 커피 200g'도 포함되어 있습니다. 풍부한 향과 깊은 맛이 특징으로, 커피 애호가들에게 인기가 많습니다. 요리와 함께 즐길 수 있는 다양한 식품들도 추천해 드릴 수 있으니, 필요하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:30:22.185092",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7c340a16-9603-426a-8372-0821f315e735",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "UserId": "user_00027",
+            "session_id": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "다른 베스트셀러 상품 중에는 '유기농 허브티 세트'도 있습니다. 다양한 허브로 구성되어 있어, 건강한 음료로 인기가 많습니다. 이 상품에 대해 더 알고 싶으신가요?",
+            "CreatedTime": "2025-08-09T14:30:23.753348",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2e59d1f2-b9bd-4005-9ab6-d2cdae4ca56d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "UserId": "user_00027",
+            "session_id": "75937e9d-abf3-4583-a388-b8f79d5d2332",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "'유기농 허브티 세트'는 다양한 허브로 구성되어 있어 각기 다른 맛과 효능을 즐길 수 있습니다. 스트레스 해소, 소화 개선 등 건강에도 좋은 효과가 있습니다. 세트에는 민트, 카모마일, 루이보스 등의 허브가 포함되어 있어, 원하는 시간에 차를 즐기기 좋습니다. 혹시 구매를 원하시거나 추가 정보가 필요하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:30:25.750636",
+            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.326551"
+}

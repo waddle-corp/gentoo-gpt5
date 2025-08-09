@@ -1,0 +1,191 @@
+{
+    "user_id": "user_00093",
+    "raw_engagement_score": 37,
+    "normalized_engagement_score": 17,
+    "activities": [
+        {
+            "id": "674551aa-41c1-4bc1-9f62-90957ba17e03",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00093",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00093_709129",
+                "total_amount": 65000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_002",
+                        "quantity": 1,
+                        "price": 15000
+                    },
+                    {
+                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "quantity": 1,
+                        "price": 50000
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.709132"
+        },
+        {
+            "id": "6429b1a6-c393-4fd7-8ba3-7a53b5b07202",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00093",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "quantity": 2,
+                "price": 25000
+            },
+            "created_time": "2025-08-09T13:57:01.709136"
+        },
+        {
+            "id": "de670cb4-9094-48b9-8f24-87a6433998d5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00093",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.115.125"
+            },
+            "created_time": "2025-08-09T13:57:01.709139"
+        },
+        {
+            "id": "a7c4f47f-3401-4e22-81c7-961f836da9ac",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00093",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.126.164"
+            },
+            "created_time": "2025-08-09T13:57:01.709143"
+        },
+        {
+            "id": "448deec1-c46e-46ee-ba30-cac4485153dc",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00093",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.174.237"
+            },
+            "created_time": "2025-08-09T13:57:01.709146"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "1f636255-1952-43cd-8300-7d72b09e692f",
+            "customer_id": "user_00093",
+            "product_id": "PROD_OLIVE_002",
+            "rating": 2,
+            "review_title": "실망했어요",
+            "review_content": "유기농 엑스트라 버진 올리브유 750ml 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
+            "created_at": "2024-09-06T14:00:03.216386",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [
+        {
+            "subscription_id": "d83bd7b4-389b-4564-91b2-893075dc4df8",
+            "customer_id": "user_00093",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2024-09-05",
+            "end_date": "2025-01-03",
+            "status": "expired"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "ac2f62bf-9498-4a14-a15c-24dee92dafa4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "UserId": "user_00093",
+            "session_id": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "안녕하세요. 좋은 올리브유 추천 좀 해주실 수 있나요?",
+            "CreatedTime": "2025-08-09T14:35:40.958161",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "dab20a15-535d-452a-9082-a9799c4170b8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "UserId": "user_00093",
+            "session_id": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "안녕하세요! 추천드릴 수 있는 좋은 올리브유는 '엑스트라 버진 올리브유'입니다. 이 제품은 뛰어난 풍미와 향을 자랑하며, 샐러드 드레싱이나 요리에 사용하기 좋습니다. 또한, 건강에도 많은 이점이 있어요. \n\n혹시 스페셜티 원두 커피 200g도 관심이 있으신가요? 커피와 함께 즐기면 더욱 좋답니다! 추가 질문이 있으시면 언제든지 말씀해 주세요.",
+            "CreatedTime": "2025-08-09T14:35:43.070045",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "8060a67b-212c-4561-9dcc-dcc3679f988f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "UserId": "user_00093",
+            "session_id": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "엑스트라 버진 올리브유의 브랜드 중에서 어떤 것이 좋을까요? 가격대도 알고 싶어요.",
+            "CreatedTime": "2025-08-09T14:35:44.030200",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f711077f-c17b-4624-bcc5-eab5318a4f45",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "UserId": "user_00093",
+            "session_id": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "엑스트라 버진 올리브유 중에서 추천할 만한 브랜드는 '일리오스', '카스티야' 그리고 '바르셀로나'가 있습니다. 이 브랜드들은 품질이 높고 맛이 우수하여 많은 사랑을 받고 있습니다.\n\n가격대는 보통 500ml 기준으로 약 10,000원에서 30,000원 정도입니다. 브랜드와 품질에 따라 가격이 달라질 수 있으니 참고하시기 바랍니다. \n\n추가로 궁금하신 점이나 다른 제품이 필요하시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:46.152821",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2d8e4bb9-589d-40ef-8926-371720896370",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "UserId": "user_00093",
+            "session_id": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "혹시 이 브랜드들 중에서 어떤 특정한 맛이나 용도에 맞는 것을 원하시는지요? 예를 들어 샐러드용, 요리용 등으로 나누어 추천해 드릴 수 있습니다.",
+            "CreatedTime": "2025-08-09T14:35:47.377515",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c7f9e917-8d63-45fb-b99e-ed1145038ae6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "UserId": "user_00093",
+            "session_id": "2afa9d23-280c-4129-ab0c-03396c07a66a",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "네, 용도에 따라 추천해 드릴 수 있습니다!\n\n- **샐러드용**: '일리오스 엑스트라 버진 올리브유'는 신선하고 부드러운 맛이 특징입니다. 샐러드 드레싱에 적합합니다.\n\n- **요리용**: '카스티야 엑스트라 버진 올리브유'는 풍미가 강하고 열에 강하여 볶음이나 구이에 잘 어울립니다.\n\n- **디핑용**: '바르셀로나 엑스트라 버진 올리브유'는 과일이나 빵과 함께 즐기기 좋은 맛입니다.\n\n어떤 용도로 찾고 계신지 말씀해 주시면, 더 구체적인 추천을 드릴 수 있습니다!",
+            "CreatedTime": "2025-08-09T14:35:50.460110",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.435127"
+}

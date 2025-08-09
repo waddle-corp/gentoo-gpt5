@@ -1,0 +1,143 @@
+{
+    "user_id": "user_00091",
+    "raw_engagement_score": 28,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "ca1d9684-646f-442b-ae55-2b822551f677",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00091",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 87
+            },
+            "created_time": "2025-08-09T13:57:01.709087"
+        },
+        {
+            "id": "b574da59-7cb4-4984-898e-71d282a6d802",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00091",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "quantity": 3,
+                "price": 25000
+            },
+            "created_time": "2025-08-09T13:57:01.709090"
+        },
+        {
+            "id": "f80ee490-c0a4-491e-ab9a-a52488b22f3b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00091",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 2,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.709094"
+        },
+        {
+            "id": "9a5cad50-bbc8-4a28-a5cf-d96966e76ec3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00091",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.174.88"
+            },
+            "created_time": "2025-08-09T13:57:01.709097"
+        },
+        {
+            "id": "1673f5e9-68c1-43b8-8ad3-46730806d8bb",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00091",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_OLIVE_002",
+                "quantity": 3,
+                "price": 35000
+            },
+            "created_time": "2025-08-09T13:57:01.709100"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "2a66bff2-af42-4434-96c7-da8927ae7d11",
+            "customer_id": "user_00091",
+            "product_id": "PROD_BOOK_001",
+            "rating": 1,
+            "review_title": "실망했어요",
+            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
+            "created_at": "2024-09-02T14:00:03.216381",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "b0aecd71-7a2e-45d9-8eff-422f54bad1fd",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "UserId": "user_00091",
+            "session_id": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "이번 주 베스트셀러는 뭔가요?",
+            "CreatedTime": "2025-08-09T14:35:27.089688",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "82e51c1b-5f88-4fd9-bbce-cd398762f778",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "UserId": "user_00091",
+            "session_id": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "이번 주 베스트셀러는 다양한 상품들이 있지만, 특히 '스페셜티 원두 커피 200g'가 많은 사랑을 받고 있습니다. 풍부한 향과 맛으로 커피 애호가들에게 인기를 끌고 있어요. 다른 베스트셀러 상품에 대한 정보가 필요하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:28.477506",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "52f59059-1952-43c0-8299-e412c1f6ed41",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "UserId": "user_00091",
+            "session_id": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "다른 베스트셀러 상품은 어떤 것들이 있나요?",
+            "CreatedTime": "2025-08-09T14:35:29.171409",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1f9fc9fc-f157-4773-995b-8ac5c9dd151a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "UserId": "user_00091",
+            "session_id": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "이번 주 베스트셀러에는 다음과 같은 상품들이 있습니다:\n\n1. **스페셜티 원두 커피 200g** - 깊고 풍부한 맛을 자랑합니다.\n2. **프리미엄 엑스트라 버진 올리브유 500ml** - 요리에 풍미를 더해주는 고급 올리브유입니다.\n3. **천연 수제 비누 100g** - 피부에 부드럽고 자극이 적은 제품입니다.\n4. **유기농 아몬드 200g** - 건강한 간식으로 많은 인기를 끌고 있습니다.\n\n더 궁금한 상품이나 정보가 필요하시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:32.287492",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.432230"
+}

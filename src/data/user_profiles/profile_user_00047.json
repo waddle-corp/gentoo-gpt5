@@ -1,0 +1,59 @@
+{
+    "user_id": "user_00047",
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "589f4c7b-f8cf-43fd-909c-5b85b1a969ca",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00047",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00047_708104",
+                "total_amount": 68000,
+                "items": [
+                    {
+                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "quantity": 1,
+                        "price": 50000
+                    },
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.708108"
+        },
+        {
+            "id": "d5ccfaed-10ff-4f91-836e-aba9a5ef4e2a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00047",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00047_708110",
+                "total_amount": 65000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_002",
+                        "quantity": 1,
+                        "price": 15000
+                    },
+                    {
+                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "quantity": 1,
+                        "price": 50000
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T13:57:01.708114"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.359887"
+}

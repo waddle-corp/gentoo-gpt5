@@ -1,0 +1,110 @@
+{
+    "user_id": "user_00022",
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "ef140a3a-ebd5-464b-ab10-0e7f5e787c3a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00022",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_001",
+                "category": "소설",
+                "product_name": "베스트셀러 소설: 시간의 틈새",
+                "view_duration_seconds": 29
+            },
+            "created_time": "2025-08-09T13:57:01.707792"
+        },
+        {
+            "id": "304e04f3-4206-4196-bcc0-d9b16fafe4c0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00022",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 0,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.707796"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "e385071f-55c5-4a0a-ab7a-df03c0216147",
+            "customer_id": "user_00022",
+            "product_id": "PROD_OLIVE_001",
+            "rating": 4,
+            "review_title": "정말 좋아요!",
+            "review_content": "프리미엄 엑스트라 버진 올리브유 500ml은 최고입니다! 왜 이제 알았을까요.",
+            "created_at": "2025-07-21T14:00:03.216194",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "26a292ef-9bde-4ff4-a152-e414dd5af864",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b76ba12-4da7-4e4e-adbd-b0d648f0290d",
+            "UserId": "user_00022",
+            "session_id": "3b76ba12-4da7-4e4e-adbd-b0d648f0290d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "제가 최근에 구매한 상품 배송 상태를 알고 싶어요.",
+            "CreatedTime": "2025-08-09T14:29:43.802468",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "eec09544-1827-4145-8053-7cec838947db",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b76ba12-4da7-4e4e-adbd-b0d648f0290d",
+            "UserId": "user_00022",
+            "session_id": "3b76ba12-4da7-4e4e-adbd-b0d648f0290d",
+            "Intent": "CS",
+            "Role": "assistant",
+            "Content": "고객님의 최근 구매 상품 배송 상태를 확인하려면, 주문 번호나 등록된 이메일 주소를 알려주시면 더욱 정확하게 도와드릴 수 있습니다. 또는, 고객님의 계정에 로그인하여 '주문 내역'에서 배송 상태를 직접 확인하실 수도 있습니다. 도움이 필요하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:29:44.995567",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1fbaf832-dcfb-495a-b082-971054dfdf28",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b76ba12-4da7-4e4e-adbd-b0d648f0290d",
+            "UserId": "user_00022",
+            "session_id": "3b76ba12-4da7-4e4e-adbd-b0d648f0290d",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "주문 번호는 123456입니다. 배송 상태를 확인해 주실 수 있나요?",
+            "CreatedTime": "2025-08-09T14:29:45.804139",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a5edfbb0-f705-48f8-9c17-eb4b6380f67d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b76ba12-4da7-4e4e-adbd-b0d648f0290d",
+            "UserId": "user_00022",
+            "session_id": "3b76ba12-4da7-4e4e-adbd-b0d648f0290d",
+            "Intent": "CS",
+            "Role": "assistant",
+            "Content": "죄송하지만, 제가 직접 배송 상태를 확인할 수는 없습니다. 하지만 주문 번호 123456으로 고객님의 계정에 로그인하시면 배송 상태를 확인하실 수 있습니다. 또는 고객 서비스 센터에 문의하시면 더욱 빠르게 도움을 받으실 수 있습니다. 추가로 궁금한 점이 있으시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:29:47.752114",
+            "ItemId": "PROD_OLIVE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.317387"
+}

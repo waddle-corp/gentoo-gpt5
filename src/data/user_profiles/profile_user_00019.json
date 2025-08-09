@@ -1,0 +1,64 @@
+{
+    "user_id": "user_00019",
+    "raw_engagement_score": 14,
+    "normalized_engagement_score": 8,
+    "activities": [
+        {
+            "id": "9efea4bb-7307-4922-a0ad-957953487e9a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00019",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00019_707746",
+                "total_amount": 18000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707752"
+        },
+        {
+            "id": "6f1901eb-0852-4ebb-ab9d-3a6d3e5e8bd6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00019",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.150.173"
+            },
+            "created_time": "2025-08-09T13:57:01.707756"
+        },
+        {
+            "id": "2f52a3b0-35db-49e8-90c8-d740a1b3162d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00019",
+            "event_name": "search",
+            "event_data": {
+                "query": "구독",
+                "search_results_count": 12,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.707760"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [
+        {
+            "subscription_id": "6c89b216-34fb-4eb8-9ce4-f5cf7af0437c",
+            "customer_id": "user_00019",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2025-04-03",
+            "end_date": "2025-06-02",
+            "status": "expired"
+        }
+    ],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.311963"
+}

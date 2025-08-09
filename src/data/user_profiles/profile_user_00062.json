@@ -1,0 +1,25 @@
+{
+    "user_id": "user_00062",
+    "raw_engagement_score": 3,
+    "normalized_engagement_score": 4,
+    "activities": [
+        {
+            "id": "8d0faf4b-1b4b-4d59-a08b-5eb3e3e81f0c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00062",
+            "event_name": "search",
+            "event_data": {
+                "query": "새로운 책",
+                "search_results_count": 13,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708275"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.384772"
+}

@@ -1,0 +1,79 @@
+{
+    "user_id": "user_00098",
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "2c0e6ff9-db7e-4375-b328-5d1466469483",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00098",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.116.184"
+            },
+            "created_time": "2025-08-09T13:57:01.709209"
+        },
+        {
+            "id": "e6be5667-5393-491d-91e9-6b98d42e5ba8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00098",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.3.116"
+            },
+            "created_time": "2025-08-09T13:57:01.709212"
+        },
+        {
+            "id": "499807b7-af28-42f2-982b-cf59b5aa105b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00098",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00098_709215",
+                "total_amount": 105000,
+                "items": [
+                    {
+                        "product_id": "SUB_OLIVE_PREMIUM",
+                        "quantity": 1,
+                        "price": 70000
+                    },
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.709218"
+        },
+        {
+            "id": "5ee31b85-21fa-44ec-a0bc-ba1364379e16",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00098",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.3.45"
+            },
+            "created_time": "2025-08-09T13:57:01.709222"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "74e6c504-96d8-4b73-97da-93c195ac7759",
+            "customer_id": "user_00098",
+            "product_id": "SUB_OLIVE_PREMIUM",
+            "rating": 1,
+            "review_title": "기대 이하였어요",
+            "review_content": "분기별 올리브유 구독 프리미엄 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
+            "created_at": "2025-01-02T14:00:03.216396",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.442469"
+}

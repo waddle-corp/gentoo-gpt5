@@ -1,0 +1,66 @@
+{
+    "user_id": "user_00059",
+    "raw_engagement_score": 7,
+    "normalized_engagement_score": 5,
+    "activities": [
+        {
+            "id": "8f66414c-fe55-4302-b048-5854fe69a3ae",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00059",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.46.63"
+            },
+            "created_time": "2025-08-09T13:57:01.708234"
+        },
+        {
+            "id": "5f28d573-6998-402c-ae07-2eb16d0a2aa9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00059",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "category": "자기계발",
+                "product_name": "성공하는 사람들의 7가지 습관",
+                "view_duration_seconds": 115
+            },
+            "created_time": "2025-08-09T13:57:01.708237"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "4d5ec2a0-25c0-4a10-bbb4-7b30b4df876e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "96674252-9f40-41d2-86df-75981e7c9d68",
+            "UserId": "user_00059",
+            "session_id": "96674252-9f40-41d2-86df-75981e7c9d68",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "챗봇과 대화하는 것이 처음인데, 어떤 기능을 사용할 수 있나요?",
+            "CreatedTime": "2025-08-09T14:32:42.544239",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8de09a50-8fe0-453e-af2d-92c66cb31e09",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "96674252-9f40-41d2-86df-75981e7c9d68",
+            "UserId": "user_00059",
+            "session_id": "96674252-9f40-41d2-86df-75981e7c9d68",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "안녕하세요! 저와 대화하시면 다양한 기능을 이용하실 수 있습니다. 상품 추천, 특정 상품에 대한 정보 제공, 주문 상태 확인, 그리고 고객 서비스 관련 질문에 답변해 드릴 수 있습니다. 또한, 저희 쇼핑몰의 '월간 북클럽 베이직' 구독 상품에 대해서도 궁금한 점이 있다면 알려드릴 수 있습니다. 무엇이든 물어보세요!",
+            "CreatedTime": "2025-08-09T14:32:44.489354",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.379282"
+}

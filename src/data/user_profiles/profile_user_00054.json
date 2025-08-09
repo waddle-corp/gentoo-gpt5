@@ -1,0 +1,127 @@
+{
+    "user_id": "user_00054",
+    "raw_engagement_score": 19,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "ebed0a62-4d35-451f-8117-db17bfbb8aa2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00054",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 96
+            },
+            "created_time": "2025-08-09T13:57:01.708173"
+        },
+        {
+            "id": "5c0109a1-c05e-4970-a8d8-bd2e7566032e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00054",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "quantity": 2,
+                "price": 15000
+            },
+            "created_time": "2025-08-09T13:57:01.708176"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "f77460bf-b2f5-414f-82ce-d6bc2cbd2a04",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "UserId": "user_00054",
+            "session_id": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "제가 최근에 구매한 상품 배송 상태를 알고 싶어요.",
+            "CreatedTime": "2025-08-09T14:32:08.503318",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c646bf41-3d87-4cf8-9a73-d40b0120c8a8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "UserId": "user_00054",
+            "session_id": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "배송 상태를 확인하기 위해서는 주문 번호가 필요합니다. 주문 번호를 알려주시면 현재 배송 상태를 확인해 드리겠습니다.",
+            "CreatedTime": "2025-08-09T14:32:09.311375",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9a16ed6c-4ec2-4615-8157-0da80271d3f8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "UserId": "user_00054",
+            "session_id": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "주문 번호는 12345입니다. 배송 상태를 확인해 주세요.",
+            "CreatedTime": "2025-08-09T14:32:10.298167",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "25e9e69b-e4a2-41dd-ad48-9e6ba37ab3ca",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "UserId": "user_00054",
+            "session_id": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "Intent": "CS",
+            "Role": "assistant",
+            "Content": "죄송하지만, 저는 직접적으로 시스템에 접근할 수 없어 주문 상태를 확인할 수 없습니다. 하지만, 고객 센터에 문의하시거나, 쇼핑몰 웹사이트의 '주문 조회' 섹션을 통해 배송 상태를 쉽게 확인하실 수 있습니다. 추가로 도움이 필요하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:32:11.927418",
+            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d4bcaca7-80a9-4a6e-ad9f-467a33bdc153",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "UserId": "user_00054",
+            "session_id": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "고객 센터에 연락할 때 어떤 정보를 제공해야 할까요? 또한, 배송 상태를 확인하는 방법이 다른 경우가 있을까요?",
+            "CreatedTime": "2025-08-09T14:32:12.895400",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "741d46ee-07bc-40f1-a015-db52ddebe9a7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "UserId": "user_00054",
+            "session_id": "448253a5-164a-41c1-bf97-af9d23d2726c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "고객 센터에 연락하실 때는 다음과 같은 정보를 제공하시면 도움이 됩니다:\n\n1. **주문 번호**: 12345와 같은 주문 번호\n2. **이름**: 주문하신 분의 이름\n3. **연락처**: 전화번호나 이메일 주소\n4. **구매한 상품명**: 주문한 상품의 이름\n\n배송 상태 확인 방법은 다음과 같습니다:\n\n1. **웹사이트 방문**: 쇼핑몰의 '주문 조회' 섹션에서 주문 번호를 입력해 확인\n2. **배송 추적 링크**: 주문 확인 이메일에 포함된 배송 추적 링크를 통해 확인\n3. **앱 사용**: 쇼핑몰의 모바일 앱이 있다면, 앱에서 직접 확인 가능\n\n이 외에도 궁금한 점이 있으시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:32:16.460954",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.371027"
+}

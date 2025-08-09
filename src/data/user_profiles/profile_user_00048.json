@@ -1,0 +1,163 @@
+{
+    "user_id": "user_00048",
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 14,
+    "activities": [
+        {
+            "id": "e96d8b2c-5212-459f-b576-1f0f0c9ed708",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00048",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.158.132"
+            },
+            "created_time": "2025-08-09T13:57:01.708119"
+        },
+        {
+            "id": "d6a25f6a-94ef-463b-8bfe-af8e3a5f73ea",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00048",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_BOOK_001",
+                "quantity": 3,
+                "price": 18000
+            },
+            "created_time": "2025-08-09T13:57:01.708122"
+        },
+        {
+            "id": "907e4eed-fd9a-49dd-86e1-a95159ebd117",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00048",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_BOOK_001",
+                "quantity": 2,
+                "price": 18000
+            },
+            "created_time": "2025-08-09T13:57:01.708126"
+        },
+        {
+            "id": "3eefc198-51ac-4c97-9787-26077fa20f13",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00048",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "quantity": 3,
+                "price": 70000
+            },
+            "created_time": "2025-08-09T13:57:01.708129"
+        },
+        {
+            "id": "4c60a5f1-010b-4c37-9646-2c01a21aaa4d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00048",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 5,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708132"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "f56a4ba4-cf39-483c-88dc-794131b35756",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "UserId": "user_00048",
+            "session_id": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "이번 주 베스트셀러는 뭔가요?",
+            "CreatedTime": "2025-08-09T14:31:45.421198",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "155e75d6-8a26-4ac3-b3ba-8627de2d56c4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "UserId": "user_00048",
+            "session_id": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "이번 주 베스트셀러는 유기농 아카시아 꿀 1kg입니다! 자연 그대로의 맛과 건강에 좋은 성분으로 많은 고객님들께 사랑받고 있습니다. 다른 인기 상품들도 궁금하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:31:46.731767",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7a516194-94d0-4387-b9bc-16813075091a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "UserId": "user_00048",
+            "session_id": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "아카시아 꿀은 맛이 어떤가요? 다른 추천 상품도 있을까요?",
+            "CreatedTime": "2025-08-09T14:31:47.324432",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "78cefac0-3b5f-478c-8d96-258c5fb3d22d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "UserId": "user_00048",
+            "session_id": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "아카시아 꿀은 부드럽고 달콤한 맛이 특징이며, 은은한 향이 나서 다양한 음식에 잘 어울립니다. 차나 요거트에 첨가하면 더욱 맛있게 즐길 수 있습니다.\n\n추가로 추천드릴 상품으로는 베스트셀러 소설 '시간의 틈새'가 있습니다. 이 소설은 흥미진진한 이야기와 깊은 감정이 돋보여 많은 독자들에게 사랑받고 있습니다. 관심 있으시면 확인해 보세요!",
+            "CreatedTime": "2025-08-09T14:31:49.580846",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e259ce36-6648-4c82-b8ad-c9e875e7b97b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "UserId": "user_00048",
+            "session_id": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "아카시아 꿀은 맛이 어떤가요? 다른 추천 상품도 있을까요?",
+            "CreatedTime": "2025-08-09T14:31:50.184161",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4ef27bf3-4289-4977-8725-c9acdb8413da",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "UserId": "user_00048",
+            "session_id": "6e6aa9de-cc83-40de-bed9-c729fc5f0b2b",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "아카시아 꿀은 부드럽고 달콤한 맛이 특징으로, 은은한 꽃향기가 나며 식감이 가벼워 다양한 요리에 잘 어울립니다. 특히 차, 빵, 요거트와 함께 즐기면 좋습니다.\n\n또한, 최근에 많은 사랑을 받고 있는 '월간 북클럽 베이직' 구독 상품도 추천드립니다. 매달 다양한 책과 독서 관련 소식을 받아보실 수 있어 독서의 즐거움을 더해줍니다. 관심 있으시면 자세히 안내해 드릴게요!",
+            "CreatedTime": "2025-08-09T14:31:53.254733",
+            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.361417"
+}

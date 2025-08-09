@@ -1,0 +1,89 @@
+{
+    "user_id": "user_00071",
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "f485055e-c239-4a8c-9777-b8c72d549f06",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00071",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 2,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708361"
+        },
+        {
+            "id": "fdf6333b-0d95-4dc0-96e8-dd866c0499dc",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00071",
+            "event_name": "search",
+            "event_data": {
+                "query": "건강식품",
+                "search_results_count": 11,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708364"
+        },
+        {
+            "id": "d5f469de-7e35-424e-b91e-1c53564c4098",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00071",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00071_708367",
+                "total_amount": 18000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T13:57:01.708370"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "7c02dab2-5b04-4927-b6c2-e4bb09322c0c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7584acb4-ffe4-47c0-86aa-c2aab49f64ab",
+            "UserId": "user_00071",
+            "session_id": "7584acb4-ffe4-47c0-86aa-c2aab49f64ab",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "책 구독 서비스에 대해 궁금합니다.",
+            "CreatedTime": "2025-08-09T14:33:22.639295",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2688441f-661c-44bf-b033-ed25d16fc559",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7584acb4-ffe4-47c0-86aa-c2aab49f64ab",
+            "UserId": "user_00071",
+            "session_id": "7584acb4-ffe4-47c0-86aa-c2aab49f64ab",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "저희 쇼핑몰에서는 다양한 책 구독 서비스를 제공하고 있습니다. 고객님이 선택하신 장르나 관심사에 맞는 책을 정기적으로 배송해 드리는 서비스입니다. 구독 서비스를 통해 새로운 책을 발견하고, 인기 도서도 쉽게 접하실 수 있습니다. \n\n특히, 현재 베스트셀러 소설인 '시간의 틈새'와 같은 흥미로운 책도 포함될 수 있습니다. 구독 서비스에 대해 더 궁금하신 점이 있으시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:33:24.772321",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.400373"
+}

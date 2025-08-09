@@ -1,0 +1,129 @@
+{
+    "user_id": "user_00089",
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "6613fd1d-4be9-4d82-aa72-1ccae8608b7b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00089",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 106
+            },
+            "created_time": "2025-08-09T13:57:01.709077"
+        },
+        {
+            "id": "b7e622ea-4cd5-49f1-a1df-e479d1521c5a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00089",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 2,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.709080"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "1e12a0a1-8093-484f-a4c0-51c8e303a9ad",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "UserId": "user_00089",
+            "session_id": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "이번 주 베스트셀러는 뭔가요?",
+            "CreatedTime": "2025-08-09T14:35:12.644600",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "1b1183d1-dffe-4874-b21d-6c15a8913bba",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "UserId": "user_00089",
+            "session_id": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "이번 주 베스트셀러는 '프리미엄 엑스트라 버진 올리브유 500ml'입니다. 품질 높은 올리브유로 요리에 풍미를 더할 수 있는 제품이에요. 다른 인기 상품에 대해서도 궁금하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:14.225736",
+            "ItemId": "PROD_OLIVE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0c4cb358-796f-4400-bce1-99a82779fbd8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "UserId": "user_00089",
+            "session_id": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "혹시 다른 카테고리의 베스트셀러도 알고 싶어요? 예를 들어 의류나 전자제품 같은 것도요!",
+            "CreatedTime": "2025-08-09T14:35:15.093417",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0b17cf1b-063c-4512-84bd-4fab4100952c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "UserId": "user_00089",
+            "session_id": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "물론입니다! 현재 의류 카테고리에서는 '여름 라이트 바람막이 재킷'이 베스트셀러이며, 전자제품 카테고리에서는 '무선 블루투스 헤드폰'이 인기가 많습니다. 추가로 궁금한 상품이나 카테고리가 있다면 알려주세요!",
+            "CreatedTime": "2025-08-09T14:35:16.519342",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "99314d80-8f52-4fac-9904-450a51b0f99d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "UserId": "user_00089",
+            "session_id": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "혹시 여름 라이트 바람막이 재킷의 색상이나 사이즈는 어떤 게 있는지 알 수 있을까요?",
+            "CreatedTime": "2025-08-09T14:35:17.422717",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "34b3ea62-f454-499a-a08f-1c98159689b8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "UserId": "user_00089",
+            "session_id": "3dca9587-504e-41b2-9988-9d2800d66949",
+            "Intent": "일반",
+            "Role": "assistant",
+            "Content": "여름 라이트 바람막이 재킷은 다양한 색상과 사이즈로 제공됩니다. 일반적으로 블랙, 네이비, 라이트 그레이, 화이트 등의 색상이 있으며, 사이즈는 S, M, L, XL로 준비되어 있습니다. 구체적인 색상이나 사이즈가 필요하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:19.335626",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.428946"
+}

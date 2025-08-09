@@ -1,0 +1,140 @@
+{
+    "user_id": "user_00028",
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 11,
+    "activities": [
+        {
+            "id": "4dd1bfa5-4861-4208-8960-5eee2ee61411",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00028",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_OLIVE_002",
+                "category": "올리브유",
+                "product_name": "유기농 엑스트라 버진 올리브유 750ml",
+                "view_duration_seconds": 96
+            },
+            "created_time": "2025-08-09T13:57:01.707877"
+        },
+        {
+            "id": "5c9bd0d3-7e51-44fc-8130-f6e0d6df3d0b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00028",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "quantity": 1,
+                "price": 70000
+            },
+            "created_time": "2025-08-09T13:57:01.707881"
+        },
+        {
+            "id": "3784ece9-22d6-480a-8097-c05419d72abf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00028",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_001",
+                "category": "소설",
+                "product_name": "베스트셀러 소설: 시간의 틈새",
+                "view_duration_seconds": 32
+            },
+            "created_time": "2025-08-09T13:57:01.707884"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "82cd728b-6834-4aeb-80a2-346a452af991",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "UserId": "user_00028",
+            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "유기농 제품도 있나요?",
+            "CreatedTime": "2025-08-09T14:30:25.750676",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "a6ca51b0-d0eb-459b-97c2-05641d7854a9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "UserId": "user_00028",
+            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "네, 저희 쇼핑몰에서는 다양한 유기농 제품을 취급하고 있습니다. 유기농 식료품, 뷰티 제품 등 여러 가지를 찾아보실 수 있습니다. 필요한 특정 제품이 있으신가요? 추천해 드리겠습니다.",
+            "CreatedTime": "2025-08-09T14:30:27.379879",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7a7b492a-5fbf-4573-a206-efaa348b26e6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "UserId": "user_00028",
+            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "유기농 식료품 중에서 어떤 종류의 제품이 인기가 많은가요?",
+            "CreatedTime": "2025-08-09T14:30:28.100648",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6773c2af-9113-4a5d-ad30-816dc43b4ef4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "UserId": "user_00028",
+            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "인기 있는 유기농 식료품으로는 유기농 쌀, 유기농 과일, 유기농 채소, 유기농 견과류 등이 있습니다. 특히 유기농 과일은 신선도와 맛이 뛰어나 많은 고객님들께 사랑받고 있습니다. 추가로 추천해 드릴 수 있는 특정 제품이 필요하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:30:29.799583",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d5d90529-bd39-4f98-8e06-f471461e0c90",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "UserId": "user_00028",
+            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "유기농 제품 중에서 어떤 과일이나 채소가 가장 인기 있는지 알고 싶어요. 추천해 주실 수 있나요?",
+            "CreatedTime": "2025-08-09T14:30:30.590110",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0d42a3f9-46eb-488f-b0d5-66425403d5d0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "UserId": "user_00028",
+            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "유기농 제품 중에서 특히 인기가 높은 과일은 유기농 사과와 유기농 바나나입니다. 신선하고 맛이 뛰어나 많은 분들이 찾으시는 제품입니다. 채소로는 유기농 시금치와 유기농 당근이 인기가 많습니다. 건강한 식단을 원하신다면 이 제품들을 추천드립니다! 추가적인 정보가 필요하시면 언제든지 말씀해 주세요.",
+            "CreatedTime": "2025-08-09T14:30:31.962123",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": "up",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.328095"
+}

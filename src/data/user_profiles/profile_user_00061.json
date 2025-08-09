@@ -1,0 +1,61 @@
+{
+    "user_id": "user_00061",
+    "raw_engagement_score": 7,
+    "normalized_engagement_score": 5,
+    "activities": [
+        {
+            "id": "a9ad177a-02cf-4058-bcd7-7e8be35016d9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00061",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "category": "올리브유",
+                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
+                "view_duration_seconds": 75
+            },
+            "created_time": "2025-08-09T13:57:01.708261"
+        },
+        {
+            "id": "90389d5f-ef72-41b9-9557-93ce6f6c238f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00061",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.53.10"
+            },
+            "created_time": "2025-08-09T13:57:01.708265"
+        },
+        {
+            "id": "78c36daa-b8a8-44ec-8468-405300f4a27e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00061",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 33
+            },
+            "created_time": "2025-08-09T13:57:01.708268"
+        },
+        {
+            "id": "f3082b12-dd74-4a9b-bc52-c999da2322ed",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00061",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "category": "올리브유",
+                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
+                "view_duration_seconds": 116
+            },
+            "created_time": "2025-08-09T13:57:01.708271"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.383014"
+}

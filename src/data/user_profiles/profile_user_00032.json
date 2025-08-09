@@ -1,0 +1,162 @@
+{
+    "user_id": "user_00032",
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 14,
+    "activities": [
+        {
+            "id": "db948e07-1235-4ee4-8f6c-ae0bef9fa9c0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00032",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "category": "올리브유",
+                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
+                "view_duration_seconds": 71
+            },
+            "created_time": "2025-08-09T13:57:01.707907"
+        },
+        {
+            "id": "69caae04-d0cd-48e2-b014-5057a2695ef5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00032",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00032_707909",
+                "total_amount": 105000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    },
+                    {
+                        "product_id": "SUB_OLIVE_PREMIUM",
+                        "quantity": 1,
+                        "price": 70000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707913"
+        },
+        {
+            "id": "5f72bd91-bddf-4836-8584-d65c88327323",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00032",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.110.35"
+            },
+            "created_time": "2025-08-09T13:57:01.707917"
+        },
+        {
+            "id": "8388d82b-665b-495b-a30a-387ae3326c45",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00032",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "quantity": 3,
+                "price": 15000
+            },
+            "created_time": "2025-08-09T13:57:01.707921"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "6dcf4d78-47ce-4ac1-94de-164900ef0224",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "UserId": "user_00032",
+            "session_id": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "이벤트는 없나요?",
+            "CreatedTime": "2025-08-09T14:30:48.083169",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "aa274bfc-6e68-4bb1-8521-610a8c46df66",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "UserId": "user_00032",
+            "session_id": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "Intent": "CS",
+            "Role": "assistant",
+            "Content": "현재 진행 중인 이벤트는 없습니다. 하지만, 종종 특별 할인이나 프로모션을 진행하니 자주 확인해 주시면 좋습니다! 혹시 다른 도움이 필요하신가요?",
+            "CreatedTime": "2025-08-09T14:30:49.262913",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "55d7b966-0e13-41c8-aed4-a3e54551f264",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "UserId": "user_00032",
+            "session_id": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "혹시 제가 좋아하는 상품에 대한 정보를 더 알고 싶어요. 어떤 상품들이 있는지 추천해 주실 수 있나요?",
+            "CreatedTime": "2025-08-09T14:30:50.185497",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4895b550-bc17-4b29-bcee-b25d44042fe2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "UserId": "user_00032",
+            "session_id": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "물론입니다! 고객님이 좋아하실 만한 상품으로는 다양한 카테고리에서 추천할 수 있습니다. 예를 들어, 건강한 요리를 좋아하신다면 '프리미엄 엑스트라 버진 올리브유 500ml'를 추천드립니다. 이 올리브유는 품질이 뛰어나고, 다양한 요리에 사용하기 좋습니다. \n\n또한, 다른 카테고리의 상품이나 특정 제품에 대해 궁금하신 점이 있다면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:30:52.800137",
+            "ItemId": "PROD_OLIVE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1e4e8a4e-5c52-473c-9589-b89296c05c40",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "UserId": "user_00032",
+            "session_id": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "좋습니다! 고객님이 선호하시는 상품의 종류나 카테고리를 말씀해 주시면, 그에 맞는 추천을 드릴 수 있을 것 같아요. 예를 들어, 패션, 뷰티, 가전제품 등 어떤 분야에 관심이 있으신가요?",
+            "CreatedTime": "2025-08-09T14:30:54.328460",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "abbdfee2-8844-494f-9623-692d06b28e36",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "UserId": "user_00032",
+            "session_id": "3ce9734a-693d-4855-92f6-533f9558a97b",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "고객님이 관심 있는 상품의 종류나 카테고리를 알려주시면 더욱 구체적으로 추천해 드릴 수 있습니다! 예를 들어, 패션 아이템, 뷰티 제품, 가전제품, 식품 등 어떤 분야에 관심이 있으신가요?",
+            "CreatedTime": "2025-08-09T14:30:56.293949",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.335124"
+}

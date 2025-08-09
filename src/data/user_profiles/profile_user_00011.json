@@ -1,0 +1,95 @@
+{
+    "user_id": "user_00011",
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "bc02b5f5-eaa8-40f0-ba6f-338de51413b9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00011",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "category": "구독",
+                "product_name": "분기별 올리브유 구독 프리미엄",
+                "view_duration_seconds": 10
+            },
+            "created_time": "2025-08-09T13:57:01.707617"
+        },
+        {
+            "id": "2bcd7869-189c-4f79-80bd-18a715658549",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00011",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00011_707619",
+                "total_amount": 25000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_001",
+                        "quantity": 1,
+                        "price": 25000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707623"
+        },
+        {
+            "id": "9fbca2f0-6a4c-4959-96e7-e1a88a3285c2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00011",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00011_707626",
+                "total_amount": 18000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707630"
+        },
+        {
+            "id": "03ce131d-cc2f-4661-bc36-af098f896b87",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00011",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "category": "구독",
+                "product_name": "분기별 올리브유 구독 프리미엄",
+                "view_duration_seconds": 19
+            },
+            "created_time": "2025-08-09T13:57:01.707634"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "3d7181bc-d077-4878-b47b-cf768ceb8bd2",
+            "customer_id": "user_00011",
+            "product_id": "PROD_BOOK_002",
+            "rating": 4,
+            "review_title": "대만족!",
+            "review_content": "성공하는 사람들의 7가지 습관은 최고입니다! 왜 이제 알았을까요.",
+            "created_at": "2024-09-16T14:00:03.216165",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [
+        {
+            "subscription_id": "7eb0161e-bcdd-47da-a2ae-85faf459f359",
+            "customer_id": "user_00011",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2024-06-06",
+            "end_date": "2024-07-06",
+            "status": "cancelled"
+        }
+    ],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.295184"
+}

@@ -1,0 +1,96 @@
+{
+    "user_id": "user_00073",
+    "raw_engagement_score": 24,
+    "normalized_engagement_score": 12,
+    "activities": [
+        {
+            "id": "5215ce25-facb-46b3-9599-19ea570daff0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00073",
+            "event_name": "search",
+            "event_data": {
+                "query": "구독",
+                "search_results_count": 14,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708378"
+        },
+        {
+            "id": "b4390686-8072-4b7c-99d6-61250a37fbc3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00073",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00073_708381",
+                "total_amount": 75000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_001",
+                        "quantity": 1,
+                        "price": 25000
+                    },
+                    {
+                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "quantity": 1,
+                        "price": 50000
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T13:57:01.708385"
+        },
+        {
+            "id": "bac29745-981e-4e43-8a72-f2b7249c6f96",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00073",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "category": "올리브유",
+                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
+                "view_duration_seconds": 11
+            },
+            "created_time": "2025-08-09T13:57:01.708388"
+        },
+        {
+            "id": "d67998ab-db75-4ee1-b5ea-5148f462e2e5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00073",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 9,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708392"
+        },
+        {
+            "id": "04966bff-dd32-4c0b-b996-179d878304d3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00073",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.33.17"
+            },
+            "created_time": "2025-08-09T13:57:01.708396"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [
+        {
+            "subscription_id": "9e321ac0-495b-4ae2-beef-e56d376fc998",
+            "customer_id": "user_00073",
+            "product_id": "SUB_OLIVE_PREMIUM",
+            "start_date": "2023-10-13",
+            "end_date": "2026-09-27",
+            "status": "paused"
+        }
+    ],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.403253"
+}

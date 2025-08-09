@@ -1,0 +1,63 @@
+{
+    "user_id": "user_00002",
+    "raw_engagement_score": 10,
+    "normalized_engagement_score": 6,
+    "activities": [
+        {
+            "id": "8f4613a7-ab2d-47d3-aa8e-d923b6d91ad8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00002",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 17,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.707464"
+        },
+        {
+            "id": "22710d16-846a-4478-8308-28a3debc8b44",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00002",
+            "event_name": "search",
+            "event_data": {
+                "query": "베스트셀러",
+                "search_results_count": 4,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.707469"
+        },
+        {
+            "id": "9679cc96-2fe4-42ef-bb25-8d3a679fddc7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00002",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 62
+            },
+            "created_time": "2025-08-09T13:57:01.707473"
+        },
+        {
+            "id": "7242932b-d618-4996-870b-0cb32ab3e667",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00002",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "category": "자기계발",
+                "product_name": "성공하는 사람들의 7가지 습관",
+                "view_duration_seconds": 42
+            },
+            "created_time": "2025-08-09T13:57:01.707477"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.271310"
+}

@@ -1,0 +1,117 @@
+{
+    "user_id": "user_00058",
+    "raw_engagement_score": 11,
+    "normalized_engagement_score": 7,
+    "activities": [
+        {
+            "id": "5c50aab6-d026-4159-9299-3a9d31d40bcf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00058",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 60
+            },
+            "created_time": "2025-08-09T13:57:01.708223"
+        },
+        {
+            "id": "6f04616e-c6c5-40a3-93d8-ab17ec94dd09",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00058",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.43.165"
+            },
+            "created_time": "2025-08-09T13:57:01.708227"
+        },
+        {
+            "id": "70064415-c74d-43f9-9a95-fab3e8fc2089",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00058",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "quantity": 3,
+                "price": 25000
+            },
+            "created_time": "2025-08-09T13:57:01.708230"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [
+        {
+            "subscription_id": "4a9ed8e9-adec-4627-b03e-b7f138cd0b98",
+            "customer_id": "user_00058",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2024-04-14",
+            "end_date": "2024-11-10",
+            "status": "cancelled"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "28916f15-90c0-4ee6-95b8-52c365f3d2e5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3c23306d-e688-4e55-aa32-80afda7d9f78",
+            "UserId": "user_00058",
+            "session_id": "3c23306d-e688-4e55-aa32-80afda7d9f78",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "챗봇과 대화하는 것이 처음인데, 어떤 기능을 사용할 수 있나요?",
+            "CreatedTime": "2025-08-09T14:32:37.722826",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9992a25b-ed24-4d31-bcf1-6eaaeb2596d4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3c23306d-e688-4e55-aa32-80afda7d9f78",
+            "UserId": "user_00058",
+            "session_id": "3c23306d-e688-4e55-aa32-80afda7d9f78",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "안녕하세요! 저와 대화하시면 다양한 기능을 사용할 수 있습니다. 상품 추천, 특정 상품에 대한 정보 제공, 주문 및 배송 관련 질문, 그리고 저희 쇼핑몰의 서비스 안내 등을 도와드릴 수 있습니다. 예를 들어, '월간 북클럽 베이직' 구독 상품에 대해 궁금하시면 자세히 설명해 드릴 수 있습니다. 어떤 도움이 필요하신가요?",
+            "CreatedTime": "2025-08-09T14:32:39.661500",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "06a68b5f-fffb-473e-87d3-d37f7fc6adf6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3c23306d-e688-4e55-aa32-80afda7d9f78",
+            "UserId": "user_00058",
+            "session_id": "3c23306d-e688-4e55-aa32-80afda7d9f78",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "월간 북클럽 베이직 구독 상품에 대해 좀 더 알고 싶어요. 어떤 책들이 포함되나요?",
+            "CreatedTime": "2025-08-09T14:32:40.416100",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "109f4a38-5dc1-4b02-8ac3-4ba70ca2c170",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3c23306d-e688-4e55-aa32-80afda7d9f78",
+            "UserId": "user_00058",
+            "session_id": "3c23306d-e688-4e55-aa32-80afda7d9f78",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "월간 북클럽 베이직 구독 상품은 매달 다양한 장르의 책들을 포함하여 제공됩니다. 최근에는 베스트셀러, 클래식, 그리고 신간 등이 포함되며, 구독자들의 취향에 맞춰 선별된 책들이 제공됩니다. 특정 월에 어떤 책들이 포함되는지는 매달 변동이 있기 때문에, 관심 있는 특정 월을 알려주시면 더 자세한 정보를 드릴 수 있습니다. 추가적으로, 다른 상품이나 서비스에 대해서도 궁금하신 점이 있으시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:32:42.544135",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.377809"
+}

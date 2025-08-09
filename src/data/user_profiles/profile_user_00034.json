@@ -1,0 +1,83 @@
+{
+    "user_id": "user_00034",
+    "raw_engagement_score": 13,
+    "normalized_engagement_score": 8,
+    "activities": [
+        {
+            "id": "5c3233a4-af4c-4716-95d0-00823fe63c17",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00034",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00034_707937",
+                "total_amount": 75000,
+                "items": [
+                    {
+                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "quantity": 1,
+                        "price": 50000
+                    },
+                    {
+                        "product_id": "PROD_OLIVE_001",
+                        "quantity": 1,
+                        "price": 25000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707941"
+        },
+        {
+            "id": "91b42d96-3665-4c9e-81d9-725bc444f9ac",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00034",
+            "event_name": "search",
+            "event_data": {
+                "query": "구독",
+                "search_results_count": 0,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.707944"
+        },
+        {
+            "id": "6942c1f1-4fa3-41d9-985f-182160fa3aa9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00034",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 27
+            },
+            "created_time": "2025-08-09T13:57:01.707947"
+        },
+        {
+            "id": "3b579567-2529-458e-b8c5-465ca9bc404b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00034",
+            "event_name": "search",
+            "event_data": {
+                "query": "건강식품",
+                "search_results_count": 15,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.707951"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [
+        {
+            "subscription_id": "3820d94d-c704-4ddc-b260-66b344556256",
+            "customer_id": "user_00034",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2024-04-26",
+            "end_date": "2024-10-23",
+            "status": "cancelled"
+        }
+    ],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.338099"
+}

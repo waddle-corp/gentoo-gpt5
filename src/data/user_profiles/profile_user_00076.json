@@ -1,0 +1,85 @@
+{
+    "user_id": "user_00076",
+    "raw_engagement_score": 34,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "402e61cc-da1a-4186-aafe-3c5f715c2601",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00076",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00076_708442",
+                "total_amount": 70000,
+                "items": [
+                    {
+                        "product_id": "SUB_OLIVE_PREMIUM",
+                        "quantity": 1,
+                        "price": 70000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.708447"
+        },
+        {
+            "id": "83e6cfaa-33e1-4f78-95dd-2bd6647ea674",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00076",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "quantity": 2,
+                "price": 50000
+            },
+            "created_time": "2025-08-09T13:57:01.708451"
+        },
+        {
+            "id": "3ed17bc7-07d6-4f9b-90c4-c43ab1b8acc2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00076",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 112
+            },
+            "created_time": "2025-08-09T13:57:01.708455"
+        },
+        {
+            "id": "2c1410dc-e120-4107-9565-e01ce0ed3657",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00076",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00076_708458",
+                "total_amount": 35000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T13:57:01.708462"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "1b9f9b3b-1665-437a-aab4-ef3b73b9fd3e",
+            "customer_id": "user_00076",
+            "product_id": "PROD_BOOK_002",
+            "rating": 3,
+            "review_title": "선물하기 좋아요",
+            "review_content": "친구에게 선물했는데 아주 좋아했어요. {product['product_name']} 덕분에 센스 있다는 소리 들었네요!",
+            "created_at": "2025-01-21T14:00:03.216335",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.408148"
+}

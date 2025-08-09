@@ -1,0 +1,146 @@
+{
+    "user_id": "user_00036",
+    "raw_engagement_score": 29,
+    "normalized_engagement_score": 14,
+    "activities": [
+        {
+            "id": "7f5f02f6-d95c-4ce8-bb41-4f38e2f2e313",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00036",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "quantity": 1,
+                "price": 70000
+            },
+            "created_time": "2025-08-09T13:57:01.707965"
+        },
+        {
+            "id": "ded42d65-3277-44ab-bcc4-40faa19002bb",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00036",
+            "event_name": "search",
+            "event_data": {
+                "query": "건강식품",
+                "search_results_count": 3,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.707968"
+        },
+        {
+            "id": "242fb316-5370-4e1e-9541-4afb10425dc6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00036",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_OLIVE_002",
+                "category": "올리브유",
+                "product_name": "유기농 엑스트라 버진 올리브유 750ml",
+                "view_duration_seconds": 27
+            },
+            "created_time": "2025-08-09T13:57:01.707973"
+        },
+        {
+            "id": "50589706-736b-4216-9708-dbf9ff73e0f4",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00036",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 55
+            },
+            "created_time": "2025-08-09T13:57:01.707976"
+        },
+        {
+            "id": "7b042155-209f-4dd6-b3f1-60650c15a244",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00036",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.24.195"
+            },
+            "created_time": "2025-08-09T13:57:01.707980"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "984e2e08-2234-40ed-b58b-3037191208bb",
+            "customer_id": "user_00036",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "rating": 5,
+            "review_title": "인생템 등극",
+            "review_content": "월간 북클럽 베이직은 최고입니다! 왜 이제 알았을까요.",
+            "created_at": "2024-10-16T14:00:03.216225",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "0b98abd0-616d-4a37-a94d-0f3ea88ef01e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8cbc4ebb-2339-458b-8824-b76daa13931c",
+            "UserId": "user_00036",
+            "session_id": "8cbc4ebb-2339-458b-8824-b76daa13931c",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "계정 정보를 변경하고 싶은데 어떻게 해야 하나요?",
+            "CreatedTime": "2025-08-09T14:31:02.355461",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8a2cd193-fc3c-40c5-834a-d3e51c757956",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8cbc4ebb-2339-458b-8824-b76daa13931c",
+            "UserId": "user_00036",
+            "session_id": "8cbc4ebb-2339-458b-8824-b76daa13931c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "계정 정보를 변경하시려면, 쇼핑몰 홈페이지에 로그인한 후 '내 계정' 또는 '계정 설정' 메뉴로 이동하세요. 거기서 개인 정보, 비밀번호, 배송 주소 등을 수정할 수 있습니다. 만약 추가적인 도움이 필요하시다면 고객 서비스 센터에 문의해 주세요!",
+            "CreatedTime": "2025-08-09T14:31:03.969821",
+            "ItemId": "PROD_HONEY_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1b41c61f-a039-469d-b2e3-b67aff5451c6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8cbc4ebb-2339-458b-8824-b76daa13931c",
+            "UserId": "user_00036",
+            "session_id": "8cbc4ebb-2339-458b-8824-b76daa13931c",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "계정 정보를 변경할 때, 비밀번호를 잊어버렸다면 어떻게 해야 하나요?",
+            "CreatedTime": "2025-08-09T14:31:04.676789",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "402b6a02-5dec-4675-b50b-987eaa7cf83f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8cbc4ebb-2339-458b-8824-b76daa13931c",
+            "UserId": "user_00036",
+            "session_id": "8cbc4ebb-2339-458b-8824-b76daa13931c",
+            "Intent": "CS",
+            "Role": "assistant",
+            "Content": "비밀번호를 잊으셨다면, 로그인 화면에서 '비밀번호 찾기' 또는 '비밀번호 재설정' 링크를 클릭하세요. 이메일 주소를 입력하면 비밀번호 재설정 링크가 전송됩니다. 해당 링크를 따라 새 비밀번호를 설정하시면 됩니다. 추가 도움이 필요하시면 언제든지 고객 서비스 센터에 문의해 주세요!",
+            "CreatedTime": "2025-08-09T14:31:06.412664",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.341519"
+}

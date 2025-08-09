@@ -1,0 +1,163 @@
+{
+    "user_id": "user_00008",
+    "raw_engagement_score": 34,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "1448bb46-2ce9-469e-87c0-9bac6bdd021d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00008",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "SUB_BOOKCLUB_BASIC",
+                "category": "구독",
+                "product_name": "월간 북클럽 베이직",
+                "view_duration_seconds": 34
+            },
+            "created_time": "2025-08-09T13:57:01.707558"
+        },
+        {
+            "id": "95504a4e-9f85-4226-9652-82c641b921a1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00008",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00008_707562",
+                "total_amount": 68000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    },
+                    {
+                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "quantity": 1,
+                        "price": 50000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707566"
+        },
+        {
+            "id": "b6b073f0-b059-4e6e-ae22-f46cc80bb395",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00008",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00008_707569",
+                "total_amount": 43000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_001",
+                        "quantity": 1,
+                        "price": 25000
+                    },
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707574"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "94213e0d-c50a-42eb-b96a-b1de4e6ae9e7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "UserId": "user_00008",
+            "session_id": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "안녕하세요. 좋은 올리브유 추천 좀 해주실 수 있나요?",
+            "CreatedTime": "2025-08-09T14:28:46.408271",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "e34a5926-8dc1-4607-b266-4000b5de8220",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "UserId": "user_00008",
+            "session_id": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "안녕하세요! 좋은 올리브유를 찾고 계신다면, ‘엑스트라 버진 올리브유’를 추천드립니다. 이 종류는 신선한 올리브에서 압착하여 만들어져 풍미가 뛰어나고 건강에도 좋습니다. 특히 샐러드 드레싱이나 요리에 활용하기 좋습니다. 혹시 더 구체적인 용도나 원하는 브랜드가 있으신가요?",
+            "CreatedTime": "2025-08-09T14:28:47.811590",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5c5cdd23-a50f-495f-a29f-978afba9354a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "UserId": "user_00008",
+            "session_id": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "아, 특정 브랜드를 추천해 주실 수 있나요? 요리에 적합한 걸 찾고 있어요.",
+            "CreatedTime": "2025-08-09T14:28:48.701142",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "08d0ee90-1d5f-4dd1-bfc2-b307bc1e5d26",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "UserId": "user_00008",
+            "session_id": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "물론입니다! 요리에 적합한 올리브유 브랜드로는 '갈리시아'와 '바르셀로나'를 추천드립니다. 두 브랜드 모두 고품질의 엑스트라 버진 올리브유를 제공하며, 다양한 요리에 잘 어울립니다. 특히 갈리시아는 풍미가 깊고, 바르셀로나는 부드러운 맛이 특징입니다. 요리에 활용하시기 좋을 거예요! 추가적인 도움이 필요하시면 말씀해 주세요.",
+            "CreatedTime": "2025-08-09T14:28:50.606435",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "87cc48dc-ce27-4703-a4a8-1938c4f394b2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "UserId": "user_00008",
+            "session_id": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "혹시 올리브유의 가격대나 용량에 대한 정보도 알고 싶으신가요?",
+            "CreatedTime": "2025-08-09T14:28:51.540994",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "09c086f4-2cdc-448f-a2e6-dad33f1c3913",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "UserId": "user_00008",
+            "session_id": "7024cdf1-02ba-43a4-9191-fef5004dc32c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "네, 올리브유의 가격대와 용량에 대한 정보는 매우 중요합니다! 일반적으로 고급 엑스트라 버진 올리브유는 500ml 기준으로 약 15,000원에서 30,000원 사이에서 구입할 수 있습니다. 일부 프리미엄 브랜드는 1리터 용량도 판매하며, 이 경우 가격은 25,000원에서 50,000원 정도입니다.\n\n용량은 250ml, 500ml, 1리터 등 다양하게 제공되니, 사용 용도에 맞게 선택하시면 좋습니다. 더 궁금한 점이 있으면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:28:54.512298",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.288414"
+}

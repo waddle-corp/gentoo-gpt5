@@ -1,0 +1,88 @@
+{
+    "user_id": "user_00064",
+    "raw_engagement_score": 49,
+    "normalized_engagement_score": 21,
+    "activities": [
+        {
+            "id": "d8e29364-c6a8-4bf2-85f6-f74e72cbef29",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00064",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "quantity": 2,
+                "price": 25000
+            },
+            "created_time": "2025-08-09T13:57:01.708288"
+        },
+        {
+            "id": "6704f89d-80b6-428a-9aa6-07cd1e0218ff",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00064",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "quantity": 3,
+                "price": 70000
+            },
+            "created_time": "2025-08-09T13:57:01.708291"
+        },
+        {
+            "id": "e8f6eff9-53e9-4714-8098-26a0ab2ac46c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00064",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00064_708294",
+                "total_amount": 35000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.708297"
+        },
+        {
+            "id": "a77a5f1a-6314-4a75-be3e-a0008739940a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00064",
+            "event_name": "search",
+            "event_data": {
+                "query": "베스트셀러",
+                "search_results_count": 11,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.708301"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "ede4904d-e803-4bff-9a36-cbe8761b41a1",
+            "customer_id": "user_00064",
+            "product_id": "PROD_BOOK_002",
+            "rating": 2,
+            "review_title": "실망했어요",
+            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
+            "created_at": "2024-08-14T14:00:03.216305",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [
+        {
+            "subscription_id": "aee7c7ab-8f11-4039-a3e8-89ab20c579aa",
+            "customer_id": "user_00064",
+            "product_id": "SUB_OLIVE_PREMIUM",
+            "start_date": "2025-04-15",
+            "end_date": "2027-12-31",
+            "status": "active"
+        }
+    ],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.387704"
+}

@@ -1,0 +1,198 @@
+{
+    "user_id": "user_00092",
+    "raw_engagement_score": 45,
+    "normalized_engagement_score": 20,
+    "activities": [
+        {
+            "id": "31db94a1-289f-443f-80e9-d46ab82a7e58",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00092",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00092_709104",
+                "total_amount": 25000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_001",
+                        "quantity": 1,
+                        "price": 25000
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.709107"
+        },
+        {
+            "id": "c064b263-6b1f-485f-ab6e-324b2856c1f1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00092",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "quantity": 1,
+                "price": 70000
+            },
+            "created_time": "2025-08-09T13:57:01.709111"
+        },
+        {
+            "id": "ad89dfed-3f64-48a1-8e9f-59fdbf7ec3b5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00092",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00092_709113",
+                "total_amount": 75000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_001",
+                        "quantity": 1,
+                        "price": 25000
+                    },
+                    {
+                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "quantity": 1,
+                        "price": 50000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.709117"
+        },
+        {
+            "id": "db29f071-d0a2-4323-853c-dc5aa17273ef",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00092",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00092_709119",
+                "total_amount": 50000,
+                "items": [
+                    {
+                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "quantity": 1,
+                        "price": 50000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.709123"
+        },
+        {
+            "id": "32c8130d-0d5c-409e-9c73-44b1e12a83f0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00092",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_BOOK_001",
+                "category": "소설",
+                "product_name": "베스트셀러 소설: 시간의 틈새",
+                "view_duration_seconds": 82
+            },
+            "created_time": "2025-08-09T13:57:01.709126"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [
+        {
+            "subscription_id": "af1ca128-dbbc-4907-a6a6-0eed267a849a",
+            "customer_id": "user_00092",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2024-05-15",
+            "end_date": "2024-06-14",
+            "status": "cancelled"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "d06e9814-d91e-44f3-8e21-35b5e67e4973",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "UserId": "user_00092",
+            "session_id": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "제가 최근에 구매한 상품 배송 상태를 알고 싶어요.",
+            "CreatedTime": "2025-08-09T14:35:32.287556",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4069ef77-2db7-4ff4-a57b-61b8bfba3f23",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "UserId": "user_00092",
+            "session_id": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "고객님의 최근 구매 상품 배송 상태를 확인하려면, 주문 번호를 알려주시면 더 정확한 정보를 제공해드릴 수 있습니다. 혹은 저희 고객센터에 문의하시면 신속하게 확인해드릴 수 있습니다. 도움이 필요하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:33.702872",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "46cee0b7-d375-4059-b065-c784bb84f0fa",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "UserId": "user_00092",
+            "session_id": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "주문 번호는 12345입니다. 배송 상태가 어떻게 되나요?",
+            "CreatedTime": "2025-08-09T14:35:34.421753",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "94541efd-a6dc-41cd-96ac-9277ddfea45b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "UserId": "user_00092",
+            "session_id": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "주문 번호 12345의 배송 상태를 확인해드리겠습니다. 하지만, 저희 시스템에 직접 접근할 수는 없어서 정확한 정보를 제공해드리기 어렵습니다. \n\n가장 빠른 방법은 저희 고객센터에 문의하시거나, 쇼핑몰 웹사이트의 '주문 조회' 기능을 이용하시는 것입니다. 추가로 도움이 필요하시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:36.642455",
+            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "40915b53-2181-4fde-b5ae-586abed840bc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "UserId": "user_00092",
+            "session_id": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "Intent": "CS",
+            "Role": "user",
+            "Content": "주문 번호 12345의 배송 상태를 확인해드리겠습니다. 하지만, 저희 시스템에 직접 접근할 수는 없어서 정확한 정보를 제공해드리기 어렵습니다. \n\n가장 빠른 방법은 저희 고객센터에 문의하시거나, 쇼핑몰 웹사이트의 '주문 조회' 기능을 이용하시는 것입니다. 추가로 도움이 필요하시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:39.190117",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "fe8bd7a4-31ca-4ea0-b525-1bd08dd74fdf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "UserId": "user_00092",
+            "session_id": "836e28d0-3c12-427b-84f0-29753c1cb358",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "주문 번호 12345의 배송 상태를 확인해드리겠습니다. 하지만, 저희 시스템에 직접 접근할 수는 없어서 정확한 정보를 제공해드리기 어렵습니다. \n\n가장 빠른 방법은 저희 고객센터에 문의하시거나, 쇼핑몰 웹사이트의 '주문 조회' 기능을 이용하시는 것입니다. 추가로 도움이 필요하시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:40.958087",
+            "ItemId": "PROD_OLIVE_001",
+            "Thumbs": "up",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.433762"
+}

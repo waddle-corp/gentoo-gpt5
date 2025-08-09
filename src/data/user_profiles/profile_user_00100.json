@@ -1,0 +1,78 @@
+{
+    "user_id": "user_00100",
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 12,
+    "activities": [
+        {
+            "id": "81cb9b57-7f21-4d94-9d06-cf08f85720c6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00100",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "quantity": 3,
+                "price": 70000
+            },
+            "created_time": "2025-08-09T13:57:01.709240"
+        },
+        {
+            "id": "de67a05c-b174-4821-b957-44593e2c95d3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00100",
+            "event_name": "search",
+            "event_data": {
+                "query": "구독",
+                "search_results_count": 17,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T13:57:01.709243"
+        },
+        {
+            "id": "db2029d3-cb88-4ab9-9293-9d84e532ebe3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00100",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00100_709246",
+                "total_amount": 35000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.709249"
+        },
+        {
+            "id": "fd13730c-9434-4208-b7ed-a77d268de0f3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00100",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "PROD_OLIVE_001",
+                "category": "올리브유",
+                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
+                "view_duration_seconds": 45
+            },
+            "created_time": "2025-08-09T13:57:01.709252"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "13ff9db7-d081-4c5f-b2ca-7697c1c62db5",
+            "customer_id": "user_00100",
+            "product_id": "PROD_BOOK_002",
+            "rating": 1,
+            "review_title": "비추천합니다",
+            "review_content": "성공하는 사람들의 7가지 습관 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
+            "created_at": "2025-01-15T14:00:03.216401",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T14:57:54.445023"
+}

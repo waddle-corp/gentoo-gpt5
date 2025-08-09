@@ -1,0 +1,125 @@
+{
+    "user_id": "user_00090",
+    "raw_engagement_score": 24,
+    "normalized_engagement_score": 12,
+    "activities": [
+        {
+            "id": "15e7dbc2-56aa-407f-9a68-d1e0d282afde",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00090",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_OLIVE_002",
+                "quantity": 3,
+                "price": 35000
+            },
+            "created_time": "2025-08-09T13:57:01.709084"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "9b316bb3-b51e-4a41-b66e-30aa37af4eca",
+            "customer_id": "user_00090",
+            "product_id": "SUB_OLIVE_PREMIUM",
+            "rating": 3,
+            "review_title": "데일리로 좋아요",
+            "review_content": "매일 사용하고 있습니다. {product['product_name']} 없이는 못 살아요. 재구매 의사 100%!",
+            "created_at": "2024-11-06T14:00:03.216377",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "cb15a359-04e4-4b1b-ace8-04286f6ce15e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "UserId": "user_00090",
+            "session_id": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "계정 정보를 변경하고 싶은데 어떻게 해야 하나요?",
+            "CreatedTime": "2025-08-09T14:35:19.335712",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "de42dea0-20d7-40e7-809d-817200d4013b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "UserId": "user_00090",
+            "session_id": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "계정 정보를 변경하시려면, 쇼핑몰 웹사이트에 로그인 후 \"내 계정\" 또는 \"계정 설정\" 메뉴로 이동하세요. 거기에서 개인정보, 비밀번호, 배송지 등 필요한 정보를 수정하실 수 있습니다. 만약 문제가 발생하면 고객 서비스 센터에 문의해 주시면 도움을 드리겠습니다.",
+            "CreatedTime": "2025-08-09T14:35:21.299934",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6cfee704-cf06-4aa5-8892-b586e10ac9ed",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "UserId": "user_00090",
+            "session_id": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "비밀번호를 변경하고 싶다면, \"비밀번호 변경\" 옵션을 찾아서 새 비밀번호를 입력하면 되나요?",
+            "CreatedTime": "2025-08-09T14:35:22.115592",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3ef97e9c-294d-49df-b2e1-6d81cbd03c2f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "UserId": "user_00090",
+            "session_id": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "Intent": "CS",
+            "Role": "assistant",
+            "Content": "네, 맞습니다! \"비밀번호 변경\" 옵션을 찾아서 현재 비밀번호와 새 비밀번호를 입력하시면 됩니다. 새 비밀번호는 보안을 위해 충분한 길이와 복잡성을 갖추도록 하세요. 변경 후에는 새로운 비밀번호로 로그인하실 수 있습니다. 추가 도움이 필요하시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:24.318802",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c22fb5cd-f3c3-4ce0-b3ec-0eff7c55e374",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "UserId": "user_00090",
+            "session_id": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "비밀번호 변경 후에도 이전 비밀번호로 로그인할 수 있나요?",
+            "CreatedTime": "2025-08-09T14:35:25.094399",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9a60e50d-0be9-4774-b103-a87839c30dfa",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "UserId": "user_00090",
+            "session_id": "9933ced0-8ade-403c-b4c7-93edf049efd3",
+            "Intent": "CS",
+            "Role": "assistant",
+            "Content": "아니요, 비밀번호를 변경한 후에는 이전 비밀번호로 로그인할 수 없습니다. 새로운 비밀번호로만 로그인하실 수 있습니다. 만약 새로운 비밀번호를 잊어버리셨다면, \"비밀번호 찾기\" 옵션을 통해 재설정하실 수 있습니다. 도움이 필요하시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:35:27.089608",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.430427"
+}

@@ -1,0 +1,190 @@
+{
+    "user_id": "user_00023",
+    "raw_engagement_score": 61,
+    "normalized_engagement_score": 26,
+    "activities": [
+        {
+            "id": "d4f2e35d-8a16-40c1-9f9a-6425d2265ea0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00023",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_BOOK_002",
+                "quantity": 2,
+                "price": 15000
+            },
+            "created_time": "2025-08-09T13:57:01.707799"
+        },
+        {
+            "id": "6145f49f-cf14-434e-97b4-8619db2cd8d2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00023",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_BOOK_001",
+                "quantity": 3,
+                "price": 18000
+            },
+            "created_time": "2025-08-09T13:57:01.707803"
+        },
+        {
+            "id": "b1fd0762-593e-46c7-9525-7bbe99586db6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00023",
+            "event_name": "search",
+            "event_data": {
+                "query": "베스트셀러",
+                "search_results_count": 11,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.707807"
+        },
+        {
+            "id": "d59979fd-a910-4537-8a42-cb3b6e69ed2b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00023",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00023_707809",
+                "total_amount": 35000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T13:57:01.707813"
+        },
+        {
+            "id": "356de81a-a12d-4e07-9a73-a8adf8014952",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00023",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.138.200"
+            },
+            "created_time": "2025-08-09T13:57:01.707817"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "185426b9-784d-429a-a2dc-2dc6e5e0f823",
+            "customer_id": "user_00023",
+            "product_id": "PROD_OLIVE_002",
+            "rating": 1,
+            "review_title": "기대 이하였어요",
+            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
+            "created_at": "2024-11-03T14:00:03.216199",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [
+        {
+            "subscription_id": "5916bc86-78cd-46fa-9de4-37c34f3b289a",
+            "customer_id": "user_00023",
+            "product_id": "SUB_OLIVE_PREMIUM",
+            "start_date": "2024-03-21",
+            "end_date": "2026-09-07",
+            "status": "active"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "67eadb8c-e14b-412c-a51f-f5cf6f189508",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "UserId": "user_00023",
+            "session_id": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "혹시 지금 할인하는 상품이 있나요?",
+            "CreatedTime": "2025-08-09T14:29:47.752194",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c947f49a-20b3-4a37-95c3-b191f2583b71",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "UserId": "user_00023",
+            "session_id": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "현재 할인 중인 상품에 대한 정보는 저희 웹사이트의 '할인' 섹션에서 확인하실 수 있습니다. 다양한 상품들이 할인되고 있으니, 한 번 살펴보시길 추천드립니다! 또한, 월간 북클럽 베이직 구독 상품도 특별 할인 중일 수 있으니 참고해 주세요. 추가적인 질문이 있으시면 언제든지 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:29:49.703802",
+            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "76b6d013-76bb-4171-85a1-c9b659325f18",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "UserId": "user_00023",
+            "session_id": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "그 할인 상품들 중에 인기 있는 제품이 뭐가 있나요?",
+            "CreatedTime": "2025-08-09T14:29:50.620746",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "80f09b12-f581-421f-8687-6d418e1f68b4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "UserId": "user_00023",
+            "session_id": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "현재 할인 중인 인기 상품으로는 최신 베스트셀러 도서와 함께 다양한 생활용품이 있습니다. 특히, 월간 북클럽 베이직 구독 상품은 매달 추천 도서를 제공하여 많은 고객님들께 사랑받고 있습니다. 그 외에도 주방 용품이나 전자기기 등도 인기가 많으니, 확인해보시면 좋을 것 같습니다! 더 궁금한 점이 있으시면 말씀해 주세요.",
+            "CreatedTime": "2025-08-09T14:29:52.657748",
+            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "33c7c0e1-c1a8-42c2-96c1-96bcd2aeca8c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "UserId": "user_00023",
+            "session_id": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "혹시 특정 카테고리의 할인 상품을 더 알고 싶다면 알려주실 수 있나요? 예를 들어, 의류, 가전제품, 또는 뷰티 제품 등 중 어떤 것에 관심이 있는지요?",
+            "CreatedTime": "2025-08-09T14:29:53.957022",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "537f7c3a-2c03-4c2d-bf4a-ae4b59c61517",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "UserId": "user_00023",
+            "session_id": "f5a6d2a0-3c37-425b-afb6-6f7e0868dfc4",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "물론입니다! 특정 카테고리의 할인 상품에 대해 알고 싶으시다면, 의류, 가전제품, 뷰티 제품 등 중 어떤 것에 관심이 있으신지 말씀해 주세요. 각 카테고리별로 인기 있는 할인 상품을 안내해 드리겠습니다!",
+            "CreatedTime": "2025-08-09T14:29:55.256211",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.319080"
+}

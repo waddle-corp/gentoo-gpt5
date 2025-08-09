@@ -1,0 +1,192 @@
+{
+    "user_id": "user_00004",
+    "raw_engagement_score": 65,
+    "normalized_engagement_score": 28,
+    "activities": [
+        {
+            "id": "df46ea47-c624-42f4-b749-dec2a5db16bf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00004",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00004_707494",
+                "total_amount": 53000,
+                "items": [
+                    {
+                        "product_id": "PROD_BOOK_001",
+                        "quantity": 1,
+                        "price": 18000
+                    },
+                    {
+                        "product_id": "PROD_OLIVE_002",
+                        "quantity": 1,
+                        "price": 35000
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T13:57:01.707503"
+        },
+        {
+            "id": "09f88c65-c83b-4330-9fb8-49d00ee2d783",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00004",
+            "event_name": "search",
+            "event_data": {
+                "query": "올리브유",
+                "search_results_count": 10,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T13:57:01.707508"
+        },
+        {
+            "id": "ea086edc-44b3-4c1c-af1f-3b04e16e08d6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00004",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00004_707512",
+                "total_amount": 25000,
+                "items": [
+                    {
+                        "product_id": "PROD_OLIVE_001",
+                        "quantity": 1,
+                        "price": 25000
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T13:57:01.707520"
+        },
+        {
+            "id": "ffd80168-3af1-4d72-9112-24477eef839e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00004",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "PROD_OLIVE_002",
+                "quantity": 3,
+                "price": 35000
+            },
+            "created_time": "2025-08-09T13:57:01.707524"
+        },
+        {
+            "id": "822588ac-63a8-45de-a282-0155d71bc8b7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00004",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "SUB_OLIVE_PREMIUM",
+                "quantity": 1,
+                "price": 70000
+            },
+            "created_time": "2025-08-09T13:57:01.707528"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [
+        {
+            "subscription_id": "e28e039c-103c-4001-9f20-9da33daa825b",
+            "customer_id": "user_00004",
+            "product_id": "SUB_BOOKCLUB_BASIC",
+            "start_date": "2025-03-13",
+            "end_date": "2026-01-07",
+            "status": "active"
+        }
+    ],
+    "dialogues": [
+        {
+            "Id": "2f2fea94-3ef4-4ab7-82bc-e575425b641d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "UserId": "user_00004",
+            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "유기농 제품도 있나요?",
+            "CreatedTime": "2025-08-09T14:28:26.041481",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d4db1684-907f-4924-b2ec-0e94c6438e53",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "UserId": "user_00004",
+            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "네, 저희 쇼핑몰에서는 다양한 유기농 제품을 취급하고 있습니다. 유기농 식품, 스킨케어 제품 등 여러 종류가 있으니 필요하신 제품을 말씀해 주시면 추천해 드릴 수 있습니다!",
+            "CreatedTime": "2025-08-09T14:28:27.317664",
+            "ItemId": "PROD_BOOK_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a83cff8d-cbe6-4a6a-b180-40893bb88748",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "UserId": "user_00004",
+            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "어떤 유기농 식품이 가장 인기 있나요?",
+            "CreatedTime": "2025-08-09T14:28:27.889576",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1fe51d63-57e7-4340-9519-36d20a1d879f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "UserId": "user_00004",
+            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "가장 인기 있는 유기농 식품 중 하나는 유기농 커피입니다. 특히 '스페셜티 원두 커피 200g'는 많은 고객님들께서 좋아하시는 제품입니다. 이 외에도 유기농 쌀, 과일, 채소 등 다양한 제품이 인기가 있습니다. 어떤 종류에 관심이 있으신가요?",
+            "CreatedTime": "2025-08-09T14:28:29.410729",
+            "ItemId": "PROD_COFFEE_001",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c4fb0240-4ca3-418c-88c9-04c1709778d6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "UserId": "user_00004",
+            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "유기농 과일에 대해 더 알고 싶어요. 어떤 종류가 있나요?",
+            "CreatedTime": "2025-08-09T14:28:30.107446",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "70847dc6-7fdc-4840-bb72-037dbedbad02",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "UserId": "user_00004",
+            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "Intent": "제공",
+            "Role": "assistant",
+            "Content": "유기농 과일로는 사과, 바나나, 오렌지, 포도, 딸기 등이 있습니다. 저희 쇼핑몰에서는 계절에 따라 신선한 유기농 과일을 제공합니다. 각 과일의 특징이나 가격 등을 알고 싶으시면 말씀해 주세요!",
+            "CreatedTime": "2025-08-09T14:28:31.781577",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T14:57:54.278298"
+}
