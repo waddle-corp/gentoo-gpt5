@@ -449,6 +449,8 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [cpModalOpen, setCpModalOpen] = useState(false);
   const [cpModalData, setCpModalData] = useState<{ condition: string; answer: string } | null>(null);
   const CUSTOM_PROMPT_CTA_URL = "https://preview--gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
+  const [cbModalOpen, setCbModalOpen] = useState(false);
+  const [cbModalExamples, setCbModalExamples] = useState<string[]>([]);
 
   const insightsInFlightRef = useRef<Record<string, boolean>>({});
   const nextInFlightRef = useRef<Record<string, boolean>>({});
@@ -499,7 +501,9 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
               body: JSON.stringify(putBody),
             });
             const putJson = await putRes.json();
-            if (!putRes.ok || !putJson?.ok) throw new Error(putJson?.error || `HTTP ${putRes.status}`);
+              if (!putRes.ok || !putJson?.ok) throw new Error(putJson?.error || `HTTP ${putRes.status}`);
+              setCbModalExamples(finalExamples);
+              setCbModalOpen(true);
           }
         } else if (firstAction.type === 'ui') {
           const demoBaseUrl = "https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
@@ -833,6 +837,53 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
         </div>
         )}
 
+        {cbModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+            <div className="w-full max-w-md rounded-xl border border-zinc-800 bg-neutral-950/90 p-6 shadow-2xl">
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="text-base font-semibold text-white">Chatbot examples updated 🎉</div>
+                  <div className="mt-1 text-xs text-zinc-400">Up to 3 examples are active</div>
+                </div>
+                <button
+                  className="rounded-md p-1 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/60"
+                  onClick={() => setCbModalOpen(false)}
+                  aria-label="Close"
+                >
+                  <CloseIcon className="size-4" />
+                </button>
+              </div>
+              <div className="mt-4 text-sm">
+                {cbModalExamples.length > 0 ? (
+                  <ul className="list-disc pl-5 space-y-1 text-zinc-200">
+                    {cbModalExamples.map((ex, i) => (
+                      <li key={`cb-ex-${i}`}>{ex}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <div className="text-zinc-400">No examples.</div>
+                )}
+              </div>
+              <div className="mt-6 flex justify-end gap-2">
+                <button
+                  onClick={() => setCbModalOpen(false)}
+                  className="px-4 py-2 rounded-md bg-zinc-800 text-zinc-100 hover:bg-zinc-700 text-sm"
+                >
+                  Close
+                </button>
+                {CUSTOM_PROMPT_CTA_URL && (
+                  <button
+                    onClick={() => window.open(CUSTOM_PROMPT_CTA_URL, '_blank', 'noopener,noreferrer')}
+                    className="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-500 text-sm"
+                    aria-label="Open preview"
+                  >
+                    Open preview to check chat update
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
         {/* Modal */}
         {modalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">

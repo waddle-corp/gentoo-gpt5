@@ -44,7 +44,7 @@ Each action object must have "type", "payload", and "content".
 \`\`\`json
 {
   "ui_action_1": { "type": "ui", "payload": "/sale/self-care", "content": "Launch a 10% discount on self-care products." },
-  "ui_action_2": { "type": "ui", "payload": "/featured", "content": "Feature 'artisanal candles' on the homepage." },
+  "ui_action_2": { "type": "ui", "payload": "/featured", "content": "Feature the best selling product on the homepage." },
   "chat_action": { "type": "chat", "payload": "Did you know all our self-care products are 10% off this week?", "content": "Have AI assistant Gentoo guide customers about self-care product discounts." },
   "start_example_action": { "type": "start-example", "payload": "candles for relaxation", "content": "Add start example to Gentoo Chatbot: candles for relaxation." }
 }
