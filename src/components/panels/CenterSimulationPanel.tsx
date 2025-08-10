@@ -494,12 +494,14 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
       }
 
       const { stats, byScore } = summarizeFor(bubbles);
+      // collect reasons for this board (if available)
+      const reasons = (boardsRef.current || []).find((b) => b.name === key)?.reasons || [];
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), 12000);
       const res = await fetch("/api/insights", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ stats, byScore }),
+        body: JSON.stringify({ stats, byScore, reasons }),
         signal: controller.signal,
       });
       clearTimeout(timer);
@@ -668,7 +670,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
           {/* Insights panel */}
           <div className="rounded-md text-sm bg-card/50">
             <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Insights</div>
-            <div className="h-40 overflow-y-auto overscroll-contain px-3 pb-3">
+            <div className="max-h-32 overflow-y-auto overscroll-contain px-3 pb-3">
               {!hasSimulated ? (
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
