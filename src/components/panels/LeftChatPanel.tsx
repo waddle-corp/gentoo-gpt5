@@ -269,17 +269,28 @@ export default function LeftChatPanel() {
                         <label key={i} className="flex items-center gap-2 text-sm">
                           <input
                             type="checkbox"
-                            className="size-4"
+                            className="size-4 rounded accent-indigo-500 focus:ring-2 focus:ring-purple-400/50"
                             checked={!!selected[i]}
                             onChange={(e) => setSelected((prev) => ({ ...prev, [i]: e.target.checked }))}
                           />
-                          <span className="truncate">{titleOf(h)}</span>
+                          <span className={`truncate ${selected[i] ? "text-purple-400" : "text-white"}`}>{titleOf(h)}</span>
                         </label>
                       ))}
                     </div>
                     <div className="flex justify-end">
-                      <Button size="sm" onClick={runEvaluateAll} disabled={evaluating}>
-                        {evaluating ? "Running..." : "Run Simulation"}
+                      <Button
+                        onClick={runEvaluateAll}
+                        disabled={evaluating}
+                        className="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-md hover:opacity-90 disabled:opacity-60 flex items-center gap-2"
+                      >
+                        {evaluating ? (
+                          <>
+                            <span className="inline-block w-3 h-3 border-2 border-white/50 border-t-white rounded-full animate-spin" />
+                            Running...
+                          </>
+                        ) : (
+                          <>Run Simulation</>
+                        )}
                       </Button>
                     </div>
                   </>
@@ -325,7 +336,7 @@ export default function LeftChatPanel() {
             <Button
               type="submit"
               size="icon"
-              className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg白 text-black hover:bg-white/90"
+              className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-white text-black hover:bg-white/90"
               disabled={isLoading || !input.trim()}
               aria-label="Send message"
             >
