@@ -1,0 +1,68 @@
+{
+    "user_id": "user_00185",
+    "raw_engagement_score": 12,
+    "normalized_engagement_score": 8,
+    "activities": [
+        {
+            "id": "0def060d-f09b-452e-a737-7a766a732444",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00185",
+            "event_name": "search",
+            "event_data": {
+                "query": "Good Morning Enamel Mug",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.638859"
+        },
+        {
+            "id": "afd1d549-b9bf-456e-816d-2e00139be0c1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00185",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06011",
+                "quantity": 2,
+                "price": 15.0
+            },
+            "created_time": "2025-08-10T01:32:25.638863"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "9ae92b7d-09fc-4733-b698-f7593a7fc600",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "efd99727-5c77-4294-9c20-a5e704aff5a4",
+            "UserId": "user_00185",
+            "session_id": "efd99727-5c77-4294-9c20-a5e704aff5a4",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the 'Oli & Carol | Kendall the Kale' (Product ID: 04166) suitable for babies who are teething, and how does it promote healthy lifestyle habits?",
+            "CreatedTime": "2025-08-10T01:51:00.663024",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e7d47460-afa6-431f-aee7-9267fc98f37f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "efd99727-5c77-4294-9c20-a5e704aff5a4",
+            "UserId": "user_00185",
+            "session_id": "efd99727-5c77-4294-9c20-a5e704aff5a4",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the 'Oli & Carol | Kendall the Kale' is suitable for babies who are teething. It is designed as a soft, vegetable-shaped baby toy that is perfect for teething and sensory play. Additionally, by introducing the shape and concept of a healthy vegetable like kale, it promotes healthy lifestyle habits from an early age. \n\nThe toy is made from 100% natural rubber, is non-toxic, and is safe for kids, allowing for worry-free play. \n\nFor more information, you can check it out [here](https://www.aldeahome.com/products/kendall-the-kale-2). The price is $24.00.",
+            "CreatedTime": "2025-08-10T01:51:04.508667",
+            "ItemId": "04166",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.909625"
+}

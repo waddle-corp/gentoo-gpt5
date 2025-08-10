@@ -1,149 +1,46 @@
 {
     "user_id": "user_00084",
-    "raw_engagement_score": 29,
-    "normalized_engagement_score": 19,
+    "raw_engagement_score": 11,
+    "normalized_engagement_score": 7,
     "activities": [
         {
-            "id": "d0e7e423-7d49-413d-92db-3d5603ec564e",
+            "id": "4a360898-a2ae-4555-8387-a0b3598e3910",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00084",
-            "event_name": "product_view",
+            "event_name": "search",
             "event_data": {
-                "product_id": "02882",
-                "category": "cyber-monday-gift",
-                "product_name": "Grizzly Hot Pocket Trivet",
-                "price": 16.0,
-                "product_url": "https://www.aldeahome.com/products/grizzly-hot-pocket-trivet",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/ScreenShot2020-09-11at10.10.00PM.png?v=1599887565",
-                "view_duration_seconds": 107
+                "query": "The Cocktail Canteen",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.768907"
+            "created_time": "2025-08-10T01:32:25.484899"
         },
         {
-            "id": "fcef872b-6a2a-452b-a8bf-1da05657da49",
+            "id": "25f2b325-b0fc-4256-be58-b1ed37dc91ed",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00084",
-            "event_name": "add_to_cart",
+            "event_name": "search",
             "event_data": {
-                "product_id": "05338",
-                "quantity": 1,
-                "price": 64.0
+                "query": "Liki Trike - Midnight Edition",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.768911"
-        },
-        {
-            "id": "58666900-6c15-448e-8c5c-4253c8bb9ad7",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00084",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00084_768941",
-                "total_amount": 55.0,
-                "items": [
-                    {
-                        "product_id": "00115",
-                        "quantity": 1,
-                        "price": 55.0
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.768954"
+            "created_time": "2025-08-10T01:32:25.487190"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "9952c20e-4e5c-4e43-87c1-940e1462dcdc",
+            "customer_id": "user_00084",
+            "product_id": "07687",
+            "rating": 1,
+            "review_title": "Disappointed",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2024-09-11T01:32:54.168917",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "6af2ffe6-13aa-4b58-ad64-55f636c82437",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "UserId": "user_00084",
-            "session_id": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Could you tell me if the 'Valentine Definition - Valentine's Day Card' (Product ID: 02202) comes with any additional customization options?",
-            "CreatedTime": "2025-08-09T20:24:05.827597",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d0552bf9-7d09-47c5-9e01-62161a0f8837",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "UserId": "user_00084",
-            "session_id": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The 'Valentine Definition - Valentine's Day Card' does not mention any customization options. It is blank inside, allowing you to add your personal message. \n\nYou can purchase it for $5.95 at this link: [Valentine Definition - Valentine's Day Card](https://www.aldeahome.com/products/valentine-definition-valentines-day-card).",
-            "CreatedTime": "2025-08-09T20:24:08.185283",
-            "ItemId": "02202",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "9adb46c7-d797-4607-81a4-521109cb1c56",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "UserId": "user_00084",
-            "session_id": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Are there any other Valentine's Day cards similar to the 'Valentine Definition - Valentine's Day Card' (Product ID: 02202) that you would recommend?",
-            "CreatedTime": "2025-08-09T20:24:09.002275",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a72d3da5-2192-459c-9a17-6292cd117750",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "UserId": "user_00084",
-            "session_id": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "I currently only have information about the 'Valentine Definition - Valentine's Day Card' (Product ID: 02202) and cannot provide details on other similar Valentine's Day cards. However, this card is a great choice for its simplicity and elegant design. If you're interested, you can purchase it for $5.95 here: [Valentine Definition - Valentine's Day Card](https://www.aldeahome.com/products/valentine-definition-valentines-day-card).",
-            "CreatedTime": "2025-08-09T20:24:10.975837",
-            "ItemId": "02202",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "ec875409-9828-4451-8f17-c0ec3722de41",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "UserId": "user_00084",
-            "session_id": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Do you know if the 'Valentine Definition - Valentine's Day Card' (Product ID: 02202) is available for bulk purchase, and if so, is there a discount for buying multiple cards?",
-            "CreatedTime": "2025-08-09T20:24:11.974636",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d464568f-c39c-48f6-a515-3d93c713e21e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "UserId": "user_00084",
-            "session_id": "0cd013a9-9657-44d2-83f0-258ac26f9fcd",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "I don't have specific information regarding bulk purchase options or discounts for the 'Valentine Definition - Valentine's Day Card' (Product ID: 02202). For details on bulk purchases and potential discounts, I recommend checking directly on the product page or contacting customer support through the store's website. You can view the card for $5.95 here: [Valentine Definition - Valentine's Day Card](https://www.aldeahome.com/products/valentine-definition-valentines-day-card).",
-            "CreatedTime": "2025-08-09T20:24:13.831679",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.211037"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.880364"
 }

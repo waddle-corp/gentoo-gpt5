@@ -1,0 +1,181 @@
+{
+    "user_id": "user_00189",
+    "raw_engagement_score": 38,
+    "normalized_engagement_score": 23,
+    "activities": [
+        {
+            "id": "b5bef3ef-fb53-4558-8eee-64428d1e96ff",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00189",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "01255",
+                "category": "labor-day-sale-2021",
+                "product_name": "Vertical Mini Library Walnut",
+                "price": 840.0,
+                "product_url": "https://www.aldeahome.com/products/vertical-mini-library-walnut-1",
+                "thumbnail_url": "",
+                "view_duration_seconds": 117
+            },
+            "created_time": "2025-08-10T01:32:25.643261"
+        },
+        {
+            "id": "dd4e9293-99f1-467c-b266-59f27028686f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00189",
+            "event_name": "search",
+            "event_data": {
+                "query": "Free your mind • wiggle collection  • brown 9 oz soy candle",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.645306"
+        },
+        {
+            "id": "f0379d44-7a85-4b04-8b9f-04e5cf83986a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00189",
+            "event_name": "search",
+            "event_data": {
+                "query": "Because I Had A Teacher",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.647626"
+        },
+        {
+            "id": "f21428c4-f265-48bd-8e89-38fed5dd23ea",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00189",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "00986",
+                "quantity": 1,
+                "price": 22.0
+            },
+            "created_time": "2025-08-10T01:32:25.647630"
+        },
+        {
+            "id": "0177b429-f828-4f93-8c05-a927b3d35df7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00189",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "00242",
+                "quantity": 3,
+                "price": 37.99
+            },
+            "created_time": "2025-08-10T01:32:25.647634"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "dce8a8a5-28dd-44a9-bab6-db74faa10860",
+            "customer_id": "user_00189",
+            "product_id": "02178",
+            "rating": 3,
+            "review_title": "Highly recommended",
+            "review_content": "Honestly, I had high hopes, but TwinRoo + Infant Car Seat Frame Double Stroller isn't quite my taste. I'll try something else next time.",
+            "created_at": "2025-06-16T01:32:54.169175",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "0150de47-3acf-4dcd-a3e3-d5c3733f00c6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "UserId": "user_00189",
+            "session_id": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Woodrose King Duvet cover (Product ID: 00927) is machine washable?",
+            "CreatedTime": "2025-08-10T01:51:15.241019",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "0f459917-0782-4d31-87cc-85ccfab67240",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "UserId": "user_00189",
+            "session_id": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The product information does not specify if the Woodrose King Duvet cover is machine washable. It’s best to check the care instructions on the product packaging or the retailer's website for specific washing guidelines. If you need further assistance, I recommend visiting the product page [here](https://www.aldeahome.com/products/woodrose-king-duvet-cover).",
+            "CreatedTime": "2025-08-10T01:51:17.084751",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3daca94b-6302-4977-a9ef-86c89857085f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "UserId": "user_00189",
+            "session_id": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you let me know if the Woodrose King Duvet cover (Product ID: 00927) comes with any warranty or return policy?",
+            "CreatedTime": "2025-08-10T01:51:18.518488",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "11017d6a-a160-435d-af60-d6a808a9a374",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "UserId": "user_00189",
+            "session_id": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The product information does not include details about a warranty or return policy for the Woodrose King Duvet cover. I recommend checking the retailer's website or contacting their customer service for specific information regarding warranties and returns. You can find more details on the product page [here](https://www.aldeahome.com/products/woodrose-king-duvet-cover).",
+            "CreatedTime": "2025-08-10T01:51:20.197604",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ae72f6cb-4d78-49c8-928a-d33c07a78b8b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "UserId": "user_00189",
+            "session_id": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Woodrose King Duvet cover (Product ID: 00927) is available in any other colors or sizes?",
+            "CreatedTime": "2025-08-10T01:51:21.387077",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d5827c71-b3e3-4362-af0b-3373c6234de4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "UserId": "user_00189",
+            "session_id": "7145397c-3d0c-43a7-b7bb-fd83779d3c09",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The product information provided only mentions the Woodrose King Duvet cover in the woodrose (dusty pink) color and does not specify any other colors or sizes. For more options, please check the retailer's website or contact their customer service for the most accurate details. You can view the product page [here](https://www.aldeahome.com/products/woodrose-king-duvet-cover).",
+            "CreatedTime": "2025-08-10T01:51:23.640378",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.910312"
+}

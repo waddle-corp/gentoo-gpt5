@@ -1,0 +1,182 @@
+{
+    "user_id": "user_00125",
+    "raw_engagement_score": 39,
+    "normalized_engagement_score": 23,
+    "activities": [
+        {
+            "id": "337a345a-c3d5-4303-bfa4-fe37a35b8b28",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00125",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.21.99"
+            },
+            "created_time": "2025-08-10T01:32:25.544857"
+        },
+        {
+            "id": "c3716020-7396-4330-a157-eca924f1ca17",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00125",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00125_544860",
+                "total_amount": 124.0,
+                "items": [
+                    {
+                        "product_id": "03456",
+                        "quantity": 1,
+                        "price": 124.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.544865"
+        },
+        {
+            "id": "6a932d08-2217-49b1-a911-b8458e040130",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00125",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.240.90"
+            },
+            "created_time": "2025-08-10T01:32:25.544869"
+        },
+        {
+            "id": "f81426b7-e475-44f5-ba46-abc04bda96a1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00125",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02793",
+                "quantity": 2,
+                "price": 17.0
+            },
+            "created_time": "2025-08-10T01:32:25.544872"
+        },
+        {
+            "id": "af626a08-3e00-4d96-8fe9-d34687c33660",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00125",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07525",
+                "category": "spa-bath-1",
+                "product_name": "Lilac - Just Bee Candles: 13 oz (up to 60 hrs of clean burning)",
+                "price": 28.99,
+                "product_url": "https://www.aldeahome.com/products/lilac-just-bee-candles-13-oz-up-to-60-hrs-of-clean-burning",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/5a9c0367c5151215ec5c9e3e64e149263ba8bbd8c44ebb3b6d0157dfe9c6d01c.jpg?v=1736956954",
+                "view_duration_seconds": 51
+            },
+            "created_time": "2025-08-10T01:32:25.544880"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "21f70883-9a56-41a2-a40e-7cb6c0da18e1",
+            "customer_id": "user_00125",
+            "product_id": "04829",
+            "rating": 5,
+            "review_title": "Super satisfied!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-02-18T01:32:54.169026",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "91735166-09d1-49bf-9f07-8b12021fa66f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "UserId": "user_00125",
+            "session_id": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me what types of surprises are included in the Halloween Character Surprise Balls (Product ID: 06205)?",
+            "CreatedTime": "2025-08-10T01:45:08.013865",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "dee60d07-9454-4af4-b028-70883f16a987",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "UserId": "user_00125",
+            "session_id": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Halloween Character Surprise Balls include a glow sticker, a squishy toy, and a spider tattoo as surprises. These fun items are perfect for Halloween festivities! If you're interested, the price is $19.95, and you can find more details [here](https://www.aldeahome.com/products/halloween-character-surprise-balls).",
+            "CreatedTime": "2025-08-10T01:45:09.568653",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ec691621-f7f9-48f7-ab26-c4d60c67e09a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "UserId": "user_00125",
+            "session_id": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are the Halloween Character Surprise Balls (Product ID: 06205) suitable for all ages, or are they more intended for kids?",
+            "CreatedTime": "2025-08-10T01:45:10.465704",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1fbc8cbb-1897-400b-8b14-d98d6aacaa82",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "UserId": "user_00125",
+            "session_id": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Halloween Character Surprise Balls are primarily designed as fun party favors and decorations, making them more suitable for kids. However, they can also be enjoyed by Halloween enthusiasts of all ages. Always consider individual preferences and supervision for younger children. The price is $19.95, and you can find more information [here](https://www.aldeahome.com/products/halloween-character-surprise-balls).",
+            "CreatedTime": "2025-08-10T01:45:12.298864",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2e86a46c-9fc0-4277-8278-ebd75f3eeef8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "UserId": "user_00125",
+            "session_id": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are the Halloween Character Surprise Balls (Product ID: 06205) individually wrapped, or do they come as a set that’s packaged together? Also, how many are included in the set?",
+            "CreatedTime": "2025-08-10T01:45:13.360853",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "410117ba-aa59-457b-a428-4ef173124390",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "UserId": "user_00125",
+            "session_id": "51e86ac4-6d30-401c-9bcc-ae92c17a157d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Halloween Character Surprise Balls come as a set of 4 surprise balls packaged together. They are not individually wrapped. This set includes fun surprises that make them great for sharing at Halloween parties! The price is $19.95, and you can view more details [here](https://www.aldeahome.com/products/halloween-character-surprise-balls).",
+            "CreatedTime": "2025-08-10T01:45:15.382079",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.894818"
+}

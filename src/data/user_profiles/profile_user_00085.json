@@ -1,61 +1,124 @@
 {
     "user_id": "user_00085",
-    "raw_engagement_score": 7,
-    "normalized_engagement_score": 5,
+    "raw_engagement_score": 38,
+    "normalized_engagement_score": 23,
     "activities": [
         {
-            "id": "03006e72-5d82-4691-8085-47d578ae76f9",
+            "id": "006cc76b-e15d-48c6-b8b0-21b9571f018e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00085",
-            "event_name": "login",
+            "event_name": "purchase_completed",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.250.75"
+                "order_id": "ORDER_user_00085_487194",
+                "total_amount": 828.0,
+                "items": [
+                    {
+                        "product_id": "01187",
+                        "quantity": 1,
+                        "price": 796.0
+                    },
+                    {
+                        "product_id": "05855",
+                        "quantity": 1,
+                        "price": 32.0
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.768959"
+            "created_time": "2025-08-10T01:32:25.487199"
         },
         {
-            "id": "f9659e96-21f9-4407-bb7a-aca50e495ccd",
+            "id": "5e09fa57-c42a-493e-94ce-3c2a9becfc0c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00085",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "05144",
-                "category": "exclude",
-                "product_name": "Mini Golf - Full Set",
-                "price": 40.0,
-                "product_url": "https://www.aldeahome.com/products/mini-golf-full-set-2",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/fc0301793016e3668d0b85daad62429a00ceebadf53007f83b1956401ddee1b5.jpg?v=1719985415",
-                "view_duration_seconds": 106
+                "product_id": "00173",
+                "category": "apparel-1",
+                "product_name": "Cabins Slouch Pant",
+                "price": 39.0,
+                "product_url": "https://www.aldeahome.com/products/cabins-slouch-pant",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/slouch_pant_cabins_810x969_crop_center_3b874ec6-2753-455a-92a9-01b866521f85-948964.jpg?v=1634852678",
+                "view_duration_seconds": 88
             },
-            "created_time": "2025-08-09T20:05:50.768964"
+            "created_time": "2025-08-10T01:32:25.487204"
         },
         {
-            "id": "8949d72c-2432-46a5-a43a-09fdd150b0a5",
+            "id": "d2e5d164-2ecf-436c-8076-56662e90c1b2",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00085",
-            "event_name": "search",
+            "event_name": "purchase_completed",
             "event_data": {
-                "query": "Gordie the grey plush Persian cat",
-                "search_results_count": 1,
-                "filters_applied": []
+                "order_id": "ORDER_user_00085_487206",
+                "total_amount": 129.95,
+                "items": [
+                    {
+                        "product_id": "05362",
+                        "quantity": 1,
+                        "price": 129.95
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.771332"
+            "created_time": "2025-08-10T01:32:25.487210"
         },
         {
-            "id": "52c0ea09-84c5-49c8-96b0-3d500f35e15e",
+            "id": "ea78caf5-f9cf-4c51-8234-6714db556187",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00085",
-            "event_name": "login",
+            "event_name": "add_to_cart",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.168.40"
+                "product_id": "06607",
+                "quantity": 3,
+                "price": 22.0
             },
-            "created_time": "2025-08-09T20:05:50.771337"
+            "created_time": "2025-08-10T01:32:25.487214"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "4b8d92bb-5d33-4a62-babd-6a55adec8eed",
+            "customer_id": "user_00085",
+            "product_id": "00392",
+            "rating": 3,
+            "review_title": "Not great",
+            "review_content": "It was better than I expected. Addison is truly great value for money.",
+            "created_at": "2025-06-26T01:32:54.168922",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.211383"
+    "dialogues": [
+        {
+            "Id": "e0cdc439-485c-4ad7-b9ea-d692c251c9fd",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ec80d8fd-1efc-44b2-9868-bfbec184285d",
+            "UserId": "user_00085",
+            "session_id": "ec80d8fd-1efc-44b2-9868-bfbec184285d",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Veer Seat Pads (Set of 2) with product ID 07573 are compatible with other stroller models, or are they specifically designed for the Cruiser?",
+            "CreatedTime": "2025-08-10T01:40:54.443488",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7f2b9891-09ac-4e33-906e-615411a1d7de",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ec80d8fd-1efc-44b2-9868-bfbec184285d",
+            "UserId": "user_00085",
+            "session_id": "ec80d8fd-1efc-44b2-9868-bfbec184285d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Veer Seat Pads (Set of 2) are specifically designed for the Cruiser model. They are custom fitted to easily pop in and stay snug, even when the Cruiser is folded. Therefore, they are not compatible with other stroller models. You can find more information and purchase them for $69.00 at this link: [Veer Seat Pads (Set of 2)](https://www.aldeahome.com/products/seat-pads-set-of-2).",
+            "CreatedTime": "2025-08-10T01:40:56.615224",
+            "ItemId": "07573",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.880548"
 }

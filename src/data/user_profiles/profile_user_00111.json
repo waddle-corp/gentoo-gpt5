@@ -1,0 +1,136 @@
+{
+    "user_id": "user_00111",
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 15,
+    "activities": [
+        {
+            "id": "639f6a33-866f-4db4-a54d-7c7c1afb19a2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00111",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.196.171"
+            },
+            "created_time": "2025-08-10T01:32:25.526431"
+        },
+        {
+            "id": "fba76608-29a0-4f6a-927f-812bdae467d2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00111",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "01800",
+                "quantity": 3,
+                "price": 30.0
+            },
+            "created_time": "2025-08-10T01:32:25.526435"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "9e9d289d-fb1d-4387-a3a5-164c5a47af1c",
+            "customer_id": "user_00111",
+            "product_id": "02007",
+            "rating": 4,
+            "review_title": "Super satisfied!",
+            "review_content": "Dumpling Van is fantastic! I wish I'd found it sooner.",
+            "created_at": "2024-12-19T01:32:54.168988",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "9628a1f0-1e29-4e11-968f-b3da77a6dbfd",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "UserId": "user_00111",
+            "session_id": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the 'How to Draw Vehicles' (Product ID: 04899) kit includes any specific tips for beginners?",
+            "CreatedTime": "2025-08-10T01:43:26.305548",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bd8c6b52-d645-4b0f-a41e-11f4474910cf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "UserId": "user_00111",
+            "session_id": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'How to Draw Vehicles' kit is designed as a step-by-step guide, making it suitable for artists of all skill levels, including beginners. It provides instructions on how to draw 36 different vehicles, which can help beginners learn and improve their drawing skills. If you're interested, you can purchase it for $20.00 at this link: [How to Draw Vehicles](https://www.aldeahome.com/products/how-to-draw-vehicles).",
+            "CreatedTime": "2025-08-10T01:43:28.600934",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6e235bb4-e048-482d-8227-bad6ea635539",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "UserId": "user_00111",
+            "session_id": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Does the 'How to Draw Vehicles' kit (Product ID: 04899) include any tips or techniques for shading and coloring the vehicles after drawing them?",
+            "CreatedTime": "2025-08-10T01:43:29.815177",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "24b20f42-6f4b-4ce0-a3ef-38a1f9cd61a4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "UserId": "user_00111",
+            "session_id": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'How to Draw Vehicles' kit includes 4 double-ended coloring pencils, which can be used for shading and coloring the vehicles once they are drawn. However, specific tips or techniques for shading and coloring may not be detailed in the kit. It primarily focuses on drawing instructions. If you're interested, you can purchase it for $20.00 at this link: [How to Draw Vehicles](https://www.aldeahome.com/products/how-to-draw-vehicles).",
+            "CreatedTime": "2025-08-10T01:43:31.833934",
+            "ItemId": "04899",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6db2792b-12cb-4968-bcea-cd17f93fb032",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "UserId": "user_00111",
+            "session_id": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the types of vehicles included in the 'How to Draw Vehicles' kit (Product ID: 04899)? Are there any specific examples?",
+            "CreatedTime": "2025-08-10T01:43:32.720556",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d8c48212-9141-4fee-8ec7-ff6538471652",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "UserId": "user_00111",
+            "session_id": "215f58d1-e4fa-4e46-a24d-64d315d10144",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'How to Draw Vehicles' kit includes instructions for drawing 36 different types of vehicles. The range covers various modes of transport, including examples such as bicycles, blimps, and boats. This diversity allows artists to explore and create a busy world of transportation in their drawings. If you're interested in this kit, it's available for $20.00 at this link: [How to Draw Vehicles](https://www.aldeahome.com/products/how-to-draw-vehicles).",
+            "CreatedTime": "2025-08-10T01:43:34.646575",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.889663"
+}

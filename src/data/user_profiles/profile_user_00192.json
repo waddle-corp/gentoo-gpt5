@@ -1,0 +1,160 @@
+{
+    "user_id": "user_00192",
+    "raw_engagement_score": 34,
+    "normalized_engagement_score": 21,
+    "activities": [
+        {
+            "id": "067329bf-d203-447d-b9ec-1d7828e0ff9d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00192",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03581",
+                "quantity": 3,
+                "price": 65.0
+            },
+            "created_time": "2025-08-10T01:32:25.650030"
+        },
+        {
+            "id": "03b96051-c03c-4672-87fd-7a411de612ec",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00192",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "01681",
+                "quantity": 3,
+                "price": 18.95
+            },
+            "created_time": "2025-08-10T01:32:25.650034"
+        },
+        {
+            "id": "a94bdb2a-b4c6-4e34-bbea-2d3f03ed426e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00192",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06079",
+                "quantity": 3,
+                "price": 39.99
+            },
+            "created_time": "2025-08-10T01:32:25.650037"
+        },
+        {
+            "id": "47711b08-f9eb-4a00-866f-caeb223bb6a1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00192",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.240.166"
+            },
+            "created_time": "2025-08-10T01:32:25.650041"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "f033e832-a733-40d7-aabb-fea38c869eb6",
+            "customer_id": "user_00192",
+            "product_id": "01473",
+            "rating": 3,
+            "review_title": "Exceeded expectations",
+            "review_content": "Fast shipping and great quality. I especially love the details on Baby Loves Sports.",
+            "created_at": "2025-08-08T01:32:54.169189",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "ee3118f0-6ab3-408f-aef2-1a303fc8a4c6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "UserId": "user_00192",
+            "session_id": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the National Parks Canvas Picnic Tote & Blanket (Product ID: 03088) is suitable for outdoor use in wet conditions, or is it better for dry environments?",
+            "CreatedTime": "2025-08-10T01:51:24.773723",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "743e39e7-cf14-462d-ad26-468f1ac374e5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "UserId": "user_00192",
+            "session_id": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The National Parks Canvas Picnic Tote & Blanket is made of sturdy cotton canvas, which is designed for outdoor use. However, it does not specify being waterproof or water-resistant. For wet conditions, it may not perform well, so it's better suited for dry environments. For optimal use, it's recommended to use it in fair weather. If you're interested, it’s priced at $92.00, and you can find more details [here](https://www.aldeahome.com/products/national-parks-canvas-picnic-tote-blanket).",
+            "CreatedTime": "2025-08-10T01:51:27.249405",
+            "ItemId": "03088",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "61204d31-52ac-4fef-b811-c1dbed6f8af0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "UserId": "user_00192",
+            "session_id": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the National Parks Canvas Picnic Tote & Blanket (Product ID: 03088) easy to clean after use, and does it hold up well after multiple washes?",
+            "CreatedTime": "2025-08-10T01:51:28.350942",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e326444e-9c68-4d7f-a83e-783ac67c4acf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "UserId": "user_00192",
+            "session_id": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the National Parks Canvas Picnic Tote & Blanket is easy to clean. It can be machine washed in cold water and tumble dried on low. It is advised to wash colors separately to maintain its quality. While the product does not specify how well it holds up after multiple washes, cotton canvas generally retains its durability with proper care. If you're interested, the price is $92.00, and you can find more information [here](https://www.aldeahome.com/products/national-parks-canvas-picnic-tote-blanket).",
+            "CreatedTime": "2025-08-10T01:51:30.506781",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4eb4278c-dad5-4f54-aea1-a12f82c1015a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "UserId": "user_00192",
+            "session_id": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the National Parks Canvas Picnic Tote & Blanket (Product ID: 03088) comes in any other colors, or is it only available in black and oat?",
+            "CreatedTime": "2025-08-10T01:51:31.498008",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "6dee6f75-81ef-4e6d-8fe9-bc3b68edfc46",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "UserId": "user_00192",
+            "session_id": "c96f0e0d-04d8-44cf-96e4-a4d15ef6b077",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The National Parks Canvas Picnic Tote & Blanket is only available in the color combination of black and oat. There are no other color options listed for this product. If you're interested in purchasing it, the price is $92.00, and you can find more details [here](https://www.aldeahome.com/products/national-parks-canvas-picnic-tote-blanket).",
+            "CreatedTime": "2025-08-10T01:51:33.263708",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.910915"
+}

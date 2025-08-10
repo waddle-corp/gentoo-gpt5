@@ -1,121 +1,101 @@
 {
     "user_id": "user_00018",
-    "raw_engagement_score": 30,
-    "normalized_engagement_score": 20,
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "917eea00-1bc5-492b-8afa-a519c3a18595",
+            "id": "ccdedc9f-cf28-47bf-abf5-afb1b72e0073",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00018",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.99.39"
+            },
+            "created_time": "2025-08-10T01:32:25.377377"
+        },
+        {
+            "id": "12487292-c032-4cc6-8ee6-5c45fd18eb10",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00018",
             "event_name": "search",
             "event_data": {
-                "query": "Amber Fawn Character Blanket",
+                "query": "Tiny Perfect Things",
                 "search_results_count": 1,
                 "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.668959"
+            "created_time": "2025-08-10T01:32:25.379717"
         },
         {
-            "id": "7df7d258-1c75-43d3-acc5-835796639e62",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00018",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "04496",
-                "category": "exclude",
-                "product_name": "UPPAbaby Cruz V2 PiggyBack",
-                "price": 159.99,
-                "product_url": "https://www.aldeahome.com/products/uppababy-cruz-v2-piggyback",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/CRUZV2_PiggyBack_Hero.png?v=1716651951",
-                "view_duration_seconds": 25
-            },
-            "created_time": "2025-08-09T20:05:50.668972"
-        },
-        {
-            "id": "14ebd030-ae3a-494a-b1c5-8aaf2532ab07",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00018",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "00969",
-                "category": "best-gifts-for-the-new-dad",
-                "product_name": "Veer Cruiser XL All-Terrain Wagon",
-                "price": 799.0,
-                "product_url": "https://www.aldeahome.com/products/veer-cruiser-xl-all-terrain-wagon",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/CruiserXL5437_06463b5f-a09a-42d9-97ba-f8b54e114cff.jpg?v=1716651877",
-                "view_duration_seconds": 27
-            },
-            "created_time": "2025-08-09T20:05:50.668979"
-        },
-        {
-            "id": "52fac7d4-021a-4308-ad94-3a8b3e9729e8",
+            "id": "eb62815a-c6a8-4667-aee4-58c904a64c29",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00018",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00018_668990",
-                "total_amount": 110.94,
+                "order_id": "ORDER_user_00018_379721",
+                "total_amount": 67.0,
                 "items": [
                     {
-                        "product_id": "00468",
+                        "product_id": "01998",
                         "quantity": 1,
-                        "price": 10.99
+                        "price": 35.0
                     },
                     {
-                        "product_id": "06476",
+                        "product_id": "04504",
                         "quantity": 1,
-                        "price": 99.95
+                        "price": 32.0
                     }
                 ],
                 "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.669011"
+            "created_time": "2025-08-10T01:32:25.379727"
+        },
+        {
+            "id": "1a11796e-96c9-4a72-8cc3-32289d6b6bf6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00018",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07371",
+                "category": "pride",
+                "product_name": "Rainbow Unicorn 12pc Shaped Jigsaw with Shaped Box",
+                "price": 12.0,
+                "product_url": "https://www.aldeahome.com/products/rainbow-unicorn-12pc-shaped-jigsaw-with-shaped-box",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/c2b9b5f8f59328d552c56caa0a0d4fe89878128ea3c419820f2009421d9d84c8.jpg?v=1645630896",
+                "view_duration_seconds": 36
+            },
+            "created_time": "2025-08-10T01:32:25.379732"
+        },
+        {
+            "id": "100e147c-1d37-4647-b674-997affc56f61",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00018",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "02513",
+                "category": "cozy-practical-finds",
+                "product_name": "Woodland Butterfly Vase",
+                "price": 40.0,
+                "product_url": "https://www.aldeahome.com/products/woodland-butterfly-vase",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/DYVASWOOBU_PROD_72_GB-scaled_jpg.jpg?v=1725821727",
+                "view_duration_seconds": 108
+            },
+            "created_time": "2025-08-10T01:32:25.379736"
         }
     ],
     "reviews": [
         {
-            "review_id": "9721aa8f-db55-48d5-91be-792dc218dcbf",
+            "review_id": "85eda78d-4f70-460f-8c14-16c478173914",
             "customer_id": "user_00018",
-            "product_id": "04544",
+            "product_id": "06250",
             "rating": 5,
-            "review_title": "Love it!",
+            "review_title": "Highly recommend",
             "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2025-04-21T20:52:52.182096",
+            "created_at": "2025-01-16T01:32:54.168777",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "b28e8f9e-1028-41d0-b813-7cda7bd89092",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1d9588a0-ff67-42e6-853a-00ab5b156fe9",
-            "UserId": "user_00018",
-            "session_id": "1d9588a0-ff67-42e6-853a-00ab5b156fe9",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if the 24 Hour Convertible Baby Sleeper Gown - Clay Stripe (Product ID: 07056) is suitable for both day and night use, and how easy it is to transition between the gown and sleeper?",
-            "CreatedTime": "2025-08-09T20:17:24.419083",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "6ca5b41c-b7da-4351-b5b0-8670a4619da9",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1d9588a0-ff67-42e6-853a-00ab5b156fe9",
-            "UserId": "user_00018",
-            "session_id": "1d9588a0-ff67-42e6-853a-00ab5b156fe9",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "Yes, the **24 Hour Convertible Baby Sleeper Gown - Clay Stripe** is designed for both day and night use. It features a one snap closure that allows for a seamless transition between gown and sleeper, making it very easy to switch from wake time to sleep time or for diaper changes. This versatility makes it perfect for your baby's first few months. \n\nThe price of this product is **$35.00**. If you're interested, you can find more information and purchase it [here](https://www.aldeahome.com/products/24-hour-convertible-baby-sleeper-gown-clay-stripe).",
-            "CreatedTime": "2025-08-09T20:17:27.535397",
-            "ItemId": "07056",
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.184148"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.850557"
 }

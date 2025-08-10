@@ -1,23 +1,175 @@
 {
     "user_id": "user_00092",
-    "raw_engagement_score": 5,
-    "normalized_engagement_score": 4,
+    "raw_engagement_score": 34,
+    "normalized_engagement_score": 21,
     "activities": [
         {
-            "id": "5328b3b0-f415-4794-aca6-fa79b60dad64",
+            "id": "dc70da82-4359-4d7c-a77f-cb5f39835a99",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00092",
-            "event_name": "add_to_cart",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "02435",
-                "quantity": 2,
-                "price": 18.0
+                "order_id": "ORDER_user_00092_491742",
+                "total_amount": 120.0,
+                "items": [
+                    {
+                        "product_id": "01274",
+                        "quantity": 1,
+                        "price": 60.0
+                    },
+                    {
+                        "product_id": "06449",
+                        "quantity": 1,
+                        "price": 60.0
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.783697"
+            "created_time": "2025-08-10T01:32:25.491746"
+        },
+        {
+            "id": "142a9553-8d2d-4f77-8605-629ffbace14d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00092",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07168",
+                "category": "pet-gifts",
+                "product_name": "Baby Fleece Towel//DOG TOWEL: Tan",
+                "price": 22.0,
+                "product_url": "https://www.aldeahome.com/products/baby-fleece-towel-dog-towel-tan",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/a04c7f373d765386b4b7088544a6b626c95c4a89ce77dfa99daefcd364b78f01.jpg?v=1700585306",
+                "view_duration_seconds": 36
+            },
+            "created_time": "2025-08-10T01:32:25.491751"
+        },
+        {
+            "id": "764d6df6-a578-4e54-a08a-19d0bed6d8ac",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00092",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.149.198"
+            },
+            "created_time": "2025-08-10T01:32:25.491755"
+        },
+        {
+            "id": "c4b810a8-9272-4eea-9413-7bf9921064d4",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00092",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.229.153"
+            },
+            "created_time": "2025-08-10T01:32:25.491758"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "cc00aadc-f859-4326-991e-edb0e8debba1",
+            "customer_id": "user_00092",
+            "product_id": "00669",
+            "rating": 3,
+            "review_title": "A bit disappointing",
+            "review_content": "I use it every day. I can't live without Firefighters Day2Day Nap Mat. Definitely repurchasing!",
+            "created_at": "2025-05-19T01:32:54.168945",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.212659"
+    "dialogues": [
+        {
+            "Id": "60e2c376-3b25-4fab-a675-2704f34528d9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "UserId": "user_00092",
+            "session_id": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about how the self-watering feature works in the Garden Jar Mint Indoor Garden Kit (Product ID: 03123)?",
+            "CreatedTime": "2025-08-10T01:41:23.682660",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "941beedd-9b7e-44ad-9488-ac7b821e9c7e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "UserId": "user_00092",
+            "session_id": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Garden Jar Mint Indoor Garden Kit features a self-watering system designed to make plant care easy, especially for those who may forget to water regularly. This kit uses a passive hydroponic system known as “wicking.” The wicking action draws water and nutrients from the bottom reservoir of the vintage-inspired mason jar up to the plant's roots as needed. This means you can avoid the common issues of overwatering or underwatering. Just add water to the jar, place it in a sunny window, and your mint plants will thrive with minimal effort!\n\nIf you're interested in purchasing the kit, it is priced at $20.00. You can find more details and make a purchase here: [Garden Jar Mint Indoor Garden Kit](https://www.aldeahome.com/products/garden-jar-mint-indoor-garden-kit).",
+            "CreatedTime": "2025-08-10T01:41:27.238073",
+            "ItemId": "03123",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d74c5adc-42c9-4a58-a625-f7e79516f8b6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "UserId": "user_00092",
+            "session_id": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Garden Jar Mint Indoor Garden Kit (Product ID: 03123) suitable for beginners, or do you need some gardening experience to use it effectively?",
+            "CreatedTime": "2025-08-10T01:41:28.282367",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "277f375f-ed28-434a-a2e2-5ae938cbc330",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "UserId": "user_00092",
+            "session_id": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Garden Jar Mint Indoor Garden Kit is very suitable for beginners! Its self-watering feature and passive hydroponic system make it easy to care for plants without requiring advanced gardening experience. You simply need to add water and place it in a sunny window, allowing the kit to take care of the rest. This makes it an excellent choice for anyone new to gardening or those who may struggle with plant care. \n\nIf you're interested in starting your indoor gardening journey, the kit is available for $20.00. You can learn more and purchase it here: [Garden Jar Mint Indoor Garden Kit](https://www.aldeahome.com/products/garden-jar-mint-indoor-garden-kit).",
+            "CreatedTime": "2025-08-10T01:41:31.149873",
+            "ItemId": "03123",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "68740bc5-2b52-4533-afda-c01fc18cd785",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "UserId": "user_00092",
+            "session_id": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "What types of plants can I grow using the Garden Jar Mint Indoor Garden Kit (Product ID: 03123), or is it specifically designed just for mint?",
+            "CreatedTime": "2025-08-10T01:41:31.985524",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "a22fd500-ef7c-4fe2-bbc0-5462a2c1c56a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "UserId": "user_00092",
+            "session_id": "9a6f4a00-3943-4ddf-937d-8e79fe320305",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Garden Jar Mint Indoor Garden Kit is specifically designed for growing mint, as it comes equipped with Certified Organic Mint Seeds. While the kit is optimized for mint, you could potentially use it to grow other small herb plants that thrive in similar conditions. However, for the best results, it's recommended to stick with mint or herbs that have similar growing requirements. \n\nIf you're interested in growing mint indoors easily, this kit is available for $20.00. You can find more details and make a purchase here: [Garden Jar Mint Indoor Garden Kit](https://www.aldeahome.com/products/garden-jar-mint-indoor-garden-kit).",
+            "CreatedTime": "2025-08-10T01:41:35.440595",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.883064"
 }

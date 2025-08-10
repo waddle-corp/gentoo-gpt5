@@ -1,138 +1,156 @@
 {
     "user_id": "user_00026",
-    "raw_engagement_score": 24,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "16e52d42-c01e-4ed7-ad79-4ef378262190",
+            "id": "9f7ec057-2528-4507-a715-8eae6e07f72a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00026",
-            "event_name": "add_to_cart",
+            "event_name": "product_view",
             "event_data": {
-                "product_id": "06250",
-                "quantity": 1,
-                "price": 16.95
+                "product_id": "00103",
+                "category": "apothecary",
+                "product_name": "Ten Thousand Waves Yuzu Shower Gel",
+                "price": 16.0,
+                "product_url": "https://www.aldeahome.com/products/yuzu-shower-gel",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/e3edda9dbeee8214ff96ee3803afd4da.jpg?v=1572391761",
+                "view_duration_seconds": 10
             },
-            "created_time": "2025-08-09T20:05:50.681038"
+            "created_time": "2025-08-10T01:32:25.388757"
         },
         {
-            "id": "32ae5f93-7ce1-4646-b50f-35975aa79a2b",
+            "id": "918db6a2-e9db-4dea-8583-9c1afe56682a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00026",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07549",
+                "category": "accessories-1",
+                "product_name": "Thule Yepp 2 Mini",
+                "price": 219.95,
+                "product_url": "https://www.aldeahome.com/products/thule-yepp-2-mini-1",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/1545464.jpg?v=1750185608",
+                "view_duration_seconds": 75
+            },
+            "created_time": "2025-08-10T01:32:25.388761"
+        },
+        {
+            "id": "ae33e3cb-d0e4-44aa-b270-0740192b1f3e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00026",
             "event_name": "login",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.95.73"
+                "login_method": "social_google",
+                "ip_address": "192.168.108.7"
             },
-            "created_time": "2025-08-09T20:05:50.681042"
-        },
-        {
-            "id": "0557f22a-93c4-4c3c-941a-63bafc86051d",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00026",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "00344",
-                "category": "arts-crafts",
-                "product_name": "Paint by Stickers Cats",
-                "price": 16.99,
-                "product_url": "https://www.aldeahome.com/products/paint-by-stickers-cats",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/9781523504480_p0_v2_s550x406.jpg?v=1572391917",
-                "view_duration_seconds": 62
-            },
-            "created_time": "2025-08-09T20:05:50.681046"
-        },
-        {
-            "id": "84ecba9d-7a51-4913-913f-a31389045e3d",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00026",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "04568",
-                "category": "exclude",
-                "product_name": "Tricycle Mouse, Big Sister - Coral",
-                "price": 34.5,
-                "product_url": "https://www.aldeahome.com/products/tricycle-mouse-big-sister-coral",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/17-4204-00_aca95d28-43c2-4a10-a9fd-015bc5c712ea_2048x_png.jpg?v=1743622859",
-                "view_duration_seconds": 65
-            },
-            "created_time": "2025-08-09T20:05:50.681051"
+            "created_time": "2025-08-10T01:32:25.388765"
         }
     ],
     "reviews": [
         {
-            "review_id": "a2b3f704-4ea0-4618-93d0-56f14eece147",
+            "review_id": "880ebd9f-d425-4283-a9e3-2fe217974e9d",
             "customer_id": "user_00026",
-            "product_id": "02736",
-            "rating": 2,
+            "product_id": "01441",
+            "rating": 1,
             "review_title": "Below expectations",
             "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2025-01-02T20:52:52.182126",
+            "created_at": "2024-11-10T01:32:54.168797",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "380e47b2-dba1-4441-a6c5-bb6f45dba1c8",
+            "Id": "43e2ae7f-d5d9-47e2-a444-ea5db5992b94",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "805149d2-cdb9-4cc2-b196-9aad50859581",
+            "DialogueId": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
             "UserId": "user_00026",
-            "session_id": "805149d2-cdb9-4cc2-b196-9aad50859581",
-            "Intent": "정보",
+            "session_id": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Is the GOLD AND WHITE FANTASTICAL ZEBRA Christmas Ornament (Product ID: 02976) suitable for outdoor use, or is it intended for indoor decoration only?",
-            "CreatedTime": "2025-08-09T20:17:45.935797",
+            "Content": "Can you tell me more about the sizing options available for the Bamboo Organic Cotton Convertible Gown - Midnight (Product ID: 07079)?",
+            "CreatedTime": "2025-08-10T01:35:27.373614",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "338ad0e2-8f50-482c-895b-9917e117e93b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
+            "UserId": "user_00026",
+            "session_id": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I'm sorry, but I don't have specific information on the sizing options available for the Bamboo Organic Cotton Convertible Gown - Midnight (Product ID: 07079). However, you can view the product and check for sizing details by visiting the following link: [Bamboo Organic Cotton Convertible Gown - Midnight](https://www.aldeahome.com/products/bamboo-organic-cotton-convertible-gown-midnight). The gown is priced at $34.00 and features luxuriously soft fabric and convenient design for diaper changes.",
+            "CreatedTime": "2025-08-10T01:35:29.795339",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "23839c41-eaa5-495e-8a6c-96c7ab3b2d97",
+            "Id": "072dac8a-7729-4744-b3e4-2d7bbd69372b",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "805149d2-cdb9-4cc2-b196-9aad50859581",
+            "DialogueId": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
             "UserId": "user_00026",
-            "session_id": "805149d2-cdb9-4cc2-b196-9aad50859581",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The GOLD AND WHITE FANTASTICAL ZEBRA Christmas Ornament is primarily intended for indoor decoration. It is not specified for outdoor use, so it's best to keep it inside to ensure it remains in good condition. If you have more questions about the ornament, feel free to ask! \n\nYou can view the product [here](https://www.aldeahome.com/products/fantastical-gold-and-white-zebra-christmas-ornament). The price is $15.97.",
-            "CreatedTime": "2025-08-09T20:17:48.025756",
-            "ItemId": "02976",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "67ec000d-e965-47c3-b0ad-856e9268cadb",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "805149d2-cdb9-4cc2-b196-9aad50859581",
-            "UserId": "user_00026",
-            "session_id": "805149d2-cdb9-4cc2-b196-9aad50859581",
-            "Intent": "일반",
+            "session_id": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Is the GOLD AND WHITE FANTASTICAL ZEBRA Christmas Ornament (Product ID: 02976) made of durable materials, or should I be cautious about handling it?",
-            "CreatedTime": "2025-08-09T20:17:49.539794",
+            "Content": "What age range or weight is the Bamboo Organic Cotton Convertible Gown - Midnight (Product ID: 07079) designed for?",
+            "CreatedTime": "2025-08-10T01:35:30.600443",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "111c838f-ef39-47c2-8284-a7f060cce979",
+            "Id": "2bab2eea-f0e5-4f7e-b13f-3ee86b672606",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "805149d2-cdb9-4cc2-b196-9aad50859581",
+            "DialogueId": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
             "UserId": "user_00026",
-            "session_id": "805149d2-cdb9-4cc2-b196-9aad50859581",
+            "session_id": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific information on the age range or weight that the Bamboo Organic Cotton Convertible Gown - Midnight (Product ID: 07079) is designed for. For the most accurate details, I recommend checking the product page here: [Bamboo Organic Cotton Convertible Gown - Midnight](https://www.aldeahome.com/products/bamboo-organic-cotton-convertible-gown-midnight). The gown is priced at $34.00 and features a design that is great for diaper changes and comfort.",
+            "CreatedTime": "2025-08-10T01:35:33.977144",
+            "ItemId": "07079",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "035ff552-43ca-41e6-97b4-eb76dd214857",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
+            "UserId": "user_00026",
+            "session_id": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me what colors or patterns the Bamboo Organic Cotton Convertible Gown - Midnight (Product ID: 07079) is available in?",
+            "CreatedTime": "2025-08-10T01:35:34.902801",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "28cae61a-d31b-4dfa-88d3-6a9d8d3d0fa5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
+            "UserId": "user_00026",
+            "session_id": "e6e2c850-e127-4a8b-878c-8ec66ca32874",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The durability of the GOLD AND WHITE FANTASTICAL ZEBRA Christmas Ornament isn't specified in the product details provided. Generally, ornaments can be delicate and may require careful handling to avoid damage. It's advisable to treat it with care, especially during decoration and storage. \n\nIf you would like to purchase it, you can find it for $15.97 [here](https://www.aldeahome.com/products/fantastical-gold-and-white-zebra-christmas-ornament).",
-            "CreatedTime": "2025-08-09T20:17:51.696690",
-            "ItemId": "02976",
-            "Thumbs": null,
+            "Content": "The Bamboo Organic Cotton Convertible Gown - Midnight (Product ID: 07079) is available in the color \"Midnight.\" Unfortunately, I don't have information on other colors or patterns for this specific product. You can view the gown and check for any additional color options by visiting the product page here: [Bamboo Organic Cotton Convertible Gown - Midnight](https://www.aldeahome.com/products/bamboo-organic-cotton-convertible-gown-midnight). The price is $34.00.",
+            "CreatedTime": "2025-08-10T01:35:37.662225",
+            "ItemId": null,
+            "Thumbs": "up",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.188468"
+    "profile_generated_at": "2025-08-10T01:53:50.855558"
 }

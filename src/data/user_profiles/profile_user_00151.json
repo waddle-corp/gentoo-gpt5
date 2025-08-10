@@ -1,0 +1,132 @@
+{
+    "user_id": "user_00151",
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "ebc9c897-36a4-4ebd-ac77-5c4213c310ff",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00151",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00151_581329",
+                "total_amount": 16.0,
+                "items": [
+                    {
+                        "product_id": "06113",
+                        "quantity": 1,
+                        "price": 16.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.581333"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "316df9fb-31b0-44ca-b749-fc8122199683",
+            "customer_id": "user_00151",
+            "product_id": "05543",
+            "rating": 4,
+            "review_title": "Best purchase ever",
+            "review_content": "Miruna Necklace is fantastic! I wish I'd found it sooner.",
+            "created_at": "2024-09-04T01:32:54.169079",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "2ebe02fa-5400-4d19-bfd9-c79e88a7aef8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "UserId": "user_00151",
+            "session_id": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the sizing options available for the Bamboo Organic Cotton Convertible Gown - Many Moons (Product ID: 01047)?",
+            "CreatedTime": "2025-08-10T01:47:38.561827",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "37e56805-6885-4ebd-accc-44c75342c294",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "UserId": "user_00151",
+            "session_id": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I'm sorry, but I don't have information on the sizing options available for the Bamboo Organic Cotton Convertible Gown - Many Moons (Product ID: 01047). However, I can tell you that it is priced at $34.00 and features luxuriously soft, breathable fabric, built-in mitts, and a convenient design for easy diaper changes. You can view more details and the product at this link: [Bamboo Organic Cotton Convertible Gown - Many Moons](https://www.aldeahome.com/products/bamboo-organic-cotton-convertible-gown-many-moons).",
+            "CreatedTime": "2025-08-10T01:47:41.379095",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "691230ad-97a4-4222-b4da-7b354dcd64a9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "UserId": "user_00151",
+            "session_id": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "What size range does the Bamboo Organic Cotton Convertible Gown - Many Moons (Product ID: 01047) come in, and how do I choose the right size for my newborn?",
+            "CreatedTime": "2025-08-10T01:47:42.375277",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b74edccd-32b1-4574-8864-3be7659efb84",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "UserId": "user_00151",
+            "session_id": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I apologize, but I don't have specific details regarding the size range for the Bamboo Organic Cotton Convertible Gown - Many Moons (Product ID: 01047). To choose the right size for your newborn, it's typically best to consider your baby's weight and length. Most brands provide a sizing chart based on these measurements. \n\nFor more information, you may want to check the product page or contact customer support for assistance. The gown is priced at $34.00, and you can view it here: [Bamboo Organic Cotton Convertible Gown - Many Moons](https://www.aldeahome.com/products/bamboo-organic-cotton-convertible-gown-many-moons).",
+            "CreatedTime": "2025-08-10T01:47:46.222530",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "f4618f6c-48a0-4cb4-957e-4db335ad006e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "UserId": "user_00151",
+            "session_id": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you let me know if the Bamboo Organic Cotton Convertible Gown - Many Moons (Product ID: 01047) is available in different colors or patterns?",
+            "CreatedTime": "2025-08-10T01:47:47.063799",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6c861102-a590-4d84-b7ca-08417280a620",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "UserId": "user_00151",
+            "session_id": "680c43f3-1915-4517-befb-45b66ec7d2d2",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have information regarding the availability of different colors or patterns for the Bamboo Organic Cotton Convertible Gown - Many Moons (Product ID: 01047). The details provided focus on its features and benefits. You may want to check the product page for any updates on color options or additional patterns. \n\nThe gown is priced at $34.00, and you can view it here: [Bamboo Organic Cotton Convertible Gown - Many Moons](https://www.aldeahome.com/products/bamboo-organic-cotton-convertible-gown-many-moons).",
+            "CreatedTime": "2025-08-10T01:47:49.593556",
+            "ItemId": "01047",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.901998"
+}

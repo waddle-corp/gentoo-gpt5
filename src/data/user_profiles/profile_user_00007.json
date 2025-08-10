@@ -1,27 +1,137 @@
 {
     "user_id": "user_00007",
-    "raw_engagement_score": 2,
-    "normalized_engagement_score": 2,
+    "raw_engagement_score": 31,
+    "normalized_engagement_score": 19,
     "activities": [
         {
-            "id": "e659808f-c446-4287-b06f-500cd9b61089",
+            "id": "95f684dc-24d1-49af-910a-0fc1a640b7c5",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00007",
-            "event_name": "product_view",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "07470",
-                "category": "single-stroller",
-                "product_name": "Veer Switch&Roll Stroller (Switchback Seat, &Roll Frame)",
-                "price": 986.0,
-                "product_url": "https://www.aldeahome.com/products/veer-switch-roll-stroller",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/Switch_Roll_Stroller_1-Colors_Gray_Granite_Switchback_Seat_Roll_Leather_Grips_Leather_Grips_for_Armbar-3400x3400.jpg?v=1748970701",
-                "view_duration_seconds": 98
+                "order_id": "ORDER_user_00007_368190",
+                "total_amount": 68.95,
+                "items": [
+                    {
+                        "product_id": "02712",
+                        "quantity": 1,
+                        "price": 20.0
+                    },
+                    {
+                        "product_id": "03709",
+                        "quantity": 1,
+                        "price": 48.95
+                    }
+                ],
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.644753"
+            "created_time": "2025-08-10T01:32:25.368195"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "20374633-f50d-445f-9a38-a18b08543dc4",
+            "customer_id": "user_00007",
+            "product_id": "05974",
+            "rating": 4,
+            "review_title": "Best purchase ever",
+            "review_content": "Pop Cutie Gacha Fruit Charm Necklaces is fantastic! I wish I'd found it sooner.",
+            "created_at": "2024-09-11T01:32:54.168743",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.178819"
+    "dialogues": [
+        {
+            "Id": "18f764ae-e7bd-458f-8ce3-ebc2926aa1c3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "UserId": "user_00007",
+            "session_id": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Stokke Snoozi Fitted Sheet 2-Pack (Product ID: 01307) is suitable for all crib mattresses, or is it specifically designed for the Stokke Snoozi mattress only?",
+            "CreatedTime": "2025-08-10T01:33:57.821134",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4f0c0af4-fdef-4eef-b072-7064ba338fa5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "UserId": "user_00007",
+            "session_id": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Stokke Snoozi Fitted Sheet 2-Pack is specifically designed to fit the unique shape of the Stokke Snoozi mattress. Therefore, it may not be suitable for all crib mattresses. For the best fit and comfort, it is recommended to use these sheets with the Stokke Snoozi mattress.\n\nIf you’re interested in purchasing, the price is $85.00, and you can find it [here](https://www.aldeahome.com/products/stokke-snoozi-fitted-sheet-2-pack).",
+            "CreatedTime": "2025-08-10T01:33:59.867420",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "04eb541d-9f0d-44e6-a9ad-185bfe3e12f0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "UserId": "user_00007",
+            "session_id": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are the colors in the Stokke Snoozi Fitted Sheet 2-Pack (Product ID: 01307) safe for babies, and do they fade after washing?",
+            "CreatedTime": "2025-08-10T01:34:00.935275",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "d75446df-914a-45c5-8b56-22996b40c5f3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "UserId": "user_00007",
+            "session_id": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the colors in the Stokke Snoozi Fitted Sheet 2-Pack, which include Dandelion Beige and Vanilla Cream, are safe for babies. The sheets are Oeko-Tex® Standard 100 class 1 certified, ensuring they are free from harmful substances and safe for your newborn's delicate skin.\n\nAs for fading, the sheets are machine washable and designed to maintain their color and quality through washing, but it's always a good practice to follow the care instructions to ensure longevity.\n\nIf you're interested in purchasing, the price is $85.00, and you can find it [here](https://www.aldeahome.com/products/stokke-snoozi-fitted-sheet-2-pack).",
+            "CreatedTime": "2025-08-10T01:34:03.793268",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ef505aef-9c84-4913-aaab-3133944c14d1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "UserId": "user_00007",
+            "session_id": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Stokke Snoozi Fitted Sheet 2-Pack (Product ID: 01307) is available in any other colors or patterns besides Dandelion Beige and Vanilla Cream?",
+            "CreatedTime": "2025-08-10T01:34:04.798522",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8424b9d9-1621-42df-b63b-bedf4f93d624",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "UserId": "user_00007",
+            "session_id": "2ad867bd-2a99-4543-aae5-14eb67b52d9f",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Stokke Snoozi Fitted Sheet 2-Pack is available only in the colors Dandelion Beige and Vanilla Cream. There are no other colors or patterns offered for this specific product. \n\nIf you're interested in purchasing, the price is $85.00, and you can find it [here](https://www.aldeahome.com/products/stokke-snoozi-fitted-sheet-2-pack).",
+            "CreatedTime": "2025-08-10T01:34:06.523658",
+            "ItemId": "01307",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.842663"
 }

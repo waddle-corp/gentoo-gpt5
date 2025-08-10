@@ -1,114 +1,179 @@
 {
     "user_id": "user_00091",
-    "raw_engagement_score": 17,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 43,
+    "normalized_engagement_score": 26,
     "activities": [
         {
-            "id": "d2c6eff9-f31a-4752-90b1-ff1e9dee6083",
+            "id": "e9b0c765-71a3-404b-945a-9596dc44b1c2",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00091",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "01031",
-                "quantity": 1,
-                "price": 53.0
+                "product_id": "05253",
+                "quantity": 3,
+                "price": 44.95
             },
-            "created_time": "2025-08-09T20:05:50.783692"
+            "created_time": "2025-08-10T01:32:25.489673"
+        },
+        {
+            "id": "1efec0f5-bb86-444c-82f1-a038adde18fa",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00091",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "05469",
+                "quantity": 3,
+                "price": 37.45
+            },
+            "created_time": "2025-08-10T01:32:25.489676"
+        },
+        {
+            "id": "ea09ea9d-74c6-4faf-947f-1af1a093d33f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00091",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00091_489679",
+                "total_amount": 89.99,
+                "items": [
+                    {
+                        "product_id": "01025",
+                        "quantity": 1,
+                        "price": 89.99
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.489683"
+        },
+        {
+            "id": "6d37bc7d-1a1a-4808-ad08-4158d96a28ad",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00091",
+            "event_name": "search",
+            "event_data": {
+                "query": "Admiral™ Vintage-Style Irish-Cut Crystal Whiskey Decanter",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.491734"
+        },
+        {
+            "id": "5123e370-58d5-461f-a912-6560b8ec119e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00091",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.178.78"
+            },
+            "created_time": "2025-08-10T01:32:25.491738"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "fba04caa-e380-4162-bc4d-f096bd07b358",
+            "customer_id": "user_00091",
+            "product_id": "05502",
+            "rating": 4,
+            "review_title": "Best purchase ever",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-05-10T01:32:54.168941",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "fc4b9ee4-c9d4-4dba-8373-c52c7d335452",
+            "Id": "f6248c8e-843e-45d4-8f38-2e9bd1dafd59",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "DialogueId": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
             "UserId": "user_00091",
-            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
-            "Intent": "탐색",
+            "session_id": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "Can the hamper insert for bassinet sta (Product ID: 07478) be easily cleaned, and what materials is it made from?",
-            "CreatedTime": "2025-08-09T20:24:14.827223",
+            "Content": "Is the dinosaur night light (Product ID: 03701) suitable for children of all ages, and does it have any adjustable brightness settings?",
+            "CreatedTime": "2025-08-10T01:41:15.858608",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "fa9a8291-b5b2-437b-9483-9e312e494d29",
+            "Id": "4296e74a-111b-4a1d-88cc-cdae9368a008",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "DialogueId": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
             "UserId": "user_00091",
-            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "session_id": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The hamper insert for bassinet sta is designed with convenience in mind, making it easy to clean. However, specific details about the materials used in its construction are not provided. For more information or to view the product, you can visit the following link: [hamper insert for bassinet sta](https://www.aldeahome.com/products/hamper-insert-for-bassinet-sta). The price is $49.99.",
-            "CreatedTime": "2025-08-09T20:24:16.998652",
+            "Content": "The dinosaur night light is designed to be suitable for children of all ages. However, I don't have specific information regarding adjustable brightness settings. You can find more details and make a purchase for $24.95 at the following link: [dinosaur night light](https://www.aldeahome.com/products/dinosaur-night-light).",
+            "CreatedTime": "2025-08-10T01:41:17.527865",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "e1467893-a235-4ee4-b96a-68a20acc3ac8",
+            "Id": "db79d3ca-e41e-423c-9aa4-1495e13b96bf",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "DialogueId": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
             "UserId": "user_00091",
-            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "session_id": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the dinosaur night light (Product ID: 03701) is battery-operated or if it needs to be plugged in?",
+            "CreatedTime": "2025-08-10T01:41:18.572300",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e0c81f41-4c94-48c6-9c7a-055b31cf2cb0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
+            "UserId": "user_00091",
+            "session_id": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have specific information about whether the dinosaur night light is battery-operated or needs to be plugged in. For more details, you might want to check the product page. It is available for $24.95 at this link: [dinosaur night light](https://www.aldeahome.com/products/dinosaur-night-light).",
+            "CreatedTime": "2025-08-10T01:41:20.436029",
+            "ItemId": "03701",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d38a4fda-5e8a-4809-9b87-0443957c7b7b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
+            "UserId": "user_00091",
+            "session_id": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
             "Intent": "정보",
             "Role": "user",
-            "Content": "Does the hamper insert for bassinet sta (Product ID: 07478) come in different colors or patterns, or is it only available in one style?",
-            "CreatedTime": "2025-08-09T20:24:17.964103",
+            "Content": "Can you tell me if the dinosaur night light (Product ID: 03701) has any safety features, like being made from non-toxic materials?",
+            "CreatedTime": "2025-08-10T01:41:21.275583",
             "ItemId": null,
             "Thumbs": "down",
             "Channel": "web"
         },
         {
-            "Id": "be438ec9-4d8d-4be9-8d36-c4e4de8a96a4",
+            "Id": "1ba41123-50d1-4137-9137-8e50dc03fac9",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "DialogueId": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
             "UserId": "user_00091",
-            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "session_id": "df86a2fa-30a5-41e6-8ff4-3355f0de2930",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The information provided does not specify if the hamper insert for bassinet sta comes in different colors or patterns. It appears to be available in one style. For more details, you can check the product page here: [hamper insert for bassinet sta](https://www.aldeahome.com/products/hamper-insert-for-bassinet-sta). The price is $49.99.",
-            "CreatedTime": "2025-08-09T20:24:19.751356",
-            "ItemId": "07478",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "abfc4f88-0520-4810-906f-bb399b2c96ea",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
-            "UserId": "user_00091",
-            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me if the hamper insert for bassinet sta (Product ID: 07478) is compatible with all UPPAbaby bassinet models, or are there specific models it works with?",
-            "CreatedTime": "2025-08-09T20:24:20.783460",
+            "Content": "I don't have specific details regarding the safety features or whether the dinosaur night light is made from non-toxic materials. For more information on safety features, please visit the product page. You can purchase it for $24.95 here: [dinosaur night light](https://www.aldeahome.com/products/dinosaur-night-light).",
+            "CreatedTime": "2025-08-10T01:41:22.775659",
             "ItemId": null,
             "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "b0bf0de2-517a-47c5-8e08-468f27a62859",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
-            "UserId": "user_00091",
-            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The compatibility details for the hamper insert for bassinet sta with specific UPPAbaby bassinet models are not provided. It is advisable to check the product page for any compatibility information or consult UPPAbaby's customer support for confirmation. You can view the product here: [hamper insert for bassinet sta](https://www.aldeahome.com/products/hamper-insert-for-bassinet-sta) for more insights. The price is $49.99.",
-            "CreatedTime": "2025-08-09T20:24:22.701591",
-            "ItemId": null,
-            "Thumbs": "up",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.212337"
+    "profile_generated_at": "2025-08-10T01:53:50.882672"
 }

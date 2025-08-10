@@ -1,106 +1,91 @@
 {
     "user_id": "user_00025",
-    "raw_engagement_score": 21,
-    "normalized_engagement_score": 14,
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 10,
     "activities": [
         {
-            "id": "91b789e9-29dc-4ac5-a412-6483bb0c7907",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00025",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.40.254"
-            },
-            "created_time": "2025-08-09T20:05:50.680998"
-        },
-        {
-            "id": "59092817-c9b2-4068-93ca-4b6a92bdf298",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00025",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.128.128"
-            },
-            "created_time": "2025-08-09T20:05:50.681002"
-        },
-        {
-            "id": "7647ee1d-1150-445d-8edb-ddfd164b7e22",
+            "id": "5b88a29c-821e-470b-aa27-da472cd8401d",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00025",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00025_681008",
-                "total_amount": 12.0,
+                "order_id": "ORDER_user_00025_388745",
+                "total_amount": 10.99,
                 "items": [
                     {
-                        "product_id": "04084",
+                        "product_id": "05772",
                         "quantity": 1,
-                        "price": 12.0
+                        "price": 10.99
                     }
                 ],
                 "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.681024"
-        },
-        {
-            "id": "40b595e7-c204-4dca-aac9-f47f1b4ff7bf",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00025",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.66.214"
-            },
-            "created_time": "2025-08-09T20:05:50.681028"
-        },
-        {
-            "id": "95cfc69b-e4c2-4f4c-a034-d2ce2996b0de",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00025",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "03925",
-                "quantity": 3,
-                "price": 7.5
-            },
-            "created_time": "2025-08-09T20:05:50.681033"
+            "created_time": "2025-08-10T01:32:25.388753"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "9275d8da-dd57-4bc2-9a0d-26c4aa31dea7",
+            "Id": "27f59e9b-4539-4872-bd7c-a34c30b7915b",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "179ed3b3-097b-4a88-b682-3245a893c97f",
+            "DialogueId": "13f0e55c-2dd3-410c-9d9b-2ec96022a1b6",
             "UserId": "user_00025",
-            "session_id": "179ed3b3-097b-4a88-b682-3245a893c97f",
-            "Intent": "탐색",
+            "session_id": "13f0e55c-2dd3-410c-9d9b-2ec96022a1b6",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "Is the recommended age of 6-7 years for The Pirate Skeleton Excavation Kit (Product ID: 00037) strictly enforced, or can it be suitable for younger children with supervision?",
-            "CreatedTime": "2025-08-09T20:17:42.253158",
+            "Content": "Can the San Francisco Dry + Wet Activity Placemat (Product ID: 00235) be easily cleaned after use, and what materials are the included ButterStix® made from?",
+            "CreatedTime": "2025-08-10T01:35:18.409782",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "cdea2823-178e-46ae-8a90-a8cf9c607b1d",
+            "Id": "e113121a-d21f-41cc-b9ea-9debe99d76f4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "179ed3b3-097b-4a88-b682-3245a893c97f",
+            "DialogueId": "13f0e55c-2dd3-410c-9d9b-2ec96022a1b6",
             "UserId": "user_00025",
-            "session_id": "179ed3b3-097b-4a88-b682-3245a893c97f",
-            "Intent": "추천",
+            "session_id": "13f0e55c-2dd3-410c-9d9b-2ec96022a1b6",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "The recommended age of 6-7 years for The Pirate Skeleton Excavation Kit is a guideline based on safety and the complexity of the activity. While it is designed for that age group, younger children may enjoy it with supervision from an adult to ensure safety and assist with the excavation process. Always consider the individual child's abilities and interests. \n\nFor more information, you can view the product here: [The Pirate Skeleton Excavation Kit](https://www.aldeahome.com/products/the-pirate-skeleton-excavation-kit) priced at $33.99.",
-            "CreatedTime": "2025-08-09T20:17:44.672268",
-            "ItemId": "00037",
+            "Content": "Yes, the San Francisco Dry + Wet Activity Placemat is easy to clean after use; you can simply wipe it clean with a damp cloth. The included ButterStix® are non-toxic and specifically designed for use on this type of surface. \n\nIf you're interested in purchasing it, the price is $18.00, and you can find more details [here](https://www.aldeahome.com/products/san-francisco-dry-wet-activity-placemat).",
+            "CreatedTime": "2025-08-10T01:35:20.458918",
+            "ItemId": "00235",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "cce74857-eb06-4436-9bb1-6513b1434f16",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "13f0e55c-2dd3-410c-9d9b-2ec96022a1b6",
+            "UserId": "user_00025",
+            "session_id": "13f0e55c-2dd3-410c-9d9b-2ec96022a1b6",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the San Francisco Dry + Wet Activity Placemat (Product ID: 00235) safe for young children, and are the ButterStix® easy for them to grip and use?",
+            "CreatedTime": "2025-08-10T01:35:22.037963",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "51316ea8-f19c-4bb1-99a2-60e756ac0908",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "13f0e55c-2dd3-410c-9d9b-2ec96022a1b6",
+            "UserId": "user_00025",
+            "session_id": "13f0e55c-2dd3-410c-9d9b-2ec96022a1b6",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the San Francisco Dry + Wet Activity Placemat is safe for young children as it is made with non-toxic materials. The included ButterStix® are designed to be easy for little hands to grip and use, making them perfect for young artists. This combination makes it a great option for creative dining entertainment for kids.\n\nIf you're interested in purchasing it, the price is $18.00, and you can find more details [here](https://www.aldeahome.com/products/san-francisco-dry-wet-activity-placemat).",
+            "CreatedTime": "2025-08-10T01:35:25.648820",
+            "ItemId": null,
             "Thumbs": "down",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.187725"
+    "profile_generated_at": "2025-08-10T01:53:50.854978"
 }

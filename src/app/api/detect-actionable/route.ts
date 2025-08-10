@@ -10,36 +10,47 @@ export async function POST(req: Request) {
     const messages = Array.isArray(body?.messages) ? (body.messages as Array<{ role: string; content: string }>) : [];
     const lastAssistant = String(body?.lastAssistant ?? "");
 
-    const system = `너는 상점 운영 보조 시스템의 감지기이다. 지금 시점이 "행동 가능한(액셔너블) 가설"을 세워 시뮬레이션을 돌릴 타이밍인지 판정하고, 가설 "제목"만 반환한다.
-반드시 JSON으로만 반환한다. 필드: actionable(boolean), hypotheses(string[]), reason(string).
-규칙:
-- actionable: 시뮬레이션 버튼 노출 여부
-- hypotheses: 각 항목은 실행 가능한 가설의 "제목"만 한국어로 작성 (8~40자, 명사구/요약형)
-  - 금지: 불릿/번호/따옴표/콜론/대시/마침표, 문장형 종결어미(다/요/니다/합니다/해요/됩니다/있습니다), 일반 전략 키워드(캠페인/프로모션/프로그램/전략/개최/제공/활용)
-  - 포함 권장: [대상/세그먼트 또는 상품]+[조치/변경]+(선택)지표
-- reason: 짧은 이유`;
+    const system = `You are a detector for a shop-ops assistant. Your primary goal is to determine if a user should be prompted to run a simulation.
+You MUST return a JSON object with fields: actionable(boolean), hypotheses(string[]), reason(string).
 
-    const prompt = `대화 컨텍스트(요약용):\n${JSON.stringify(messages).slice(0, 6000)}\n\n마지막 어시스턴트 메시지:\n"""\n${lastAssistant}\n"""`;
+**Hard Rules:**
+1.  **If the last assistant message explicitly asks to run a simulation (e.g., "Would you like to explore this option?"), you MUST set actionable=true.**
+2.  **If the message lists concrete strategies (e.g., under 'Merchandising', 'Marketing'), you MUST extract 1-3 concise titles as hypotheses and set actionable=true.**
+3.  Even if strategies are generic, distill 1-2 relevant hypothesis titles.
+4.  Hypothesis titles MUST be concise (4-50 chars), in English or Korean, and in a noun-phrase style. Avoid punctuation.
+
+Examples of good hypotheses titles:
+- "Expand product range for AOV lift"
+- "Bundle offers for accessories"
+- "Personalized recommendations for high-intent users"
+`;
+
+    const prompt = `Based on the rules, analyze the last assistant message in the context of the conversation and generate the JSON response.
+
+Conversation context (for summarization):
+${JSON.stringify(messages).slice(0, 6000)}
+
+Last assistant message:
+"""
+${lastAssistant}
+"""`;
 
     const schema = jsonSchema({
       type: "object",
       properties: {
-        actionable: { type: "boolean" },
+        actionable: { type: "boolean", description: "Set to true if a simulation should be proposed." },
         hypotheses: {
           type: "array",
+          description: "A list of 3-5 concise, actionable hypothesis titles. MUST NOT be empty if actionable is true.",
           items: {
             type: "string",
-            minLength: 8,
-            maxLength: 40,
-            pattern: "^(?!.*(캠페인|프로모션|프로그램|전략|개최|제공|활용))(?!.*[•\\-:—\"'。\.])(?!.*(다$|요$|니다$|합니다$|해요$|됩니다$|있습니다$)).+$",
+            minLength: 4,
+            maxLength: 50,
           },
-          minItems: 0,
-          maxItems: 8,
         },
-        reason: { type: "string" },
+        reason: { type: "string", description: "A brief rationale for your decision." },
       },
-      required: ["actionable", "hypotheses"],
-      additionalProperties: false,
+      required: ["actionable", "hypotheses", "reason"],
     });
 
     const { object } = await generateObject({
@@ -54,27 +65,24 @@ export async function POST(req: Request) {
     type Out = { actionable: boolean; hypotheses: string[]; reason?: string };
     const out = object as Out;
 
-    const sentenceEnd = /(다|요|니다|합니다|해요|됩니다|있습니다)$/;
-    const banned = /(캠페인|프로모션|프로그램|전략|개최|제공|활용)$/;
-
     const cleaned: string[] = Array.isArray(out?.hypotheses)
-      ? (out.hypotheses as string[])
-          .map((s: string) => String(s))
-          .map((s: string) => s.replace(/["'•\-:\u2014。\.]/g, " ").replace(/\s+/g, " ").trim())
-          .filter((s: string) => s.length >= 8 && s.length <= 40)
-          .filter((s: string) => !sentenceEnd.test(s))
-          .filter((s: string) => !banned.test(s))
+      ? out.hypotheses
+          .map((s) => String(s).replace(/["'•\-:\u2014。\.]/g, "").trim())
+          .filter((s) => s.length >= 4 && s.length <= 50)
       : [];
+      
+    const unique = [...new Set(cleaned)];
 
-    const seen = new Set<string>();
-    const unique: string[] = [];
-    for (const s of cleaned) {
-      const key = s.toLowerCase();
-      if (!seen.has(key)) { seen.add(key); unique.push(s); }
-    }
+    // Final check: if the model returns actionable but no hypotheses, it's a failure.
+    const isActionable = out.actionable && unique.length > 0;
 
-    return Response.json({ ok: true, actionable: Boolean(out?.actionable && unique.length > 0), hypotheses: unique, reason: String(out?.reason ?? "") });
+    console.log("[detect-actionable] Input:", lastAssistant.slice(0, 100));
+    console.log("[detect-actionable] Output:", { isActionable, hypotheses: unique, reason: out.reason });
+
+    return Response.json({ ok: true, actionable: isActionable, hypotheses: unique, reason: String(out?.reason ?? "") });
   } catch (err: unknown) {
-    return new Response(JSON.stringify({ ok: false, error: (err as Error)?.message || String(err) }), { status: 500, headers: { "content-type": "application/json" } });
+    const error = err as Error;
+    console.error("[detect-actionable] Critical Error:", error.message, error.stack);
+    return new Response(JSON.stringify({ ok: false, error: error.message || String(err) }), { status: 500, headers: { "content-type": "application/json" } });
   }
 } 

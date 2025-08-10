@@ -1,136 +1,145 @@
 {
     "user_id": "user_00095",
-    "raw_engagement_score": 27,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 40,
+    "normalized_engagement_score": 24,
     "activities": [
         {
-            "id": "a460da79-7f7e-484f-a218-381178ae8d76",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00095",
-            "event_name": "search",
-            "event_data": {
-                "query": "Icarus Painting Holiday Ornament",
-                "search_results_count": 1,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T20:05:50.788581"
-        },
-        {
-            "id": "50220a47-a123-46b5-974b-cd1d14b2a695",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00095",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00095_788589",
-                "total_amount": 168.8,
-                "items": [
-                    {
-                        "product_id": "04073",
-                        "quantity": 1,
-                        "price": 30.8
-                    },
-                    {
-                        "product_id": "03455",
-                        "quantity": 1,
-                        "price": 138.0
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.788599"
-        },
-        {
-            "id": "af5b6279-01e2-46e6-8449-f5b7772959ae",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00095",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "04979",
-                "category": "exclude",
-                "product_name": "Unicorn Paint Box",
-                "price": 20.0,
-                "product_url": "https://www.aldeahome.com/products/unicorn-paint-box",
-                "thumbnail_url": "",
-                "view_duration_seconds": 115
-            },
-            "created_time": "2025-08-09T20:05:50.788605"
-        },
-        {
-            "id": "7be7999d-3302-4856-93fb-2837835670a2",
+            "id": "14e0d549-030c-43d8-9ac1-5e5f00d97316",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00095",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "02063",
-                "quantity": 1,
-                "price": 440.0
+                "product_id": "01095",
+                "quantity": 3,
+                "price": 1695.0
             },
-            "created_time": "2025-08-09T20:05:50.788610"
+            "created_time": "2025-08-10T01:32:25.496355"
+        },
+        {
+            "id": "b03557ad-c837-4681-8405-2650f55a0371",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00095",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00095_496358",
+                "total_amount": 119.0,
+                "items": [
+                    {
+                        "product_id": "02551",
+                        "quantity": 1,
+                        "price": 99.0
+                    },
+                    {
+                        "product_id": "04256",
+                        "quantity": 1,
+                        "price": 20.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.496363"
+        },
+        {
+            "id": "8dcbbe02-5b9f-483c-9bc3-b2dbf0cd47d5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00095",
+            "event_name": "search",
+            "event_data": {
+                "query": "Shea Butter Handcreme | Carrot and Neroli",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.498597"
+        },
+        {
+            "id": "e66ae0ca-4775-4bcb-be46-d05776e035f9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00095",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06850",
+                "quantity": 3,
+                "price": 41.5
+            },
+            "created_time": "2025-08-10T01:32:25.498601"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "8ec875f8-e3c3-4eca-92a3-db4f92a77781",
+            "customer_id": "user_00095",
+            "product_id": "01421",
+            "rating": 5,
+            "review_title": "Best purchase ever",
+            "review_content": "Little Blue Boat Lift-a-Flap Board Book is fantastic! I wish I'd found it sooner.",
+            "created_at": "2025-04-06T01:32:54.168955",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "18dab9da-466d-421e-a4a3-a67fa333e28b",
+            "Id": "f6db8b1a-e354-4cea-8459-285997c879ee",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f8d7fc8e-4279-44d7-995a-753d1ce988c4",
+            "DialogueId": "e35922de-753c-4449-b6c3-f2dd30648881",
             "UserId": "user_00095",
-            "session_id": "f8d7fc8e-4279-44d7-995a-753d1ce988c4",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me if the Gentry Giraffe Plush Rattle (Product ID: 06746) is suitable for infants?",
-            "CreatedTime": "2025-08-09T20:24:33.859613",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "4e5bc639-5dd4-4440-99dd-db68b725695a",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f8d7fc8e-4279-44d7-995a-753d1ce988c4",
-            "UserId": "user_00095",
-            "session_id": "f8d7fc8e-4279-44d7-995a-753d1ce988c4",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "Yes, the Gentry Giraffe Plush Rattle is suitable for infants. It is designed to be safe and enjoyable for young children. You can purchase it for $19.97 at this link: [Gentry Giraffe Plush Rattle](https://www.aldeahome.com/products/gentry-giraffe-plush-rattle).",
-            "CreatedTime": "2025-08-09T20:24:36.536391",
-            "ItemId": "06746",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "113c27a7-9d09-4521-be4c-5856fa1546c7",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f8d7fc8e-4279-44d7-995a-753d1ce988c4",
-            "UserId": "user_00095",
-            "session_id": "f8d7fc8e-4279-44d7-995a-753d1ce988c4",
+            "session_id": "e35922de-753c-4449-b6c3-f2dd30648881",
             "Intent": "일반",
             "Role": "user",
-            "Content": "Is the Gentry Giraffe Plush Rattle (Product ID: 06746) machine washable, or does it require special cleaning?",
-            "CreatedTime": "2025-08-09T20:24:37.911604",
+            "Content": "Can you tell me more about the materials used in the Scarab Necklace (Product ID: 05929)? I'm particularly interested in the quality of the 14K gold filled pendant and the sterling silver chain.",
+            "CreatedTime": "2025-08-10T01:41:36.479115",
             "ItemId": null,
-            "Thumbs": "down",
+            "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "db147de1-98ab-4443-aada-d6b3df35175e",
+            "Id": "e792fabc-e3c1-473c-a955-fe5a900c67e8",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f8d7fc8e-4279-44d7-995a-753d1ce988c4",
+            "DialogueId": "e35922de-753c-4449-b6c3-f2dd30648881",
             "UserId": "user_00095",
-            "session_id": "f8d7fc8e-4279-44d7-995a-753d1ce988c4",
+            "session_id": "e35922de-753c-4449-b6c3-f2dd30648881",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The cleaning instructions for the Gentry Giraffe Plush Rattle are not specified in the provided information. It's generally best to check the product tag or packaging for specific care instructions. If you need further assistance, please let me know!",
-            "CreatedTime": "2025-08-09T20:24:39.107122",
-            "ItemId": "06746",
+            "Content": "The Scarab Necklace features a 14K gold filled pendant, which means it has a thick layer of gold bonded to a base metal, ensuring durability and a lasting shine. The chain is made of 925 sterling silver, plated with gold vermeil, which provides a luxurious finish while maintaining the quality of the underlying silver. This combination of materials offers both elegance and resilience, making it a great choice for everyday wear. \n\nIf you would like to purchase it or see more details, you can visit the product page [here](https://www.aldeahome.com/products/scarab-necklace). The price is $62.00.",
+            "CreatedTime": "2025-08-10T01:41:39.134178",
+            "ItemId": "05929",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "145974a8-a994-4fbd-a272-5967f473768c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e35922de-753c-4449-b6c3-f2dd30648881",
+            "UserId": "user_00095",
+            "session_id": "e35922de-753c-4449-b6c3-f2dd30648881",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the Scarab Necklace (Product ID: 05929) suitable for sensitive skin, or does it contain any nickel in the materials?",
+            "CreatedTime": "2025-08-10T01:41:40.038870",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a116e040-006f-4e3b-9baf-faa6534d28b4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e35922de-753c-4449-b6c3-f2dd30648881",
+            "UserId": "user_00095",
+            "session_id": "e35922de-753c-4449-b6c3-f2dd30648881",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Scarab Necklace is made with a 14K gold filled pendant and a 925 sterling silver chain that is gold vermeil plated. Generally, sterling silver is considered hypoallergenic and is less likely to cause reactions in sensitive skin. However, since the necklace is gold plated, it is important to note that prolonged exposure to moisture or harsh chemicals can affect the plating. \n\nThe materials specified do not indicate the presence of nickel, which is often a common allergen. Therefore, it should be suitable for most individuals with sensitive skin. If you have a known allergy to certain metals, it’s always best to consult with a medical professional before wearing new jewelry. \n\nIf you have any other questions or need further assistance, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:41:43.957292",
+            "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.213331"
+    "profile_generated_at": "2025-08-10T01:53:50.883805"
 }

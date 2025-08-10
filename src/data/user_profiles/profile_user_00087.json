@@ -1,85 +1,156 @@
 {
     "user_id": "user_00087",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 33,
+    "normalized_engagement_score": 20,
     "activities": [
         {
-            "id": "02eb2bca-22ae-4b8b-808f-7e7f83e05be7",
+            "id": "6a6be7bf-3181-4efd-89ed-72c99a4b6349",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00087",
-            "event_name": "add_to_cart",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "04581",
-                "quantity": 1,
-                "price": 5.0
+                "order_id": "ORDER_user_00087_487225",
+                "total_amount": 22.95,
+                "items": [
+                    {
+                        "product_id": "07155",
+                        "quantity": 1,
+                        "price": 22.95
+                    }
+                ],
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.771382"
+            "created_time": "2025-08-10T01:32:25.487229"
         },
         {
-            "id": "9e270609-aedb-4fff-999b-41ca13836ce5",
+            "id": "5cb24ff2-76e0-47d0-bc72-98292f285cf6",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00087",
-            "event_name": "search",
+            "event_name": "product_view",
             "event_data": {
-                "query": "60 Second Cocktails",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "product_id": "05200",
+                "category": "exclude",
+                "product_name": "Organic Changing Pad Covers",
+                "price": 20.0,
+                "product_url": "https://www.aldeahome.com/products/organic-changing-pad-covers-fig",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/887b040a729fc19d4b7b431771732786a66930efb5931cbb6f92f4cc0395ffcf.jpg?v=1722880821",
+                "view_duration_seconds": 59
             },
-            "created_time": "2025-08-09T20:05:50.773817"
+            "created_time": "2025-08-10T01:32:25.487236"
         },
         {
-            "id": "fd88a27e-64a2-43c7-8c17-a7cffdb2b537",
+            "id": "32be08f3-ed8e-4425-8b38-2470020d34fc",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00087",
-            "event_name": "add_to_cart",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "04084",
-                "quantity": 3,
-                "price": 12.0
+                "order_id": "ORDER_user_00087_487239",
+                "total_amount": 46.0,
+                "items": [
+                    {
+                        "product_id": "04769",
+                        "quantity": 1,
+                        "price": 46.0
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.773823"
-        },
-        {
-            "id": "88cb5cb5-36f5-49a0-849d-c1828998fc7f",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00087",
-            "event_name": "search",
-            "event_data": {
-                "query": "Holden Hearts the teddy bear",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.776333"
-        },
-        {
-            "id": "bb6786c0-517d-45ac-b59f-12f161f554a6",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00087",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.206.209"
-            },
-            "created_time": "2025-08-09T20:05:50.776341"
+            "created_time": "2025-08-10T01:32:25.487243"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "3a271c50-27c7-41dd-ac30-5f6d246cbaa6",
-            "customer_id": "user_00087",
-            "product_id": "04496",
-            "rating": 4,
-            "review_title": "Love it!",
-            "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2025-04-18T20:52:52.182322",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.211704"
+    "dialogues": [
+        {
+            "Id": "7d9b0466-2d6b-4dba-a191-7f7d4a5d8bae",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "UserId": "user_00087",
+            "session_id": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can the Bear Snackie (Product ID: 06047) be used in the dishwasher for easy cleaning after use?",
+            "CreatedTime": "2025-08-10T01:40:57.460206",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ccd64585-55e0-404d-9387-fe021aa78d1c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "UserId": "user_00087",
+            "session_id": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Bear Snackie is made from food-grade silicone, which is typically dishwasher safe for easy cleaning. You can simply place it in the dishwasher after use for a convenient clean-up. \n\nIf you're interested in purchasing it, the price is $29.95. You can find it here: [Bear Snackie](https://www.aldeahome.com/products/bear-snackie).",
+            "CreatedTime": "2025-08-10T01:40:59.443654",
+            "ItemId": "06047",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "cc88f1e5-880a-4e05-a83e-d8b250fc2abe",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "UserId": "user_00087",
+            "session_id": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Does the Bear Snackie (Product ID: 06047) come in different colors or designs, or is it only available in one option?",
+            "CreatedTime": "2025-08-10T01:41:00.360413",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "252c192e-7ac7-4ba4-a9ec-d2b001d4fa89",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "UserId": "user_00087",
+            "session_id": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The information provided does not specify if the Bear Snackie comes in different colors or designs. It appears to be available in one option. For more details, you may want to check the product page directly. \n\nIf you're interested, the Bear Snackie is priced at $29.95 and can be found here: [Bear Snackie](https://www.aldeahome.com/products/bear-snackie).",
+            "CreatedTime": "2025-08-10T01:41:02.505974",
+            "ItemId": "06047",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c3683e7e-8dce-43c0-88e5-129204267005",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "UserId": "user_00087",
+            "session_id": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Bear Snackie (Product ID: 06047) is suitable for both hot and cold snacks, or are there any temperature restrictions I should be aware of?",
+            "CreatedTime": "2025-08-10T01:41:03.538181",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "366de2a4-8ba2-4fcb-af62-a0ab7a9cfc45",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "UserId": "user_00087",
+            "session_id": "e9137fa4-082e-4040-801d-3f4d7e8d33b7",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Bear Snackie is designed to be versatile, allowing you to use it for both hot and cold snacks. You can pop it in the freezer for cold treats or use it in the microwave for quick hot snacks. There are no specific temperature restrictions mentioned, so it should handle a variety of temperatures well.\n\nIf you're interested in purchasing the Bear Snackie, it is priced at $29.95, and you can find it here: [Bear Snackie](https://www.aldeahome.com/products/bear-snackie).",
+            "CreatedTime": "2025-08-10T01:41:06.163570",
+            "ItemId": "06047",
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.881433"
 }

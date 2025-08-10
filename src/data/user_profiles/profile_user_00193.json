@@ -1,0 +1,94 @@
+{
+    "user_id": "user_00193",
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "db63ddb0-b74a-4bd6-bf24-27cbc1f10dfc",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00193",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00193_650045",
+                "total_amount": 47.0,
+                "items": [
+                    {
+                        "product_id": "04374",
+                        "quantity": 1,
+                        "price": 17.0
+                    },
+                    {
+                        "product_id": "07227",
+                        "quantity": 1,
+                        "price": 30.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.650049"
+        },
+        {
+            "id": "66f95255-4f60-4b42-a1b3-3c7203c616f9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00193",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02348",
+                "quantity": 3,
+                "price": 25.0
+            },
+            "created_time": "2025-08-10T01:32:25.650052"
+        },
+        {
+            "id": "2bae870d-1254-455f-bcc4-2d917b832e1a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00193",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "02875",
+                "category": "cyber-monday-gift",
+                "product_name": "Triangles Face Mask",
+                "price": 14.95,
+                "product_url": "https://www.aldeahome.com/products/triangles-face-mask",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/ScreenShot2020-06-26at4.54.13PM.png?v=1593215955",
+                "view_duration_seconds": 48
+            },
+            "created_time": "2025-08-10T01:32:25.650056"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "f97e2677-3d14-4fdc-bc61-42e462c1f5ca",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a4d81ac1-88ec-4a7e-bb03-fc1f9e058c15",
+            "UserId": "user_00193",
+            "session_id": "a4d81ac1-88ec-4a7e-bb03-fc1f9e058c15",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Is the Tortoise & Hare Open Bottom Gown + Hat (Product ID: 07473) suitable for sensitive skin, given that it's made from organic cotton?",
+            "CreatedTime": "2025-08-10T01:51:34.291123",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "90ecb7ab-9730-41ca-bc76-dd30e94ac6a5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a4d81ac1-88ec-4a7e-bb03-fc1f9e058c15",
+            "UserId": "user_00193",
+            "session_id": "a4d81ac1-88ec-4a7e-bb03-fc1f9e058c15",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Tortoise & Hare Open Bottom Gown + Hat is suitable for sensitive skin as it is made from GOTS certified organic cotton, which is grown without pesticides and free of harsh chemicals. This makes it a gentle option for newborns with sensitive skin. The gown is designed to be soft and comfortable, ensuring baby’s comfort during wear. \n\nThe price is $44.00, and you can find more details [here](https://www.aldeahome.com/products/tortoise-and-hare-organic-cotton-magnetic-open-bottom-gown-hat-set).",
+            "CreatedTime": "2025-08-10T01:51:36.950681",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.911223"
+}

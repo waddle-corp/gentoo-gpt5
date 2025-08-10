@@ -1,98 +1,88 @@
 {
     "user_id": "user_00089",
-    "raw_engagement_score": 35,
-    "normalized_engagement_score": 23,
+    "raw_engagement_score": 23,
+    "normalized_engagement_score": 14,
     "activities": [
         {
-            "id": "e62d16f0-bedd-4c5d-9f00-3623dcd49901",
+            "id": "7b293166-cbed-45ef-9756-187455c43ce0",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00089",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "06389",
-                "quantity": 3,
-                "price": 90.0
+                "product_id": "05245",
+                "quantity": 1,
+                "price": 79.95
             },
-            "created_time": "2025-08-09T20:05:50.778647"
+            "created_time": "2025-08-10T01:32:25.487289"
         },
         {
-            "id": "bf5e6975-c984-4c6a-a15a-2560ca7d1bcb",
+            "id": "98c59e13-2068-4658-a606-0ce121b68a7c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00089",
-            "event_name": "search",
+            "event_name": "login",
             "event_data": {
-                "query": "Bunny Clips",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
+                "login_method": "email_password",
+                "ip_address": "192.168.172.205"
             },
-            "created_time": "2025-08-09T20:05:50.781099"
+            "created_time": "2025-08-10T01:32:25.487293"
         },
         {
-            "id": "34943cce-0b8d-4a74-ba05-343194698767",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00089",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00089_781107",
-                "total_amount": 2115.0,
-                "items": [
-                    {
-                        "product_id": "07634",
-                        "quantity": 1,
-                        "price": 20.0
-                    },
-                    {
-                        "product_id": "00954",
-                        "quantity": 1,
-                        "price": 2095.0
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.781119"
-        },
-        {
-            "id": "b0a29499-2fcb-4350-aae2-9249de033b68",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00089",
-            "event_name": "search",
-            "event_data": {
-                "query": "labor-day-sale",
-                "search_results_count": 315,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.783666"
-        },
-        {
-            "id": "01bddaee-8133-4966-8615-ad557a37202c",
+            "id": "ff854789-4a3b-4109-962d-502e355c93fc",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00089",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "05938",
-                "quantity": 3,
-                "price": 64.0
+                "product_id": "00432",
+                "quantity": 1,
+                "price": 26.95
             },
-            "created_time": "2025-08-09T20:05:50.783676"
+            "created_time": "2025-08-10T01:32:25.487297"
         }
     ],
     "reviews": [
         {
-            "review_id": "775ce9ff-5233-4d17-b89b-d56779b49d32",
+            "review_id": "2e3cc2cb-e504-471e-809a-d0e683bb8d4e",
             "customer_id": "user_00089",
-            "product_id": "05128",
-            "rating": 5,
-            "review_title": "Love it!",
-            "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2025-01-20T20:52:52.182328",
+            "product_id": "06594",
+            "rating": 3,
+            "review_title": "Would buy again",
+            "review_content": "I use it every day. I can't live without Los Angeles Pencil Pouch: Natural. Definitely repurchasing!",
+            "created_at": "2025-02-12T01:32:54.168936",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.212035"
+    "dialogues": [
+        {
+            "Id": "72a593b4-90f4-41c2-8102-87e58d3abb07",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e8fbe066-35f2-4b23-96ac-8ce5408bba0e",
+            "UserId": "user_00089",
+            "session_id": "e8fbe066-35f2-4b23-96ac-8ce5408bba0e",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the sizing options for the Dragonfly Hooded Baby Bath Robe (Organic Jersey): Rose Pink / 0-9M (One Size) with product ID 00814? Is it suitable for babies larger than 9 months?",
+            "CreatedTime": "2025-08-10T01:41:12.411425",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "a90e2299-c489-45eb-a9ab-18e490e51691",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e8fbe066-35f2-4b23-96ac-8ce5408bba0e",
+            "UserId": "user_00089",
+            "session_id": "e8fbe066-35f2-4b23-96ac-8ce5408bba0e",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Dragonfly Hooded Baby Bath Robe (Organic Jersey): Rose Pink is designed for babies in the 0-9 months age range and is offered in a one-size option. It may not be suitable for babies larger than 9 months, as it is specifically tailored for that age group. If you're looking for a robe for older babies, you might want to check for other sizes or options. \n\nIf you have any more questions or need further assistance, feel free to ask! You can view the product [here](https://www.aldeahome.com/products/dragonfly-hooded-baby-bath-robe-organic-jersey-rose-pink-0-9m-one-size), and it is priced at $48.00.",
+            "CreatedTime": "2025-08-10T01:41:14.869307",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.882278"
 }

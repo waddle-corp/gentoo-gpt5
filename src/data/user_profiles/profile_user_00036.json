@@ -1,45 +1,122 @@
 {
     "user_id": "user_00036",
-    "raw_engagement_score": 12,
-    "normalized_engagement_score": 8,
+    "raw_engagement_score": 48,
+    "normalized_engagement_score": 29,
     "activities": [
         {
-            "id": "14f9cf1a-8eb1-4e0f-9d34-4ae207355338",
+            "id": "9f50d8ba-7260-4cbb-91eb-b16b87c21f71",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00036",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00036_402536",
+                "total_amount": 68.5,
+                "items": [
+                    {
+                        "product_id": "07347",
+                        "quantity": 1,
+                        "price": 68.5
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.402541"
+        },
+        {
+            "id": "ec26681f-e4ce-49f2-b496-4a02a27bbf72",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00036",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00036_402543",
+                "total_amount": 7.99,
+                "items": [
+                    {
+                        "product_id": "01549",
+                        "quantity": 1,
+                        "price": 7.99
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.402547"
+        },
+        {
+            "id": "066a2d0d-ae1c-4b53-b841-64b1263081a1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00036",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00036_402550",
+                "total_amount": 7.99,
+                "items": [
+                    {
+                        "product_id": "01424",
+                        "quantity": 1,
+                        "price": 7.99
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.402554"
+        },
+        {
+            "id": "c688c658-3d05-462d-90dc-9462b0f7fc02",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00036",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "06904",
-                "quantity": 1,
-                "price": 7.95
+                "product_id": "04976",
+                "quantity": 3,
+                "price": 26.0
             },
-            "created_time": "2025-08-09T20:05:50.693207"
-        },
-        {
-            "id": "dbf85d29-4565-44ab-8575-afde79231450",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00036",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.121.96"
-            },
-            "created_time": "2025-08-09T20:05:50.693212"
+            "created_time": "2025-08-10T01:32:25.402558"
         }
     ],
     "reviews": [
         {
-            "review_id": "4255d77a-e752-445e-ab13-9ec38838dbcd",
+            "review_id": "20789584-35a9-44f3-83e7-7c71f47ca1ed",
             "customer_id": "user_00036",
-            "product_id": "00238",
-            "rating": 2,
-            "review_title": "Below expectations",
-            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2024-09-23T20:52:52.182156",
+            "product_id": "00575",
+            "rating": 5,
+            "review_title": "Super satisfied!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-02-14T01:32:54.168818",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.193055"
+    "dialogues": [
+        {
+            "Id": "eda145db-674a-4b50-a58e-492dba707e01",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "4d24a35e-6b9d-4784-ac4f-ae4600799343",
+            "UserId": "user_00036",
+            "session_id": "4d24a35e-6b9d-4784-ac4f-ae4600799343",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Roxy Bottle 17oz (Product ID: 02414) is suitable for both hot and cold beverages?",
+            "CreatedTime": "2025-08-10T01:36:14.719669",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2b6b760a-fdde-4adf-9bee-bde12e9d220d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "4d24a35e-6b9d-4784-ac4f-ae4600799343",
+            "UserId": "user_00036",
+            "session_id": "4d24a35e-6b9d-4784-ac4f-ae4600799343",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Roxy Bottle 17oz features Therma-S’well(R) Technology with triple-layered, vacuum-insulated construction, which is designed to keep beverages colder or hotter for longer periods. This makes it suitable for both hot and cold beverages. \n\nIf you're interested in purchasing it, it's priced at $35.00. You can find it [here](https://www.aldeahome.com/products/roxy-bottle-17oz).",
+            "CreatedTime": "2025-08-10T01:36:17.037281",
+            "ItemId": "02414",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.861328"
 }

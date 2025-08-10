@@ -1,0 +1,151 @@
+{
+    "user_id": "user_00196",
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "4ab81643-35cb-4c0c-b4ca-f3a434affc17",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00196",
+            "event_name": "search",
+            "event_data": {
+                "query": "베스트셀러",
+                "search_results_count": 0,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.656883"
+        },
+        {
+            "id": "c1ea65a4-f287-4691-927d-54d6b24ad227",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00196",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "02187",
+                "category": "car-seats-strollers-free-shipping",
+                "product_name": "UPPAbaby Ridge Infant Car Adapters | Maxi-Cosi, Nuna, Cybex & BeSafe",
+                "price": 54.99,
+                "product_url": "https://www.aldeahome.com/products/ridge-car-seat-adapters-maxi-cosi®-nuna®-cybex",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/MaxiCosiAdapters21_RIDGE_Hero-1903x1000-e8309f7_43d1c9f5-7eb3-4635-b4e4-c538f4a1dd46.jpg?v=1716598349",
+                "view_duration_seconds": 62
+            },
+            "created_time": "2025-08-10T01:32:25.656888"
+        },
+        {
+            "id": "23ceef8e-a8ce-45b5-9aa2-8c2a0787118e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00196",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00196_656891",
+                "total_amount": 40.0,
+                "items": [
+                    {
+                        "product_id": "05101",
+                        "quantity": 1,
+                        "price": 40.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.656896"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "5e741ec8-8ca9-44fc-a385-05ba5200dd89",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "UserId": "user_00196",
+            "session_id": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can the Maxi-Cosi Kindred Carriage Accessory (Product ID: 07553) be easily attached to other strollers besides the Tana 360° Rotating Modular Stroller?",
+            "CreatedTime": "2025-08-10T01:51:55.099609",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a273a8d1-923f-4622-8307-f0e7cfbfda06",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "UserId": "user_00196",
+            "session_id": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Maxi-Cosi Kindred Carriage Accessory is specifically designed to conveniently connect to the Tana 360° Rotating Modular Stroller without the need for additional adapters. It is not intended for use with other strollers. For more information, you can visit the product page [here](https://www.aldeahome.com/products/maxi-cosi-carriage-accessory-kindred-collection). The price is $349.00.",
+            "CreatedTime": "2025-08-10T01:51:56.818124",
+            "ItemId": "07553",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3220c559-3db6-4f49-a22a-1cf5eda6a16f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "UserId": "user_00196",
+            "session_id": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the Maxi-Cosi Kindred Carriage Accessory (Product ID: 07553) compatible with any additional accessories or attachments from the Kindred Collection?",
+            "CreatedTime": "2025-08-10T01:51:57.727306",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a22db855-db68-4a36-9b11-dec260cefc06",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "UserId": "user_00196",
+            "session_id": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Maxi-Cosi Kindred Carriage Accessory is designed to work specifically with the Tana 360° Rotating Modular Stroller. While it is part of the Kindred Collection, the compatibility with additional accessories or attachments from the collection is not specified. For detailed information on compatibility, it's best to refer to the product page or contact customer support. You can view the Maxi-Cosi Kindred Carriage Accessory [here](https://www.aldeahome.com/products/maxi-cosi-carriage-accessory-kindred-collection) for $349.00.",
+            "CreatedTime": "2025-08-10T01:52:00.197634",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3b925bb8-110b-49fc-9aa7-f3029dc87d55",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "UserId": "user_00196",
+            "session_id": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the materials used in the Maxi-Cosi Kindred Carriage Accessory (Product ID: 07553)? I'm particularly interested in the EcoCare fabric mentioned.",
+            "CreatedTime": "2025-08-10T01:52:01.369551",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1d832b4b-41dc-4119-833b-cf7896f04297",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "UserId": "user_00196",
+            "session_id": "1c71939f-237b-47ec-a4fd-0b8497c28eaa",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Maxi-Cosi Kindred Carriage Accessory is crafted with EcoCare, a premium, future-friendly fabric made from 100% recycled materials, specifically plastic bottles. This fabric is designed to be soft, comfortable, and breathable, ensuring both style and comfort for your little one. The use of recycled materials reflects a commitment to sustainability while maintaining high-quality standards. For more details, you can check the product page [here](https://www.aldeahome.com/products/maxi-cosi-carriage-accessory-kindred-collection). The price is $349.00.",
+            "CreatedTime": "2025-08-10T01:52:03.478634",
+            "ItemId": "07553",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.911938"
+}

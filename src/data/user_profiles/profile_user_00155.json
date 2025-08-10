@@ -1,0 +1,72 @@
+{
+    "user_id": "user_00155",
+    "raw_engagement_score": 19,
+    "normalized_engagement_score": 12,
+    "activities": [
+        {
+            "id": "90c0756b-1166-453e-83a0-cd99fb4c117f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00155",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00155_586029",
+                "total_amount": 40.5,
+                "items": [
+                    {
+                        "product_id": "05749",
+                        "quantity": 1,
+                        "price": 24.0
+                    },
+                    {
+                        "product_id": "02594",
+                        "quantity": 1,
+                        "price": 16.5
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.586033"
+        },
+        {
+            "id": "fe0b0ca8-9c9a-4ff0-9a32-a8fb99c715ee",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00155",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07376",
+                "quantity": 1,
+                "price": 16.5
+            },
+            "created_time": "2025-08-10T01:32:25.586037"
+        },
+        {
+            "id": "1b825e90-af36-40d4-9a93-4a8fd894ab3c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00155",
+            "event_name": "search",
+            "event_data": {
+                "query": "Stay On Baby Mitts | Coastal + Cloud 2pk",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.588248"
+        },
+        {
+            "id": "85863318-c7a8-4fdd-a24d-33db94a6f4b1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00155",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.208.247"
+            },
+            "created_time": "2025-08-10T01:32:25.588252"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.903023"
+}

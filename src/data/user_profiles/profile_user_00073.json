@@ -1,106 +1,163 @@
 {
     "user_id": "user_00073",
-    "raw_engagement_score": 32,
-    "normalized_engagement_score": 21,
+    "raw_engagement_score": 36,
+    "normalized_engagement_score": 22,
     "activities": [
         {
-            "id": "2e80d9b1-09c6-4d25-91ae-78521e1a4e2c",
+            "id": "fd91875b-b4c0-4029-8fb1-aea51edf6f60",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00073",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00073_468191",
+                "total_amount": 22.45,
+                "items": [
+                    {
+                        "product_id": "00843",
+                        "quantity": 1,
+                        "price": 15.5
+                    },
+                    {
+                        "product_id": "06517",
+                        "quantity": 1,
+                        "price": 6.95
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.468195"
+        },
+        {
+            "id": "0a98a888-29ff-41a7-b0c9-be9f66ddd80d",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00073",
             "event_name": "search",
             "event_data": {
-                "query": "Booties Bear Multi",
+                "query": "Chambray Button Down",
                 "search_results_count": 1,
                 "filters_applied": [
                     "가격 낮은 순"
                 ]
             },
-            "created_time": "2025-08-09T20:05:50.751245"
+            "created_time": "2025-08-10T01:32:25.470550"
         },
         {
-            "id": "577f49a6-e69b-4c97-bd60-a0e5309cfedd",
+            "id": "8ad17bc1-4eac-4925-8c94-ced0cccc0947",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00073",
-            "event_name": "purchase_completed",
+            "event_name": "search",
             "event_data": {
-                "order_id": "ORDER_user_00073_751258",
-                "total_amount": 18.0,
-                "items": [
-                    {
-                        "product_id": "01770",
-                        "quantity": 1,
-                        "price": 18.0
-                    }
-                ],
-                "payment_method": "kakao_pay"
+                "query": "Thule Yepp 2 Mini",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.751269"
-        },
-        {
-            "id": "60cae661-7f7a-49e2-a85d-e42770ea6ed4",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00073",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "04753",
-                "quantity": 3,
-                "price": 36.0
-            },
-            "created_time": "2025-08-09T20:05:50.751274"
-        },
-        {
-            "id": "0bd6f026-ca2b-453a-9b87-8c33ca722230",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00073",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00073_751277",
-                "total_amount": 19.0,
-                "items": [
-                    {
-                        "product_id": "03196",
-                        "quantity": 1,
-                        "price": 19.0
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.751283"
+            "created_time": "2025-08-10T01:32:25.472923"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "28c29fbd-49d0-4d46-8b8a-035824682f48",
+            "customer_id": "user_00073",
+            "product_id": "02376",
+            "rating": 4,
+            "review_title": "Highly recommend",
+            "review_content": "Wiener Dog  Pendulum Clock is fantastic! I wish I'd found it sooner.",
+            "created_at": "2025-01-02T01:32:54.168887",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "e2c3fd53-1f92-4e92-b27f-3046cbe28cd3",
+            "Id": "9c6a6c7a-9e88-4d89-8add-3f3764aa0050",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "b1c84b91-893e-4f69-b0b2-4f6bc80b0700",
+            "DialogueId": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
             "UserId": "user_00073",
-            "session_id": "b1c84b91-893e-4f69-b0b2-4f6bc80b0700",
-            "Intent": "일반",
+            "session_id": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "Is the Swirl Menorah (Product ID: 03457) suitable for outdoor use, or is it primarily designed for indoor use only?",
-            "CreatedTime": "2025-08-09T20:23:00.025714",
+            "Content": "Can you tell me if the Silicone Teether Orange (Product ID: 03893) is made from BPA-free materials?",
+            "CreatedTime": "2025-08-10T01:39:24.173292",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "1572405b-a1c5-4ba1-a0a9-816ea3ab479c",
+            "Id": "0485a8cf-a14c-41fb-a324-678830301a73",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "b1c84b91-893e-4f69-b0b2-4f6bc80b0700",
+            "DialogueId": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
             "UserId": "user_00073",
-            "session_id": "b1c84b91-893e-4f69-b0b2-4f6bc80b0700",
+            "session_id": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Swirl Menorah is primarily designed for indoor use. It is made from eco-friendly bamboo, which may not be suitable for outdoor conditions. For more information, you can check the product details [here](https://www.aldeahome.com/products/swirl-menorah). The price is $125.00.",
-            "CreatedTime": "2025-08-09T20:23:01.667731",
+            "Content": "I don’t have specific information about the materials used in the Silicone Teether Orange. However, you can find more details about the product by visiting the product page [here](https://www.aldeahome.com/products/silicone-teether-orange). The price is $8.95.",
+            "CreatedTime": "2025-08-10T01:39:25.418727",
             "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c0562f74-7e03-4b90-ab5d-d5d47d7223aa",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
+            "UserId": "user_00073",
+            "session_id": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you check if the Silicone Teether Orange (Product ID: 03893) is dishwasher safe?",
+            "CreatedTime": "2025-08-10T01:39:26.223802",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b53da599-389a-4cc2-a17b-f283ae67e64d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
+            "UserId": "user_00073",
+            "session_id": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have specific information regarding whether the Silicone Teether Orange is dishwasher safe. For detailed product care instructions, please check the product page [here](https://www.aldeahome.com/products/silicone-teether-orange). The price is $8.95.",
+            "CreatedTime": "2025-08-10T01:39:27.771372",
+            "ItemId": "03893",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "651417f9-6104-484b-8f34-2cd901ecb875",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
+            "UserId": "user_00073",
+            "session_id": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Silicone Teether Orange (Product ID: 03893) is suitable for infants under six months old?",
+            "CreatedTime": "2025-08-10T01:39:28.805566",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "44027b95-9c3c-4102-8e33-5867971d6254",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
+            "UserId": "user_00073",
+            "session_id": "eca3dbf9-e028-40ee-bc4c-a0cac1271a12",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific information on whether the Silicone Teether Orange is suitable for infants under six months old. I recommend checking the product page for more details [here](https://www.aldeahome.com/products/silicone-teether-orange). The price is $8.95.",
+            "CreatedTime": "2025-08-10T01:39:30.215495",
+            "ItemId": "03893",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.207683"
+    "profile_generated_at": "2025-08-10T01:53:50.876403"
 }

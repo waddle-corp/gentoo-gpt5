@@ -1,113 +1,84 @@
 {
     "user_id": "user_00027",
-    "raw_engagement_score": 13,
-    "normalized_engagement_score": 9,
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 11,
     "activities": [
         {
-            "id": "9dcf1444-a140-42cb-9b53-5b543a51b76b",
+            "id": "de2de83e-e42e-4904-ae2b-6093188fab85",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00027",
+            "event_name": "search",
+            "event_data": {
+                "query": "Newborn Baby Blue Angora Knit Bonnet",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.390964"
+        },
+        {
+            "id": "1b8bc57e-37e6-4217-a804-dde2508e3f99",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00027",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00027_390967",
+                "total_amount": 159.99,
+                "items": [
+                    {
+                        "product_id": "07465",
+                        "quantity": 1,
+                        "price": 159.99
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.390972"
+        },
+        {
+            "id": "5aba6d85-82e4-4078-8a14-772709936882",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00027",
             "event_name": "login",
             "event_data": {
                 "login_method": "email_password",
-                "ip_address": "192.168.140.196"
+                "ip_address": "192.168.127.30"
             },
-            "created_time": "2025-08-09T20:05:50.681055"
+            "created_time": "2025-08-10T01:32:25.390976"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "55a34e67-fda5-4c80-bed4-ab6df8033350",
+            "Id": "ba563004-68bc-4a7c-96cc-ef264ac4880a",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
+            "DialogueId": "397a6530-bbb3-41f8-b5be-9c3f872b9d8b",
             "UserId": "user_00027",
-            "session_id": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "Intent": "정보",
+            "session_id": "397a6530-bbb3-41f8-b5be-9c3f872b9d8b",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "Can you tell me more about the burn time of the Sparkling Cuvée Large Jar Candle (Product ID: 01889)? I'm curious how long it lasts when lit.",
-            "CreatedTime": "2025-08-09T20:17:52.962918",
+            "Content": "Can you tell me if the Good Lunch Sandwich Box | Mostly Mushrooms (Product ID: 00627) is dishwasher safe for easy cleaning?",
+            "CreatedTime": "2025-08-10T01:35:38.584860",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "9d8e382f-d0d8-4dea-9a91-798e389918f8",
+            "Id": "da16fedf-87aa-428d-94d7-f37815dbc838",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
+            "DialogueId": "397a6530-bbb3-41f8-b5be-9c3f872b9d8b",
             "UserId": "user_00027",
-            "session_id": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "Intent": "정보",
+            "session_id": "397a6530-bbb3-41f8-b5be-9c3f872b9d8b",
+            "Intent": "추천",
             "Role": "assistant",
-            "Content": "I'm sorry, but I don't have specific information about the burn time of the Sparkling Cuvée Large Jar Candle (Product ID: 01889). However, you can enjoy its delightful fragrance, which includes notes of Sparkling Wine, Pomelo, Woody Oak, and Rose Petals. If you're interested in purchasing it, the price is $34.00, and you can find more details at this link: [Sparkling Cuvée Large Jar Candle](https://www.aldeahome.com/products/sparkling-cuvee-large-jar-candle).",
-            "CreatedTime": "2025-08-09T20:17:55.143274",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "30a0993e-fd6a-4494-9ecb-f2b26a00be40",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "UserId": "user_00027",
-            "session_id": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Do you know if the Sparkling Cuvée Large Jar Candle (Product ID: 01889) is made from natural ingredients, or is it a blend of synthetic and natural materials?",
-            "CreatedTime": "2025-08-09T20:17:56.235859",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "974edb2e-e096-47ed-91a4-37e680aa9bf8",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "UserId": "user_00027",
-            "session_id": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "I don't have specific information regarding the ingredients or whether the Sparkling Cuvée Large Jar Candle (Product ID: 01889) is made from natural or synthetic materials. However, it features a delightful fragrance blend that includes notes of Sparkling Wine, Pomelo, Woody Oak, and Rose Petals. If you're interested in purchasing it, the price is $34.00, and you can find more details at this link: [Sparkling Cuvée Large Jar Candle](https://www.aldeahome.com/products/sparkling-cuvee-large-jar-candle).",
-            "CreatedTime": "2025-08-09T20:17:58.503607",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "35ff9db0-b8b6-428b-9724-4373b83301f2",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "UserId": "user_00027",
-            "session_id": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me if the Sparkling Cuvée Large Jar Candle (Product ID: 01889) has any specific safety warnings or care instructions that I should be aware of before using it?",
-            "CreatedTime": "2025-08-09T20:17:59.845803",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "c302a9e4-2fec-4d63-93a6-f637c677cea2",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "UserId": "user_00027",
-            "session_id": "f81f6bdd-6dd6-43e8-b76a-5f1900761304",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "I don't have specific safety warnings or care instructions for the Sparkling Cuvée Large Jar Candle (Product ID: 01889). It's always a good practice to follow general candle safety guidelines, such as keeping the candle away from flammable objects, trimming the wick, and not leaving it unattended while lit. If you're interested in purchasing it, the price is $34.00, and you can find more details at this link: [Sparkling Cuvée Large Jar Candle](https://www.aldeahome.com/products/sparkling-cuvee-large-jar-candle).",
-            "CreatedTime": "2025-08-09T20:18:01.954419",
-            "ItemId": "01889",
+            "Content": "The information provided does not specify whether the Good Lunch Sandwich Box | Mostly Mushrooms is dishwasher safe. For the best care, I recommend checking the product packaging or contacting the manufacturer directly. You can find more details about the product at this link: [Good Lunch Sandwich Box | Mostly Mushrooms](https://www.aldeahome.com/products/good-lunch-sandwich-box-mostly-mushrooms). The price is $8.95.",
+            "CreatedTime": "2025-08-10T01:35:40.689108",
+            "ItemId": "00627",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.189086"
+    "profile_generated_at": "2025-08-10T01:53:50.856142"
 }

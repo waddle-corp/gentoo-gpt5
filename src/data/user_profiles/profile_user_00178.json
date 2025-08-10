@@ -1,0 +1,151 @@
+{
+    "user_id": "user_00178",
+    "raw_engagement_score": 32,
+    "normalized_engagement_score": 19,
+    "activities": [
+        {
+            "id": "dab494aa-83fb-4c46-ba6b-2f75cb0265a7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00178",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.206.24"
+            },
+            "created_time": "2025-08-10T01:32:25.620550"
+        },
+        {
+            "id": "d80a0edf-bbec-4526-99ab-2fe3c3bc3a8b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00178",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00178_620553",
+                "total_amount": 59.95,
+                "items": [
+                    {
+                        "product_id": "05033",
+                        "quantity": 1,
+                        "price": 59.95
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.620558"
+        },
+        {
+            "id": "b0a4c0b8-7c0d-4d36-9f06-246fcfae26d2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00178",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00178_620560",
+                "total_amount": 30.0,
+                "items": [
+                    {
+                        "product_id": "04884",
+                        "quantity": 1,
+                        "price": 30.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.620564"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "891974f7-29dc-43b1-b5c8-d96cf10c0aa7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "UserId": "user_00178",
+            "session_id": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Bamboo Organic Cotton Convertible Gown - Many Moons (Product ID: 01047) is available in different sizes?",
+            "CreatedTime": "2025-08-10T01:50:17.294063",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "a044fe9e-9ca7-4ad0-bf1f-b4d80a3eb626",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "UserId": "user_00178",
+            "session_id": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I currently do not have information regarding the availability of different sizes for the Bamboo Organic Cotton Convertible Gown - Many Moons. However, you can check the product page for more details. The gown is priced at $34.00 and you can view it [here](https://www.aldeahome.com/products/bamboo-organic-cotton-convertible-gown-many-moons).",
+            "CreatedTime": "2025-08-10T01:50:19.388723",
+            "ItemId": "01047",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ca9d8318-0565-488d-b8da-1fed146087dd",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "UserId": "user_00178",
+            "session_id": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Do you know if the Bamboo Organic Cotton Convertible Gown - Many Moons (Product ID: 01047) comes in any specific color options, or is it only available in black and white?",
+            "CreatedTime": "2025-08-10T01:50:20.538429",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "69a09667-1ea8-4cb1-9e75-0daf6a859745",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "UserId": "user_00178",
+            "session_id": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Bamboo Organic Cotton Convertible Gown - Many Moons is primarily categorized under black-white-registry, suggesting that it may be available in those colors. However, for specific color options, I recommend checking the product page for any additional details. You can find it priced at $34.00 [here](https://www.aldeahome.com/products/bamboo-organic-cotton-convertible-gown-many-moons).",
+            "CreatedTime": "2025-08-10T01:50:23.060833",
+            "ItemId": "01047",
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "e7d47982-5dd6-470a-a2be-5c96f3aa6428",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "UserId": "user_00178",
+            "session_id": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Bamboo Organic Cotton Convertible Gown - Many Moons (Product ID: 01047) is suitable for all seasons, or is it better for specific weather conditions?",
+            "CreatedTime": "2025-08-10T01:50:24.634319",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "91e9d42c-2e9e-428e-b1a0-f8ce6aae6aa8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "UserId": "user_00178",
+            "session_id": "b4966bb1-da9d-40bd-adc7-5d3ae2bbac30",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Bamboo Organic Cotton Convertible Gown - Many Moons is made from a luxuriously soft, breathable fabric blend of 70% viscose from bamboo and 30% organic cotton, which makes it suitable for various weather conditions. Its breathable nature helps regulate temperature, making it a good option for all seasons. However, it’s always best to consider layering depending on the specific climate. You can find the gown priced at $34.00 [here](https://www.aldeahome.com/products/bamboo-organic-cotton-convertible-gown-many-moons).",
+            "CreatedTime": "2025-08-10T01:50:27.255118",
+            "ItemId": "01047",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.908094"
+}

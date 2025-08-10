@@ -66,6 +66,7 @@ export default function LeftChatPanel() {
   const [selected, setSelected] = useState<Record<number, boolean>>({});
   const [evaluating, setEvaluating] = useState(false);
   const [detecting, setDetecting] = useState(false);
+  const [awaitingFirstToken, setAwaitingFirstToken] = useState(false);
   const lastDetectAtRef = useRef<number>(0);
   const lastAssistantSigRef = useRef<string>("");
   const MIN_DETECT_INTERVAL_MS = 1800;
@@ -97,7 +98,6 @@ export default function LeftChatPanel() {
     streamProtocol: "text",
     onFinish: async (assistantMessage) => {
       try {
-        setDetecting(true);
         const partsToText = (m: any) =>
           Array.isArray(m?.parts)
             ? m.parts
@@ -106,12 +106,26 @@ export default function LeftChatPanel() {
             : String(m?.content || "");
 
         const lastAssistantText = partsToText(assistantMessage);
-        // 호출 과다 방지 가드: 진행 중/쿨다운/중복 콘텐츠 차단
-        if (detecting) return; // 이미 진행 중이면 스킵
+        
+        console.log("[detect-actionable] Starting detection for message:", lastAssistantText);
+        
+        // Guards
+        if (detecting) {
+          console.log("[detect-actionable] Aborting: detection already in progress.");
+          return;
+        }
         const now = Date.now();
-        if (now - (lastDetectAtRef.current || 0) < MIN_DETECT_INTERVAL_MS) return;
+        if (now - (lastDetectAtRef.current || 0) < MIN_DETECT_INTERVAL_MS) {
+          console.log("[detect-actionable] Aborting: called too recently.");
+          return;
+        }
         const sig = simpleSig(lastAssistantText);
-        if (sig === lastAssistantSigRef.current) return;
+        if (sig === lastAssistantSigRef.current) {
+          console.log("[detect-actionable] Aborting: duplicate message content.");
+          return;
+        }
+
+        setDetecting(true);
 
         const withAssistant = [...messages, assistantMessage];
         const compact = withAssistant.slice(-10).map((m) => ({ role: m.role, content: partsToText(m) }));
@@ -124,35 +138,54 @@ export default function LeftChatPanel() {
             body: JSON.stringify({ messages: compact, lastAssistant: lastAssistantText }),
           });
           const data = await res.json();
+          console.log("[detect-actionable] API Response:", data);
           if (res.ok && data?.ok) {
             detected.actionable = Boolean(data.actionable);
             detected.hypotheses = Array.isArray(data.hypotheses) ? data.hypotheses : [];
           }
-        } catch {}
+        } catch (err) {
+            console.error("[detect-actionable] API call failed:", err);
+        }
 
-        if (!detected.actionable || detected.hypotheses.length === 0) {
-          const kw = ["시뮬", "실험", "가설", "테스트", "해보시겠", "evaluate", "전체 평가"];
-          const hit = kw.some((k) => lastAssistantText.includes(k));
-          if (hit) {
-            detected.actionable = true;
-            detected.hypotheses = [lastAssistantText];
+        // GPT 재시도 (1회)
+        if ((!detected.actionable || detected.hypotheses.length === 0) && lastAssistantText.length > 20) {
+          console.log("[detect-actionable] First attempt failed or was empty, retrying...");
+          try {
+            const res2 = await fetch("/api/detect-actionable", {
+              method: "POST",
+              headers: { "content-type": "application/json" },
+              body: JSON.stringify({ messages: compact, lastAssistant: lastAssistantText }),
+            });
+            const data2 = await res2.json();
+            console.log("[detect-actionable] Retry API Response:", data2);
+            if (res2.ok && data2?.ok) {
+              detected.actionable = Boolean(data2.actionable);
+              detected.hypotheses = Array.isArray(data2.hypotheses) ? data2.hypotheses : [];
+            }
+          } catch (err) {
+            console.error("[detect-actionable] Retry API call failed:", err);
           }
         }
 
         const normalized = splitHypotheses(detected.hypotheses);
+        console.log("[detect-actionable] Detected:", detected, "Normalized:", normalized);
+
         if (detected.actionable && normalized.length > 0) {
+          console.log("[detect-actionable] Setting actionable to TRUE with hypotheses.");
           setActionable(true);
           setHypotheses(normalized);
           setSelected({});
         } else {
+          console.log("[detect-actionable] Setting actionable to FALSE.");
           setActionable(false);
           setHypotheses([]);
           setSelected({});
         }
-        // 쿨다운/중복 시그니처 갱신
+        
         lastDetectAtRef.current = now;
         lastAssistantSigRef.current = sig;
-      } catch {
+      } catch (e) {
+        console.error("[detect-actionable] Unhandled error in onFinish:", e);
         setActionable(false);
         setHypotheses([]);
         setSelected({});
@@ -161,6 +194,29 @@ export default function LeftChatPanel() {
       }
     },
   });
+
+  // 첫 토큰 대기 상태 관리: 스트리밍 시작 시 true, 첫 어시스턴트 토큰 수신 시 false
+  useEffect(() => {
+    if (status !== "streaming") {
+      setAwaitingFirstToken(false);
+      return;
+    }
+    if (!messages || messages.length === 0) {
+      setAwaitingFirstToken(true);
+      return;
+    }
+    const last = messages[messages.length - 1];
+    const partsToText = (m: any) =>
+      Array.isArray(m?.parts)
+        ? m.parts.map((p: any) => (p?.type === "text" ? String(p.text || "") : "")).join("")
+        : String(m?.content || "");
+    if (last?.role === "assistant") {
+      const txt = partsToText(last);
+      setAwaitingFirstToken(!(txt && txt.length > 0));
+    } else {
+      setAwaitingFirstToken(true);
+    }
+  }, [messages, status]);
 
   // Auto-scroll to bottom when messages update
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
@@ -194,6 +250,7 @@ export default function LeftChatPanel() {
     setActionable(false);
     setHypotheses([]);
     setSelected({});
+    setAwaitingFirstToken(true);
     append({ role: "user", content: input });
     setInput("");
   };
@@ -274,6 +331,19 @@ export default function LeftChatPanel() {
                         .map((part) => (part.type === "text" ? String(part.text || "") : ""))
                         .join("")}
                     />
+                    {/* 스트리밍 시작 후 첫 토큰 나오기 전: 회전 이모지 표시 */}
+                    {(() => {
+                      const isLast = message.id === messages[messages.length - 1]?.id;
+                      const isAssistant = message.role === "assistant";
+                      if (isLast && isAssistant && status === "streaming" && awaitingFirstToken) {
+                        return (
+                          <div className="mt-1 text-xs text-muted-foreground">
+                            <span className="inline-block animate-spin">🌀</span>
+                          </div>
+                        );
+                      }
+                      return null;
+                    })()}
                   </div>
                 </div>
               </div>

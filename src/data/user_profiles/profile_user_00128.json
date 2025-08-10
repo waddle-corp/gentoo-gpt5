@@ -1,0 +1,132 @@
+{
+    "user_id": "user_00128",
+    "raw_engagement_score": 28,
+    "normalized_engagement_score": 17,
+    "activities": [
+        {
+            "id": "7d831042-55d8-460e-84f8-b99674a165ef",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00128",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00128_547066",
+                "total_amount": 6.0,
+                "items": [
+                    {
+                        "product_id": "04239",
+                        "quantity": 1,
+                        "price": 6.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.547071"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "f5b67113-22fb-4a45-9292-1ae0549e237a",
+            "customer_id": "user_00128",
+            "product_id": "04929",
+            "rating": 2,
+            "review_title": "Below expectations",
+            "review_content": "The quality of story telling deluxe cinema wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2024-09-07T01:32:54.169031",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "e2c7b67a-9dee-4ea0-aab5-01b2fd5bf686",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "UserId": "user_00128",
+            "session_id": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Watercolor Paint Set (Product ID: 04444) includes a variety of colors, and how many are in the set?",
+            "CreatedTime": "2025-08-10T01:45:41.522656",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "fe125cd1-1c93-437d-b4d3-a4eb1161083d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "UserId": "user_00128",
+            "session_id": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have specific details about the number of colors included in the Watercolor Paint Set (Product ID: 04444). However, you can check more about it and potentially find that information by visiting the product page [here](https://www.aldeahome.com/products/watercolor-paint-set). The price is $25.00.",
+            "CreatedTime": "2025-08-10T01:45:42.950535",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "fc5ebd5d-f106-4e78-b1e9-e08d4843a39a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "UserId": "user_00128",
+            "session_id": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Does the Watercolor Paint Set (Product ID: 04444) come with any brushes or additional tools, or is it just the paints included?",
+            "CreatedTime": "2025-08-10T01:45:43.840775",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6d827c88-94af-41fc-85fb-46ea88eb996f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "UserId": "user_00128",
+            "session_id": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific information regarding whether the Watercolor Paint Set (Product ID: 04444) includes brushes or additional tools. For detailed information about what’s included in the set, I recommend visiting the product page [here](https://www.aldeahome.com/products/watercolor-paint-set). The price is $25.00.",
+            "CreatedTime": "2025-08-10T01:45:45.479739",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6e172825-719f-4290-b4fb-0c9a7e95060d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "UserId": "user_00128",
+            "session_id": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Watercolor Paint Set (Product ID: 04444) is suitable for beginners, or is it more geared towards experienced artists?",
+            "CreatedTime": "2025-08-10T01:45:46.439312",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a1149590-2a6c-4be7-9f36-0d516ddf6e9d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "UserId": "user_00128",
+            "session_id": "dadd86c5-3a93-46e4-ac6c-ab689535ab8c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have specific information on whether the Watercolor Paint Set (Product ID: 04444) is targeted towards beginners or experienced artists. For more detailed insights on its suitability, you might want to check the product page [here](https://www.aldeahome.com/products/watercolor-paint-set). The price is $25.00.",
+            "CreatedTime": "2025-08-10T01:45:47.884188",
+            "ItemId": "04444",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.895785"
+}

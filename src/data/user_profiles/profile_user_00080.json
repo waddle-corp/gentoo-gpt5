@@ -1,63 +1,175 @@
 {
     "user_id": "user_00080",
-    "raw_engagement_score": 15,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 42,
+    "normalized_engagement_score": 25,
     "activities": [
         {
-            "id": "d386f431-d61b-40ee-b9f2-0df08a36a9c5",
+            "id": "3e8027d4-06e0-4458-81e3-6beb0f40a741",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00080",
-            "event_name": "product_view",
+            "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "07476",
-                "category": "smk10-1",
-                "product_name": "Sweet Soothie Taco Bout Cute Crinkle Teether",
-                "price": 11.0,
-                "product_url": "https://www.aldeahome.com/products/sweet-soothie-taco-bout-cute-crinkle-teether",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/e9921290a5849393b857eec6930caa4cf2f0408de34f971581dc14167ce513ee.jpg?v=1711222465",
-                "view_duration_seconds": 37
+                "product_id": "03604",
+                "quantity": 1,
+                "price": 45.0
             },
-            "created_time": "2025-08-09T20:05:50.758844"
+            "created_time": "2025-08-10T01:32:25.480077"
         },
         {
-            "id": "f620a88e-3f1b-4638-9ac3-cff31887af74",
+            "id": "7c6ea174-f610-48da-a862-c0407d15465f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00080",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07644",
+                "quantity": 2,
+                "price": 17.99
+            },
+            "created_time": "2025-08-10T01:32:25.480080"
+        },
+        {
+            "id": "ed7e974d-ecf9-485d-8de9-ac999d71e0d0",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00080",
             "event_name": "search",
             "event_data": {
-                "query": "Moving Mouse",
+                "query": "Homemade Jam Socks",
                 "search_results_count": 1,
-                "filters_applied": []
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.761336"
+            "created_time": "2025-08-10T01:32:25.482432"
         },
         {
-            "id": "88ec6a5b-9b7a-4fea-b6a9-fe4f5597b4b2",
+            "id": "6a35974b-6195-4047-96a0-71daf83bb2a2",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00080",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00080_761342",
-                "total_amount": 94.99,
+                "order_id": "ORDER_user_00080_482436",
+                "total_amount": 67.95,
                 "items": [
                     {
-                        "product_id": "00099",
+                        "product_id": "07783",
                         "quantity": 1,
-                        "price": 25.0
+                        "price": 48.0
                     },
                     {
-                        "product_id": "00643",
+                        "product_id": "04446",
                         "quantity": 1,
-                        "price": 69.99
+                        "price": 19.95
                     }
                 ],
                 "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.761350"
+            "created_time": "2025-08-10T01:32:25.482441"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "5388bf52-d040-43dd-afa1-6266c60aabb1",
+            "customer_id": "user_00080",
+            "product_id": "05991",
+            "rating": 3,
+            "review_title": "Would buy again",
+            "review_content": "This exclude product is excellent. Don't hesitate to buy Tic Tac No Magnetic Fridge Game!",
+            "created_at": "2025-02-25T01:32:54.168906",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.209843"
+    "dialogues": [
+        {
+            "Id": "3aedd78f-28a0-44ed-9650-232f1d0f1293",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "UserId": "user_00080",
+            "session_id": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the safety features of the Cybex EOS Stroller + Aton G Infant Car Seat Travel System (Product ID: 02099)?",
+            "CreatedTime": "2025-08-10T01:40:11.069789",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c94d7f89-cc78-4012-bceb-45027cbae734",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "UserId": "user_00080",
+            "session_id": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Cybex EOS Stroller + Aton G Infant Car Seat Travel System is designed with safety in mind. While specific safety features are not detailed in the provided information, Cybex products typically include features such as:\n\n1. **Side Impact Protection**: The Aton G Infant Car Seat is designed to provide enhanced side impact protection.\n2. **Adjustable Headrest**: An adjustable headrest with integrated harness guides allows for a customized fit as your child grows.\n3. **Safe Lock Base**: The car seat often includes a base that ensures a secure installation in your vehicle.\n\nFor more detailed information on the safety features, I recommend checking the product URL: [Cybex EOS Stroller + Aton G Infant Car Seat Travel System](https://www.aldeahome.com/products/cybex-eos-stroller-aton-g-travel-system) or contacting customer support directly. The price is $599.95.",
+            "CreatedTime": "2025-08-10T01:40:15.354694",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7821d9c6-c4c7-438c-a78f-efa4c6d4cac6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "UserId": "user_00080",
+            "session_id": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "What is the weight limit for the Aton G Infant Car Seat in the Cybex EOS Stroller + Aton G Infant Car Seat Travel System (Product ID: 02099)? Also, how does the stroller handle on different terrains?",
+            "CreatedTime": "2025-08-10T01:40:16.822262",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9ba3c4ac-546a-46ea-9394-7f07be3d210d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "UserId": "user_00080",
+            "session_id": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The weight limit for the Aton G Infant Car Seat in the Cybex EOS Stroller + Aton G Infant Car Seat Travel System is not specified in the provided information. However, Aton seats typically accommodate infants from birth up to about 35 pounds, but I recommend checking the product details on the official site for confirmation.\n\nRegarding the stroller's handling on different terrains, while specific details are not provided, Cybex strollers are generally designed to handle a variety of surfaces, offering smooth maneuverability. For the best performance, it is advisable to try the stroller on different terrains before purchasing.\n\nFor more precise information, you can visit the product page: [Cybex EOS Stroller + Aton G Infant Car Seat Travel System](https://www.aldeahome.com/products/cybex-eos-stroller-aton-g-travel-system). The price is $599.95.",
+            "CreatedTime": "2025-08-10T01:40:21.399342",
+            "ItemId": "02099",
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "ce2e2600-e7b4-4237-8a92-8ceebdcb75c8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "UserId": "user_00080",
+            "session_id": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you let me know if the Cybex EOS Stroller + Aton G Infant Car Seat Travel System (Product ID: 02099) comes with a warranty, and if so, what it covers?",
+            "CreatedTime": "2025-08-10T01:40:22.948158",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4168d4eb-5f64-4722-bd71-9d52592387cf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "UserId": "user_00080",
+            "session_id": "9fff80e9-0340-4232-bf81-b928f2ba789c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The provided information does not specify whether the Cybex EOS Stroller + Aton G Infant Car Seat Travel System comes with a warranty or the details of what it covers. Typically, Cybex products do come with a warranty that covers manufacturing defects, but the specifics can vary.\n\nI recommend checking the product page for warranty information or contacting customer support for details regarding the warranty coverage for this travel system. You can find more information at this link: [Cybex EOS Stroller + Aton G Infant Car Seat Travel System](https://www.aldeahome.com/products/cybex-eos-stroller-aton-g-travel-system). The price is $599.95.",
+            "CreatedTime": "2025-08-10T01:40:27.559322",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.878967"
 }

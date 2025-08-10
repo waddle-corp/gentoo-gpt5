@@ -1,148 +1,94 @@
 {
     "user_id": "user_00040",
-    "raw_engagement_score": 20,
+    "raw_engagement_score": 21,
     "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "b166ae0f-ac5e-435b-8a1a-104f8a1a2372",
+            "id": "54c383f5-feea-4e90-becb-a2de83dfbbf6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00040",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00040_409484",
+                "total_amount": 73.95,
+                "items": [
+                    {
+                        "product_id": "07301",
+                        "quantity": 1,
+                        "price": 14.0
+                    },
+                    {
+                        "product_id": "05577",
+                        "quantity": 1,
+                        "price": 59.95
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.409489"
+        },
+        {
+            "id": "ac32d1fc-c2f7-4fa1-a299-08563d93ef0f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00040",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03720",
+                "quantity": 2,
+                "price": 25.0
+            },
+            "created_time": "2025-08-10T01:32:25.409493"
+        },
+        {
+            "id": "2fa211b2-7880-47ea-8c0d-66e679b36ee6",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00040",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "02067",
-                "category": "car-seats",
-                "product_name": "Nuna PIPA Aire RX Monterey + RELX Base | Exclusive!",
-                "price": 650.0,
-                "product_url": "https://www.aldeahome.com/products/nuna-pipa-aire-rx-monterey-pipa-relx-base-exclusive",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/Nuna_PIPAaireRX_BrixyMonterey_Angle_On-base_US_web.jpg?v=1741396916",
-                "view_duration_seconds": 19
+                "product_id": "06143",
+                "category": "garden",
+                "product_name": "Modern Sprout Growhouse",
+                "price": 239.0,
+                "product_url": "https://www.aldeahome.com/products/modern-sprout-growhouse",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/ScreenShot2022-02-02at4.33.50PM.png?v=1643848603",
+                "view_duration_seconds": 57
             },
-            "created_time": "2025-08-09T20:05:50.697740"
-        },
-        {
-            "id": "e2c9beea-a50f-482f-90be-a3860b9c16c2",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00040",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "03975",
-                "category": "exclude",
-                "product_name": "Single AF Conversation Heart Ornaments",
-                "price": 5.0,
-                "product_url": "https://www.aldeahome.com/products/single-af",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/GO-8323_1_jpg_20997af1-044a-4306-aba1-8853d83cf937.jpg?v=1729115415",
-                "view_duration_seconds": 76
-            },
-            "created_time": "2025-08-09T20:05:50.697744"
-        },
-        {
-            "id": "3dca6658-fd1b-4cce-9ab4-42da37016193",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00040",
-            "event_name": "search",
-            "event_data": {
-                "query": "Lil’ Loteria: A Bilingual Picture Word Bingo Game (Bilingual: English and Spanish)",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.700217"
+            "created_time": "2025-08-10T01:32:25.409497"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "9bec63ee-25c2-4528-8998-e17875893921",
+            "Id": "ad99b3c4-670f-453e-b5c2-109fd35b7cb6",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "54181c79-028f-4448-81c1-1c2a59f79b39",
+            "DialogueId": "3898a1aa-810b-44d6-a57b-3070d07f0714",
             "UserId": "user_00040",
-            "session_id": "54181c79-028f-4448-81c1-1c2a59f79b39",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me if the 'It's a Kitty Party Hair Clips' (Product ID: 04542) are suitable for all hair types?",
-            "CreatedTime": "2025-08-09T20:18:49.791855",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e3d42599-255f-4553-b9ee-d086aca35ee8",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "54181c79-028f-4448-81c1-1c2a59f79b39",
-            "UserId": "user_00040",
-            "session_id": "54181c79-028f-4448-81c1-1c2a59f79b39",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "Yes, the 'It's a Kitty Party Hair Clips' are designed to be suitable for various hair types. They are snap clips, which can hold different textures of hair securely. If you're interested, they are priced at $9.00. You can find more information and purchase them [here](https://www.aldeahome.com/products/its-a-kitty-party-hair-clips-silver-and-gold-1).",
-            "CreatedTime": "2025-08-09T20:18:51.390288",
-            "ItemId": "04542",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d88ac27c-7773-4f36-a38f-0fa88de17b0b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "54181c79-028f-4448-81c1-1c2a59f79b39",
-            "UserId": "user_00040",
-            "session_id": "54181c79-028f-4448-81c1-1c2a59f79b39",
+            "session_id": "3898a1aa-810b-44d6-a57b-3070d07f0714",
             "Intent": "일반",
             "Role": "user",
-            "Content": "Are the 'It's a Kitty Party Hair Clips' (Product ID: 04542) easy to use for young children, or do they require some practice to put in?",
-            "CreatedTime": "2025-08-09T20:18:52.788306",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "fd4dfc7d-191f-4547-af7a-fbffd3c6b321",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "54181c79-028f-4448-81c1-1c2a59f79b39",
-            "UserId": "user_00040",
-            "session_id": "54181c79-028f-4448-81c1-1c2a59f79b39",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The 'It's a Kitty Party Hair Clips' are designed as snap clips, which generally make them easy to use for young children. Most kids can quickly learn how to open and snap them into place without much difficulty. They should not require extensive practice. If you're interested, they are priced at $9.00. You can find more information and purchase them [here](https://www.aldeahome.com/products/its-a-kitty-party-hair-clips-silver-and-gold-1).",
-            "CreatedTime": "2025-08-09T20:18:54.681039",
+            "Content": "Can you tell me more about the care instructions for the Muslin Bamboo Swaddle Blankets- 4 pack (Product ID: 03395)? Are they safe to machine wash and dry?",
+            "CreatedTime": "2025-08-10T01:36:45.786845",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "9b326d21-5fb8-446e-b609-bd436cb01c7b",
+            "Id": "d6cfb98e-6c35-4ab4-85ce-880319aab3a4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "54181c79-028f-4448-81c1-1c2a59f79b39",
+            "DialogueId": "3898a1aa-810b-44d6-a57b-3070d07f0714",
             "UserId": "user_00040",
-            "session_id": "54181c79-028f-4448-81c1-1c2a59f79b39",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Are the 'It's a Kitty Party Hair Clips' (Product ID: 04542) available in any other colors or styles, or is it just the gold and silver option?",
-            "CreatedTime": "2025-08-09T20:18:55.834706",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "c94bb95b-ffd8-4a38-84e4-1fc9559d79fb",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "54181c79-028f-4448-81c1-1c2a59f79b39",
-            "UserId": "user_00040",
-            "session_id": "54181c79-028f-4448-81c1-1c2a59f79b39",
+            "session_id": "3898a1aa-810b-44d6-a57b-3070d07f0714",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The 'It's a Kitty Party Hair Clips' are only available in the gold and silver option. If you're interested, they are priced at $9.00. You can find more information and purchase them [here](https://www.aldeahome.com/products/its-a-kitty-party-hair-clips-silver-and-gold-1).",
-            "CreatedTime": "2025-08-09T20:18:57.063367",
-            "ItemId": "04542",
+            "Content": "The Muslin Bamboo Swaddle Blankets- 4 pack are indeed safe to machine wash and dry. This makes them easy to care for and maintain. Just follow standard washing instructions, and they will remain soft and breathable for your baby's comfort. If you need to purchase them, they are priced at $45.00. You can find more information and make a purchase [here](https://www.aldeahome.com/products/muslin-bamboo-swaddle-blankets-4-pack).",
+            "CreatedTime": "2025-08-10T01:36:48.170546",
+            "ItemId": "03395",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.194788"
+    "profile_generated_at": "2025-08-10T01:53:50.863292"
 }

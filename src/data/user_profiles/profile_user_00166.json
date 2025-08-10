@@ -1,0 +1,161 @@
+{
+    "user_id": "user_00166",
+    "raw_engagement_score": 45,
+    "normalized_engagement_score": 27,
+    "activities": [
+        {
+            "id": "dbf5c02a-a71e-418f-bbe6-3790adc958e6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00166",
+            "event_name": "search",
+            "event_data": {
+                "query": "Rex  the T-Rex",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.604676"
+        },
+        {
+            "id": "c59e2901-b0a3-4bc6-9bb7-aee07c34dc0b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00166",
+            "event_name": "search",
+            "event_data": {
+                "query": "erbaviva",
+                "search_results_count": 5,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.607109"
+        },
+        {
+            "id": "1ea99e9f-2b73-4966-aa94-aa450918f39b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00166",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00166_607112",
+                "total_amount": 50.0,
+                "items": [
+                    {
+                        "product_id": "03333",
+                        "quantity": 1,
+                        "price": 50.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.607117"
+        },
+        {
+            "id": "f0d7842d-649d-4ca1-b677-506fc54a0e20",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00166",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "01228",
+                "quantity": 1,
+                "price": 29.95
+            },
+            "created_time": "2025-08-10T01:32:25.607121"
+        },
+        {
+            "id": "9b72df2e-c156-4d84-b9c1-0f3d9527f597",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00166",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00166_607124",
+                "total_amount": 22.5,
+                "items": [
+                    {
+                        "product_id": "07400",
+                        "quantity": 1,
+                        "price": 22.5
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.607128"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "a4e8c95c-7610-42f8-b742-6de728385458",
+            "customer_id": "user_00166",
+            "product_id": "05596",
+            "rating": 2,
+            "review_title": "Below expectations",
+            "review_content": "The quality of Veer Cruiser Shearling Seat Cover wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2025-07-18T01:32:54.169108",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "c9ed4040-6712-4719-b462-3c312a6b3d1b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "5795d60d-c86d-4561-822e-6d983f748193",
+            "UserId": "user_00166",
+            "session_id": "5795d60d-c86d-4561-822e-6d983f748193",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the types of prompts included in the Gratitude: A Journal (Product ID: 03121)? I'm curious about how it helps with daily reflection.",
+            "CreatedTime": "2025-08-10T01:49:07.567803",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "52e20fb0-e237-43c1-8db1-7b5dc0cfe899",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "5795d60d-c86d-4561-822e-6d983f748193",
+            "UserId": "user_00166",
+            "session_id": "5795d60d-c86d-4561-822e-6d983f748193",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The *Gratitude: A Journal* is designed to help you keep a daily record of life's little blessings. It includes a year's worth of insightful prompts that encourage reflection on the positive aspects of your life. The prompts guide you to think about what you're thankful for, helping to foster a mindset of gratitude. In addition to these prompts, the journal features inspiring quotes and ample space for you to reflect on your thoughts, making it a comprehensive tool for daily reflection. \n\nYou can find the *Gratitude: A Journal* for $19.95 at this URL: [Gratitude: A Journal](https://www.aldeahome.com/products/gratitude-a-journal).",
+            "CreatedTime": "2025-08-10T01:49:11.040851",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0e98a3ae-adc0-4026-90ed-8588f6010918",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "5795d60d-c86d-4561-822e-6d983f748193",
+            "UserId": "user_00166",
+            "session_id": "5795d60d-c86d-4561-822e-6d983f748193",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are there specific themes or topics covered in the prompts of the *Gratitude: A Journal* (Product ID: 03121), or do they vary each day?",
+            "CreatedTime": "2025-08-10T01:49:12.282339",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d6dcbda9-9235-47c8-b0ff-478257080165",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "5795d60d-c86d-4561-822e-6d983f748193",
+            "UserId": "user_00166",
+            "session_id": "5795d60d-c86d-4561-822e-6d983f748193",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The prompts in the *Gratitude: A Journal* vary each day, encouraging you to explore different themes and topics related to gratitude. This variety helps keep the reflection process fresh and engaging, allowing you to discover new aspects of your life to appreciate. Each prompt is designed to inspire thoughtful reflection on the blessings you encounter daily. \n\nIf you're interested, you can purchase the *Gratitude: A Journal* for $19.95 at this link: [Gratitude: A Journal](https://www.aldeahome.com/products/gratitude-a-journal).",
+            "CreatedTime": "2025-08-10T01:49:14.918966",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.905151"
+}

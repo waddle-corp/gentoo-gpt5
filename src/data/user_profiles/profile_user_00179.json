@@ -1,0 +1,95 @@
+{
+    "user_id": "user_00179",
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "fbc6e727-17e3-4ea5-b319-2d66c087ed2b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00179",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07090",
+                "quantity": 1,
+                "price": 25.0
+            },
+            "created_time": "2025-08-10T01:32:25.620568"
+        },
+        {
+            "id": "20f7dbb5-250c-4b8f-b59b-0ef9f067227e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00179",
+            "event_name": "search",
+            "event_data": {
+                "query": "The Bruce 3-Seater Sofa",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.622934"
+        },
+        {
+            "id": "fc9214cb-e04a-4a71-9314-92d71bc815f2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00179",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "02293",
+                "category": "charoensit-petkov-registry",
+                "product_name": "Cotton Muslin Car Seat Canopy - Planetary",
+                "price": 35.0,
+                "product_url": "https://www.aldeahome.com/products/cotton-muslin-car-seat-canopy-planetary",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/Planetary_Closed_GB_1080x_jpg_clipped_rev_1.png?v=1660241888",
+                "view_duration_seconds": 46
+            },
+            "created_time": "2025-08-10T01:32:25.622939"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "23ca7b5a-05f9-4eb5-9d3b-c3978c75890f",
+            "customer_id": "user_00179",
+            "product_id": "01627",
+            "rating": 4,
+            "review_title": "Best purchase ever",
+            "review_content": "Baby T-Rex: Finger Puppet Book is fantastic! I wish I'd found it sooner.",
+            "created_at": "2024-12-17T01:32:54.169142",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "4ea749b8-37ce-4c4f-8c46-6692db2b8bb5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "4ee146b8-0f54-4f0e-ad1c-ff273c6b5c6f",
+            "UserId": "user_00179",
+            "session_id": "4ee146b8-0f54-4f0e-ad1c-ff273c6b5c6f",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can the Thule Organizer (Product ID: 07568) be easily installed on any Thule child carrier, or are there specific models it is compatible with?",
+            "CreatedTime": "2025-08-10T01:50:28.308838",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b49ebb4e-1f8b-4399-b697-163253f8b4ba",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "4ee146b8-0f54-4f0e-ad1c-ff273c6b5c6f",
+            "UserId": "user_00179",
+            "session_id": "4ee146b8-0f54-4f0e-ad1c-ff273c6b5c6f",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Thule Organizer is specifically compatible with the following Thule child carriers: Thule Chariot Sport, Thule Chariot Cross, Thule Chariot Lite, Thule Urban Glide 2, and Thule Glide 2. It is designed for easy installation on these models. \n\nIf you're interested, the Thule Organizer is priced at $69.95. You can view more details or purchase it [here](https://www.aldeahome.com/products/thule-organizer-20201520).",
+            "CreatedTime": "2025-08-10T01:50:30.735093",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.908382"
+}

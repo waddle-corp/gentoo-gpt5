@@ -1,0 +1,182 @@
+{
+    "user_id": "user_00107",
+    "raw_engagement_score": 36,
+    "normalized_engagement_score": 22,
+    "activities": [
+        {
+            "id": "c26b493e-df5c-4984-b200-d8f758096939",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00107",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00107_512348",
+                "total_amount": 19.94,
+                "items": [
+                    {
+                        "product_id": "02193",
+                        "quantity": 1,
+                        "price": 6.95
+                    },
+                    {
+                        "product_id": "01580",
+                        "quantity": 1,
+                        "price": 12.99
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.512353"
+        },
+        {
+            "id": "f3050150-1b50-4522-85a8-160994c5fc34",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00107",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "06841",
+                "category": "newborn-basics",
+                "product_name": "Hotdog - Organic Baby Onesie",
+                "price": 34.95,
+                "product_url": "https://www.aldeahome.com/products/hotdog-organic-baby-onesie",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/ed9cd66d3d620abc713c48c3c8cd97bb79d6876ce0ead415703c1cfe18a012e1.jpg?v=1745783024",
+                "view_duration_seconds": 104
+            },
+            "created_time": "2025-08-10T01:32:25.512357"
+        },
+        {
+            "id": "0f71ebd9-e006-488d-957c-1a9108a7afa1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00107",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03111",
+                "quantity": 2,
+                "price": 45.0
+            },
+            "created_time": "2025-08-10T01:32:25.512360"
+        },
+        {
+            "id": "f530c077-8591-4a79-8be2-20bcda0ac62c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00107",
+            "event_name": "search",
+            "event_data": {
+                "query": "Omni Deluxe Mesh Onyx Black",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.514689"
+        },
+        {
+            "id": "89be8925-dc9c-4e13-8a3e-d99e333190c0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00107",
+            "event_name": "search",
+            "event_data": {
+                "query": "Butterflies Matchbox",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.517089"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "49ae8bdc-d022-4744-83c4-2c55eb2eba25",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "UserId": "user_00107",
+            "session_id": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Could you tell me if the EGGPLANT EMOJI Christmas Ornament (Product ID: 02771) is suitable for outdoor use, or is it intended for indoor decoration only?",
+            "CreatedTime": "2025-08-10T01:42:56.121245",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f2935576-4b0d-48bc-8e8f-606e41df7604",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "UserId": "user_00107",
+            "session_id": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The EGGPLANT EMOJI Christmas Ornament is intended for indoor decoration only. It is not designed for outdoor use. If you have any more questions or need assistance with something else, feel free to ask! \n\nFor your reference, the ornament is priced at $10.95 and you can view it [here](https://www.aldeahome.com/products/eggplant-emoji-christmas-ornament).",
+            "CreatedTime": "2025-08-10T01:42:58.802330",
+            "ItemId": "02771",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2f982751-c9e3-4a27-85ad-250170d781ce",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "UserId": "user_00107",
+            "session_id": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the EGGPLANT EMOJI Christmas Ornament (Product ID: 02771) made of durable materials that can withstand accidental bumps or falls?",
+            "CreatedTime": "2025-08-10T01:42:59.826808",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6bdb0cef-7cfd-4c0c-a42b-1f42b2ffd636",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "UserId": "user_00107",
+            "session_id": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The EGGPLANT EMOJI Christmas Ornament is not specifically detailed in terms of its durability against bumps or falls. Typically, ornaments are designed to be decorative and may not withstand significant impact. For the best care, it's advisable to handle it gently to avoid any damage. If you have any further questions or need assistance, feel free to ask!\n\nYou can find the ornament for $10.95 [here](https://www.aldeahome.com/products/eggplant-emoji-christmas-ornament).",
+            "CreatedTime": "2025-08-10T01:43:03.003642",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "989620c8-5d7d-4226-b138-d62e39eeb247",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "UserId": "user_00107",
+            "session_id": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the EGGPLANT EMOJI Christmas Ornament (Product ID: 02771) comes with any kind of hanging mechanism, or do I need to buy something separately to hang it?",
+            "CreatedTime": "2025-08-10T01:43:04.298282",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "242ad584-e05d-48b1-946f-449b501bb319",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "UserId": "user_00107",
+            "session_id": "0f59f3fd-752a-401c-95b6-fa9c46646ee8",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The EGGPLANT EMOJI Christmas Ornament typically comes with a built-in hanging mechanism, so you shouldn't need to buy anything separately to hang it. However, if you have any specific concerns or need more information, feel free to ask! \n\nYou can purchase the ornament for $10.95 [here](https://www.aldeahome.com/products/eggplant-emoji-christmas-ornament).",
+            "CreatedTime": "2025-08-10T01:43:06.436834",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.888164"
+}

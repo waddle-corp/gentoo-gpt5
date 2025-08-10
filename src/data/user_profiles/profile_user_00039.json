@@ -1,110 +1,100 @@
 {
     "user_id": "user_00039",
-    "raw_engagement_score": 19,
-    "normalized_engagement_score": 13,
+    "raw_engagement_score": 16,
+    "normalized_engagement_score": 10,
     "activities": [
         {
-            "id": "4099a0c4-8060-441e-a94a-a0a143b257eb",
+            "id": "6f9ac503-97e4-425d-8c56-eb314310143b",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00039",
-            "event_name": "login",
+            "event_name": "add_to_cart",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.224.180"
+                "product_id": "01809",
+                "quantity": 3,
+                "price": 109.0
             },
-            "created_time": "2025-08-09T20:05:50.695372"
+            "created_time": "2025-08-10T01:32:25.409476"
         },
         {
-            "id": "d336b1b8-0ac1-423e-9df2-c6d3044e7187",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00039",
-            "event_name": "search",
-            "event_data": {
-                "query": "Little Artist Board Book Set",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.697722"
-        },
-        {
-            "id": "b91dc98e-9d09-4400-91b3-72d00970ac68",
+            "id": "9e6ac01c-bfa6-4865-962e-919c7ec7b205",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00039",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "00221",
-                "category": "arts-crafts",
-                "product_name": "Color-in' Book: Little Cozy Critters",
-                "price": 7.96,
-                "product_url": "https://www.aldeahome.com/products/color-in-book-little-cozy-critters",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/a8976f25cac0e701a31ad2503484d9aa3dc7679b62d96d19515676a0015d9c29.png?v=1742882937",
-                "view_duration_seconds": 111
+                "product_id": "02216",
+                "category": "cards",
+                "product_name": "HBD Foil Balloons Birthday Mini Enclosure Card",
+                "price": 3.0,
+                "product_url": "https://www.aldeahome.com/products/hbd-foil-balloons-birthday-mini-enclosure-card",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/346005aff7a0c95c7ba1e1818c2d1389bc93bda46c740571005dc8e9d722c36e.jpg?v=1741148859",
+                "view_duration_seconds": 90
             },
-            "created_time": "2025-08-09T20:05:50.697730"
-        },
-        {
-            "id": "3a889149-3042-4895-bcf9-1b2e80aad187",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00039",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "04344",
-                "category": "exclude",
-                "product_name": "Fire Truck",
-                "price": 22.95,
-                "product_url": "https://www.aldeahome.com/products/fire-truck-10",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/62d5ceb10b1af50cd5aeb7dd96d5fcd8358f7ed7833b263aa68ebdcd1a587ca2.png?v=1717283798",
-                "view_duration_seconds": 11
-            },
-            "created_time": "2025-08-09T20:05:50.697734"
+            "created_time": "2025-08-10T01:32:25.409480"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "defaa6be-b73a-4a96-bf3b-4fe106d15a60",
-            "customer_id": "user_00039",
-            "product_id": "02463",
-            "rating": 2,
-            "review_title": "Below expectations",
-            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2024-09-12T20:52:52.182176",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "d3fff5b9-ec6d-4552-94e5-b9526a3ac975",
+            "Id": "4a61a1ee-ccf0-4522-babc-f90fa7f676b8",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "b05d2a5f-36ca-43e7-a1de-f2110e15ea04",
+            "DialogueId": "d591673b-c9b2-42ec-ba09-78efbe48ad03",
             "UserId": "user_00039",
-            "session_id": "b05d2a5f-36ca-43e7-a1de-f2110e15ea04",
+            "session_id": "d591673b-c9b2-42ec-ba09-78efbe48ad03",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "Can you tell me if the Railway Bridge Set (Product ID: 02254) is compatible with other toy car sets, or is it designed to be used alone?",
-            "CreatedTime": "2025-08-09T20:18:46.333024",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "82f78e07-d61b-4df8-a300-95e63eea2bdb",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b05d2a5f-36ca-43e7-a1de-f2110e15ea04",
-            "UserId": "user_00039",
-            "session_id": "b05d2a5f-36ca-43e7-a1de-f2110e15ea04",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Railway Bridge Set is designed to enhance play with toy cars, and it typically works well with other toy car sets. Its various pieces, including bridges and ramps, can help create exciting scenes alongside other toy vehicles. However, compatibility may depend on the specific brands and types of toy cars you have. \n\nIf you're interested in purchasing the Railway Bridge Set, it is priced at $90.00. You can find more details at this link: [Railway Bridge Set](https://www.aldeahome.com/products/railway-bridge-set).",
-            "CreatedTime": "2025-08-09T20:18:48.868661",
+            "Content": "Can the Joolz Aer Carrycot (Product ID: 06467) be easily attached and detached from the Joolz Aer stroller?",
+            "CreatedTime": "2025-08-10T01:36:39.926312",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
+        },
+        {
+            "Id": "78f24cea-2570-499a-8725-064169470252",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d591673b-c9b2-42ec-ba09-78efbe48ad03",
+            "UserId": "user_00039",
+            "session_id": "d591673b-c9b2-42ec-ba09-78efbe48ad03",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Joolz Aer Carrycot can be easily attached and detached from the Joolz Aer stroller. This innovative design ensures that your stroller remains compact and user-friendly, making it convenient for parents. \n\nIf you're interested in purchasing it, the price is $249.00. You can find more information and buy it [here](https://www.aldeahome.com/products/joolz-aer-carrycot).",
+            "CreatedTime": "2025-08-10T01:36:41.664244",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bb00616a-12ed-4507-a614-28eb358e17d7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d591673b-c9b2-42ec-ba09-78efbe48ad03",
+            "UserId": "user_00039",
+            "session_id": "d591673b-c9b2-42ec-ba09-78efbe48ad03",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "What colors does the Joolz Aer Carrycot (Product ID: 06467) come in, and are there any additional accessories available for it?",
+            "CreatedTime": "2025-08-10T01:36:42.790690",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9d7a1f31-0a6d-4632-b1e2-5c10ba66ddb8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d591673b-c9b2-42ec-ba09-78efbe48ad03",
+            "UserId": "user_00039",
+            "session_id": "d591673b-c9b2-42ec-ba09-78efbe48ad03",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Joolz Aer Carrycot is available in a delightful grey color. As for additional accessories, there are various options available within the Joolz product line that can complement the carrycot and enhance your stroller experience. \n\nIf you're interested in purchasing the carrycot, it is priced at $249.00. You can find more details and make a purchase [here](https://www.aldeahome.com/products/joolz-aer-carrycot).",
+            "CreatedTime": "2025-08-10T01:36:44.831843",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.194097"
+    "profile_generated_at": "2025-08-10T01:53:50.862849"
 }

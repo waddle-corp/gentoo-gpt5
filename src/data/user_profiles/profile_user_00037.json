@@ -1,74 +1,168 @@
 {
     "user_id": "user_00037",
-    "raw_engagement_score": 23,
-    "normalized_engagement_score": 15,
+    "raw_engagement_score": 31,
+    "normalized_engagement_score": 19,
     "activities": [
         {
-            "id": "65a71780-c113-4e63-8287-0ce3e5dc39b5",
+            "id": "6eb4a0d8-3fe3-4873-80db-46decd4b66d0",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00037",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00037_693219",
-                "total_amount": 501.1,
+                "order_id": "ORDER_user_00037_402561",
+                "total_amount": 1507.99,
                 "items": [
                     {
-                        "product_id": "01193",
+                        "product_id": "01505",
                         "quantity": 1,
-                        "price": 421.2
+                        "price": 12.99
                     },
                     {
-                        "product_id": "06538",
+                        "product_id": "01088",
                         "quantity": 1,
-                        "price": 79.9
+                        "price": 1495.0
                     }
                 ],
-                "payment_method": "credit_card"
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.693233"
+            "created_time": "2025-08-10T01:32:25.402565"
         },
         {
-            "id": "bbf7ad7e-4669-4b8d-818c-6c21e48a7392",
+            "id": "076da31a-c279-47b8-932b-ea66dde66467",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00037",
+            "event_name": "search",
+            "event_data": {
+                "query": "Plume Cooker",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.404986"
+        },
+        {
+            "id": "f9586310-e7ba-4e3d-8ae9-4921ff6fe0bb",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00037",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "02610",
-                "quantity": 3,
-                "price": 35.0
+                "product_id": "00436",
+                "quantity": 2,
+                "price": 24.99
             },
-            "created_time": "2025-08-09T20:05:50.693237"
+            "created_time": "2025-08-10T01:32:25.404991"
         },
         {
-            "id": "25357c5c-601d-481d-a6a8-21d63180e861",
+            "id": "a285f4c5-f194-4ce4-b05f-ea205d38fb76",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00037",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "04933",
-                "category": "exclude",
-                "product_name": "Sustain",
-                "price": 40.0,
-                "product_url": "https://www.aldeahome.com/products/sustain",
-                "thumbnail_url": "",
-                "view_duration_seconds": 29
+                "product_id": "00592",
+                "category": "back-to-school",
+                "product_name": "Dandelion Weekday Lunch Tote",
+                "price": 28.95,
+                "product_url": "https://www.aldeahome.com/products/dandelion-weekday-lunch-tote",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/b3a133fbcd59bb7874cb8b88262d25517aa2704516aedd579f73491cfb00bba2.jpg?v=1748196749",
+                "view_duration_seconds": 25
             },
-            "created_time": "2025-08-09T20:05:50.693242"
+            "created_time": "2025-08-10T01:32:25.404995"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "aa48440c-1d3b-4dde-abc9-3f3078b5767e",
-            "customer_id": "user_00037",
-            "product_id": "04216",
-            "rating": 2,
-            "review_title": "Disappointed",
-            "review_content": "The quality of PUZZLE - UNICORNS ROCK CONCERT  - 24pz wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2025-07-08T20:52:52.182162",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.193447"
+    "dialogues": [
+        {
+            "Id": "64a8b70a-2923-4760-aa18-40db6e084b9d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "UserId": "user_00037",
+            "session_id": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the size options available for the Organic Cotton Bubble Romper - Billie & Kid (Product ID: 04708)?",
+            "CreatedTime": "2025-08-10T01:36:18.180202",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "dbb5003e-5161-471a-90ca-d969967692d6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "UserId": "user_00037",
+            "session_id": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I'm sorry, but I don't have specific information about the size options available for the Organic Cotton Bubble Romper - Billie & Kid. However, you can check the product details and any size information on the website. Here’s the link to view it: [Organic Cotton Bubble Romper - Billie & Kid](https://www.aldeahome.com/products/organic-cotton-bubble-romper-billie-kid). The price is $34.00.",
+            "CreatedTime": "2025-08-10T01:36:20.110817",
+            "ItemId": "04708",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "795e9038-17e8-410e-a441-635618292615",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "UserId": "user_00037",
+            "session_id": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Do you know if the Organic Cotton Bubble Romper - Billie & Kid (Product ID: 04708) is available in sizes for older babies, or is it only for newborns?",
+            "CreatedTime": "2025-08-10T01:36:21.286170",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8f9190d1-8dda-423d-aef9-3cde73b4457f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "UserId": "user_00037",
+            "session_id": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have specific information regarding the size range for the Organic Cotton Bubble Romper - Billie & Kid. To find out if it's available for older babies or just for newborns, please check the sizing details on the product page: [Organic Cotton Bubble Romper - Billie & Kid](https://www.aldeahome.com/products/organic-cotton-bubble-romper-billie-kid). The price is $34.00.",
+            "CreatedTime": "2025-08-10T01:36:23.126932",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8da823bb-c255-458c-a6b6-ec07bc9dd928",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "UserId": "user_00037",
+            "session_id": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Organic Cotton Bubble Romper - Billie & Kid (Product ID: 04708) comes in any colors or patterns, or is it only available in a specific design?",
+            "CreatedTime": "2025-08-10T01:36:24.635290",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "bf5dea74-5762-4f59-81a6-91abd3a7bf70",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "UserId": "user_00037",
+            "session_id": "f337911c-0a87-40fc-91d6-39ff4c82bc73",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have specific information about the colors or patterns available for the Organic Cotton Bubble Romper - Billie & Kid. To find out if it comes in various colors or patterns, please visit the product page: [Organic Cotton Bubble Romper - Billie & Kid](https://www.aldeahome.com/products/organic-cotton-bubble-romper-billie-kid). The price is $34.00.",
+            "CreatedTime": "2025-08-10T01:36:26.507905",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.861813"
 }

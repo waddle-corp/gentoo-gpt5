@@ -1,0 +1,178 @@
+{
+    "user_id": "user_00181",
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "f5407cea-8007-4df2-ae75-9d5a8732a10e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00181",
+            "event_name": "search",
+            "event_data": {
+                "query": "Admiral™ Vintage-Style Irish-Cut Crystal Whiskey Decanter",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.627387"
+        },
+        {
+            "id": "37df20ff-26c5-409e-a7ba-b883509434c5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00181",
+            "event_name": "search",
+            "event_data": {
+                "query": "Bird Ruffle Baby Girl Tunic Dress & Bodysuit (Organic): Navy Blue / 18-24M",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.629516"
+        },
+        {
+            "id": "545481e6-5663-4f53-a1fa-51c0a75838d5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00181",
+            "event_name": "search",
+            "event_data": {
+                "query": "Evil Eye Warmies",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.631898"
+        },
+        {
+            "id": "6b9b03af-e423-41fc-8f86-46da10a3aaad",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00181",
+            "event_name": "search",
+            "event_data": {
+                "query": "Unisex Pants | Stripe: 0- 6 Months",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.634223"
+        },
+        {
+            "id": "5f117019-cdcf-4280-8b8a-821d1c5bbcf7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00181",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.133.180"
+            },
+            "created_time": "2025-08-10T01:32:25.634227"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "39476f94-5e48-4bfe-84ad-15f5f91837bf",
+            "customer_id": "user_00181",
+            "product_id": "04099",
+            "rating": 1,
+            "review_title": "Below expectations",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-06-02T01:32:54.169147",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "bd09d935-499f-4c1d-8548-4a103ed0629b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "UserId": "user_00181",
+            "session_id": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "What are the specific scent notes in the SF Candle (Product ID: 00142), and how do they contribute to the overall fragrance experience?",
+            "CreatedTime": "2025-08-10T01:50:45.080137",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "07c5bf88-e0ef-42a7-9808-e2960dd881ac",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "UserId": "user_00181",
+            "session_id": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The SF Candle features specific scent notes of lemongrass, thyme leaves, and sage. These notes contribute to a refreshing and aromatic experience, evoking the essence of a summer night by the ocean, with hints of sea-bourne wispy fog and freshly cut grass in Golden Gate Park. The combination creates a soothing and uplifting ambiance, perfect for relaxation.\n\nYou can find more details and purchase the SF Candle for $31.95 at this link: [SF Candle](https://www.aldeahome.com/products/sf-candle).",
+            "CreatedTime": "2025-08-10T01:50:48.311086",
+            "ItemId": "00142",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "02928d8c-7403-4235-9cfc-30089853d837",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "UserId": "user_00181",
+            "session_id": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the size of the SF Candle (Product ID: 00142) and how long it typically lasts when burned?",
+            "CreatedTime": "2025-08-10T01:50:49.798536",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d93725f6-4b1a-43b4-8872-b146c76b6311",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "UserId": "user_00181",
+            "session_id": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The SF Candle measures 3.25″ x 3″ and has a capacity of 10 oz. It typically lasts for about 60 hours when burned, allowing for an extended enjoyment of its refreshing scents. \n\nYou can purchase the SF Candle for $31.95 at this link: [SF Candle](https://www.aldeahome.com/products/sf-candle).",
+            "CreatedTime": "2025-08-10T01:50:51.895981",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0ba577bb-91c1-4396-9329-77cb975c82e8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "UserId": "user_00181",
+            "session_id": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the SF Candle (Product ID: 00142) made with any eco-friendly materials, and can it be reused after the candle has burned down?",
+            "CreatedTime": "2025-08-10T01:50:52.944237",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0b3fa24d-8eb3-4a48-8faa-304701116dba",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "UserId": "user_00181",
+            "session_id": "e5de3058-2dd5-430b-b899-44cf6694f499",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the SF Candle is made with a screen-printed glass that is both reusable and dishwasher safe. This means that after the candle has burned down, you can clean the glass and repurpose it for other uses, making it an eco-friendly choice. \n\nYou can find the SF Candle for $31.95 at this link: [SF Candle](https://www.aldeahome.com/products/sf-candle).",
+            "CreatedTime": "2025-08-10T01:50:54.994792",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.908813"
+}

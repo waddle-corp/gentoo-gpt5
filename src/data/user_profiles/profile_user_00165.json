@@ -1,0 +1,51 @@
+{
+    "user_id": "user_00165",
+    "raw_engagement_score": 12,
+    "normalized_engagement_score": 8,
+    "activities": [
+        {
+            "id": "edff8b83-2b93-4108-8df6-5aab94f0b71b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00165",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02407",
+                "quantity": 3,
+                "price": 50.0
+            },
+            "created_time": "2025-08-10T01:32:25.602346"
+        },
+        {
+            "id": "dd16f578-43d7-407c-aac7-83ccd676f9a5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00165",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03768",
+                "quantity": 1,
+                "price": 33.5
+            },
+            "created_time": "2025-08-10T01:32:25.602349"
+        },
+        {
+            "id": "9f32e641-14d4-422d-8f2a-eda3c33100af",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00165",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "00436",
+                "category": "baby-accessories",
+                "product_name": "Pink Cotton Floppy Sun Hat",
+                "price": 24.99,
+                "product_url": "https://www.aldeahome.com/products/pink-cotton-floppy-sun-hat-1",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/5749afbd11804fcdab4c669a05b3df15e7f9a6ea72e7858c9d5cddb2f01cad6f_0639cab3-4041-44fb-a057-2fdd5cb83641.jpg?v=1676924935",
+                "view_duration_seconds": 65
+            },
+            "created_time": "2025-08-10T01:32:25.602353"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.904983"
+}

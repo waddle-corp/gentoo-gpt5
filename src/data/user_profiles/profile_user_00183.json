@@ -1,0 +1,140 @@
+{
+    "user_id": "user_00183",
+    "raw_engagement_score": 29,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "e1357b8a-e37e-4c59-878f-e091e2907e0a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00183",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03207",
+                "category": "cyber-monday-gift",
+                "product_name": "Trails Cushion",
+                "price": 77.0,
+                "product_url": "https://www.aldeahome.com/products/trails-cushion",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/TRAILS-CUSHION-OH.jpg?v=1598418255",
+                "view_duration_seconds": 91
+            },
+            "created_time": "2025-08-10T01:32:25.636510"
+        },
+        {
+            "id": "a755b9ff-9881-4b93-b7d7-a07971b82f49",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00183",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00183_636513",
+                "total_amount": 36.0,
+                "items": [
+                    {
+                        "product_id": "04725",
+                        "quantity": 1,
+                        "price": 36.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.636518"
+        },
+        {
+            "id": "b374eb54-28a8-45f8-b4a1-8e0dd7ebfbdd",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00183",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.52.59"
+            },
+            "created_time": "2025-08-10T01:32:25.636522"
+        },
+        {
+            "id": "799355cd-6bff-40f7-a344-d21bd69c3644",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00183",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.135.164"
+            },
+            "created_time": "2025-08-10T01:32:25.636526"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "1aa3b90d-7a7b-4a07-81e9-a9abe78cdd6f",
+            "customer_id": "user_00183",
+            "product_id": "07132",
+            "rating": 2,
+            "review_title": "Disappointed",
+            "review_content": "The quality of True Crime Trivia wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2025-07-15T01:32:54.169156",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "0224e8dc-e34e-43da-a43e-4f8a0d4c880f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f325098a-3cd8-40d8-91eb-b0493212aadd",
+            "UserId": "user_00183",
+            "session_id": "f325098a-3cd8-40d8-91eb-b0493212aadd",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the materials used in the clutch ball woodland (Product ID: 05291)?",
+            "CreatedTime": "2025-08-10T01:50:55.996167",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "43d9ee9e-fa59-4597-a072-5b0e1e8db324",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f325098a-3cd8-40d8-91eb-b0493212aadd",
+            "UserId": "user_00183",
+            "session_id": "f325098a-3cd8-40d8-91eb-b0493212aadd",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I'm sorry, but I don't have specific details about the materials used in the clutch ball woodland. However, you can view more information and make a purchase through the following link: [clutch ball woodland](https://www.aldeahome.com/products/clutch-ball-woodland). The price is $42.99.",
+            "CreatedTime": "2025-08-10T01:50:57.425807",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "02c739ef-2b00-4ceb-b6ee-1c26fb22025f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f325098a-3cd8-40d8-91eb-b0493212aadd",
+            "UserId": "user_00183",
+            "session_id": "f325098a-3cd8-40d8-91eb-b0493212aadd",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Is there any warranty or return policy for the clutch ball woodland (Product ID: 05291) if I'm not satisfied with it?",
+            "CreatedTime": "2025-08-10T01:50:58.186699",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "146cce49-c613-45b5-9ec7-28da1d3942e2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f325098a-3cd8-40d8-91eb-b0493212aadd",
+            "UserId": "user_00183",
+            "session_id": "f325098a-3cd8-40d8-91eb-b0493212aadd",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I'm sorry, but I don't have information regarding the warranty or return policy for the clutch ball woodland. I recommend checking the product page or contacting customer service for specific details. You can view the product here: [clutch ball woodland](https://www.aldeahome.com/products/clutch-ball-woodland), priced at $42.99.",
+            "CreatedTime": "2025-08-10T01:50:59.567193",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.909237"
+}

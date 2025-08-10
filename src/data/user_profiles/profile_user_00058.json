@@ -1,65 +1,177 @@
 {
     "user_id": "user_00058",
-    "raw_engagement_score": 6,
-    "normalized_engagement_score": 4,
+    "raw_engagement_score": 40,
+    "normalized_engagement_score": 24,
     "activities": [
         {
-            "id": "03b9fa92-cb39-4aa4-8038-09e8df6123e1",
+            "id": "d4be6902-0d80-4f72-82e3-a50e5440ba9a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00058",
-            "event_name": "login",
+            "event_name": "add_to_cart",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.108.22"
+                "product_id": "04476",
+                "quantity": 3,
+                "price": 30.0
             },
-            "created_time": "2025-08-09T20:05:50.734149"
+            "created_time": "2025-08-10T01:32:25.435212"
         },
         {
-            "id": "2594b790-adf6-47c5-9e05-f70032d0bae3",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00058",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.189.19"
-            },
-            "created_time": "2025-08-09T20:05:50.734154"
-        },
-        {
-            "id": "1e9f339d-4224-48b4-8220-220297da8df3",
+            "id": "8b507f0e-022b-4daf-9399-b2d20e4d1db3",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00058",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "02573",
-                "category": "cyber-monday-gift",
-                "product_name": "Lite-Brite Ultimate Classic",
-                "price": 30.0,
-                "product_url": "https://www.aldeahome.com/products/lite-brite",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/1786-Lite-Brite-Pkg-3Q-Right-web.jpg?v=1729745107",
-                "view_duration_seconds": 16
-            },
-            "created_time": "2025-08-09T20:05:50.734161"
-        },
-        {
-            "id": "e9279f0a-8b32-4d7d-875f-78ab4bff4da2",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00058",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "07289",
+                "product_id": "07323",
                 "category": "plush",
-                "product_name": "Chicken Rattle Benedict",
-                "price": 29.0,
-                "product_url": "https://www.aldeahome.com/products/chicken-rattle-benedict",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/ed29993b1a5edb6ff793329b226e6f96dde4f91bdd16e949c3618f23a8d11bb9.jpg?v=1742402384",
-                "view_duration_seconds": 53
+                "product_name": "Assorted Felt Finger Puppet - Safari Animal Set of 6",
+                "price": 12.5,
+                "product_url": "https://www.aldeahome.com/products/assorted-felt-finger-puppet-safari-animal-set-of-7",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/738e7f0e3d7c84a8669dd46e327b94a1cfef8e4567a531d22ed7f674a92b8722_7c41e7ea-37a2-41ee-b202-446942040eba.jpg?v=1748790748",
+                "view_duration_seconds": 13
             },
-            "created_time": "2025-08-09T20:05:50.734165"
+            "created_time": "2025-08-10T01:32:25.435216"
+        },
+        {
+            "id": "ffbaa760-4fd8-4e3d-8a17-14d81e3133f3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00058",
+            "event_name": "search",
+            "event_data": {
+                "query": "The Bruce 3-Seater Sofa",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.437567"
+        },
+        {
+            "id": "200f4628-05d2-4487-9811-37cb7bbdb5ea",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00058",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00058_437572",
+                "total_amount": 25.49,
+                "items": [
+                    {
+                        "product_id": "05348",
+                        "quantity": 1,
+                        "price": 19.99
+                    },
+                    {
+                        "product_id": "02327",
+                        "quantity": 1,
+                        "price": 5.5
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.437578"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "709f2364-d24a-48be-85cf-1d7a45e71fdf",
+            "customer_id": "user_00058",
+            "product_id": "06877",
+            "rating": 4,
+            "review_title": "Love it!",
+            "review_content": "Whales Baby Top + Shorts (Organic Muslin): WHITE / 18-24M is fantastic! I wish I'd found it sooner.",
+            "created_at": "2025-04-21T01:32:54.168862",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.202844"
+    "dialogues": [
+        {
+            "Id": "1f285b5c-15c8-46a5-be62-7d5e16e66df9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "UserId": "user_00058",
+            "session_id": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Is the Navy Stripe Seersucker Bonnet Baby SALE (Product ID: 06887) suitable for machine washing, or is hand washing the only recommended method?",
+            "CreatedTime": "2025-08-10T01:38:28.659165",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "62e1cae0-9270-45cd-8c90-689a58f51380",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "UserId": "user_00058",
+            "session_id": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Navy Stripe Seersucker Bonnet Baby SALE is recommended to be cold hand washed and laid flat to dry. Machine washing is not advised for this product. If you need more information or want to purchase it, you can find it [here](https://www.aldeahome.com/products/navy-stripe-seersucker-bonnet-baby-sale) for $13.00.",
+            "CreatedTime": "2025-08-10T01:38:30.280273",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d2dc5a1d-024b-40a9-b265-9d133445ce0a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "UserId": "user_00058",
+            "session_id": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Navy Stripe Seersucker Bonnet Baby SALE (Product ID: 06887) available in any other colors or patterns, or is it only offered in the navy and white stripes?",
+            "CreatedTime": "2025-08-10T01:38:31.744506",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b096d466-bb78-450c-97c8-fc8c972415b0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "UserId": "user_00058",
+            "session_id": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Navy Stripe Seersucker Bonnet Baby SALE is only offered in the navy blue and white striped pattern. If you're interested in purchasing it, you can do so for $13.00 [here](https://www.aldeahome.com/products/navy-stripe-seersucker-bonnet-baby-sale).",
+            "CreatedTime": "2025-08-10T01:38:32.991766",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2034cc43-02c8-43b5-b1f5-0f664d6f146f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "UserId": "user_00058",
+            "session_id": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Navy Stripe Seersucker Bonnet Baby SALE (Product ID: 06887) available for shipping internationally, or is it only available within the domestic market?",
+            "CreatedTime": "2025-08-10T01:38:34.029472",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3edad5b3-8cbd-4e09-8800-1429a368ec0e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "UserId": "user_00058",
+            "session_id": "1d4a3bc3-b012-41da-8f4c-1a273cb7e967",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific information regarding international shipping for the Navy Stripe Seersucker Bonnet Baby SALE. I recommend checking the shipping policy on the website or contacting customer service directly for details on international shipping. If you're interested in purchasing, you can find the bonnet [here](https://www.aldeahome.com/products/navy-stripe-seersucker-bonnet-baby-sale) for $13.00.",
+            "CreatedTime": "2025-08-10T01:38:35.630006",
+            "ItemId": "06887",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.870394"
 }

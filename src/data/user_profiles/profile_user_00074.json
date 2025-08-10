@@ -1,96 +1,81 @@
 {
     "user_id": "user_00074",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 28,
+    "normalized_engagement_score": 17,
     "activities": [
         {
-            "id": "798c902a-df95-48d8-bdf0-79d75513840e",
+            "id": "c47fd9eb-53a4-49ab-af7c-02f22ae38674",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00074",
-            "event_name": "login",
+            "event_name": "search",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.115.169"
+                "query": "Elroy The Royal Solar Corgi",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.751289"
+            "created_time": "2025-08-10T01:32:25.475237"
         },
         {
-            "id": "709b94fd-df6f-429e-983a-754630661acc",
+            "id": "1a61c004-ca37-48a1-8697-9d4d4b90a334",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00074",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00074_751292",
-                "total_amount": 7.95,
+                "order_id": "ORDER_user_00074_475240",
+                "total_amount": 17.99,
                 "items": [
                     {
-                        "product_id": "04786",
+                        "product_id": "01678",
                         "quantity": 1,
-                        "price": 7.95
+                        "price": 17.99
                     }
                 ],
-                "payment_method": "naver_pay"
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.751297"
+            "created_time": "2025-08-10T01:32:25.475245"
         },
         {
-            "id": "c4ea996c-d7c6-4055-9f32-e336931b753e",
+            "id": "06e94783-dd65-4be4-b71b-e9c945da51b4",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00074",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "01625",
+                "product_id": "00151",
                 "quantity": 1,
-                "price": 16.99
+                "price": 26.95
             },
-            "created_time": "2025-08-09T20:05:50.751302"
+            "created_time": "2025-08-10T01:32:25.475249"
         },
         {
-            "id": "6397e0e3-35a6-48dc-97ef-948ee361ac83",
+            "id": "7c61a23e-efc5-45bc-b834-80e8d8a5c601",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00074",
-            "event_name": "add_to_cart",
+            "event_name": "product_view",
             "event_data": {
-                "product_id": "07818",
-                "quantity": 1,
-                "price": 18.95
+                "product_id": "01455",
+                "category": "board-books-1",
+                "product_name": "Cheeky Chick!",
+                "price": 12.99,
+                "product_url": "https://www.aldeahome.com/products/vehicles-spring-street-copy",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/71dM3BVfaYL._SL1500.jpg?v=1746468040",
+                "view_duration_seconds": 27
             },
-            "created_time": "2025-08-09T20:05:50.751306"
+            "created_time": "2025-08-10T01:32:25.475253"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "fc5eb005-c1d1-4012-9f04-ff350cbd9a79",
+            "customer_id": "user_00074",
+            "product_id": "00606",
+            "rating": 4,
+            "review_title": "Best purchase ever",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-03-27T01:32:54.168892",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "5f544c40-6ccc-4b9f-ab66-f6695839bf82",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8483f7f6-c89e-4e5b-9d0a-892a693994b0",
-            "UserId": "user_00074",
-            "session_id": "8483f7f6-c89e-4e5b-9d0a-892a693994b0",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if the Sherpa Wash Cloths 12 pk (Product ID: 02638) are machine washable and how durable they are for everyday use?",
-            "CreatedTime": "2025-08-09T20:23:02.656886",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "18420122-7fc4-4755-b8b1-9ee0155fbeef",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8483f7f6-c89e-4e5b-9d0a-892a693994b0",
-            "UserId": "user_00074",
-            "session_id": "8483f7f6-c89e-4e5b-9d0a-892a693994b0",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Sherpa Wash Cloths 12 pk are made of organic Egyptian cotton, which makes them gentle enough for everyday use on your baby's skin. While the product information does not explicitly mention machine washability, organic cotton washcloths are typically machine washable and durable for regular use. \n\nFor more details or to purchase, you can check the product here: [Sherpa Wash Cloths 12 pk - $22.95](https://www.aldeahome.com/products/sherpa-wash-cloths-12-pk).",
-            "CreatedTime": "2025-08-09T20:23:05.156377",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.207891"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.876897"
 }

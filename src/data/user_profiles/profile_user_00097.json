@@ -1,160 +1,121 @@
 {
     "user_id": "user_00097",
-    "raw_engagement_score": 30,
-    "normalized_engagement_score": 20,
+    "raw_engagement_score": 28,
+    "normalized_engagement_score": 17,
     "activities": [
         {
-            "id": "e267ea7d-c2e1-4529-a8d1-a4a1b09dd513",
+            "id": "71a5641a-8fc1-449e-9e26-751d719bcc06",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00097",
             "event_name": "search",
             "event_data": {
-                "query": "Pachat & his Friends. 24 pieces",
+                "query": "Vinyl DJ Pants",
                 "search_results_count": 1,
-                "filters_applied": []
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.793518"
+            "created_time": "2025-08-10T01:32:25.503090"
         },
         {
-            "id": "feaef357-e387-4e61-b02a-a0d426d06126",
+            "id": "3ea99701-0b2b-458a-b315-fe00309a8d8f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00097",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00097_793529",
-                "total_amount": 93.74,
+                "order_id": "ORDER_user_00097_503094",
+                "total_amount": 15.98,
                 "items": [
                     {
-                        "product_id": "01911",
+                        "product_id": "01472",
                         "quantity": 1,
-                        "price": 69.75
+                        "price": 8.99
                     },
                     {
-                        "product_id": "05292",
+                        "product_id": "01555",
                         "quantity": 1,
-                        "price": 23.99
+                        "price": 6.99
                     }
                 ],
-                "payment_method": "credit_card"
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.793542"
-        },
-        {
-            "id": "a1e8bd19-4e52-461e-a2ea-45f0fde6f4b7",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00097",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.230.151"
-            },
-            "created_time": "2025-08-09T20:05:50.793547"
+            "created_time": "2025-08-10T01:32:25.503099"
         }
     ],
     "reviews": [
         {
-            "review_id": "a609f25d-cdcf-46e5-991c-0fcb63adc65a",
+            "review_id": "4fb83dd7-169b-408f-9be1-460a72864a17",
             "customer_id": "user_00097",
-            "product_id": "03416",
-            "rating": 1,
-            "review_title": "Disappointed",
-            "review_content": "The quality of The Garden wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2024-10-31T20:52:52.182350",
+            "product_id": "07679",
+            "rating": 3,
+            "review_title": "Very satisfied!",
+            "review_content": "Fast shipping and great quality. I especially love the details on Elf on the Shelf Tonie.",
+            "created_at": "2024-10-29T01:32:54.168964",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "b44812ba-74bc-49c9-b130-e88c9d5f01b5",
+            "Id": "a8219813-9634-4e69-8405-c26df1e4714f",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "DialogueId": "0ad54d79-557f-4ceb-9447-8b1e3e69e05c",
             "UserId": "user_00097",
-            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "session_id": "0ad54d79-557f-4ceb-9447-8b1e3e69e05c",
             "Intent": "일반",
             "Role": "user",
-            "Content": "Can you tell me if the Wooden Milestone Age Blocks (Product ID: 03199) are available in both pink and gray colors?",
-            "CreatedTime": "2025-08-09T20:24:39.930184",
+            "Content": "Can you tell me if the My Coffee Machine (Product ID: 02909) comes with all the accessories needed to make a cup of coffee for children?",
+            "CreatedTime": "2025-08-10T01:41:56.964561",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "339db9df-b12a-4369-b138-631f2f8eb9b6",
+            "Id": "18f42ec9-a601-447c-8d1f-9f18d01f2ae0",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "DialogueId": "0ad54d79-557f-4ceb-9447-8b1e3e69e05c",
             "UserId": "user_00097",
-            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "session_id": "0ad54d79-557f-4ceb-9447-8b1e3e69e05c",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "Yes, the Wooden Milestone Age Blocks are available in both pink and gray colors. You can choose your preferred color option for these blocks. If you're interested in purchasing them, they are priced at $24.99. You can find more information and make a purchase at this [link](https://www.aldeahome.com/products/wooden-milestone-age-blocks).",
-            "CreatedTime": "2025-08-09T20:24:41.506040",
-            "ItemId": "03199",
+            "Content": "Yes, the My Coffee Machine comes with all the accessories needed to make a great cup of coffee for children. It includes a cup, milk, sugar, a coffee pod, and a spoon. It's perfect for kids aged 3 and up! \n\nYou can find more details and purchase it for $26.95 at this link: [My Coffee Machine](https://www.aldeahome.com/products/my-coffee-machine).",
+            "CreatedTime": "2025-08-10T01:41:58.917664",
+            "ItemId": "02909",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "3a2a65b7-5b81-4b74-8f19-7ba1a5c31465",
+            "Id": "dee95404-2c77-4478-b83e-163bfa763a7d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "DialogueId": "0ad54d79-557f-4ceb-9447-8b1e3e69e05c",
             "UserId": "user_00097",
-            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "session_id": "0ad54d79-557f-4ceb-9447-8b1e3e69e05c",
             "Intent": "일반",
             "Role": "user",
-            "Content": "Do the Wooden Milestone Age Blocks (Product ID: 03199) come with any additional accessories or just the three blocks?",
-            "CreatedTime": "2025-08-09T20:24:42.244343",
-            "ItemId": null,
-            "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "3abcaae7-1b2f-4bc0-870e-10e48a09030b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
-            "UserId": "user_00097",
-            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Wooden Milestone Age Blocks come with three blocks: two small number blocks and one larger milestone block. There are no additional accessories included with the product. If you're interested in these blocks, they are priced at $24.99. You can find more details and purchase them at this [link](https://www.aldeahome.com/products/wooden-milestone-age-blocks).",
-            "CreatedTime": "2025-08-09T20:24:43.897847",
-            "ItemId": "03199",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e3642f5f-dd28-4d68-8d66-03bd8e82b9a0",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
-            "UserId": "user_00097",
-            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Are the Wooden Milestone Age Blocks (Product ID: 03199) made from natural wood, and is there any finish on them that might affect their safety for babies?",
-            "CreatedTime": "2025-08-09T20:24:44.853903",
+            "Content": "Is the My Coffee Machine (Product ID: 02909) easy for young children to use, or does it require adult supervision?",
+            "CreatedTime": "2025-08-10T01:41:59.838512",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "edbc795d-4d4d-483d-b344-09ef6848ed9e",
+            "Id": "144044e0-1ade-4e83-b927-5d47d2b32497",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "DialogueId": "0ad54d79-557f-4ceb-9447-8b1e3e69e05c",
             "UserId": "user_00097",
-            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
-            "Intent": "정보",
+            "session_id": "0ad54d79-557f-4ceb-9447-8b1e3e69e05c",
+            "Intent": "추천",
             "Role": "assistant",
-            "Content": "The product description does not specify the type of wood or any finishes used on the Wooden Milestone Age Blocks (Product ID: 03199). However, since they are designed for use with babies and for taking milestone pictures, they are typically made with safety in mind. It is advisable to check the product details on the retailer's website or contact them directly for specific information regarding materials and finishes to ensure safety for babies. If you're interested in purchasing the blocks, they are priced at $24.99, and you can find more information at this [link](https://www.aldeahome.com/products/wooden-milestone-age-blocks).",
-            "CreatedTime": "2025-08-09T20:24:47.320590",
-            "ItemId": "03199",
+            "Content": "The My Coffee Machine is designed for children aged 3 and up, making it easy for young children to use. However, as with any toy, adult supervision is recommended to ensure safe play, especially when handling small parts like the coffee pod and spoon. \n\nFor more information, you can check out the product here: [My Coffee Machine](https://www.aldeahome.com/products/my-coffee-machine) for $26.95.",
+            "CreatedTime": "2025-08-10T01:42:01.702543",
+            "ItemId": "02909",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.213793"
+    "profile_generated_at": "2025-08-10T01:53:50.884570"
 }

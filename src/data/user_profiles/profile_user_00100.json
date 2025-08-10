@@ -1,114 +1,38 @@
 {
     "user_id": "user_00100",
-    "raw_engagement_score": 28,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 3,
+    "normalized_engagement_score": 2,
     "activities": [
         {
-            "id": "e1ddc9d5-3cb4-4253-9d45-2e629296068a",
+            "id": "39c0a748-d23e-45cf-83e6-45c15981b16a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00100",
-            "event_name": "add_to_cart",
+            "event_name": "product_view",
             "event_data": {
-                "product_id": "01880",
-                "quantity": 3,
-                "price": 18.0
+                "product_id": "00462",
+                "category": "baby-care",
+                "product_name": "Baby Grooming Kit",
+                "price": 24.99,
+                "product_url": "https://www.aldeahome.com/products/baby-grooming-kit",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/76706219_992x_jpg.jpg?v=1688685949",
+                "view_duration_seconds": 84
             },
-            "created_time": "2025-08-09T20:05:50.796007"
+            "created_time": "2025-08-10T01:32:25.505403"
         },
         {
-            "id": "9927cdd8-0cbc-4418-96da-23a6e8ea6451",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00100",
-            "event_name": "search",
-            "event_data": {
-                "query": "My Baby's Book",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.798518"
-        },
-        {
-            "id": "73dff9b0-ebb0-4d8c-80ac-bbc0ae32eccf",
+            "id": "495916df-1aaf-4397-bfec-6daebb7ef890",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00100",
             "event_name": "login",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.117.220"
+                "login_method": "email_password",
+                "ip_address": "192.168.8.27"
             },
-            "created_time": "2025-08-09T20:05:50.798524"
-        },
-        {
-            "id": "6bf4fe4c-c67d-4f3a-9ca5-c50f6139e578",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00100",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00100_798535",
-                "total_amount": 464.95,
-                "items": [
-                    {
-                        "product_id": "02063",
-                        "quantity": 1,
-                        "price": 440.0
-                    },
-                    {
-                        "product_id": "06019",
-                        "quantity": 1,
-                        "price": 24.95
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.798548"
+            "created_time": "2025-08-10T01:32:25.505407"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "370be555-4b9c-46eb-bdf7-3db75e9a48b2",
-            "customer_id": "user_00100",
-            "product_id": "05475",
-            "rating": 1,
-            "review_title": "Do not recommend",
-            "review_content": "The quality of KeaBabies Maternity Support Belt (Midnight Black): 2XL wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2025-06-18T20:52:52.182361",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "61165175-2a4e-4150-8118-0495b297be2d",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "6636ad64-a217-4c8c-a1af-4e690a8959e7",
-            "UserId": "user_00100",
-            "session_id": "6636ad64-a217-4c8c-a1af-4e690a8959e7",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if the OXO Transitions Soft Spout Sippy Cup (Product ID: 06506) is suitable for both toddlers and older babies?",
-            "CreatedTime": "2025-08-09T20:24:54.065088",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "8ece5a46-f453-4c49-ad28-233a59dd964c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "6636ad64-a217-4c8c-a1af-4e690a8959e7",
-            "UserId": "user_00100",
-            "session_id": "6636ad64-a217-4c8c-a1af-4e690a8959e7",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "Yes, the OXO Transitions Soft Spout Sippy Cup is designed to be suitable for both toddlers and older babies. It features a silicone spout that conforms to your baby's mouth for a comfortable sip, making it ideal for little ones transitioning from bottles. The removable handles also provide a comfortable grip, making it easier for both toddlers and older babies to use. \n\nIf you're interested in purchasing, the price is $11.99, and you can find it [here](https://www.aldeahome.com/products/oxo-transitions-soft-spout-sippy-cup-with-removable-handles-6-oz).",
-            "CreatedTime": "2025-08-09T20:24:56.243343",
-            "ItemId": "06506",
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.214478"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.885678"
 }

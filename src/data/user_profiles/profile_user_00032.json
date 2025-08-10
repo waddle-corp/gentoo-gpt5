@@ -1,88 +1,123 @@
 {
     "user_id": "user_00032",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 29,
+    "normalized_engagement_score": 18,
     "activities": [
         {
-            "id": "bc5b65a3-e32e-4ec4-90ba-3a192786532e",
+            "id": "d481bf2a-28bf-491d-a974-375dbcff90d3",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00032",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "07802",
-                "category": "voluspa",
-                "product_name": "Casa Pacifica Small Jar Candle",
-                "price": 22.0,
-                "product_url": "https://www.aldeahome.com/products/casa-pacifica-small-jar-candle",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/SP22-PRopt-6877-1-WEB.webp?v=1733267926",
-                "view_duration_seconds": 49
+                "product_id": "07691",
+                "category": "tonies",
+                "product_name": "Tonies Subscription Box - 2 New Tonies per Month",
+                "price": 34.95,
+                "product_url": "https://www.aldeahome.com/products/tonies-subscription-box-2-new-tonies-per-month",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/f6c31762-b2be-4946-bd22-1b2fb47eb980.__CR0_0_1000_1000_PT0_SX300_V1____jpg.jpg?v=1703171452",
+                "view_duration_seconds": 74
             },
-            "created_time": "2025-08-09T20:05:50.688259"
+            "created_time": "2025-08-10T01:32:25.400242"
         },
         {
-            "id": "8c18be7b-bcb9-4458-a13c-0d4a8085a2f5",
+            "id": "d6cd1f1e-1c58-476c-83c6-59cf694bfbdf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00032",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "05486",
+                "category": "exclude",
+                "product_name": "Balloon Sleeveless Tank Top + Shorts Set (Organic Cotton): Natural / 6-12M",
+                "price": 44.0,
+                "product_url": "https://www.aldeahome.com/products/balloon-sleeveless-tank-top-shorts-set-organic-cotton-natural-6-12m",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/c2b9632cbb177302d1951f0dfd2fb949bd307f4ab27a330a1e69cf87e25a5b30_574b8f96-7942-494f-b885-182adbd41b98.jpg?v=1716149314",
+                "view_duration_seconds": 15
+            },
+            "created_time": "2025-08-10T01:32:25.400246"
+        },
+        {
+            "id": "e82971db-9901-44b7-a338-556ef4c51fe6",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00032",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00032_688264",
-                "total_amount": 599.95,
+                "order_id": "ORDER_user_00032_400250",
+                "total_amount": 68.0,
                 "items": [
                     {
-                        "product_id": "02107",
+                        "product_id": "06800",
                         "quantity": 1,
-                        "price": 599.95
+                        "price": 20.0
+                    },
+                    {
+                        "product_id": "06903",
+                        "quantity": 1,
+                        "price": 48.0
                     }
                 ],
-                "payment_method": "credit_card"
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.688272"
+            "created_time": "2025-08-10T01:32:25.400254"
+        },
+        {
+            "id": "26875841-0971-438c-b758-52cad47afeb8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00032",
+            "event_name": "search",
+            "event_data": {
+                "query": "Maxi-Cosi Romi Convertible Car Seat",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.402482"
         }
     ],
     "reviews": [
         {
-            "review_id": "79b92b54-b477-482c-b483-558d888d6562",
+            "review_id": "e8289cae-b3a8-47bc-a8a8-230231836f01",
             "customer_id": "user_00032",
-            "product_id": "03053",
-            "rating": 5,
-            "review_title": "Best purchase ever",
-            "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2024-12-14T20:52:52.182140",
+            "product_id": "06732",
+            "rating": 3,
+            "review_title": "Exceeded expectations",
+            "review_content": "I gave it as a gift and they loved it. Thanks to cornelius cob, I got called thoughtful!",
+            "created_at": "2024-08-23T01:32:54.168807",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "facf90f5-adf0-4ecd-a8fe-61f48abc63c5",
+            "Id": "01ca666b-5e4b-45ef-a46c-16a94bef058a",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "06e6fdd9-c2b8-4bd5-ae2c-af9c9b9b4ba8",
+            "DialogueId": "f745498f-39da-44ad-8992-bd1c1cfb644b",
             "UserId": "user_00032",
-            "session_id": "06e6fdd9-c2b8-4bd5-ae2c-af9c9b9b4ba8",
-            "Intent": "정보",
+            "session_id": "f745498f-39da-44ad-8992-bd1c1cfb644b",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "Can the Cybex e-Priam Frame (Product ID: 02097) be used with any of the three attachment options simultaneously, or do I need to purchase them separately?",
-            "CreatedTime": "2025-08-09T20:18:31.087289",
+            "Content": "Can the Romer Tura Rain Cover (Product ID: 07571) be used with other stroller brands, or is it exclusively designed for the Romer Tura model?",
+            "CreatedTime": "2025-08-10T01:35:55.358443",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "a4389f25-898e-472f-ad97-c1b7c16db600",
+            "Id": "de769c09-11e4-4f11-a7a2-aea7788a887a",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "06e6fdd9-c2b8-4bd5-ae2c-af9c9b9b4ba8",
+            "DialogueId": "f745498f-39da-44ad-8992-bd1c1cfb644b",
             "UserId": "user_00032",
-            "session_id": "06e6fdd9-c2b8-4bd5-ae2c-af9c9b9b4ba8",
+            "session_id": "f745498f-39da-44ad-8992-bd1c1cfb644b",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Cybex e-Priam Frame can be used with one of three different attachment options at a time: the Lux Carry Cot, the Cloud Q infant car seat, or the New Generation Priam Seat Pack. You will need to purchase these attachments separately. \n\nFor more details, you can check the product here: [Cybex e-Priam Frame](https://www.aldeahome.com/products/e-priam-frame) at the price of $1299.95.",
-            "CreatedTime": "2025-08-09T20:18:32.962777",
-            "ItemId": "02097",
-            "Thumbs": null,
+            "Content": "The Romer Tura Rain Cover is specifically designed to fit the Romer Tura stroller. It may not be compatible with other stroller brands. For optimal fit and functionality, it's best to use it exclusively with the Romer Tura model. If you're interested in purchasing it, the price is $74.99, and you can find it at this link: [Romer Tura Rain Cover](https://www.aldeahome.com/products/romer-tura-rain-cover).",
+            "CreatedTime": "2025-08-10T01:35:57.730341",
+            "ItemId": "07571",
+            "Thumbs": "up",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.191577"
+    "profile_generated_at": "2025-08-10T01:53:50.858927"
 }

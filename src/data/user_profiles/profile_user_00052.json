@@ -1,143 +1,50 @@
 {
     "user_id": "user_00052",
-    "raw_engagement_score": 30,
-    "normalized_engagement_score": 20,
+    "raw_engagement_score": 8,
+    "normalized_engagement_score": 5,
     "activities": [
         {
-            "id": "27eff688-9b6a-488a-abba-fec329a9d94d",
+            "id": "d6c814fa-aaaf-44b2-97ed-18bfb6391852",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00052",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04988",
+                "category": "exclude",
+                "product_name": "Grandma's Purse & More Tonie",
+                "price": 19.99,
+                "product_url": "https://www.aldeahome.com/products/grandmas-purse-more-tonie-2",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/ScreenShot2025-05-31at6.00.59PM.png?v=1748739672",
+                "view_duration_seconds": 103
+            },
+            "created_time": "2025-08-10T01:32:25.428400"
+        },
+        {
+            "id": "bc6fb771-e7ac-465e-a208-9684fa8c98f2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00052",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07158",
+                "quantity": 3,
+                "price": 15.5
+            },
+            "created_time": "2025-08-10T01:32:25.428404"
+        },
+        {
+            "id": "98b7659e-958f-4efa-845f-564d2ec2eaec",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00052",
             "event_name": "login",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.4.236"
+                "login_method": "social_google",
+                "ip_address": "192.168.216.203"
             },
-            "created_time": "2025-08-09T20:05:50.724451"
-        },
-        {
-            "id": "c3a5de72-9a8f-4d25-b38e-0f27722111c4",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00052",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00052_724454",
-                "total_amount": 199.0,
-                "items": [
-                    {
-                        "product_id": "00458",
-                        "quantity": 1,
-                        "price": 199.0
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.724459"
+            "created_time": "2025-08-10T01:32:25.428408"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "cfb60886-a02a-4749-a977-01e73b21e371",
-            "customer_id": "user_00052",
-            "product_id": "06318",
-            "rating": 3,
-            "review_title": "Exceeded expectations",
-            "review_content": "This inner-sanctuary product is excellent. Don't hesitate to buy Mini Cactus Cream | Dulce de Cuerpo!",
-            "created_at": "2024-08-28T20:52:52.182213",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "b939ebad-a228-4809-bb79-29b83bf6afd5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "UserId": "user_00052",
-            "session_id": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me more about the durability of the Hollywoof Collection - Momo’s Movie Reel Dog Toy (Product ID: 05088)? Is it suitable for aggressive chewers?",
-            "CreatedTime": "2025-08-09T20:20:17.898302",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "c722070e-66b5-4fa0-90b9-8d1e98b40b21",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "UserId": "user_00052",
-            "session_id": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Hollywoof Collection - Momo’s Movie Reel Dog Toy is designed for playful interaction and entertainment, but it may not be specifically tailored for aggressive chewers. As it is a plush toy, it might not withstand heavy chewing or rough play. If you have a dog that tends to be an aggressive chewer, it’s advisable to consider more durable chew toys made for that purpose. \n\nYou can check out the Hollywoof Collection - Momo’s Movie Reel Dog Toy for $12.00 at this link: [Hollywoof Collection - Momo’s Movie Reel Dog Toy](https://www.aldeahome.com/products/hollywoof-collection-momo-s-movie-reel).",
-            "CreatedTime": "2025-08-09T20:20:20.966409",
-            "ItemId": "05088",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "29e46163-8ebc-4b08-a2f4-7a403b3c10a8",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "UserId": "user_00052",
-            "session_id": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "Are there any recommendations for more durable toys that would be suitable for my aggressive chewer, especially if I’m looking for something similar to the Hollywoof Collection - Momo’s Movie Reel Dog Toy (Product ID: 05088)?",
-            "CreatedTime": "2025-08-09T20:20:22.387426",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "bd8987f0-cb85-4685-8657-1adcae4d2311",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "UserId": "user_00052",
-            "session_id": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "I'm sorry, but I can only provide information about the Hollywoof Collection - Momo’s Movie Reel Dog Toy. For your aggressive chewer, I recommend looking for toys specifically labeled as durable or indestructible. Brands like KONG or Nylabone often offer tougher options that can withstand strong chewing. \n\nIf you’re interested in the Hollywoof Collection - Momo’s Movie Reel Dog Toy, it is priced at $12.00 and can be found here: [Hollywoof Collection - Momo’s Movie Reel Dog Toy](https://www.aldeahome.com/products/hollywoof-collection-momo-s-movie-reel).",
-            "CreatedTime": "2025-08-09T20:20:27.327177",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "73a78232-79dd-495f-8e05-1db00deef0ce",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "UserId": "user_00052",
-            "session_id": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you suggest any specific brands or models that would provide a similar fun experience as the Hollywoof Collection - Momo’s Movie Reel Dog Toy (Product ID: 05088) while being more durable for aggressive chewers?",
-            "CreatedTime": "2025-08-09T20:20:28.740259",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "7f69c433-ec70-468c-9bd1-cc157a7e0eca",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "UserId": "user_00052",
-            "session_id": "68aa080b-9c8c-4045-a3d4-36895f8379db",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "I can only provide information about the Hollywoof Collection - Momo’s Movie Reel Dog Toy itself. However, if you’re looking for similar fun experiences while ensuring durability for aggressive chewers, I recommend considering toys from brands known for their durability, such as KONG or West Paw. \n\nThese brands often feature toys that are interactive and engaging, similar to the playful theme of the Hollywoof Collection. Unfortunately, I cannot specify models, but look for toys that have a fun design or interactive elements. \n\nIf you're interested in the Hollywoof Collection - Momo’s Movie Reel Dog Toy, it is available for $12.00 here: [Hollywoof Collection - Momo’s Movie Reel Dog Toy](https://www.aldeahome.com/products/hollywoof-collection-momo-s-movie-reel).",
-            "CreatedTime": "2025-08-09T20:20:34.836368",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.200044"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.868543"
 }

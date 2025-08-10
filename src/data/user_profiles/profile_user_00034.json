@@ -1,118 +1,102 @@
 {
     "user_id": "user_00034",
-    "raw_engagement_score": 14,
-    "normalized_engagement_score": 9,
+    "raw_engagement_score": 10,
+    "normalized_engagement_score": 6,
     "activities": [
         {
-            "id": "9b699737-4471-43a1-af9a-6374d9a77c4e",
+            "id": "a4ffab5f-9ca5-4d54-92e5-856bf9957573",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00034",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.25.27"
+            },
+            "created_time": "2025-08-10T01:32:25.402510"
+        },
+        {
+            "id": "38df080f-42a9-4a61-b09a-0b9d4d7fb96f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00034",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "03320",
-                "category": "cyber-monday-gift",
-                "product_name": "Sprinkles - Pastel Small Paper Plates (Multi-Color Pack)",
-                "price": 11.0,
-                "product_url": "https://www.aldeahome.com/products/sprinkles-pastel-small-paper-plates-multi-color-pack",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/ba982b44de8432ce7740f824574e2a21b1b8bacd602fcdf84d0883fa462a9a90.jpg?v=1623251794",
-                "view_duration_seconds": 30
+                "product_id": "04498",
+                "category": "exclude",
+                "product_name": "Veer Cruiser Foldable Storage Basket",
+                "price": 89.0,
+                "product_url": "https://www.aldeahome.com/products/veer-cruiser-foldable-rear-basket",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/veer-veer-foldable-storage-basket_3bb3d61a-5db8-4b7a-99a7-149456806c4e.jpg?v=1716651954",
+                "view_duration_seconds": 84
             },
-            "created_time": "2025-08-09T20:05:50.690763"
+            "created_time": "2025-08-10T01:32:25.402514"
+        },
+        {
+            "id": "97d97b61-379f-4152-af9c-190c7ae6d8b5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00034",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.228.190"
+            },
+            "created_time": "2025-08-10T01:32:25.402518"
+        },
+        {
+            "id": "b14ceaaa-5c8d-455b-b3c8-96fe0426ba58",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00034",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.47.68"
+            },
+            "created_time": "2025-08-10T01:32:25.402521"
+        },
+        {
+            "id": "0b295c66-1eec-42af-a8a2-484668821da1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00034",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.145.154"
+            },
+            "created_time": "2025-08-10T01:32:25.402525"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "34fa6995-05cc-44b3-a12e-ecde48593708",
+            "Id": "8177058f-1382-4105-9cd9-8dbbf72a6076",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "DialogueId": "6c193c38-83e0-4c8c-bf6f-9897c748f61f",
             "UserId": "user_00034",
-            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Can you tell me more about the types of recipes included in the Mocktail Club by Derick Santiago (Card Deck), product ID 05796? I'm curious if there are any unique or seasonal options.",
-            "CreatedTime": "2025-08-09T20:18:34.172676",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "533a78b9-e798-4908-93a1-c306b71bf196",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
-            "UserId": "user_00034",
-            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The Mocktail Club by Derick Santiago (Card Deck) features a beautiful collection of 75 alcohol-free recipes. While the specific types of recipes are not detailed in the provided information, it includes classic drinks, new flavor concoctions, and twists on old favorites. This variety suggests a range of options that could include unique and seasonal flavors, perfect for any occasion. \n\nYou can explore more about the card deck and purchase it for $19.99 [here](https://www.aldeahome.com/products/mocktail-club-by-derick-santiago-card-deck).",
-            "CreatedTime": "2025-08-09T20:18:37.717256",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "022206e7-93b1-405a-a7b6-2c4bde7b7f9a",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
-            "UserId": "user_00034",
-            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Are there any specific mocktail recipes in the Mocktail Club by Derick Santiago (Card Deck) that are particularly popular or highly recommended? Also, does the product ID 05796 include any tips for presentation or garnishing?",
-            "CreatedTime": "2025-08-09T20:18:38.761852",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a61c8732-569a-4047-823c-da3e23d5ce3c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
-            "UserId": "user_00034",
-            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The provided information does not specify particular popular or highly recommended mocktail recipes from the Mocktail Club by Derick Santiago (Card Deck), nor does it mention tips for presentation or garnishing. However, given the nature of the card deck, it likely includes a variety of creative mocktails that could be perfect for entertaining.\n\nFor more details and to purchase the card deck for $19.99, you can visit the product page [here](https://www.aldeahome.com/products/mocktail-club-by-derick-santiago-card-deck).",
-            "CreatedTime": "2025-08-09T20:18:41.624757",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "22d0de66-e49c-4867-aef1-ec3ee7a4a18f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
-            "UserId": "user_00034",
-            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "session_id": "6c193c38-83e0-4c8c-bf6f-9897c748f61f",
             "Intent": "일반",
             "Role": "user",
-            "Content": "Are there any customer reviews or testimonials for the Mocktail Club by Derick Santiago (Card Deck), product ID 05796, that can give me an idea of how others have enjoyed the recipes?",
-            "CreatedTime": "2025-08-09T20:18:42.851926",
+            "Content": "Can you tell me what colors are available for the PHOENIX QN DUVET SET - 3PC (Product ID: 05012)?",
+            "CreatedTime": "2025-08-10T01:36:11.930487",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "57e7c091-ca90-4c3a-9e1f-58d3081861be",
+            "Id": "4bd7e315-2a91-42ff-91d6-d78d8eb98485",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "DialogueId": "6c193c38-83e0-4c8c-bf6f-9897c748f61f",
             "UserId": "user_00034",
-            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
-            "Intent": "추천",
+            "session_id": "6c193c38-83e0-4c8c-bf6f-9897c748f61f",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "The provided information does not include any customer reviews or testimonials for the Mocktail Club by Derick Santiago (Card Deck). For insights into how others have enjoyed the recipes, I recommend checking the product page for any customer feedback or reviews that may be available. You can find more details and potentially customer comments by visiting the product link [here](https://www.aldeahome.com/products/mocktail-club-by-derick-santiago-card-deck).",
-            "CreatedTime": "2025-08-09T20:18:45.312235",
-            "ItemId": "05796",
+            "Content": "I'm sorry, but I don't have information on the available colors for the PHOENIX QN DUVET SET - 3PC. However, you can check the product page for more details. Here is the link: [PHOENIX QN DUVET SET - 3PC](https://www.aldeahome.com/products/phoenix-qn-duvet-set-3pc). The price is $260.00.",
+            "CreatedTime": "2025-08-10T01:36:13.903367",
+            "ItemId": "05012",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.191997"
+    "profile_generated_at": "2025-08-10T01:53:50.860526"
 }

@@ -1,46 +1,108 @@
 {
     "user_id": "user_00023",
-    "raw_engagement_score": 15,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "4238649d-f17f-49a9-bbda-d3861ed9d7f6",
+            "id": "365be026-0a19-47d9-bde2-45bd08c999d5",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00023",
-            "event_name": "add_to_cart",
+            "event_name": "login",
             "event_data": {
-                "product_id": "01298",
-                "quantity": 1,
-                "price": 65.0
+                "login_method": "email_password",
+                "ip_address": "192.168.73.86"
             },
-            "created_time": "2025-08-09T20:05:50.678599"
+            "created_time": "2025-08-10T01:32:25.384265"
         },
         {
-            "id": "ecfbeb2e-f44c-48d7-9ff0-e1be97a8bd39",
+            "id": "0f649516-763a-4af4-98db-96944294e40f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00023",
-            "event_name": "add_to_cart",
+            "event_name": "search",
             "event_data": {
-                "product_id": "02567",
-                "quantity": 1,
-                "price": 37.97
+                "query": "Kaleidoscope Butterflies Sleeve Kit",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.678603"
+            "created_time": "2025-08-10T01:32:25.386474"
         }
     ],
     "reviews": [
         {
-            "review_id": "5dca967c-80f5-4c76-879c-be2db6d3ca0d",
+            "review_id": "72045027-8913-4168-8e09-8556ea9ee93c",
             "customer_id": "user_00023",
-            "product_id": "03954",
-            "rating": 1,
-            "review_title": "Below expectations",
-            "review_content": "The quality of Hello, Garden Bugs wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2025-04-11T20:52:52.182120",
+            "product_id": "04577",
+            "rating": 4,
+            "review_title": "Super satisfied!",
+            "review_content": "Busy Ideas for Bored Kids: Travel Edition is fantastic! I wish I'd found it sooner.",
+            "created_at": "2025-05-24T01:32:54.168792",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.186999"
+    "dialogues": [
+        {
+            "Id": "4b9e36b7-2be3-40a3-aeae-0c9e3ae3bbb8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "692ee76f-f5bb-40bc-8051-3ae0b22fda77",
+            "UserId": "user_00023",
+            "session_id": "692ee76f-f5bb-40bc-8051-3ae0b22fda77",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Arnold the Avocado (Product ID: 07625) is suitable for infants under 6 months?",
+            "CreatedTime": "2025-08-10T01:35:12.983216",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0834563d-2746-4756-adba-3ace6010eba0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "692ee76f-f5bb-40bc-8051-3ae0b22fda77",
+            "UserId": "user_00023",
+            "session_id": "692ee76f-f5bb-40bc-8051-3ae0b22fda77",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, Arnold the Avocado is suitable for infants under 6 months. It is made with 100% natural rubber, is soft and easy to grasp, and is designed to soothe teething gums, making it safe for young babies. You can find more information and purchase it for $21.99 at this link: [Arnold the Avocado](https://www.aldeahome.com/products/arnold-the-avocado-3).",
+            "CreatedTime": "2025-08-10T01:35:14.998998",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d41da4c5-43ba-4cc9-b25a-03a4c7e278b8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "692ee76f-f5bb-40bc-8051-3ae0b22fda77",
+            "UserId": "user_00023",
+            "session_id": "692ee76f-f5bb-40bc-8051-3ae0b22fda77",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Does Arnold the Avocado (Product ID: 07625) come in any other colors or designs, or is it only available in the green avocado shape?",
+            "CreatedTime": "2025-08-10T01:35:15.866942",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "4fbb8dc7-122d-44eb-a240-3e17b81fe5eb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "692ee76f-f5bb-40bc-8051-3ae0b22fda77",
+            "UserId": "user_00023",
+            "session_id": "692ee76f-f5bb-40bc-8051-3ae0b22fda77",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Arnold the Avocado is specifically designed as a green avocado shape and does not come in other colors or designs. Its unique fruit-shaped design is part of its appeal for sensory play and teething. You can check it out for $21.99 here: [Arnold the Avocado](https://www.aldeahome.com/products/arnold-the-avocado-3).",
+            "CreatedTime": "2025-08-10T01:35:17.488939",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.854019"
 }

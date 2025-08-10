@@ -1,87 +1,137 @@
 {
     "user_id": "user_00067",
-    "raw_engagement_score": 27,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 15,
     "activities": [
         {
-            "id": "dae7ba5a-9a4b-4b74-a1c9-a3a05d052b04",
+            "id": "125f5409-eaff-4f2e-b779-4d26961e0c26",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00067",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "04788",
+                "product_id": "07615",
                 "quantity": 1,
-                "price": 22.0
+                "price": 8.99
             },
-            "created_time": "2025-08-09T20:05:50.743912"
+            "created_time": "2025-08-10T01:32:25.458877"
         },
         {
-            "id": "e708327c-79d7-4a0a-ab77-d20d11b653ea",
+            "id": "f2800598-656a-4acb-8ca4-4ac53d0a1784",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00067",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "05088",
+                "product_id": "02372",
                 "quantity": 2,
-                "price": 12.0
+                "price": 64.0
             },
-            "created_time": "2025-08-09T20:05:50.743916"
+            "created_time": "2025-08-10T01:32:25.458881"
         },
         {
-            "id": "3da2433e-6418-4769-ba68-3638479db3e4",
+            "id": "a89f92e6-f0ec-42d8-a080-bd875fc74ad5",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00067",
-            "event_name": "product_view",
+            "event_name": "login",
             "event_data": {
-                "product_id": "03618",
-                "category": "dinosaur",
-                "product_name": "Green T-Rex Holiday Ornament",
-                "price": 25.0,
-                "product_url": "https://www.aldeahome.com/products/green-t-rex-ornament-6l",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/60ede488df37b83e90da57f12f42e339d2a0391ae9d5817291ec2225ef52a189.jpg?v=1731947253",
-                "view_duration_seconds": 46
+                "login_method": "social_google",
+                "ip_address": "192.168.162.181"
             },
-            "created_time": "2025-08-09T20:05:50.743921"
-        },
-        {
-            "id": "d8d82298-6098-4468-be95-9cb12472af2b",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00067",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00067_743928",
-                "total_amount": 29.5,
-                "items": [
-                    {
-                        "product_id": "03744",
-                        "quantity": 1,
-                        "price": 23.0
-                    },
-                    {
-                        "product_id": "05780",
-                        "quantity": 1,
-                        "price": 6.5
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.743942"
-        },
-        {
-            "id": "941ec0e5-cc02-428c-9b95-37b1a08b9524",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00067",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "02746",
-                "quantity": 1,
-                "price": 14.99
-            },
-            "created_time": "2025-08-09T20:05:50.743946"
+            "created_time": "2025-08-10T01:32:25.458885"
         }
     ],
     "reviews": [],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.205926"
+    "dialogues": [
+        {
+            "Id": "c1e2a945-55a2-4692-8e5c-4ecb1d15d8ce",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "UserId": "user_00067",
+            "session_id": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can the Cybex Lemo 2 Adapter Set (Product ID: 03502) be used with any other high chair models, or is it specifically designed for the Lemo 2?",
+            "CreatedTime": "2025-08-10T01:39:08.100550",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "f23c0ac1-9b91-4c18-a2ab-6752b7a2abaf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "UserId": "user_00067",
+            "session_id": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Cybex Lemo 2 Adapter Set is specifically designed for the Lemo 2 High Chair and cannot be used with other high chair models. It includes the necessary components to ensure stability when using the Lemo Bouncer. If you're interested, the price is $49.95, and you can find more information [here](https://www.aldeahome.com/products/cybex-lemo-2-adapter-set).",
+            "CreatedTime": "2025-08-10T01:39:09.766267",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a5b2eee1-e1ba-4777-a8bd-4cef9fd6c66a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "UserId": "user_00067",
+            "session_id": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the Cybex Lemo 2 Adapter Set (Product ID: 03502) easy to install, or does it require any special tools?",
+            "CreatedTime": "2025-08-10T01:39:10.962643",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "2e222960-80e3-4a85-b09b-2227c7badfb2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "UserId": "user_00067",
+            "session_id": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Cybex Lemo 2 Adapter Set is designed for easy installation and does not require any special tools. It includes the necessary components for a straightforward setup, allowing you to attach the Lemo Bouncer to the Lemo 2 High Chair with ease. If you have further questions or need assistance, feel free to ask! The price is $49.95, and you can find more details [here](https://www.aldeahome.com/products/cybex-lemo-2-adapter-set).",
+            "CreatedTime": "2025-08-10T01:39:13.053720",
+            "ItemId": "03502",
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "6d323c2f-b38e-4c87-80b5-9a6603142f2a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "UserId": "user_00067",
+            "session_id": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Cybex Lemo 2 Adapter Set (Product ID: 03502) is compatible with any accessories besides the Lemo Bouncer, or is it solely designed for that purpose?",
+            "CreatedTime": "2025-08-10T01:39:14.911941",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "ac087089-7d0d-4561-9d29-d2155f3ab00a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "UserId": "user_00067",
+            "session_id": "91afc12a-86bb-4a12-b793-f6fe5264d871",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Cybex Lemo 2 Adapter Set is specifically designed for attaching the Lemo Bouncer to the Lemo 2 High Chair. It is not compatible with other accessories beyond the Lemo Bouncer. If you need any further information or assistance, please let me know! The price is $49.95, and you can view more details [here](https://www.aldeahome.com/products/cybex-lemo-2-adapter-set).",
+            "CreatedTime": "2025-08-10T01:39:17.123417",
+            "ItemId": "03502",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.874021"
 }

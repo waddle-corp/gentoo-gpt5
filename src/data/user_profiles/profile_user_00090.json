@@ -1,49 +1,77 @@
 {
     "user_id": "user_00090",
-    "raw_engagement_score": 11,
-    "normalized_engagement_score": 7,
+    "raw_engagement_score": 9,
+    "normalized_engagement_score": 6,
     "activities": [
         {
-            "id": "7f182932-55d2-4c3d-bf09-141b65d65079",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00090",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.216.9"
-            },
-            "created_time": "2025-08-09T20:05:50.783682"
-        },
-        {
-            "id": "a2184b30-8755-4712-8091-f254bee5790c",
+            "id": "2cb4e33a-b1a3-4396-93d9-7d4378338c6e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00090",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "00684",
-                "category": "back-to-school",
-                "product_name": "Wild Bunch Unicorn Lunch Box",
-                "price": 22.95,
-                "product_url": "https://www.aldeahome.com/products/wild-bunch-unicorn-lunch-box",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/d894035b992bb874bf864639a7b3890cdc6aaafccd2fc3c115b5c1fe215916ce.jpg?v=1626709721",
-                "view_duration_seconds": 96
+                "product_id": "04895",
+                "category": "exclude",
+                "product_name": "Tricycle Mouse, Big Brother - Blue",
+                "price": 34.95,
+                "product_url": "https://www.aldeahome.com/products/tricycle-mouse-big-brother-blue",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/17-3205-00_2048x_png.jpg?v=1743449916",
+                "view_duration_seconds": 75
             },
-            "created_time": "2025-08-09T20:05:50.783688"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-10T01:32:25.487305"
+        },
         {
-            "review_id": "ce7c4b9e-771a-4070-af7d-5f94fb16cecb",
-            "customer_id": "user_00090",
-            "product_id": "01246",
-            "rating": 4,
-            "review_title": "Highly recommend",
-            "review_content": "sleepi fit sheet is fantastic! I wish I'd found it sooner.",
-            "created_at": "2024-08-25T20:52:52.182334",
-            "is_deleted": false
+            "id": "a171c2e3-03d9-4e91-8468-37cf11a45baf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00090",
+            "event_name": "search",
+            "event_data": {
+                "query": "Surf Romper 6-12m",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.489657"
+        },
+        {
+            "id": "955c0033-c9fc-4e2c-a535-21e685b9529c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00090",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04367",
+                "category": "exclude",
+                "product_name": "Greetings From Los Angeles! Greeting Card: Single Greeting Card",
+                "price": 5.0,
+                "product_url": "https://www.aldeahome.com/products/greetings-from-los-angeles-greeting-card-single-greeting-card",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/6734f994608cb578e32e727afcd4a8c7c1bd6c6d9ca500486032425c38b90de4.png?v=1719967934",
+                "view_duration_seconds": 89
+            },
+            "created_time": "2025-08-10T01:32:25.489661"
+        },
+        {
+            "id": "ad4cbcd0-1ffe-43a7-8919-a2d188302475",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00090",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.179.195"
+            },
+            "created_time": "2025-08-10T01:32:25.489665"
+        },
+        {
+            "id": "e15852de-2fde-466b-91de-f378e161cad5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00090",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.42.51"
+            },
+            "created_time": "2025-08-10T01:32:25.489669"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.212204"
+    "profile_generated_at": "2025-08-10T01:53:50.882480"
 }

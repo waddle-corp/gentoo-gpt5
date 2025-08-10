@@ -1,0 +1,79 @@
+{
+    "user_id": "user_00136",
+    "raw_engagement_score": 31,
+    "normalized_engagement_score": 19,
+    "activities": [
+        {
+            "id": "4750a815-2bd2-400b-a12e-922fb5b8ff11",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00136",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00136_558666",
+                "total_amount": 7.0,
+                "items": [
+                    {
+                        "product_id": "02558",
+                        "quantity": 1,
+                        "price": 7.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.558670"
+        },
+        {
+            "id": "8efaeea8-9483-40b3-b679-cf99244553b1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00136",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00136_558673",
+                "total_amount": 616.95,
+                "items": [
+                    {
+                        "product_id": "02176",
+                        "quantity": 1,
+                        "price": 599.95
+                    },
+                    {
+                        "product_id": "03540",
+                        "quantity": 1,
+                        "price": 17.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.558677"
+        },
+        {
+            "id": "a2e6bc49-3def-4215-97c2-d99d618c72bf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00136",
+            "event_name": "search",
+            "event_data": {
+                "query": "B Pack - Black",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.561019"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "3d101726-feb0-4f32-9b22-49d1414ba22f",
+            "customer_id": "user_00136",
+            "product_id": "03028",
+            "rating": 4,
+            "review_title": "Super satisfied!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-04-06T01:32:54.169046",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.897998"
+}

@@ -1,82 +1,88 @@
 {
     "user_id": "user_00017",
-    "raw_engagement_score": 24,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "687bbd4e-dedc-4c4f-a895-fdea2cc8cb26",
+            "id": "d0b045e1-42a6-4f13-bc53-706230a560aa",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00017",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "00156",
+                "category": "apparel-1",
+                "product_name": "Silently Judging You Baby Bodysuit",
+                "price": 25.0,
+                "product_url": "https://www.aldeahome.com/products/silently-judging-you-bodysuit-funny-baby-clothing-white",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/1557954665.jpg?v=1729646259",
+                "view_duration_seconds": 39
+            },
+            "created_time": "2025-08-10T01:32:25.375129"
+        },
+        {
+            "id": "2869a65f-699d-41b8-b7be-dbb5c50fd24d",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00017",
             "event_name": "login",
             "event_data": {
                 "login_method": "social_google",
-                "ip_address": "192.168.65.76"
+                "ip_address": "192.168.201.55"
             },
-            "created_time": "2025-08-09T20:05:50.663998"
+            "created_time": "2025-08-10T01:32:25.375132"
         },
         {
-            "id": "aee26910-0817-4441-9675-11811df114bd",
+            "id": "faf7da38-6d42-484f-bf76-13b1024a69f4",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00017",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00017_664006",
-                "total_amount": 49.95,
+                "order_id": "ORDER_user_00017_375135",
+                "total_amount": 464.99,
                 "items": [
                     {
-                        "product_id": "03102",
+                        "product_id": "02115",
                         "quantity": 1,
-                        "price": 17.0
+                        "price": 449.99
                     },
                     {
-                        "product_id": "02906",
+                        "product_id": "03646",
                         "quantity": 1,
-                        "price": 32.95
+                        "price": 15.0
                     }
                 ],
-                "payment_method": "naver_pay"
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.664021"
+            "created_time": "2025-08-10T01:32:25.375139"
         },
         {
-            "id": "5ea76797-87fb-4e0b-a7e6-785a057bcb04",
+            "id": "899001c1-44a1-4555-bafc-e4943c4ea39b",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00017",
-            "event_name": "purchase_completed",
+            "event_name": "add_to_cart",
             "event_data": {
-                "order_id": "ORDER_user_00017_664025",
-                "total_amount": 25.96,
-                "items": [
-                    {
-                        "product_id": "07496",
-                        "quantity": 1,
-                        "price": 9.99
-                    },
-                    {
-                        "product_id": "02976",
-                        "quantity": 1,
-                        "price": 15.97
-                    }
-                ],
-                "payment_method": "credit_card"
+                "product_id": "06007",
+                "quantity": 3,
+                "price": 113.0
             },
-            "created_time": "2025-08-09T20:05:50.664030"
+            "created_time": "2025-08-10T01:32:25.375142"
         },
         {
-            "id": "abebbc2f-a71e-4add-acc2-c32539b8891e",
+            "id": "9256e9d8-4153-4596-ba76-f135b9f1c7c5",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00017",
             "event_name": "search",
             "event_data": {
-                "query": "Dazzle Aventurine Cheese Board",
+                "query": "Colored birds dazzling birds kit",
                 "search_results_count": 1,
-                "filters_applied": []
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.666538"
+            "created_time": "2025-08-10T01:32:25.377372"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.183866"
+    "profile_generated_at": "2025-08-10T01:53:50.850157"
 }

@@ -1,34 +1,184 @@
 {
     "user_id": "user_00033",
-    "raw_engagement_score": 12,
-    "normalized_engagement_score": 8,
+    "raw_engagement_score": 48,
+    "normalized_engagement_score": 29,
     "activities": [
         {
-            "id": "89e763d3-8c2f-48b9-81a6-985b3d284a7c",
+            "id": "ded23cd6-e700-4bc9-9705-487d7c49891f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00033",
-            "event_name": "search",
+            "event_name": "purchase_completed",
             "event_data": {
-                "query": "adventure begins blue mug",
-                "search_results_count": 1,
-                "filters_applied": []
+                "order_id": "ORDER_user_00033_402486",
+                "total_amount": 35.95,
+                "items": [
+                    {
+                        "product_id": "05705",
+                        "quantity": 1,
+                        "price": 11.0
+                    },
+                    {
+                        "product_id": "02668",
+                        "quantity": 1,
+                        "price": 24.95
+                    }
+                ],
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T20:05:50.690750"
+            "created_time": "2025-08-10T01:32:25.402491"
+        },
+        {
+            "id": "3c2a53fb-a494-45dd-8809-2c13694d68a4",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00033",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03948",
+                "quantity": 3,
+                "price": 13.0
+            },
+            "created_time": "2025-08-10T01:32:25.402495"
+        },
+        {
+            "id": "633c6bb2-2fe8-4bfa-8fec-bd235e35c877",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00033",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00033_402497",
+                "total_amount": 114.0,
+                "items": [
+                    {
+                        "product_id": "04456",
+                        "quantity": 1,
+                        "price": 39.0
+                    },
+                    {
+                        "product_id": "03057",
+                        "quantity": 1,
+                        "price": 75.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.402501"
+        },
+        {
+            "id": "7d3cb49d-3861-481b-90c1-d9da381dd2d8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00033",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.203.201"
+            },
+            "created_time": "2025-08-10T01:32:25.402505"
         }
     ],
     "reviews": [
         {
-            "review_id": "e283f4ae-4311-4ea0-9f76-acc6e4f7b83a",
+            "review_id": "0a3cfd0b-672b-4bd1-93c0-9205d3eb9f4d",
             "customer_id": "user_00033",
-            "product_id": "04882",
-            "rating": 5,
-            "review_title": "Highly recommend",
-            "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2024-10-28T20:52:52.182145",
+            "product_id": "03892",
+            "rating": 4,
+            "review_title": "Best purchase ever",
+            "review_content": "Egg Shaker is fantastic! I wish I'd found it sooner.",
+            "created_at": "2025-02-08T01:32:54.168812",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.191815"
+    "dialogues": [
+        {
+            "Id": "77bb84f9-6813-4c9d-a382-cadac9c2f140",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "UserId": "user_00033",
+            "session_id": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you provide more details about the content and age suitability of \"the abc's of black history\" (Product ID: 04936)?",
+            "CreatedTime": "2025-08-10T01:35:58.659288",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "09e4da83-d351-4db4-86ec-4cc3dfd5f9e6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "UserId": "user_00033",
+            "session_id": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "\"The abc's of black history\" is a product designed to educate and celebrate significant figures and events in Black history. While specific content details are not provided, it is generally suitable for children and young readers, making it an excellent educational resource. It encourages learning through an engaging format.\n\nThe price for this product is $17.99, and you can find more information and purchase it at the following link: [the abc's of black history](https://www.aldeahome.com/products/the-abc-s-of-black-history).",
+            "CreatedTime": "2025-08-10T01:36:01.801927",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1c016ea9-d6c0-48c5-9111-9815b7067025",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "UserId": "user_00033",
+            "session_id": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any reviews or testimonials available for \"the abc's of black history\" (Product ID: 04936) that highlight its effectiveness in teaching kids about Black history?",
+            "CreatedTime": "2025-08-10T01:36:02.854964",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bbd2e9b8-103e-4eb3-88c6-2390856b33f9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "UserId": "user_00033",
+            "session_id": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have access to specific reviews or testimonials for \"the abc's of black history\" (Product ID: 04936). However, this product is designed as an educational resource aimed at teaching children about significant figures and events in Black history, which suggests it is intended to be effective in that regard. For detailed feedback, I recommend checking the product page or retailer site for any customer reviews. You can view the product here: [the abc's of black history](https://www.aldeahome.com/products/the-abc-s-of-black-history).",
+            "CreatedTime": "2025-08-10T01:36:06.129682",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "55fc543f-2d2d-46cd-99b5-70ddcb4799d2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "UserId": "user_00033",
+            "session_id": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any specific themes or notable figures covered in \"the abc's of black history\" (Product ID: 04936) that would make it particularly engaging for children?",
+            "CreatedTime": "2025-08-10T01:36:07.226605",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4a9d7417-4249-464a-a9ba-bcf8f85885ec",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "UserId": "user_00033",
+            "session_id": "e6c89dae-2a01-459b-a8d6-e00cf94c47f0",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "While specific themes or notable figures covered in \"the abc's of black history\" (Product ID: 04936) are not detailed, the title suggests that it includes a range of significant individuals and events pivotal to Black history, presented in an engaging and accessible manner for children. The use of the alphabet format typically makes it easier for young readers to connect with and remember important historical figures and concepts. This engaging approach is designed to foster interest and understanding of Black history among children. \n\nFor more information or to purchase, you can visit: [the abc's of black history](https://www.aldeahome.com/products/the-abc-s-of-black-history) for $17.99.",
+            "CreatedTime": "2025-08-10T01:36:10.896275",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.859895"
 }

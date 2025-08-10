@@ -1,0 +1,50 @@
+{
+    "user_id": "user_00172",
+    "raw_engagement_score": 8,
+    "normalized_engagement_score": 5,
+    "activities": [
+        {
+            "id": "10a2be37-79b2-48a9-b59e-b4cf40a6bdc7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00172",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03832",
+                "category": "drinkin",
+                "product_name": "Cocktail Cabinet: Whiskey",
+                "price": 24.95,
+                "product_url": "https://www.aldeahome.com/products/cocktail-cabinet-whiskey",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/eb57fc24683f681445376a2eeb23aa99bebf219c5ccb3da83c0ff2a0d16bd9b8.jpg?v=1749940370",
+                "view_duration_seconds": 88
+            },
+            "created_time": "2025-08-10T01:32:25.611731"
+        },
+        {
+            "id": "31b75574-296f-40e6-8add-b37f08bf0fad",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00172",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02178",
+                "quantity": 2,
+                "price": 189.99
+            },
+            "created_time": "2025-08-10T01:32:25.611735"
+        },
+        {
+            "id": "ebe5d425-a463-4c05-b94b-c968e468ab19",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00172",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.227.186"
+            },
+            "created_time": "2025-08-10T01:32:25.611738"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.907012"
+}

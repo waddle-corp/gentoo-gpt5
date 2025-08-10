@@ -1,0 +1,136 @@
+{
+    "user_id": "user_00194",
+    "raw_engagement_score": 26,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "42d909a8-dd85-403e-bec9-3c76b34d0bc3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00194",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "05724",
+                "quantity": 1,
+                "price": 34.99
+            },
+            "created_time": "2025-08-10T01:32:25.650060"
+        },
+        {
+            "id": "3a47986f-e2f6-4c4c-a6c1-592fc35583d5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00194",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.31.7"
+            },
+            "created_time": "2025-08-10T01:32:25.650064"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "5de1325a-5327-4ea6-8953-d7dd75ae7e6f",
+            "customer_id": "user_00194",
+            "product_id": "06557",
+            "rating": 5,
+            "review_title": "Highly recommend",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-03-13T01:32:54.169193",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "f7c30460-cc71-42ff-a04c-a430495fdb7e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "UserId": "user_00194",
+            "session_id": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the 'Lil' Honey the Teddy Bear' (Product ID: 07257) is machine washable?",
+            "CreatedTime": "2025-08-10T01:51:37.772861",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7c23629d-ea1c-4750-af3c-e64b92297c4a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "UserId": "user_00194",
+            "session_id": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have specific information regarding whether 'Lil' Honey the Teddy Bear' is machine washable. It's best to refer to the care instructions on the product tag or packaging. If you have any further questions or need assistance, feel free to ask! \n\nFor more details about the product, you can check it out [here](https://www.aldeahome.com/products/lil-honey-the-teddy-bear).",
+            "CreatedTime": "2025-08-10T01:51:39.681184",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "fe22b2f5-8add-46f6-b7cd-83f587595a24",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "UserId": "user_00194",
+            "session_id": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "Can you let me know what the recommended care instructions are for 'Lil' Honey the Teddy Bear' (Product ID: 07257)? I want to make sure I take good care of it!",
+            "CreatedTime": "2025-08-10T01:51:40.640625",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ae17e6c8-5be3-43dd-96b5-bedbd8762983",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "UserId": "user_00194",
+            "session_id": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have the specific care instructions for 'Lil' Honey the Teddy Bear'. It's best to check the care tag attached to the bear or refer to the product packaging for detailed instructions. This will ensure you take the best care of your plush friend! \n\nIf you need more information about the bear, you can view it [here](https://www.aldeahome.com/products/lil-honey-the-teddy-bear).",
+            "CreatedTime": "2025-08-10T01:51:42.477473",
+            "ItemId": "07257",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "414134b9-e400-4c6f-8554-8577b61c3ec7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "UserId": "user_00194",
+            "session_id": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me what materials are used to make 'Lil' Honey the Teddy Bear' (Product ID: 07257)? I'm curious about its safety and durability for my child.",
+            "CreatedTime": "2025-08-10T01:51:43.475279",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "d5af0ede-e746-4af1-962b-37d1646db4d4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "UserId": "user_00194",
+            "session_id": "3661b293-2bb5-4c00-a1b8-ecc80968bbbb",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific details about the materials used to make 'Lil' Honey the Teddy Bear'. For safety and durability information, I recommend checking the product tag or packaging, as it typically includes details about materials and safety standards. \n\nIf you're looking for more information about the product, you can find it [here](https://www.aldeahome.com/products/lil-honey-the-teddy-bear).",
+            "CreatedTime": "2025-08-10T01:51:45.443156",
+            "ItemId": "07257",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.911371"
+}

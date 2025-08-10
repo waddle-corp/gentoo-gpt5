@@ -1,118 +1,68 @@
 {
     "user_id": "user_00066",
-    "raw_engagement_score": 27,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 13,
+    "normalized_engagement_score": 8,
     "activities": [
         {
-            "id": "b885e2b4-72b6-4dc7-9d93-d679f5f98e77",
+            "id": "0ef39427-f76d-47d9-a0a3-730df0142627",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00066",
-            "event_name": "login",
+            "event_name": "product_view",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.33.189"
+                "product_id": "02017",
+                "category": "candy-labs-wooden-toy-cars",
+                "product_name": "Citron Macaron",
+                "price": 20.0,
+                "product_url": "https://www.aldeahome.com/products/citron-macaron-3",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/f02dad383abf3da2b6eef94841c569fd114d84b5d81a216e97147c071ecc767c_e8a0a29b-834a-4ad4-880e-ee477cbe4f85.jpg?v=1716826297",
+                "view_duration_seconds": 103
             },
-            "created_time": "2025-08-09T20:05:50.743897"
+            "created_time": "2025-08-10T01:32:25.456490"
         },
         {
-            "id": "f272b0e5-e52b-4516-a48b-0ea34c2a259e",
+            "id": "cc83ce8d-4675-4e3a-85f7-b96e0455f460",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00066",
-            "event_name": "add_to_cart",
+            "event_name": "search",
             "event_data": {
-                "product_id": "02163",
-                "quantity": 3,
-                "price": 199.95
+                "query": "RABBIT 3D Puzzle",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.743903"
+            "created_time": "2025-08-10T01:32:25.458868"
         },
         {
-            "id": "8d58a5a8-3d28-4197-b443-b4fc40ce0d96",
+            "id": "2392bd0b-947e-4dad-b43b-df1637a6e851",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00066",
-            "event_name": "add_to_cart",
+            "event_name": "product_view",
             "event_data": {
-                "product_id": "03167",
-                "quantity": 2,
-                "price": 130.0
+                "product_id": "03142",
+                "category": "cyber-monday-gift",
+                "product_name": "Uplifitng Roll On Blend for Mom",
+                "price": 14.0,
+                "product_url": "https://www.aldeahome.com/products/uplifitng-roll-on-blend-for-mom",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/uplifting.jpg?v=1580082419",
+                "view_duration_seconds": 26
             },
-            "created_time": "2025-08-09T20:05:50.743908"
+            "created_time": "2025-08-10T01:32:25.458873"
         }
     ],
     "reviews": [
         {
-            "review_id": "9ca2de68-76e9-42db-91fe-d4c1fdc4665a",
+            "review_id": "98fabb9c-600c-418b-a499-7ea5395e4f9d",
             "customer_id": "user_00066",
-            "product_id": "03311",
-            "rating": 4,
-            "review_title": "Super satisfied!",
-            "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2025-02-13T20:52:52.182251",
+            "product_id": "07326",
+            "rating": 2,
+            "review_title": "Below expectations",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-04-18T01:32:54.168878",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "a5780be8-c4f7-437a-843a-0dae0d6132d4",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
-            "UserId": "user_00066",
-            "session_id": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me more about the ease of use of the Skittle Waiters Friend Bottle Opener - Sky Blue & Dark Gray (Product ID: 00011)?",
-            "CreatedTime": "2025-08-09T20:22:18.504520",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0eb401e3-17f5-4000-865b-4340020d8947",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
-            "UserId": "user_00066",
-            "session_id": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Skittle Waiters Friend Bottle Opener - Sky Blue & Dark Gray is designed for ease of use, featuring a simple yet effective corkscrew mechanism that allows you to open your favorite bottles of wine effortlessly. Its compact size (15x4.5x1.5cm) makes it easy to handle, and the high-grade metal construction ensures durability while providing a stylish touch to your barware collection. The contemporary design not only looks good but also enhances functionality, making it a practical choice for any occasion. \n\nIf you're interested, the price is $34.99, and you can find it [here](https://www.aldeahome.com/products/skittle-waiters-friend-bottle-opener-sky-blue-dark-gray).",
-            "CreatedTime": "2025-08-09T20:22:21.120807",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "49203f02-0391-4c39-a584-ffc416964a7f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
-            "UserId": "user_00066",
-            "session_id": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Do you have any customer reviews or feedback on the Skittle Waiters Friend Bottle Opener - Sky Blue & Dark Gray (Product ID: 00011)? I'm curious about how well it performs in real-life use.",
-            "CreatedTime": "2025-08-09T20:22:22.365294",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "35611d74-cc07-4a07-8123-4d7b8163eefb",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
-            "UserId": "user_00066",
-            "session_id": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "I'm sorry, but I don't have access to customer reviews or feedback for the Skittle Waiters Friend Bottle Opener - Sky Blue & Dark Gray. However, it is designed for ease of use and crafted from high-grade metals, which suggests it should perform well in real-life situations. If you'd like to learn more or make a purchase, it is priced at $34.99 and can be found [here](https://www.aldeahome.com/products/skittle-waiters-friend-bottle-opener-sky-blue-dark-gray).",
-            "CreatedTime": "2025-08-09T20:22:24.375720",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.205544"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.873551"
 }

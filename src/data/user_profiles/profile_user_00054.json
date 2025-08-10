@@ -1,170 +1,59 @@
 {
     "user_id": "user_00054",
-    "raw_engagement_score": 41,
-    "normalized_engagement_score": 27,
+    "raw_engagement_score": 15,
+    "normalized_engagement_score": 9,
     "activities": [
         {
-            "id": "c8bdaea5-1691-4801-802d-3bdc3ce2a758",
+            "id": "8a9c748a-9b78-4ccb-824a-e0ca1417c8c5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00054",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.69.130"
+            },
+            "created_time": "2025-08-10T01:32:25.428430"
+        },
+        {
+            "id": "8a600d3a-ec03-4337-8e4a-2a0c0040b476",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00054",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "07196",
+                "product_id": "02245",
                 "quantity": 1,
-                "price": 24.95
+                "price": 28.0
             },
-            "created_time": "2025-08-09T20:05:50.724481"
+            "created_time": "2025-08-10T01:32:25.428433"
         },
         {
-            "id": "acb0d03e-37a2-4f24-bcc5-388795cc22e5",
+            "id": "e8d60440-b593-442a-95f5-f109d730f0e7",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00054",
             "event_name": "search",
             "event_data": {
-                "query": "Bat Halloween Bag",
+                "query": "Admiral™ Vintage-Style Irish-Cut Crystal Whiskey Decanter",
                 "search_results_count": 1,
                 "filters_applied": [
                     "가격 낮은 순"
                 ]
             },
-            "created_time": "2025-08-09T20:05:50.726989"
-        },
-        {
-            "id": "586c4aca-4754-4ae8-840c-b315c5d11ab9",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00054",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "01845",
-                "quantity": 1,
-                "price": 19.95
-            },
-            "created_time": "2025-08-09T20:05:50.726996"
-        },
-        {
-            "id": "05c6e039-4924-4087-8214-46597e6501b7",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00054",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00054_727002",
-                "total_amount": 18.95,
-                "items": [
-                    {
-                        "product_id": "04000",
-                        "quantity": 1,
-                        "price": 18.95
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.727012"
+            "created_time": "2025-08-10T01:32:25.430481"
         }
     ],
     "reviews": [
         {
-            "review_id": "75b4ee32-8b17-4335-8c5c-b192252fb439",
+            "review_id": "ea65d58a-24c0-4609-9c31-06df8e622366",
             "customer_id": "user_00054",
-            "product_id": "07353",
+            "product_id": "06334",
             "rating": 2,
-            "review_title": "Below expectations",
-            "review_content": "The quality of Mini Hampster Puppet wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2025-06-23T20:52:52.182218",
+            "review_title": "Do not recommend",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-04-10T01:32:54.168844",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "9b22e1bb-bef0-4d4b-9657-84414da78ecc",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "UserId": "user_00054",
-            "session_id": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "Can you tell me if the Stationary Ottoman (Product ID: 01265) is available in different colors or just the one shown on the website?",
-            "CreatedTime": "2025-08-09T20:20:48.115447",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "1dba9da8-8ebb-42ca-b430-87485344b4b3",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "UserId": "user_00054",
-            "session_id": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The product information provided does not specify the availability of different colors for the Stationary Ottoman (Product ID: 01265). It only includes details about its design and features. For the most accurate information regarding color options, please check the product page [here](https://www.aldeahome.com/products/stationary-ottoman) or contact customer support directly. The price of the Stationary Ottoman is $395.00.",
-            "CreatedTime": "2025-08-09T20:20:50.697558",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e7f3f3a3-6ea4-46a9-91e9-105b01af0b33",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "UserId": "user_00054",
-            "session_id": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Is the Stationary Ottoman (Product ID: 01265) made from sustainable materials, and what kind of warranty do you offer for it?",
-            "CreatedTime": "2025-08-09T20:20:51.775729",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a9adaff2-bc74-49bd-a17b-f62dfa4b5f79",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "UserId": "user_00054",
-            "session_id": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "Yes, the Stationary Ottoman (Product ID: 01265) is handcrafted and sustainably made using the highest quality materials. However, the provided information does not include details about the warranty offered for this product. For warranty specifics, please refer to the product page [here](https://www.aldeahome.com/products/stationary-ottoman) or contact customer support directly. The price of the Stationary Ottoman is $395.00.",
-            "CreatedTime": "2025-08-09T20:20:54.116484",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0024c9f8-9148-4b5e-8ced-91c1a85d5c30",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "UserId": "user_00054",
-            "session_id": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "Intent": "CS",
-            "Role": "user",
-            "Content": "Can you tell me the dimensions of the Stationary Ottoman (Product ID: 01265) and if it can support heavier weights for extra seating?",
-            "CreatedTime": "2025-08-09T20:20:55.502875",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "ea89d6a9-7848-4c28-b726-75e11df2202f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "UserId": "user_00054",
-            "session_id": "1d4e52c0-2169-4c36-bed5-4dfa042db22b",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The Stationary Ottoman (Product ID: 01265) has a length of 23 inches wide. While the product description mentions that it can be used as an extra seat, it does not provide specific weight capacity details. For more information regarding weight support and dimensions, I recommend checking the product page [here](https://www.aldeahome.com/products/stationary-ottoman) or reaching out to customer support directly. The price of the Stationary Ottoman is $395.00.",
-            "CreatedTime": "2025-08-09T20:20:57.554634",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.200948"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.869175"
 }

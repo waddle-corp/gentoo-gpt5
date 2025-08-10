@@ -1,0 +1,162 @@
+{
+    "user_id": "user_00180",
+    "raw_engagement_score": 28,
+    "normalized_engagement_score": 17,
+    "activities": [
+        {
+            "id": "e0341af4-46fc-4a3a-ae7e-5950fadf0c0b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00180",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.175.23"
+            },
+            "created_time": "2025-08-10T01:32:25.622943"
+        },
+        {
+            "id": "dc9cb36b-9004-4cde-9e82-f97c8ee23ece",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00180",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07667",
+                "quantity": 3,
+                "price": 24.99
+            },
+            "created_time": "2025-08-10T01:32:25.622947"
+        },
+        {
+            "id": "b65653b0-f29a-4092-a2dc-46d915921745",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00180",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.193.50"
+            },
+            "created_time": "2025-08-10T01:32:25.622950"
+        },
+        {
+            "id": "07d018f6-a8ed-41b5-87f7-bc321c3580bc",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00180",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "04847",
+                "quantity": 3,
+                "price": 24.0
+            },
+            "created_time": "2025-08-10T01:32:25.622954"
+        },
+        {
+            "id": "84bf2893-207d-41e0-9dfa-573d60dad77b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00180",
+            "event_name": "search",
+            "event_data": {
+                "query": "Feeding Spoon (2-Pack)",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.625323"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "630bdd0f-f4e1-4a7e-9c07-3cc9ff31db8b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "UserId": "user_00180",
+            "session_id": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the scent profile of the Amélie | Santal Rosé Candle | 11oz (Product ID: 01930)? I'm curious about how the top, middle, and base notes combine.",
+            "CreatedTime": "2025-08-10T01:50:31.985046",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "0c0dc71c-9f4b-49c5-96d5-c2b92e62263f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "UserId": "user_00180",
+            "session_id": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Amélie | Santal Rosé Candle | 11oz features a beautifully layered scent profile that combines various aromatic notes for a rich olfactory experience:\n\n- **Top Notes:** The candle opens with the intriguing scents of black pepper and saffron, providing a spicy and warm introduction.\n  \n- **Heart/Middle Notes:** At the heart of the fragrance, you'll find the lush aroma of rose, complemented by white amber. This combination brings a soft, powdery floral quality to the candle.\n\n- **Base Notes:** Finally, the scent settles into earthy patchouli and leather, adding depth and warmth to the overall experience.\n\nTogether, these notes create a harmonious blend that is both calming and sophisticated. If you're interested in purchasing, the candle is priced at $40.00. You can find more details at this [link](https://www.aldeahome.com/products/amelie-santal-rose-11oz-candle).",
+            "CreatedTime": "2025-08-10T01:50:36.169879",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0236e9b5-5e1b-45fb-93ae-bb9cb4d37eaf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "UserId": "user_00180",
+            "session_id": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "What are the dimensions of the Amélie | Santal Rosé Candle | 11oz (Product ID: 01930), and how long does it typically take to ship?",
+            "CreatedTime": "2025-08-10T01:50:37.187677",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c4c159e0-b4d4-4555-a67e-b90f5b62e82b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "UserId": "user_00180",
+            "session_id": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I currently don't have specific information regarding the dimensions of the Amélie | Santal Rosé Candle | 11oz (Product ID: 01930) or the typical shipping times. For shipping inquiries, it's best to check directly on the store's website or contact their customer service for detailed information. If you're interested in purchasing the candle, it is priced at $40.00, and you can find it [here](https://www.aldeahome.com/products/amelie-santal-rose-11oz-candle).",
+            "CreatedTime": "2025-08-10T01:50:39.324896",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "43bbfbd6-d01b-4897-9ee3-4055ad416c73",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "UserId": "user_00180",
+            "session_id": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Amélie | Santal Rosé Candle | 11oz (Product ID: 01930) is available for gift wrapping? I'm considering it as a present!",
+            "CreatedTime": "2025-08-10T01:50:40.437625",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "03df1715-b6fd-444e-9862-c55c2449096f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "UserId": "user_00180",
+            "session_id": "9b5e4845-e4e8-4c05-bcb9-3bc2eb4b6c44",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific information about gift wrapping options for the Amélie | Santal Rosé Candle | 11oz (Product ID: 01930). I recommend checking the store's website or contacting their customer service directly to inquire about gift wrapping services. This candle would make a lovely gift, priced at $40.00, and you can view it [here](https://www.aldeahome.com/products/amelie-santal-rose-11oz-candle).",
+            "CreatedTime": "2025-08-10T01:50:42.603472",
+            "ItemId": "01930",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.908523"
+}

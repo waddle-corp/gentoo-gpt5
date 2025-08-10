@@ -1,0 +1,139 @@
+{
+    "user_id": "user_00188",
+    "raw_engagement_score": 26,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "4ab1884a-c00d-4a27-aa04-4970907dfa37",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00188",
+            "event_name": "search",
+            "event_data": {
+                "query": "Dusty Pony (Vegan Angora) Soft Toy 14\"/ 36cm",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.643253"
+        },
+        {
+            "id": "9bb0b32b-3438-4729-9d97-553c97929f79",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00188",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "01930",
+                "quantity": 1,
+                "price": 40.0
+            },
+            "created_time": "2025-08-10T01:32:25.643257"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "c80437a3-f725-4472-9469-7e8ef0f268b4",
+            "customer_id": "user_00188",
+            "product_id": "00825",
+            "rating": 2,
+            "review_title": "Below expectations",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-02-10T01:32:54.169170",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "9e5ea626-df80-44d1-9556-62027ceacbda",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "UserId": "user_00188",
+            "session_id": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the Awesome Sauce Holiday Ornament (Product ID: 02793) suitable for outdoor use, or is it intended for indoor decoration only?",
+            "CreatedTime": "2025-08-10T01:51:05.304813",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "41016e71-7640-4e6b-bd2e-722af873df10",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "UserId": "user_00188",
+            "session_id": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Awesome Sauce Holiday Ornament is intended for indoor decoration only. It's a collectible ornament made of blown glass and is designed to hang on a holiday tree. For best care and longevity, it's recommended to keep it indoors. If you're interested in purchasing it, the price is $17.00, and you can find it [here](https://www.aldeahome.com/products/awesome-sauce-christmas-ornament).",
+            "CreatedTime": "2025-08-10T01:51:07.440780",
+            "ItemId": "02793",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "822cae02-b625-4fb2-9489-db3572819e15",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "UserId": "user_00188",
+            "session_id": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Awesome Sauce Holiday Ornament (Product ID: 02793) comes with any special packaging, or is it just shipped in a standard box?",
+            "CreatedTime": "2025-08-10T01:51:08.534031",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "06fa2765-48e4-4603-b8a5-5b950f191140",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "UserId": "user_00188",
+            "session_id": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The information provided does not specify if the Awesome Sauce Holiday Ornament comes with special packaging or if it is shipped in a standard box. Typically, collectible ornaments may come with some form of protective packaging, but for detailed information, I recommend checking directly with the retailer. If you're interested in purchasing the ornament, it is priced at $17.00, and you can find it [here](https://www.aldeahome.com/products/awesome-sauce-christmas-ornament).",
+            "CreatedTime": "2025-08-10T01:51:10.936869",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1a98990b-283e-4bca-875d-e1c04f674041",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "UserId": "user_00188",
+            "session_id": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Awesome Sauce Holiday Ornament (Product ID: 02793) available for shipping outside the U.S., and are there any additional shipping fees I should be aware of?",
+            "CreatedTime": "2025-08-10T01:51:11.965633",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e0682751-dd20-4181-b0ba-6e791727c1ca",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "UserId": "user_00188",
+            "session_id": "2f29e107-6a6c-4417-b4a0-f77a6eb0ab3d",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The information provided does not specify whether the Awesome Sauce Holiday Ornament can be shipped outside the U.S. or if there are any additional shipping fees. For accurate details on shipping options and fees, I recommend checking directly on the retailer's website or contacting their customer service. If you're interested in purchasing the ornament, it is priced at $17.00 and can be found [here](https://www.aldeahome.com/products/awesome-sauce-christmas-ornament).",
+            "CreatedTime": "2025-08-10T01:51:14.320300",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.909999"
+}

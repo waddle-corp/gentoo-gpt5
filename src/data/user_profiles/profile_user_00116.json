@@ -1,0 +1,169 @@
+{
+    "user_id": "user_00116",
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "af89e78e-10a4-463f-883e-cf033fb50116",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00116",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03023",
+                "quantity": 2,
+                "price": 15.97
+            },
+            "created_time": "2025-08-10T01:32:25.530869"
+        },
+        {
+            "id": "5a571c39-8ab1-4c83-bb13-d008befd862d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00116",
+            "event_name": "search",
+            "event_data": {
+                "query": "Stroller Organizer",
+                "search_results_count": 4,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.533248"
+        },
+        {
+            "id": "e29808be-10ba-433b-8c23-5614f937ddd0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00116",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07730",
+                "category": "viverano-organics",
+                "product_name": "Bird Ruffle Baby Girl Tunic Dress & Bodysuit (Organic): Navy Blue / 0-3M",
+                "price": 52.0,
+                "product_url": "https://www.aldeahome.com/products/bird-ruffle-baby-girl-tunic-dress-bodysuit-organic-navy-blue-0-3m",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/638a2e44eda90cf272dd20652293a045ee33850dbe7fa799044d69928843cfde.jpg?v=1736217360",
+                "view_duration_seconds": 109
+            },
+            "created_time": "2025-08-10T01:32:25.533252"
+        },
+        {
+            "id": "e0e9c772-b482-4ac2-b5aa-e0fc5254e6a3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00116",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.62.83"
+            },
+            "created_time": "2025-08-10T01:32:25.533256"
+        },
+        {
+            "id": "4fbb0bef-1927-4ebb-ad3c-0ff7fc6f9269",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00116",
+            "event_name": "search",
+            "event_data": {
+                "query": "Stroller Organizer",
+                "search_results_count": 4,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.535655"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "0e34193e-b585-4cda-89f4-86092102082e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "UserId": "user_00116",
+            "session_id": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the 'Parenting is Hard Mother's Day Letterpress Greeting Card' (Product ID: 04363) can be personalized with a message inside?",
+            "CreatedTime": "2025-08-10T01:44:11.515803",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "05568b55-7a70-4a98-9569-36b44481cfb1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "UserId": "user_00116",
+            "session_id": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'Parenting is Hard Mother's Day Letterpress Greeting Card' does not mention personalization options for a message inside. It is a folded card measuring A2 (4.25″ x 5.5″) that comes with an envelope. If you’d like to include a personal message, you could write it yourself after purchasing. The price is $6.00, and you can view it [here](https://www.aldeahome.com/products/parenting-is-hard-mothers-day-letterpress-greeting-card).",
+            "CreatedTime": "2025-08-10T01:44:13.249375",
+            "ItemId": "04363",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1bfe30b8-5717-480f-ab4e-94333483965c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "UserId": "user_00116",
+            "session_id": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Do you have any other designs similar to the 'Parenting is Hard Mother's Day Letterpress Greeting Card' (Product ID: 04363), or is this the only option available?",
+            "CreatedTime": "2025-08-10T01:44:14.477575",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "bccbc9e5-2028-460b-ab1b-ba37cb93cd01",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "UserId": "user_00116",
+            "session_id": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I currently only have information on the 'Parenting is Hard Mother's Day Letterpress Greeting Card' (Product ID: 04363). Unfortunately, I do not have details on other designs or options available. For more variety, I recommend checking the main shop's website or contacting customer support for additional product offerings. The card is priced at $6.00, and you can view it [here](https://www.aldeahome.com/products/parenting-is-hard-mothers-day-letterpress-greeting-card).",
+            "CreatedTime": "2025-08-10T01:44:16.763269",
+            "ItemId": "04363",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5da5cfe1-116d-4f07-b517-538a52a422c4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "UserId": "user_00116",
+            "session_id": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are there any discounts or promotions currently available for the 'Parenting is Hard Mother's Day Letterpress Greeting Card' (Product ID: 04363), or is it just priced at $6.00?",
+            "CreatedTime": "2025-08-10T01:44:17.861028",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bc696c91-e19a-4a03-82d3-98a2cf2ec096",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "UserId": "user_00116",
+            "session_id": "7a9be8b4-7482-48cb-adbe-78589bc79679",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "There are no mentions of discounts or promotions for the 'Parenting is Hard Mother's Day Letterpress Greeting Card' (Product ID: 04363). It is currently priced at $6.00. For the most accurate and updated information regarding promotions, you may want to check the main shop's website or contact customer support directly. You can view the card [here](https://www.aldeahome.com/products/parenting-is-hard-mothers-day-letterpress-greeting-card).",
+            "CreatedTime": "2025-08-10T01:44:20.020795",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.892060"
+}

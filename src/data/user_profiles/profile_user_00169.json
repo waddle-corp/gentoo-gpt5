@@ -1,0 +1,125 @@
+{
+    "user_id": "user_00169",
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 15,
+    "activities": [
+        {
+            "id": "813824d1-b553-4b7b-9c70-48d25492aeff",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00169",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "04920",
+                "quantity": 2,
+                "price": 54.5
+            },
+            "created_time": "2025-08-10T01:32:25.611707"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "6d7bc026-85b7-403a-b703-80576ecd708a",
+            "customer_id": "user_00169",
+            "product_id": "04699",
+            "rating": 4,
+            "review_title": "Super satisfied!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-01-11T01:32:54.169124",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "4ccd0a82-0cf0-42ac-91b1-bb9a8ce4d536",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "UserId": "user_00169",
+            "session_id": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the 'Bravery Badges - ASSORTED UNICORN FLEX FABRIC BANDAGES' (Product ID: 07370) are suitable for sensitive skin?",
+            "CreatedTime": "2025-08-10T01:49:41.344169",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2b3761f0-8104-4d0e-a335-7a91f7b9193b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "UserId": "user_00169",
+            "session_id": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'Bravery Badges - ASSORTED UNICORN FLEX FABRIC BANDAGES' feature gentle adhesion, which is designed to help with a no-tear removal experience, making them suitable for sensitive skin. They are crafted to minimize discomfort when taking them off. If you’re interested, they are priced at $8.99. You can find more information and purchase them [here](https://www.aldeahome.com/products/bravery-badges-assorted-unicorn-flex-fabric-bandages).",
+            "CreatedTime": "2025-08-10T01:49:43.689582",
+            "ItemId": "07370",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "329532ba-dd48-4db9-bb7d-f8ac9cb1bde5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "UserId": "user_00169",
+            "session_id": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Do the 'Bravery Badges - ASSORTED UNICORN FLEX FABRIC BANDAGES' (Product ID: 07370) come in different sizes, or are they all the same size?",
+            "CreatedTime": "2025-08-10T01:49:44.670514",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c26de2b2-9a4a-4d73-a804-823c0fd51843",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "UserId": "user_00169",
+            "session_id": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "Intent": "일반",
+            "Role": "assistant",
+            "Content": "The 'Bravery Badges - ASSORTED UNICORN FLEX FABRIC BANDAGES' come in a single size. They are designed to provide effective coverage for various minor injuries, but they don't offer different sizes within the pack. If you're interested in purchasing them, they are available for $8.99. You can view more details and buy them [here](https://www.aldeahome.com/products/bravery-badges-assorted-unicorn-flex-fabric-bandages).",
+            "CreatedTime": "2025-08-10T01:49:46.913963",
+            "ItemId": "07370",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7cb2e5c0-27c6-44d4-bd84-40e39bfab3a8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "UserId": "user_00169",
+            "session_id": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are the 'Bravery Badges - ASSORTED UNICORN FLEX FABRIC BANDAGES' (Product ID: 07370) waterproof, or are they only meant for dry use?",
+            "CreatedTime": "2025-08-10T01:49:48.270325",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f17696b4-c981-4bd4-9317-e355e935efb6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "UserId": "user_00169",
+            "session_id": "054185bb-17eb-4ff8-ad06-29ca9febd821",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The 'Bravery Badges - ASSORTED UNICORN FLEX FABRIC BANDAGES' are not specifically mentioned as waterproof. They are designed to seal on all four sides to help keep out germs and dirt, which suggests they can withstand some moisture, but they are primarily meant for dry use. If you need more information or wish to purchase them, they are priced at $8.99, and you can find them [here](https://www.aldeahome.com/products/bravery-badges-assorted-unicorn-flex-fabric-bandages).",
+            "CreatedTime": "2025-08-10T01:49:52.487957",
+            "ItemId": "07370",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.906239"
+}

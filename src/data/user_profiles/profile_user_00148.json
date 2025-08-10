@@ -1,0 +1,43 @@
+{
+    "user_id": "user_00148",
+    "raw_engagement_score": 4,
+    "normalized_engagement_score": 3,
+    "activities": [
+        {
+            "id": "a151a570-3a53-4633-85b5-d8986dd66cf2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00148",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "05000",
+                "category": "exclude",
+                "product_name": "Roly Poly Teddy Bear - TOLO",
+                "price": 11.9,
+                "product_url": "https://www.aldeahome.com/products/roly-poly-teddy-bear-tolo",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/74bd02583ddc408276ede7784752c895d91ddc395e33b9cef80575086c9c072d.jpg?v=1715440233",
+                "view_duration_seconds": 68
+            },
+            "created_time": "2025-08-10T01:32:25.576733"
+        },
+        {
+            "id": "77e1ddae-e4d0-42d1-adc7-981e46af3ed7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00148",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04609",
+                "category": "exclude",
+                "product_name": "Star Cluster studs",
+                "price": 24.0,
+                "product_url": "https://www.aldeahome.com/products/star-cluster-studs",
+                "thumbnail_url": "",
+                "view_duration_seconds": 33
+            },
+            "created_time": "2025-08-10T01:32:25.576737"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.901302"
+}

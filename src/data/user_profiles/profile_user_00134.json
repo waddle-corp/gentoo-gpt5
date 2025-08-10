@@ -1,0 +1,145 @@
+{
+    "user_id": "user_00134",
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "8d782d3b-ba50-46c1-807e-e2a31e661b1d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00134",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04476",
+                "category": "exclude",
+                "product_name": "Sailboat Baby Onesie Natural",
+                "price": 30.0,
+                "product_url": "https://www.aldeahome.com/products/sailboat-baby-onesie-natural",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/db64a180ed4c246db3d327d096de0ed156acfb0a94aa99bd162e9537e63e4d66_4608b529-e9f1-4351-b6da-6d1c3c83091f.jpg?v=1715920641",
+                "view_duration_seconds": 46
+            },
+            "created_time": "2025-08-10T01:32:25.554094"
+        },
+        {
+            "id": "124975a3-5bf6-43c7-a133-728026fe98c4",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00134",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03004",
+                "category": "cyber-monday-gift",
+                "product_name": "PRIDE RAINBOW Christmas Ornament",
+                "price": 15.97,
+                "product_url": "https://www.aldeahome.com/products/pride-rainbow-christmas-ornament",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/GO-8725_1_jpg.jpg?v=1694192753",
+                "view_duration_seconds": 69
+            },
+            "created_time": "2025-08-10T01:32:25.554097"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "0986f4cf-09e3-4c23-a89d-fdba2eceb1cc",
+            "customer_id": "user_00134",
+            "product_id": "01934",
+            "rating": 1,
+            "review_title": "Disappointed",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-03-12T01:32:54.169041",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "9281e6e1-7c21-49a1-92c2-35cc4b69029e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "UserId": "user_00134",
+            "session_id": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Is the 'Long Sleeve Blush: 6-12M' (Product ID: 06955) suitable for sensitive skin, given that it is made from 100% organic cotton?",
+            "CreatedTime": "2025-08-10T01:46:16.597757",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "72d013b7-837b-4592-b9dd-96c0ef56aa38",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "UserId": "user_00134",
+            "session_id": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the 'Long Sleeve Blush: 6-12M' is suitable for sensitive skin. It is made from 100% organic cotton, which is naturally hypoallergenic. Additionally, it features nickel-free snaps to prevent allergic reactions. This makes it a great choice for babies with sensitive skin. \n\nYou can find more information about the product [here](https://www.aldeahome.com/products/organic-baby-long-sleeve-classic-bodysuit-blush-6-12m). The price is $16.50.",
+            "CreatedTime": "2025-08-10T01:46:19.103677",
+            "ItemId": "06955",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "cc4529ae-a019-403a-a920-5ee8f38b0f0d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "UserId": "user_00134",
+            "session_id": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Does the 'Long Sleeve Blush: 6-12M' (Product ID: 06955) come in any other colors or sizes?",
+            "CreatedTime": "2025-08-10T01:46:19.885423",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "06b50c5e-09ad-4d93-be3c-a5c346714d2f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "UserId": "user_00134",
+            "session_id": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The information provided only mentions the 'Long Sleeve Blush: 6-12M' in the blush color and does not specify if it comes in other colors or sizes. For more details, you may want to check the product page [here](https://www.aldeahome.com/products/organic-baby-long-sleeve-classic-bodysuit-blush-6-12m) or contact customer support for further assistance. The price for this item is $16.50.",
+            "CreatedTime": "2025-08-10T01:46:22.183714",
+            "ItemId": "06955",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0a90842c-4d65-44c3-8ca1-e6938aa27643",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "UserId": "user_00134",
+            "session_id": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the 'Long Sleeve Blush: 6-12M' (Product ID: 06955) has any specific care instructions beyond machine washing and tumble drying?",
+            "CreatedTime": "2025-08-10T01:46:23.197364",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0af08441-498f-4f83-bdd0-9fce215436d1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "UserId": "user_00134",
+            "session_id": "21eb29bc-4ad0-4195-925b-36d76e106fbf",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The care instructions for the 'Long Sleeve Blush: 6-12M' specify to machine wash cold and tumble dry low. There are no additional care instructions provided beyond these. For best results, it's always a good idea to follow these guidelines to maintain the garment's quality. You can view the product [here](https://www.aldeahome.com/products/organic-baby-long-sleeve-classic-bodysuit-blush-6-12m) for more information. The price is $16.50.",
+            "CreatedTime": "2025-08-10T01:46:25.607890",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.897525"
+}

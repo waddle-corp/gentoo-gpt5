@@ -1,153 +1,167 @@
 {
     "user_id": "user_00053",
-    "raw_engagement_score": 24,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 41,
+    "normalized_engagement_score": 25,
     "activities": [
         {
-            "id": "88dcacab-5e00-4f55-b458-11a0b1e67335",
+            "id": "76118924-b96a-4dfa-9a85-809a470c8c2e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00053",
-            "event_name": "add_to_cart",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "05189",
-                "quantity": 1,
-                "price": 22.0
+                "order_id": "ORDER_user_00053_428411",
+                "total_amount": 10.0,
+                "items": [
+                    {
+                        "product_id": "04577",
+                        "quantity": 1,
+                        "price": 10.0
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.724464"
+            "created_time": "2025-08-10T01:32:25.428415"
         },
         {
-            "id": "04b92026-d378-4618-b3b2-5408b0062085",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00053",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.82.224"
-            },
-            "created_time": "2025-08-09T20:05:50.724468"
-        },
-        {
-            "id": "10971bfd-0577-4c67-9acc-f35cc157071a",
+            "id": "bc0b2c43-ae25-4fe2-b71b-9f4835cf3d2f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00053",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "07775",
-                "category": "viverano-organics",
-                "product_name": "Doxie Dog Jacquard Knit Baby Raglan Pullover (Organic)",
-                "price": 48.0,
-                "product_url": "https://www.aldeahome.com/products/doxie-dog-jacquard-knit-baby-raglan-pullover-organic",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/d1175cfa7b7b8e303b2b9313ccdbf02e6a0494c8c9741258250e55ed1e583e30.jpg?v=1724808353",
-                "view_duration_seconds": 63
+                "product_id": "06216",
+                "category": "hanukkah",
+                "product_name": "Ner Mitzvah Star of David Blue & White Hanukkah Candles",
+                "price": 15.0,
+                "product_url": "https://www.aldeahome.com/products/chanukah-candles-star-of-david-blue-white-45-pack",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/ba2428ff4a08d985a9f5336ef7a3273442b4654c219c430e50cb6096141edafa.jpg?v=1732503439",
+                "view_duration_seconds": 37
             },
-            "created_time": "2025-08-09T20:05:50.724472"
+            "created_time": "2025-08-10T01:32:25.428419"
         },
         {
-            "id": "ba37f599-faa3-474b-8b1b-2394156188fd",
+            "id": "03a1a5f4-894b-4ec5-bd23-34195cc233fe",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00053",
-            "event_name": "add_to_cart",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "01307",
-                "quantity": 2,
-                "price": 85.0
+                "order_id": "ORDER_user_00053_428422",
+                "total_amount": 30.0,
+                "items": [
+                    {
+                        "product_id": "04889",
+                        "quantity": 1,
+                        "price": 30.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.724476"
+            "created_time": "2025-08-10T01:32:25.428426"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "11b0c528-0b58-4a9d-b9b9-0c283ea0799c",
+            "customer_id": "user_00053",
+            "product_id": "03830",
+            "rating": 3,
+            "review_title": "Great as a gift",
+            "review_content": "I gave it as a gift and they loved it. Thanks to Cocktail Cabinet: Gin, the, I got called thoughtful!",
+            "created_at": "2025-05-20T01:32:54.168839",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "3b19cb84-3390-4165-bfb5-2cb07ed55f3f",
+            "Id": "6a32a4b0-eb32-40e5-894b-3608aeced518",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
+            "DialogueId": "6274ed4b-af9d-475c-972f-a6f1ac126662",
             "UserId": "user_00053",
-            "session_id": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
+            "session_id": "6274ed4b-af9d-475c-972f-a6f1ac126662",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "Is the '8 Little Planets Coloring Book (paperback)' (Product ID: 00198) suitable for very young children, or is it recommended for older kids?",
-            "CreatedTime": "2025-08-09T20:20:35.744816",
+            "Content": "Can you tell me if the U-Locker Necklace (Product ID: 03068) is adjustable in length, or does it come only with the 18\" stainless chain?",
+            "CreatedTime": "2025-08-10T01:38:05.640381",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "28dcec03-11eb-4ae3-a14a-69fadc57cb96",
+            "Id": "24aaf46e-64e7-4be0-914c-9bd6c6c9c187",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
+            "DialogueId": "6274ed4b-af9d-475c-972f-a6f1ac126662",
             "UserId": "user_00053",
-            "session_id": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
+            "session_id": "6274ed4b-af9d-475c-972f-a6f1ac126662",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The '8 Little Planets Coloring Book (paperback)' is a beginner’s coloring book, making it suitable for very young children. With its delightful art and simple design, it is perfect for young kids who are interested in space and coloring. It serves as a great introduction to the solar system for budding scientists. \n\nFor more information, you can check it out [here](https://www.aldeahome.com/products/8-little-planets-coloring-book-paperback-1). The price is $5.99.",
-            "CreatedTime": "2025-08-09T20:20:38.373922",
-            "ItemId": null,
+            "Content": "The U-Locker Necklace comes with a stainless chain that is 18\" in length. It is not adjustable in length. If you're interested in purchasing it, you can find it for $160.00 at this link: [U-Locker Necklace](https://www.aldeahome.com/products/u-locker-necklace).",
+            "CreatedTime": "2025-08-10T01:38:07.066179",
+            "ItemId": "03068",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "900a8274-ef1a-4f62-9281-934813c38059",
+            "Id": "b91f82c3-f969-4d0d-a823-8e1826730e10",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
+            "DialogueId": "6274ed4b-af9d-475c-972f-a6f1ac126662",
             "UserId": "user_00053",
-            "session_id": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
-            "Intent": "추천",
+            "session_id": "6274ed4b-af9d-475c-972f-a6f1ac126662",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Are there any specific age recommendations for the '8 Little Planets Coloring Book (paperback)' (Product ID: 00198), or is it generally suitable for preschoolers?",
-            "CreatedTime": "2025-08-09T20:20:40.307116",
+            "Content": "Is the U-Locker Necklace (Product ID: 03068) suitable for everyday wear, or is it more of a statement piece for special occasions?",
+            "CreatedTime": "2025-08-10T01:38:07.991764",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "aff377f3-065c-468e-a030-4041fcc1d9d2",
+            "Id": "eddc8218-3e84-40c8-bdc9-380047934bd2",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
+            "DialogueId": "6274ed4b-af9d-475c-972f-a6f1ac126662",
             "UserId": "user_00053",
-            "session_id": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The '8 Little Planets Coloring Book (paperback)' is generally suitable for preschoolers and very young children. While there are no specific age recommendations mentioned, it is designed as a beginner's coloring book, making it ideal for young kids who are just starting to explore coloring and have an interest in space. \n\nYou can find more details and purchase it for $5.99 [here](https://www.aldeahome.com/products/8-little-planets-coloring-book-paperback-1).",
-            "CreatedTime": "2025-08-09T20:20:43.552068",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e747d1ca-93ca-40b8-93ee-9007325f0766",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
-            "UserId": "user_00053",
-            "session_id": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Does the '8 Little Planets Coloring Book (paperback)' (Product ID: 00198) include any activities or just coloring pages?",
-            "CreatedTime": "2025-08-09T20:20:44.514694",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a0b7f02d-f97a-4b7e-a4b9-08b398ede3e9",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
-            "UserId": "user_00053",
-            "session_id": "e75d58b1-9cec-4518-ba30-149f1f995aaf",
+            "session_id": "6274ed4b-af9d-475c-972f-a6f1ac126662",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The '8 Little Planets Coloring Book (paperback)' primarily features coloring pages, as it is a beginner's coloring book. It is designed to provide a fun and engaging way for young children to explore the solar system through coloring. There are no specific activities mentioned beyond the coloring experience. \n\nYou can learn more about it and purchase it for $5.99 [here](https://www.aldeahome.com/products/8-little-planets-coloring-book-paperback-1).",
-            "CreatedTime": "2025-08-09T20:20:47.183595",
+            "Content": "The U-Locker Necklace, with its unique 3-D printed design and antique bronze finish, can be suitable for both everyday wear and as a statement piece for special occasions. Its distinctive look makes it versatile, allowing you to dress it up or down depending on your outfit. If you're interested in purchasing it, the price is $160.00, and you can find it here: [U-Locker Necklace](https://www.aldeahome.com/products/u-locker-necklace).",
+            "CreatedTime": "2025-08-10T01:38:09.999636",
             "ItemId": null,
-            "Thumbs": "down",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7e69e0a4-0060-492b-be1b-cd130632c37c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6274ed4b-af9d-475c-972f-a6f1ac126662",
+            "UserId": "user_00053",
+            "session_id": "6274ed4b-af9d-475c-972f-a6f1ac126662",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Does the U-Locker Necklace (Product ID: 03068) come with any special packaging or gift options, especially since it's a great choice for gifts?",
+            "CreatedTime": "2025-08-10T01:38:11.060194",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3715a496-8bdd-4f05-944e-d6b6f4ff20ab",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6274ed4b-af9d-475c-972f-a6f1ac126662",
+            "UserId": "user_00053",
+            "session_id": "6274ed4b-af9d-475c-972f-a6f1ac126662",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The product details for the U-Locker Necklace do not specify any special packaging or gift options. However, given its unique design and appeal, it makes a great gift choice. If you're considering purchasing it as a gift, you may want to check with the retailer directly for any available gift packaging options. The necklace is priced at $160.00 and can be found here: [U-Locker Necklace](https://www.aldeahome.com/products/u-locker-necklace).",
+            "CreatedTime": "2025-08-10T01:38:13.013175",
+            "ItemId": null,
+            "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.200512"
+    "profile_generated_at": "2025-08-10T01:53:50.868738"
 }

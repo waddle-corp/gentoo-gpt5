@@ -1,126 +1,83 @@
 {
     "user_id": "user_00060",
-    "raw_engagement_score": 22,
-    "normalized_engagement_score": 15,
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 12,
     "activities": [
         {
-            "id": "a1ec3e73-9a18-4a1c-9a9d-fe1c2bb60c2f",
+            "id": "295071a2-ead5-4b79-b6c1-36855b60b2db",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00060",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.32.187"
+            },
+            "created_time": "2025-08-10T01:32:25.444622"
+        },
+        {
+            "id": "2e0e422b-cc61-4956-81c8-f4f7f7d51be4",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00060",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.70.18"
+            },
+            "created_time": "2025-08-10T01:32:25.444626"
+        },
+        {
+            "id": "e0592d14-26c1-437c-b30e-92b1f644902f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00060",
+            "event_name": "search",
+            "event_data": {
+                "query": "nuna-monterey-collection",
+                "search_results_count": 4,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.446962"
+        },
+        {
+            "id": "aa8d8ebe-ce41-4800-8576-a418b3b28387",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00060",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00060_734200",
-                "total_amount": 338.99,
+                "order_id": "ORDER_user_00060_446966",
+                "total_amount": 66.98,
                 "items": [
                     {
-                        "product_id": "04741",
+                        "product_id": "07619",
                         "quantity": 1,
-                        "price": 199.99
+                        "price": 14.98
                     },
                     {
-                        "product_id": "07552",
+                        "product_id": "06932",
                         "quantity": 1,
-                        "price": 139.0
+                        "price": 52.0
                     }
                 ],
-                "payment_method": "credit_card"
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.734205"
+            "created_time": "2025-08-10T01:32:25.446971"
+        },
+        {
+            "id": "4a7a1354-64e8-4ba5-bcac-e4bb803b66f1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00060",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06358",
+                "quantity": 1,
+                "price": 86.0
+            },
+            "created_time": "2025-08-10T01:32:25.446975"
         }
     ],
     "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "b68dcb7e-737a-4cfa-aac1-0cfc2423be02",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "UserId": "user_00060",
-            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "Is the Monkey Rug (Product ID: 03208) suitable for outdoor use, or is it recommended only for indoor spaces?",
-            "CreatedTime": "2025-08-09T20:21:34.069368",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "2d0f4739-42ce-4a61-87e6-e8f53a415122",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "UserId": "user_00060",
-            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The Monkey Rug is designed as a unique accent for indoor spaces and is not specifically recommended for outdoor use. It is charming and great for pets and kids, making it perfect for indoor areas. If you're interested, it is priced at $65.00, and you can find more information [here](https://www.aldeahome.com/products/monkey-rug).",
-            "CreatedTime": "2025-08-09T20:21:36.224156",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "8ec3c7c6-0a9c-49de-9001-17f33f39cd82",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "UserId": "user_00060",
-            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if the Monkey Rug (Product ID: 03208) is machine washable, or how should it be cleaned to maintain its quality?",
-            "CreatedTime": "2025-08-09T20:21:37.233196",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "8a08f8f8-0324-4e6d-b99c-46fdabc175d7",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "UserId": "user_00060",
-            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The cleaning instructions for the Monkey Rug are not provided, but since it is 100% handmade, it is likely that it should be cleaned gently. For maintenance, it’s recommended to spot clean or use a vacuum to remove dirt and debris without machine washing. Always refer to specific care instructions if available. If you would like to purchase the Monkey Rug, it is priced at $65.00, and you can find it [here](https://www.aldeahome.com/products/monkey-rug).",
-            "CreatedTime": "2025-08-09T20:21:39.801563",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "072401f8-75ad-46c1-a408-d5e8db651936",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "UserId": "user_00060",
-            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you let me know the dimensions of the Monkey Rug (Product ID: 03208) again? I'm trying to see if it will fit in the space I have in mind.",
-            "CreatedTime": "2025-08-09T20:21:40.785628",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "f9292577-954d-4083-b04a-ffae41c74d83",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "UserId": "user_00060",
-            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Monkey Rug measures approximately 28\" tall by 33\" wide. This size makes it a charming addition to various spaces. If you're interested in purchasing it, the price is $65.00, and you can find more details [here](https://www.aldeahome.com/products/monkey-rug).",
-            "CreatedTime": "2025-08-09T20:21:42.669214",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.203508"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.871379"
 }

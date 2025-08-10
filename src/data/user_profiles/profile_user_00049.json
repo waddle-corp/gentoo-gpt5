@@ -1,125 +1,54 @@
 {
     "user_id": "user_00049",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 9,
+    "normalized_engagement_score": 6,
     "activities": [
         {
-            "id": "3de486de-6554-4a27-997b-97b86e30bb1a",
+            "id": "cfbcc885-3eec-43b3-8a26-28aa0dc51742",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00049",
-            "event_name": "search",
+            "event_name": "add_to_cart",
             "event_data": {
-                "query": "Don't Worry Be Yonce",
-                "search_results_count": 1,
-                "filters_applied": []
+                "product_id": "01151",
+                "quantity": 2,
+                "price": 127.95
             },
-            "created_time": "2025-08-09T20:05:50.722178"
+            "created_time": "2025-08-10T01:32:25.426033"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "a099e1ed-de82-4dba-866e-944b1d6ed0be",
-            "customer_id": "user_00049",
-            "product_id": "06118",
-            "rating": 4,
-            "review_title": "Best purchase ever",
-            "review_content": "Hotel Chamber Pillow – Dual Core Support – Luxurious Comfort is fantastic! I wish I'd found it sooner.",
-            "created_at": "2025-07-03T20:52:52.182204",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "bd895118-af0b-4179-9f5b-1f218f2e0467",
+            "Id": "3b5d3187-6988-4460-b79c-d1bb2cfa8c3b",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "DialogueId": "5fcf8533-a8e3-4ef9-b289-bf38c4791085",
             "UserId": "user_00049",
-            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me about the weight limit and age range suitable for the Nuna BRYN High Chair (Product ID: 05572)?",
-            "CreatedTime": "2025-08-09T20:20:03.860246",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "b5477e2d-3838-4885-b386-3f6fa226701a",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
-            "UserId": "user_00049",
-            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "I'm sorry, but I don't have specific information regarding the weight limit and age range for the Nuna BRYN High Chair. However, you can find more details about the product and its specifications on the official product page: [Nuna BRYN High Chair](https://www.aldeahome.com/products/nuna-bryn-high-chair). The price is $500.00.",
-            "CreatedTime": "2025-08-09T20:20:05.474227",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "afe25aca-257c-4fae-80e1-4d87507af671",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
-            "UserId": "user_00049",
-            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if the Nuna BRYN High Chair (Product ID: 05572) is easy to clean and maintain?",
-            "CreatedTime": "2025-08-09T20:20:06.429691",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "1a9fcf29-b125-4489-8f38-e9b6b6fe9b6b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
-            "UserId": "user_00049",
-            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "I don't have specific details on the cleaning and maintenance of the Nuna BRYN High Chair. However, high chairs generally tend to have features that make them easier to clean. For precise information, I recommend checking the product page for any cleaning instructions or care recommendations: [Nuna BRYN High Chair](https://www.aldeahome.com/products/nuna-bryn-high-chair). The price is $500.00.",
-            "CreatedTime": "2025-08-09T20:20:08.257089",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e02584dc-d18f-4edf-bdbd-a63184d71572",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
-            "UserId": "user_00049",
-            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "session_id": "5fcf8533-a8e3-4ef9-b289-bf38c4791085",
             "Intent": "정보",
             "Role": "user",
-            "Content": "What materials is the Nuna BRYN High Chair (Product ID: 05572) made from, and are they safe for babies?",
-            "CreatedTime": "2025-08-09T20:20:09.047981",
+            "Content": "Can you provide more details about the materials used in the Tray (Product ID: 02627) and its dimensions?",
+            "CreatedTime": "2025-08-10T01:37:43.510580",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "dca5f408-a3b6-45c7-b85f-dd3ccedb6050",
+            "Id": "43dcc422-ed39-4ba4-ace8-e8d479c5bfcf",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "DialogueId": "5fcf8533-a8e3-4ef9-b289-bf38c4791085",
             "UserId": "user_00049",
-            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
-            "Intent": "추천",
+            "session_id": "5fcf8533-a8e3-4ef9-b289-bf38c4791085",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "I don’t have specific information on the materials used in the Nuna BRYN High Chair or their safety for babies. For detailed information regarding the materials and safety features, I recommend visiting the product page: [Nuna BRYN High Chair](https://www.aldeahome.com/products/nuna-bryn-high-chair). The price is $500.00.",
-            "CreatedTime": "2025-08-09T20:20:10.504619",
-            "ItemId": "05572",
+            "Content": "I'm sorry, but I don't have specific details about the materials or dimensions of the Tray (Product ID: 02627). However, I can tell you that it is priced at $49.00. For more information, you can visit the product page [here](https://www.aldeahome.com/products/tray-1).",
+            "CreatedTime": "2025-08-10T01:37:45.105318",
+            "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.198729"
+    "profile_generated_at": "2025-08-10T01:53:50.867510"
 }

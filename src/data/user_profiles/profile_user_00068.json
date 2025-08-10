@@ -1,151 +1,63 @@
 {
     "user_id": "user_00068",
-    "raw_engagement_score": 33,
-    "normalized_engagement_score": 22,
+    "raw_engagement_score": 15,
+    "normalized_engagement_score": 9,
     "activities": [
         {
-            "id": "012468b7-7c48-4206-a217-00013d83cda1",
+            "id": "e2906b8d-4b7b-4c0d-8055-24f38c836992",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00068",
+            "event_name": "search",
+            "event_data": {
+                "query": "Sea Salt Grapefruit Soap",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.461215"
+        },
+        {
+            "id": "382badc1-d5f6-4fbd-950b-2387b0529385",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00068",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "07131",
-                "category": "party-games",
-                "product_name": "Round Tower Tumbling Blocks",
-                "price": 25.0,
-                "product_url": "https://www.aldeahome.com/products/round-tower-tumbling-blocks",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/0810073342842_1_jpg.jpg?v=1698119623",
-                "view_duration_seconds": 88
+                "product_id": "07576",
+                "category": "swaddles-sleep-sacks",
+                "product_name": "Multi-use Cover, Desert",
+                "price": 26.5,
+                "product_url": "https://www.aldeahome.com/products/multi-use-cover-desert",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/cce781ceb8304fac991c4be304422b4d0711e86548a5a9b1bedcaf023d93341d.jpg?v=1748871571",
+                "view_duration_seconds": 70
             },
-            "created_time": "2025-08-09T20:05:50.743951"
+            "created_time": "2025-08-10T01:32:25.461220"
         },
         {
-            "id": "d2419376-a35e-45f9-ac44-5a4438fb9809",
+            "id": "28ba8ac8-3253-4103-bdb2-78eeb1ac99a6",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00068",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00068_743955",
-                "total_amount": 192.99,
+                "order_id": "ORDER_user_00068_461223",
+                "total_amount": 36.99,
                 "items": [
                     {
-                        "product_id": "00560",
+                        "product_id": "07637",
                         "quantity": 1,
-                        "price": 172.99
+                        "price": 12.99
                     },
                     {
-                        "product_id": "03752",
+                        "product_id": "04365",
                         "quantity": 1,
-                        "price": 20.0
+                        "price": 24.0
                     }
                 ],
-                "payment_method": "credit_card"
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.743961"
-        },
-        {
-            "id": "a2af24d3-5111-4639-ad79-aa8c6b9d637e",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00068",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "07454",
-                "quantity": 3,
-                "price": 49.95
-            },
-            "created_time": "2025-08-09T20:05:50.743965"
-        },
-        {
-            "id": "cfd7973e-d9f5-4cd9-b85f-4ceb4b7ed9c7",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00068",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "03897",
-                "category": "exclude",
-                "product_name": "Mini Mat (Infant / Toddler 9+ months)",
-                "price": 24.95,
-                "product_url": "https://www.aldeahome.com/products/mini-mat-infant-toddler-9-months",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/8d963aef7b7702acfea2682c88e138eb6faa0a2973d11a3aa732fa45c8f77f51.png?v=1720823706",
-                "view_duration_seconds": 93
-            },
-            "created_time": "2025-08-09T20:05:50.743971"
+            "created_time": "2025-08-10T01:32:25.461228"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "77def68d-6ddd-445e-8ad0-091762acbffb",
-            "customer_id": "user_00068",
-            "product_id": "00211",
-            "rating": 2,
-            "review_title": "Disappointed",
-            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2024-11-15T20:52:52.182257",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "8e0f43d1-7b86-4974-99cd-58f8c80ac9e3",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "15aead49-e53f-4484-857d-7bb221579cd5",
-            "UserId": "user_00068",
-            "session_id": "15aead49-e53f-4484-857d-7bb221579cd5",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Is \"Cat's First Baby\" (Product ID: 01399) suitable for young children, and what age group is it recommended for?",
-            "CreatedTime": "2025-08-09T20:22:25.166046",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "423dbdcd-b78b-4f13-a84a-756a40f2b333",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "15aead49-e53f-4484-857d-7bb221579cd5",
-            "UserId": "user_00068",
-            "session_id": "15aead49-e53f-4484-857d-7bb221579cd5",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "\"Cat's First Baby\" is a delightful board book that captures the wonder of a new family member through a cat's perspective, making it suitable for young children. While the specific age recommendation isn't provided, board books like this are typically ideal for toddlers and preschoolers, generally ages 1-5. It’s a great choice for introducing the concept of a new sibling in a fun and engaging way! \n\nYou can purchase it for $9.99 at this link: [Cat's First Baby](https://www.aldeahome.com/products/cats-first-baby-1).",
-            "CreatedTime": "2025-08-09T20:22:28.561742",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "3e2c7761-dc21-408d-a3ec-430c31e0dce4",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "15aead49-e53f-4484-857d-7bb221579cd5",
-            "UserId": "user_00068",
-            "session_id": "15aead49-e53f-4484-857d-7bb221579cd5",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if \"Cat's First Baby\" (Product ID: 01399) includes any interactive elements or activities for children, or is it primarily a storybook?",
-            "CreatedTime": "2025-08-09T20:22:29.750703",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "065c7acd-9813-4196-9fdc-638fa4139af7",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "15aead49-e53f-4484-857d-7bb221579cd5",
-            "UserId": "user_00068",
-            "session_id": "15aead49-e53f-4484-857d-7bb221579cd5",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "\"Cat's First Baby\" is primarily a storybook that captures the humor and wonder of a new family member through a cat's eyes. It does not specifically mention any interactive elements or activities. The focus is on storytelling, making it a delightful read for young children as they explore the narrative and illustrations. \n\nFor more details or to purchase, you can find it for $9.99 at this link: [Cat's First Baby](https://www.aldeahome.com/products/cats-first-baby-1).",
-            "CreatedTime": "2025-08-09T20:22:32.052740",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.206126"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.874623"
 }

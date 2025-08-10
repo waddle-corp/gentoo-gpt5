@@ -1,0 +1,154 @@
+{
+    "user_id": "user_00131",
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "843fb4b0-4426-4c0e-8d03-1a604b20b2af",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00131",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00131_549363",
+                "total_amount": 24.95,
+                "items": [
+                    {
+                        "product_id": "06529",
+                        "quantity": 1,
+                        "price": 15.95
+                    },
+                    {
+                        "product_id": "05919",
+                        "quantity": 1,
+                        "price": 9.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.549367"
+        },
+        {
+            "id": "55c3aff8-a503-4200-b57c-8678a72c1e63",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00131",
+            "event_name": "search",
+            "event_data": {
+                "query": "Tiny Doughnut Ornament",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.551732"
+        },
+        {
+            "id": "db93b519-2049-4e08-89d4-74d1f0706d45",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00131",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "01879",
+                "category": "candles",
+                "product_name": "Peony + Salt - Travel Collection",
+                "price": 14.95,
+                "product_url": "https://www.aldeahome.com/products/peony-salt-travel-collection",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/1519114094.jpg?v=1660004766",
+                "view_duration_seconds": 48
+            },
+            "created_time": "2025-08-10T01:32:25.551737"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "9eac2010-e509-4f85-ac0e-9806e394c0e9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "UserId": "user_00131",
+            "session_id": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the assorted styles available for the PARTY DOG GLOBE Christmas Ornament (Product ID: 02686)?",
+            "CreatedTime": "2025-08-10T01:45:48.719866",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "dab9e6aa-2926-423f-8b80-4b3e95ac8da8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "UserId": "user_00131",
+            "session_id": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The PARTY DOG GLOBE Christmas Ornament comes in assorted styles, allowing for a variety of designs to choose from. Each ornament is sold individually, so you can select the specific style that you like best. \n\nThe price for this ornament is $17.97. You can find more information and see the available styles by visiting the product page [here](https://www.aldeahome.com/products/party-dog-globe-christmas-ornament). \n\nIf you have any other questions, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:45:50.842151",
+            "ItemId": "02686",
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "d4d38a52-41fc-45dc-9fbb-eef2ac218d98",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "UserId": "user_00131",
+            "session_id": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you let me know if the PARTY DOG GLOBE Christmas Ornament (Product ID: 02686) has any specific themes or color schemes in the assorted styles?",
+            "CreatedTime": "2025-08-10T01:45:51.796621",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a4b4202b-e649-4580-9698-8929ae22d404",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "UserId": "user_00131",
+            "session_id": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The specific themes or color schemes for the assorted styles of the PARTY DOG GLOBE Christmas Ornament are not detailed in the provided information. However, given that these are holiday ornaments, they likely feature festive designs typical of Christmas decorations. \n\nFor a better understanding of the available styles and any specific themes or colors, I recommend visiting the product page [here](https://www.aldeahome.com/products/party-dog-globe-christmas-ornament). If you have any further questions, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:45:54.931303",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "b75a4473-9e3a-477f-acf1-2378e5e64839",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "UserId": "user_00131",
+            "session_id": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the PARTY DOG GLOBE Christmas Ornament (Product ID: 02686) is made of any specific materials, and if it’s suitable for outdoor display?",
+            "CreatedTime": "2025-08-10T01:45:55.957665",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "811ec76e-d9c5-47cb-92df-dce72992e463",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "UserId": "user_00131",
+            "session_id": "eac44345-7e64-4493-b78c-b5c34c48b9b6",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The provided information does not specify the materials used for the PARTY DOG GLOBE Christmas Ornament or whether it is suitable for outdoor display. Typically, Christmas ornaments are made from materials like glass, plastic, or resin, but you'll need to check the product details for specific material information. \n\nFor the best guidance on whether it’s suitable for outdoor use, I recommend visiting the product page [here](https://www.aldeahome.com/products/party-dog-globe-christmas-ornament) or checking with the retailer directly. If you have any other questions, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:46:02.446549",
+            "ItemId": "02686",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.896404"
+}

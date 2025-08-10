@@ -1,124 +1,137 @@
 {
     "user_id": "user_00055",
-    "raw_engagement_score": 20,
-    "normalized_engagement_score": 13,
+    "raw_engagement_score": 36,
+    "normalized_engagement_score": 22,
     "activities": [
         {
-            "id": "f58f4a23-49e9-4c09-8f1b-8f8e943b6ad3",
+            "id": "11e27844-f764-4e44-9bed-f00a6aeb16a0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00055",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00055_430484",
+                "total_amount": 48.95,
+                "items": [
+                    {
+                        "product_id": "00982",
+                        "quantity": 1,
+                        "price": 16.95
+                    },
+                    {
+                        "product_id": "02284",
+                        "quantity": 1,
+                        "price": 32.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.430489"
+        },
+        {
+            "id": "ae9f1fe5-cee0-4cc9-ba95-d63dcee86204",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00055",
             "event_name": "login",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.72.127"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.210.4"
             },
-            "created_time": "2025-08-09T20:05:50.727018"
+            "created_time": "2025-08-10T01:32:25.430493"
+        },
+        {
+            "id": "7262d762-4996-448d-9492-0d43e92f13ac",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00055",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00055_430495",
+                "total_amount": 135.0,
+                "items": [
+                    {
+                        "product_id": "06066",
+                        "quantity": 1,
+                        "price": 135.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.430499"
         }
     ],
     "reviews": [
         {
-            "review_id": "4f504986-ba92-4175-92c1-f5a17a2410bf",
+            "review_id": "96662c30-ea5e-4998-8806-37ceb8f4f516",
             "customer_id": "user_00055",
-            "product_id": "01928",
-            "rating": 3,
-            "review_title": "Exceeded expectations",
-            "review_content": "Fast shipping and great quality. I especially love the details on Dough Bowl Candle 19½\" X 5½\" X 2\" 28oz.",
-            "created_at": "2024-11-16T20:52:52.182223",
+            "product_id": "00895",
+            "rating": 2,
+            "review_title": "Below expectations",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-08-02T01:32:54.168848",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "02e53b65-4034-4d9d-acc6-b4af8a4609ac",
+            "Id": "be2c58be-773c-43a0-aff0-64bd23e8be2f",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "DialogueId": "e702c308-1371-427a-b2af-a9d18f202955",
             "UserId": "user_00055",
-            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
-            "Intent": "일반",
+            "session_id": "e702c308-1371-427a-b2af-a9d18f202955",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Can you tell me more about the durability of the UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ (Product ID: 07482) and how it protects the items during travel?",
-            "CreatedTime": "2025-08-09T20:20:58.901753",
+            "Content": "What materials is the 'Totally Fried Egg Enamel Food Keychain - Foodie, Bakery' (Product ID: 04361) made of?",
+            "CreatedTime": "2025-08-10T01:38:13.782504",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "89ebef1b-89d5-4f86-9b9d-b1a40974fa0a",
+            "Id": "ebdc7752-4240-4854-9eca-086a8db2a948",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "DialogueId": "e702c308-1371-427a-b2af-a9d18f202955",
             "UserId": "user_00055",
-            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "session_id": "e702c308-1371-427a-b2af-a9d18f202955",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ is designed with durable, luggage-grade fabric that safeguards your RumbleSeat or Bassinet during travel. This high-quality material ensures that your items are protected from wear and tear while being transported. \n\nAdditionally, the bag features convenient inner pockets for storing the RumbleSeat bumper bar and adapter, which helps keep everything organized and secure. The comfortable carry handles and removable shoulder strap enhance versatility, making it easy to carry. Furthermore, the TravelSafe Program allows you to register your Travel Bag online, providing coverage for any damage incurred during air travel, giving you peace of mind while you travel.\n\nIf you're interested, the price of the UPPAbaby TravelSafe Travel Bag is $89.99. You can find more details and purchase it [here](https://www.aldeahome.com/products/bassinet-travel-bag).",
-            "CreatedTime": "2025-08-09T20:21:02.694589",
+            "Content": "The 'Totally Fried Egg Enamel Food Keychain - Foodie, Bakery' is a soft enamel keychain. It is designed and packaged in Columbus, OH, and manufactured in Taiwan. If you need more details or want to purchase it, you can find it [here](https://www.aldeahome.com/products/totally-fried-egg-enamel-food-keychain-foodie-bakery) for $16.00.",
+            "CreatedTime": "2025-08-10T01:38:15.494270",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "deff5c47-33be-4b83-9254-0f70922182d1",
+            "Id": "a5689522-5c8a-4ff0-9606-5b4a518f4828",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "DialogueId": "e702c308-1371-427a-b2af-a9d18f202955",
             "UserId": "user_00055",
-            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
-            "Intent": "일반",
+            "session_id": "e702c308-1371-427a-b2af-a9d18f202955",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Can you tell me if the UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ (Product ID: 07482) is machine washable or how to clean it effectively?",
-            "CreatedTime": "2025-08-09T20:21:03.970858",
+            "Content": "Can you tell me if the 'Totally Fried Egg Enamel Food Keychain - Foodie, Bakery' (Product ID: 04361) is durable enough for everyday use?",
+            "CreatedTime": "2025-08-10T01:38:16.650791",
             "ItemId": null,
-            "Thumbs": null,
+            "Thumbs": "up",
             "Channel": "web"
         },
         {
-            "Id": "6d56fbb8-8678-47cc-9023-075dec370406",
+            "Id": "87fbff37-7cec-437f-94c7-ddb23b0354a4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "DialogueId": "e702c308-1371-427a-b2af-a9d18f202955",
             "UserId": "user_00055",
-            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ is not specifically mentioned as machine washable. To clean it effectively, it's best to use a damp cloth or sponge with mild soap to wipe down the fabric. Avoid using harsh chemicals or abrasive cleaners, as they could damage the material. For any specific cleaning instructions or recommendations, please refer to the care guidelines provided by UPPAbaby. If you have further questions or need assistance, feel free to ask!",
-            "CreatedTime": "2025-08-09T20:21:06.516373",
-            "ItemId": "07482",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "5a34ab11-0fa5-4c71-9ac4-5d8ea0ba5366",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
-            "UserId": "user_00055",
-            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Can you tell me if the UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ (Product ID: 07482) comes with a warranty and what it covers?",
-            "CreatedTime": "2025-08-09T20:21:07.961658",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d7834101-6b78-4b1f-a2b8-c6da70bc0e7c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
-            "UserId": "user_00055",
-            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "session_id": "e702c308-1371-427a-b2af-a9d18f202955",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ does come with a warranty through the TravelSafe Program. When you register your Travel Bag online, the program covers any damage incurred to your RumbleSeat or Bassinet during air travel. This offers you peace of mind while traveling with your items. For more specific details about the warranty terms and coverage, it's always best to check directly with UPPAbaby or refer to their warranty policy. If you have any more questions, feel free to ask!",
-            "CreatedTime": "2025-08-09T20:21:10.692340",
-            "ItemId": null,
+            "Content": "The 'Totally Fried Egg Enamel Food Keychain - Foodie, Bakery' is made of soft enamel, which is designed to be durable for everyday use. However, like all enamel products, care should be taken to avoid excessive bending or dropping to maintain its appearance. If you're interested in purchasing it, you can find it for $16.00 [here](https://www.aldeahome.com/products/totally-fried-egg-enamel-food-keychain-foodie-bakery).",
+            "CreatedTime": "2025-08-10T01:38:18.471246",
+            "ItemId": "04361",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.201417"
+    "profile_generated_at": "2025-08-10T01:53:50.869363"
 }

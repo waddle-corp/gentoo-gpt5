@@ -1,0 +1,159 @@
+{
+    "user_id": "user_00199",
+    "raw_engagement_score": 33,
+    "normalized_engagement_score": 20,
+    "activities": [
+        {
+            "id": "ad182a15-3304-4791-8f4e-362feace0f10",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00199",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00199_656911",
+                "total_amount": 45.0,
+                "items": [
+                    {
+                        "product_id": "04427",
+                        "quantity": 1,
+                        "price": 45.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.656915"
+        },
+        {
+            "id": "46e2f9d5-2f33-47fa-93e0-994bcc72f083",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00199",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.151.57"
+            },
+            "created_time": "2025-08-10T01:32:25.656919"
+        },
+        {
+            "id": "601bf028-c7fd-4a06-a5cf-255599291d59",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00199",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "00854",
+                "category": "bath-storage-and-grooming",
+                "product_name": "Modern Bath Toy Gift Set",
+                "price": 45.95,
+                "product_url": "https://www.aldeahome.com/products/modern-bath-toy-gift-set",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/09a6b9f10fed15728df4e558960799caf1ca629a0e1d7ff1cb22f95f34d02104.jpg?v=1666902147",
+                "view_duration_seconds": 49
+            },
+            "created_time": "2025-08-10T01:32:25.656923"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "55a696bc-1161-4d38-b5d8-a77783b69590",
+            "customer_id": "user_00199",
+            "product_id": "05286",
+            "rating": 5,
+            "review_title": "Love it!",
+            "review_content": "relaxing lavender bundle is fantastic! I wish I'd found it sooner.",
+            "created_at": "2024-09-26T01:32:54.169199",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "39bfa601-9ced-426b-87f6-082d2a4b8e7b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "UserId": "user_00199",
+            "session_id": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me how easy it is to clean the Baby Snot Sucker (Blue) with product ID 05167 after use?",
+            "CreatedTime": "2025-08-10T01:52:04.500197",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3392d6e8-836e-45d1-8458-b69267880450",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "UserId": "user_00199",
+            "session_id": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Baby Snot Sucker (Blue) is designed to be clean and hygienic. It features a hygiene filter that helps prevent the spread of germs. After use, you can easily clean it to maintain its hygiene. For specific cleaning instructions, it's best to refer to the product manual or guidelines that come with it. \n\nIf you have any more questions, feel free to ask! The price of the Baby Snot Sucker (Blue) is $18.00, and you can find more details [here](https://www.aldeahome.com/products/baby-snot-sucker-blue-1).",
+            "CreatedTime": "2025-08-10T01:52:06.636129",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "32111728-0f2c-4c8c-b2c1-0bb0cfc71d29",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "UserId": "user_00199",
+            "session_id": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "Is the Baby Snot Sucker (Blue) suitable for newborns, and what age range is it recommended for? Product ID 05167.",
+            "CreatedTime": "2025-08-10T01:52:07.440627",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "fdcd79fe-4895-400f-8d8a-7ee310f46ea6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "UserId": "user_00199",
+            "session_id": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Baby Snot Sucker (Blue) is designed to be gentle and safe for babies, making it suitable for newborns. While the product information does not specify an exact age range, it is generally recommended for infants and young children who may experience congestion. Always ensure to follow the manufacturer's guidelines for safe use. \n\nIf you have any more questions or need further assistance, feel free to ask! The price is $18.00, and you can view the product [here](https://www.aldeahome.com/products/baby-snot-sucker-blue-1).",
+            "CreatedTime": "2025-08-10T01:52:09.412426",
+            "ItemId": "05167",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bba520de-af62-4229-ac1a-e955c7250efc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "UserId": "user_00199",
+            "session_id": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Baby Snot Sucker (Blue) is made from any specific materials that are safe for babies, and does it have any certifications? Product ID 05167.",
+            "CreatedTime": "2025-08-10T01:52:10.454526",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bf00d528-1f4f-409f-a8f3-41d0aa7a2555",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "UserId": "user_00199",
+            "session_id": "6de93de0-0b28-461c-a904-809cf7747c8a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The product information provided does not specify the exact materials used in the Baby Snot Sucker (Blue) or any certifications it may have. However, it is designed to be safe and non-irritating for babies, with a soft pen-shaped tip that fits comfortably in their noses. For detailed information regarding materials and certifications, it's best to check the product packaging or reach out to the manufacturer directly.\n\nIf you have any other questions or need further assistance, feel free to ask! The Baby Snot Sucker (Blue) is priced at $18.00, and you can find more details [here](https://www.aldeahome.com/products/baby-snot-sucker-blue-1).",
+            "CreatedTime": "2025-08-10T01:52:13.407922",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.912435"
+}

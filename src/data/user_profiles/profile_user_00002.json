@@ -1,112 +1,84 @@
 {
     "user_id": "user_00002",
-    "raw_engagement_score": 45,
-    "normalized_engagement_score": 29,
+    "raw_engagement_score": 10,
+    "normalized_engagement_score": 6,
     "activities": [
         {
-            "id": "53c317cf-e94a-4dfb-8f8e-ad57744e8b24",
+            "id": "e6ec9fde-bbdf-4229-93f7-1a6ff2f84f8f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00002",
-            "event_name": "login",
+            "event_name": "search",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.146.54"
+                "query": "erbaviva",
+                "search_results_count": 5,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.639293"
-        },
-        {
-            "id": "29bb4257-aa63-4559-861a-2db296d9dd49",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00002",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00002_639307",
-                "total_amount": 42.99,
-                "items": [
-                    {
-                        "product_id": "02766",
-                        "quantity": 1,
-                        "price": 25.0
-                    },
-                    {
-                        "product_id": "04074",
-                        "quantity": 1,
-                        "price": 17.99
-                    }
-                ],
-                "payment_method": "credit_card"
-            },
-            "created_time": "2025-08-09T20:05:50.639344"
-        },
-        {
-            "id": "b36cef89-c369-4732-92ed-d8dc74768e88",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00002",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "02605",
-                "quantity": 1,
-                "price": 95.0
-            },
-            "created_time": "2025-08-09T20:05:50.639352"
-        },
-        {
-            "id": "867fcd65-933c-4274-b4be-26a4f7abd501",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00002",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00002_639358",
-                "total_amount": 20.49,
-                "items": [
-                    {
-                        "product_id": "04101",
-                        "quantity": 1,
-                        "price": 5.5
-                    },
-                    {
-                        "product_id": "04133",
-                        "quantity": 1,
-                        "price": 14.99
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.639366"
-        },
-        {
-            "id": "37f359ab-bc59-4d8e-b09e-7109f574eed0",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00002",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00002_639370",
-                "total_amount": 16.97,
-                "items": [
-                    {
-                        "product_id": "06720",
-                        "quantity": 1,
-                        "price": 16.97
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.639376"
+            "created_time": "2025-08-10T01:32:25.368074"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "1dd5acb3-0498-42d8-bc30-ac9e706650ea",
-            "customer_id": "user_00002",
-            "product_id": "05155",
-            "rating": 5,
-            "review_title": "Super satisfied!",
-            "review_content": "Baby Sweatshirt with \"Patches\" is fantastic! I wish I'd found it sooner.",
-            "created_at": "2024-11-21T20:52:52.181981",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.175311"
+    "dialogues": [
+        {
+            "Id": "ba363b49-bb75-4a0f-b13f-c4754a2736e6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ef9f8fde-8fc0-407a-8a29-be9966bc6747",
+            "UserId": "user_00002",
+            "session_id": "ef9f8fde-8fc0-407a-8a29-be9966bc6747",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Eco-Friendly Nylon Elastics 20pc set - Blush (Product ID: 04694) comes in any other colors?",
+            "CreatedTime": "2025-08-10T01:33:36.115875",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4b756f4e-a983-4679-8e7b-10c6b0ce63b3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ef9f8fde-8fc0-407a-8a29-be9966bc6747",
+            "UserId": "user_00002",
+            "session_id": "ef9f8fde-8fc0-407a-8a29-be9966bc6747",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I currently only have information about the Eco-Friendly Nylon Elastics 20pc set - Blush. Unfortunately, I don’t have details on whether it comes in other colors. You can check the product page for any updates or additional options. Here’s the link for your convenience: [Eco-Friendly Nylon Elastics 20pc set - Blush](https://www.aldeahome.com/products/eco-friendly-nylon-elastics-20pc-set-blush). The price is $8.00.",
+            "CreatedTime": "2025-08-10T01:33:38.059346",
+            "ItemId": "04694",
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "09094283-4128-4a36-a795-f6a332190459",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ef9f8fde-8fc0-407a-8a29-be9966bc6747",
+            "UserId": "user_00002",
+            "session_id": "ef9f8fde-8fc0-407a-8a29-be9966bc6747",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are there any discounts or promotions currently available for the Eco-Friendly Nylon Elastics 20pc set - Blush (Product ID: 04694)?",
+            "CreatedTime": "2025-08-10T01:33:38.980378",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8bfbe6e4-6fde-48b9-8310-03d5fb6bd9c3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ef9f8fde-8fc0-407a-8a29-be9966bc6747",
+            "UserId": "user_00002",
+            "session_id": "ef9f8fde-8fc0-407a-8a29-be9966bc6747",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have information about current discounts or promotions for the Eco-Friendly Nylon Elastics 20pc set - Blush. I recommend checking the product page or contacting customer support for the most up-to-date information on promotions. You can view the product here: [Eco-Friendly Nylon Elastics 20pc set - Blush](https://www.aldeahome.com/products/eco-friendly-nylon-elastics-20pc-set-blush) for $8.00.",
+            "CreatedTime": "2025-08-10T01:33:40.754529",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.838179"
 }

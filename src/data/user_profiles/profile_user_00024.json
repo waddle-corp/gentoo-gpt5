@@ -1,68 +1,61 @@
 {
     "user_id": "user_00024",
-    "raw_engagement_score": 8,
-    "normalized_engagement_score": 6,
+    "raw_engagement_score": 7,
+    "normalized_engagement_score": 5,
     "activities": [
         {
-            "id": "d517d3ea-2786-42f6-b8bb-d411d85c2b7c",
+            "id": "a631f9bd-a2cf-4036-99ae-844b8efb18e1",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00024",
             "event_name": "search",
             "event_data": {
-                "query": "Holden Hearts the teddy bear",
+                "query": "Barnyard Dance! by Sandra Boynton",
                 "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.680966"
+            "created_time": "2025-08-10T01:32:25.388729"
         },
         {
-            "id": "0eb9e911-c3c7-4414-9abe-2a161f8abb1b",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00024",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "02533",
-                "category": "crib-sheets-changing-covers",
-                "product_name": "Pencil Dot Fitted Sheet",
-                "price": 44.0,
-                "product_url": "https://www.aldeahome.com/products/pencil-dot-fitted-sheet",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/PENCIL_MATT_MINI.jpg?v=1572391895",
-                "view_duration_seconds": 71
-            },
-            "created_time": "2025-08-09T20:05:50.680980"
-        },
-        {
-            "id": "d8adfabe-7d02-4e72-b241-71651c3e9356",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00024",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "06869",
-                "category": "newborn-basics",
-                "product_name": "Lemon Baby Dress + Bloomer (Organic Jersey): LEMON / 18-24M",
-                "price": 48.0,
-                "product_url": "https://www.aldeahome.com/products/lemon-baby-dress-bloomer-organic-jersey-lemon-18-24m",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/3ddb7f7d0852dea938dd08c74224da88f6293124df2e5dae9b8af0606654c25e_c9f077e2-5a8b-409b-b94d-61ce902a2f1b.jpg?v=1745507343",
-                "view_duration_seconds": 14
-            },
-            "created_time": "2025-08-09T20:05:50.680984"
-        },
-        {
-            "id": "7e8c9fe3-3437-4173-9326-bd11af96e947",
+            "id": "558e4a7f-9182-4b31-bb0b-88647786bf34",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00024",
             "event_name": "login",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.237.214"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.34.102"
             },
-            "created_time": "2025-08-09T20:05:50.680989"
+            "created_time": "2025-08-10T01:32:25.388733"
+        },
+        {
+            "id": "ceb2d59d-d6d4-43f7-9168-743935da58e5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00024",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "05682",
+                "category": "exclude",
+                "product_name": "Nuna SENA Aire Playard with Zip-Off Bassinet + Changer",
+                "price": 500.0,
+                "product_url": "https://www.aldeahome.com/products/nuna-sena-aire-playard-travel-crib-changer",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/Nuna_SENAaire_Granite_Angle_Changer_US_ba6fb11a-2387-4855-b89e-c270348dbf5b.jpg?v=1741395609",
+                "view_duration_seconds": 71
+            },
+            "created_time": "2025-08-10T01:32:25.388737"
+        },
+        {
+            "id": "c8725684-52ee-4841-99a8-d4ec6b1f179e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00024",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.156.230"
+            },
+            "created_time": "2025-08-10T01:32:25.388741"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.187416"
+    "profile_generated_at": "2025-08-10T01:53:50.854657"
 }

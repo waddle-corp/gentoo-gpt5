@@ -1,141 +1,194 @@
 {
     "user_id": "user_00063",
-    "raw_engagement_score": 27,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 50,
+    "normalized_engagement_score": 30,
     "activities": [
         {
-            "id": "3c7bc656-22fd-4b99-bf67-6234dcf5eeb9",
+            "id": "3b231a1d-75b5-4226-8100-e9655a14a797",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00063",
-            "event_name": "product_view",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "06908",
-                "category": "newborn-basics",
-                "product_name": "If You can Smell that Change my Diaper Baby Socks | Quirky: 0-6mo",
-                "price": 7.95,
-                "product_url": "https://www.aldeahome.com/products/if-you-can-smell-that-change-my-diaper-baby-socks-quirky-0-6mo",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/53b6018c5dfdc77b4a89b2c15753ea5fe3a959426def4fa21644d87b72625473_c61f2931-9154-4924-a726-f941d88e33c9.jpg?v=1743519172",
-                "view_duration_seconds": 103
+                "order_id": "ORDER_user_00063_451735",
+                "total_amount": 136.0,
+                "items": [
+                    {
+                        "product_id": "01915",
+                        "quantity": 1,
+                        "price": 46.0
+                    },
+                    {
+                        "product_id": "03557",
+                        "quantity": 1,
+                        "price": 90.0
+                    }
+                ],
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T20:05:50.738842"
+            "created_time": "2025-08-10T01:32:25.451739"
         },
         {
-            "id": "d8f16ea6-75fc-48e1-b0e5-53c507a45744",
+            "id": "3767793a-eee3-45f8-a1ba-2dee7650c840",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00063",
-            "event_name": "add_to_cart",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "01099",
-                "quantity": 3,
-                "price": 980.0
+                "order_id": "ORDER_user_00063_451743",
+                "total_amount": 86.94,
+                "items": [
+                    {
+                        "product_id": "00562",
+                        "quantity": 1,
+                        "price": 69.95
+                    },
+                    {
+                        "product_id": "02719",
+                        "quantity": 1,
+                        "price": 16.99
+                    }
+                ],
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T20:05:50.738846"
+            "created_time": "2025-08-10T01:32:25.451747"
+        },
+        {
+            "id": "dc975b6b-54a8-42ef-8a1d-d8d2d52dff00",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00063",
+            "event_name": "search",
+            "event_data": {
+                "query": "Joolz Aer+ Stroller Raincover",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.454052"
+        },
+        {
+            "id": "7d0c5454-ea91-4862-835e-4a914ef5daa6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00063",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00063_454055",
+                "total_amount": 150.0,
+                "items": [
+                    {
+                        "product_id": "05834",
+                        "quantity": 1,
+                        "price": 150.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.454060"
         }
     ],
     "reviews": [
         {
-            "review_id": "e19e7143-6587-487c-b937-bb0aa9f58e53",
+            "review_id": "bcc6aa2c-466d-426d-8eb7-e435906327a5",
             "customer_id": "user_00063",
-            "product_id": "05237",
-            "rating": 2,
-            "review_title": "Do not recommend",
-            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2024-12-27T20:52:52.182234",
+            "product_id": "05454",
+            "rating": 1,
+            "review_title": "Below expectations",
+            "review_content": "The quality of Saponaria No-Tears Wash & Shampoo 450 ml/ 15.2 fl. oz. wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2024-08-24T01:32:54.168868",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "89cae17e-9919-4a94-8914-33b96c20fb6a",
+            "Id": "d9585802-1dde-4f5f-bd27-763d2c77d4d5",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "DialogueId": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
             "UserId": "user_00063",
-            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Can you tell me if the Rainbow Block Thank You Card (Product ID: 04173) is available for bulk purchase, and if so, what are the pricing options?",
-            "CreatedTime": "2025-08-09T20:21:51.798838",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "ade0a11b-1336-471d-aae6-0bde7583dda5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
-            "UserId": "user_00063",
-            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "I currently do not have information regarding bulk purchase options or pricing for the Rainbow Block Thank You Card. However, the individual price for the card is $5.50. For specific bulk purchase inquiries, I recommend contacting customer support directly or checking the website for more details. You can view the card [here](https://www.aldeahome.com/products/rainbow-block-thank-you-card).",
-            "CreatedTime": "2025-08-09T20:21:53.588423",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "6bc6321b-fe4e-4d1d-b6e3-b0e50591f13f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
-            "UserId": "user_00063",
-            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "session_id": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
             "Intent": "일반",
             "Role": "user",
-            "Content": "Do you know if there's a discount for purchasing multiple units of the Rainbow Block Thank You Card (Product ID: 04173)? I'm considering buying several for an event.",
-            "CreatedTime": "2025-08-09T20:21:54.625816",
+            "Content": "Can the Mountain Buggy nano duo™ Lightweight Double Stroller (Product ID: 00549) accommodate newborns, or is it suitable for older children only?",
+            "CreatedTime": "2025-08-10T01:38:44.134641",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "55dc4a00-bddf-41d8-aa77-30d118549cf1",
+            "Id": "be93a3c4-f2be-4876-ba62-bd9f11cf9f2d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "DialogueId": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
             "UserId": "user_00063",
-            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "session_id": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "I don’t have information about discounts for purchasing multiple units of the Rainbow Block Thank You Card. The price for each card is $5.50. For any potential discounts or bulk pricing, please check the website or reach out to customer support directly. You can view the card [here](https://www.aldeahome.com/products/rainbow-block-thank-you-card).",
-            "CreatedTime": "2025-08-09T20:21:56.409314",
-            "ItemId": "04173",
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "ed6809d4-4378-4b28-b9ab-d16879d60619",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
-            "UserId": "user_00063",
-            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you let me know how quickly I can receive the Rainbow Block Thank You Card (Product ID: 04173) if I place an order today?",
-            "CreatedTime": "2025-08-09T20:21:57.306711",
+            "Content": "The Mountain Buggy nano duo™ Lightweight Double Stroller is designed primarily for children who can sit up unassisted, typically around 6 months and older. It may not be suitable for newborns without an appropriate car seat or additional accessories. For more information, you can view the product details [here](https://www.aldeahome.com/products/nano-duo-stroller). The price is $499.99.",
+            "CreatedTime": "2025-08-10T01:38:46.180252",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "50da8c2b-775e-4c1c-aba7-f800b87cd1cb",
+            "Id": "a7a31dd6-9bdc-47ba-b23a-9f70ee99b0a0",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "DialogueId": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
             "UserId": "user_00063",
-            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "session_id": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are there any compatible car seats that can be used with the Mountain Buggy nano duo™ Lightweight Double Stroller (Product ID: 00549) for newborns, or do I need to purchase additional accessories?",
+            "CreatedTime": "2025-08-10T01:38:47.366487",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "683626a9-25a6-4489-9dbc-34eeb3501445",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
+            "UserId": "user_00063",
+            "session_id": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Mountain Buggy nano duo™ Lightweight Double Stroller does not come with specific information about compatible car seats for newborns. Generally, you would need to purchase additional adapters to use a car seat with this stroller. It’s advisable to check the manufacturer's website or contact customer support for detailed compatibility information regarding car seats and any necessary accessories. You can view the stroller [here](https://www.aldeahome.com/products/nano-duo-stroller) for more details. The price is $499.99.",
+            "CreatedTime": "2025-08-10T01:38:49.665038",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8c3ff5fd-18f9-49d7-9d08-8041f439e928",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
+            "UserId": "user_00063",
+            "session_id": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me what specific car seat models are compatible with the Mountain Buggy nano duo™ Lightweight Double Stroller (Product ID: 00549) and what adapters I would need to purchase?",
+            "CreatedTime": "2025-08-10T01:38:50.698565",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f1ab665c-7d67-4288-bf44-8edc1722eff3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
+            "UserId": "user_00063",
+            "session_id": "65c7be7b-cd4a-4ebf-9be5-4bd9ac7461b9",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "I don't have specific shipping information regarding the delivery time for the Rainbow Block Thank You Card. For the fastest and most accurate details about shipping times, I recommend checking the shipping policy on the website or contacting customer support directly. You can view the card [here](https://www.aldeahome.com/products/rainbow-block-thank-you-card).",
-            "CreatedTime": "2025-08-09T20:21:59.221271",
-            "ItemId": "04173",
+            "Content": "I'm sorry, but I don't have the specific information on compatible car seat models or the exact adapters needed for the Mountain Buggy nano duo™ Lightweight Double Stroller. I recommend checking the manufacturer's website or contacting customer support for detailed compatibility information regarding car seats and necessary adapters. You can view the stroller [here](https://www.aldeahome.com/products/nano-duo-stroller), and it is priced at $499.99.",
+            "CreatedTime": "2025-08-10T01:38:52.718164",
+            "ItemId": "00549",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.204451"
+    "profile_generated_at": "2025-08-10T01:53:50.872033"
 }

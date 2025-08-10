@@ -1,163 +1,77 @@
 {
     "user_id": "user_00011",
-    "raw_engagement_score": 37,
-    "normalized_engagement_score": 24,
+    "raw_engagement_score": 19,
+    "normalized_engagement_score": 12,
     "activities": [
         {
-            "id": "4c0e95b5-84fc-4d51-a174-61d895c6c018",
+            "id": "480e7512-acb8-4126-b997-3ae6eac50149",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00011",
-            "event_name": "search",
+            "event_name": "purchase_completed",
             "event_data": {
-                "query": "All Together Now | Framed Art Print",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
+                "order_id": "ORDER_user_00011_372675",
+                "total_amount": 47.98,
+                "items": [
+                    {
+                        "product_id": "01455",
+                        "quantity": 1,
+                        "price": 12.99
+                    },
+                    {
+                        "product_id": "07567",
+                        "quantity": 1,
+                        "price": 34.99
+                    }
+                ],
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T20:05:50.652012"
-        },
-        {
-            "id": "170d483c-fcee-4b3e-81e8-b96a2cb6504b",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00011",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "06104",
-                "quantity": 2,
-                "price": 15.0
-            },
-            "created_time": "2025-08-09T20:05:50.652024"
-        },
-        {
-            "id": "8fe318de-2f83-4636-bcb9-c3a93ab150ef",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00011",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "00338",
-                "quantity": 2,
-                "price": 18.95
-            },
-            "created_time": "2025-08-09T20:05:50.652029"
-        },
-        {
-            "id": "a168b266-6a02-41be-a2a6-7dd723e19b89",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00011",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "02294",
-                "quantity": 3,
-                "price": 18.0
-            },
-            "created_time": "2025-08-09T20:05:50.652034"
+            "created_time": "2025-08-10T01:32:25.372680"
         }
     ],
     "reviews": [
         {
-            "review_id": "4bf166da-8288-4b52-8d67-8de5857260a1",
+            "review_id": "7b8718eb-1738-4fb6-ba08-bb6a0b8fd15e",
             "customer_id": "user_00011",
-            "product_id": "06745",
-            "rating": 2,
+            "product_id": "01890",
+            "rating": 1,
             "review_title": "Disappointed",
             "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2024-10-20T20:52:52.182071",
+            "created_at": "2025-03-17T01:32:54.168760",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "a762f793-a774-4670-8004-b0783828f7d3",
+            "Id": "2460507f-3681-4d8f-84cb-5e5f454afb7a",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "2cb59749-16fb-4928-a938-2e33cf2f2206",
+            "DialogueId": "ac5affaf-0db0-49fe-8861-35ce8b9abed7",
             "UserId": "user_00011",
-            "session_id": "2cb59749-16fb-4928-a938-2e33cf2f2206",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "Is the 'Toddler Fruit Basket' (Product ID: 03283) suitable for outdoor play, or is it recommended for indoor use only?",
-            "CreatedTime": "2025-08-09T20:16:52.671136",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "56b22aae-1cff-467a-b7ad-a76eb2cd7039",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "2cb59749-16fb-4928-a938-2e33cf2f2206",
-            "UserId": "user_00011",
-            "session_id": "2cb59749-16fb-4928-a938-2e33cf2f2206",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The 'Toddler Fruit Basket' is primarily made of soft fabrics, making it more suitable for indoor use. It's designed for babies' fingers to grasp and hold, so it may not withstand outdoor conditions well. For the best experience, it's recommended to use it indoors. You can purchase it for $19.95 at the following link: [Toddler Fruit Basket](https://www.aldeahome.com/products/toddler-fruit-basket).",
-            "CreatedTime": "2025-08-09T20:16:54.717971",
-            "ItemId": "03283",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a5b88faf-273c-49ca-aeae-8020661d1f4e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "2cb59749-16fb-4928-a938-2e33cf2f2206",
-            "UserId": "user_00011",
-            "session_id": "2cb59749-16fb-4928-a938-2e33cf2f2206",
+            "session_id": "ac5affaf-0db0-49fe-8861-35ce8b9abed7",
             "Intent": "정보",
             "Role": "user",
-            "Content": "Can you tell me more about the materials used in the 'Toddler Fruit Basket' (Product ID: 03283) and if it’s safe for babies to chew on?",
-            "CreatedTime": "2025-08-09T20:16:55.844578",
+            "Content": "Can you tell me how many questions are included in the True Crime Trivia game (Product ID: 07132)?",
+            "CreatedTime": "2025-08-10T01:34:27.950276",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "3efe8c3b-8189-4422-acab-0f68ac130e7c",
+            "Id": "a2cbabdc-460d-44e8-9932-2d30fca2e760",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "2cb59749-16fb-4928-a938-2e33cf2f2206",
+            "DialogueId": "ac5affaf-0db0-49fe-8861-35ce8b9abed7",
             "UserId": "user_00011",
-            "session_id": "2cb59749-16fb-4928-a938-2e33cf2f2206",
+            "session_id": "ac5affaf-0db0-49fe-8861-35ce8b9abed7",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The 'Toddler Fruit Basket' is made of soft fabrics, which are generally safe for little ones to hold and grasp. While it's designed for interactive play, it is not specified as chew-safe. However, the materials are typically gentle enough for young children. It's always best to supervise play to ensure safety. You can find this product for $19.95 at [Toddler Fruit Basket](https://www.aldeahome.com/products/toddler-fruit-basket).",
-            "CreatedTime": "2025-08-09T20:16:58.148240",
-            "ItemId": null,
+            "Content": "The True Crime Trivia game includes 140 multiple-choice questions. If you're interested in purchasing it, the price is $12.00. You can find more information and buy it [here](https://www.aldeahome.com/products/true-crime-trivia).",
+            "CreatedTime": "2025-08-10T01:34:29.114163",
+            "ItemId": "07132",
             "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a88297a9-e575-400e-82b1-4c4e84cbeddc",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "2cb59749-16fb-4928-a938-2e33cf2f2206",
-            "UserId": "user_00011",
-            "session_id": "2cb59749-16fb-4928-a938-2e33cf2f2206",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Is the 'Toddler Fruit Basket' (Product ID: 03283) machine washable, or how should I clean it if it gets dirty?",
-            "CreatedTime": "2025-08-09T20:16:59.119518",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0d106448-aafe-421e-a521-a00e55f7108a",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "2cb59749-16fb-4928-a938-2e33cf2f2206",
-            "UserId": "user_00011",
-            "session_id": "2cb59749-16fb-4928-a938-2e33cf2f2206",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The cleaning instructions for the 'Toddler Fruit Basket' are not specified. Generally, for soft fabric toys, it's best to spot clean with a damp cloth and mild soap to avoid damage. Check the care label if available. For any specific care details, refer to the product page or consider contacting customer support. You can purchase the 'Toddler Fruit Basket' for $19.95 at this link: [Toddler Fruit Basket](https://www.aldeahome.com/products/toddler-fruit-basket).",
-            "CreatedTime": "2025-08-09T20:17:01.199583",
-            "ItemId": "03283",
-            "Thumbs": "up",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.180931"
+    "profile_generated_at": "2025-08-10T01:53:50.846551"
 }

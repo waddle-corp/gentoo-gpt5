@@ -1,7 +1,7 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useEffect, useMemo, useState, useRef } from "react";
 import { User as UserIcon, X as CloseIcon } from "lucide-react";
 import { ChartContainer, ChartTooltip, ChartTooltipContentProps } from "@/components/ui/chart";
 import { ResponsiveContainer, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
@@ -409,6 +409,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [nextCache, setNextCache] = useState<Record<string, string>>({});
   const [lastReason, setLastReason] = useState<string>("");
   const [lastIndexForModal, setLastIndexForModal] = useState<number | null>(null);
+
   const [doneMap, setDoneMap] = useState<Record<string, boolean>>({});
   const insightsInFlightRef = useRef<Record<string, boolean>>({});
   const nextInFlightRef = useRef<Record<string, boolean>>({});

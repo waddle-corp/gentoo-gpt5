@@ -1,135 +1,128 @@
 {
     "user_id": "user_00078",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "b493c488-edbc-457e-a870-43ef04805679",
+            "id": "744d514f-01f3-4466-b415-4bc9cd125160",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00078",
-            "event_name": "purchase_completed",
+            "event_name": "add_to_cart",
             "event_data": {
-                "order_id": "ORDER_user_00078_756232",
-                "total_amount": 43.0,
-                "items": [
-                    {
-                        "product_id": "04376",
-                        "quantity": 1,
-                        "price": 43.0
-                    }
-                ],
-                "payment_method": "naver_pay"
+                "product_id": "06070",
+                "quantity": 1,
+                "price": 169.99
             },
-            "created_time": "2025-08-09T20:05:50.756237"
+            "created_time": "2025-08-10T01:32:25.475284"
         },
         {
-            "id": "c360cee6-a8ee-4940-82e5-85d9d3889351",
+            "id": "73aa13e2-1def-4b78-b36b-906ac1d7f15b",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00078",
             "event_name": "search",
             "event_data": {
-                "query": "Finger Puppets: Bumble Bee",
+                "query": "Palm Leaf Mold Candle",
                 "search_results_count": 1,
                 "filters_applied": [
-                    "리뷰 많은 순"
+                    "가격 낮은 순"
                 ]
             },
-            "created_time": "2025-08-09T20:05:50.758798"
+            "created_time": "2025-08-10T01:32:25.477608"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "d0798e69-a171-406a-9527-d039344dd0d1",
+            "Id": "3d9665bf-e8bf-4f3d-bfc5-8bbaaeb9beb9",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
+            "DialogueId": "ae615a38-51ee-45f6-a253-aede73532dee",
             "UserId": "user_00078",
-            "session_id": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
-            "Intent": "탐색",
+            "session_id": "ae615a38-51ee-45f6-a253-aede73532dee",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "Can you tell me more about the age range suitable for the Vet Set (Product ID: 03222)?",
-            "CreatedTime": "2025-08-09T20:23:19.951791",
+            "Content": "Can you tell me if the Dinosaur Long Sleeve Romper (Product ID: 03081) is available in a size for a 12-month-old?",
+            "CreatedTime": "2025-08-10T01:39:59.893477",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "2a920c59-ab90-4a69-b467-1154dc1f2c91",
+            "Id": "8f06ddf3-fb53-4710-a216-3e2c5d561db7",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
+            "DialogueId": "ae615a38-51ee-45f6-a253-aede73532dee",
             "UserId": "user_00078",
-            "session_id": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The Vet Set is designed to encourage empathy and learning in children, making it suitable for a variety of age groups, typically recommended for children aged 3 and up. This allows younger children to engage in imaginative play while learning about caring for animals. \n\nYou can find more details and purchase it for $32.00 at this link: [Vet Set](https://www.aldeahome.com/products/vet-set).",
-            "CreatedTime": "2025-08-09T20:23:21.772247",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "235a0ab7-ee9a-4109-9355-b95f3daffa31",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
-            "UserId": "user_00078",
-            "session_id": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "What materials is the Vet Set (Product ID: 03222) made from, and is it safe for young children to play with?",
-            "CreatedTime": "2025-08-09T20:23:22.820359",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a3629a45-1fd3-497b-8ce2-cc4b78539fb9",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
-            "UserId": "user_00078",
-            "session_id": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
+            "session_id": "ae615a38-51ee-45f6-a253-aede73532dee",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Vet Set is made from high-quality, safe materials that are suitable for young children. It is designed to ensure safety during playtime, making it appropriate for kids aged 3 and up. The set encourages imaginative play while promoting empathy towards animals.\n\nYou can purchase the Vet Set for $32.00 at this link: [Vet Set](https://www.aldeahome.com/products/vet-set).",
-            "CreatedTime": "2025-08-09T20:23:24.573759",
-            "ItemId": "03222",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "f66f2848-dc1e-477b-8529-f6d602110d70",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
-            "UserId": "user_00078",
-            "session_id": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me if the Vet Set (Product ID: 03222) comes with any warranty or return policy in case it doesn't meet my expectations?",
-            "CreatedTime": "2025-08-09T20:23:25.580779",
+            "Content": "Yes, the Dinosaur Long Sleeve Romper is available in a size for a 12-month-old. The romper is priced at $38.00. You can view it [here](https://www.aldeahome.com/products/dinosaur-long-sleeve-romper).",
+            "CreatedTime": "2025-08-10T01:40:01.371590",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "3200e61f-3b50-4efd-a506-f4561f6783ab",
+            "Id": "5e2f1b21-4166-445d-bfc0-42851796d9da",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
+            "DialogueId": "ae615a38-51ee-45f6-a253-aede73532dee",
             "UserId": "user_00078",
-            "session_id": "7dbe6c07-bfad-4c83-aa1d-a38707002e84",
+            "session_id": "ae615a38-51ee-45f6-a253-aede73532dee",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the fabric used in the Dinosaur Long Sleeve Romper (Product ID: 03081)? Is it suitable for sensitive skin?",
+            "CreatedTime": "2025-08-10T01:40:02.207656",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "878d0bbf-7c71-41a2-8fbf-be1a2a26eacc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ae615a38-51ee-45f6-a253-aede73532dee",
+            "UserId": "user_00078",
+            "session_id": "ae615a38-51ee-45f6-a253-aede73532dee",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Dinosaur Long Sleeve Romper is made from 100% organic cotton, which is generally soft and gentle on the skin. This makes it suitable for sensitive skin, as organic cotton is free from harmful chemicals and pesticides often found in conventional cotton. If you have any more questions or need further assistance, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:40:03.747654",
+            "ItemId": "03081",
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "9fd3ec58-b828-4cc2-bf17-84ea28e7b5cc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ae615a38-51ee-45f6-a253-aede73532dee",
+            "UserId": "user_00078",
+            "session_id": "ae615a38-51ee-45f6-a253-aede73532dee",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Dinosaur Long Sleeve Romper (Product ID: 03081) available for immediate shipping, or will there be a delay in delivery?",
+            "CreatedTime": "2025-08-10T01:40:04.797045",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6805d256-27de-4b62-8308-d9842ed8b135",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ae615a38-51ee-45f6-a253-aede73532dee",
+            "UserId": "user_00078",
+            "session_id": "ae615a38-51ee-45f6-a253-aede73532dee",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "I don't have specific information about warranty or return policies for the Vet Set. I recommend checking the website or contacting customer support for details regarding any warranties or return policies associated with your purchase. \n\nYou can view and purchase the Vet Set for $32.00 here: [Vet Set](https://www.aldeahome.com/products/vet-set).",
-            "CreatedTime": "2025-08-09T20:23:27.080191",
-            "ItemId": null,
-            "Thumbs": null,
+            "Content": "I don't have specific information regarding shipping or delivery times for the Dinosaur Long Sleeve Romper. I recommend checking the website or contacting customer support directly for details on shipping availability. You can view the product [here](https://www.aldeahome.com/products/dinosaur-long-sleeve-romper).",
+            "CreatedTime": "2025-08-10T01:40:06.400746",
+            "ItemId": "03081",
+            "Thumbs": "up",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.208954"
+    "profile_generated_at": "2025-08-10T01:53:50.878242"
 }

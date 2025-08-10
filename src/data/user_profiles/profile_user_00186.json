@@ -1,0 +1,86 @@
+{
+    "user_id": "user_00186",
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 11,
+    "activities": [
+        {
+            "id": "2686feeb-a1d8-4d1f-a061-016549217933",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00186",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.64.177"
+            },
+            "created_time": "2025-08-10T01:32:25.638867"
+        },
+        {
+            "id": "31e102b0-df65-4da0-9860-7dbd1f702151",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00186",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.30.168"
+            },
+            "created_time": "2025-08-10T01:32:25.638871"
+        },
+        {
+            "id": "282cd78c-ec76-405f-adb6-171410bf0aab",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00186",
+            "event_name": "search",
+            "event_data": {
+                "query": "Let's Go to the Farmers' Market - Book (Traditional Chinese)",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.641010"
+        },
+        {
+            "id": "278b06af-6b30-4b7a-9482-7bccff2bde94",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00186",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07170",
+                "category": "pet-gifts",
+                "product_name": "BAGUETTE//ENRICHMENT DOG TOY",
+                "price": 32.0,
+                "product_url": "https://www.aldeahome.com/products/baguette-enrichment-dog-toy",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/f4ac41594801bc180ce944016c3e5dbcb2d5263df10ab2057b89a8d6833a4355.jpg?v=1700585266",
+                "view_duration_seconds": 101
+            },
+            "created_time": "2025-08-10T01:32:25.641015"
+        },
+        {
+            "id": "22ca47e0-2433-4adc-81be-e412c8d84ac9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00186",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02504",
+                "quantity": 3,
+                "price": 25.0
+            },
+            "created_time": "2025-08-10T01:32:25.641019"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "dce496cd-fbe9-413c-a168-e0e31e59f8da",
+            "customer_id": "user_00186",
+            "product_id": "04188",
+            "rating": 2,
+            "review_title": "Disappointed",
+            "review_content": "The quality of Wood AIrplane Rocker & Ride On wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2024-08-16T01:32:54.169161",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.909752"
+}

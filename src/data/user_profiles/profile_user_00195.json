@@ -1,0 +1,190 @@
+{
+    "user_id": "user_00195",
+    "raw_engagement_score": 42,
+    "normalized_engagement_score": 25,
+    "activities": [
+        {
+            "id": "537f139e-32e7-4675-9606-d9c7fe6e5113",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00195",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00195_650067",
+                "total_amount": 40.99,
+                "items": [
+                    {
+                        "product_id": "01549",
+                        "quantity": 1,
+                        "price": 7.99
+                    },
+                    {
+                        "product_id": "04909",
+                        "quantity": 1,
+                        "price": 33.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.650072"
+        },
+        {
+            "id": "eab03204-6fc3-48f7-bca3-341ce2e7325d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00195",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06417",
+                "quantity": 2,
+                "price": 50.0
+            },
+            "created_time": "2025-08-10T01:32:25.650075"
+        },
+        {
+            "id": "a49ec2c5-d0d8-460d-a2b3-9ec39bf91103",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00195",
+            "event_name": "search",
+            "event_data": {
+                "query": "Mountain Themed Crystal Decanter & Tumblers Set | Set of 3",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.652242"
+        },
+        {
+            "id": "23ecef4d-6cec-4218-9237-325a44622ff8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00195",
+            "event_name": "search",
+            "event_data": {
+                "query": "GT 10 Orange",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.654723"
+        },
+        {
+            "id": "f555a53a-7f69-4614-bbc2-74bafe716db6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00195",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00195_654726",
+                "total_amount": 124.95,
+                "items": [
+                    {
+                        "product_id": "02892",
+                        "quantity": 1,
+                        "price": 45.0
+                    },
+                    {
+                        "product_id": "05244",
+                        "quantity": 1,
+                        "price": 79.95
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.654731"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "08a1671f-1ccb-4a1a-8744-f90fa827a26f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "UserId": "user_00195",
+            "session_id": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the different styles available for the Chonky Cheeks Hamster (Product ID: 03906)? Are they all the same size?",
+            "CreatedTime": "2025-08-10T01:51:46.704273",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "35d1b749-8e35-4d3a-ad05-7fe744babade",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "UserId": "user_00195",
+            "session_id": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Chonky Cheeks Hamster comes in three cute squishy styles: brown, beige, and another assorted style. Each hamster is approximately 2″ W x 3″ H, so they are all the same size. You can enjoy watching them munch and pop their cheeks when you squeeze them! \n\nFor more details, you can check the product out [here](https://www.aldeahome.com/products/chonky-cheeks-hamster). The price is $5.50.",
+            "CreatedTime": "2025-08-10T01:51:48.705816",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e26e6329-9d63-4e06-882a-0cd40d85ac5d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "UserId": "user_00195",
+            "session_id": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are the Chonky Cheeks Hamsters (Product ID: 03906) suitable for very young children, or do they have any small parts I should be aware of?",
+            "CreatedTime": "2025-08-10T01:51:49.784204",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "460fedcc-1658-43dd-a474-38f1e481610f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "UserId": "user_00195",
+            "session_id": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Chonky Cheeks Hamsters are suitable for all ages 3 and up, and they do not contain any small parts that would pose a choking hazard. They are designed to be safe and enjoyable for young children. You can find more information about them [here](https://www.aldeahome.com/products/chonky-cheeks-hamster) for just $5.50!",
+            "CreatedTime": "2025-08-10T01:51:51.523854",
+            "ItemId": "03906",
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "d8ae755b-799b-4baa-bd39-ef7f6c4eeb0a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "UserId": "user_00195",
+            "session_id": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Do the Chonky Cheeks Hamsters (Product ID: 03906) come with any warranty or return policy, in case my child doesn't like it?",
+            "CreatedTime": "2025-08-10T01:51:52.438599",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "96d8ef3d-a9f7-407b-bb43-28258df12574",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "UserId": "user_00195",
+            "session_id": "bde35058-9c1f-404a-b7b0-fd98eb1ec48d",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific information about warranties or return policies for the Chonky Cheeks Hamsters (Product ID: 03906). I recommend checking the retailer's website or contacting customer support for details regarding their return policy in case your child doesn't like the product. You can find the Chonky Cheeks Hamster [here](https://www.aldeahome.com/products/chonky-cheeks-hamster) for $5.50.",
+            "CreatedTime": "2025-08-10T01:51:54.141123",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.911642"
+}
