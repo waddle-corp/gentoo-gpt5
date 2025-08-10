@@ -15,7 +15,6 @@ function buildHeuristic(stats: any, byScore: Array<{ score: number; positive: nu
   bullets.push(`- **Positives**: ${p}/${total}, **Negatives**: ${n}, **Unknown**: ${u}`);
   if (top.length) bullets.push(`- High potential bins: ${top.map((t) => t.score).join(", ")}`);
   if (low.length) bullets.push(`- Weak bin: ${low.map((t) => t.score).join(", ")}`);
-  bullets.push("- Next actions: drill-down high bins; inspect negatives; rerun with refined cohorts.");
   return bullets.join("\n");
 }
 
@@ -30,9 +29,9 @@ export async function POST(req: Request) {
     }
 
     const system = `You are a data analyst for an ecommerce simulation. Write concise, high-signal insights for a bubble chart.
-Output 3-5 markdown bullets and a short 'Next actions' line. Keep it scannable.`;
+Return ONLY 3-5 markdown bullets. DO NOT include a 'Next actions' section.`;
 
-    const prompt = `Chart context:\n- Totals: ${JSON.stringify(stats)}\n- By score (1..30): ${JSON.stringify(byScore)}\nGuidelines:\n- Mention skew/peaks/imbalance.\n- Point to obvious cohorts.\n- Give 2-3 concrete next actions.`;
+    const prompt = `Chart context:\n- Totals: ${JSON.stringify(stats)}\n- By score (1..30): ${JSON.stringify(byScore)}\nGuidelines:\n- Mention skew/peaks/imbalance.\n- Point to obvious cohorts.\n- Keep it scannable. No next actions.`;
 
     const run = async () => {
       const { text } = await generateText({ model: openai("gpt-4o-mini"), system, prompt, temperature: 0.3, maxRetries: 0 });
@@ -43,7 +42,6 @@ Output 3-5 markdown bullets and a short 'Next actions' line. Keep it scannable.`
     try {
       text = await run();
       if (!text || text.length < 10) {
-        // one quick retry with slightly different temperature
         text = await generateText({ model: openai("gpt-4o-mini"), system, prompt, temperature: 0.5, maxRetries: 0 }).then((r) => (r.text ?? "").trim());
       }
     } catch {}
