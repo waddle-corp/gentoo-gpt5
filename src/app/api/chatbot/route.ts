@@ -54,11 +54,15 @@ export async function GET(req: Request) {
 export async function PUT(req: Request) {
   try {
     const body = await req.json().catch(() => ({} as any));
+    console.log("[api/chatbot][PUT] incoming body=", body);
     const partnerId = process.env.NEXT_PUBLIC_ALDEA_PARTNER_ID;
     const chatbotId = process.env.NEXT_PUBLIC_ALDEA_CHATBOT_ID;
+    console.log("partnerId", partnerId);
+    console.log("chatbotId", chatbotId);
     const inputExamples: unknown = body?.examples;
     let startExampleText = String(body?.startExampleText ?? "");
-
+    let cleanedExamples: string[] = [];
+    
     // Allow client to send examples array; convert to startExampleText for upstream
     if (Array.isArray(inputExamples)) {
       const cleaned = inputExamples
@@ -67,6 +71,7 @@ export async function PUT(req: Request) {
         .slice(0, 3);
       if (cleaned.length > 0) {
         startExampleText = cleaned.join("|");
+        cleanedExamples = cleaned;
       }
     }
 
@@ -92,18 +97,64 @@ export async function PUT(req: Request) {
       );
     }
 
-    // const extUrl = `${BASE_URL}/api/chatbot/v1/${partnerId}/${chatbotId}`;
-    const extUrl = `${BASE_URL_PROD}/api/chatbot/v1/${partnerId}/${chatbotId}`;
-    const res = await fetch(extUrl, {
+    // Build full update body (sanitize to allowed fields)
+    const allowedKeys = new Set([
+      "chatBotId",
+      "name",
+      "profileImg",
+      "greetingMessage",
+      "colorCode",
+      "recommendSize",
+      "carouselType",
+      "exceptKeyword",
+      "examples",
+      "chatAgent",
+      "position",
+      "mobilePosition",
+      "avatarId",
+    ]);
+    const fullBody: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(body || {})) {
+      if (allowedKeys.has(k)) fullBody[k] = v as any;
+    }
+    if (cleanedExamples.length > 0) fullBody.examples = cleanedExamples;
+
+    const baseHost = BASE_URL_PROD || BASE_URL;
+    const primary = `${baseHost}/app/api/chatbot/v1/${partnerId}/${chatbotId}`;
+    console.log("[api/chatbot][PUT] proxy(primary) ->", primary, "payload keys:", Object.keys(fullBody));
+    let res = await fetch(primary, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify({ startExampleText }),
+      body: JSON.stringify(fullBody),
     });
-    const data = await res.json().catch(() => ({}));
+    // Fallback route when not OK
     if (!res.ok) {
-      return new Response(JSON.stringify({ ok: false, status: res.status, error: data?.message || res.statusText }), { status: res.status });
+      const alt = `${baseHost}/app/api/chatbot/v1/${partnerId}/${chatbotId}/examples`;
+      console.log("[api/chatbot][PUT] primary failed status=", res.status, ". Retrying ->", alt);
+      res = await fetch(alt, {
+        method: "PUT",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ startExampleText }),
+      });
+      if (!res.ok) {
+        const alt2Body = { examples: (cleanedExamples.length ? cleanedExamples : startExampleText.split("|").map((s) => s.trim()).filter(Boolean)).slice(0, 3) };
+        console.log("[api/chatbot][PUT] secondary failed status=", res.status, ". Retrying with examples[] ->", alt, alt2Body);
+        res = await fetch(alt, {
+          method: "PUT",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(alt2Body),
+        });
+      }
+    }
+
+    const text = await res.text();
+    let data: any = {};
+    try { data = JSON.parse(text); } catch { data = { raw: text }; }
+    console.log("[api/chatbot][PUT] upstream status=", res.status, "body=", data);
+    if (!res.ok) {
+      return new Response(JSON.stringify({ ok: false, status: res.status, error: data?.message || data?.error || data?.raw || res.statusText }), { status: res.status });
     }
     return Response.json({ ok: true, data });
   } catch (err: unknown) {
