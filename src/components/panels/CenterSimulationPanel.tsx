@@ -13,6 +13,7 @@ type PromptMeta = { idx: number; user_id: string; engagement_score: number };
 type Board = {
   name: string;
   bubbles: BubbleState[];
+  reasons?: string[];
 };
 
 export default function CenterSimulationPanel() {
@@ -101,26 +102,128 @@ export default function CenterSimulationPanel() {
   useEffect(() => {
     function onEvalResults(e: any) {
       try {
-        const lists: string[][] = Array.isArray(e?.detail?.resultsList) ? e.detail.resultsList : [];
-        const titles: string[] = Array.isArray(e?.detail?.titles) ? e.detail.titles : [];
-        if (!lists.length) return;
+        // 증분 이벤트: { result, reasons, title }
+        const result: string[] = Array.isArray(e?.detail?.result) ? e.detail.result : [];
+        const reasons: string[] = Array.isArray(e?.detail?.reasons) ? e.detail.reasons : [];
+        const title: string = String(e?.detail?.title || "");
+        if (!result.length) return;
 
-        const boardsFromLists: Board[] = lists.map((arr, idx) => {
-          const mapped = arr.map((v) => (v === "positive" ? "positive" : v === "negative" ? "negative" : "unknown")) as BubbleState[];
-          const padded = mapped.length < promptsCount ? mapped.concat(new Array(promptsCount - mapped.length).fill("unknown")) : mapped.slice(0, promptsCount);
-          return { name: titles[idx] || `H${idx + 1}`, bubbles: padded };
+        const mapped = result.map((v) => (v === "positive" ? "positive" : v === "negative" ? "negative" : "unknown")) as BubbleState[];
+        const padded = mapped.length < promptsCount ? mapped.concat(new Array(promptsCount - mapped.length).fill("unknown")) : mapped.slice(0, promptsCount);
+        const paddedReasons = (Array.isArray(reasons) ? reasons : []).length < promptsCount
+          ? (reasons || []).concat(new Array(promptsCount - (reasons || []).length).fill(""))
+          : reasons.slice(0, promptsCount);
+
+        setBoards((prev) => {
+          const next = [...prev];
+          // All 보드가 없다면 초기화
+          if (!next.length || next[0]?.name !== "All") {
+            next[0] = { name: "All", bubbles: padded, reasons: paddedReasons } as Board;
+          } else {
+            // All 보드는 최신 결과로 업데이트 (가장 최근 결과 기준)
+            next[0] = { ...next[0], bubbles: padded, reasons: paddedReasons };
+          }
+          // 동일 타이틀 보드가 있으면 업데이트, 없으면 추가
+          const idx = next.findIndex((b) => b.name === title);
+          if (idx >= 0) {
+            next[idx] = { ...next[idx], bubbles: padded, reasons: paddedReasons };
+          } else {
+            next.push({ name: title, bubbles: padded, reasons: paddedReasons });
+          }
+          return next;
         });
-        const newBoards = [{ name: "All", bubbles: boardsFromLists[0].bubbles }, ...boardsFromLists];
-        setBoards(newBoards);
-        setActive(1);
-        // 시뮬 결과 기반 인사이트 호출 (All 보드 기준)
+
         setHasSimulated(true);
-        loadInsightsFor(boardsFromLists[0].bubbles);
-        loadNextFor(boardsFromLists[0].bubbles);
+        // 첫 결과 도착 시 활성 탭 설정 및 인사이트/넥스트 액션 로드
+        setActive((cur) => (cur === 0 ? 1 : cur));
+        loadInsightsFor(padded);
+        loadNextFor(padded);
       } catch {}
     }
+
+    function onEvalStart(e: any) {
+      try {
+        const title: string = String(e?.detail?.title || "");
+        if (!title) return;
+        setBoards((prev) => {
+          const next = [...prev];
+          const idx = next.findIndex((b) => b.name === title);
+          const pending = new Array(promptsCount).fill("pending") as BubbleState[];
+          if (idx >= 0) next[idx] = { ...next[idx], bubbles: pending, reasons: new Array(promptsCount).fill("") };
+          else next.push({ name: title, bubbles: pending, reasons: new Array(promptsCount).fill("") });
+          if (!next.length || next[0]?.name !== "All") next.unshift({ name: "All", bubbles: pending, reasons: new Array(promptsCount).fill("") });
+          return next;
+        });
+        setActive((cur) => (cur === 0 ? 1 : cur));
+      } catch {}
+    }
+
+    function onEvalChunk(e: any) {
+      try {
+        const title: string = String(e?.detail?.title || "");
+        const idxNum: number = Number(e?.detail?.idx);
+        const label: string = String(e?.detail?.label || "");
+        const reason: string = String(e?.detail?.reason || "");
+        if (!title || Number.isNaN(idxNum)) return;
+        const mapped: BubbleState = label === "positive" ? "positive" : label === "negative" ? "negative" : "unknown";
+        setBoards((prev) => {
+          const next = [...prev];
+          const bi = next.findIndex((b) => b.name === title);
+          if (bi >= 0) {
+            const b = { ...next[bi] } as Board;
+            const bubbles = [...(b.bubbles || [])];
+            const reasons = [...(b.reasons || [])];
+            if (idxNum >= 0 && idxNum < promptsCount) {
+              bubbles[idxNum] = mapped;
+              reasons[idxNum] = reason;
+            }
+            b.bubbles = bubbles;
+            b.reasons = reasons as string[];
+            next[bi] = b;
+          }
+          // All 보드도 최신 반영
+          if (next[0]?.name === "All") {
+            const a = { ...next[0] } as Board;
+            const ab = [...(a.bubbles || [])];
+            const ar = [...(a.reasons || [])];
+            if (idxNum >= 0 && idxNum < promptsCount) {
+              ab[idxNum] = mapped;
+              ar[idxNum] = reason;
+            }
+            a.bubbles = ab;
+            a.reasons = ar as string[];
+            next[0] = a;
+          }
+          return next;
+        });
+      } catch {}
+    }
+
+    function onEvalDone(e: any) {
+      try {
+        const title: string = String(e?.detail?.title || "");
+        if (!title) return;
+        setHasSimulated(true);
+        // 완료된 보드 기준으로 인사이트/넥스트 액션 생성
+        const b = (boards || []).find((bb) => bb.name === title) || boards[0];
+        const bubbles = b?.bubbles || [];
+        if (bubbles.length > 0) {
+          loadInsightsFor(bubbles);
+          loadNextFor(bubbles);
+        }
+      } catch {}
+    }
+
     window.addEventListener("eval-results", onEvalResults as EventListener);
-    return () => window.removeEventListener("eval-results", onEvalResults as EventListener);
+    window.addEventListener("eval-start", onEvalStart as EventListener);
+    window.addEventListener("eval-chunk", onEvalChunk as EventListener);
+    window.addEventListener("eval-done", onEvalDone as EventListener);
+    return () => {
+      window.removeEventListener("eval-results", onEvalResults as EventListener);
+      window.removeEventListener("eval-start", onEvalStart as EventListener);
+      window.removeEventListener("eval-chunk", onEvalChunk as EventListener);
+      window.removeEventListener("eval-done", onEvalDone as EventListener);
+    };
   }, [promptsCount]);
 
   const groupedByScore = (b: BubbleState[]) => {
@@ -150,6 +253,7 @@ export default function CenterSimulationPanel() {
       setModalData(null);
       setProfile(null);
       setProfileLoading(true);
+      setLastIndexForModal(index);
       const res = await fetch(`/api/prompts?idx=${index}`);
       const data = await res.json();
       console.log('data', data);
@@ -157,6 +261,9 @@ export default function CenterSimulationPanel() {
         throw new Error(data?.error || `HTTP ${res.status}`);
       }
       setModalData({ user_id: data.user_id, summary: data.summary, prompt: data.prompt, engagement_score: data.engagement_score });
+      // store last reason for this user index
+      const r = boards[active]?.reasons?.[index] || "";
+      setLastReason(r);
 
       // Load profile info in background
       const pRes = await fetch(`/api/user-profile?user_id=${encodeURIComponent(data.user_id)}`);
@@ -248,6 +355,8 @@ export default function CenterSimulationPanel() {
   const [selectedActions, setSelectedActions] = useState<Record<number, boolean>>({});
   const [deploying, setDeploying] = useState(false);
   const [nextCache, setNextCache] = useState<Record<string, string>>({});
+  const [lastReason, setLastReason] = useState<string>("");
+  const [lastIndexForModal, setLastIndexForModal] = useState<number | null>(null);
 
   function mdToHtml(md: string): string {
     const esc = (md || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -526,6 +635,24 @@ export default function CenterSimulationPanel() {
                         <div className="mt-2 whitespace-pre-wrap leading-relaxed text-zinc-200">
                           {modalData.summary}
                         </div>
+                        {lastReason && (
+                          <div className="mt-3">
+                            <div className="text-xs uppercase tracking-wide text-zinc-500">reason</div>
+                            <div className="mt-1 text-[12px] flex items-center gap-2">
+                              {(() => {
+                                const s = lastIndexForModal != null ? boards[active]?.bubbles?.[lastIndexForModal] : undefined;
+                                const color = s === "positive" ? "text-emerald-400" : s === "negative" ? "text-rose-400" : "text-zinc-400";
+                                const dot = s === "negative" ? "border-rose-400" : s === "unknown" ? "bg-zinc-500" : "bg-emerald-400";
+                                return (
+                                  <span className="inline-flex items-center gap-2">
+                                    <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot} ${s === "negative" ? "bg-transparent border" : ""}`} />
+                                    <span className={color}>{lastReason}</span>
+                                  </span>
+                                );
+                              })()}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     )}
 

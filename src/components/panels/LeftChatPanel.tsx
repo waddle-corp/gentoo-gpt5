@@ -205,25 +205,50 @@ export default function LeftChatPanel() {
     if (picked.length === 0) return;
     try {
       setEvaluating(true);
-      const responses = await Promise.all(
-        picked.map(async (p) => {
+      let finished = 0;
+      picked.forEach(async (p) => {
+        try {
+          const title = titleOf(p.h);
+          window.dispatchEvent(new CustomEvent("eval-start", { detail: { title } }));
           const res = await fetch("/api/eval-sentiment", {
             method: "POST",
             headers: { "content-type": "application/json" },
-            body: JSON.stringify({ question: p.h }),
+            body: JSON.stringify({ question: p.h, stream: true }),
           });
-          const data = await res.json();
-          if (res.ok && data?.ok && Array.isArray(data.results)) return data.results as string[];
-          return [] as string[];
-        })
-      );
-      window.dispatchEvent(
-        new CustomEvent("eval-results", {
-          detail: { resultsList: responses, titles: picked.map((p) => titleOf(p.h)) },
-        })
-      );
+          const reader = res.body?.getReader();
+          const decoder = new TextDecoder();
+          let buffer = "";
+          while (reader) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+            let i;
+            while ((i = buffer.indexOf("\n")) !== -1) {
+              const line = buffer.slice(0, i).trim();
+              buffer = buffer.slice(i + 1);
+              if (!line) continue;
+              try {
+                const obj = JSON.parse(line);
+                if (obj && typeof obj === "object") {
+                  if (obj.idx !== undefined && obj.label) {
+                    window.dispatchEvent(new CustomEvent("eval-chunk", { detail: { title, idx: Number(obj.idx), label: String(obj.label), reason: String(obj.reason || "") } }));
+                  }
+                  if (obj.type === "done") {
+                    window.dispatchEvent(new CustomEvent("eval-done", { detail: { title } }));
+                  }
+                }
+              } catch {}
+            }
+          }
+        } catch {
+          // ignore per-stream failure
+        } finally {
+          finished += 1;
+          if (finished === picked.length) setEvaluating(false);
+        }
+      });
     } finally {
-      setEvaluating(false);
+      // finished handled per stream
     }
   }
 
