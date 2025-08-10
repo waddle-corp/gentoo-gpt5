@@ -281,11 +281,12 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
         // Use ref to get the latest state of boards to avoid stale closures
         const board = (boardsRef.current || []).find((b) => b.name === title);
         const bubbles = board?.bubbles || [];
+        const hypothesis: string = e?.detail?.hypothesis || "";
 
         if (bubbles.length > 0) {
           // Chain the calls: load insights, and only on completion, load next actions.
           loadInsightsFor(bubbles, title).then(() => {
-            loadNextFor(bubbles, title);
+            loadNextFor(bubbles, title, hypothesis);
           });
         }
       } catch (err) {
@@ -432,7 +433,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [hasStarted, setHasStarted] = useState(!!started);
   const [insightsCache, setInsightsCache] = useState<Record<string, string>>({});
   
-  type NextActionItem = { type: 'ui' | 'chat'; payload: string; content: string };
+  type NextActionItem = { type: string; payload: string; content: string };
   const [nextActions, setNextActions] = useState<NextActionItem[]>([]);
   const [nextLoading, setNextLoading] = useState(false);
   const [selectedActions, setSelectedActions] = useState<Record<number, boolean>>({});
@@ -535,7 +536,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
     }
   }
 
-  async function loadNextFor(bubbles: BubbleState[], title: string) {
+  async function loadNextFor(bubbles: BubbleState[], title: string, hypothesis: string) {
     const key = title + ":next";
     if (nextInFlightRef.current[key] || nextCache[key]) {
       return;
@@ -552,7 +553,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
       const res = await fetch("/api/next-actions", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ stats, byScore }),
+        body: JSON.stringify({ stats, byScore, hypothesis }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to fetch next actions");
@@ -722,13 +723,16 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                   try {
                     setDeploying(true);
                     const picked = nextActions.filter((_, i) => selectedActions[i]);
-                    // For now, just open the demo link for the first selected action's payload
+                    
                     if (picked.length > 0) {
                       const firstAction = picked[0];
-                      const demoBaseUrl = "https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
-                      // The payload is already a relative URL like `/sale/candles`
-                      const finalUrl = demoBaseUrl + firstAction.payload;
-                      window.open(finalUrl, "_blank", "noopener,noreferrer");
+                      if (firstAction.type === 'ui') {
+                        const demoBaseUrl = "https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
+                        const finalUrl = demoBaseUrl + firstAction.payload;
+                        window.open(finalUrl, "_blank", "noopener,noreferrer");
+                      } else {
+                        console.log("Deploying action:", firstAction);
+                      }
                     }
                     
                     const boardName = boards[active]?.name || "All";

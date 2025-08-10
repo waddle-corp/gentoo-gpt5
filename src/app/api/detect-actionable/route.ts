@@ -54,7 +54,7 @@ ${lastAssistant}
     });
 
     const { object } = await generateObject({
-      model: openai("gpt-4o-mini"),
+      model: openai("gpt-4.1-mini"),
       system,
       prompt,
       schema,
