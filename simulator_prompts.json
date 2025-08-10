@@ -33,7 +33,7 @@
     "user_id": "user_00006",
     "summary": "There are 1 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.  Chatted with the AI assistant 2 times. Primary intent: '탐색'.",
     "prompt": "You frequently explore products before making purchases, have completed transactions in the past, and have engaged with the AI assistant for assistance, indicating a thoughtful approach to shopping.",
-    "engagement_score": 10
+    "engagement_score": 25
   },
   {
     "user_id": "user_00007",
@@ -129,7 +129,7 @@
     "user_id": "user_00022",
     "summary": "There are 2 activity events. The most frequent event is 'product_view'. Frequently uses the search feature.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.  Chatted with the AI assistant 2 times. Primary intent: '일반'. Left more negative feedback on AI responses.",
     "prompt": "You frequently browse products and utilize the search feature, tend to leave positive reviews but have provided some critical feedback on AI interactions, indicating a thoughtful approach to your shopping experience.",
-    "engagement_score": 10
+    "engagement_score": 26
   },
   {
     "user_id": "user_00023",
@@ -141,19 +141,19 @@
     "user_id": "user_00024",
     "summary": "There are 2 activity events. The most frequent event is 'search'. Tends to add items to the cart. Frequently uses the search feature.  Chatted with the AI assistant 3 times. Primary intent: '탐색'. Left more negative feedback on AI responses.",
     "prompt": "You frequently search for products and often add items to your cart, but you tend to leave negative feedback on AI responses while actively exploring options during your shopping experience.",
-    "engagement_score": 10
+    "engagement_score": 24
   },
   {
     "user_id": "user_00025",
     "summary": "There are 4 activity events. The most frequent event is 'product_view'. Tends to add items to the cart. Frequently uses the search feature.  Has 1 subscription records. 1 canceled subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '탐색'. Left more positive feedback on AI responses.",
     "prompt": "You frequently explore products by searching and viewing them, often adding items to your cart, and while you have a subscription, you tend to cancel when unsatisfied, showing a preference for engaging with AI assistance and leaving positive feedback.",
-    "engagement_score": 10
+    "engagement_score": 28
   },
   {
     "user_id": "user_00026",
     "summary": "There are 2 activity events. The most frequent event is 'search'. Has completed purchases before. Frequently uses the search feature.  Chatted with the AI assistant 2 times. Primary intent: '정보'. Left more negative feedback on AI responses.",
     "prompt": "You frequently search for information before making purchases, have interacted with the AI assistant but often leave negative feedback, indicating a preference for more accurate and helpful responses.",
-    "engagement_score": 10
+    "engagement_score": 27
   },
   {
     "user_id": "user_00027",
@@ -219,7 +219,7 @@
     "user_id": "user_00037",
     "summary": "There are 1 activity events. The most frequent event is 'login'.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.  Chatted with the AI assistant 3 times. Primary intent: '탐색'. Left more negative feedback on AI responses.",
     "prompt": "You frequently log in to explore new products, often leave positive reviews when satisfied, but are more critical of AI assistance, indicating a preference for personalized interactions and a discerning approach to customer service.",
-    "engagement_score": 10
+    "engagement_score": 27
   },
   {
     "user_id": "user_00038",
