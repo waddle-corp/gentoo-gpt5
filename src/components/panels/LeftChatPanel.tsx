@@ -258,8 +258,19 @@ export default function LeftChatPanel() {
                       ))}
                     </div>
                     <div className="flex justify-end">
-                      <Button size="sm" onClick={runEvaluateAll} disabled={evaluating}>
-                        {evaluating ? "Running..." : "Run Simulation"}
+                      <Button
+                        onClick={runEvaluateAll}
+                        disabled={evaluating}
+                        className="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-md hover:opacity-90 disabled:opacity-60 flex items-center gap-2"
+                      >
+                        {evaluating ? (
+                          <>
+                            <span className="inline-block w-3 h-3 border-2 border-white/50 border-t-white rounded-full animate-spin" />
+                            Running...
+                          </>
+                        ) : (
+                          <>Run Simulation</>
+                        )}
                       </Button>
                     </div>
                   </>
@@ -305,7 +316,7 @@ export default function LeftChatPanel() {
             <Button
               type="submit"
               size="icon"
-              className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg白 text-black hover:bg-white/90"
+              className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-white text-black hover:bg-white/90"
               disabled={isLoading || !input.trim()}
               aria-label="Send message"
             >

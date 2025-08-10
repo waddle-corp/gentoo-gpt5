@@ -56,8 +56,12 @@ export default function CenterSimulationPanel() {
           const padded = mapped.length < promptsCount ? mapped.concat(new Array(promptsCount - mapped.length).fill("unknown")) : mapped.slice(0, promptsCount);
           return { name: titles[idx] || `H${idx + 1}`, bubbles: padded };
         });
-        setBoards([{ name: "All", bubbles: boardsFromLists[0].bubbles }, ...boardsFromLists]);
+        const newBoards = [{ name: "All", bubbles: boardsFromLists[0].bubbles }, ...boardsFromLists];
+        setBoards(newBoards);
         setActive(1);
+        // 시뮬 결과 기반 인사이트 호출 (All 보드 기준)
+        setHasSimulated(true);
+        loadInsightsFor(boardsFromLists[0].bubbles);
       } catch {}
     }
     window.addEventListener("eval-results", onEvalResults as EventListener);
@@ -111,6 +115,127 @@ export default function CenterSimulationPanel() {
     );
   };
 
+  const activeBubbles = boards[active]?.bubbles || [];
+
+  const legend = useMemo(() => {
+    let p = 0, n = 0, u = 0;
+    for (const s of activeBubbles) {
+      if (s === "positive") p++; else if (s === "negative") n++; else u++;
+    }
+    return { p, n, u, total: activeBubbles.length };
+  }, [activeBubbles]);
+
+  function summarizeFor(bubbles: BubbleState[]) {
+    const stats = { p: 0, n: 0, u: 0, total: bubbles.length } as any;
+    for (const s of bubbles) {
+      if (s === "positive") stats.p++; else if (s === "negative") stats.n++; else stats.u++;
+    }
+    const byScore: Array<{ score: number; positive: number; negative: number; unknown: number }> = [];
+    const groups = groupedByScore(bubbles);
+    for (let i = 0; i < groups.length; i++) {
+      const indices = groups[i];
+      let cp = 0, cn = 0, cu = 0;
+      for (const idx of indices) {
+        const s = bubbles[idx] ?? "unknown";
+        if (s === "positive") cp++; else if (s === "negative") cn++; else cu++;
+      }
+      byScore.push({ score: i + 1, positive: cp, negative: cn, unknown: cu });
+    }
+    return { stats, byScore };
+  }
+
+  const [insights, setInsights] = useState("");
+  const [insightsLoading, setInsightsLoading] = useState(false);
+  const [hasSimulated, setHasSimulated] = useState(false);
+  const [insightsCache, setInsightsCache] = useState<Record<string, string>>({});
+
+  function mdToHtml(md: string): string {
+    const esc = (md || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    // bold **text**
+    let s = esc.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    const lines = s.split("\n");
+    let html = "";
+    let inList = false;
+    for (const raw of lines) {
+      const line = raw || "";
+      const h = line.match(/^\s*(#{1,6})\s+(.*)$/); // headings
+      const bullet = line.match(/^\s*[-\*]\s+(.*)$/); // bullets - or *
+
+      if (h) {
+        if (inList) { html += "</ul>"; inList = false; }
+        const level = Math.min(6, Math.max(1, h[1].length));
+        const content = h[2].trim();
+        const tag = `h${level}`;
+        html += `<${tag} class=\"mt-1 mb-1 text-[13px] font-semibold\">${content}</${tag}>`;
+        continue;
+      }
+
+      if (bullet) {
+        if (!inList) { html += '<ul class="list-disc pl-5 mb-1">'; inList = true; }
+        html += `<li>${bullet[1]}</li>`;
+        continue;
+      }
+
+      if (inList) { html += "</ul>"; inList = false; }
+      const t = line.trim();
+      if (t.length) html += `<p class=\"mb-1\">${t}</p>`;
+    }
+    if (inList) html += "</ul>";
+    return html;
+  }
+
+  async function loadInsightsFor(bubbles: BubbleState[]) {
+    try {
+      setInsightsLoading(true);
+      const { stats, byScore } = summarizeFor(bubbles);
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 12000);
+      const res = await fetch("/api/insights", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ stats, byScore }),
+        signal: controller.signal,
+      });
+      clearTimeout(timer);
+      const data = await res.json();
+      if (!res.ok || !data?.ok) throw new Error(data?.error || `HTTP ${res.status}`);
+      const html = mdToHtml(data.insights as string);
+      setInsights(html);
+      const key = boards[active]?.name || "All";
+      setInsightsCache((prev) => ({ ...prev, [key]: html }));
+    } catch (e) {
+      // Fallback: 간단한 휴리스틱 인사이트
+      const { stats, byScore } = summarizeFor(bubbles);
+      const top = [...byScore].sort((a, b) => (b.positive - b.negative) - (a.positive - a.negative)).slice(0, 2);
+      const low = [...byScore].sort((a, b) => (a.positive - a.negative) - (b.positive - b.negative)).slice(0, 1);
+      const md = [
+        `- **Positives**: ${stats.p}/${stats.total}, **Negatives**: ${stats.n}, **Unknown**: ${stats.u}`,
+        top.length ? `- High potential bins: ${top.map((t) => `${t.score}`).join(", ")}` : "",
+        low.length ? `- Weak bin: ${low.map((t) => `${t.score}`).join(", ")}` : "",
+        `- Next actions: drill-down high bins; inspect negatives; rerun with refined cohorts.`,
+      ].filter(Boolean).join("\n");
+      const html = mdToHtml(md);
+      setInsights(html);
+      const key = boards[active]?.name || "All";
+      setInsightsCache((prev) => ({ ...prev, [key]: html }));
+    } finally {
+      setInsightsLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    if (!hasSimulated) return;
+    // 캐시에 있으면 재사용, 없으면 생성
+    const key = boards[active]?.name || `B${active}`;
+    const cached = insightsCache[key];
+    if (cached) {
+      setInsights(cached);
+      setInsightsLoading(false);
+    } else if (activeBubbles.length > 0) {
+      loadInsightsFor(activeBubbles);
+    }
+  }, [activeBubbles, hasSimulated, active, boards, insightsCache]);
+
   return (
     <Card className="h-full border-0 rounded-none bg-transparent">
       <CardHeader>
@@ -133,6 +258,21 @@ export default function CenterSimulationPanel() {
             </div>
           </div>
         </div>
+
+        {/* Insights */}
+        {hasSimulated && (
+          <div className="rounded-md border p-3 text-sm bg-card/50">
+            <div className="text-xs text-muted-foreground mb-1">Insights</div>
+            {insightsLoading ? (
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
+                Generating insights…
+              </div>
+            ) : (
+              <div className="text-sm leading-5" dangerouslySetInnerHTML={{ __html: insights || "<p class=\"text-muted-foreground\">No insights yet.</p>" }} />
+            )}
+          </div>
+        )}
 
         {/* Modal */}
         {modalOpen && (
