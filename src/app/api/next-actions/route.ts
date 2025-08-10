@@ -37,7 +37,7 @@ Your response MUST be a JSON object with four keys: \`ui_action_1\`, \`ui_action
 Each action object must have "type", "payload", and "content".
 -   \`type\`: Must be one of 'ui', 'start-example', 'chat'.
 -   \`payload\`: For 'ui', use URL format. For others, use a string. Use exact category names.
--   \`content\`: A concise, actionable description for the UI (10-80 chars). **The content for all actions must be relevant to the original hypothesis.**
+-   \`content\`: A concise, actionable description for the UI (10-120 chars). **The content for all actions must be relevant to the original hypothesis.**
     - **For 'chat' type actions, the \`content\` MUST follow the format: "Have AI assistant Gentoo guide customers to [action]" (e.g., "Have AI assistant Gentoo guide customers check for new candle promotions"). The \`payload\` should be the actual message the assistant will deliver to the customers.**
 
 **Example Response:**
@@ -46,7 +46,7 @@ Each action object must have "type", "payload", and "content".
   "ui_action_1": { "type": "ui", "payload": "/sale/self-care", "content": "Launch a 10% discount on self-care products." },
   "ui_action_2": { "type": "ui", "payload": "/featured", "content": "Feature 'artisanal candles' on the homepage." },
   "chat_action": { "type": "chat", "payload": "Did you know all our self-care products are 10% off this week?", "content": "Have AI assistant Gentoo guide customers about self-care product discounts." },
-  "start_example_action": { "type": "start-example", "payload": "candles for relaxation", "content": "Search for relaxing candles." }
+  "start_example_action": { "type": "start-example", "payload": "candles for relaxation", "content": "Add start example to Gentoo Chatbot: candles for relaxation." }
 }
 \`\`\`
 `;
@@ -68,10 +68,10 @@ Based on these results for the hypothesis "${hypothesis || 'Not provided'}", pro
       const result = await generateObject({
         model: openai("gpt-4.1"),
         schema: z.object({
-          ui_action_1: z.object({ type: z.literal("ui"), payload: z.string().min(1), content: z.string().min(10).max(80) }),
-          ui_action_2: z.object({ type: z.literal("ui"), payload: z.string().min(1), content: z.string().min(10).max(80) }),
-          chat_action: z.object({ type: z.literal("chat"), payload: z.string().min(1), content: z.string().min(10).max(80) }),
-          start_example_action: z.object({ type: z.literal("start-example"), payload: z.string().min(1), content: z.string().min(10).max(80) }),
+          ui_action_1: z.object({ type: z.literal("ui"), payload: z.string().min(1), content: z.string().min(10).max(120) }),
+          ui_action_2: z.object({ type: z.literal("ui"), payload: z.string().min(1), content: z.string().min(10).max(120) }),
+          chat_action: z.object({ type: z.literal("chat"), payload: z.string().min(1), content: z.string().min(10).max(120) }),
+          start_example_action: z.object({ type: z.literal("start-example"), payload: z.string().min(1), content: z.string().min(10).max(120) }),
         }),
         system,
         prompt,
@@ -82,8 +82,8 @@ Based on these results for the hypothesis "${hypothesis || 'Not provided'}", pro
       object = {
         ui_action_1: { type: "ui", payload: "/featured", content: "Feature a popular item on the homepage." },
         ui_action_2: { type: "ui", payload: "/sale/self-care", content: "Run a 10% sale on self-care items." },
-        chat_action: { type: "chat", payload: "What other categories are popular?", content: "Ask about other popular categories." },
-        start_example_action: { type: "start-example", payload: "promotional ideas for candles", content: "Search for candle promotion ideas." },
+        chat_action: { type: "chat", payload: "What other categories are popular?", content: "Have AI assistant Gentoo guide customers about other popular categories." },
+        start_example_action: { type: "start-example", payload: "promotional ideas for candles", content: "Add start example to Gentoo Chatbot: promotional ideas for candles." },
       };
     }
 
