@@ -283,14 +283,14 @@ export default function LeftChatPanel() {
             {(detecting || (actionable && !isLoading)) && (
               <div className="mt-2 space-y-2">
                 {detecting ? (
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <div className="ml-4 flex items-center gap-2 text-xs text-muted-foreground">
                     <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
                     <span>Thinking…</span>
                   </div>
                 ) : (
                   <>
-                    <div className="text-xs text-muted-foreground">Select hypotheses to simulate:</div>
-                    <div className="flex flex-col gap-2">
+                    <div className="ml-4 text-xs text-muted-foreground">Select hypotheses to simulate:</div>
+                    <div className="ml-4 flex flex-col gap-2">
                       {hypotheses.map((h, i) => (
                         <label key={i} className="flex items-center gap-2 text-sm">
                           <input
