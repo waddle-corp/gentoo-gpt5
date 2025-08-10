@@ -28,8 +28,19 @@ async function classifyOne(
   question: string,
   entry: any
 ): Promise<{ label: "positive" | "negative" | "unknown"; reason: string }> {
-  const system = `You are a precise ecommerce simulation judge. Output format must be exactly:\n<label>::<one-sentence concise, logical reason in English>.\nLabel must be one of: positive | negative | unknown.`;
-  const user = `Persona prompt: ${entry?.prompt ?? ""}\nEngagement score: ${entry?.engagement_score ?? ""}\nHypothesis: ${question}\nRules:\n- Respond in English.\n- After '::', provide a single short sentence with a clear logical structure (premise -> implication -> verdict).`;
+  // 평가 기준을 더 엄격하게 하여 정보가 부족하면 unknown을 더 자주 반환하도록 프롬프트를 수정함
+  const system = `You are a strict ecommerce simulation judge. Output format must be exactly:
+<label>::<one-sentence concise, logical reason in English>.
+Label must be one of: positive | negative | unknown.
+
+Evaluation rules:
+- Be conservative: Only assign 'positive' if there is clear, strong evidence supporting a positive outcome.
+- However, if there is at least some reasonable hint or indication, you may assign 'positive'.
+- Assign 'negative' only if there is clear evidence for a negative outcome.
+- Assign 'unknown' if information is insufficient, ambiguous, or weak.
+- Do NOT overuse 'positive' or 'unknown'. Avoid returning too many 'unknown' labels; if the evidence leans clearly positive or negative, choose accordingly.
+- When in doubt, prefer 'unknown', but do not default to it excessively.`;
+  const user = `Persona prompt: ${entry?.prompt ?? ""}\nEngagement score: ${entry?.engagement_score ?? ""}\nHypothesis: ${question}\nRules:\n- Respond in English.\n- After '::', provide a single short sentence with a clear logical structure (premise -> implication -> verdict).\n- Be strict: If there is not enough information, or the evidence is weak, return 'unknown'.`;
   try {
     const { text } = await generateText({ model: openai(modelName), system, prompt: user, maxRetries: 1 });
     const out = String(text || "").trim();

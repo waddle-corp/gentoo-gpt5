@@ -282,11 +282,12 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
         // Use ref to get the latest state of boards to avoid stale closures
         const board = (boardsRef.current || []).find((b) => b.name === title);
         const bubbles = board?.bubbles || [];
+        const hypothesis: string = e?.detail?.hypothesis || "";
 
         if (bubbles.length > 0) {
           // Chain the calls: load insights, and only on completion, load next actions.
           loadInsightsFor(bubbles, title).then(() => {
-            loadNextFor(bubbles, title);
+            loadNextFor(bubbles, title, hypothesis);
           });
         }
       } catch (err) {
@@ -616,7 +617,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
     }
   }
 
-  async function loadNextFor(bubbles: BubbleState[], title: string) {
+  async function loadNextFor(bubbles: BubbleState[], title: string, hypothesis: string) {
     const key = title + ":next";
     if (nextInFlightRef.current[key] || nextCache[key]) {
       return;
@@ -633,7 +634,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
       const res = await fetch("/api/next-actions", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ stats, byScore }),
+        body: JSON.stringify({ stats, byScore, hypothesis }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to fetch next actions");

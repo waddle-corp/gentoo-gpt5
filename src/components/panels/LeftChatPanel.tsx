@@ -257,8 +257,8 @@ export default function LeftChatPanel() {
       setEvaluating(true);
       let finished = 0;
       picked.forEach(async (p) => {
+        const title = titleOf(p.h);
         try {
-          const title = titleOf(p.h);
           window.dispatchEvent(new CustomEvent("eval-start", { detail: { title } }));
           const res = await fetch("/api/eval-sentiment", {
             method: "POST",
@@ -283,18 +283,19 @@ export default function LeftChatPanel() {
                   if (obj.idx !== undefined && obj.label) {
                     window.dispatchEvent(new CustomEvent("eval-chunk", { detail: { title, idx: Number(obj.idx), label: String(obj.label), reason: String(obj.reason || "") } }));
                   }
-                  if (obj.type === "done") {
-                    window.dispatchEvent(new CustomEvent("eval-done", { detail: { title } }));
-                  }
                 }
-              } catch {}
+              } catch (err) {
+                 console.error("Failed to parse stream chunk:", line, err);
+              }
             }
           }
-        } catch {
-        } finally {
-          finished += 1;
-          if (finished === picked.length) setEvaluating(false);
-        }
+        } catch (err) {
+             console.error(`[eval-stream] error for hypothesis "${p.h}":`, err);
+          } finally {
+            window.dispatchEvent(new CustomEvent("eval-done", { detail: { title, hypothesis: p.h } }));
+            finished += 1;
+            if (finished === picked.length) setEvaluating(false);
+          }
       });
     } finally {
     }
