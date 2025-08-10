@@ -64,3 +64,28 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+/* Thicker scrollbar for chat area */
+.chat-scrollbar {
+  /* Reserve space for scrollbar and style it */
+  scrollbar-gutter: stable both-edges;
+  /* Firefox */
+  scrollbar-width: auto; /* thicker than thin */
+  scrollbar-color: #5a5a5a transparent;
+}
+.chat-scrollbar::-webkit-scrollbar {
+  width: 16px; /* thicker */
+}
+.chat-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chat-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #5a5a5a;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.chat-scrollbar::-webkit-scrollbar-corner { background: transparent; }
+.chat-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #7a7a7a;
+}

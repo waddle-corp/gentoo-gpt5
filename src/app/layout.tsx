@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GenTwo Dashboard",
-  description: "Digital clone simulation dashboard",
+  title: "Gentoo",
+  description: "Oracle of Delphi for Shopify Stores",
 };
 
 export default function RootLayout({
