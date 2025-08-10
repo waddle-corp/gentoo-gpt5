@@ -119,7 +119,7 @@ NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
 Used in `src/app/api/chatbot/route.ts`, `src/app/api/custom-prompt/[shopId]/route.ts`, and `src/components/panels/CenterSimulationPanel.tsx`.
 
-## Project layout (excerpt)
+## Project layout
 
 ```text
 src/
