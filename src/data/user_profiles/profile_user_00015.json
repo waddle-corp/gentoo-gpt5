@@ -1,174 +1,177 @@
 {
     "user_id": "user_00015",
-    "raw_engagement_score": 39,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 42,
+    "normalized_engagement_score": 27,
     "activities": [
         {
-            "id": "eed939c5-1b23-4197-b463-fcc7a581f5b8",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00015",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "category": "소설",
-                "product_name": "베스트셀러 소설: 시간의 틈새",
-                "view_duration_seconds": 17
-            },
-            "created_time": "2025-08-09T13:57:01.707683"
-        },
-        {
-            "id": "e6ea090e-a4cd-4fdc-ba61-513b8eff96f9",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00015",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00015_707686",
-                "total_amount": 18000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_001",
-                        "quantity": 1,
-                        "price": 18000
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T13:57:01.707690"
-        },
-        {
-            "id": "353b76f9-8504-4fc9-91a8-1cbb38328e1d",
+            "id": "2caabc47-f3b6-4386-a384-63617201f872",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00015",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
+                "product_id": "02493",
                 "quantity": 2,
-                "price": 50000
+                "price": 68.0
             },
-            "created_time": "2025-08-09T13:57:01.707693"
+            "created_time": "2025-08-09T20:05:50.659472"
         },
         {
-            "id": "b352617e-18e4-4117-8edc-1b726c5662fa",
+            "id": "54e7f7b5-2690-4af5-8c48-bc163ffbb65b",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00015",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00015_707695",
-                "total_amount": 35000,
+                "order_id": "ORDER_user_00015_659480",
+                "total_amount": 41.95,
                 "items": [
                     {
-                        "product_id": "PROD_OLIVE_002",
+                        "product_id": "00143",
                         "quantity": 1,
-                        "price": 35000
+                        "price": 33.95
+                    },
+                    {
+                        "product_id": "04694",
+                        "quantity": 1,
+                        "price": 8.0
                     }
                 ],
                 "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T13:57:01.707699"
-        }
-    ],
-    "reviews": [],
-    "subscriptions": [
+            "created_time": "2025-08-09T20:05:50.659490"
+        },
         {
-            "subscription_id": "48151d7e-f775-4519-8614-e3d9e0211b60",
-            "customer_id": "user_00015",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2024-06-02",
-            "end_date": "2024-07-02",
-            "status": "expired"
+            "id": "64be405a-e4f8-440c-aeaf-918b05c849d2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00015",
+            "event_name": "search",
+            "event_data": {
+                "query": "Lets Go Explore White/Black Trucker Hat",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T20:05:50.661783"
+        },
+        {
+            "id": "d6bdf068-83a9-4d02-a329-95ec9c4a7391",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00015",
+            "event_name": "search",
+            "event_data": {
+                "query": "Ice Cream Robots Sleeveless Shortie Baby Romper (Organic): Dove White / 6-12M",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T20:05:50.663964"
         }
     ],
+    "reviews": [
+        {
+            "review_id": "320191c8-eec5-4c06-8431-ee970f1ed475",
+            "customer_id": "user_00015",
+            "product_id": "02538",
+            "rating": 4,
+            "review_title": "Love it!",
+            "review_content": "Triangle Crib Sheet - Black is fantastic! I wish I'd found it sooner.",
+            "created_at": "2024-12-20T20:52:52.182090",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
     "dialogues": [
         {
-            "Id": "1e1d04ef-6e98-47f4-935a-ca6ebcce6cc4",
+            "Id": "dd174361-a263-4c60-9750-b292ac378906",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d6a11f16-e892-45b9-be69-aef05a4645f1",
+            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
             "UserId": "user_00015",
-            "session_id": "d6a11f16-e892-45b9-be69-aef05a4645f1",
-            "Intent": "정보",
+            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "이번 주 베스트셀러는 뭔가요?",
-            "CreatedTime": "2025-08-09T14:29:08.389235",
+            "Content": "Could you tell me more about the level of difficulty for the Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle (Product ID: 05959)?",
+            "CreatedTime": "2025-08-09T20:17:02.166903",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "061fc26e-eeac-41ca-bcc3-6aff719dd586",
+            "Id": "13b0acc8-adab-4855-b32c-0ca6656afeba",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d6a11f16-e892-45b9-be69-aef05a4645f1",
+            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
             "UserId": "user_00015",
-            "session_id": "d6a11f16-e892-45b9-be69-aef05a4645f1",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "이번 주 베스트셀러는 다양한 상품들이 있습니다. 특히 유기농 아카시아 꿀 1kg가 인기리에 판매되고 있습니다. 건강한 식품을 찾고 계신다면 추천드립니다! 다른 베스트셀러 상품에 대해 궁금하신 점이 있으시면 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:29:09.738693",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "55b17e79-b1fc-474a-b5f6-0f7590d452ec",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d6a11f16-e892-45b9-be69-aef05a4645f1",
-            "UserId": "user_00015",
-            "session_id": "d6a11f16-e892-45b9-be69-aef05a4645f1",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "혹시 아카시아 꿀의 가격이나 구매 방법에 대해 더 알고 싶어요.",
-            "CreatedTime": "2025-08-09T14:29:10.852049",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "68f0cbcc-79f3-48f6-929e-d3c40f1bb16c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d6a11f16-e892-45b9-be69-aef05a4645f1",
-            "UserId": "user_00015",
-            "session_id": "d6a11f16-e892-45b9-be69-aef05a4645f1",
+            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "유기농 아카시아 꿀 1kg의 가격은 15,000원입니다. 구매 방법은 저희 쇼핑몰 웹사이트에서 '유기농 아카시아 꿀'을 검색하신 후, 장바구니에 담고 결제하시면 됩니다. 배송은 보통 2-3일 이내에 이루어집니다. 추가로 궁금하신 점이 있으면 언제든지 문의해 주세요!",
-            "CreatedTime": "2025-08-09T14:29:12.653309",
-            "ItemId": "PROD_COFFEE_001",
+            "Content": "The Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle offers a moderate level of difficulty suitable for puzzle enthusiasts. With 500 pieces, it provides a challenge while also being accessible for those who enjoy puzzling. Additionally, this puzzle includes 3 mini shaped puzzles within, adding an extra twist to the classic format. The unique and intricate designs inspired by Frank Lloyd Wright’s artwork may require some focus and attention to detail, making it a rewarding experience for puzzlers. \n\nIf you're interested, the price is $19.99. You can find it [here](https://www.aldeahome.com/products/frank-lloyd-wright-organic-geometry-500-piece-multi-puzzle).",
+            "CreatedTime": "2025-08-09T20:17:06.002425",
+            "ItemId": "05959",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "36238010-cb3e-40ab-a108-6a5c7e0d05d1",
+            "Id": "27c3b6a1-2b46-410c-bea3-032a7a4df43e",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d6a11f16-e892-45b9-be69-aef05a4645f1",
+            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
             "UserId": "user_00015",
-            "session_id": "d6a11f16-e892-45b9-be69-aef05a4645f1",
-            "Intent": "추천",
+            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "혹시 다른 꿀 종류나 관련 제품도 추천해 주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:29:13.455143",
+            "Content": "Are there any customer reviews or ratings for the Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle (Product ID: 05959) that could give me an idea of others' experiences with it?",
+            "CreatedTime": "2025-08-09T20:17:07.165012",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "9a5199f5-3b7c-4522-88ea-304c1b731758",
+            "Id": "80a9db24-10b7-40b2-917d-3b4c07c46b55",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d6a11f16-e892-45b9-be69-aef05a4645f1",
+            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
             "UserId": "user_00015",
-            "session_id": "d6a11f16-e892-45b9-be69-aef05a4645f1",
-            "Intent": "추천",
+            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "물론입니다! 저희 쇼핑몰에서는 다양한 종류의 꿀을 제공하고 있습니다. 예를 들어:\n\n1. **천연 야생화 꿀** - 다양한 꽃에서 수집된 꿀로, 풍부한 향과 맛이 특징입니다.\n2. **로즈마리 꿀** - 로즈마리 꽃에서 채집된 꿀로, 독특한 향을 가지고 있어 요리에 활용하기 좋습니다.\n3. **프로폴리스 꿀** - 면역력 강화에 도움을 줄 수 있는 성분이 포함되어 있습니다.\n\n또한, 꿀과 함께 건강한 라이프스타일을 위한 '월간 북클럽 베이직' 구독 상품도 추천합니다. 매달 다양한 건강 관련 도서가 제공되어, 꿀을 활용한 레시피나 건강 정보도 얻을 수 있습니다. 관심 있으시면 더 자세히 안내해 드릴게요!",
-            "CreatedTime": "2025-08-09T14:29:17.390682",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Content": "I currently don't have access to customer reviews or ratings for the Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle. However, you can often find feedback on the product page or by searching for it on popular review sites. Many customers appreciate the unique design and the challenge it presents, given the intricate patterns associated with Frank Lloyd Wright's artwork. If you have any specific questions or need further information, feel free to ask! \n\nYou can view the product [here](https://www.aldeahome.com/products/frank-lloyd-wright-organic-geometry-500-piece-multi-puzzle) for more details.",
+            "CreatedTime": "2025-08-09T20:17:09.990735",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d16c469d-4421-492f-ab40-799fd287d37c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "UserId": "user_00015",
+            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "What are the dimensions of the finished Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle (Product ID: 05959) once it's completed?",
+            "CreatedTime": "2025-08-09T20:17:11.070030",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "9f5bd8e9-13b5-4cec-b09b-8cf3a4c3a086",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "UserId": "user_00015",
+            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The finished dimensions of the Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle are 20 x 20 inches. This square format makes it a visually striking piece once completed. If you have any other questions or need more information, feel free to ask! You can view the puzzle [here](https://www.aldeahome.com/products/frank-lloyd-wright-organic-geometry-500-piece-multi-puzzle).",
+            "CreatedTime": "2025-08-09T20:17:13.186057",
+            "ItemId": "05959",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.304096"
+    "profile_generated_at": "2025-08-09T20:54:53.182635"
 }

@@ -1,60 +1,103 @@
 {
     "user_id": "user_00041",
-    "raw_engagement_score": 20,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 23,
+    "normalized_engagement_score": 15,
     "activities": [
         {
-            "id": "55bee26c-9432-4e9b-a012-74f6ed83d48e",
+            "id": "91538029-27cf-4342-905d-2a1e0fbf6cfb",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00041",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07134",
+                "category": "pet-costumes",
+                "product_name": "Angel Wings",
+                "price": 20.0,
+                "product_url": "https://www.aldeahome.com/products/angel-wings",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/c437d8d496a7be56aa887198c272e7b65070097c2e3891e1c4faa6a482fc24c2.jpg?v=1727107842",
+                "view_duration_seconds": 56
+            },
+            "created_time": "2025-08-09T20:05:50.700231"
+        },
+        {
+            "id": "892b3ed3-ed28-4388-b128-40f1aeff14b7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00041",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00041_700239",
+                "total_amount": 19.99,
+                "items": [
+                    {
+                        "product_id": "03843",
+                        "quantity": 1,
+                        "price": 19.99
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.700253"
+        },
+        {
+            "id": "391d8637-3ab5-4e88-89d4-344d48d98f42",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00041",
             "event_name": "search",
             "event_data": {
-                "query": "베스트셀러",
-                "search_results_count": 9,
-                "filters_applied": []
+                "query": "12-Piece Mini Puzzle | Go Gorilla",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.708023"
+            "created_time": "2025-08-09T20:05:50.702717"
         },
         {
-            "id": "ecde8ab6-d616-477c-a370-c782a3124d43",
+            "id": "27a10862-9aac-463c-9d9e-3a2d3b2404ef",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00041",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "quantity": 1,
-                "price": 15000
+                "product_id": "07263",
+                "quantity": 2,
+                "price": 37.0
             },
-            "created_time": "2025-08-09T13:57:01.708027"
+            "created_time": "2025-08-09T20:05:50.702725"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "108d0181-0fce-4511-900a-faebfe7ff867",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d6fe3d4e-dd9d-4b1e-bed7-af379fc009d9",
+            "UserId": "user_00041",
+            "session_id": "d6fe3d4e-dd9d-4b1e-bed7-af379fc009d9",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the sizing options available for the Savannah Pocket Shortie Baby Romper (Organic Jersey): 0-3M / Natural (Product ID: 05493)?",
+            "CreatedTime": "2025-08-09T20:18:58.115924",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
         },
         {
-            "id": "7c9e6abd-484a-4b0d-aa86-556a33dfd14f",
+            "Id": "ba6b5f5e-c57a-464f-91c7-d34d24d7321f",
+            "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "chat_user_id": "user_00041",
-            "event_name": "search",
-            "event_data": {
-                "query": "건강식품",
-                "search_results_count": 13,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T13:57:01.708030"
+            "DialogueId": "d6fe3d4e-dd9d-4b1e-bed7-af379fc009d9",
+            "UserId": "user_00041",
+            "session_id": "d6fe3d4e-dd9d-4b1e-bed7-af379fc009d9",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Savannah Pocket Shortie Baby Romper (Organic Jersey) is specifically available in the size 0-3M. This size is ideal for newborns and infants up to 3 months old. The romper is designed for comfort and ease of use, featuring snaps along the crotch for quick diaper changes. \n\nIf you're interested in purchasing this item, it is priced at $36.00. You can find more details and make a purchase at this link: [Savannah Pocket Shortie Baby Romper](https://www.aldeahome.com/products/savannah-pocket-shortie-baby-romper-organic-jersey-0-3m-natural).",
+            "CreatedTime": "2025-08-09T20:19:00.619291",
+            "ItemId": "05493",
+            "Thumbs": "down",
+            "Channel": "web"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "163203c2-b900-45ca-98e3-6d33fcdacb9b",
-            "customer_id": "user_00041",
-            "product_id": "PROD_OLIVE_002",
-            "rating": 5,
-            "review_title": "인생템 등극",
-            "review_content": "유기농 엑스트라 버진 올리브유 750ml은 최고입니다! 왜 이제 알았을까요.",
-            "created_at": "2025-05-27T14:00:03.216243",
-            "is_deleted": false
-        }
-    ],
-    "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.349900"
+    "profile_generated_at": "2025-08-09T20:54:53.195386"
 }

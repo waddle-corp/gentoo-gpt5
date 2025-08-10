@@ -1,64 +1,48 @@
 {
     "user_id": "user_00019",
-    "raw_engagement_score": 14,
-    "normalized_engagement_score": 8,
+    "raw_engagement_score": 9,
+    "normalized_engagement_score": 6,
     "activities": [
         {
-            "id": "9efea4bb-7307-4922-a0ad-957953487e9a",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00019",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00019_707746",
-                "total_amount": 18000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_001",
-                        "quantity": 1,
-                        "price": 18000
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T13:57:01.707752"
-        },
-        {
-            "id": "6f1901eb-0852-4ebb-ab9d-3a6d3e5e8bd6",
+            "id": "f2ce9092-76ec-4872-a969-465b0543abb8",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00019",
             "event_name": "login",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.150.173"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.162.120"
             },
-            "created_time": "2025-08-09T13:57:01.707756"
+            "created_time": "2025-08-09T20:05:50.669018"
         },
         {
-            "id": "2f52a3b0-35db-49e8-90c8-d740a1b3162d",
+            "id": "641b4f38-91a2-4b92-b25f-e8f6f1565f28",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00019",
             "event_name": "search",
             "event_data": {
-                "query": "구독",
-                "search_results_count": 12,
+                "query": "Bird Ruffle Baby Girl Tunic Dress & Bodysuit (Organic): Navy Blue / 12-18M",
+                "search_results_count": 1,
                 "filters_applied": [
                     "리뷰 많은 순"
                 ]
             },
-            "created_time": "2025-08-09T13:57:01.707760"
+            "created_time": "2025-08-09T20:05:50.671216"
+        },
+        {
+            "id": "a2b99415-4b6c-47a0-af80-7ff3a1facbe2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00019",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06497",
+                "quantity": 3,
+                "price": 25.95
+            },
+            "created_time": "2025-08-09T20:05:50.671222"
         }
     ],
     "reviews": [],
-    "subscriptions": [
-        {
-            "subscription_id": "6c89b216-34fb-4eb8-9ce4-f5cf7af0437c",
-            "customer_id": "user_00019",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2025-04-03",
-            "end_date": "2025-06-02",
-            "status": "expired"
-        }
-    ],
+    "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.311963"
+    "profile_generated_at": "2025-08-09T20:54:53.184700"
 }

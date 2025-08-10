@@ -1,34 +1,142 @@
 {
     "user_id": "user_00021",
-    "raw_engagement_score": 11,
-    "normalized_engagement_score": 7,
+    "raw_engagement_score": 23,
+    "normalized_engagement_score": 15,
     "activities": [
         {
-            "id": "149dc5cf-52b1-4826-9d73-068707ac23f9",
+            "id": "8a961558-cd66-46bf-a6bb-0e56b3dea7fa",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00021",
             "event_name": "search",
             "event_data": {
-                "query": "베스트셀러",
-                "search_results_count": 2,
-                "filters_applied": []
+                "query": "Kitty Face Baby Shoes",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.707787"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-09T20:05:50.673697"
+        },
         {
-            "review_id": "b6904be8-627a-4d3c-b052-811396418f61",
-            "customer_id": "user_00021",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "rating": 4,
-            "review_title": "대만족!",
-            "review_content": "분기별 올리브유 구독 프리미엄은 최고입니다! 왜 이제 알았을까요.",
-            "created_at": "2024-08-14T14:00:03.216189",
-            "is_deleted": false
+            "id": "e3968a09-0a29-4203-81a8-f2dbbcb0b2b8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00021",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "04038",
+                "quantity": 2,
+                "price": 12.99
+            },
+            "created_time": "2025-08-09T20:05:50.673703"
+        },
+        {
+            "id": "1f78e7a7-3e8b-4067-97d1-1a5fd117aa62",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00021",
+            "event_name": "search",
+            "event_data": {
+                "query": "Teatime Shape Sorter - TOLO",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T20:05:50.676224"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.315544"
+    "dialogues": [
+        {
+            "Id": "90282c26-b595-4dcb-9245-a092973a0844",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "UserId": "user_00021",
+            "session_id": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can the Rain and Wind Baby Carrier Cover (Product ID: 00519) be used with other brands of baby carriers, or is it only compatible with Ergobaby products?",
+            "CreatedTime": "2025-08-09T20:17:32.183658",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5c8cc7fe-a438-4ac6-84d0-529e47284523",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "UserId": "user_00021",
+            "session_id": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Rain and Wind Baby Carrier Cover is specifically designed to be compatible with any Ergobaby Carrier in all carry positions. It may not be compatible with other brands of baby carriers. If you are using an Ergobaby Carrier, this cover is perfect for keeping your little one protected from breezy days and unexpected weather. \n\nFor more information, you can check it out here: [Rain and Wind Baby Carrier Cover](https://www.aldeahome.com/products/baby-carrier-rain-and-wind-cover-charcoal) - Price: $59.00.",
+            "CreatedTime": "2025-08-09T20:17:34.855489",
+            "ItemId": "00519",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f3ee20af-74ca-42f3-a498-f929cf0050b2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "UserId": "user_00021",
+            "session_id": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Rain and Wind Baby Carrier Cover (Product ID: 00519) easy to clean? Can it really handle machine washing without losing its quality?",
+            "CreatedTime": "2025-08-09T20:17:35.721201",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "53969c52-5fac-4437-976c-adb80721046e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "UserId": "user_00021",
+            "session_id": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Rain and Wind Baby Carrier Cover is machine washable, making it easy to clean. You can wash it without worrying about losing its quality, as it is designed to withstand regular washing, maintaining its functionality and appearance. This feature adds to its convenience for parents on the go. \n\nFor more details, you can view the product here: [Rain and Wind Baby Carrier Cover](https://www.aldeahome.com/products/baby-carrier-rain-and-wind-cover-charcoal) - Price: $59.00.",
+            "CreatedTime": "2025-08-09T20:17:37.872677",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "fa8aa456-4c90-4184-bffb-56a9fe4540a5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "UserId": "user_00021",
+            "session_id": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Rain and Wind Baby Carrier Cover (Product ID: 00519) comes in different colors or patterns? I’m looking for something that might match my baby carrier better.",
+            "CreatedTime": "2025-08-09T20:17:39.118804",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c0291c64-fd38-48c7-b72a-7ca15d63cf5b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "UserId": "user_00021",
+            "session_id": "f8734a37-f6c0-4900-af94-d6e1cf14b94c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The information provided does not specify if the Rain and Wind Baby Carrier Cover comes in different colors or patterns. It would be best to check the product page for any available options or variations. You can view the product details here: [Rain and Wind Baby Carrier Cover](https://www.aldeahome.com/products/baby-carrier-rain-and-wind-cover-charcoal) - Price: $59.00. If you have a specific color in mind, I recommend reaching out directly to the retailer for more information.",
+            "CreatedTime": "2025-08-09T20:17:41.075603",
+            "ItemId": "00519",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T20:54:53.185921"
 }

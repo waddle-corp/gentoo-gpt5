@@ -1,74 +1,131 @@
 {
     "user_id": "user_00051",
-    "raw_engagement_score": 18,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 20,
     "activities": [
         {
-            "id": "4dc77c68-dd02-4c28-b595-8b032aac1aaf",
+            "id": "fa936ee7-3bbe-41b0-8eed-bde5aeebdbe7",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00051",
-            "event_name": "search",
+            "event_name": "purchase_completed",
             "event_data": {
-                "query": "올리브유",
-                "search_results_count": 2,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
+                "order_id": "ORDER_user_00051_724418",
+                "total_amount": 26.95,
+                "items": [
+                    {
+                        "product_id": "03836",
+                        "quantity": 1,
+                        "price": 26.95
+                    }
+                ],
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708151"
+            "created_time": "2025-08-09T20:05:50.724426"
         },
         {
-            "id": "bbdea86b-5cbb-4256-8356-525a9abac703",
+            "id": "3a18505a-b1fe-42c6-92c2-140f7a13bf5e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00051",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "category": "올리브유",
-                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
-                "view_duration_seconds": 98
+                "product_id": "00839",
+                "category": "bath-storage-and-grooming",
+                "product_name": "Mustela Baby Oil",
+                "price": 12.5,
+                "product_url": "https://www.aldeahome.com/products/mustela-baby-oil",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/oik.jpg?v=1621029304",
+                "view_duration_seconds": 106
             },
-            "created_time": "2025-08-09T13:57:01.708155"
+            "created_time": "2025-08-09T20:05:50.724433"
         },
         {
-            "id": "46ef3cf2-4be5-4979-aacb-aba7f8a8c008",
+            "id": "2222b746-b46d-44ac-a294-200f6851a826",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00051",
-            "event_name": "product_view",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "category": "소설",
-                "product_name": "베스트셀러 소설: 시간의 틈새",
-                "view_duration_seconds": 49
+                "order_id": "ORDER_user_00051_724439",
+                "total_amount": 71.0,
+                "items": [
+                    {
+                        "product_id": "01832",
+                        "quantity": 1,
+                        "price": 26.0
+                    },
+                    {
+                        "product_id": "06155",
+                        "quantity": 1,
+                        "price": 45.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708158"
-        },
-        {
-            "id": "c06aa3b2-0b70-461e-b121-696f9424c6bb",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00051",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "quantity": 2,
-                "price": 35000
-            },
-            "created_time": "2025-08-09T13:57:01.708161"
+            "created_time": "2025-08-09T20:05:50.724445"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "0afa68f3-ba13-4e13-adbb-bf676e293531",
-            "customer_id": "user_00051",
-            "product_id": "PROD_BOOK_001",
-            "rating": 2,
-            "review_title": "기대 이하였어요",
-            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
-            "created_at": "2025-01-30T14:00:03.216280",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.366711"
+    "dialogues": [
+        {
+            "Id": "8f37163c-70bc-457f-826c-795d89c2662d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "UserId": "user_00051",
+            "session_id": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Beastie Bigfoot Sasquatch & Yeti Best Friends Birthday Card (Product ID: 02220) comes with any special features, like additional designs or themes?",
+            "CreatedTime": "2025-08-09T20:20:11.652074",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9a121038-3ef4-4e70-9e30-68cc1f296ce1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "UserId": "user_00051",
+            "session_id": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Beastie Bigfoot Sasquatch & Yeti Best Friends Birthday Card does not have additional designs or themes mentioned. It features a blank interior, allowing you to write your own message. The card is made from FSC-certified, recycled paper and comes with a matching recycled envelope. It is professionally printed and packaged in a clear cello sleeve. \n\nFor more details, you can view the card [here](https://www.aldeahome.com/products/beastie-bigfoot-sasquatch-yeti-best-friends-birthday-card). The price is $5.50.",
+            "CreatedTime": "2025-08-09T20:20:13.703692",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "69d5e6e7-00d6-44d0-a9a2-068121f89203",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "UserId": "user_00051",
+            "session_id": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Beastie Bigfoot Sasquatch & Yeti Best Friends Birthday Card (Product ID: 02220) suitable for kids, or is it more geared towards adults?",
+            "CreatedTime": "2025-08-09T20:20:14.810541",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "19648640-4337-4707-9b45-b7ec93b064dc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "UserId": "user_00051",
+            "session_id": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Beastie Bigfoot Sasquatch & Yeti Best Friends Birthday Card is whimsical and features playful characters, making it suitable for both kids and adults. Its fun theme of Bigfoot and Yeti as best friends can appeal to children, while also being appreciated by adults who enjoy quirky or humorous cards. Overall, it is a versatile card that can be used for a variety of age groups. \n\nYou can find it for $5.50 [here](https://www.aldeahome.com/products/beastie-bigfoot-sasquatch-yeti-best-friends-birthday-card).",
+            "CreatedTime": "2025-08-09T20:20:16.649999",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T20:54:53.199522"
 }

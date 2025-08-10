@@ -1,54 +1,88 @@
 {
     "user_id": "user_00003",
-    "raw_engagement_score": 9,
-    "normalized_engagement_score": 6,
+    "raw_engagement_score": 19,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "a57b3670-7c29-4d32-b70f-5d414eb240a4",
+            "id": "ff0bad4a-751f-46d9-92a3-79fffbe569d0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00003",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "05260",
+                "quantity": 1,
+                "price": 715.0
+            },
+            "created_time": "2025-08-09T20:05:50.639382"
+        },
+        {
+            "id": "c11231ba-b630-4af8-b472-cd700291a9b4",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00003",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04930",
+                "category": "exclude",
+                "product_name": "Suitcase Doctor's Medical Set",
+                "price": 39.95,
+                "product_url": "https://www.aldeahome.com/products/suitcase-doctor-s-medical-set",
+                "thumbnail_url": "",
+                "view_duration_seconds": 88
+            },
+            "created_time": "2025-08-09T20:05:50.639388"
+        },
+        {
+            "id": "681e9026-8e44-4139-bae6-ed4ee032c1ba",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00003",
             "event_name": "login",
             "event_data": {
                 "login_method": "email_password",
-                "ip_address": "192.168.41.28"
+                "ip_address": "192.168.119.22"
             },
-            "created_time": "2025-08-09T13:57:01.707483"
+            "created_time": "2025-08-09T20:05:50.639392"
         },
         {
-            "id": "fa5f1c4c-3a69-425e-9660-08e8247bb3db",
+            "id": "336bf37b-fdde-4408-94b8-c8f66e20945c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00003",
-            "event_name": "add_to_cart",
+            "event_name": "product_view",
             "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "quantity": 1,
-                "price": 15000
+                "product_id": "02737",
+                "category": "cyber-monday-gift",
+                "product_name": "Pachat & his Friends. 24 pieces",
+                "price": 14.95,
+                "product_url": "https://www.aldeahome.com/products/pachat-his-friends-24-pieces",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/djeco-djeco-puzzle-pachat-and-his-friends-24-pcs.jpg?v=1586634870",
+                "view_duration_seconds": 40
             },
-            "created_time": "2025-08-09T13:57:01.707487"
+            "created_time": "2025-08-09T20:05:50.639397"
+        },
+        {
+            "id": "a4f5bd4b-1b99-4adc-84f2-5c154976b57d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00003",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.184.20"
+            },
+            "created_time": "2025-08-09T20:05:50.639401"
         }
     ],
     "reviews": [
         {
-            "review_id": "a56f8f27-6f9d-4172-b34b-e0544346e076",
+            "review_id": "2c27a889-e930-4308-8748-6d31063c5ad8",
             "customer_id": "user_00003",
-            "product_id": "PROD_OLIVE_002",
+            "product_id": "02692",
             "rating": 4,
-            "review_title": "대만족!",
-            "review_content": "진심으로 추천합니다. 기대 이상의 효과를 봤어요.",
-            "created_at": "2024-12-15T14:00:03.216115",
+            "review_title": "Best purchase ever",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-05-14T20:52:52.182042",
             "is_deleted": false
         }
     ],
-    "subscriptions": [
-        {
-            "subscription_id": "b447df56-7506-4e73-8e7b-2f1f63ddd79b",
-            "customer_id": "user_00003",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2024-03-04",
-            "end_date": "2024-08-31",
-            "status": "cancelled"
-        }
-    ],
+    "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.275438"
+    "profile_generated_at": "2025-08-09T20:54:53.176166"
 }

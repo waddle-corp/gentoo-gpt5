@@ -1,128 +1,140 @@
 {
     "user_id": "user_00046",
-    "raw_engagement_score": 23,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 24,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "cdee5b50-06d3-4089-8b37-2ebc2a511820",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00046",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00046_708084",
-                "total_amount": 50000,
-                "items": [
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T13:57:01.708087"
-        },
-        {
-            "id": "9f325552-d9be-421c-ad9b-a1c8696a888a",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00046",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.65.156"
-            },
-            "created_time": "2025-08-09T13:57:01.708091"
-        },
-        {
-            "id": "4d7f4aa5-a63d-43c0-8dee-48cde7e8bb79",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00046",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "category": "구독",
-                "product_name": "월간 북클럽 베이직",
-                "view_duration_seconds": 57
-            },
-            "created_time": "2025-08-09T13:57:01.708094"
-        },
-        {
-            "id": "678a2a90-0684-4f4a-961e-4530a086e432",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00046",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.22.26"
-            },
-            "created_time": "2025-08-09T13:57:01.708098"
-        },
-        {
-            "id": "8aedfc96-241b-4900-b54e-62dbc0895b05",
+            "id": "2b3af0e4-4920-420b-99ec-4784647bb4e7",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00046",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "quantity": 2,
-                "price": 50000
+                "product_id": "00569",
+                "quantity": 1,
+                "price": 23.0
             },
-            "created_time": "2025-08-09T13:57:01.708101"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-09T20:05:50.717422"
+        },
         {
-            "review_id": "df792423-4cbd-4f28-b092-c4f0ff203f73",
-            "customer_id": "user_00046",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "rating": 1,
-            "review_title": "비추천합니다",
-            "review_content": "분기별 올리브유 구독 프리미엄 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2024-11-24T14:00:03.216263",
-            "is_deleted": false
-        }
-    ],
-    "subscriptions": [
+            "id": "ce046ddb-2613-49a7-af12-2938d7d25060",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00046",
+            "event_name": "search",
+            "event_data": {
+                "query": "JOLLY SNOWMAN Felt Christmas Ornament",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T20:05:50.719735"
+        },
         {
-            "subscription_id": "a248d8b4-80a9-489f-8390-72cacf5371ef",
-            "customer_id": "user_00046",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2024-11-20",
-            "end_date": "2025-03-20",
-            "status": "cancelled"
+            "id": "97d28019-d85d-4869-a674-57ddf35642b5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00046",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07633",
+                "quantity": 1,
+                "price": 29.99
+            },
+            "created_time": "2025-08-09T20:05:50.719741"
         }
     ],
+    "reviews": [],
+    "subscriptions": [],
     "dialogues": [
         {
-            "Id": "5fa1b49d-a2f0-419c-bbb3-a450d1ea6dc9",
+            "Id": "cfa3e89f-dc09-40f9-bd7a-a49a8be3ca1f",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "5ba800cb-7189-4281-8746-fccdc0961c28",
+            "DialogueId": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
             "UserId": "user_00046",
-            "session_id": "5ba800cb-7189-4281-8746-fccdc0961c28",
+            "session_id": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
             "Intent": "일반",
             "Role": "user",
-            "Content": "혹시 지금 할인하는 상품이 있나요?",
-            "CreatedTime": "2025-08-09T14:31:43.824873",
+            "Content": "Can you tell me if the elephant wubbanub (Product ID: 04446) is machine washable?",
+            "CreatedTime": "2025-08-09T20:19:37.807823",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "004b77c6-7b0b-481d-a3bd-6bb81fa543ab",
+            "Id": "05f1014c-b5a5-4c0b-8495-891be872123a",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "5ba800cb-7189-4281-8746-fccdc0961c28",
+            "DialogueId": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
             "UserId": "user_00046",
-            "session_id": "5ba800cb-7189-4281-8746-fccdc0961c28",
+            "session_id": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "현재 진행 중인 할인 상품에 대한 정보는 매일 업데이트되므로, 공식 웹사이트나 앱을 통해 확인하시는 것이 가장 정확합니다. 또한, '월간 북클럽 베이직' 구독 상품은 많은 고객님들께서 좋아하시며, 종종 특별한 혜택을 제공하기도 합니다. 관심이 있으시면 확인해 보세요!",
-            "CreatedTime": "2025-08-09T14:31:45.421076",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Content": "The elephant wubbanub is not explicitly mentioned as machine washable in the provided information. For the best care instructions, please refer to the product details or packaging after purchase. If you have any more questions or need further assistance, feel free to ask! \n\nYou can purchase the elephant wubbanub for $19.95 at this link: [elephant wubbanub](https://www.aldeahome.com/products/elephant-wubbanub).",
+            "CreatedTime": "2025-08-09T20:19:40.298357",
+            "ItemId": "04446",
             "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "12475d07-fb55-488d-96f9-e50b335e6f9e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
+            "UserId": "user_00046",
+            "session_id": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the elephant wubbanub (Product ID: 04446) has any specific care instructions besides washing? Additionally, is it safe for babies to use?",
+            "CreatedTime": "2025-08-09T20:19:41.353598",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "568b4992-9ea1-4040-8d57-b4e1cf21e50c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
+            "UserId": "user_00046",
+            "session_id": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The provided information does not include specific care instructions beyond washing or details about safety for babies. Generally, Wubbanubs are designed for infants and are considered safe for use, but I recommend checking the product packaging for detailed care instructions and safety information.\n\nIf you're interested in purchasing, the elephant wubbanub is available for $19.95 here: [elephant wubbanub](https://www.aldeahome.com/products/elephant-wubbanub). If you have more questions, feel free to ask!",
+            "CreatedTime": "2025-08-09T20:19:43.801319",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b513947e-90ff-4abd-9517-38a60336d426",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
+            "UserId": "user_00046",
+            "session_id": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the elephant wubbanub (Product ID: 04446) is available in any other colors or designs?",
+            "CreatedTime": "2025-08-09T20:19:44.760213",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5448d98d-a8c7-4e33-8a45-6f05e709ace6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
+            "UserId": "user_00046",
+            "session_id": "0ff25413-459a-4c49-b021-5a1b2e9019d9",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The provided information only mentions the elephant wubbanub without any details on additional colors or designs. To find out if there are other options available, I recommend checking the product page or the store's website directly.\n\nYou can view and purchase the elephant wubbanub for $19.95 at this link: [elephant wubbanub](https://www.aldeahome.com/products/elephant-wubbanub). If you have any more questions, feel free to ask!",
+            "CreatedTime": "2025-08-09T20:19:47.044253",
+            "ItemId": null,
+            "Thumbs": "down",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.358169"
+    "profile_generated_at": "2025-08-09T20:54:53.197451"
 }

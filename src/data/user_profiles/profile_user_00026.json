@@ -1,108 +1,138 @@
 {
     "user_id": "user_00026",
-    "raw_engagement_score": 20,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 24,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "f36f08d7-35a9-4d24-9942-ef970593ca4b",
+            "id": "16e52d42-c01e-4ed7-ad79-4ef378262190",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00026",
-            "event_name": "search",
+            "event_name": "add_to_cart",
             "event_data": {
-                "query": "구독",
-                "search_results_count": 10,
-                "filters_applied": []
+                "product_id": "06250",
+                "quantity": 1,
+                "price": 16.95
             },
-            "created_time": "2025-08-09T13:57:01.707845"
+            "created_time": "2025-08-09T20:05:50.681038"
         },
         {
-            "id": "1590d808-0f5f-4387-b160-a7ea9b5ac558",
+            "id": "32ae5f93-7ce1-4646-b50f-35975aa79a2b",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00026",
-            "event_name": "purchase_completed",
+            "event_name": "login",
             "event_data": {
-                "order_id": "ORDER_user_00026_707847",
-                "total_amount": 53000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_001",
-                        "quantity": 1,
-                        "price": 18000
-                    },
-                    {
-                        "product_id": "PROD_OLIVE_002",
-                        "quantity": 1,
-                        "price": 35000
-                    }
-                ],
-                "payment_method": "kakao_pay"
+                "login_method": "email_password",
+                "ip_address": "192.168.95.73"
             },
-            "created_time": "2025-08-09T13:57:01.707852"
+            "created_time": "2025-08-09T20:05:50.681042"
+        },
+        {
+            "id": "0557f22a-93c4-4c3c-941a-63bafc86051d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00026",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "00344",
+                "category": "arts-crafts",
+                "product_name": "Paint by Stickers Cats",
+                "price": 16.99,
+                "product_url": "https://www.aldeahome.com/products/paint-by-stickers-cats",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/9781523504480_p0_v2_s550x406.jpg?v=1572391917",
+                "view_duration_seconds": 62
+            },
+            "created_time": "2025-08-09T20:05:50.681046"
+        },
+        {
+            "id": "84ecba9d-7a51-4913-913f-a31389045e3d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00026",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04568",
+                "category": "exclude",
+                "product_name": "Tricycle Mouse, Big Sister - Coral",
+                "price": 34.5,
+                "product_url": "https://www.aldeahome.com/products/tricycle-mouse-big-sister-coral",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/17-4204-00_aca95d28-43c2-4a10-a9fd-015bc5c712ea_2048x_png.jpg?v=1743622859",
+                "view_duration_seconds": 65
+            },
+            "created_time": "2025-08-09T20:05:50.681051"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "a2b3f704-4ea0-4618-93d0-56f14eece147",
+            "customer_id": "user_00026",
+            "product_id": "02736",
+            "rating": 2,
+            "review_title": "Below expectations",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-01-02T20:52:52.182126",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "a82c59ef-dd0d-4ee8-8866-c698613a670d",
+            "Id": "380e47b2-dba1-4441-a6c5-bb6f45dba1c8",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "c423d241-910d-495e-a80b-865a07c218ae",
+            "DialogueId": "805149d2-cdb9-4cc2-b196-9aad50859581",
             "UserId": "user_00026",
-            "session_id": "c423d241-910d-495e-a80b-865a07c218ae",
+            "session_id": "805149d2-cdb9-4cc2-b196-9aad50859581",
             "Intent": "정보",
             "Role": "user",
-            "Content": "제가 최근에 구매한 상품 배송 상태를 알고 싶어요.",
-            "CreatedTime": "2025-08-09T14:30:13.816758",
+            "Content": "Is the GOLD AND WHITE FANTASTICAL ZEBRA Christmas Ornament (Product ID: 02976) suitable for outdoor use, or is it intended for indoor decoration only?",
+            "CreatedTime": "2025-08-09T20:17:45.935797",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "3b335734-7e4f-4cbf-b2f0-bf6977068535",
+            "Id": "23839c41-eaa5-495e-8a6c-96c7ab3b2d97",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "c423d241-910d-495e-a80b-865a07c218ae",
+            "DialogueId": "805149d2-cdb9-4cc2-b196-9aad50859581",
             "UserId": "user_00026",
-            "session_id": "c423d241-910d-495e-a80b-865a07c218ae",
+            "session_id": "805149d2-cdb9-4cc2-b196-9aad50859581",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "고객님, 최근에 구매하신 상품의 배송 상태를 확인하기 위해서는 주문 번호나 이메일 주소를 제공해 주시면 더 정확한 정보를 안내해 드릴 수 있습니다. 감사합니다!",
-            "CreatedTime": "2025-08-09T14:30:15.105923",
-            "ItemId": "PROD_BOOK_001",
+            "Content": "The GOLD AND WHITE FANTASTICAL ZEBRA Christmas Ornament is primarily intended for indoor decoration. It is not specified for outdoor use, so it's best to keep it inside to ensure it remains in good condition. If you have more questions about the ornament, feel free to ask! \n\nYou can view the product [here](https://www.aldeahome.com/products/fantastical-gold-and-white-zebra-christmas-ornament). The price is $15.97.",
+            "CreatedTime": "2025-08-09T20:17:48.025756",
+            "ItemId": "02976",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "b942467a-99bf-4597-a354-cd5afcd630aa",
+            "Id": "67ec000d-e965-47c3-b0ad-856e9268cadb",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "c423d241-910d-495e-a80b-865a07c218ae",
+            "DialogueId": "805149d2-cdb9-4cc2-b196-9aad50859581",
             "UserId": "user_00026",
-            "session_id": "c423d241-910d-495e-a80b-865a07c218ae",
-            "Intent": "탐색",
+            "session_id": "805149d2-cdb9-4cc2-b196-9aad50859581",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "주문 번호는 123456입니다. 배송 상태는 어떻게 되나요?",
-            "CreatedTime": "2025-08-09T14:30:16.177213",
+            "Content": "Is the GOLD AND WHITE FANTASTICAL ZEBRA Christmas Ornament (Product ID: 02976) made of durable materials, or should I be cautious about handling it?",
+            "CreatedTime": "2025-08-09T20:17:49.539794",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "ba1b7322-cf2a-4d66-a8f3-ad4a420d740f",
+            "Id": "111c838f-ef39-47c2-8284-a7f060cce979",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "c423d241-910d-495e-a80b-865a07c218ae",
+            "DialogueId": "805149d2-cdb9-4cc2-b196-9aad50859581",
             "UserId": "user_00026",
-            "session_id": "c423d241-910d-495e-a80b-865a07c218ae",
+            "session_id": "805149d2-cdb9-4cc2-b196-9aad50859581",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "주문 번호 123456에 대한 배송 상태를 확인해보겠습니다. 잠시만 기다려 주세요. \n\n(실제 시스템이 없으므로 가상의 상태를 안내드리겠습니다.) \n\n현재 주문은 배송 준비 중이며, 곧 발송될 예정입니다. 발송 후에는 추적 번호를 통해 실시간으로 배송 상태를 확인하실 수 있습니다. 추가 질문이 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:30:18.035175",
-            "ItemId": null,
-            "Thumbs": "down",
+            "Content": "The durability of the GOLD AND WHITE FANTASTICAL ZEBRA Christmas Ornament isn't specified in the product details provided. Generally, ornaments can be delicate and may require careful handling to avoid damage. It's advisable to treat it with care, especially during decoration and storage. \n\nIf you would like to purchase it, you can find it for $15.97 [here](https://www.aldeahome.com/products/fantastical-gold-and-white-zebra-christmas-ornament).",
+            "CreatedTime": "2025-08-09T20:17:51.696690",
+            "ItemId": "02976",
+            "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.324735"
+    "profile_generated_at": "2025-08-09T20:54:53.188468"
 }

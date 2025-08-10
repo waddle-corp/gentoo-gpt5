@@ -1,42 +1,86 @@
 {
     "user_id": "user_00029",
-    "raw_engagement_score": 5,
-    "normalized_engagement_score": 4,
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 12,
     "activities": [
         {
-            "id": "b589a9b7-75eb-42c8-baf8-2f15ea2777a7",
+            "id": "bd6b3707-8541-41b9-978a-bb574fc6cd99",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00029",
+            "event_name": "search",
+            "event_data": {
+                "query": "Retro Balloon Kit",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T20:05:50.685854"
+        },
+        {
+            "id": "0ea25686-e4da-4d38-8397-46b1bb9ec7ee",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00029",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00029_685863",
+                "total_amount": 5.5,
+                "items": [
+                    {
+                        "product_id": "04412",
+                        "quantity": 1,
+                        "price": 5.5
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.685879"
+        },
+        {
+            "id": "4e03abba-5d1c-463a-9bd7-c699ea585d37",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00029",
             "event_name": "login",
             "event_data": {
                 "login_method": "social_kakao",
-                "ip_address": "192.168.48.180"
+                "ip_address": "192.168.228.30"
             },
-            "created_time": "2025-08-09T13:57:01.707888"
+            "created_time": "2025-08-09T20:05:50.685884"
         }
     ],
-    "reviews": [
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
         {
-            "review_id": "800a7e85-fb0c-4e63-99f4-2f74e17f0dcb",
-            "customer_id": "user_00029",
-            "product_id": "PROD_OLIVE_002",
-            "rating": 5,
-            "review_title": "대만족!",
-            "review_content": "유기농 엑스트라 버진 올리브유 750ml은 최고입니다! 왜 이제 알았을까요.",
-            "created_at": "2024-10-19T14:00:03.216205",
-            "is_deleted": false
-        }
-    ],
-    "subscriptions": [
+            "Id": "c91d78c6-a88f-464f-8dfb-a62238acbb2a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ff3f1ab7-6f5a-4d2f-b3e4-303121a7290f",
+            "UserId": "user_00029",
+            "session_id": "ff3f1ab7-6f5a-4d2f-b3e4-303121a7290f",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me how many cards are included in the 'You're Amazing ThoughtFulls for Kids' (Product ID: 02302) set?",
+            "CreatedTime": "2025-08-09T20:18:12.517099",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
         {
-            "subscription_id": "df0e6bbc-c266-4da2-be43-9dd418e9179a",
-            "customer_id": "user_00029",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2024-10-08",
-            "end_date": "2025-02-05",
-            "status": "cancelled"
+            "Id": "cc4fff71-d9df-43d8-b5ad-c8000684c655",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ff3f1ab7-6f5a-4d2f-b3e4-303121a7290f",
+            "UserId": "user_00029",
+            "session_id": "ff3f1ab7-6f5a-4d2f-b3e4-303121a7290f",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'You're Amazing ThoughtFulls for Kids' set includes 30 encouraging pop-open cards. Each card features uplifting sentiments to support and delight children. If you need more information or want to purchase it, you can find it for $7.95 at this link: [You're Amazing ThoughtFulls for Kids](https://www.aldeahome.com/products/youre-amazing-thoughtfulls-for-kids).",
+            "CreatedTime": "2025-08-09T20:18:14.179290",
+            "ItemId": "02302",
+            "Thumbs": null,
+            "Channel": "web"
         }
     ],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.329952"
+    "profile_generated_at": "2025-08-09T20:54:53.190247"
 }

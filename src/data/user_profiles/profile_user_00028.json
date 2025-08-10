@@ -1,140 +1,172 @@
 {
     "user_id": "user_00028",
-    "raw_engagement_score": 21,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 33,
+    "normalized_engagement_score": 22,
     "activities": [
         {
-            "id": "4dd1bfa5-4861-4208-8960-5eee2ee61411",
+            "id": "f64c424b-16be-4919-a716-9ed4effd46c9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00028",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00028_681059",
+                "total_amount": 17.99,
+                "items": [
+                    {
+                        "product_id": "07689",
+                        "quantity": 1,
+                        "price": 17.99
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.681065"
+        },
+        {
+            "id": "df8abe29-74b9-4311-bfd0-d16bae66c6a0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00028",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.19.135"
+            },
+            "created_time": "2025-08-09T20:05:50.681069"
+        },
+        {
+            "id": "967d33c4-6045-42ac-bc83-6e562d018c3e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00028",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "category": "올리브유",
-                "product_name": "유기농 엑스트라 버진 올리브유 750ml",
-                "view_duration_seconds": 96
+                "product_id": "00339",
+                "category": "arts-crafts",
+                "product_name": "Double Sided Twin Crayons",
+                "price": 7.95,
+                "product_url": "https://www.aldeahome.com/products/double-sided-twin-crayons",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/DJ8874_TwinCrayons_2.jpg?v=1588116355",
+                "view_duration_seconds": 82
             },
-            "created_time": "2025-08-09T13:57:01.707877"
+            "created_time": "2025-08-09T20:05:50.681073"
         },
         {
-            "id": "5c9bd0d3-7e51-44fc-8130-f6e0d6df3d0b",
+            "id": "4aef453f-631b-4a69-b355-0a71789e8685",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00028",
+            "event_name": "search",
+            "event_data": {
+                "query": "Beaba Multi Milk Baby Bottle & Jar Warmer",
+                "search_results_count": 2,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T20:05:50.683422"
+        },
+        {
+            "id": "1b65142c-c2ab-4359-a5a0-01bbf635c965",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00028",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
-                "quantity": 1,
-                "price": 70000
+                "product_id": "05724",
+                "quantity": 2,
+                "price": 34.99
             },
-            "created_time": "2025-08-09T13:57:01.707881"
-        },
-        {
-            "id": "3784ece9-22d6-480a-8097-c05419d72abf",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00028",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "category": "소설",
-                "product_name": "베스트셀러 소설: 시간의 틈새",
-                "view_duration_seconds": 32
-            },
-            "created_time": "2025-08-09T13:57:01.707884"
+            "created_time": "2025-08-09T20:05:50.683432"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "82cd728b-6834-4aeb-80a2-346a452af991",
+            "Id": "8cfa2bf7-830c-4bfa-b326-addbc278f732",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
             "UserId": "user_00028",
-            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "유기농 제품도 있나요?",
-            "CreatedTime": "2025-08-09T14:30:25.750676",
-            "ItemId": null,
-            "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "a6ca51b0-d0eb-459b-97c2-05641d7854a9",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
-            "UserId": "user_00028",
-            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "네, 저희 쇼핑몰에서는 다양한 유기농 제품을 취급하고 있습니다. 유기농 식료품, 뷰티 제품 등 여러 가지를 찾아보실 수 있습니다. 필요한 특정 제품이 있으신가요? 추천해 드리겠습니다.",
-            "CreatedTime": "2025-08-09T14:30:27.379879",
+            "Content": "Can you tell me how long the scent of the Mokara Reed Diffuser (Product ID: 07815) typically lasts in a room?",
+            "CreatedTime": "2025-08-09T20:18:02.939608",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "7a7b492a-5fbf-4573-a206-efaa348b26e6",
+            "Id": "02a40966-aa6f-4360-877d-e3a5dc32f32e",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
             "UserId": "user_00028",
-            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Mokara Reed Diffuser typically lasts for 4-6 months, providing a continuous and pleasant fragrance for your space. If you're looking to enhance your home with this beautiful scent, it's priced at $30.00. You can find more information and purchase it [here](https://www.aldeahome.com/products/mokara-100ml-diffuser).",
+            "CreatedTime": "2025-08-09T20:18:04.859829",
+            "ItemId": "07815",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "13ed9b01-a070-45ec-9a92-8b0547631c2f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
+            "UserId": "user_00028",
+            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "유기농 식료품 중에서 어떤 종류의 제품이 인기가 많은가요?",
-            "CreatedTime": "2025-08-09T14:30:28.100648",
+            "Content": "Is the fragrance of the Mokara Reed Diffuser (Product ID: 07815) strong enough for larger spaces, or is it better suited for smaller rooms?",
+            "CreatedTime": "2025-08-09T20:18:05.806636",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "6773c2af-9113-4a5d-ad30-816dc43b4ef4",
+            "Id": "09ff992e-c5cd-4660-947d-48e48c8c9b1d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
             "UserId": "user_00028",
-            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
-            "Intent": "추천",
+            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "인기 있는 유기농 식료품으로는 유기농 쌀, 유기농 과일, 유기농 채소, 유기농 견과류 등이 있습니다. 특히 유기농 과일은 신선도와 맛이 뛰어나 많은 고객님들께 사랑받고 있습니다. 추가로 추천해 드릴 수 있는 특정 제품이 필요하시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:30:29.799583",
-            "ItemId": null,
+            "Content": "The Mokara Reed Diffuser is designed to create a signature fragrance in spaces requiring minimal effort, which means it can work well in both small and larger rooms. However, its effectiveness may vary based on room size and ventilation. For larger spaces, you might consider placing multiple diffusers to achieve a more pronounced scent. It's priced at $30.00, and you can find it [here](https://www.aldeahome.com/products/mokara-100ml-diffuser).",
+            "CreatedTime": "2025-08-09T20:18:08.163443",
+            "ItemId": "07815",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "d5d90529-bd39-4f98-8e06-f471461e0c90",
+            "Id": "0aa6fafc-1113-4f80-860c-ecdcdc73b657",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
             "UserId": "user_00028",
-            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
-            "Intent": "탐색",
+            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "유기농 제품 중에서 어떤 과일이나 채소가 가장 인기 있는지 알고 싶어요. 추천해 주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:30:30.590110",
+            "Content": "Does the Mokara Reed Diffuser (Product ID: 07815) come in different sizes or scents, or is it only available in this specific formulation?",
+            "CreatedTime": "2025-08-09T20:18:09.171519",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "0d42a3f9-46eb-488f-b0d5-66425403d5d0",
+            "Id": "a8a69d2f-b400-4a60-a1fe-5d5902a3411d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
+            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
             "UserId": "user_00028",
-            "session_id": "d2fb187d-3f31-4067-94a4-07dfdb610ce9",
-            "Intent": "추천",
+            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "유기농 제품 중에서 특히 인기가 높은 과일은 유기농 사과와 유기농 바나나입니다. 신선하고 맛이 뛰어나 많은 분들이 찾으시는 제품입니다. 채소로는 유기농 시금치와 유기농 당근이 인기가 많습니다. 건강한 식단을 원하신다면 이 제품들을 추천드립니다! 추가적인 정보가 필요하시면 언제든지 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:30:31.962123",
-            "ItemId": "PROD_BOOK_001",
-            "Thumbs": "up",
+            "Content": "The Mokara Reed Diffuser (Product ID: 07815) is only available in this specific formulation and size. It features a unique scent blend of orchid, tuberose, freesia, and white lily. If you're interested, it's priced at $30.00, and you can find more details [here](https://www.aldeahome.com/products/mokara-100ml-diffuser).",
+            "CreatedTime": "2025-08-09T20:18:11.207896",
+            "ItemId": "07815",
+            "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.328095"
+    "profile_generated_at": "2025-08-09T20:54:53.189641"
 }

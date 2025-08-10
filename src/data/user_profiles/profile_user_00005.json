@@ -1,22 +1,124 @@
 {
     "user_id": "user_00005",
-    "raw_engagement_score": 1,
-    "normalized_engagement_score": 3,
+    "raw_engagement_score": 19,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "e4318792-4fe2-47a5-9c60-226583e4a224",
+            "id": "d3994b09-2ad8-4f3e-abce-1e10035351e8",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00005",
             "event_name": "login",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.90.22"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.66.100"
             },
-            "created_time": "2025-08-09T13:57:01.707533"
+            "created_time": "2025-08-09T20:05:50.644728"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "af3fdcdd-1bce-40d7-8e0b-1fc70105e5fa",
+            "customer_id": "user_00005",
+            "product_id": "07514",
+            "rating": 2,
+            "review_title": "Do not recommend",
+            "review_content": "The quality of Sea Aster Hand Cream - Swedish Dream wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2024-09-11T20:52:52.182058",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.281451"
+    "dialogues": [
+        {
+            "Id": "859ee99c-09c7-4cd9-b535-95250101e9d2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "UserId": "user_00005",
+            "session_id": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the sizing options available for the Kids Socks that Save Dogs (Product ID: 06100)?",
+            "CreatedTime": "2025-08-09T20:16:03.525515",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "40cf44b9-4690-47a5-93e6-d798f4d0477e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "UserId": "user_00005",
+            "session_id": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Kids Socks that Save Dogs are available in three sizing options:\n\n1. **Toddler (1-3Y)**: Fits kids shoe sizes 3-7k (features silicone grippers to prevent sliding).\n2. **Preschool (4-6Y)**: Fits kids shoe sizes 9-13k.\n3. **Youth (7-10Y)**: Fits kids shoe sizes 1-5.\n\nThese socks are perfect for young children who love their furry friends! If you need any more information or wish to purchase, they are priced at $10.00 and can be found [here](https://www.aldeahome.com/products/kids-socks-that-save-dogs-youth).",
+            "CreatedTime": "2025-08-09T20:16:06.795206",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9d921ad0-ea59-4e67-a90e-0aefe68fd05b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "UserId": "user_00005",
+            "session_id": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Do the Kids Socks that Save Dogs (Product ID: 06100) come in different colors or designs, or is it just the black and white pair with the puppy prints?",
+            "CreatedTime": "2025-08-09T20:16:07.719999",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4ce928e4-df5f-4f55-8beb-cd1bd2c959f8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "UserId": "user_00005",
+            "session_id": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Kids Socks that Save Dogs (Product ID: 06100) are specifically designed in a soft black and white color scheme, decorated with adorable puppy prints. Currently, there are no mentions of different colors or designs available for this product. If you're looking for a cute and meaningful pair of socks that support dogs in shelters, this design is perfect! You can view and purchase them for $10.00 [here](https://www.aldeahome.com/products/kids-socks-that-save-dogs-youth).",
+            "CreatedTime": "2025-08-09T20:16:10.103472",
+            "ItemId": "06100",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7202b402-bd7c-4f1b-a9f7-473ec2083eb8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "UserId": "user_00005",
+            "session_id": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are there any recommendations for washing and caring for the Kids Socks that Save Dogs (Product ID: 06100) to ensure they last longer?",
+            "CreatedTime": "2025-08-09T20:16:11.052037",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8d9634a6-32d6-48b4-9c6d-868470a99dee",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "UserId": "user_00005",
+            "session_id": "fce0d6b4-d155-4970-8d94-501a06e31fe5",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "While specific washing and care instructions are not provided for the Kids Socks that Save Dogs (Product ID: 06100), here are some general recommendations to help ensure they last longer:\n\n1. **Machine Wash Cold**: Use cold water to prevent shrinking and fading.\n2. **Gentle Cycle**: Select a gentle cycle to minimize wear and tear.\n3. **Avoid Bleach**: Do not use bleach, as it can damage the fabric and prints.\n4. **Air Dry**: It's best to air dry the socks instead of using a dryer to prevent shrinking and maintain their shape.\n5. **Turn Inside Out**: Washing them inside out can help protect the prints.\n\nFollowing these tips will help keep the socks looking great and extend their lifespan! If you're interested in purchasing them, they are available for $10.00 [here](https://www.aldeahome.com/products/kids-socks-that-save-dogs-youth).",
+            "CreatedTime": "2025-08-09T20:16:20.203833",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T20:54:53.177439"
 }

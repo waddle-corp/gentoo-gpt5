@@ -1,79 +1,124 @@
 {
     "user_id": "user_00055",
-    "raw_engagement_score": 22,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "b4c11512-c545-4b35-9507-445057ee2918",
+            "id": "f58f4a23-49e9-4c09-8f1b-8f8e943b6ad3",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00055",
             "event_name": "login",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.11.184"
+                "login_method": "social_google",
+                "ip_address": "192.168.72.127"
             },
-            "created_time": "2025-08-09T13:57:01.708180"
-        },
-        {
-            "id": "6ce6d562-5382-4842-a241-c0076769f6cd",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00055",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00055_708182",
-                "total_amount": 75000,
-                "items": [
-                    {
-                        "product_id": "PROD_OLIVE_001",
-                        "quantity": 1,
-                        "price": 25000
-                    },
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
-                    }
-                ],
-                "payment_method": "credit_card"
-            },
-            "created_time": "2025-08-09T13:57:01.708186"
-        },
-        {
-            "id": "27f573c9-cd59-4a5c-bfa1-0789a067bde9",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00055",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "category": "소설",
-                "product_name": "베스트셀러 소설: 시간의 틈새",
-                "view_duration_seconds": 39
-            },
-            "created_time": "2025-08-09T13:57:01.708190"
+            "created_time": "2025-08-09T20:05:50.727018"
         }
     ],
     "reviews": [
         {
-            "review_id": "80e8da6c-2ff9-440e-8dab-63108dc8367d",
+            "review_id": "4f504986-ba92-4175-92c1-f5a17a2410bf",
             "customer_id": "user_00055",
-            "product_id": "PROD_BOOK_001",
-            "rating": 5,
-            "review_title": "대만족!",
-            "review_content": "진심으로 추천합니다. 기대 이상의 효과를 봤어요.",
-            "created_at": "2024-11-03T14:00:03.216286",
+            "product_id": "01928",
+            "rating": 3,
+            "review_title": "Exceeded expectations",
+            "review_content": "Fast shipping and great quality. I especially love the details on Dough Bowl Candle 19½\" X 5½\" X 2\" 28oz.",
+            "created_at": "2024-11-16T20:52:52.182223",
             "is_deleted": false
         }
     ],
-    "subscriptions": [
+    "subscriptions": [],
+    "dialogues": [
         {
-            "subscription_id": "2a68c202-e20a-446b-9661-5ce86ac7d648",
-            "customer_id": "user_00055",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2023-12-09",
-            "end_date": "2024-11-03",
-            "status": "expired"
+            "Id": "02e53b65-4034-4d9d-acc6-b4af8a4609ac",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "UserId": "user_00055",
+            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the durability of the UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ (Product ID: 07482) and how it protects the items during travel?",
+            "CreatedTime": "2025-08-09T20:20:58.901753",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "89ebef1b-89d5-4f86-9b9d-b1a40974fa0a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "UserId": "user_00055",
+            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ is designed with durable, luggage-grade fabric that safeguards your RumbleSeat or Bassinet during travel. This high-quality material ensures that your items are protected from wear and tear while being transported. \n\nAdditionally, the bag features convenient inner pockets for storing the RumbleSeat bumper bar and adapter, which helps keep everything organized and secure. The comfortable carry handles and removable shoulder strap enhance versatility, making it easy to carry. Furthermore, the TravelSafe Program allows you to register your Travel Bag online, providing coverage for any damage incurred during air travel, giving you peace of mind while you travel.\n\nIf you're interested, the price of the UPPAbaby TravelSafe Travel Bag is $89.99. You can find more details and purchase it [here](https://www.aldeahome.com/products/bassinet-travel-bag).",
+            "CreatedTime": "2025-08-09T20:21:02.694589",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "deff5c47-33be-4b83-9254-0f70922182d1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "UserId": "user_00055",
+            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ (Product ID: 07482) is machine washable or how to clean it effectively?",
+            "CreatedTime": "2025-08-09T20:21:03.970858",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6d56fbb8-8678-47cc-9023-075dec370406",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "UserId": "user_00055",
+            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ is not specifically mentioned as machine washable. To clean it effectively, it's best to use a damp cloth or sponge with mild soap to wipe down the fabric. Avoid using harsh chemicals or abrasive cleaners, as they could damage the material. For any specific cleaning instructions or recommendations, please refer to the care guidelines provided by UPPAbaby. If you have further questions or need assistance, feel free to ask!",
+            "CreatedTime": "2025-08-09T20:21:06.516373",
+            "ItemId": "07482",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5a34ab11-0fa5-4c71-9ac4-5d8ea0ba5366",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "UserId": "user_00055",
+            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ (Product ID: 07482) comes with a warranty and what it covers?",
+            "CreatedTime": "2025-08-09T20:21:07.961658",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d7834101-6b78-4b1f-a2b8-c6da70bc0e7c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "UserId": "user_00055",
+            "session_id": "64a25114-f991-4e28-9fad-023fcf38cd59",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The UPPAbaby TravelSafe Travel Bag for Bassinet, RumbleSeat/ RumbleSeat V2/RumbleSeat V2+ does come with a warranty through the TravelSafe Program. When you register your Travel Bag online, the program covers any damage incurred to your RumbleSeat or Bassinet during air travel. This offers you peace of mind while traveling with your items. For more specific details about the warranty terms and coverage, it's always best to check directly with UPPAbaby or refer to their warranty policy. If you have any more questions, feel free to ask!",
+            "CreatedTime": "2025-08-09T20:21:10.692340",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
         }
     ],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.372975"
+    "profile_generated_at": "2025-08-09T20:54:53.201417"
 }

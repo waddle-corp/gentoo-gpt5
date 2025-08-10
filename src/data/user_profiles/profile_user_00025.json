@@ -1,161 +1,106 @@
 {
     "user_id": "user_00025",
-    "raw_engagement_score": 20,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 14,
     "activities": [
         {
-            "id": "da3478a9-4e54-4b4f-9fe8-1dea237e30d1",
+            "id": "91b789e9-29dc-4ac5-a412-6483bb0c7907",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00025",
-            "event_name": "search",
+            "event_name": "login",
             "event_data": {
-                "query": "건강식품",
-                "search_results_count": 5,
-                "filters_applied": []
+                "login_method": "social_kakao",
+                "ip_address": "192.168.40.254"
             },
-            "created_time": "2025-08-09T13:57:01.707830"
+            "created_time": "2025-08-09T20:05:50.680998"
         },
         {
-            "id": "56e97681-2619-48ed-921d-e2cc136bb5b2",
+            "id": "59092817-c9b2-4068-93ca-4b6a92bdf298",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00025",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.128.128"
+            },
+            "created_time": "2025-08-09T20:05:50.681002"
+        },
+        {
+            "id": "7647ee1d-1150-445d-8edb-ddfd164b7e22",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00025",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00025_681008",
+                "total_amount": 12.0,
+                "items": [
+                    {
+                        "product_id": "04084",
+                        "quantity": 1,
+                        "price": 12.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.681024"
+        },
+        {
+            "id": "40b595e7-c204-4dca-aac9-f47f1b4ff7bf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00025",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.66.214"
+            },
+            "created_time": "2025-08-09T20:05:50.681028"
+        },
+        {
+            "id": "95cfc69b-e4c2-4f4c-a034-d2ce2996b0de",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00025",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
+                "product_id": "03925",
                 "quantity": 3,
-                "price": 50000
+                "price": 7.5
             },
-            "created_time": "2025-08-09T13:57:01.707833"
-        },
-        {
-            "id": "dd238040-e394-4d83-8674-a8b531f4bb67",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00025",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
-                "category": "구독",
-                "product_name": "분기별 올리브유 구독 프리미엄",
-                "view_duration_seconds": 58
-            },
-            "created_time": "2025-08-09T13:57:01.707836"
-        },
-        {
-            "id": "7cbb49a4-6d46-4979-9bac-526dd94a7fb9",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00025",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
-                "category": "구독",
-                "product_name": "분기별 올리브유 구독 프리미엄",
-                "view_duration_seconds": 10
-            },
-            "created_time": "2025-08-09T13:57:01.707840"
+            "created_time": "2025-08-09T20:05:50.681033"
         }
     ],
     "reviews": [],
-    "subscriptions": [
-        {
-            "subscription_id": "f8b91852-c08f-4ec5-90e3-6b211451ac00",
-            "customer_id": "user_00025",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2024-04-27",
-            "end_date": "2025-01-22",
-            "status": "cancelled"
-        }
-    ],
+    "subscriptions": [],
     "dialogues": [
         {
-            "Id": "3a875361-f665-420a-a665-220186c7e0dc",
+            "Id": "9275d8da-dd57-4bc2-9a0d-26c4aa31dea7",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "4d75f987-2fa3-4387-abc1-31c57269ff25",
+            "DialogueId": "179ed3b3-097b-4a88-b682-3245a893c97f",
             "UserId": "user_00025",
-            "session_id": "4d75f987-2fa3-4387-abc1-31c57269ff25",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "이벤트는 없나요?",
-            "CreatedTime": "2025-08-09T14:30:05.470728",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "effe415c-72c7-403c-92aa-3735a86c8a3d",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "4d75f987-2fa3-4387-abc1-31c57269ff25",
-            "UserId": "user_00025",
-            "session_id": "4d75f987-2fa3-4387-abc1-31c57269ff25",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "현재 진행 중인 이벤트는 없습니다. 하지만 자주 업데이트되니, 홈페이지를 확인해 주시면 최신 소식을 받아보실 수 있습니다. 혹시 다른 궁금한 점이나 필요한 상품이 있으신가요? 예를 들어, 스페셜티 원두 커피 200g 같은 상품도 추천해 드릴 수 있습니다!",
-            "CreatedTime": "2025-08-09T14:30:07.106198",
-            "ItemId": "PROD_COFFEE_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "1061c231-be9d-4da8-ac12-3562ebdcbc7c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "4d75f987-2fa3-4387-abc1-31c57269ff25",
-            "UserId": "user_00025",
-            "session_id": "4d75f987-2fa3-4387-abc1-31c57269ff25",
+            "session_id": "179ed3b3-097b-4a88-b682-3245a893c97f",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "그렇군요! 다음에는 어떤 이벤트가 있을 예정인지 알 수 있을까요?",
-            "CreatedTime": "2025-08-09T14:30:07.787266",
+            "Content": "Is the recommended age of 6-7 years for The Pirate Skeleton Excavation Kit (Product ID: 00037) strictly enforced, or can it be suitable for younger children with supervision?",
+            "CreatedTime": "2025-08-09T20:17:42.253158",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "a6406ec7-26d9-4098-805e-83444af4c92c",
+            "Id": "cdea2823-178e-46ae-8a90-a8cf9c607b1d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "4d75f987-2fa3-4387-abc1-31c57269ff25",
+            "DialogueId": "179ed3b3-097b-4a88-b682-3245a893c97f",
             "UserId": "user_00025",
-            "session_id": "4d75f987-2fa3-4387-abc1-31c57269ff25",
+            "session_id": "179ed3b3-097b-4a88-b682-3245a893c97f",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "아직 구체적인 이벤트 일정은 공개되지 않았습니다. 하지만 저희 쇼핑몰에서는 주기적으로 다양한 이벤트를 진행하므로, 뉴스레터에 가입하시거나 홈페이지를 자주 방문하시면 정보를 빠르게 받아보실 수 있습니다. 다른 궁금한 점이나 필요한 상품이 있으시면 언제든지 말씀해 주세요! 예를 들어, 유기농 아카시아 꿀 1kg 같은 상품도 추천해 드릴 수 있습니다.",
-            "CreatedTime": "2025-08-09T14:30:10.361420",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e6f625f8-8b32-4da1-bb76-712c7b3c2ab5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "4d75f987-2fa3-4387-abc1-31c57269ff25",
-            "UserId": "user_00025",
-            "session_id": "4d75f987-2fa3-4387-abc1-31c57269ff25",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "다른 궁금한 점이나 필요한 상품이 있으시면 언제든지 말씀해 주세요! 예를 들어, 유기농 아카시아 꿀 1kg 같은 상품도 추천해 드릴 수 있습니다.",
-            "CreatedTime": "2025-08-09T14:30:11.510039",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "10c0a707-3b2d-4139-9a27-1ca4083785dd",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "4d75f987-2fa3-4387-abc1-31c57269ff25",
-            "UserId": "user_00025",
-            "session_id": "4d75f987-2fa3-4387-abc1-31c57269ff25",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "그럼요! 유기농 아카시아 꿀 1kg은 자연 그대로의 맛을 즐길 수 있는 훌륭한 선택입니다. 혹시 관심이 있으신가요, 아니면 다른 상품에 대해 궁금한 점이 있으신가요? 또한, '월간 북클럽 베이직' 구독 상품도 추천드릴 수 있습니다. 다양한 책을 매달 받아보면서 독서의 즐거움을 느껴보세요!",
-            "CreatedTime": "2025-08-09T14:30:13.816617",
-            "ItemId": null,
-            "Thumbs": null,
+            "Content": "The recommended age of 6-7 years for The Pirate Skeleton Excavation Kit is a guideline based on safety and the complexity of the activity. While it is designed for that age group, younger children may enjoy it with supervision from an adult to ensure safety and assist with the excavation process. Always consider the individual child's abilities and interests. \n\nFor more information, you can view the product here: [The Pirate Skeleton Excavation Kit](https://www.aldeahome.com/products/the-pirate-skeleton-excavation-kit) priced at $33.99.",
+            "CreatedTime": "2025-08-09T20:17:44.672268",
+            "ItemId": "00037",
+            "Thumbs": "down",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.322569"
+    "profile_generated_at": "2025-08-09T20:54:53.187725"
 }

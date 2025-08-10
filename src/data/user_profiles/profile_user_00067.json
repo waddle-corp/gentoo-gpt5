@@ -1,32 +1,87 @@
 {
     "user_id": "user_00067",
-    "raw_engagement_score": 0,
-    "normalized_engagement_score": 3,
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 18,
     "activities": [
         {
-            "id": "45ce6039-a12a-4a04-bd7e-bceea0d548be",
+            "id": "dae7ba5a-9a4b-4b74-a1c9-a3a05d052b04",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00067",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "quantity": 2,
-                "price": 35000
+                "product_id": "04788",
+                "quantity": 1,
+                "price": 22.0
             },
-            "created_time": "2025-08-09T13:57:01.708330"
+            "created_time": "2025-08-09T20:05:50.743912"
+        },
+        {
+            "id": "e708327c-79d7-4a0a-ab77-d20d11b653ea",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00067",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "05088",
+                "quantity": 2,
+                "price": 12.0
+            },
+            "created_time": "2025-08-09T20:05:50.743916"
+        },
+        {
+            "id": "3da2433e-6418-4769-ba68-3638479db3e4",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00067",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03618",
+                "category": "dinosaur",
+                "product_name": "Green T-Rex Holiday Ornament",
+                "price": 25.0,
+                "product_url": "https://www.aldeahome.com/products/green-t-rex-ornament-6l",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/60ede488df37b83e90da57f12f42e339d2a0391ae9d5817291ec2225ef52a189.jpg?v=1731947253",
+                "view_duration_seconds": 46
+            },
+            "created_time": "2025-08-09T20:05:50.743921"
+        },
+        {
+            "id": "d8d82298-6098-4468-be95-9cb12472af2b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00067",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00067_743928",
+                "total_amount": 29.5,
+                "items": [
+                    {
+                        "product_id": "03744",
+                        "quantity": 1,
+                        "price": 23.0
+                    },
+                    {
+                        "product_id": "05780",
+                        "quantity": 1,
+                        "price": 6.5
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.743942"
+        },
+        {
+            "id": "941ec0e5-cc02-428c-9b95-37b1a08b9524",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00067",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02746",
+                "quantity": 1,
+                "price": 14.99
+            },
+            "created_time": "2025-08-09T20:05:50.743946"
         }
     ],
     "reviews": [],
-    "subscriptions": [
-        {
-            "subscription_id": "f7526db4-1f7d-4be7-8bdd-b4cc1b17bfa4",
-            "customer_id": "user_00067",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2024-09-29",
-            "end_date": "2025-07-26",
-            "status": "cancelled"
-        }
-    ],
+    "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.393199"
+    "profile_generated_at": "2025-08-09T20:54:53.205926"
 }

@@ -1,138 +1,27 @@
 {
     "user_id": "user_00007",
-    "raw_engagement_score": 22,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 2,
+    "normalized_engagement_score": 2,
     "activities": [
         {
-            "id": "1a0c219d-82da-43f3-bd4f-08f40159878f",
+            "id": "e659808f-c446-4287-b06f-500cd9b61089",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00007",
-            "event_name": "login",
+            "event_name": "product_view",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.43.74"
+                "product_id": "07470",
+                "category": "single-stroller",
+                "product_name": "Veer Switch&Roll Stroller (Switchback Seat, &Roll Frame)",
+                "price": 986.0,
+                "product_url": "https://www.aldeahome.com/products/veer-switch-roll-stroller",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/Switch_Roll_Stroller_1-Colors_Gray_Granite_Switchback_Seat_Roll_Leather_Grips_Leather_Grips_for_Armbar-3400x3400.jpg?v=1748970701",
+                "view_duration_seconds": 98
             },
-            "created_time": "2025-08-09T13:57:01.707547"
-        },
-        {
-            "id": "2008ab4f-ef0f-4c05-b2a0-3dd678a51429",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00007",
-            "event_name": "search",
-            "event_data": {
-                "query": "건강식품",
-                "search_results_count": 2,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T13:57:01.707553"
+            "created_time": "2025-08-09T20:05:50.644753"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "72117eaf-0ce2-4142-a3cb-80983dc83435",
-            "customer_id": "user_00007",
-            "product_id": "PROD_OLIVE_001",
-            "rating": 1,
-            "review_title": "실망했어요",
-            "review_content": "프리미엄 엑스트라 버진 올리브유 500ml 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2024-12-26T14:00:03.216149",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "617d3131-5e09-4c6a-95f3-138be567cf33",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "UserId": "user_00007",
-            "session_id": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "책 구독 서비스에 대해 궁금합니다.",
-            "CreatedTime": "2025-08-09T14:28:37.325966",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "81667942-8e7d-4bf2-ae8b-6203ddab103c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "UserId": "user_00007",
-            "session_id": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "책 구독 서비스는 정기적으로 다양한 책을 제공받을 수 있는 서비스입니다. 보통 월 구독료를 지불하면 매달 새로운 책이 배송되거나 온라인에서 읽을 수 있는 형식입니다. 장르나 테마를 선택할 수 있는 경우가 많아 개인의 취향에 맞춘 책을 추천받을 수 있습니다. \n\n추가적으로 궁금한 점이나 특정 서비스에 대해 알고 싶으신 점이 있다면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:28:39.463403",
-            "ItemId": "PROD_OLIVE_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "03f29afd-1dce-42d1-b924-bd2c2837ce9b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "UserId": "user_00007",
-            "session_id": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "어떤 종류의 책을 주로 제공하나요? 그리고 구독 기간은 어떻게 되나요?",
-            "CreatedTime": "2025-08-09T14:28:40.188427",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "dc6bff74-0a41-411c-ada0-e0b962dc1598",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "UserId": "user_00007",
-            "session_id": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "책 구독 서비스에서는 주로 소설, 비소설, 자기계발서, 판타지, 역사, 과학 등 다양한 장르의 책을 제공합니다. 서비스에 따라 매달 테마를 정해 특정한 장르나 주제로 구성된 책을 받을 수도 있습니다.\n\n구독 기간은 보통 한 달 단위로 제공되며, 원하시는 경우 여러 달을 미리 결제하고 구독할 수도 있습니다. '월간 북클럽 베이직'과 같은 서비스는 매달 새로운 책을 제공하며, 다양한 장르의 책을 경험해볼 수 있는 좋은 기회를 제공합니다. 추가적인 질문이 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:28:42.830605",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "245067a1-e5b9-4d4b-b383-1e8fa91181e5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "UserId": "user_00007",
-            "session_id": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "구독 서비스의 가격은 어떻게 되나요? 그리고 구독 해지가 가능하나요?",
-            "CreatedTime": "2025-08-09T14:28:43.543692",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "4b4fc9d2-5b56-455d-bc8f-50905a2da25e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "UserId": "user_00007",
-            "session_id": "b127688e-d52f-4ee7-8987-0a05ccd010a5",
-            "Intent": "일반",
-            "Role": "assistant",
-            "Content": "책 구독 서비스의 가격은 서비스 제공 업체에 따라 다르지만, 보통 월 구독료는 10,000원에서 30,000원 사이에 형성되어 있습니다. 고급 서비스나 특별한 테마의 경우 가격이 더 높을 수 있습니다.\n\n구독 해지는 대부분의 서비스에서 가능합니다. 해지 방법은 보통 온라인 계정에서 직접 처리할 수 있으며, 구독 기간 중 언제든지 해지할 수 있도록 유연하게 운영됩니다. 다만, 해지 정책은 각 서비스마다 다를 수 있으니, 구독 전에 약관을 확인하는 것이 좋습니다.\n\n더 궁금한 점이 있으시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:28:46.408151",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.286385"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.178819"
 }

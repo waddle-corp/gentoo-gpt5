@@ -1,180 +1,160 @@
 {
     "user_id": "user_00097",
-    "raw_engagement_score": 36,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 20,
     "activities": [
         {
-            "id": "9ff26ed6-cf97-4bf3-8772-e09341017d36",
+            "id": "e267ea7d-c2e1-4529-a8d1-a4a1b09dd513",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00097",
-            "event_name": "login",
+            "event_name": "search",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.87.119"
+                "query": "Pachat & his Friends. 24 pieces",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T13:57:01.709186"
+            "created_time": "2025-08-09T20:05:50.793518"
         },
         {
-            "id": "7df40f6f-ea7b-4755-a2dd-404b0512db05",
+            "id": "feaef357-e387-4e61-b02a-a0d426d06126",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00097",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00097_709188",
-                "total_amount": 75000,
+                "order_id": "ORDER_user_00097_793529",
+                "total_amount": 93.74,
                 "items": [
                     {
-                        "product_id": "PROD_OLIVE_001",
+                        "product_id": "01911",
                         "quantity": 1,
-                        "price": 25000
+                        "price": 69.75
                     },
                     {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "product_id": "05292",
                         "quantity": 1,
-                        "price": 50000
+                        "price": 23.99
                     }
                 ],
-                "payment_method": "naver_pay"
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T13:57:01.709192"
+            "created_time": "2025-08-09T20:05:50.793542"
         },
         {
-            "id": "fdee97f0-6f2e-40c2-bb49-022ae16b57a5",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00097",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "category": "자기계발",
-                "product_name": "성공하는 사람들의 7가지 습관",
-                "view_duration_seconds": 31
-            },
-            "created_time": "2025-08-09T13:57:01.709195"
-        },
-        {
-            "id": "2e486f0d-4db9-4668-b343-6ed038ce92b1",
+            "id": "a1e8bd19-4e52-461e-a2ea-45f0fde6f4b7",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00097",
             "event_name": "login",
             "event_data": {
                 "login_method": "email_password",
-                "ip_address": "192.168.145.20"
+                "ip_address": "192.168.230.151"
             },
-            "created_time": "2025-08-09T13:57:01.709199"
-        },
-        {
-            "id": "6ffb6446-ed3c-44be-a316-ed76c7ffb183",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00097",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00097_709201",
-                "total_amount": 18000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_001",
-                        "quantity": 1,
-                        "price": 18000
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T13:57:01.709205"
+            "created_time": "2025-08-09T20:05:50.793547"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "a609f25d-cdcf-46e5-991c-0fcb63adc65a",
+            "customer_id": "user_00097",
+            "product_id": "03416",
+            "rating": 1,
+            "review_title": "Disappointed",
+            "review_content": "The quality of The Garden wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2024-10-31T20:52:52.182350",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "8400e30e-5ea9-4308-83d1-da99335e0205",
+            "Id": "b44812ba-74bc-49c9-b130-e88c9d5f01b5",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "76a244a7-364d-437e-a35f-650d07336824",
+            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
             "UserId": "user_00097",
-            "session_id": "76a244a7-364d-437e-a35f-650d07336824",
+            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Wooden Milestone Age Blocks (Product ID: 03199) are available in both pink and gray colors?",
+            "CreatedTime": "2025-08-09T20:24:39.930184",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "339db9df-b12a-4369-b138-631f2f8eb9b6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "UserId": "user_00097",
+            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
             "Intent": "정보",
-            "Role": "user",
-            "Content": "책 구독 서비스에 대해 궁금합니다.",
-            "CreatedTime": "2025-08-09T14:36:03.661732",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "1b4cbc79-65b8-4652-b932-4ec64f0ba82b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "76a244a7-364d-437e-a35f-650d07336824",
-            "UserId": "user_00097",
-            "session_id": "76a244a7-364d-437e-a35f-650d07336824",
-            "Intent": "추천",
             "Role": "assistant",
-            "Content": "책 구독 서비스는 정기적으로 다양한 책을 배송받거나 온라인으로 읽을 수 있는 서비스입니다. 보통 매달 정해진 요금으로 이용할 수 있으며, 특정 장르나 주제를 선택할 수 있는 경우도 많습니다. \n\n이와 함께, 독서와 관련된 스낵이나 음료도 함께 즐기기 좋습니다. 예를 들어, 독서 시간에 함께할 수 있는 '유기농 아카시아 꿀 1kg'를 추천드립니다. 자연의 맛을 느끼며 책을 읽는 즐거움을 더해줄 수 있습니다! 추가적인 질문이 있으시면 언제든지 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:36:06.256779",
-            "ItemId": "PROD_HONEY_001",
+            "Content": "Yes, the Wooden Milestone Age Blocks are available in both pink and gray colors. You can choose your preferred color option for these blocks. If you're interested in purchasing them, they are priced at $24.99. You can find more information and make a purchase at this [link](https://www.aldeahome.com/products/wooden-milestone-age-blocks).",
+            "CreatedTime": "2025-08-09T20:24:41.506040",
+            "ItemId": "03199",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "cea1e257-30ec-4ea4-94fa-2c359077c640",
+            "Id": "3a2a65b7-5b81-4b74-8f19-7ba1a5c31465",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "76a244a7-364d-437e-a35f-650d07336824",
+            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
             "UserId": "user_00097",
-            "session_id": "76a244a7-364d-437e-a35f-650d07336824",
-            "Intent": "추천",
+            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "어떤 종류의 책을 주로 읽으시나요? 특정 장르나 작가가 있으신가요?",
-            "CreatedTime": "2025-08-09T14:36:07.047257",
+            "Content": "Do the Wooden Milestone Age Blocks (Product ID: 03199) come with any additional accessories or just the three blocks?",
+            "CreatedTime": "2025-08-09T20:24:42.244343",
             "ItemId": null,
-            "Thumbs": null,
+            "Thumbs": "down",
             "Channel": "web"
         },
         {
-            "Id": "d37776da-d804-4422-9c03-fa98c381cdc4",
+            "Id": "3abcaae7-1b2f-4bc0-870e-10e48a09030b",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "76a244a7-364d-437e-a35f-650d07336824",
+            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
             "UserId": "user_00097",
-            "session_id": "76a244a7-364d-437e-a35f-650d07336824",
-            "Intent": "추천",
+            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "저는 다양한 장르의 책을 추천할 수 있어요! 고객님이 좋아하는 장르나 작가에 따라 맞춤형 추천이 가능합니다. 예를 들어, 소설, 자기계발서, 판타지, 역사서 등 여러 가지가 있습니다. 특정 작가나 주제가 있다면 말씀해 주시면 더 구체적으로 도움을 드릴 수 있습니다! 어떤 종류의 책에 관심이 있으신가요?",
-            "CreatedTime": "2025-08-09T14:36:09.175027",
-            "ItemId": "PROD_HONEY_001",
+            "Content": "The Wooden Milestone Age Blocks come with three blocks: two small number blocks and one larger milestone block. There are no additional accessories included with the product. If you're interested in these blocks, they are priced at $24.99. You can find more details and purchase them at this [link](https://www.aldeahome.com/products/wooden-milestone-age-blocks).",
+            "CreatedTime": "2025-08-09T20:24:43.897847",
+            "ItemId": "03199",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "c3463d24-c424-436d-8a54-88013b87e2f0",
+            "Id": "e3642f5f-dd28-4d68-8d66-03bd8e82b9a0",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "76a244a7-364d-437e-a35f-650d07336824",
+            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
             "UserId": "user_00097",
-            "session_id": "76a244a7-364d-437e-a35f-650d07336824",
-            "Intent": "탐색",
+            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "저는 주로 판타지와 과학 소설을 좋아해요. 추천할 만한 책이 있을까요?",
-            "CreatedTime": "2025-08-09T14:36:10.063331",
+            "Content": "Are the Wooden Milestone Age Blocks (Product ID: 03199) made from natural wood, and is there any finish on them that might affect their safety for babies?",
+            "CreatedTime": "2025-08-09T20:24:44.853903",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "dd1dd1b8-3873-4540-8e6c-959b7be5babf",
+            "Id": "edbc795d-4d4d-483d-b344-09ef6848ed9e",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "76a244a7-364d-437e-a35f-650d07336824",
+            "DialogueId": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
             "UserId": "user_00097",
-            "session_id": "76a244a7-364d-437e-a35f-650d07336824",
-            "Intent": "추천",
+            "session_id": "8faf8bc0-d0ef-4bc7-9879-afcecb80f117",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "판타지와 과학 소설을 좋아하신다면, 다음과 같은 책을 추천드립니다:\n\n1. **판타지**: \"왕좌의 게임\" (조지 R.R. 마틴) - 복잡한 캐릭터와 긴장감 넘치는 줄거리로 유명한 판타지 대작입니다.\n2. **과학 소설**: \"Dune\" (프랭크 허버트) - 정치, 종교, 생태학이 얽힌 이야기를 통해 거대한 우주를 탐험하는 소설입니다.\n\n이외에도 독서할 때 간단한 스낵이나 음료가 함께하면 좋습니다. 예를 들어, '스페셜티 원두 커피 200g'를 곁들여 읽으시면 더욱 즐거운 독서 시간이 될 것입니다! 추가적인 추천이 필요하시면 언제든지 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:36:14.897784",
-            "ItemId": null,
+            "Content": "The product description does not specify the type of wood or any finishes used on the Wooden Milestone Age Blocks (Product ID: 03199). However, since they are designed for use with babies and for taking milestone pictures, they are typically made with safety in mind. It is advisable to check the product details on the retailer's website or contact them directly for specific information regarding materials and finishes to ensure safety for babies. If you're interested in purchasing the blocks, they are priced at $24.99, and you can find more information at this [link](https://www.aldeahome.com/products/wooden-milestone-age-blocks).",
+            "CreatedTime": "2025-08-09T20:24:47.320590",
+            "ItemId": "03199",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.440908"
+    "profile_generated_at": "2025-08-09T20:54:53.213793"
 }

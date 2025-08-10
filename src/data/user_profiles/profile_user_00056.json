@@ -1,124 +1,141 @@
 {
     "user_id": "user_00056",
-    "raw_engagement_score": 19,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 14,
     "activities": [
         {
-            "id": "44a40ee4-f1b9-4dd5-b5e3-2bcfd94ee2e6",
+            "id": "56b7122e-ef77-452a-b60e-d2305df4e61c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00056",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "05562",
+                "category": "exclude",
+                "product_name": "Maxi-Cosi Vehicle Seat Protector",
+                "price": 54.99,
+                "product_url": "https://www.aldeahome.com/products/maxi-cosi-vehicle-seat-protector",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/TS375EMJ_VehicleSeat_Protector_Bty_L_092220_1_1_d0b51021-b38a-4976-b415-9eb84ae6c3d4.jpg?v=1716651857",
+                "view_duration_seconds": 29
+            },
+            "created_time": "2025-08-09T20:05:50.727024"
+        },
+        {
+            "id": "a1367ba4-10c6-49f0-94e3-3ee57b3c5cfa",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00056",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02334",
+                "quantity": 3,
+                "price": 6.0
+            },
+            "created_time": "2025-08-09T20:05:50.727030"
+        },
+        {
+            "id": "70c458f9-dcaf-49c4-ba8a-6ffc7308cbc4",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00056",
             "event_name": "login",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.53.59"
+                "login_method": "email_password",
+                "ip_address": "192.168.53.123"
             },
-            "created_time": "2025-08-09T13:57:01.708194"
+            "created_time": "2025-08-09T20:05:50.727034"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "beb153d0-e13a-40ae-8f23-a1331cfa6a0f",
-            "customer_id": "user_00056",
-            "product_id": "PROD_OLIVE_001",
-            "rating": 2,
-            "review_title": "실망했어요",
-            "review_content": "프리미엄 엑스트라 버진 올리브유 500ml 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2025-02-25T14:00:03.216290",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "409a238d-8ec2-4705-9590-fd2d3597203d",
+            "Id": "2d157f2c-e5fc-4922-a68f-4d9a398f94e4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
+            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
             "UserId": "user_00056",
-            "session_id": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
-            "Intent": "탐색",
+            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "안녕하세요. 좋은 올리브유 추천 좀 해주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:32:16.461031",
+            "Content": "Can you tell me more about the size and color options available for the French Bulldog - 100304 (Product ID: 05064)?",
+            "CreatedTime": "2025-08-09T20:21:11.462418",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "f5f2a10d-c072-4cd0-ba54-24849b6500d5",
+            "Id": "5a6d4308-7b3e-492e-b2b2-5214df1467c9",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
+            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
             "UserId": "user_00056",
-            "session_id": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
-            "Intent": "추천",
+            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "안녕하세요! 좋은 올리브유를 찾고 계시군요. 저희 쇼핑몰에서는 고급 엑스트라 버진 올리브유를 추천드립니다. 이 제품은 풍부한 향과 깔끔한 맛이 특징이며, 샐러드 드레싱이나 요리에 활용하기 좋습니다. \n\n또한, 올리브유와 함께 읽기 좋은 베스트셀러 소설 '시간의 틈새'도 추천드려요. 요리하면서 즐거운 독서 시간도 가져보세요! 필요하신 정보나 다른 추천이 필요하시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:32:19.051565",
+            "Content": "I'm sorry, but I can only provide information about the 'twisty stix oil pastels'. The twisty stix oil pastels are priced at $7.95 and come in twelve vibrant colors, perfect for coloring, drawing, and blending. If you have any questions about the twisty stix oil pastels or need assistance with that product, feel free to ask! You can find more details and purchase them [here](https://www.aldeahome.com/products/twisty-stix-oil-pastels).",
+            "CreatedTime": "2025-08-09T20:21:13.587394",
+            "ItemId": "00304",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "611a1c32-2b6a-4096-a2ea-cc277b06ac20",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "UserId": "user_00056",
+            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are the twisty stix oil pastels (Product ID: 00304) suitable for beginners, or are they more geared towards experienced artists?",
+            "CreatedTime": "2025-08-09T20:21:14.560817",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "068576b4-d3da-49fa-8e8a-fe26af458a68",
+            "Id": "db40f88d-9855-4115-bf22-5697c9ebd1e0",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
+            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
             "UserId": "user_00056",
-            "session_id": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "엑스트라 버진 올리브유는 어떤 브랜드가 좋을까요?",
-            "CreatedTime": "2025-08-09T14:32:20.056897",
-            "ItemId": null,
+            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The twisty stix oil pastels are suitable for both beginners and experienced artists. They offer a no-mess solution to traditional oil pastels, making them easy to use for those just starting out. Additionally, their smooth coloring and blending capabilities cater to more experienced artists as well. Overall, they are versatile and can enhance any artist's creative experience. If you're interested, they are priced at $7.95. You can find more information and purchase them [here](https://www.aldeahome.com/products/twisty-stix-oil-pastels).",
+            "CreatedTime": "2025-08-09T20:21:17.022799",
+            "ItemId": "00304",
             "Thumbs": "up",
             "Channel": "web"
         },
         {
-            "Id": "ec33fee8-c121-4f91-b104-ecaa4fc0d4b3",
+            "Id": "be9b04de-b883-4bd0-b88b-99485475fcfb",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
+            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
             "UserId": "user_00056",
-            "session_id": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "엑스트라 버진 올리브유의 경우, 몇 가지 추천할 만한 브랜드가 있습니다:\n\n1. **포르투갈의 \"Gallo\"** - 품질이 뛰어나고 다양한 요리에 잘 어울리는 올리브유입니다.\n2. **이탈리아의 \"Colavita\"** - 깊고 풍부한 맛이 특징이며, 샐러드 드레싱이나 파스타 요리에 좋습니다.\n3. **스페인의 \"Bertolli\"** - 균형 잡힌 맛으로 다양한 요리에 활용할 수 있어 인기 있는 브랜드입니다.\n\n각 브랜드마다 특징이 다르니, 요리에 맞는 제품을 선택하시면 좋습니다! 필요하신 다른 정보나 추천이 있다면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:32:22.857441",
-            "ItemId": null,
-            "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "1709ffd2-72a2-430a-a7f9-9d0f04fb311b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
-            "UserId": "user_00056",
-            "session_id": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
-            "Intent": "탐색",
+            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "혹시 이 브랜드들 중에서 어떤 제품이 가장 유명한지 알고 계신가요? 리뷰나 추천이 많아서 선택하는 데 도움이 될 것 같아요.",
-            "CreatedTime": "2025-08-09T14:32:23.949429",
+            "Content": "Do the twisty stix oil pastels (Product ID: 00304) come with any special storage or packaging options to keep them organized?",
+            "CreatedTime": "2025-08-09T20:21:18.298181",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "f657d843-3e50-47ec-b3c4-6bbf5be9b9e7",
+            "Id": "7ab20e08-dcc0-4569-9daa-dc87af8da3c6",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
+            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
             "UserId": "user_00056",
-            "session_id": "abd8803f-b3dd-4f55-b7c2-3fc2c0ac1fc7",
-            "Intent": "추천",
+            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "네, 각 브랜드에서 특히 유명한 제품이 있습니다:\n\n1. **Gallo** - \"Gallo Extra Virgin Olive Oil\"은 풍부한 향과 맛으로 많은 사랑을 받고 있으며, 다양한 요리에 적합합니다. 리뷰에서도 좋은 평가를 받고 있습니다.\n\n2. **Colavita** - \"Colavita Extra Virgin Olive Oil\"은 신선한 맛과 높은 품질로 유명합니다. 특히 샐러드와 파스타에 잘 어울린다는 리뷰가 많습니다.\n\n3. **Bertolli** - \"Bertolli Extra Virgin Olive Oil\"은 대중적으로 많이 알려져 있으며, 다양한 요리에 사용하기 좋다는 점에서 추천을 많이 받습니다.\n\n이 제품들은 모두 높은 품질을 자랑하며, 고객 리뷰에서도 긍정적인 평가가 많습니다. 선택하시는데 도움이 되시길 바랍니다! 추가 질문이 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:32:26.531602",
-            "ItemId": null,
+            "Content": "The twisty stix oil pastels do not have specific details about special storage or packaging options mentioned, but their twist-up action design makes them easy to store and use, helping to keep your hands clean. This design also allows for convenient organization, as they can be easily kept in a drawer or art supply case. If you're looking for a neat way to manage your art supplies, the twisty stix oil pastels themselves are a practical choice. They are priced at $7.95, and you can view more details or purchase them [here](https://www.aldeahome.com/products/twisty-stix-oil-pastels).",
+            "CreatedTime": "2025-08-09T20:21:21.167549",
+            "ItemId": "00304",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.374667"
+    "profile_generated_at": "2025-08-09T20:54:53.202032"
 }

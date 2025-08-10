@@ -1,161 +1,96 @@
 {
     "user_id": "user_00074",
-    "raw_engagement_score": 41,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "02c75957-8b61-423c-ab4a-6e6d1cab58ed",
+            "id": "798c902a-df95-48d8-bdf0-79d75513840e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00074",
-            "event_name": "add_to_cart",
+            "event_name": "login",
             "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
-                "quantity": 3,
-                "price": 70000
+                "login_method": "social_kakao",
+                "ip_address": "192.168.115.169"
             },
-            "created_time": "2025-08-09T13:57:01.708400"
+            "created_time": "2025-08-09T20:05:50.751289"
         },
         {
-            "id": "fe1d44e4-ad47-4acf-9709-6759c07068b3",
+            "id": "709b94fd-df6f-429e-983a-754630661acc",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00074",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00074_708402",
-                "total_amount": 53000,
+                "order_id": "ORDER_user_00074_751292",
+                "total_amount": 7.95,
                 "items": [
                     {
-                        "product_id": "PROD_OLIVE_002",
+                        "product_id": "04786",
                         "quantity": 1,
-                        "price": 35000
-                    },
-                    {
-                        "product_id": "PROD_BOOK_001",
-                        "quantity": 1,
-                        "price": 18000
+                        "price": 7.95
                     }
                 ],
-                "payment_method": "credit_card"
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708406"
+            "created_time": "2025-08-09T20:05:50.751297"
         },
         {
-            "id": "b0c3951d-63bf-4f4a-b293-574019537e80",
+            "id": "c4ea996c-d7c6-4055-9f32-e336931b753e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00074",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "quantity": 2,
-                "price": 18000
+                "product_id": "01625",
+                "quantity": 1,
+                "price": 16.99
             },
-            "created_time": "2025-08-09T13:57:01.708409"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-09T20:05:50.751302"
+        },
         {
-            "review_id": "2d15f2d4-3b33-4d25-b6ff-eed5857f962f",
-            "customer_id": "user_00074",
-            "product_id": "PROD_BOOK_002",
-            "rating": 5,
-            "review_title": "정말 좋아요!",
-            "review_content": "성공하는 사람들의 7가지 습관은 최고입니다! 왜 이제 알았을까요.",
-            "created_at": "2025-05-14T14:00:03.216326",
-            "is_deleted": false
+            "id": "6397e0e3-35a6-48dc-97ef-948ee361ac83",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00074",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07818",
+                "quantity": 1,
+                "price": 18.95
+            },
+            "created_time": "2025-08-09T20:05:50.751306"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "01c68621-fc65-4246-bf00-4524a3d8779c",
+            "Id": "5f544c40-6ccc-4b9f-ab66-f6695839bf82",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "fafefb86-124a-4917-a669-f8779bc44eb9",
+            "DialogueId": "8483f7f6-c89e-4e5b-9d0a-892a693994b0",
             "UserId": "user_00074",
-            "session_id": "fafefb86-124a-4917-a669-f8779bc44eb9",
+            "session_id": "8483f7f6-c89e-4e5b-9d0a-892a693994b0",
             "Intent": "일반",
             "Role": "user",
-            "Content": "유기농 제품도 있나요?",
-            "CreatedTime": "2025-08-09T14:33:29.068540",
+            "Content": "Can you tell me if the Sherpa Wash Cloths 12 pk (Product ID: 02638) are machine washable and how durable they are for everyday use?",
+            "CreatedTime": "2025-08-09T20:23:02.656886",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "0f8f253b-f7f2-4e87-8743-fc95d4ea3b84",
+            "Id": "18420122-7fc4-4755-b8b1-9ee0155fbeef",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "fafefb86-124a-4917-a669-f8779bc44eb9",
+            "DialogueId": "8483f7f6-c89e-4e5b-9d0a-892a693994b0",
             "UserId": "user_00074",
-            "session_id": "fafefb86-124a-4917-a669-f8779bc44eb9",
-            "Intent": "추천",
+            "session_id": "8483f7f6-c89e-4e5b-9d0a-892a693994b0",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "네, 저희 쇼핑몰에서는 유기농 제품도 다양하게 구비되어 있습니다. 식품, 스킨케어 등 여러 카테고리에서 유기농 제품을 찾아보실 수 있습니다. 특히, 스페셜티 원두 커피 200g도 유기농 원두로 만들어져 있어 추천드립니다! 추가로 궁금한 점이 있으시면 언제든지 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:33:31.145167",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "94d13058-f492-4eae-b74f-344ec13c0794",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "fafefb86-124a-4917-a669-f8779bc44eb9",
-            "UserId": "user_00074",
-            "session_id": "fafefb86-124a-4917-a669-f8779bc44eb9",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "유기농 스킨케어 제품도 있나요?",
-            "CreatedTime": "2025-08-09T14:33:31.770421",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "1f7233b0-4a9d-44ae-a91c-050f48f942b9",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "fafefb86-124a-4917-a669-f8779bc44eb9",
-            "UserId": "user_00074",
-            "session_id": "fafefb86-124a-4917-a669-f8779bc44eb9",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "네, 저희 쇼핑몰에서는 유기농 스킨케어 제품도 여러 가지 있습니다. 천연 성분으로 만들어진 크림, 세럼, 클렌저 등 다양한 제품을 만나보실 수 있습니다. 피부 타입에 맞는 제품을 추천해 드릴 수 있으니, 필요하신 경우 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:33.347446",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "c30ed3e5-b74e-4c6c-8a64-a1d6e9de6cc2",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "fafefb86-124a-4917-a669-f8779bc44eb9",
-            "UserId": "user_00074",
-            "session_id": "fafefb86-124a-4917-a669-f8779bc44eb9",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "어떤 피부 타입에 맞는 유기농 스킨케어 제품을 추천해 주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:33:34.169315",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "dbf1df56-b71d-4384-8c01-37e7494f4b55",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "fafefb86-124a-4917-a669-f8779bc44eb9",
-            "UserId": "user_00074",
-            "session_id": "fafefb86-124a-4917-a669-f8779bc44eb9",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "물론입니다! 피부 타입에 따라 추천드리는 유기농 스킨케어 제품은 다음과 같습니다:\n\n1. **건성 피부**: 유기농 보습 크림이나 오일이 포함된 제품을 추천합니다. 예를 들어, 유기농 아보카도 오일이나 시어버터가 들어간 제품이 좋습니다.\n\n2. **지성 피부**: 유기농 로즈마리나 티트리 오일이 포함된 제품을 선택하시면 좋습니다. 가벼운 젤 타입의 보습제도 추천드립니다.\n\n3. **복합성 피부**: 유기농 알로에 베라가 포함된 제품이나, 수분 공급과 유분 조절이 가능한 제품이 적합합니다.\n\n4. **민감성 피부**: 유기농 카모마일이나 오트밀이 포함된 제품을 추천합니다. 자극이 적고 진정 효과가 있는 제품이 좋습니다.\n\n구체적인 제품을 원하시면, 저희 쇼핑몰에서 피부 타입을 선택하시면 더 많은 옵션을 확인하실 수 있습니다. 추가 문의 사항이 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:39.151447",
+            "Content": "The Sherpa Wash Cloths 12 pk are made of organic Egyptian cotton, which makes them gentle enough for everyday use on your baby's skin. While the product information does not explicitly mention machine washability, organic cotton washcloths are typically machine washable and durable for regular use. \n\nFor more details or to purchase, you can check the product here: [Sherpa Wash Cloths 12 pk - $22.95](https://www.aldeahome.com/products/sherpa-wash-cloths-12-pk).",
+            "CreatedTime": "2025-08-09T20:23:05.156377",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.404608"
+    "profile_generated_at": "2025-08-09T20:54:53.207891"
 }

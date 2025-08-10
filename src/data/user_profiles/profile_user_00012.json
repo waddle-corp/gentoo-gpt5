@@ -1,42 +1,46 @@
 {
     "user_id": "user_00012",
-    "raw_engagement_score": 12,
-    "normalized_engagement_score": 7,
+    "raw_engagement_score": 15,
+    "normalized_engagement_score": 10,
     "activities": [
         {
-            "id": "932e365c-0613-4e04-b183-483ebf983059",
+            "id": "08d92156-a7d4-4312-a323-db0c7cb14ec8",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00012",
-            "event_name": "login",
+            "event_name": "add_to_cart",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.22.208"
+                "product_id": "05247",
+                "quantity": 2,
+                "price": 24.95
             },
-            "created_time": "2025-08-09T13:57:01.707638"
+            "created_time": "2025-08-09T20:05:50.652040"
+        },
+        {
+            "id": "ac644d2e-0704-4319-848b-5a8d34425258",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00012",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07626",
+                "quantity": 2,
+                "price": 25.0
+            },
+            "created_time": "2025-08-09T20:05:50.652052"
         }
     ],
     "reviews": [
         {
-            "review_id": "8ebf7093-0e20-413a-a4e1-d8ee88d05ae7",
+            "review_id": "6e014d42-48e5-41fb-b411-4b67574ccc8c",
             "customer_id": "user_00012",
-            "product_id": "PROD_BOOK_002",
-            "rating": 2,
-            "review_title": "비추천합니다",
-            "review_content": "성공하는 사람들의 7가지 습관 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2024-10-09T14:00:03.216171",
+            "product_id": "01513",
+            "rating": 1,
+            "review_title": "Below expectations",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-05-06T20:52:52.182077",
             "is_deleted": false
         }
     ],
-    "subscriptions": [
-        {
-            "subscription_id": "a7e9b27f-bc7f-4c7f-8de2-96d47af8c0a7",
-            "customer_id": "user_00012",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "start_date": "2025-08-06",
-            "end_date": "2027-10-25",
-            "status": "paused"
-        }
-    ],
+    "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.297499"
+    "profile_generated_at": "2025-08-09T20:54:53.181566"
 }

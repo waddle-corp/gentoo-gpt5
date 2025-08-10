@@ -1,182 +1,115 @@
 {
     "user_id": "user_00077",
-    "raw_engagement_score": 40,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 33,
+    "normalized_engagement_score": 22,
     "activities": [
         {
-            "id": "812148a9-513d-43e3-812b-8e682804e968",
+            "id": "31df217b-12b6-47bb-be2d-959cf865d9cf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00077",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00077_753833",
+                "total_amount": 55.0,
+                "items": [
+                    {
+                        "product_id": "06968",
+                        "quantity": 1,
+                        "price": 20.0
+                    },
+                    {
+                        "product_id": "07058",
+                        "quantity": 1,
+                        "price": 35.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.753838"
+        },
+        {
+            "id": "34cfcbbf-183a-4703-b512-6e0119cf7708",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00077",
             "event_name": "search",
             "event_data": {
-                "query": "건강식품",
+                "query": "Little Artist Board Book Set",
                 "search_results_count": 1,
                 "filters_applied": [
                     "리뷰 많은 순"
                 ]
             },
-            "created_time": "2025-08-09T13:57:01.708466"
+            "created_time": "2025-08-09T20:05:50.756214"
         },
         {
-            "id": "1c3e14a1-16fe-4781-9a4e-ce39e808ea01",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00077",
-            "event_name": "search",
-            "event_data": {
-                "query": "건강식품",
-                "search_results_count": 14,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T13:57:01.708470"
-        },
-        {
-            "id": "e6e318f5-a81e-4162-b40d-153dee5898a4",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00077",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.174.217"
-            },
-            "created_time": "2025-08-09T13:57:01.708473"
-        },
-        {
-            "id": "ff63cbe6-fc4e-4c6f-871e-2d860aab6353",
+            "id": "51b324cd-4872-44eb-80f7-49e4e1c30285",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00077",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00077_708476",
-                "total_amount": 70000,
+                "order_id": "ORDER_user_00077_756220",
+                "total_amount": 51.95,
                 "items": [
                     {
-                        "product_id": "SUB_OLIVE_PREMIUM",
+                        "product_id": "05135",
                         "quantity": 1,
-                        "price": 70000
+                        "price": 30.0
+                    },
+                    {
+                        "product_id": "02485",
+                        "quantity": 1,
+                        "price": 21.95
                     }
                 ],
                 "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T13:57:01.708481"
-        },
-        {
-            "id": "ca7e42fa-e19c-46c9-b507-4d3498a0d1f4",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00077",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "category": "구독",
-                "product_name": "월간 북클럽 베이직",
-                "view_duration_seconds": 50
-            },
-            "created_time": "2025-08-09T13:57:01.708484"
+            "created_time": "2025-08-09T20:05:50.756227"
         }
     ],
     "reviews": [
         {
-            "review_id": "f009cce3-df25-41d8-af0b-a90963ff3fe2",
+            "review_id": "e13808eb-8ae8-43be-bcfc-eae62e9fc5d2",
             "customer_id": "user_00077",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "rating": 5,
-            "review_title": "인생템 등극",
-            "review_content": "분기별 올리브유 구독 프리미엄은 최고입니다! 왜 이제 알았을까요.",
-            "created_at": "2025-01-31T14:00:03.216340",
+            "product_id": "05684",
+            "rating": 2,
+            "review_title": "Do not recommend",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-02-27T20:52:52.182295",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "586ca35c-ba85-4ff4-a30c-d702cdd23209",
+            "Id": "8b8c79d4-a1bc-43e1-8e8a-42ccb8b9c609",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
+            "DialogueId": "b2642bf2-ad4b-44f9-b475-e5e6096037a5",
             "UserId": "user_00077",
-            "session_id": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
+            "session_id": "b2642bf2-ad4b-44f9-b475-e5e6096037a5",
             "Intent": "일반",
             "Role": "user",
-            "Content": "유기농 제품도 있나요?",
-            "CreatedTime": "2025-08-09T14:33:39.151596",
+            "Content": "Can you tell me if the Trails Cushion (Product ID: 03207) comes with a cushion fill, or do I need to purchase it separately?",
+            "CreatedTime": "2025-08-09T20:23:17.556606",
             "ItemId": null,
-            "Thumbs": "down",
+            "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "5d4ba8a4-97c4-40b8-8fc9-c298e0d79e15",
+            "Id": "1d72fcb3-c2a8-4587-bda8-447e4731abac",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
+            "DialogueId": "b2642bf2-ad4b-44f9-b475-e5e6096037a5",
             "UserId": "user_00077",
-            "session_id": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
+            "session_id": "b2642bf2-ad4b-44f9-b475-e5e6096037a5",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "네, 저희 쇼핑몰에는 유기농 제품이 다양하게 있습니다. 특히 '유기농 아카시아 꿀 1kg'는 인기 있는 유기농 제품 중 하나입니다. 건강하게 즐길 수 있는 자연식품을 원하신다면 추천드립니다. 다른 유기농 제품에 대한 정보가 필요하시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:40.606504",
+            "Content": "The Trails Cushion does not come with a cushion fill included. It is recommended to use a Euro sized cushion fill (65cm x 65cm), which can be easily purchased separately. \n\nYou can find the Trails Cushion for $77.00 at this link: [Trails Cushion](https://www.aldeahome.com/products/trails-cushion).",
+            "CreatedTime": "2025-08-09T20:23:19.147775",
             "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "67e46830-3054-4a81-b4ad-cabeb140209f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
-            "UserId": "user_00077",
-            "session_id": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "유기농 채소나 과일도 있나요?",
-            "CreatedTime": "2025-08-09T14:33:41.184569",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a4c1ae63-e685-481f-b48e-2a8466347c20",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
-            "UserId": "user_00077",
-            "session_id": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "네, 저희 쇼핑몰에서는 유기농 채소와 과일도 판매하고 있습니다. 신선한 유기농 토마토, 시금치, 사과, 바나나 등 다양한 옵션이 준비되어 있습니다. 건강한 식단을 원하신다면 유기농 제품을 추천드립니다. 특정 품목을 원하시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:43.245155",
-            "ItemId": "PROD_BOOK_001",
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "ad43c24d-1c6f-4e32-9db5-e010434cccf5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
-            "UserId": "user_00077",
-            "session_id": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "어떤 유기농 과일이나 채소가 제일 인기 있는지 궁금해요!",
-            "CreatedTime": "2025-08-09T14:33:44.023608",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "394a6c66-e61c-4975-9335-006235cba72e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
-            "UserId": "user_00077",
-            "session_id": "16d17dcb-e3d9-4e8f-8900-c4e3646a1104",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "현재 저희 쇼핑몰에서 가장 인기 있는 유기농 과일과 채소는 다음과 같습니다:\n\n1. **유기농 사과** - 신선하고 달콤한 맛으로 많은 고객님들께 사랑받고 있습니다.\n2. **유기농 방울토마토** - 간편하게 간식으로 즐기기 좋고, 샐러드에도 잘 어울립니다.\n3. **유기농 시금치** - 영양가가 높아 다양한 요리에 활용하기 좋습니다.\n4. **유기농 바나나** - 간편하게 먹기 좋은 과일로, 어린이들에게도 인기가 많습니다.\n\n이 외에도 다양한 유기농 제품이 있으니 필요하신 정보가 더 있으면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:46.905090",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.409584"
+    "profile_generated_at": "2025-08-09T20:54:53.208616"
 }

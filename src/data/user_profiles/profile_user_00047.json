@@ -1,59 +1,140 @@
 {
     "user_id": "user_00047",
-    "raw_engagement_score": 20,
+    "raw_engagement_score": 15,
     "normalized_engagement_score": 10,
     "activities": [
         {
-            "id": "589f4c7b-f8cf-43fd-909c-5b85b1a969ca",
+            "id": "0c7a954f-7536-4b6a-b1b0-316d788ebe46",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00047",
-            "event_name": "purchase_completed",
+            "event_name": "product_view",
             "event_data": {
-                "order_id": "ORDER_user_00047_708104",
-                "total_amount": 68000,
-                "items": [
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
-                    },
-                    {
-                        "product_id": "PROD_BOOK_001",
-                        "quantity": 1,
-                        "price": 18000
-                    }
-                ],
-                "payment_method": "naver_pay"
+                "product_id": "07781",
+                "category": "viverano-organics",
+                "product_name": "Whales Hooded Baby Bathrobe (Organic Cotton): Natural / 0-9M (One Size)",
+                "price": 48.0,
+                "product_url": "https://www.aldeahome.com/products/whales-hooded-baby-bathrobe-organic-cotton-natural-0-9m-one-size",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/19e1b8c5f238a7dce1f7199f39aca11338c01cd1bb8a55e9fb8a9bead10b8204_2b5fbbc8-c7af-40c7-b311-7b2cc1692000.jpg?v=1723560699",
+                "view_duration_seconds": 10
             },
-            "created_time": "2025-08-09T13:57:01.708108"
+            "created_time": "2025-08-09T20:05:50.719748"
         },
         {
-            "id": "d5ccfaed-10ff-4f91-836e-aba9a5ef4e2a",
+            "id": "0542d3fa-d0a4-4fe9-a053-fce7f8fa00e4",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00047",
-            "event_name": "purchase_completed",
+            "event_name": "login",
             "event_data": {
-                "order_id": "ORDER_user_00047_708110",
-                "total_amount": 65000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_002",
-                        "quantity": 1,
-                        "price": 15000
-                    },
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
-                    }
-                ],
-                "payment_method": "credit_card"
+                "login_method": "email_password",
+                "ip_address": "192.168.61.26"
             },
-            "created_time": "2025-08-09T13:57:01.708114"
+            "created_time": "2025-08-09T20:05:50.719754"
+        },
+        {
+            "id": "9be658ba-5838-49b5-a3a8-c79d5c125931",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00047",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.232.36"
+            },
+            "created_time": "2025-08-09T20:05:50.719758"
         }
     ],
     "reviews": [],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.359887"
+    "dialogues": [
+        {
+            "Id": "7899e78b-6fb6-49a3-801a-9f8f17556eaa",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "UserId": "user_00047",
+            "session_id": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Mustela Newborn Foam Shampoo (Product ID: 00840) is suitable for daily use on my newborn’s hair and scalp?",
+            "CreatedTime": "2025-08-09T20:19:48.003337",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0a348023-5717-4807-8dbf-a059dd27accb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "UserId": "user_00047",
+            "session_id": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Mustela Newborn Foam Shampoo is gentle and designed for use on newborns. It has a soap-free formula and is composed of 99% natural ingredients, making it safe for daily use on your baby's hair and scalp. It also helps prevent and reduce cradle cap. \n\nYou can purchase it for $13.00 at this link: [Mustela Newborn Foam Shampoo](https://www.aldeahome.com/products/mustela-newborn-foam-shampoo).",
+            "CreatedTime": "2025-08-09T20:19:50.373061",
+            "ItemId": "00840",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "429fa1c6-1965-43db-8a59-2049a95e64cc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "UserId": "user_00047",
+            "session_id": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Are there any specific ingredients in the Mustela Newborn Foam Shampoo (Product ID: 00840) that help with cradle cap, and are there any potential allergens I should be aware of?",
+            "CreatedTime": "2025-08-09T20:19:51.461491",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "939b490e-860b-4842-9858-9efc5780b117",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "UserId": "user_00047",
+            "session_id": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Mustela Newborn Foam Shampoo contains natural Avocado Perseose, which helps to reduce and protect against cradle cap flakes. This ingredient is specifically formulated to care for your baby's delicate scalp. \n\nRegarding potential allergens, the shampoo is designed to be gentle and safe for newborns, but it's always a good idea to check the product label for any specific allergies you may be concerned about. If you have any doubts, consulting with your pediatrician is recommended.\n\nYou can find more information and purchase the shampoo for $13.00 here: [Mustela Newborn Foam Shampoo](https://www.aldeahome.com/products/mustela-newborn-foam-shampoo).",
+            "CreatedTime": "2025-08-09T20:19:53.968374",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d2274d56-31ae-4535-a0f8-8b6ffba46a90",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "UserId": "user_00047",
+            "session_id": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me how often I should use the Mustela Newborn Foam Shampoo (Product ID: 00840) on my baby’s hair, especially if they have cradle cap?",
+            "CreatedTime": "2025-08-09T20:19:54.977583",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d3353de3-51b3-4e6a-b251-6c437a8c9a9c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "UserId": "user_00047",
+            "session_id": "9ff0e0fb-0731-490e-baa2-c8df16d29021",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "You can use the Mustela Newborn Foam Shampoo daily on your baby's hair and scalp, especially if they have cradle cap. Its gentle, tear-free formula is designed to cleanse while helping to prevent and reduce cradle cap flakes. \n\nFor best results, apply to wet hair, gently massage your baby's scalp, leave it on for 1 to 2 minutes, and then rinse carefully. \n\nYou can purchase it for $13.00 here: [Mustela Newborn Foam Shampoo](https://www.aldeahome.com/products/mustela-newborn-foam-shampoo).",
+            "CreatedTime": "2025-08-09T20:19:57.623991",
+            "ItemId": "00840",
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T20:54:53.197866"
 }

@@ -1,90 +1,121 @@
 {
     "user_id": "user_00018",
-    "raw_engagement_score": 17,
-    "normalized_engagement_score": 9,
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 20,
     "activities": [
         {
-            "id": "97940736-477e-4f91-9cf5-e1cab6ca7eed",
+            "id": "917eea00-1bc5-492b-8afa-a519c3a18595",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00018",
-            "event_name": "login",
+            "event_name": "search",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.198.236"
+                "query": "Amber Fawn Character Blanket",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T13:57:01.707732"
+            "created_time": "2025-08-09T20:05:50.668959"
         },
         {
-            "id": "62fe8c2d-d054-4086-951e-8b2f6cd0429e",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00018",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "quantity": 1,
-                "price": 15000
-            },
-            "created_time": "2025-08-09T13:57:01.707736"
-        },
-        {
-            "id": "4d23daf3-d73e-49d0-abb9-2a576f06be9b",
+            "id": "7df7d258-1c75-43d3-acc5-835796639e62",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00018",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "category": "소설",
-                "product_name": "베스트셀러 소설: 시간의 틈새",
-                "view_duration_seconds": 33
+                "product_id": "04496",
+                "category": "exclude",
+                "product_name": "UPPAbaby Cruz V2 PiggyBack",
+                "price": 159.99,
+                "product_url": "https://www.aldeahome.com/products/uppababy-cruz-v2-piggyback",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/CRUZV2_PiggyBack_Hero.png?v=1716651951",
+                "view_duration_seconds": 25
             },
-            "created_time": "2025-08-09T13:57:01.707739"
+            "created_time": "2025-08-09T20:05:50.668972"
         },
         {
-            "id": "d057196a-f68e-428d-a0c6-396d4cc03e20",
+            "id": "14ebd030-ae3a-494a-b1c5-8aaf2532ab07",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00018",
-            "event_name": "add_to_cart",
+            "event_name": "product_view",
             "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "quantity": 2,
-                "price": 35000
+                "product_id": "00969",
+                "category": "best-gifts-for-the-new-dad",
+                "product_name": "Veer Cruiser XL All-Terrain Wagon",
+                "price": 799.0,
+                "product_url": "https://www.aldeahome.com/products/veer-cruiser-xl-all-terrain-wagon",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/CruiserXL5437_06463b5f-a09a-42d9-97ba-f8b54e114cff.jpg?v=1716651877",
+                "view_duration_seconds": 27
             },
-            "created_time": "2025-08-09T13:57:01.707743"
+            "created_time": "2025-08-09T20:05:50.668979"
+        },
+        {
+            "id": "52fac7d4-021a-4308-ad94-3a8b3e9729e8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00018",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00018_668990",
+                "total_amount": 110.94,
+                "items": [
+                    {
+                        "product_id": "00468",
+                        "quantity": 1,
+                        "price": 10.99
+                    },
+                    {
+                        "product_id": "06476",
+                        "quantity": 1,
+                        "price": 99.95
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.669011"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "9721aa8f-db55-48d5-91be-792dc218dcbf",
+            "customer_id": "user_00018",
+            "product_id": "04544",
+            "rating": 5,
+            "review_title": "Love it!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-04-21T20:52:52.182096",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "78334170-c133-4398-9158-d418e138f53c",
+            "Id": "b28e8f9e-1028-41d0-b813-7cda7bd89092",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "e4b3dc0a-35f6-422e-a4f3-41dc823bb8aa",
+            "DialogueId": "1d9588a0-ff67-42e6-853a-00ab5b156fe9",
             "UserId": "user_00018",
-            "session_id": "e4b3dc0a-35f6-422e-a4f3-41dc823bb8aa",
-            "Intent": "정보",
+            "session_id": "1d9588a0-ff67-42e6-853a-00ab5b156fe9",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "새로 나온 책이 있나요?",
-            "CreatedTime": "2025-08-09T14:29:38.535357",
+            "Content": "Can you tell me if the 24 Hour Convertible Baby Sleeper Gown - Clay Stripe (Product ID: 07056) is suitable for both day and night use, and how easy it is to transition between the gown and sleeper?",
+            "CreatedTime": "2025-08-09T20:17:24.419083",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "5f72ee68-00f4-4778-bb5a-8c0b16d29690",
+            "Id": "6ca5b41c-b7da-4351-b5b0-8670a4619da9",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "e4b3dc0a-35f6-422e-a4f3-41dc823bb8aa",
+            "DialogueId": "1d9588a0-ff67-42e6-853a-00ab5b156fe9",
             "UserId": "user_00018",
-            "session_id": "e4b3dc0a-35f6-422e-a4f3-41dc823bb8aa",
-            "Intent": "추천",
+            "session_id": "1d9588a0-ff67-42e6-853a-00ab5b156fe9",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "현재 저희 쇼핑몰에서는 다양한 신간 도서를 제공하고 있습니다. 어떤 장르의 책을 찾고 계신가요? 그에 맞춰 추천해 드릴 수 있습니다!",
-            "CreatedTime": "2025-08-09T14:29:39.735165",
-            "ItemId": null,
+            "Content": "Yes, the **24 Hour Convertible Baby Sleeper Gown - Clay Stripe** is designed for both day and night use. It features a one snap closure that allows for a seamless transition between gown and sleeper, making it very easy to switch from wake time to sleep time or for diaper changes. This versatility makes it perfect for your baby's first few months. \n\nThe price of this product is **$35.00**. If you're interested, you can find more information and purchase it [here](https://www.aldeahome.com/products/24-hour-convertible-baby-sleeper-gown-clay-stripe).",
+            "CreatedTime": "2025-08-09T20:17:27.535397",
+            "ItemId": "07056",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.310431"
+    "profile_generated_at": "2025-08-09T20:54:53.184148"
 }

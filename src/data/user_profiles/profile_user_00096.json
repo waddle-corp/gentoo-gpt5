@@ -1,110 +1,36 @@
 {
     "user_id": "user_00096",
-    "raw_engagement_score": 17,
-    "normalized_engagement_score": 9,
+    "raw_engagement_score": 4,
+    "normalized_engagement_score": 3,
     "activities": [
         {
-            "id": "d5944843-d0a2-41ba-8c2e-25e403d6a98e",
+            "id": "26ef52d5-2fcc-406f-ac97-fbb0e875d2fc",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00096",
-            "event_name": "product_view",
+            "event_name": "search",
             "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "category": "소설",
-                "product_name": "베스트셀러 소설: 시간의 틈새",
-                "view_duration_seconds": 116
+                "query": "Unicorn Jabber Ball",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.709175"
+            "created_time": "2025-08-09T20:05:50.791133"
         },
         {
-            "id": "9c120ddf-8f02-4444-8f6b-1b3e69af29aa",
+            "id": "61e751db-dee5-4152-93a3-da31767b94d1",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00096",
-            "event_name": "product_view",
+            "event_name": "login",
             "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "category": "올리브유",
-                "product_name": "유기농 엑스트라 버진 올리브유 750ml",
-                "view_duration_seconds": 49
+                "login_method": "social_kakao",
+                "ip_address": "192.168.131.220"
             },
-            "created_time": "2025-08-09T13:57:01.709179"
-        },
-        {
-            "id": "3117f1d7-8ef4-4bd7-ad9a-4e702ae44a22",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00096",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "quantity": 3,
-                "price": 35000
-            },
-            "created_time": "2025-08-09T13:57:01.709182"
+            "created_time": "2025-08-09T20:05:50.791142"
         }
     ],
     "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "df923f71-1ce0-46be-ad35-c26f8678128d",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "03ef0447-b0be-4e07-ba3b-3c9910865183",
-            "UserId": "user_00096",
-            "session_id": "03ef0447-b0be-4e07-ba3b-3c9910865183",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "새로 나온 책이 있나요?",
-            "CreatedTime": "2025-08-09T14:35:58.210556",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "b21bc740-064f-4272-9be5-a5e0f2c86d79",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "03ef0447-b0be-4e07-ba3b-3c9910865183",
-            "UserId": "user_00096",
-            "session_id": "03ef0447-b0be-4e07-ba3b-3c9910865183",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "네, 최근에 출간된 많은 책들이 있습니다. 어떤 장르의 책을 찾고 계신가요? 소설, 비소설, 자기계발 등 다양한 선택지가 있습니다. 또한, '월간 북클럽 베이직' 구독 상품을 통해 매달 추천 도서를 받아보실 수 있습니다. 관심이 있으시면 더 자세히 안내해 드릴게요!",
-            "CreatedTime": "2025-08-09T14:36:00.145202",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "60f68613-caa6-4afa-8aa3-8141de52951b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "03ef0447-b0be-4e07-ba3b-3c9910865183",
-            "UserId": "user_00096",
-            "session_id": "03ef0447-b0be-4e07-ba3b-3c9910865183",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "저는 소설 장르의 새로 나온 책을 찾고 있어요. 추천해 주실 만한 책이 있나요?",
-            "CreatedTime": "2025-08-09T14:36:00.959666",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "beacb7cc-d1df-4d32-b144-62871fb3605d",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "03ef0447-b0be-4e07-ba3b-3c9910865183",
-            "UserId": "user_00096",
-            "session_id": "03ef0447-b0be-4e07-ba3b-3c9910865183",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "최근 소설 장르에서 주목받고 있는 책으로는 '해리포터와 저주받은 아이'와 같은 연극 대본 형식의 작품이나, '바람이 분다, 당신이 좋다'와 같은 현대 소설이 있습니다. 이 외에도 다양한 신간 소설이 있으니, 특정 작가나 테마가 있다면 말씀해 주시면 더욱 구체적으로 추천해 드릴 수 있습니다!",
-            "CreatedTime": "2025-08-09T14:36:03.661666",
-            "ItemId": "PROD_OLIVE_001",
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.438955"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.213667"
 }

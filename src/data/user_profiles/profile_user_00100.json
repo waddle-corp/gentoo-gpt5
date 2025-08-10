@@ -1,78 +1,114 @@
 {
     "user_id": "user_00100",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 12,
+    "raw_engagement_score": 28,
+    "normalized_engagement_score": 18,
     "activities": [
         {
-            "id": "81cb9b57-7f21-4d94-9d06-cf08f85720c6",
+            "id": "e1ddc9d5-3cb4-4253-9d45-2e629296068a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00100",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
+                "product_id": "01880",
                 "quantity": 3,
-                "price": 70000
+                "price": 18.0
             },
-            "created_time": "2025-08-09T13:57:01.709240"
+            "created_time": "2025-08-09T20:05:50.796007"
         },
         {
-            "id": "de67a05c-b174-4821-b957-44593e2c95d3",
+            "id": "9927cdd8-0cbc-4418-96da-23a6e8ea6451",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00100",
             "event_name": "search",
             "event_data": {
-                "query": "구독",
-                "search_results_count": 17,
-                "filters_applied": []
+                "query": "My Baby's Book",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.709243"
+            "created_time": "2025-08-09T20:05:50.798518"
         },
         {
-            "id": "db2029d3-cb88-4ab9-9293-9d84e532ebe3",
+            "id": "73dff9b0-ebb0-4d8c-80ac-bbc0ae32eccf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00100",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.117.220"
+            },
+            "created_time": "2025-08-09T20:05:50.798524"
+        },
+        {
+            "id": "6bf4fe4c-c67d-4f3a-9ca5-c50f6139e578",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00100",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00100_709246",
-                "total_amount": 35000,
+                "order_id": "ORDER_user_00100_798535",
+                "total_amount": 464.95,
                 "items": [
                     {
-                        "product_id": "PROD_OLIVE_002",
+                        "product_id": "02063",
                         "quantity": 1,
-                        "price": 35000
+                        "price": 440.0
+                    },
+                    {
+                        "product_id": "06019",
+                        "quantity": 1,
+                        "price": 24.95
                     }
                 ],
                 "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T13:57:01.709249"
-        },
-        {
-            "id": "fd13730c-9434-4208-b7ed-a77d268de0f3",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00100",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "category": "올리브유",
-                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
-                "view_duration_seconds": 45
-            },
-            "created_time": "2025-08-09T13:57:01.709252"
+            "created_time": "2025-08-09T20:05:50.798548"
         }
     ],
     "reviews": [
         {
-            "review_id": "13ff9db7-d081-4c5f-b2ca-7697c1c62db5",
+            "review_id": "370be555-4b9c-46eb-bdf7-3db75e9a48b2",
             "customer_id": "user_00100",
-            "product_id": "PROD_BOOK_002",
+            "product_id": "05475",
             "rating": 1,
-            "review_title": "비추천합니다",
-            "review_content": "성공하는 사람들의 7가지 습관 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2025-01-15T14:00:03.216401",
+            "review_title": "Do not recommend",
+            "review_content": "The quality of KeaBabies Maternity Support Belt (Midnight Black): 2XL wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2025-06-18T20:52:52.182361",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.445023"
+    "dialogues": [
+        {
+            "Id": "61165175-2a4e-4150-8118-0495b297be2d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6636ad64-a217-4c8c-a1af-4e690a8959e7",
+            "UserId": "user_00100",
+            "session_id": "6636ad64-a217-4c8c-a1af-4e690a8959e7",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the OXO Transitions Soft Spout Sippy Cup (Product ID: 06506) is suitable for both toddlers and older babies?",
+            "CreatedTime": "2025-08-09T20:24:54.065088",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8ece5a46-f453-4c49-ad28-233a59dd964c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6636ad64-a217-4c8c-a1af-4e690a8959e7",
+            "UserId": "user_00100",
+            "session_id": "6636ad64-a217-4c8c-a1af-4e690a8959e7",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the OXO Transitions Soft Spout Sippy Cup is designed to be suitable for both toddlers and older babies. It features a silicone spout that conforms to your baby's mouth for a comfortable sip, making it ideal for little ones transitioning from bottles. The removable handles also provide a comfortable grip, making it easier for both toddlers and older babies to use. \n\nIf you're interested in purchasing, the price is $11.99, and you can find it [here](https://www.aldeahome.com/products/oxo-transitions-soft-spout-sippy-cup-with-removable-handles-6-oz).",
+            "CreatedTime": "2025-08-09T20:24:56.243343",
+            "ItemId": "06506",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T20:54:53.214478"
 }

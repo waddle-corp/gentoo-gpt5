@@ -1,121 +1,178 @@
 {
     "user_id": "user_00044",
-    "raw_engagement_score": 22,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 31,
+    "normalized_engagement_score": 20,
     "activities": [
         {
-            "id": "1594e285-f3d6-4dfe-ac71-1323ce50c2c3",
+            "id": "e75b77c7-d735-49a4-8959-390e4bd1c1c1",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00044",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00044_708063",
-                "total_amount": 25000,
+                "order_id": "ORDER_user_00044_707479",
+                "total_amount": 50.0,
                 "items": [
                     {
-                        "product_id": "PROD_OLIVE_001",
+                        "product_id": "06632",
                         "quantity": 1,
-                        "price": 25000
+                        "price": 35.0
+                    },
+                    {
+                        "product_id": "06884",
+                        "quantity": 1,
+                        "price": 15.0
                     }
                 ],
-                "payment_method": "naver_pay"
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708067"
+            "created_time": "2025-08-09T20:05:50.707492"
+        },
+        {
+            "id": "ebe1591b-0054-4155-9db0-2976a589e893",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00044",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.244.168"
+            },
+            "created_time": "2025-08-09T20:05:50.707497"
+        },
+        {
+            "id": "da36d6c4-3b68-439f-a64b-e399379755a8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00044",
+            "event_name": "search",
+            "event_data": {
+                "query": "Dazzle Aventurine Cheese Board",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T20:05:50.710173"
+        },
+        {
+            "id": "e4ca28f4-6714-47e4-92b3-f11bf9335314",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00044",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "02951",
+                "category": "cyber-monday-gift",
+                "product_name": "Black Agate Geometric Earrings",
+                "price": 36.0,
+                "product_url": "https://www.aldeahome.com/products/xine12-black-agate-geometric-earrings",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/abc1079457f5aaba9c1ddc199542069bc63d3cce8aacb8f8035227690e7360b7.jpg?v=1724356823",
+                "view_duration_seconds": 46
+            },
+            "created_time": "2025-08-09T20:05:50.710185"
+        },
+        {
+            "id": "299eebb3-1254-4243-a719-e280672663a2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00044",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.61.70"
+            },
+            "created_time": "2025-08-09T20:05:50.710189"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "b1015e3c-1530-414b-9312-4335c09442d8",
+            "Id": "dd55e35f-bff9-499a-9af5-eebcb60a9b50",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "19f67798-7025-4aee-86c5-958b108761ee",
+            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
             "UserId": "user_00044",
-            "session_id": "19f67798-7025-4aee-86c5-958b108761ee",
-            "Intent": "일반",
+            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "제가 최근에 구매한 상품 배송 상태를 알고 싶어요.",
-            "CreatedTime": "2025-08-09T14:31:30.088748",
+            "Content": "Can you tell me more about the scent profile of the candle can blackberry (Product ID: 05282) and how long it typically lasts when burned?",
+            "CreatedTime": "2025-08-09T20:19:24.532015",
             "ItemId": null,
-            "Thumbs": null,
+            "Thumbs": "up",
             "Channel": "web"
         },
         {
-            "Id": "8cfba91d-11bd-45d9-886a-8d31a2130148",
+            "Id": "ce049342-1889-4374-a9b2-5d6573899f51",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "19f67798-7025-4aee-86c5-958b108761ee",
+            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
             "UserId": "user_00044",
-            "session_id": "19f67798-7025-4aee-86c5-958b108761ee",
-            "Intent": "CS",
-            "Role": "assistant",
-            "Content": "고객님, 배송 상태를 확인하시려면 주문 번호가 필요합니다. 주문 번호를 알려주시면, 배송 상태를 확인해드리겠습니다.",
-            "CreatedTime": "2025-08-09T14:31:31.063706",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "dc6fd63f-a96c-4c2c-87eb-53cce42ad12f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "19f67798-7025-4aee-86c5-958b108761ee",
-            "UserId": "user_00044",
-            "session_id": "19f67798-7025-4aee-86c5-958b108761ee",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "주문 번호는 123456입니다. 배송 상태는 어떤가요?",
-            "CreatedTime": "2025-08-09T14:31:31.663737",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "9d187054-9211-4483-898c-82938cb166fe",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "19f67798-7025-4aee-86c5-958b108761ee",
-            "UserId": "user_00044",
-            "session_id": "19f67798-7025-4aee-86c5-958b108761ee",
+            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "죄송하지만, 저는 직접적인 시스템에 접근할 수 없어 주문 상태를 확인할 수 없습니다. 하지만, 일반적으로는 고객님의 이메일로 발송된 배송 확인 이메일에 배송 추적 정보가 포함되어 있습니다. 해당 이메일을 확인해보시거나, 쇼핑몰의 고객 서비스 센터에 문의하시면 보다 정확한 정보를 얻으실 수 있습니다. 도움이 필요하시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:31:33.524198",
-            "ItemId": null,
+            "Content": "The **candle can blackberry** features a delightful and rich blackberry scent, perfect for creating a warm and inviting atmosphere. While the specific burn time isn't provided, most high-quality candles typically last around 40 to 50 hours. \n\nYou can purchase the candle for **$26.95** at the following link: [candle can blackberry](https://www.aldeahome.com/products/candle-can-blackberry-2). If you have any more questions, feel free to ask!",
+            "CreatedTime": "2025-08-09T20:19:26.699403",
+            "ItemId": "05282",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "e53ae284-1a4b-46b9-a165-c2efc188fdbd",
+            "Id": "27b3e957-da46-4766-8252-5d0e81dea7cd",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "19f67798-7025-4aee-86c5-958b108761ee",
+            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
             "UserId": "user_00044",
-            "session_id": "19f67798-7025-4aee-86c5-958b108761ee",
-            "Intent": "추천",
+            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "혹시 다른 상품에 대한 문의나 도움이 필요하신가요? 어떤 정보를 더 알고 싶으신지 말씀해 주시면 도와드리겠습니다!",
-            "CreatedTime": "2025-08-09T14:31:34.534328",
+            "Content": "Does the **candle can blackberry** (Product ID: 05282) have any specific ingredients or wax type that contribute to its scent or burn quality?",
+            "CreatedTime": "2025-08-09T20:19:27.711004",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "be7798d9-c903-4975-b139-95ffea65b620",
+            "Id": "ed3b9d56-e485-4410-a058-9bf391e68e03",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "19f67798-7025-4aee-86c5-958b108761ee",
+            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
             "UserId": "user_00044",
-            "session_id": "19f67798-7025-4aee-86c5-958b108761ee",
+            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "고객님, 다른 상품에 대한 문의가 필요하신가요? 저희 쇼핑몰에서는 다양한 상품을 제공하고 있습니다. 예를 들어, 최근 베스트셀러 소설인 '시간의 틈새'에 대한 정보나 추천도 가능합니다. 어떤 상품에 대해 알고 싶으신지 말씀해 주시면 최선을 다해 도와드리겠습니다!",
-            "CreatedTime": "2025-08-09T14:31:36.165313",
+            "Content": "The specific ingredients or wax type for the **candle can blackberry** (Product ID: 05282) are not provided in the available information. However, many scented candles typically use a blend of high-quality wax and fragrance oils to enhance scent and burn quality. \n\nFor the best experience, it’s often recommended to check the product details on the website or packaging for more information. If you have any further questions or need assistance, feel free to ask! You can find the candle for **$26.95** here: [candle can blackberry](https://www.aldeahome.com/products/candle-can-blackberry-2).",
+            "CreatedTime": "2025-08-09T20:19:31.176276",
             "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a6576835-e998-4fca-9371-1764b4edf294",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
+            "UserId": "user_00044",
+            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the **candle can blackberry** (Product ID: 05282) is made with natural ingredients or if it contains any synthetic additives?",
+            "CreatedTime": "2025-08-09T20:19:32.464088",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "bc381584-f6ed-4adc-88b6-94f0b386515b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
+            "UserId": "user_00044",
+            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The available information does not specify whether the **candle can blackberry** (Product ID: 05282) is made with natural ingredients or if it contains synthetic additives. For detailed information regarding the ingredients used in the candle, I recommend checking the product details on the website or the packaging.\n\nIf you have any more questions or need further assistance, feel free to ask! You can purchase the candle for **$26.95** at this link: [candle can blackberry](https://www.aldeahome.com/products/candle-can-blackberry-2).",
+            "CreatedTime": "2025-08-09T20:19:36.890347",
+            "ItemId": "05282",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.354150"
+    "profile_generated_at": "2025-08-09T20:54:53.196891"
 }

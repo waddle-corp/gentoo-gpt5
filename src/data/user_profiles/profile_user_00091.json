@@ -1,143 +1,114 @@
 {
     "user_id": "user_00091",
-    "raw_engagement_score": 28,
-    "normalized_engagement_score": 13,
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 11,
     "activities": [
         {
-            "id": "ca1d9684-646f-442b-ae55-2b822551f677",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00091",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "category": "구독",
-                "product_name": "월간 북클럽 베이직",
-                "view_duration_seconds": 87
-            },
-            "created_time": "2025-08-09T13:57:01.709087"
-        },
-        {
-            "id": "b574da59-7cb4-4984-898e-71d282a6d802",
+            "id": "d2c6eff9-f31a-4752-90b1-ff1e9dee6083",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00091",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "quantity": 3,
-                "price": 25000
+                "product_id": "01031",
+                "quantity": 1,
+                "price": 53.0
             },
-            "created_time": "2025-08-09T13:57:01.709090"
-        },
-        {
-            "id": "f80ee490-c0a4-491e-ab9a-a52488b22f3b",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00091",
-            "event_name": "search",
-            "event_data": {
-                "query": "올리브유",
-                "search_results_count": 2,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T13:57:01.709094"
-        },
-        {
-            "id": "9a5cad50-bbc8-4a28-a5cf-d96966e76ec3",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00091",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.174.88"
-            },
-            "created_time": "2025-08-09T13:57:01.709097"
-        },
-        {
-            "id": "1673f5e9-68c1-43b8-8ad3-46730806d8bb",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00091",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "quantity": 3,
-                "price": 35000
-            },
-            "created_time": "2025-08-09T13:57:01.709100"
+            "created_time": "2025-08-09T20:05:50.783692"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "2a66bff2-af42-4434-96c7-da8927ae7d11",
-            "customer_id": "user_00091",
-            "product_id": "PROD_BOOK_001",
-            "rating": 1,
-            "review_title": "실망했어요",
-            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
-            "created_at": "2024-09-02T14:00:03.216381",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "b0aecd71-7a2e-45d9-8eff-422f54bad1fd",
+            "Id": "fc4b9ee4-c9d4-4dba-8373-c52c7d335452",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
             "UserId": "user_00091",
-            "session_id": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "이번 주 베스트셀러는 뭔가요?",
-            "CreatedTime": "2025-08-09T14:35:27.089688",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "82e51c1b-5f88-4fd9-bbce-cd398762f778",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
-            "UserId": "user_00091",
-            "session_id": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "이번 주 베스트셀러는 다양한 상품들이 있지만, 특히 '스페셜티 원두 커피 200g'가 많은 사랑을 받고 있습니다. 풍부한 향과 맛으로 커피 애호가들에게 인기를 끌고 있어요. 다른 베스트셀러 상품에 대한 정보가 필요하시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:35:28.477506",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "52f59059-1952-43c0-8299-e412c1f6ed41",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
-            "UserId": "user_00091",
-            "session_id": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "다른 베스트셀러 상품은 어떤 것들이 있나요?",
-            "CreatedTime": "2025-08-09T14:35:29.171409",
+            "Content": "Can the hamper insert for bassinet sta (Product ID: 07478) be easily cleaned, and what materials is it made from?",
+            "CreatedTime": "2025-08-09T20:24:14.827223",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "1f9fc9fc-f157-4773-995b-8ac5c9dd151a",
+            "Id": "fa9a8291-b5b2-437b-9483-9e312e494d29",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
             "UserId": "user_00091",
-            "session_id": "0cbe011f-8954-4f15-98d2-dad4e87a3cef",
+            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "이번 주 베스트셀러에는 다음과 같은 상품들이 있습니다:\n\n1. **스페셜티 원두 커피 200g** - 깊고 풍부한 맛을 자랑합니다.\n2. **프리미엄 엑스트라 버진 올리브유 500ml** - 요리에 풍미를 더해주는 고급 올리브유입니다.\n3. **천연 수제 비누 100g** - 피부에 부드럽고 자극이 적은 제품입니다.\n4. **유기농 아몬드 200g** - 건강한 간식으로 많은 인기를 끌고 있습니다.\n\n더 궁금한 상품이나 정보가 필요하시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:35:32.287492",
+            "Content": "The hamper insert for bassinet sta is designed with convenience in mind, making it easy to clean. However, specific details about the materials used in its construction are not provided. For more information or to view the product, you can visit the following link: [hamper insert for bassinet sta](https://www.aldeahome.com/products/hamper-insert-for-bassinet-sta). The price is $49.99.",
+            "CreatedTime": "2025-08-09T20:24:16.998652",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e1467893-a235-4ee4-b96a-68a20acc3ac8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "UserId": "user_00091",
+            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Does the hamper insert for bassinet sta (Product ID: 07478) come in different colors or patterns, or is it only available in one style?",
+            "CreatedTime": "2025-08-09T20:24:17.964103",
             "ItemId": null,
             "Thumbs": "down",
             "Channel": "web"
+        },
+        {
+            "Id": "be438ec9-4d8d-4be9-8d36-c4e4de8a96a4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "UserId": "user_00091",
+            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The information provided does not specify if the hamper insert for bassinet sta comes in different colors or patterns. It appears to be available in one style. For more details, you can check the product page here: [hamper insert for bassinet sta](https://www.aldeahome.com/products/hamper-insert-for-bassinet-sta). The price is $49.99.",
+            "CreatedTime": "2025-08-09T20:24:19.751356",
+            "ItemId": "07478",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "abfc4f88-0520-4810-906f-bb399b2c96ea",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "UserId": "user_00091",
+            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the hamper insert for bassinet sta (Product ID: 07478) is compatible with all UPPAbaby bassinet models, or are there specific models it works with?",
+            "CreatedTime": "2025-08-09T20:24:20.783460",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b0bf0de2-517a-47c5-8e08-468f27a62859",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "UserId": "user_00091",
+            "session_id": "448e45dd-6d3d-4b9e-9298-d0c9ed9db7d5",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The compatibility details for the hamper insert for bassinet sta with specific UPPAbaby bassinet models are not provided. It is advisable to check the product page for any compatibility information or consult UPPAbaby's customer support for confirmation. You can view the product here: [hamper insert for bassinet sta](https://www.aldeahome.com/products/hamper-insert-for-bassinet-sta) for more insights. The price is $49.99.",
+            "CreatedTime": "2025-08-09T20:24:22.701591",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.432230"
+    "profile_generated_at": "2025-08-09T20:54:53.212337"
 }
