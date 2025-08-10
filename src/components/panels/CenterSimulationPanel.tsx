@@ -74,7 +74,7 @@ export default function CenterSimulationPanel() {
   };
 
   const renderBubble = (state: BubbleState, idx: number) => {
-    const size = 16;
+    const size = 14;
     const style: React.CSSProperties = { width: size, height: size, cursor: "pointer" };
     let cls = "border-2 rounded-full";
     if (state === "unknown") cls += " border-gray-500 bg-gray-400";
@@ -112,7 +112,7 @@ export default function CenterSimulationPanel() {
   };
 
   return (
-    <Card className="h-full">
+    <Card className="h-full border-0 rounded-none bg-transparent">
       <CardHeader>
         <CardTitle>Simulation Results</CardTitle>
       </CardHeader>

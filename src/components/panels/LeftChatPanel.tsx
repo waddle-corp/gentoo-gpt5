@@ -161,6 +161,13 @@ export default function LeftChatPanel() {
     if (status === "streaming") scrollToBottom("smooth");
   }, [status]);
 
+  // When detection UI appears (spinner or hypothesis list), keep view pinned to bottom
+  useEffect(() => {
+    if (detecting || (actionable && hypotheses.length > 0)) {
+      scrollToBottom("smooth");
+    }
+  }, [detecting, actionable, hypotheses]);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || status === "streaming") return;
