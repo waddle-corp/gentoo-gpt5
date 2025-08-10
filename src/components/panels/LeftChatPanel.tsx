@@ -316,6 +316,7 @@ export default function LeftChatPanel() {
         {/* Messages */}
         <div ref={scrollContainerRef} className="flex-1 overflow-y-auto pr-0 chat-scrollbar">
           <div className="space-y-4 px-4">
+            <div className="mx-auto w-full max-w-[800px] space-y-4">
             {messages.length === 0 && null}
             {messages.map((message) => (
               <div key={message.id} className={`flex gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
@@ -350,7 +351,7 @@ export default function LeftChatPanel() {
 
             {/* 가설 체크박스 + 실행 버튼 (마지막 메시지 아래) */}
             {(detecting || (actionable && !isLoading)) && (
-              <div className="mt-2 space-y-2 px-4">
+              <div className="mt-2 space-y-2">
                 {detecting ? (
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
                     <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
@@ -406,12 +407,13 @@ export default function LeftChatPanel() {
                 </div>
               </div>
             )}
+            </div>
           </div>
         </div>
 
         {/* Input */}
         <form onSubmit={handleSubmit} className="flex px-4">
-          <div className="relative w-full">
+          <div className="relative w-full max-w-[800px] mx-auto">
             <Input
               value={input}
               onChange={(e) => setInput(e.target.value)}

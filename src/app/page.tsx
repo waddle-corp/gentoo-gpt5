@@ -8,6 +8,7 @@ export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [leftWidthPx, setLeftWidthPx] = useState<number>(480);
   const [isResizing, setIsResizing] = useState<boolean>(false);
+  const [hasStarted, setHasStarted] = useState<boolean>(false);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -17,6 +18,12 @@ export default function Home() {
     if (rect.width && leftWidthPx === 480) {
       setLeftWidthPx(Math.max(320, Math.min(rect.width * 0.42, rect.width - 360)));
     }
+  }, []);
+
+  useEffect(() => {
+    const onStart = () => setHasStarted(true);
+    window.addEventListener("eval-start", onStart as EventListener);
+    return () => window.removeEventListener("eval-start", onStart as EventListener);
   }, []);
 
   useEffect(() => {
@@ -59,26 +66,34 @@ export default function Home() {
 
   return (
     <main className="h-full p-0 bg-background">
-      <div
-        ref={containerRef}
-        className={`grid h-full min-h-0 ${isResizing ? "select-none" : ""}`}
-        style={{ gridTemplateColumns: `${leftWidthPx}px 6px 1fr` }}
-      >
-        <div className="h-full min-h-0 overflow-hidden" style={{ backgroundColor: "#323232" }}>
-          <LeftChatPanel />
+      {!hasStarted ? (
+        <div className="h-full min-h-0 overflow-hidden" ref={containerRef}>
+          <div className="h-full min-h-0" style={{ backgroundColor: "#323232" }}>
+            <LeftChatPanel />
+          </div>
         </div>
+      ) : (
         <div
-          role="separator"
-          aria-orientation="vertical"
-          aria-label="Resize panels"
-          className="h-full w-[6px] bg-[#1f1f1f] cursor-col-resize hover:bg-[#2a2a2a]"
-          onMouseDown={startResizing}
-          onTouchStart={startResizing}
-        />
-        <div className="h-full min-h-0 overflow-hidden" style={{ backgroundColor: "var(--right-panel)" }}>
-          <CenterSimulationPanel />
+          ref={containerRef}
+          className={`grid h-full min-h-0 overflow-hidden ${isResizing ? "select-none" : ""}`}
+          style={{ gridTemplateColumns: `${leftWidthPx}px 6px 1fr` }}
+        >
+          <div className="h-full min-h-0" style={{ backgroundColor: "#323232" }}>
+            <LeftChatPanel />
+          </div>
+          <div
+            role="separator"
+            aria-orientation="vertical"
+            aria-label="Resize panels"
+            className="h-full w-[6px] bg-[#1f1f1f] cursor-col-resize hover:bg-[#2a2a2a]"
+            onMouseDown={startResizing}
+            onTouchStart={startResizing}
+          />
+          <div className="h-full min-h-0 overflow-y-auto" style={{ backgroundColor: "var(--right-panel)" }}>
+            <CenterSimulationPanel started={true} />
+          </div>
         </div>
-      </div>
+      )}
     </main>
   );
 }

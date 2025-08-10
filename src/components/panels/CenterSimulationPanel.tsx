@@ -16,7 +16,11 @@ type Board = {
   reasons?: string[];
 };
 
-export default function CenterSimulationPanel() {
+type CenterSimulationPanelProps = {
+  started?: boolean;
+};
+
+export default function CenterSimulationPanel({ started }: CenterSimulationPanelProps) {
   const [error, setError] = useState<string | null>(null);
   const [promptsCount, setPromptsCount] = useState(0);
   const [promptsMeta, setPromptsMeta] = useState<PromptMeta[]>([]);
@@ -100,6 +104,13 @@ export default function CenterSimulationPanel() {
   }, []);
 
   useEffect(() => {
+    // Ensure sections appear as soon as simulation starts, even if main listeners haven't attached yet
+    const onStartOnly = () => setHasStarted(true);
+    window.addEventListener("eval-start", onStartOnly as EventListener);
+    return () => window.removeEventListener("eval-start", onStartOnly as EventListener);
+  }, []);
+
+  useEffect(() => {
     function onEvalResults(e: any) {
       try {
         // 증분 이벤트: { result, reasons, title }
@@ -130,14 +141,21 @@ export default function CenterSimulationPanel() {
           } else {
             next.push({ name: title, bubbles: padded, reasons: paddedReasons });
           }
-          return next;
+          // De-duplicate after updates to prevent accidental duplicates from interleaved events
+          const seen = new Set<string>();
+          const dedup = [] as Board[];
+          for (const b of next) {
+            if (seen.has(b.name)) continue;
+            seen.add(b.name);
+            dedup.push(b);
+          }
+          return dedup;
         });
 
+        setHasStarted(true);
         setHasSimulated(true);
-        // 첫 결과 도착 시 활성 탭 설정 및 인사이트/넥스트 액션 로드
+        // 첫 결과 도착 시 활성 탭만 설정 (생성/로딩은 eval-done에서 한 번만 수행)
         setActive((cur) => (cur === 0 ? 1 : cur));
-        loadInsightsFor(padded);
-        loadNextFor(padded);
       } catch {}
     }
 
@@ -145,14 +163,28 @@ export default function CenterSimulationPanel() {
       try {
         const title: string = String(e?.detail?.title || "");
         if (!title) return;
+        setHasStarted(true);
         setBoards((prev) => {
           const next = [...prev];
           const idx = next.findIndex((b) => b.name === title);
           const pending = new Array(promptsCount).fill("pending") as BubbleState[];
-          if (idx >= 0) next[idx] = { ...next[idx], bubbles: pending, reasons: new Array(promptsCount).fill("") };
-          else next.push({ name: title, bubbles: pending, reasons: new Array(promptsCount).fill("") });
-          if (!next.length || next[0]?.name !== "All") next.unshift({ name: "All", bubbles: pending, reasons: new Array(promptsCount).fill("") });
-          return next;
+          if (idx >= 0) {
+            next[idx] = { ...next[idx], bubbles: pending, reasons: new Array(promptsCount).fill("") };
+          } else {
+            next.push({ name: title, bubbles: pending, reasons: new Array(promptsCount).fill("") });
+          }
+          if (!next.length || next[0]?.name !== "All") {
+            next.unshift({ name: "All", bubbles: pending, reasons: new Array(promptsCount).fill("") });
+          }
+          // De-duplicate boards by name in case previous state already had an entry (safety)
+          const seen = new Set<string>();
+          const dedup = [] as Board[];
+          for (const b of next) {
+            if (seen.has(b.name)) continue;
+            seen.add(b.name);
+            dedup.push(b);
+          }
+          return dedup;
         });
         setActive((cur) => (cur === 0 ? 1 : cur));
       } catch {}
@@ -168,19 +200,25 @@ export default function CenterSimulationPanel() {
         const mapped: BubbleState = label === "positive" ? "positive" : label === "negative" ? "negative" : "unknown";
         setBoards((prev) => {
           const next = [...prev];
-          const bi = next.findIndex((b) => b.name === title);
-          if (bi >= 0) {
-            const b = { ...next[bi] } as Board;
-            const bubbles = [...(b.bubbles || [])];
-            const reasons = [...(b.reasons || [])];
-            if (idxNum >= 0 && idxNum < promptsCount) {
-              bubbles[idxNum] = mapped;
-              reasons[idxNum] = reason;
-            }
-            b.bubbles = bubbles;
-            b.reasons = reasons as string[];
-            next[bi] = b;
+          let bi = next.findIndex((b) => b.name === title);
+          if (bi < 0) {
+            // If board does not exist (e.g., component mounted after eval-start), create it now
+            const initBubbles = new Array(Math.max(0, promptsCount)).fill("pending") as BubbleState[];
+            const initReasons = new Array(Math.max(0, promptsCount)).fill("") as string[];
+            next.push({ name: title, bubbles: initBubbles, reasons: initReasons });
+            bi = next.length - 1;
           }
+          // Update specific index
+          const b = { ...next[bi] } as Board;
+          const bubbles = [...(b.bubbles || [])];
+          const reasons = [...(b.reasons || [])];
+          if (idxNum >= 0 && idxNum < promptsCount) {
+            bubbles[idxNum] = mapped;
+            reasons[idxNum] = reason;
+          }
+          b.bubbles = bubbles;
+          b.reasons = reasons as string[];
+          next[bi] = b;
           // All 보드도 최신 반영
           if (next[0]?.name === "All") {
             const a = { ...next[0] } as Board;
@@ -203,14 +241,25 @@ export default function CenterSimulationPanel() {
       try {
         const title: string = String(e?.detail?.title || "");
         if (!title) return;
+        setHasStarted(true);
         setHasSimulated(true);
         // 완료된 보드 기준으로 인사이트/넥스트 액션 생성
-        const curBoards = boardsRef.current || [];
-        const b = curBoards.find((bb) => bb.name === title) || curBoards[0];
+        let b = (boards || []).find((bb) => bb.name === title) || null;
+        // If board was never created (missed eval-start), create it using current All or unknowns, but prevent duplicates
+        if (!b) {
+          const baseLen = promptsCount;
+          const fallback = boards[0]?.bubbles?.length ? boards[0].bubbles : new Array(baseLen).fill("unknown");
+          setBoards((prev) => {
+            if (prev.some((pb) => pb.name === title)) return prev;
+            const next = [...prev, { name: title, bubbles: [...fallback], reasons: new Array(baseLen).fill("") } as Board];
+            return next;
+          });
+          b = { name: title, bubbles: Array.isArray(boards[0]?.bubbles) ? [...boards[0].bubbles] : new Array(promptsCount).fill("unknown") } as Board;
+        }
         const bubbles = b?.bubbles || [];
         if (bubbles.length > 0) {
-          loadInsightsFor(bubbles);
-          loadNextFor(bubbles);
+          const key = title;
+          setDoneMap((prev) => ({ ...prev, [key]: true }));
         }
       } catch {}
     }
@@ -241,7 +290,7 @@ export default function CenterSimulationPanel() {
     const style: React.CSSProperties = { width: size, height: size, cursor: "pointer" };
     let cls = "border-2 rounded-full";
     if (state === "unknown") cls += " border-gray-500 bg-gray-400";
-    else if (state === "pending") cls += " border-gray-300 bg-gray-200 animate-pulse";
+    else if (state === "pending") cls += " border-gray-300 bg-gray-200";
     else if (state === "positive") cls += " border-emerald-600 bg-emerald-500";
     else if (state === "negative") cls += " border-rose-500 bg-transparent";
     return <span key={`b-${idx}-${state}`} className={cls} style={style} onClick={() => openModalFor(idx)} />;
@@ -351,15 +400,19 @@ export default function CenterSimulationPanel() {
   const [insights, setInsights] = useState("");
   const [insightsLoading, setInsightsLoading] = useState(false);
   const [hasSimulated, setHasSimulated] = useState(false);
+  const [hasStarted, setHasStarted] = useState(!!started);
   const [insightsCache, setInsightsCache] = useState<Record<string, string>>({});
   const [nextActions, setNextActions] = useState<string[]>([]);
+  const [nextLoading, setNextLoading] = useState(false);
   const [selectedActions, setSelectedActions] = useState<Record<number, boolean>>({});
   const [deploying, setDeploying] = useState(false);
   const [nextCache, setNextCache] = useState<Record<string, string>>({});
   const [lastReason, setLastReason] = useState<string>("");
   const [lastIndexForModal, setLastIndexForModal] = useState<number | null>(null);
-  const boardsRef = useRef<Board[]>(boards);
-  useEffect(() => { boardsRef.current = boards; }, [boards]);
+
+  const [doneMap, setDoneMap] = useState<Record<string, boolean>>({});
+  const insightsInFlightRef = useRef<Record<string, boolean>>({});
+  const nextInFlightRef = useRef<Record<string, boolean>>({});
 
   function mdToHtml(md: string): string {
     const esc = (md || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -442,7 +495,7 @@ export default function CenterSimulationPanel() {
     if (cached) {
       const items = cached.split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
       setNextActions(items);
-      setSelectedActions({});
+      setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
       return;
     }
     const { stats, byScore } = summarizeFor(bubbles);
@@ -455,131 +508,170 @@ export default function CenterSimulationPanel() {
       const data = await res.json();
       const items = String(data?.actions || "").split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
       setNextActions(items);
-      setSelectedActions({});
+      setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
       setNextCache((prev) => ({ ...prev, [key]: String(data?.actions || "") }));
     } catch {
-      setNextActions(["Drill down high bins", "Inspect negatives", "Rerun refined cohorts"]);
-      setSelectedActions({});
+      const fallback = ["Drill down high bins", "Inspect negatives", "Rerun refined cohorts"];
+      setNextActions(fallback);
+      setSelectedActions(Object.fromEntries(fallback.map((_, i) => [i, true])) as Record<number, boolean>);
     }
   }
 
   useEffect(() => {
     if (!hasSimulated) return;
-    // 캐시에 있으면 재사용, 없으면 생성
     const key = boards[active]?.name || `B${active}`;
+    if (!doneMap[key]) return;
+    const nk = key + ":next";
+    // If cached, just show and return
     const cached = insightsCache[key];
     if (cached) {
       setInsights(cached);
       setInsightsLoading(false);
-    } else if (activeBubbles.length > 0) {
-      loadInsightsFor(activeBubbles);
+      const nextCached = nextCache[nk];
+      if (nextCached) {
+        const items = nextCached.split("\n").map((l) => l.replace(/^[\-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
+        setNextActions(items);
+        setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
+        return;
+      }
     }
-    // Next actions도 병렬 로드/캐시
-    if (activeBubbles.length > 0) loadNextFor(activeBubbles);
-  }, [activeBubbles, hasSimulated, active, boards, insightsCache]);
+    // Not cached yet → load insights then next actions sequentially
+    const bubbles = boards[active]?.bubbles || [];
+    if (!bubbles.length) return;
+    (async () => {
+      if (!insightsCache[key]) await loadInsightsFor(bubbles);
+      if (!nextCache[nk]) await loadNextFor(bubbles);
+    })();
+  }, [hasSimulated, active, doneMap, boards, insightsCache, nextCache]);
+
+  // Ensure the first hypothesis tab is selected by default once any board beyond "All" exists
+  useEffect(() => {
+    if (!hasStarted) return;
+    if (active !== 0) return; // user already on some tab
+    const firstTabIndex = boards.findIndex((b) => b.name !== "All");
+    if (firstTabIndex > 0) setActive(firstTabIndex);
+  }, [boards, hasStarted, active]);
 
   return (
-    <Card className="h-full border-0 rounded-none bg-transparent gap-5">
-      <CardHeader className="py-1.5">
-        <CardTitle>Simulation Results</CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-1.5 min-h-0">
+    <Card className="min-h-full border-0 rounded-none bg-transparent py-3">
+      <CardContent className="space-y-3 min-h-0 px-3">
         <div className="flex items-center gap-1.5">
           {boards.map((b, i) => (
-            <button key={i} onClick={() => setActive(i)} className={`px-3 py-1 rounded-md text-sm ${i === active ? "bg-primary text-primary-foreground" : "border"}`}>
-              {b.name}
-            </button>
+            b.name === "All" ? null : (
+              <button key={`${b.name}-${i}`} onClick={() => setActive(i)} className={`px-3 py-1 rounded-md text-sm ${i === active ? "bg-primary text-primary-foreground" : "border"}`}>
+                {b.name}
+              </button>
+            )
           ))}
         </div>
 
-        <div className="space-y-1">
-          <div className="text-xs text-muted-foreground flex items-center gap-2.5 flex-wrap">
-            <span className="flex items-center gap-1">
-              <span className="inline-block w-3 h-3 rounded-full border-2 border-emerald-600 bg-emerald-500" />
-              <span>Positive</span>
-            </span>
-            <span className="flex items-center gap-1">
-              <span className="inline-block w-3 h-3 rounded-full border-2 border-rose-500 bg-transparent" />
-              <span>Negative</span>
-            </span>
-            <span className="flex items-center gap-1">
-              <span className="inline-block w-3 h-3 rounded-full border-2 border-gray-500 bg-gray-400" />
-              <span>Unknown</span>
-            </span>
-          </div>
-          <div className="overflow-x-auto">
-            <div className="w-max">
-              <div className="flex items-end gap-2">
-                {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) => renderColumn(idx + 1, indices, boards[active]?.bubbles || []))}
+        {hasStarted && (
+        <div className="space-y-3">
+          {/* Graph panel */}
+          <div className="rounded-md text-sm bg-card/50 p-3">
+            <div className="text-xs text-muted-foreground mb-2">Simulation results</div>
+            <div className="space-y-1">
+              <div className="text-xs text-muted-foreground flex items-center gap-2.5 flex-wrap">
+                <span className="flex items-center gap-1">
+                  <span className="inline-block w-3 h-3 rounded-full border-2 border-emerald-600 bg-emerald-500" />
+                  <span>Positive</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="inline-block w-3 h-3 rounded-full border-2 border-rose-500 bg-transparent" />
+                  <span>Negative</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="inline-block w-3 h-3 rounded-full border-2 border-gray-500 bg-gray-400" />
+                  <span>Unknown</span>
+                </span>
               </div>
-              <div className="mt-2 text-[12px] text-muted-foreground text-center">Engagement Score (1~30)</div>
+              <div className="overflow-x-auto">
+                <div className="w-max">
+                  <div className="flex items-end gap-2">
+                    {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) => renderColumn(idx + 1, indices, boards[active]?.bubbles || []))}
+                  </div>
+                  <div className="mt-2 text-[12px] text-muted-foreground text-center">Engagement Score (1~30)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Insights panel */}
+          <div className="rounded-md text-sm bg-card/50">
+            <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Insights</div>
+            <div className="h-40 overflow-y-auto overscroll-contain px-3 pb-3">
+              {!hasSimulated ? (
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
+                  Waiting for simulation…
+                </div>
+              ) : insightsLoading ? (
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
+                  Generating insights…
+                </div>
+              ) : (
+                <div className="text-sm leading-5 tracking-wide" dangerouslySetInnerHTML={{ __html: insights || "<p class=\"text-muted-foreground\">No insights yet.</p>" }} />
+              )}
+            </div>
+          </div>
+
+          {/* Next actions panel */}
+          <div className="rounded-md text-sm bg-card/50">
+            <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Next actions</div>
+            <div className="max-h-24 overflow-y-auto overscroll-contain px-3 pb-3">
+              {!hasSimulated ? (
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
+                  Waiting for simulation…
+                </div>
+              ) : nextLoading ? (
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
+                  Generating next actions…
+                </div>
+              ) : nextActions.length === 0 ? (
+                <div className="text-xs text-muted-foreground">No suggestions.</div>
+              ) : (
+                <div className="flex flex-col gap-2 tracking-wide">
+                  {nextActions.map((a, i) => (
+                    <label key={i} className="flex items-center gap-2 text-sm">
+                      <input
+                        type="checkbox"
+                        className="size-4 rounded accent-indigo-500 focus:ring-2 focus:ring-purple-400/50"
+                        checked={!!selectedActions[i]}
+                        onChange={(e) => setSelectedActions((prev) => ({ ...prev, [i]: e.target.checked }))}
+                      />
+                      <span className={`truncate ${selectedActions[i] ? "text-purple-400" : "text-white"}`}>{a}</span>
+                    </label>
+                  ))}
+                </div>
+              )}
+            </div>
+            <div className="flex justify-end px-3 pb-3">
+              <button
+                onClick={async () => {
+                  try {
+                    setDeploying(true);
+                    const picked = nextActions.filter((_, i) => selectedActions[i]);
+                    const boardName = boards[active]?.name || "All";
+                    await fetch("/api/deploy-actions", {
+                      method: "POST",
+                      headers: { "content-type": "application/json" },
+                      body: JSON.stringify({ actions: picked, board: boardName }),
+                    });
+                    window.open("https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo", "_blank", "noopener,noreferrer");
+                  } finally {
+                    setDeploying(false);
+                  }
+                }}
+                disabled={deploying || !Object.values(selectedActions).some(Boolean)}
+              className="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-md hover:opacity-90 disabled:opacity-60 text-sm flex items-center gap-2"
+              >
+                {deploying ? "Deploying…" : "Deploy"}
+              </button>
             </div>
           </div>
         </div>
-
-        {/* Insights */}
-        {hasSimulated && (
-          <div className="grid grid-cols-1 gap-4">
-            <div className="rounded-md border text-sm bg-card/50">
-              <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Insights</div>
-              <div className="h-28 overflow-y-auto overscroll-contain px-3 pb-3">
-                {insightsLoading ? (
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
-                    Generating insights…
-                  </div>
-                ) : (
-                  <div className="text-sm leading-5 tracking-wide" dangerouslySetInnerHTML={{ __html: insights || "<p class=\"text-muted-foreground\">No insights yet.</p>" }} />
-                )}
-              </div>
-            </div>
-
-            <div className="rounded-md border text-sm bg-card/50">
-              <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Next actions</div>
-              <div className="max-h-24 overflow-y-auto overscroll-contain px-3 pb-3">
-                {nextActions.length === 0 ? (
-                  <div className="text-xs text-muted-foreground">No suggestions.</div>
-                ) : (
-                  <div className="flex flex-col gap-2 tracking-wide">
-                    {nextActions.map((a, i) => (
-                      <label key={i} className="flex items-center gap-2 text-sm">
-                        <input
-                          type="checkbox"
-                          className="size-4 rounded accent-indigo-500 focus:ring-2 focus:ring-purple-400/50"
-                          checked={!!selectedActions[i]}
-                          onChange={(e) => setSelectedActions((prev) => ({ ...prev, [i]: e.target.checked }))}
-                        />
-                        <span className={`truncate ${selectedActions[i] ? "text-purple-400" : "text-white"}`}>{a}</span>
-                      </label>
-                    ))}
-                  </div>
-                )}
-              </div>
-              <div className="flex justify-end px-3 pb-3">
-                <button
-                  onClick={async () => {
-                    try {
-                      setDeploying(true);
-                      const picked = nextActions.filter((_, i) => selectedActions[i]);
-                      const boardName = boards[active]?.name || "All";
-                      await fetch("/api/deploy-actions", {
-                        method: "POST",
-                        headers: { "content-type": "application/json" },
-                        body: JSON.stringify({ actions: picked, board: boardName }),
-                      });
-                      window.open("https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo", "_blank", "noopener,noreferrer");
-                    } finally {
-                      setDeploying(false);
-                    }
-                  }}
-                  disabled={deploying || !Object.values(selectedActions).some(Boolean)}
-                  className="px-3 py-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow hover:opacity-90 disabled:opacity-60 text-xs"
-                >
-                  {deploying ? "Deploying…" : "Deploy"}
-                </button>
-              </div>
-            </div>
-          </div>
         )}
 
         {/* Modal */}
@@ -632,30 +724,31 @@ export default function CenterSimulationPanel() {
                   </div>
                 ) : modalData ? (
                   <div className="space-y-4 text-sm">
+                    {lastReason && (
+                      <div>
+                        <div className="text-xs uppercase tracking-wide text-zinc-500">reason</div>
+                        <div className="mt-1 text-[12px] flex items-center gap-2">
+                          {(() => {
+                            const s = lastIndexForModal != null ? boards[active]?.bubbles?.[lastIndexForModal] : undefined;
+                            const color = s === "positive" ? "text-emerald-400" : s === "negative" ? "text-rose-400" : "text-zinc-400";
+                            const dot = s === "negative" ? "border-rose-400" : s === "unknown" ? "bg-zinc-500" : "bg-emerald-400";
+                            return (
+                              <span className="inline-flex items-center gap-2">
+                                <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot} ${s === "negative" ? "bg-transparent border" : ""}`} />
+                                <span className={color}>{lastReason}</span>
+                              </span>
+                            );
+                          })()}
+                        </div>
+                      </div>
+                    )}
+
                     {modalData.summary && (
                       <div>
                         <div className="text-xs uppercase tracking-wide text-zinc-500">summary</div>
                         <div className="mt-2 whitespace-pre-wrap leading-relaxed text-zinc-200">
                           {modalData.summary}
                         </div>
-                        {lastReason && (
-                          <div className="mt-3">
-                            <div className="text-xs uppercase tracking-wide text-zinc-500">reason</div>
-                            <div className="mt-1 text-[12px] flex items-center gap-2">
-                              {(() => {
-                                const s = lastIndexForModal != null ? boards[active]?.bubbles?.[lastIndexForModal] : undefined;
-                                const color = s === "positive" ? "text-emerald-400" : s === "negative" ? "text-rose-400" : "text-zinc-400";
-                                const dot = s === "negative" ? "border-rose-400" : s === "unknown" ? "bg-zinc-500" : "bg-emerald-400";
-                                return (
-                                  <span className="inline-flex items-center gap-2">
-                                    <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot} ${s === "negative" ? "bg-transparent border" : ""}`} />
-                                    <span className={color}>{lastReason}</span>
-                                  </span>
-                                );
-                              })()}
-                            </div>
-                          </div>
-                        )}
                       </div>
                     )}
 
