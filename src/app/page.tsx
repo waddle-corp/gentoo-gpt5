@@ -75,7 +75,7 @@ export default function Home() {
           onMouseDown={startResizing}
           onTouchStart={startResizing}
         />
-        <div className="h-full min-h-0 overflow-hidden" style={{ backgroundColor: "var(--right-panel)" }}>
+        <div className="h-full min-h-0 overflow-y-auto" style={{ backgroundColor: "var(--right-panel)" }}>
           <CenterSimulationPanel />
         </div>
       </div>
