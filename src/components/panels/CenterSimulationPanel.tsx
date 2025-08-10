@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useMemo, useState } from "react";
 import { User as UserIcon, X as CloseIcon } from "lucide-react";
 import { ChartContainer, ChartTooltip, ChartTooltipContentProps } from "@/components/ui/chart";
@@ -240,7 +240,7 @@ export default function CenterSimulationPanel() {
     const style: React.CSSProperties = { width: size, height: size, cursor: "pointer" };
     let cls = "border-2 rounded-full";
     if (state === "unknown") cls += " border-gray-500 bg-gray-400";
-    else if (state === "pending") cls += " border-gray-300 bg-gray-200 animate-pulse";
+    else if (state === "pending") cls += " border-gray-300 bg-gray-200";
     else if (state === "positive") cls += " border-emerald-600 bg-emerald-500";
     else if (state === "negative") cls += " border-rose-500 bg-transparent";
     return <span key={`b-${idx}-${state}`} className={cls} style={style} onClick={() => openModalFor(idx)} />;
@@ -439,7 +439,7 @@ export default function CenterSimulationPanel() {
     if (cached) {
       const items = cached.split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
       setNextActions(items);
-      setSelectedActions({});
+      setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
       return;
     }
     const { stats, byScore } = summarizeFor(bubbles);
@@ -452,11 +452,12 @@ export default function CenterSimulationPanel() {
       const data = await res.json();
       const items = String(data?.actions || "").split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
       setNextActions(items);
-      setSelectedActions({});
+      setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
       setNextCache((prev) => ({ ...prev, [key]: String(data?.actions || "") }));
     } catch {
-      setNextActions(["Drill down high bins", "Inspect negatives", "Rerun refined cohorts"]);
-      setSelectedActions({});
+      const fallback = ["Drill down high bins", "Inspect negatives", "Rerun refined cohorts"];
+      setNextActions(fallback);
+      setSelectedActions(Object.fromEntries(fallback.map((_, i) => [i, true])) as Record<number, boolean>);
     }
   }
 
@@ -476,108 +477,114 @@ export default function CenterSimulationPanel() {
   }, [activeBubbles, hasSimulated, active, boards, insightsCache]);
 
   return (
-    <Card className="h-full border-0 rounded-none bg-transparent gap-5">
-      <CardHeader className="py-1.5">
-        <CardTitle>Simulation Results</CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-1.5 min-h-0">
+    <Card className="min-h-full border-0 rounded-none bg-transparent py-3">
+      <CardContent className="space-y-3 min-h-0 px-3">
         <div className="flex items-center gap-1.5">
           {boards.map((b, i) => (
-            <button key={i} onClick={() => setActive(i)} className={`px-3 py-1 rounded-md text-sm ${i === active ? "bg-primary text-primary-foreground" : "border"}`}>
-              {b.name}
-            </button>
+            b.name === "All" ? null : (
+              <button key={`${b.name}-${i}`} onClick={() => setActive(i)} className={`px-3 py-1 rounded-md text-sm ${i === active ? "bg-primary text-primary-foreground" : "border"}`}>
+                {b.name}
+              </button>
+            )
           ))}
         </div>
 
-        <div className="space-y-1">
-          <div className="text-xs text-muted-foreground flex items-center gap-2.5 flex-wrap">
-            <span className="flex items-center gap-1">
-              <span className="inline-block w-3 h-3 rounded-full border-2 border-emerald-600 bg-emerald-500" />
-              <span>Positive</span>
-            </span>
-            <span className="flex items-center gap-1">
-              <span className="inline-block w-3 h-3 rounded-full border-2 border-rose-500 bg-transparent" />
-              <span>Negative</span>
-            </span>
-            <span className="flex items-center gap-1">
-              <span className="inline-block w-3 h-3 rounded-full border-2 border-gray-500 bg-gray-400" />
-              <span>Unknown</span>
-            </span>
-          </div>
-          <div className="overflow-x-auto">
-            <div className="w-max">
-              <div className="flex items-end gap-2">
-                {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) => renderColumn(idx + 1, indices, boards[active]?.bubbles || []))}
+        <div className="space-y-3">
+          {/* Graph panel */}
+          <div className="rounded-md text-sm bg-card/50 p-3">
+            <div className="text-xs text-muted-foreground mb-2">Simulation results</div>
+            <div className="space-y-1">
+              <div className="text-xs text-muted-foreground flex items-center gap-2.5 flex-wrap">
+                <span className="flex items-center gap-1">
+                  <span className="inline-block w-3 h-3 rounded-full border-2 border-emerald-600 bg-emerald-500" />
+                  <span>Positive</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="inline-block w-3 h-3 rounded-full border-2 border-rose-500 bg-transparent" />
+                  <span>Negative</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="inline-block w-3 h-3 rounded-full border-2 border-gray-500 bg-gray-400" />
+                  <span>Unknown</span>
+                </span>
               </div>
-              <div className="mt-2 text-[12px] text-muted-foreground text-center">Engagement Score (1~30)</div>
+              <div className="overflow-x-auto">
+                <div className="w-max">
+                  <div className="flex items-end gap-2">
+                    {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) => renderColumn(idx + 1, indices, boards[active]?.bubbles || []))}
+                  </div>
+                  <div className="mt-2 text-[12px] text-muted-foreground text-center">Engagement Score (1~30)</div>
+                </div>
+              </div>
             </div>
           </div>
+
+          {/* Insights panel */}
+          {hasSimulated && (
+            <>
+              <div className="rounded-md text-sm bg-card/50">
+                <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Insights</div>
+                <div className="h-40 overflow-y-auto overscroll-contain px-3 pb-3">
+                  {insightsLoading ? (
+                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                      <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
+                      Generating insights…
+                    </div>
+                  ) : (
+                    <div className="text-sm leading-5 tracking-wide" dangerouslySetInnerHTML={{ __html: insights || "<p class=\"text-muted-foreground\">No insights yet.</p>" }} />
+                  )}
+                </div>
+              </div>
+
+              {/* Next actions panel */}
+              <div className="rounded-md text-sm bg-card/50">
+                <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Next actions</div>
+                <div className="max-h-24 overflow-y-auto overscroll-contain px-3 pb-3">
+                  {nextActions.length === 0 ? (
+                    <div className="text-xs text-muted-foreground">No suggestions.</div>
+                  ) : (
+                    <div className="flex flex-col gap-2 tracking-wide">
+                      {nextActions.map((a, i) => (
+                        <label key={i} className="flex items-center gap-2 text-sm">
+                          <input
+                            type="checkbox"
+                            className="size-4 rounded accent-indigo-500 focus:ring-2 focus:ring-purple-400/50"
+                            checked={!!selectedActions[i]}
+                            onChange={(e) => setSelectedActions((prev) => ({ ...prev, [i]: e.target.checked }))}
+                          />
+                          <span className={`truncate ${selectedActions[i] ? "text-purple-400" : "text-white"}`}>{a}</span>
+                        </label>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <div className="flex justify-end px-3 pb-3">
+                  <button
+                    onClick={async () => {
+                      try {
+                        setDeploying(true);
+                        const picked = nextActions.filter((_, i) => selectedActions[i]);
+                        const boardName = boards[active]?.name || "All";
+                        await fetch("/api/deploy-actions", {
+                          method: "POST",
+                          headers: { "content-type": "application/json" },
+                          body: JSON.stringify({ actions: picked, board: boardName }),
+                        });
+                        window.open("https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo", "_blank", "noopener,noreferrer");
+                      } finally {
+                        setDeploying(false);
+                      }
+                    }}
+                    disabled={deploying || !Object.values(selectedActions).some(Boolean)}
+                  className="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-md hover:opacity-90 disabled:opacity-60 text-sm flex items-center gap-2"
+                  >
+                    {deploying ? "Deploying…" : "Deploy"}
+                  </button>
+                </div>
+              </div>
+            </>
+          )}
         </div>
-
-        {/* Insights */}
-        {hasSimulated && (
-          <div className="grid grid-cols-1 gap-4">
-            <div className="rounded-md border text-sm bg-card/50">
-              <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Insights</div>
-              <div className="h-28 overflow-y-auto overscroll-contain px-3 pb-3">
-                {insightsLoading ? (
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
-                    Generating insights…
-                  </div>
-                ) : (
-                  <div className="text-sm leading-5 tracking-wide" dangerouslySetInnerHTML={{ __html: insights || "<p class=\"text-muted-foreground\">No insights yet.</p>" }} />
-                )}
-              </div>
-            </div>
-
-            <div className="rounded-md border text-sm bg-card/50">
-              <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Next actions</div>
-              <div className="max-h-24 overflow-y-auto overscroll-contain px-3 pb-3">
-                {nextActions.length === 0 ? (
-                  <div className="text-xs text-muted-foreground">No suggestions.</div>
-                ) : (
-                  <div className="flex flex-col gap-2 tracking-wide">
-                    {nextActions.map((a, i) => (
-                      <label key={i} className="flex items-center gap-2 text-sm">
-                        <input
-                          type="checkbox"
-                          className="size-4 rounded accent-indigo-500 focus:ring-2 focus:ring-purple-400/50"
-                          checked={!!selectedActions[i]}
-                          onChange={(e) => setSelectedActions((prev) => ({ ...prev, [i]: e.target.checked }))}
-                        />
-                        <span className={`truncate ${selectedActions[i] ? "text-purple-400" : "text-white"}`}>{a}</span>
-                      </label>
-                    ))}
-                  </div>
-                )}
-              </div>
-              <div className="flex justify-end px-3 pb-3">
-                <button
-                  onClick={async () => {
-                    try {
-                      setDeploying(true);
-                      const picked = nextActions.filter((_, i) => selectedActions[i]);
-                      const boardName = boards[active]?.name || "All";
-                      await fetch("/api/deploy-actions", {
-                        method: "POST",
-                        headers: { "content-type": "application/json" },
-                        body: JSON.stringify({ actions: picked, board: boardName }),
-                      });
-                      window.open("https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo", "_blank", "noopener,noreferrer");
-                    } finally {
-                      setDeploying(false);
-                    }
-                  }}
-                  disabled={deploying || !Object.values(selectedActions).some(Boolean)}
-                  className="px-3 py-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow hover:opacity-90 disabled:opacity-60 text-xs"
-                >
-                  {deploying ? "Deploying…" : "Deploy"}
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* Modal */}
         {modalOpen && (
@@ -629,30 +636,31 @@ export default function CenterSimulationPanel() {
                   </div>
                 ) : modalData ? (
                   <div className="space-y-4 text-sm">
+                    {lastReason && (
+                      <div>
+                        <div className="text-xs uppercase tracking-wide text-zinc-500">reason</div>
+                        <div className="mt-1 text-[12px] flex items-center gap-2">
+                          {(() => {
+                            const s = lastIndexForModal != null ? boards[active]?.bubbles?.[lastIndexForModal] : undefined;
+                            const color = s === "positive" ? "text-emerald-400" : s === "negative" ? "text-rose-400" : "text-zinc-400";
+                            const dot = s === "negative" ? "border-rose-400" : s === "unknown" ? "bg-zinc-500" : "bg-emerald-400";
+                            return (
+                              <span className="inline-flex items-center gap-2">
+                                <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot} ${s === "negative" ? "bg-transparent border" : ""}`} />
+                                <span className={color}>{lastReason}</span>
+                              </span>
+                            );
+                          })()}
+                        </div>
+                      </div>
+                    )}
+
                     {modalData.summary && (
                       <div>
                         <div className="text-xs uppercase tracking-wide text-zinc-500">summary</div>
                         <div className="mt-2 whitespace-pre-wrap leading-relaxed text-zinc-200">
                           {modalData.summary}
                         </div>
-                        {lastReason && (
-                          <div className="mt-3">
-                            <div className="text-xs uppercase tracking-wide text-zinc-500">reason</div>
-                            <div className="mt-1 text-[12px] flex items-center gap-2">
-                              {(() => {
-                                const s = lastIndexForModal != null ? boards[active]?.bubbles?.[lastIndexForModal] : undefined;
-                                const color = s === "positive" ? "text-emerald-400" : s === "negative" ? "text-rose-400" : "text-zinc-400";
-                                const dot = s === "negative" ? "border-rose-400" : s === "unknown" ? "bg-zinc-500" : "bg-emerald-400";
-                                return (
-                                  <span className="inline-flex items-center gap-2">
-                                    <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot} ${s === "negative" ? "bg-transparent border" : ""}`} />
-                                    <span className={color}>{lastReason}</span>
-                                  </span>
-                                );
-                              })()}
-                            </div>
-                          </div>
-                        )}
                       </div>
                     )}
 
