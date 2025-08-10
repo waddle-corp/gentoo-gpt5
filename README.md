@@ -1,30 +1,40 @@
-## Gentoo GPT‑5 — Digital Clone Simulation Dashboard
+## Gentoo GPT‑5 — Oracle of Delphi for Shopify Stores
 
-Test product, pricing, and promo hypotheses like you would with real customers. The left panel is a live chat with the owner (LLM‑A). The right panel simulates n digital customer clones chatting with a store agent and records purchase decisions and reasons. See full product notes in [PRD.md](./PRD.md).
+▶️ Watch YouTube demo highlights https://youtu.be/GlMtra0T-ls
+
+Pragmatic “Oracle of Delphi” for Shopify stores: ask a question, it simulates with digital customer clones, then proposes deployable next actions.
+
+Ask about product, pricing, or promo hypotheses. The left panel is a live chat with the owner (LLM‑A). The right panel simulates n digital customer clones chatting with a store agent and records purchase decisions and reasons—then turns them into charts and actions.
 
 ### Screenshots
 
+#### 1) Ask & Detect
 - Conversation → action detection → coupon action proposal
 
-![Next Action — Coupon](/screenshot/next-action-coupon.png)
+![Next Action — Coupon](./public/screenshot/next-action-coupon.png)
 
+#### 2) Customize Action
 - Edit/execute with a custom prompt
 
-![Next Action — Custom Prompt](/screenshot/next-action-custom-prompt.png)
+![Next Action — Custom Prompt](./public/screenshot/next-action-custom-prompt.png)
 
+#### 3) Deploy & Reflect
 - Coupon action reflected on demo page
 
-![Next Action — Coupon Demo Page](/screenshot/next-action-coupon-demopage.png)
+![Next Action — Coupon Demo Page](./public/screenshot/next-action-coupon-demopage.png)
 
+#### 4) Results & Personas
 - Simulation done / aggregation view
 
-![Simulation Done](/screenshot/simulation-done.png)
+  Legend: green dot = positive, red dot = negative, gray dot = unknown (per‑clone decision/label)
+
+![Simulation Done](./public/screenshot/simulation-done.png)
 
 - Digital clone profiles (positive / negative examples)
 
-![Clone Profile — Positive](/screenshot/clone-profile-positive.png)
+![Clone Profile — Positive](./public/screenshot/clone-profile-positive.png)
 
-![Clone Profile — Negative](/screenshot/clone-profile-negative.png)
+![Clone Profile — Negative](./public/screenshot/clone-profile-negative.png)
 
 ### What it does
 
@@ -41,6 +51,34 @@ Test product, pricing, and promo hypotheses like you would with real customers. 
 3. Simulator samples clone profiles and runs multi‑turn agent conversations
 4. It stores decision/reason/logs and aggregates results
 5. The right panel visualizes outcomes and reflects actions
+
+### Service flow
+
+```mermaid
+graph TD
+  A["Owner asks a specific question"] --> B["Edge /api/chat — LLM-A streams (gpt-5-mini)"]
+  B --> C["Edge /api/detect-actionable — LLM-B extracts hypotheses[] (gpt-4.1-mini)"]
+  C -->|actionable = true| D["Left UI selects hypotheses to simulate"]
+  D --> E["Node /api/eval-sentiment — concurrent per-clone classification"]
+  D --> F["Node /api/simulate — generate per-clone conversations + engagement"]
+  F --> G["Edge /api/insights — 3 markdown bullets (gpt-5-mini)"]
+  F --> H["Edge /api/next-actions — 4 actions (ui/chat/start-example) (gpt-4.1 + zod)"]
+  H --> I{Pick action}
+  I -->|ui| J["Open demo page with payload"]
+  I -->|chat| K["PUT /api/custom-prompt/[shopId] — upsert prompt"]
+  I -->|start-example| L["PUT /api/chatbot — update examples"]
+
+  subgraph Data
+    P["src/data/user_profiles/*"]
+    Q["src/data/simulator_prompts.json"]
+    R["src/data/simulation_results.json"]
+  end
+
+  E --> P
+  F --> Q
+  F --> R
+  H --> R
+```
 
 ## Quickstart
 
