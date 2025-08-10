@@ -16,7 +16,7 @@ You MUST select one of the four scenarios and one of the five categories to gene
 1.  **Featured Product Change**: Change the main product on the home screen. Payload should be \`/featured\`.
 2.  **Category Discount Event**: A **10%** discount event for a specific category. Payload should be \`/sale/category_name\`.
 3.  **Category Coupon Event**: A **10%** coupon event for a specific category. Payload should be \`/coupon/category_name\`.
-4.  **Category Time Sale**: A 30-minute time sale for a specific category with a **10%** discount. Payload should be \`/timeSale/category_name\`.
+4.  **Category Time Sale**: A 30-minute time sale for a specific category with a **10%** discount. Payload should be \`/timesale/category_name\`.
 
 **CATEGORIES:**
 -   \`baby-accessories\`
@@ -62,7 +62,7 @@ Based on these results, provide the next actions.`;
         actions: z.array(
           z.object({
             type: z.literal("ui"),
-            payload: z.string().regex(/^\/(featured|sale\/.+|coupon\/.+|timeSale\/.+)/),
+            payload: z.string().regex(/^\/(featured|sale\/.+|coupon\/.+|timesale\/.+)/),
             content: z.string().min(10).max(80),
           })
         ).max(3),
