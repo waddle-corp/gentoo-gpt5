@@ -25,6 +25,10 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [promptsCount, setPromptsCount] = useState(0);
   const [promptsMeta, setPromptsMeta] = useState<PromptMeta[]>([]);
   const [boards, setBoards] = useState<Board[]>([{ name: "All", bubbles: [] }]);
+  const boardsRef = useRef(boards);
+  useEffect(() => {
+    boardsRef.current = boards;
+  }, [boards]);
   const [active, setActive] = useState(0);
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -187,20 +191,6 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
           return dedup;
         });
         setActive((cur) => (cur === 0 ? 1 : cur));
-
-        // Prefetch insights/next actions silently so they are ready at done
-        try {
-          if (!insightsPrefetchRef.current[title]) {
-            insightsPrefetchRef.current[title] = true;
-            const bubbles = new Array(promptsCount).fill("unknown") as BubbleState[];
-            loadInsightsFor(bubbles).catch(() => {});
-          }
-          if (!nextPrefetchRef.current[title]) {
-            nextPrefetchRef.current[title] = true;
-            const bubbles = new Array(promptsCount).fill("unknown") as BubbleState[];
-            loadNextFor(bubbles).catch(() => {});
-          }
-        } catch {}
       } catch {}
     }
 
@@ -255,27 +245,19 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
       try {
         const title: string = String(e?.detail?.title || "");
         if (!title) return;
-        setHasStarted(true);
         setHasSimulated(true);
-        // 완료된 보드 기준으로 인사이트/넥스트 액션 생성
-        let b = (boards || []).find((bb) => bb.name === title) || null;
-        // If board was never created (missed eval-start), create it using current All or unknowns, but prevent duplicates
-        if (!b) {
-          const baseLen = promptsCount;
-          const fallback = boards[0]?.bubbles?.length ? boards[0].bubbles : new Array(baseLen).fill("unknown");
-          setBoards((prev) => {
-            if (prev.some((pb) => pb.name === title)) return prev;
-            const next = [...prev, { name: title, bubbles: [...fallback], reasons: new Array(baseLen).fill("") } as Board];
-            return next;
-          });
-          b = { name: title, bubbles: Array.isArray(boards[0]?.bubbles) ? [...boards[0].bubbles] : new Array(promptsCount).fill("unknown") } as Board;
-        }
-        const bubbles = b?.bubbles || [];
+
+        // Use ref to get the latest state of boards to avoid stale closures
+        const board = (boardsRef.current || []).find((b) => b.name === title);
+        const bubbles = board?.bubbles || [];
+
         if (bubbles.length > 0) {
-          const key = title;
-          setDoneMap((prev) => ({ ...prev, [key]: true }));
+          loadInsightsFor(bubbles, title);
+          loadNextFor(bubbles, title);
         }
-      } catch {}
+      } catch (err) {
+        console.error("Error in onEvalDone:", err);
+      }
     }
 
     window.addEventListener("eval-results", onEvalResults as EventListener);
@@ -424,11 +406,8 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [lastReason, setLastReason] = useState<string>("");
   const [lastIndexForModal, setLastIndexForModal] = useState<number | null>(null);
 
-  const [doneMap, setDoneMap] = useState<Record<string, boolean>>({});
   const insightsInFlightRef = useRef<Record<string, boolean>>({});
   const nextInFlightRef = useRef<Record<string, boolean>>({});
-  const insightsPrefetchRef = useRef<Record<string, boolean>>({});
-  const nextPrefetchRef = useRef<Record<string, boolean>>({});
 
   function mdToHtml(md: string): string {
     const esc = (md || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -465,9 +444,19 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
     return html;
   }
 
-  async function loadInsightsFor(bubbles: BubbleState[]) {
+  async function loadInsightsFor(bubbles: BubbleState[], title: string) {
+    const key = title;
+    if (insightsInFlightRef.current[key] || insightsCache[key]) {
+      return;
+    }
+
     try {
-      setInsightsLoading(true);
+      insightsInFlightRef.current[key] = true;
+      const activeBoardName = boardsRef.current?.[active]?.name;
+      if (activeBoardName === key) {
+        setInsightsLoading(true);
+      }
+
       const { stats, byScore } = summarizeFor(bubbles);
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), 12000);
@@ -481,9 +470,11 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
       const data = await res.json();
       if (!res.ok || !data?.ok) throw new Error(data?.error || `HTTP ${res.status}`);
       const html = mdToHtml(String(data.insights || ""));
-      setInsights(html);
-      const key = boards[active]?.name || "All";
       setInsightsCache((prev) => ({ ...prev, [key]: html }));
+
+      if (boardsRef.current?.[active]?.name === key) {
+        setInsights(html);
+      }
     } catch (e) {
       // 간단한 휴리스틱 폴백
       const { stats, byScore } = summarizeFor(bubbles);
@@ -497,68 +488,87 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
         .filter(Boolean)
         .join("\n");
       const html = mdToHtml(md);
-      setInsights(html);
-      const key = boards[active]?.name || "All";
       setInsightsCache((prev) => ({ ...prev, [key]: html }));
+      if (boardsRef.current?.[active]?.name === key) {
+        setInsights(html);
+      }
     } finally {
-      setInsightsLoading(false);
+      if (boardsRef.current?.[active]?.name === key) {
+        setInsightsLoading(false);
+      }
+      delete insightsInFlightRef.current[key];
     }
   }
 
-  async function loadNextFor(bubbles: BubbleState[]) {
-    const key = (boards[active]?.name || "All") + ":next";
-    const cached = nextCache[key];
-    if (cached) {
-      const items = cached.split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
-      setNextActions(items);
-      setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
+  async function loadNextFor(bubbles: BubbleState[], title: string) {
+    const key = title + ":next";
+    if (nextInFlightRef.current[key] || nextCache[key]) {
       return;
     }
-    const { stats, byScore } = summarizeFor(bubbles);
+    
     try {
+      nextInFlightRef.current[key] = true;
+      const activeBoardName = boardsRef.current?.[active]?.name;
+      if (activeBoardName === title) {
+        setNextLoading(true);
+      }
+      
+      const { stats, byScore } = summarizeFor(bubbles);
       const res = await fetch("/api/next-actions", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ stats, byScore }),
       });
       const data = await res.json();
-      const items = String(data?.actions || "").split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
-      setNextActions(items);
-      setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
-      setNextCache((prev) => ({ ...prev, [key]: String(data?.actions || "") }));
+      const actionsText = String(data?.actions || "");
+      setNextCache((prev) => ({ ...prev, [key]: actionsText }));
+      
+      const items = actionsText.split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
+      if (boardsRef.current?.[active]?.name === title) {
+        setNextActions(items);
+        setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
+      }
     } catch {
       const fallback = ["Drill down high bins", "Inspect negatives", "Rerun refined cohorts"];
-      setNextActions(fallback);
-      setSelectedActions(Object.fromEntries(fallback.map((_, i) => [i, true])) as Record<number, boolean>);
+      setNextCache((prev) => ({ ...prev, [key]: fallback.join('\n') }));
+      if (boardsRef.current?.[active]?.name === title) {
+        setNextActions(fallback);
+        setSelectedActions(Object.fromEntries(fallback.map((_, i) => [i, true])) as Record<number, boolean>);
+      }
+    } finally {
+      if (boardsRef.current?.[active]?.name === title) {
+        setNextLoading(false);
+      }
+      delete nextInFlightRef.current[key];
     }
   }
 
   useEffect(() => {
     if (!hasSimulated) return;
-    const key = boards[active]?.name || `B${active}`;
-    if (!doneMap[key]) return;
-    const nk = key + ":next";
-    // If cached, just show and return
-    const cached = insightsCache[key];
-    if (cached) {
-      setInsights(cached);
+    const key = boards[active]?.name;
+    if (!key) return;
+
+    const cachedInsights = insightsCache[key];
+    if (cachedInsights) {
+      setInsights(cachedInsights);
       setInsightsLoading(false);
-      const nextCached = nextCache[nk];
-      if (nextCached) {
-        const items = nextCached.split("\n").map((l) => l.replace(/^[\-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
-        setNextActions(items);
-        setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
-        return;
-      }
+    } else {
+      setInsights(""); // Clear previous insights
+      setInsightsLoading(!!insightsInFlightRef.current[key]);
     }
-    // Not cached yet → load insights then next actions sequentially
-    const bubbles = boards[active]?.bubbles || [];
-    if (!bubbles.length) return;
-    (async () => {
-      if (!insightsCache[key]) await loadInsightsFor(bubbles);
-      if (!nextCache[nk]) await loadNextFor(bubbles);
-    })();
-  }, [hasSimulated, active, doneMap, boards, insightsCache, nextCache]);
+
+    const nextKey = key + ":next";
+    const cachedNext = nextCache[nextKey];
+    if (cachedNext) {
+      const items = cachedNext.split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
+      setNextActions(items);
+      setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
+      setNextLoading(false);
+    } else {
+      setNextActions([]);
+      setNextLoading(!!nextInFlightRef.current[nextKey]);
+    }
+  }, [active, hasSimulated, boards, insightsCache, nextCache]);
 
   // Ensure the first hypothesis tab is selected by default once any board beyond "All" exists
   useEffect(() => {
