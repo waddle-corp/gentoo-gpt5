@@ -412,6 +412,10 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [lastReason, setLastReason] = useState<string>("");
   const [lastIndexForModal, setLastIndexForModal] = useState<number | null>(null);
   const [avatarError, setAvatarError] = useState(false);
+  // Success modal for custom-prompt upsert
+  const [cpModalOpen, setCpModalOpen] = useState(false);
+  const [cpModalData, setCpModalData] = useState<{ condition: string; answer: string } | null>(null);
+  const CUSTOM_PROMPT_CTA_URL = process.env.NEXT_PUBLIC_CUSTOM_PROMPT_CTA_URL;
 
   const insightsInFlightRef = useRef<Record<string, boolean>>({});
   const nextInFlightRef = useRef<Record<string, boolean>>({});
@@ -452,8 +456,30 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
           const finalUrl = demoBaseUrl + firstAction.payload;
           window.open(finalUrl, "_blank", "noopener,noreferrer");
         } else if (firstAction.type === 'chat') {
-          const text = String(firstAction.payload || '').trim();
-          console.log('[deploy-chat] payload:', text);
+          // Upsert to /api/custom-prompt/{shopId}
+          const condition = String(firstAction.payload || '').trim();
+          const answer = String(firstAction.content || '').trim();
+          if (condition && answer) {
+            const shopId = process.env.NEXT_PUBLIC_ALDEA_SHOP_ID;
+            const putBody = {
+              type: "faq",
+              activated: true,
+              condition,
+              answer,
+            } as const;
+            const res = await fetch(`/api/custom-prompt/${shopId}`, {
+              method: 'PUT',
+              headers: { 'content-type': 'application/json' },
+              body: JSON.stringify(putBody),
+            });
+            const json = await res.json().catch(() => ({}));
+            if (!res.ok || !json?.ok) {
+              throw new Error(json?.error || `HTTP ${res.status}`);
+            }
+            // Success → show modal with optional CTA
+            setCpModalData({ condition, answer });
+            setCpModalOpen(true);
+          }
         }
       }
 
@@ -926,6 +952,58 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                   </div>
                 ) : (
                   <div className="text-sm text-destructive">No data</div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Custom Prompt Success Modal */}
+        {cpModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+            <div className="w-full max-w-md rounded-xl border border-zinc-800 bg-neutral-950/90 p-6 shadow-2xl">
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="text-base font-semibold text-white">커스텀 프롬프트가 저장되었어요</div>
+                  <div className="mt-1 text-xs text-zinc-400">type: faq, activated: true</div>
+                </div>
+                <button
+                  className="rounded-md p-1 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/60"
+                  onClick={() => setCpModalOpen(false)}
+                  aria-label="Close"
+                >
+                  <CloseIcon className="size-4" />
+                </button>
+              </div>
+
+              {cpModalData && (
+                <div className="mt-4 space-y-3 text-sm">
+                  <div>
+                    <div className="text-xs uppercase tracking-wide text-zinc-500">condition</div>
+                    <div className="mt-1 text-zinc-200">{cpModalData.condition}</div>
+                  </div>
+                  <div>
+                    <div className="text-xs uppercase tracking-wide text-zinc-500">answer</div>
+                    <div className="mt-1 text-zinc-200 whitespace-pre-wrap">{cpModalData.answer}</div>
+                  </div>
+                </div>
+              )}
+
+              <div className="mt-6 flex justify-end gap-2">
+                <button
+                  onClick={() => setCpModalOpen(false)}
+                  className="px-4 py-2 rounded-md bg-zinc-800 text-zinc-100 hover:bg-zinc-700 text-sm"
+                >
+                  닫기
+                </button>
+                {CUSTOM_PROMPT_CTA_URL && (
+                  <button
+                    onClick={() => window.open(CUSTOM_PROMPT_CTA_URL as string, '_blank', 'noopener,noreferrer')}
+                    className="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-500 text-sm"
+                    aria-label="Open CTA"
+                  >
+                    열기
+                  </button>
                 )}
               </div>
             </div>
