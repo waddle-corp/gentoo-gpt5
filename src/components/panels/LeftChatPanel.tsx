@@ -1,238 +1,137 @@
 "use client";
 
-import { useChat, type Message } from "@ai-sdk/react";
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Send, User, Bot } from "lucide-react";
+import { useEffect, useState } from "react";
 
-function splitHypotheses(rawList: string[]): string[] {
-  const joined = rawList.filter(Boolean).join("\n");
-  const lines = joined
-    .split(/\r?\n+/)
-    .flatMap((l) => l.split(/\s?--\s?|\s?—\s?|\s?;\s?/))
-    .map((s) => s.replace(/^\s*[•\-\*]\s*/, "").replace(/^\s*\d+[\.)]\s*/, "").trim())
-    .filter((s) => s.length > 0);
-  // dedupe, keep order
-  const seen = new Set<string>();
-  const out: string[] = [];
-  for (const s of lines) {
-    const k = s.toLowerCase();
-    if (!seen.has(k)) {
-      seen.add(k);
-      out.push(s);
+type BubbleState = "unknown" | "positive" | "negative" | "pending";
+type PromptMeta = { idx: number; user_id: string; engagement_score: number };
+type Board = { name: string; bubbles: BubbleState[] };
+type Props = { embedded?: boolean };
+
+export default function CenterSimulationPanel({ embedded }: Props) {
+  const [error, setError] = useState<string | null>(null);
+  const [promptsCount, setPromptsCount] = useState(0);
+  const [promptsMeta, setPromptsMeta] = useState<PromptMeta[]>([]);
+  const [boards, setBoards] = useState<Board[]>([{ name: "All", bubbles: [] }]);
+  const [active, setActive] = useState(0);
+
+  // 데이터 로드
+  async function loadPromptsMeta() {
+    try {
+      const res = await fetch("/api/simulate?prompts=1", { method: "GET" });
+      const data = await res.json();
+      if (!res.ok || !data?.ok) throw new Error(data?.error || `HTTP ${res.status}`);
+      const list: PromptMeta[] = Array.isArray(data.prompts) ? data.prompts : [];
+      setPromptsMeta(list);
+      setPromptsCount(list.length);
+      setBoards([{ name: "All", bubbles: new Array(list.length).fill("unknown") }]);
+      setActive(0);
+    } catch (e: any) {
+      setError(e?.message || String(e));
     }
   }
-  return out; // 모든 가설을 반환
-}
 
-function titleOf(h: string): string {
-  const cut = h.split(/[:\-\u2014]/)[0];
-  const t = (cut || h).trim().replace(/^"|^'|^\[|^\(/, "").replace(/"$|'$|\]$|\)$/ , "");
-  return t.length > 60 ? t.slice(0, 57) + "…" : t;
-}
+  useEffect(() => {
+    if (!embedded) loadPromptsMeta();
+  }, [embedded]);
 
-export default function LeftChatPanel() {
-  const [input, setInput] = useState("");
-  const [actionable, setActionable] = useState(false);
-  const [hypotheses, setHypotheses] = useState<string[]>([]);
-  const [selected, setSelected] = useState<Record<number, boolean>>({});
-  const [evaluating, setEvaluating] = useState(false);
-  const [detecting, setDetecting] = useState(false);
-
-  const { messages, append, status } = useChat({
-    api: "/api/chat",
-    streamProtocol: "text",
-    onFinish: async (assistantMessage) => {
+  // 이벤트 리스너
+  useEffect(() => {
+    if (embedded) return;
+    function onEvalResults(e: any) {
       try {
-        setDetecting(true);
-        const partsToText = (m: any) =>
-          Array.isArray(m?.parts)
-            ? m.parts
-                .map((p: any) => (p?.type === "text" ? String(p.text || "") : ""))
-                .join("")
-            : String(m?.content || "");
+        const lists: string[][] = Array.isArray(e?.detail?.resultsList) ? e.detail.resultsList : [];
+        const titles: string[] = Array.isArray(e?.detail?.titles) ? e.detail.titles : [];
+        if (!lists.length) return;
 
-        const lastAssistantText = partsToText(assistantMessage);
-        const withAssistant = [...messages, assistantMessage];
-        const compact = withAssistant.slice(-20).map((m) => ({ role: m.role, content: partsToText(m) }));
+        const boardsFromLists: Board[] = lists.map((arr, idx) => {
+          const mapped = arr.map((v) =>
+            v === "positive" ? "positive" : v === "negative" ? "negative" : "unknown"
+          ) as BubbleState[];
+          const padded =
+            mapped.length < promptsCount
+              ? mapped.concat(new Array(promptsCount - mapped.length).fill("unknown"))
+              : mapped.slice(0, promptsCount);
+          return { name: titles[idx] || `H${idx + 1}`, bubbles: padded };
+        });
+        setBoards([{ name: "All", bubbles: boardsFromLists[0].bubbles }, ...boardsFromLists]);
+        setActive(1);
+      } catch {}
+    }
+    window.addEventListener("eval-results", onEvalResults as EventListener);
+    return () => window.removeEventListener("eval-results", onEvalResults as EventListener);
+  }, [promptsCount, embedded]);
 
-        let detected = { actionable: false, hypotheses: [] as string[] };
-        try {
-          const res = await fetch("/api/detect-actionable", {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify({ messages: compact, lastAssistant: lastAssistantText }),
-          });
-          const data = await res.json();
-          if (res.ok && data?.ok) {
-            detected.actionable = Boolean(data.actionable);
-            detected.hypotheses = Array.isArray(data.hypotheses) ? data.hypotheses : [];
-          }
-        } catch {}
-
-        if (!detected.actionable || detected.hypotheses.length === 0) {
-          const kw = ["시뮬", "실험", "가설", "테스트", "해보시겠", "evaluate", "전체 평가"];
-          const hit = kw.some((k) => lastAssistantText.includes(k));
-          if (hit) {
-            detected.actionable = true;
-            detected.hypotheses = [lastAssistantText];
-          }
-        }
-
-        const normalized = splitHypotheses(detected.hypotheses);
-        if (detected.actionable && normalized.length > 0) {
-          setActionable(true);
-          setHypotheses(normalized);
-          setSelected({});
-        } else {
-          setActionable(false);
-          setHypotheses([]);
-          setSelected({});
-        }
-      } catch {
-        setActionable(false);
-        setHypotheses([]);
-        setSelected({});
-      } finally {
-        setDetecting(false);
-      }
-    },
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!input.trim() || status === "streaming") return;
-    setActionable(false);
-    setHypotheses([]);
-    setSelected({});
-    append({ role: "user", content: input });
-    setInput("");
+  const groupedByScore = (b: BubbleState[]) => {
+    const groups: number[][] = Array.from({ length: 30 }, () => []);
+    for (const meta of promptsMeta) {
+      const s = Math.max(1, Math.min(30, Number(meta.engagement_score) || 1));
+      groups[s - 1].push(meta.idx);
+    }
+    return groups;
   };
 
-  const isLoading = status === "streaming";
+  const renderBubble = (state: BubbleState, idx: number) => {
+    const size = 16;
+    const style: React.CSSProperties = { width: size, height: size };
+    let cls = "border-2 rounded-full";
+    if (state === "unknown") cls += " border-gray-500 bg-gray-400";
+    else if (state === "pending") cls += " border-gray-300 bg-gray-200 animate-pulse";
+    else if (state === "positive") cls += " border-emerald-600 bg-emerald-500";
+    else if (state === "negative") cls += " border-rose-500 bg-transparent";
+    return <span key={`b-${idx}-${state}`} className={cls} style={style} />;
+  };
 
-  async function runEvaluateAll() {
-    const picked = hypotheses.map((h, i) => ({ h, i })).filter(({ i }) => selected[i]);
-    if (picked.length === 0) return;
-    try {
-      setEvaluating(true);
-      const responses = await Promise.all(
-        picked.map(async (p) => {
-          const res = await fetch("/api/eval-sentiment", {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify({ question: p.h }),
-          });
-          const data = await res.json();
-          if (res.ok && data?.ok && Array.isArray(data.results)) return data.results as string[];
-          return [] as string[];
-        })
-      );
-      window.dispatchEvent(
-        new CustomEvent("eval-results", {
-          detail: { resultsList: responses, titles: picked.map((p) => titleOf(p.h)) },
-        })
-      );
-    } finally {
-      setEvaluating(false);
-    }
-  }
+  const renderColumn = (score: number, indices: number[], bubbles: BubbleState[]) => (
+    <div key={`col-${score}`} className="flex flex-col items-center gap-1">
+      <div className="flex flex-col gap-1 justify-end h-64">
+        {indices.map((i) => renderBubble(bubbles[i] ?? "unknown", i))}
+      </div>
+      <div className="text-[10px] text-muted-foreground">{score}</div>
+    </div>
+  );
 
   return (
-    <Card className="h-full flex flex-col">
-      <CardHeader>
-        <CardTitle>Owner ↔ LLM Chat</CardTitle>
+    <Card className="h-full overflow-hidden">
+      <CardHeader className="py-4 px-4 md:px-6">
+        <CardTitle>Simulation Results</CardTitle>
       </CardHeader>
-      <CardContent className="flex-1 flex flex-col gap-4 min-h-0">
-        {/* Messages */}
-        <div className="flex-1 overflow-y-auto pr-4">
-          <div className="space-y-4">
-            {messages.length === 0 && (
-              <div className="text-center text-gray-500 py-8">상품이나 마케팅에 대한 질문을 해보세요</div>
-            )}
-            {messages.map((message) => (
-              <div key={message.id} className={`flex gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
-                <div className={`flex gap-3 max-w-[80%] ${message.role === "user" ? "flex-row-reverse" : "flex-row"}`}>
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center ${message.role === "user" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-600"}`}>
-                    {message.role === "user" ? <User size={16} /> : <Bot size={16} />}
-                  </div>
-                  <div className={`px-4 py-2 rounded-lg ${message.role === "user" ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-900"}`}>
-                    <div className="whitespace-pre-wrap">
-                      {message.parts
-                        .map((part) => {
-                          if (part.type === "text") return part.text;
-                          return "";
-                        })
-                        .join("")}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
 
-            {/* 가설 체크박스 + 실행 버튼 (마지막 메시지 아래) */}
-            {(detecting || (actionable && !isLoading)) && (
-              <div className="mt-2 space-y-2">
-                {detecting ? (
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
-                    <span>Thinking…</span>
-                  </div>
-                ) : (
-                  <>
-                    <div className="text-xs text-muted-foreground">Select hypotheses to simulate:</div>
-                    <div className="flex flex-col gap-2">
-                      {hypotheses.map((h, i) => (
-                        <label key={i} className="flex items-center gap-2 text-sm">
-                          <input
-                            type="checkbox"
-                            className="size-4"
-                            checked={!!selected[i]}
-                            onChange={(e) => setSelected((prev) => ({ ...prev, [i]: e.target.checked }))}
-                          />
-                          <span className="truncate">{titleOf(h)}</span>
-                        </label>
-                      ))}
-                    </div>
-                    <div className="flex justify-end">
-                      <Button size="sm" onClick={runEvaluateAll} disabled={evaluating}>
-                        {evaluating ? "Running..." : "Run Simulation"}
-                      </Button>
-                    </div>
-                  </>
+      {embedded ? (
+        <CardContent className="pb-4 px-0 min-h-0" />
+      ) : (
+        <CardContent className="pb-4 px-4 md:px-6 space-y-4">
+          <div className="flex items-center gap-2 flex-wrap">
+            {boards.map((b, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`px-3 py-1 rounded-md text-sm ${
+                  i === active ? "bg-primary text-primary-foreground" : "border"
+                }`}
+              >
+                {b.name}
+              </button>
+            ))}
+          </div>
+
+          <div className="text-xs text-muted-foreground">
+            가로축: engagement score (1~30), 원: 각 사용자 — 초록(Positive, 채움) / 빨강(비어있음, Negative) / 회색(Unknown)
+          </div>
+
+          <div className="overflow-x-auto">
+            <div className="min-w-[800px]">
+              <div className="flex items-end gap-2">
+                {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) =>
+                  renderColumn(idx + 1, indices, boards[active]?.bubbles || [])
                 )}
               </div>
-            )}
-
-            {isLoading && (
-              <div className="flex gap-3 justify-start">
-                <div className="flex gap-3 max-w-[80%]">
-                  <div className="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center">
-                    <Bot size={16} />
-                  </div>
-                  <div className="px-4 py-2 rounded-lg bg-gray-100 text-gray-900">
-                    <div className="flex space-x-1">
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0.1s" }}></div>
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
+            </div>
           </div>
-        </div>
 
-        {/* Input */}
-        <form onSubmit={handleSubmit} className="flex gap-2">
-          <Input value={input} onChange={(e) => setInput(e.target.value)} placeholder="질문을 입력하세요..." disabled={isLoading} className="flex-1" />
-          <Button type="submit" disabled={isLoading || !input.trim()}>
-            <Send size={16} />
-          </Button>
-        </form>
-      </CardContent>
+          {error && <div className="text-sm text-red-500">에러: {error}</div>}
+        </CardContent>
+      )}
     </Card>
   );
 }

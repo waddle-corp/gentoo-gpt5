@@ -1,25 +1,25 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useEffect, useMemo, useState } from "react";
-
-
+import { useEffect, useState } from "react";
 
 type BubbleState = "unknown" | "positive" | "negative" | "pending";
-
 type PromptMeta = { idx: number; user_id: string; engagement_score: number };
+type Board = { name: string; bubbles: BubbleState[] };
+type Props = { embedded?: boolean };
 
-type Board = {
-  name: string;
-  bubbles: BubbleState[];
-};
-
-export default function CenterSimulationPanel() {
+export default function CenterSimulationPanel({ embedded }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [promptsCount, setPromptsCount] = useState(0);
   const [promptsMeta, setPromptsMeta] = useState<PromptMeta[]>([]);
   const [boards, setBoards] = useState<Board[]>([{ name: "All", bubbles: [] }]);
   const [active, setActive] = useState(0);
+
+  // 데이터 로드 (embedded 아닐 때만)
+  useEffect(() => {
+    if (embedded) return;
+    loadPromptsMeta();
+  }, [embedded]);
 
   async function loadPromptsMeta() {
     try {
@@ -36,11 +36,9 @@ export default function CenterSimulationPanel() {
     }
   }
 
+  // 이벤트 리스너
   useEffect(() => {
-    loadPromptsMeta();
-  }, []);
-
-  useEffect(() => {
+    if (embedded) return;
     function onEvalResults(e: any) {
       try {
         const lists: string[][] = Array.isArray(e?.detail?.resultsList) ? e.detail.resultsList : [];
@@ -48,18 +46,22 @@ export default function CenterSimulationPanel() {
         if (!lists.length) return;
 
         const boardsFromLists: Board[] = lists.map((arr, idx) => {
-          const mapped = arr.map((v) => (v === "positive" ? "positive" : v === "negative" ? "negative" : "unknown")) as BubbleState[];
-          const padded = mapped.length < promptsCount ? mapped.concat(new Array(promptsCount - mapped.length).fill("unknown")) : mapped.slice(0, promptsCount);
+          const mapped = arr.map((v) =>
+            v === "positive" ? "positive" : v === "negative" ? "negative" : "unknown"
+          ) as BubbleState[];
+          const padded =
+            mapped.length < promptsCount
+              ? mapped.concat(new Array(promptsCount - mapped.length).fill("unknown"))
+              : mapped.slice(0, promptsCount);
           return { name: titles[idx] || `H${idx + 1}`, bubbles: padded };
         });
-        // also keep All tab as the first one, using first board as representative
         setBoards([{ name: "All", bubbles: boardsFromLists[0].bubbles }, ...boardsFromLists]);
         setActive(1);
       } catch {}
     }
     window.addEventListener("eval-results", onEvalResults as EventListener);
     return () => window.removeEventListener("eval-results", onEvalResults as EventListener);
-  }, [promptsCount]);
+  }, [promptsCount, embedded]);
 
   const groupedByScore = (b: BubbleState[]) => {
     const groups: number[][] = Array.from({ length: 30 }, () => []);
@@ -67,7 +69,7 @@ export default function CenterSimulationPanel() {
       const s = Math.max(1, Math.min(30, Number(meta.engagement_score) || 1));
       groups[s - 1].push(meta.idx);
     }
-    return groups.map((indices) => indices.map((i) => i));
+    return groups;
   };
 
   const renderBubble = (state: BubbleState, idx: number) => {
@@ -81,46 +83,56 @@ export default function CenterSimulationPanel() {
     return <span key={`b-${idx}-${state}`} className={cls} style={style} />;
   };
 
-  const renderColumn = (score: number, indices: number[], bubbles: BubbleState[]) => {
-    return (
-      <div key={`col-${score}`} className="flex flex-col items-center gap-1">
-        <div className="flex flex-col gap-1 justify-end h-64">
-          {indices.map((i) => renderBubble(bubbles[i] ?? "unknown", i))}
-        </div>
-        <div className="text-[10px] text-muted-foreground">{score}</div>
+  const renderColumn = (score: number, indices: number[], bubbles: BubbleState[]) => (
+    <div key={`col-${score}`} className="flex flex-col items-center gap-1">
+      <div className="flex flex-col gap-1 justify-end h-64">
+        {indices.map((i) => renderBubble(bubbles[i] ?? "unknown", i))}
       </div>
-    );
-  };
+      <div className="text-[10px] text-muted-foreground">{score}</div>
+    </div>
+  );
 
   return (
-    <Card className="h-full">
-      <CardHeader>
+    <Card className="h-full overflow-hidden">
+      <CardHeader className="py-4 px-4 md:px-6">
         <CardTitle>Simulation Results</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
-        <div className="flex items-center gap-2">
-          {boards.map((b, i) => (
-            <button
-              key={i}
-              onClick={() => setActive(i)}
-              className={`px-3 py-1 rounded-md text-sm ${i === active ? "bg-primary text-primary-foreground" : "border"}`}
-            >
-              {b.name}
-            </button>
-          ))}
-        </div>
 
-        <div className="text-xs text-muted-foreground">가로축: engagement score (1~30), 원: 각 사용자 — 초록(Positive, 채움) / 빨강(비어있음, Negative) / 회색(Unknown)</div>
-        <div className="overflow-x-auto">
-          <div className="min-w-[800px]">
-            <div className="flex items-end gap-2">
-              {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) => renderColumn(idx + 1, indices, boards[active]?.bubbles || []))}
+      {embedded ? (
+        <CardContent className="pb-4 px-0 min-h-0" />
+      ) : (
+        <CardContent className="pb-4 px-4 md:px-6 space-y-4">
+          <div className="flex items-center gap-2 flex-wrap">
+            {boards.map((b, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`px-3 py-1 rounded-md text-sm ${
+                  i === active ? "bg-primary text-primary-foreground" : "border"
+                }`}
+              >
+                {b.name}
+              </button>
+            ))}
+          </div>
+
+          <div className="text-xs text-muted-foreground">
+            가로축: engagement score (1~30), 원: 각 사용자 — 초록(Positive, 채움) / 빨강(비어있음, Negative) / 회색(Unknown)
+          </div>
+
+          <div className="overflow-x-auto">
+            <div className="min-w-[800px]">
+              <div className="flex items-end gap-2">
+                {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) =>
+                  renderColumn(idx + 1, indices, boards[active]?.bubbles || [])
+                )}
+              </div>
             </div>
           </div>
-        </div>
 
-        {error && <div className="text-sm text-red-500">에러: {error}</div>}
-      </CardContent>
+          {error && <div className="text-sm text-red-500">에러: {error}</div>}
+        </CardContent>
+      )}
     </Card>
   );
 }

@@ -5,6 +5,10 @@
   --foreground: #ffffff;
   --card: #111111;
   --card-foreground: #ffffff;
+  --left-panel: #323232; /* Left: RGB(50,50,50) */
+  --right-panel: #212121; /* Right: RGB(33,33,33) */
+  --chat-input-bg: #3c3c3c; /* Chat textarea background */
+  --topbar: #393B3F; /* Top bar background */
   --popover: #111111;
   --popover-foreground: #ffffff;
   --primary: #ffffff;
@@ -50,4 +54,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
