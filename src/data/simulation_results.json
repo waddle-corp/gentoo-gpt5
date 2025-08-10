@@ -1,0 +1,3402 @@
+[
+  {
+    "clone_id": 0,
+    "persona": "클론 001",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7062630653381348
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.2469649314880371
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.9532589912414551,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 1,
+    "persona": "클론 002",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6803669929504395
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.17200112342834473
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8523788452148438,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 2,
+    "persona": "클론 003",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.703484058380127
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1554408073425293
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8589389324188232,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 22
+    }
+  },
+  {
+    "clone_id": 3,
+    "persona": "클론 004",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6616079807281494
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.23014402389526367
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8917651176452637,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 4,
+    "persona": "클론 005",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6682291030883789
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18766307830810547
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8559050559997559,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 1
+    }
+  },
+  {
+    "clone_id": 5,
+    "persona": "클론 006",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6561627388000488
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.17903709411621094
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8352138996124268,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 19
+    }
+  },
+  {
+    "clone_id": 6,
+    "persona": "클론 007",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6338367462158203
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.30991387367248535
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.9437777996063232,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 6
+    }
+  },
+  {
+    "clone_id": 7,
+    "persona": "클론 008",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6252589225769043
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1711411476135254
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7964239120483398,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 8,
+    "persona": "클론 009",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6890981197357178
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1397380828857422
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8288488388061523,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 19
+    }
+  },
+  {
+    "clone_id": 9,
+    "persona": "클론 010",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7513871192932129
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.14660000801086426
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.898000955581665,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 18
+    }
+  },
+  {
+    "clone_id": 10,
+    "persona": "클론 011",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6469261646270752
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18037080764770508
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8273119926452637,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 11,
+    "persona": "클론 012",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7652549743652344
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18535208702087402
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.9506208896636963,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 7
+    }
+  },
+  {
+    "clone_id": 12,
+    "persona": "클론 013",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6212868690490723
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.17539310455322266
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7967081069946289,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 22
+    }
+  },
+  {
+    "clone_id": 13,
+    "persona": "클론 014",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6358761787414551
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1890869140625
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8249759674072266,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 8
+    }
+  },
+  {
+    "clone_id": 14,
+    "persona": "클론 015",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6873397827148438
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.13881278038024902
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8261666297912598,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 21
+    }
+  },
+  {
+    "clone_id": 15,
+    "persona": "클론 016",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6596560478210449
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.19086098670959473
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8505299091339111,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 16,
+    "persona": "클론 017",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6107158660888672
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.2673320770263672
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8780689239501953,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 17
+    }
+  },
+  {
+    "clone_id": 17,
+    "persona": "클론 018",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6521222591400146
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.19694209098815918
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8490769863128662,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 28
+    }
+  },
+  {
+    "clone_id": 18,
+    "persona": "클론 019",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6752278804779053
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.14393877983093262
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8191828727722168,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 7
+    }
+  },
+  {
+    "clone_id": 19,
+    "persona": "클론 020",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.4449300765991211
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1639401912689209
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.6088912487030029,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 20,
+    "persona": "클론 021",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6292600631713867
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.21393489837646484
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8432071208953857,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 7
+    }
+  },
+  {
+    "clone_id": 21,
+    "persona": "클론 022",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6703250408172607
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.16550183296203613
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8358409404754639,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 22,
+    "persona": "클론 023",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6538350582122803
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.16092514991760254
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8147709369659424,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 23,
+    "persona": "클론 024",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6762359142303467
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.13278913497924805
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8090488910675049,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 24,
+    "persona": "클론 025",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6817262172698975
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18471097946166992
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8664519786834717,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 1
+    }
+  },
+  {
+    "clone_id": 25,
+    "persona": "클론 026",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6717166900634766
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.16613411903381348
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8378629684448242,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 18
+    }
+  },
+  {
+    "clone_id": 26,
+    "persona": "클론 027",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6369190216064453
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.23545598983764648
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.872391939163208,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 2
+    }
+  },
+  {
+    "clone_id": 27,
+    "persona": "클론 028",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6478018760681152
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1604170799255371
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8082318305969238,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 28,
+    "persona": "클론 029",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6277589797973633
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.17530012130737305
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8030741214752197,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 13
+    }
+  },
+  {
+    "clone_id": 29,
+    "persona": "클론 030",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5785317420959473
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.22005295753479004
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7986078262329102,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 1
+    }
+  },
+  {
+    "clone_id": 30,
+    "persona": "클론 031",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6564979553222656
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.26393675804138184
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.92044997215271,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 31,
+    "persona": "클론 032",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.597254753112793
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.3090512752532959
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.9063167572021484,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 26
+    }
+  },
+  {
+    "clone_id": 32,
+    "persona": "클론 033",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7271952629089355
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1362907886505127
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8635058403015137,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 33,
+    "persona": "클론 034",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.412294864654541
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1829380989074707
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.595261812210083,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 21
+    }
+  },
+  {
+    "clone_id": 34,
+    "persona": "클론 035",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5929069519042969
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.16459989547729492
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7575459480285645,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 35,
+    "persona": "클론 036",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6082019805908203
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.25031399726867676
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8585300445556641,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 1
+    }
+  },
+  {
+    "clone_id": 36,
+    "persona": "클론 037",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7138018608093262
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18954920768737793
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.9033617973327637,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 37,
+    "persona": "클론 038",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5811269283294678
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.32512712478637695
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.9062700271606445,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 1
+    }
+  },
+  {
+    "clone_id": 38,
+    "persona": "클론 039",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6001241207122803
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.20926308631896973
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8094010353088379,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 22
+    }
+  },
+  {
+    "clone_id": 39,
+    "persona": "클론 040",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6007552146911621
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.2922790050506592
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8930490016937256,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 22
+    }
+  },
+  {
+    "clone_id": 40,
+    "persona": "클론 041",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7180569171905518
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.12418007850646973
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8422510623931885,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 41,
+    "persona": "클론 042",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6206121444702148
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18423986434936523
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8048655986785889,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 6
+    }
+  },
+  {
+    "clone_id": 42,
+    "persona": "클론 043",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6178677082061768
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.15500593185424805
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7728879451751709,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 43,
+    "persona": "클론 044",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6940076351165771
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.0984797477722168
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7925028800964355,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 44,
+    "persona": "클론 045",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7244939804077148
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.15456891059875488
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8790850639343262,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 30
+    }
+  },
+  {
+    "clone_id": 45,
+    "persona": "클론 046",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7006857395172119
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.19402003288269043
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8947231769561768,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 46,
+    "persona": "클론 047",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6182231903076172
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18123579025268555
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7994730472564697,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 19
+    }
+  },
+  {
+    "clone_id": 47,
+    "persona": "클론 048",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6104660034179688
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.2704131603240967
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8808944225311279,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 26
+    }
+  },
+  {
+    "clone_id": 48,
+    "persona": "클론 049",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6112229824066162
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.17733502388000488
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.788578987121582,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 49,
+    "persona": "클론 050",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6064572334289551
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18437600135803223
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7908480167388916,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 50,
+    "persona": "클론 051",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5631239414215088
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.22248411178588867
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7856199741363525,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 24
+    }
+  },
+  {
+    "clone_id": 51,
+    "persona": "클론 052",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6231942176818848
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.15879130363464355
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7819969654083252,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 52,
+    "persona": "클론 053",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6211779117584229
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.25495100021362305
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8761396408081055,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 25
+    }
+  },
+  {
+    "clone_id": 53,
+    "persona": "클론 054",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5861070156097412
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.19316792488098145
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7792911529541016,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 23
+    }
+  },
+  {
+    "clone_id": 54,
+    "persona": "클론 055",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6596949100494385
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.11319994926452637
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.772907018661499,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 55,
+    "persona": "클론 056",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5951962471008301
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.2213280200958252
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8165380954742432,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 56,
+    "persona": "클론 057",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5553760528564453
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.22127103805541992
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7766592502593994,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 57,
+    "persona": "클론 058",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5971977710723877
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1719529628753662
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7691702842712402,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 1
+    }
+  },
+  {
+    "clone_id": 58,
+    "persona": "클론 059",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6885850429534912
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.11363792419433594
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8022379875183105,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 1
+    }
+  },
+  {
+    "clone_id": 59,
+    "persona": "클론 060",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5591702461242676
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.2383732795715332
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.797558069229126,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 60,
+    "persona": "클론 061",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6115310192108154
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.15536737442016602
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7669198513031006,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 61,
+    "persona": "클론 062",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6634330749511719
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.13831210136413574
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8017630577087402,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 8
+    }
+  },
+  {
+    "clone_id": 62,
+    "persona": "클론 063",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7410471439361572
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5567712783813477
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 1.2979261875152588,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 63,
+    "persona": "클론 064",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6790907382965088
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.17491412162780762
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8540308475494385,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 26
+    }
+  },
+  {
+    "clone_id": 64,
+    "persona": "클론 065",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.669165849685669
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18376922607421875
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8529551029205322,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 5
+    }
+  },
+  {
+    "clone_id": 65,
+    "persona": "클론 066",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5380122661590576
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.22466301918029785
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7626900672912598,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 66,
+    "persona": "클론 067",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6701569557189941
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18654203414916992
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8567109107971191,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 28
+    }
+  },
+  {
+    "clone_id": 67,
+    "persona": "클론 068",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6432130336761475
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.10683012008666992
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7500696182250977,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 68,
+    "persona": "클론 069",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6588428020477295
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.12926006317138672
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7881181240081787,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 21
+    }
+  },
+  {
+    "clone_id": 69,
+    "persona": "클론 070",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5677318572998047
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.19035792350769043
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.758101224899292,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 17
+    }
+  },
+  {
+    "clone_id": 70,
+    "persona": "클론 071",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6503989696502686
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.13807415962219238
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7884860038757324,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 25
+    }
+  },
+  {
+    "clone_id": 71,
+    "persona": "클론 072",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.645258903503418
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.13932275772094727
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7845969200134277,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 26
+    }
+  },
+  {
+    "clone_id": 72,
+    "persona": "클론 073",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6760671138763428
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.17364501953125
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.849729061126709,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 73,
+    "persona": "클론 074",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5756800174713135
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1739978790283203
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7496912479400635,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 27
+    }
+  },
+  {
+    "clone_id": 74,
+    "persona": "클론 075",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5847461223602295
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.20502138137817383
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7897789478302002,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 14
+    }
+  },
+  {
+    "clone_id": 75,
+    "persona": "클론 076",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6368241310119629
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.11551117897033691
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7523488998413086,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 76,
+    "persona": "클론 077",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.692202091217041
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.13508081436157227
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8272969722747803,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 30
+    }
+  },
+  {
+    "clone_id": 77,
+    "persona": "클론 078",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6868588924407959
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.14400315284729004
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8308918476104736,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 2
+    }
+  },
+  {
+    "clone_id": 78,
+    "persona": "클론 079",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5299808979034424
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.21230316162109375
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7422997951507568,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 4
+    }
+  },
+  {
+    "clone_id": 79,
+    "persona": "클론 080",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.653831958770752
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.12547922134399414
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7793281078338623,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 80,
+    "persona": "클론 081",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6653592586517334
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.10938763618469238
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7747690677642822,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 27
+    }
+  },
+  {
+    "clone_id": 81,
+    "persona": "클론 082",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.561244010925293
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.208848237991333
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7701036930084229,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 82,
+    "persona": "클론 083",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6522989273071289
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.119873046875
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.772191047668457,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 25
+    }
+  },
+  {
+    "clone_id": 83,
+    "persona": "클론 084",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.8222951889038086
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.15845704078674316
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.9807770252227783,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 8
+    }
+  },
+  {
+    "clone_id": 84,
+    "persona": "클론 085",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5114970207214355
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.17159080505371094
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.6830999851226807,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 85,
+    "persona": "클론 086",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7418251037597656
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.18966388702392578
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.931502103805542,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 6
+    }
+  },
+  {
+    "clone_id": 86,
+    "persona": "클론 087",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6425139904022217
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.08448100090026855
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7270169258117676,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 87,
+    "persona": "클론 088",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5442230701446533
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.12934088706970215
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.6735837459564209,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 24
+    }
+  },
+  {
+    "clone_id": 88,
+    "persona": "클론 089",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.530116081237793
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.20116186141967773
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7312881946563721,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 17
+    }
+  },
+  {
+    "clone_id": 89,
+    "persona": "클론 090",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.750359058380127
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1477522850036621
+      },
+      {
+        "role": "assistant",
+        "content": "지금 취향이면 산뜻한 화이트 추천드려요. 예산 말씀해 주시면 더 딱 맞게 골라드릴게요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.898144006729126,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 3
+    }
+  },
+  {
+    "clone_id": 90,
+    "persona": "클론 091",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6134860515594482
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.17636775970458984
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7898669242858887,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 13
+    }
+  },
+  {
+    "clone_id": 91,
+    "persona": "클론 092",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5186293125152588
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.2325739860534668
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7512140274047852,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 92,
+    "persona": "클론 093",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.7068018913269043
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.19550800323486328
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.9023299217224121,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 24
+    }
+  },
+  {
+    "clone_id": 93,
+    "persona": "클론 094",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5074961185455322
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.187330961227417
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.6948370933532715,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 19
+    }
+  },
+  {
+    "clone_id": 94,
+    "persona": "클론 095",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.48615407943725586
+      },
+      {
+        "role": "assistant",
+        "content": "가성비로는 드라이한 스파클링이 좋아요. 페어링은 해산물/가벼운 샐러드가 잘 맞습니다.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.24823594093322754
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7344012260437012,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 25
+    }
+  },
+  {
+    "clone_id": 95,
+    "persona": "클론 096",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.6563220024108887
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.15148019790649414
+      },
+      {
+        "role": "assistant",
+        "content": "고기 요리엔 탄닌이 적당한 레드가 무난합니다. 향/바디 선호도 알려주세요.",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8078160285949707,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 3
+    }
+  },
+  {
+    "clone_id": 96,
+    "persona": "클론 097",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5864126682281494
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1446371078491211
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7310678958892822,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 24
+    }
+  },
+  {
+    "clone_id": 97,
+    "persona": "클론 098",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.4930112361907959
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.38646984100341797
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.8795061111450195,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 18
+    }
+  },
+  {
+    "clone_id": 98,
+    "persona": "클론 099",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.5567522048950195
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.1542372703552246
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.7110030651092529,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.5,
+      "reason": "키워드/길이 기반 휴리스틱 판정",
+      "score": 22
+    }
+  },
+  {
+    "clone_id": 99,
+    "persona": "클론 100",
+    "messages": [
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.4725069999694824
+      },
+      {
+        "role": "assistant",
+        "content": "오늘은 향이 은은한 제품이 좋아 보여요. 깔끔하고 도수도 무겁지 않아요.",
+        "turn_duration": 0.0
+      },
+      {
+        "role": "user",
+        "content": "간단하게 추천해줘. 오늘 마시기 좋고 가성비 괜찮은 걸로.",
+        "turn_duration": 0.20796680450439453
+      },
+      {
+        "role": "assistant",
+        "content": "선물용이면 패키지가 깔끔한 제품으로 추천드릴게요. 가격대 알려주실래요?",
+        "turn_duration": 0.0
+      }
+    ],
+    "total_duration": 0.6804859638214111,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "엄격도(0.65)에 따른 불만족 판정",
+      "score": 7
+    }
+  }
+]
