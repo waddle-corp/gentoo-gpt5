@@ -29,7 +29,7 @@ export async function POST(req: Request) {
     }
 
     const system = `You are a data analyst for an ecommerce simulation. Write concise, high-signal insights for a bubble chart.
-Return ONLY 3-5 markdown bullets. DO NOT include a 'Next actions' section.`;
+Return ONLY 3 markdown bullets containing the most important insights concisely. DO NOT include a 'Next actions' section.`;
 
     const prompt = `Chart context:\n- Totals: ${JSON.stringify(stats)}\n- By score (1..30): ${JSON.stringify(byScore)}\nGuidelines:\n- Mention skew/peaks/imbalance.\n- Point to obvious cohorts.\n- Keep it scannable. No next actions.`;
 
