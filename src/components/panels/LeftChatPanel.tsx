@@ -249,11 +249,11 @@ export default function LeftChatPanel() {
                         <label key={i} className="flex items-center gap-2 text-sm">
                           <input
                             type="checkbox"
-                            className="size-4"
+                            className="size-4 rounded accent-indigo-500 focus:ring-2 focus:ring-purple-400/50"
                             checked={!!selected[i]}
                             onChange={(e) => setSelected((prev) => ({ ...prev, [i]: e.target.checked }))}
                           />
-                          <span className="truncate">{titleOf(h)}</span>
+                          <span className={`truncate ${selected[i] ? "text-purple-400" : "text-white"}`}>{titleOf(h)}</span>
                         </label>
                       ))}
                     </div>

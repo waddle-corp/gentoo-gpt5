@@ -241,7 +241,7 @@ export default function CenterSimulationPanel() {
       <CardHeader>
         <CardTitle>Simulation Results</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-4 min-h-0">
         <div className="flex items-center gap-2">
           {boards.map((b, i) => (
             <button key={i} onClick={() => setActive(i)} className={`px-3 py-1 rounded-md text-sm ${i === active ? "bg-primary text-primary-foreground" : "border"}`}>
@@ -261,16 +261,18 @@ export default function CenterSimulationPanel() {
 
         {/* Insights */}
         {hasSimulated && (
-          <div className="rounded-md border p-3 text-sm bg-card/50">
-            <div className="text-xs text-muted-foreground mb-1">Insights</div>
-            {insightsLoading ? (
-              <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
-                Generating insights…
-              </div>
-            ) : (
-              <div className="text-sm leading-5" dangerouslySetInnerHTML={{ __html: insights || "<p class=\"text-muted-foreground\">No insights yet.</p>" }} />
-            )}
+          <div className="rounded-md border text-sm bg-card/50">
+            <div className="px-3 pt-3 text-xs text-muted-foreground">Insights</div>
+            <div className="h-48 overflow-y-auto overscroll-contain px-3 pb-3">
+              {insightsLoading ? (
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
+                  Generating insights…
+                </div>
+              ) : (
+                <div className="text-sm leading-5" dangerouslySetInnerHTML={{ __html: insights || "<p class=\"text-muted-foreground\">No insights yet.</p>" }} />
+              )}
+            </div>
           </div>
         )}
 
