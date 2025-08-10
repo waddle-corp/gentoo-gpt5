@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopbarActions from "@/components/TopbarActions";
+import StatsModal from "@/components/StatsModal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,8 @@ export default function RootLayout({
           <TopbarActions />
         </header>
         <div className="flex-1 min-h-0">{children}</div>
+        {/* Global modal host */}
+        <StatsModal />
       </body>
     </html>
   );

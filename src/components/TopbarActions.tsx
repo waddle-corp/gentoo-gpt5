@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { RefreshCw } from "lucide-react";
+import { RefreshCw, Wand2 } from "lucide-react";
 
 export default function TopbarActions() {
   return (
@@ -16,6 +16,17 @@ export default function TopbarActions() {
       >
         <RefreshCw className="w-4 h-4" />
         <span className="sr-only">Clear</span>
+      </Button>
+      <Button
+        variant="outline"
+        size="sm"
+        aria-label="Generate"
+        onClick={() => {
+          window.dispatchEvent(new CustomEvent("generate-stats"));
+        }}
+      >
+        <Wand2 className="w-4 h-4" />
+        <span className="sr-only">Generate</span>
       </Button>
     </div>
   );
