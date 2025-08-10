@@ -12,14 +12,14 @@ import remarkGfm from "remark-gfm";
 function MarkdownRenderer({ content }: { content: string }) {
   const MD = ReactMarkdown as unknown as React.ComponentType<any>;
   return (
-    <div className="break-words leading-[1.6]">
+    <div className="break-words leading-[1.75]">
       <MD
         remarkPlugins={[remarkGfm]}
         components={{
-          ol: (props: any) => <ol className="list-decimal pl-5 space-y-1" {...props} />,
-          ul: (props: any) => <ul className="list-disc pl-5 space-y-1" {...props} />,
-          li: (props: any) => <li className="my-0 leading-[1.6]" {...props} />, 
-          p: (props: any) => <p className="leading-[1.6] mb-2 last:mb-0" {...props} />,
+          ol: (props: any) => <ol className="my-0 list-decimal pl-5 space-y-2" {...props} />,
+          ul: (props: any) => <ul className="my-0 list-disc pl-5 space-y-2" {...props} />,
+          li: (props: any) => <li className="my-0 leading-[1.75]" {...props} />, 
+          p: (props: any) => <p className="leading-[1.75] m-0" {...props} />,
         }}
       >
         {content}
@@ -69,6 +69,26 @@ export default function LeftChatPanel() {
   const lastDetectAtRef = useRef<number>(0);
   const lastAssistantSigRef = useRef<string>("");
   const MIN_DETECT_INTERVAL_MS = 1800;
+
+  // Clear conversation via topbar
+  useEffect(() => {
+    function onClear() {
+      try {
+        // reset local UI state
+        setActionable(false);
+        setHypotheses([]);
+        setSelected({});
+        setInput("");
+        // Clear message list by reloading the page area or triggering a soft reset.
+        // useChat does not expose a clear() here, so we force rerender via location reload.
+        if (typeof window !== "undefined") {
+          window.location.reload();
+        }
+      } catch {}
+    }
+    window.addEventListener("clear-chat", onClear as EventListener);
+    return () => window.removeEventListener("clear-chat", onClear as EventListener);
+  }, []);
 
   // (moved below useChat) auto-scroll helpers declared after hooks that provide dependencies
 

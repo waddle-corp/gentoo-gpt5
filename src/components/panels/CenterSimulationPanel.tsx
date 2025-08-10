@@ -74,7 +74,7 @@ export default function CenterSimulationPanel() {
   };
 
   const renderBubble = (state: BubbleState, idx: number) => {
-    const size = 14;
+    const size = 12;
     const style: React.CSSProperties = { width: size, height: size, cursor: "pointer" };
     let cls = "border-2 rounded-full";
     if (state === "unknown") cls += " border-gray-500 bg-gray-400";
@@ -101,10 +101,20 @@ export default function CenterSimulationPanel() {
   }
 
   const renderColumn = (score: number, indices: number[], bubbles: BubbleState[]) => {
+    const maxPerSubCol = 10;
+    const numSubCols = Math.max(1, Math.ceil(indices.length / maxPerSubCol));
+    const subCols: number[][] = Array.from({ length: numSubCols }, (_, c) =>
+      indices.slice(c * maxPerSubCol, (c + 1) * maxPerSubCol)
+    );
+
     return (
       <div key={`col-${score}`} className="flex flex-col items-center gap-1">
-        <div className="flex flex-col gap-1 justify-end h-64">
-          {indices.map((i) => renderBubble(bubbles[i] ?? "unknown", i))}
+        <div className="flex items-end gap-1">
+          {subCols.map((col, ci) => (
+            <div key={ci} className="flex flex-col gap-1 justify-end">
+              {col.map((i) => renderBubble(bubbles[i] ?? "unknown", i))}
+            </div>
+          ))}
         </div>
         <div className="text-[10px] text-muted-foreground">{score}</div>
       </div>
@@ -112,12 +122,12 @@ export default function CenterSimulationPanel() {
   };
 
   return (
-    <Card className="h-full border-0 rounded-none bg-transparent">
-      <CardHeader>
+    <Card className="h-full border-0 rounded-none bg-transparent gap-5">
+      <CardHeader className="py-1.5">
         <CardTitle>Simulation Results</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
-        <div className="flex items-center gap-2">
+      <CardContent className="space-y-1.5">
+        <div className="flex items-center gap-1.5">
           {boards.map((b, i) => (
             <button key={i} onClick={() => setActive(i)} className={`px-3 py-1 rounded-md text-sm ${i === active ? "bg-primary text-primary-foreground" : "border"}`}>
               {b.name}
@@ -125,11 +135,27 @@ export default function CenterSimulationPanel() {
           ))}
         </div>
 
-        <div className="text-xs text-muted-foreground">가로축: engagement score (1~30), 원: 각 사용자 — 초록(Positive, 채움) / 빨강(비어있음, Negative) / 회색(Unknown)</div>
-        <div className="overflow-x-auto">
-          <div className="min-w-[800px]">
-            <div className="flex items-end gap-2">
-              {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) => renderColumn(idx + 1, indices, boards[active]?.bubbles || []))}
+        <div className="space-y-1">
+          <div className="text-xs text-muted-foreground flex items-center gap-2.5 flex-wrap">
+            <span className="flex items-center gap-1">
+              <span className="inline-block w-3 h-3 rounded-full border-2 border-emerald-600 bg-emerald-500" />
+              <span>Positive</span>
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="inline-block w-3 h-3 rounded-full border-2 border-rose-500 bg-transparent" />
+              <span>Negative</span>
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="inline-block w-3 h-3 rounded-full border-2 border-gray-500 bg-gray-400" />
+              <span>Unknown</span>
+            </span>
+          </div>
+          <div className="overflow-x-auto">
+            <div className="w-max">
+              <div className="flex items-end gap-2">
+                {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) => renderColumn(idx + 1, indices, boards[active]?.bubbles || []))}
+              </div>
+              <div className="mt-2 text-[12px] text-muted-foreground text-center">Engagement Score (1~30)</div>
             </div>
           </div>
         </div>
