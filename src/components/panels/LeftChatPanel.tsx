@@ -1,11 +1,32 @@
 "use client";
 
 import { useChat } from "@ai-sdk/react";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowUp } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
+function MarkdownRenderer({ content }: { content: string }) {
+  const MD = ReactMarkdown as unknown as React.ComponentType<any>;
+  return (
+    <div className="break-words leading-[1.6]">
+      <MD
+        remarkPlugins={[remarkGfm]}
+        components={{
+          ol: (props: any) => <ol className="list-decimal pl-5 space-y-1" {...props} />,
+          ul: (props: any) => <ul className="list-disc pl-5 space-y-1" {...props} />,
+          li: (props: any) => <li className="my-0 leading-[1.6]" {...props} />, 
+          p: (props: any) => <p className="leading-[1.6] mb-2 last:mb-0" {...props} />,
+        }}
+      >
+        {content}
+      </MD>
+    </div>
+  );
+}
 
 function splitHypotheses(rawList: string[]): string[] {
   const joined = rawList.filter(Boolean).join("\n");
@@ -48,6 +69,8 @@ export default function LeftChatPanel() {
   const lastDetectAtRef = useRef<number>(0);
   const lastAssistantSigRef = useRef<string>("");
   const MIN_DETECT_INTERVAL_MS = 1800;
+
+  // (moved below useChat) auto-scroll helpers declared after hooks that provide dependencies
 
   const { messages, append, status } = useChat({
     api: "/api/chat",
@@ -119,6 +142,25 @@ export default function LeftChatPanel() {
     },
   });
 
+  // Auto-scroll to bottom when messages update
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const scrollToBottom = (behavior: ScrollBehavior = "smooth") => {
+    const el = scrollContainerRef.current;
+    if (!el) return;
+    try {
+      el.scrollTo({ top: el.scrollHeight, behavior });
+    } catch {
+      el.scrollTop = el.scrollHeight;
+    }
+  };
+  useEffect(() => {
+    // On mount and whenever messages change, stick to bottom
+    scrollToBottom(messages.length <= 2 ? "auto" : "smooth");
+  }, [messages]);
+  useEffect(() => {
+    if (status === "streaming") scrollToBottom("smooth");
+  }, [status]);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || status === "streaming") return;
@@ -163,7 +205,7 @@ export default function LeftChatPanel() {
       {/* Title removed as requested */}
       <CardContent className="px-0 flex-1 flex flex-col gap-4 min-h-0">
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto pr-0">
+        <div ref={scrollContainerRef} className="flex-1 overflow-y-auto pr-0 chat-scrollbar">
           <div className="space-y-4 px-4">
             {messages.length === 0 && null}
             {messages.map((message) => (
@@ -171,17 +213,14 @@ export default function LeftChatPanel() {
                 <div className={`flex gap-3 ${message.role === "user" ? "max-w-[80%] flex-row-reverse" : "max-w-[92%] flex-row"}`}>
                   {/* avatar removed */}
                   <div
-                    className={`px-4 py-2 rounded-lg ${message.role === "user" ? "text-white" : "bg-transparent text-white"}`}
+                    className={`px-4 py-2 rounded-lg text-sm ${message.role === "user" ? "text-white" : "bg-transparent text-white"}`}
                     style={message.role === "user" ? { backgroundColor: "#4D4D4D" } : undefined}
                   >
-                    <div className="whitespace-pre-wrap">
-                      {message.parts
-                        .map((part) => {
-                          if (part.type === "text") return part.text;
-                          return "";
-                        })
+                    <MarkdownRenderer
+                      content={message.parts
+                        .map((part) => (part.type === "text" ? String(part.text || "") : ""))
                         .join("")}
-                    </div>
+                    />
                   </div>
                 </div>
               </div>
@@ -224,7 +263,7 @@ export default function LeftChatPanel() {
             {isLoading && (
               <div className="flex gap-3 justify-start">
                 <div className="flex gap-3 max-w-[92%]">
-                  <div className="px-4 py-2 rounded-lg bg-transparent text-white">
+                  <div className="px-4 py-2 rounded-lg bg-transparent text-white text-sm">
                     <div className="flex space-x-1">
                       <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
                       <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: ".1s" }}></div>
