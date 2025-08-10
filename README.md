@@ -2,9 +2,11 @@
 
 ▶️ Watch YouTube demo highlights https://youtu.be/GlMtra0T-ls
 
-Pragmatic “Oracle of Delphi” for Shopify stores: ask a question, it simulates with digital customer clones, then proposes deployable next actions.
+> **Pragmatic “Oracle of Delphi” for Shopify stores: ask a question, it simulates with digital customer clones, then proposes deployable next actions.**
 
 Ask about product, pricing, or promo hypotheses. The left panel is a live chat with the owner (LLM‑A). The right panel simulates n digital customer clones chatting with a store agent and records purchase decisions and reasons—then turns them into charts and actions.
+
+<span style="color: #888888;">*Gentoo is an online store AI agent built on a multi‑agent architecture and multi‑turn conversations, adopted by merchants and partners to lift conversion with 24/7 assistance.*</span>
 
 ### Screenshots
 
@@ -107,12 +109,12 @@ OPENAI_API_KEY=sk-...
 
 # Base URLs
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
-NEXT_PUBLIC_BASE_URL_PROD=https://your-prod.example.com
+# NEXT_PUBLIC_BASE_URL_PROD=
 
 # External integration IDs
-NEXT_PUBLIC_ALDEA_SHOP_ID=your-shop-id
-NEXT_PUBLIC_ALDEA_PARTNER_ID=your-partner-id
-NEXT_PUBLIC_ALDEA_CHATBOT_ID=your-chatbot-id
+# NEXT_PUBLIC_ALDEA_SHOP_ID=your-shop-id
+# NEXT_PUBLIC_ALDEA_PARTNER_ID=your-partner-id
+# NEXT_PUBLIC_ALDEA_CHATBOT_ID=your-chatbot-id
 ```
 
 Used in `src/app/api/chatbot/route.ts`, `src/app/api/custom-prompt/[shopId]/route.ts`, and `src/components/panels/CenterSimulationPanel.tsx`.
@@ -169,14 +171,3 @@ public/
 - Vercel AI SDK: `@ai-sdk/openai`, `@ai-sdk/react`, `ai`
 - UI: shadcn/ui, Tailwind CSS, Lucide, Recharts
 - State/data: TanStack Query, Zustand
-
-## License
-
-[MIT](./LICENSE)
-
-## Docs
-
-- Product/tech notes: [PRD.md](./PRD.md)
-- Next.js template notes: [NEXT-README.md](./NEXT-README.md)
-
-
