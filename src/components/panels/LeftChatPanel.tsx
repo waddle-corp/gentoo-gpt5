@@ -2,7 +2,7 @@
 
 import { useChat } from "@ai-sdk/react";
 import { useRef, useState, useEffect } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowUp } from "lucide-react";
@@ -18,7 +18,7 @@ function MarkdownRenderer({ content }: { content: string }) {
         components={{
           ol: (props: any) => <ol className="my-0 list-decimal pl-5 space-y-2" {...props} />,
           ul: (props: any) => <ul className="my-0 list-disc pl-5 space-y-2" {...props} />,
-          li: (props: any) => <li className="my-0 leading-[1.75]" {...props} />, 
+          li: (props: any) => <li className="my-0 leading-[1.75]" {...props} />,
           p: (props: any) => <p className="leading-[1.75] m-0" {...props} />,
         }}
       >
@@ -35,7 +35,6 @@ function splitHypotheses(rawList: string[]): string[] {
     .flatMap((l) => l.split(/\s?--\s?|\s?—\s?|\s?;\s?/))
     .map((s) => s.replace(/^\s*[•\-\*]\s*/, "").replace(/^\s*\d+[\.)]\s*/, "").trim())
     .filter((s) => s.length > 0);
-  // dedupe, keep order
   const seen = new Set<string>();
   const out: string[] = [];
   for (const s of lines) {
@@ -45,12 +44,12 @@ function splitHypotheses(rawList: string[]): string[] {
       out.push(s);
     }
   }
-  return out; // 모든 가설을 반환
+  return out;
 }
 
 function titleOf(h: string): string {
   const cut = h.split(/[:\-\u2014]/)[0];
-  const t = (cut || h).trim().replace(/^"|^'|^\[|^\(/, "").replace(/"$|'$|\]$|\)$/ , "");
+  const t = (cut || h).trim().replace(/^"|^'|^\[|^\(/, "").replace(/"$|'$|\]$|\)$/, "");
   return t.length > 60 ? t.slice(0, 57) + "…" : t;
 }
 
@@ -72,22 +71,18 @@ export default function LeftChatPanel() {
   const [selected, setSelected] = useState<Record<number, boolean>>({});
   const [evaluating, setEvaluating] = useState(false);
   const [detecting, setDetecting] = useState(false);
-  const [awaitingFirstToken, setAwaitingFirstToken] = useState(false);
+  const [loadingStage, setLoadingStage] = useState<"" | "thinking" | "fetching">("");
   const lastDetectAtRef = useRef<number>(0);
   const lastAssistantSigRef = useRef<string>("");
   const MIN_DETECT_INTERVAL_MS = 1800;
 
-  // Clear conversation via topbar
   useEffect(() => {
     function onClear() {
       try {
-        // reset local UI state
         setActionable(false);
         setHypotheses([]);
         setSelected({});
         setInput("");
-        // Clear message list by reloading the page area or triggering a soft reset.
-        // useChat does not expose a clear() here, so we force rerender via location reload.
         if (typeof window !== "undefined") {
           window.location.reload();
         }
@@ -97,8 +92,6 @@ export default function LeftChatPanel() {
     return () => window.removeEventListener("clear-chat", onClear as EventListener);
   }, []);
 
-  // (moved below useChat) auto-scroll helpers declared after hooks that provide dependencies
-
   const { messages, append, status } = useChat({
     api: "/api/chat",
     streamProtocol: "text",
@@ -106,16 +99,12 @@ export default function LeftChatPanel() {
       try {
         const partsToText = (m: any) =>
           Array.isArray(m?.parts)
-            ? m.parts
-                .map((p: any) => (p?.type === "text" ? String(p.text || "") : ""))
-                .join("")
+            ? m.parts.map((p: any) => (p?.type === "text" ? String(p.text || "") : "")).join("")
             : String(m?.content || "");
 
         const lastAssistantText = partsToText(assistantMessage);
-        
         console.log("[detect-actionable] Starting detection for message:", lastAssistantText);
-        
-        // Guards
+
         if (detecting) {
           console.log("[detect-actionable] Aborting: detection already in progress.");
           return;
@@ -150,10 +139,9 @@ export default function LeftChatPanel() {
             detected.hypotheses = Array.isArray(data.hypotheses) ? data.hypotheses : [];
           }
         } catch (err) {
-            console.error("[detect-actionable] API call failed:", err);
+          console.error("[detect-actionable] API call failed:", err);
         }
 
-        // GPT 재시도 (1회)
         if ((!detected.actionable || detected.hypotheses.length === 0) && lastAssistantText.length > 20) {
           console.log("[detect-actionable] First attempt failed or was empty, retrying...");
           try {
@@ -187,7 +175,7 @@ export default function LeftChatPanel() {
           setHypotheses([]);
           setSelected({});
         }
-        
+
         lastDetectAtRef.current = now;
         lastAssistantSigRef.current = sig;
       } catch (e) {
@@ -201,30 +189,8 @@ export default function LeftChatPanel() {
     },
   });
 
-  // 첫 토큰 대기 상태 관리: 스트리밍 시작 시 true, 첫 어시스턴트 토큰 수신 시 false
-  useEffect(() => {
-    if (status !== "streaming") {
-      setAwaitingFirstToken(false);
-      return;
-    }
-    if (!messages || messages.length === 0) {
-      setAwaitingFirstToken(true);
-      return;
-    }
-    const last = messages[messages.length - 1];
-    const partsToText = (m: any) =>
-      Array.isArray(m?.parts)
-        ? m.parts.map((p: any) => (p?.type === "text" ? String(p.text || "") : "")).join("")
-        : String(m?.content || "");
-    if (last?.role === "assistant") {
-      const txt = partsToText(last);
-      setAwaitingFirstToken(!(txt && txt.length > 0));
-    } else {
-      setAwaitingFirstToken(true);
-    }
-  }, [messages, status]);
+  const isLoading = status === 'streaming';
 
-  // Auto-scroll to bottom when messages update
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const scrollToBottom = (behavior: ScrollBehavior = "smooth") => {
     const el = scrollContainerRef.current;
@@ -235,15 +201,15 @@ export default function LeftChatPanel() {
       el.scrollTop = el.scrollHeight;
     }
   };
+
   useEffect(() => {
-    // On mount and whenever messages change, stick to bottom
     scrollToBottom(messages.length <= 2 ? "auto" : "smooth");
-  }, [messages]);
+  }, [messages, loadingStage]);
+
   useEffect(() => {
     if (status === "streaming") scrollToBottom("smooth");
   }, [status]);
-
-  // When detection UI appears (spinner or hypothesis list), keep view pinned to bottom
+  
   useEffect(() => {
     if (detecting || (actionable && hypotheses.length > 0)) {
       scrollToBottom("smooth");
@@ -252,11 +218,29 @@ export default function LeftChatPanel() {
 
   const sendPrompt = (text: string) => {
     const trimmed = (text || "").trim();
-    if (!trimmed || status === "streaming") return;
+    if (!trimmed || isLoading || loadingStage) return;
+
+    // Open right panel immediately (before assistant starts speaking)
+    try {
+      localStorage.setItem("pre-sim-open", "1");
+    } catch {}
+    window.dispatchEvent(new CustomEvent("pre-simulation-start"));
+
+    setLoadingStage("thinking");
+    setTimeout(() => {
+      setLoadingStage("fetching");
+      setTimeout(() => {
+        setLoadingStage("");
+        try {
+          localStorage.setItem("pre-sim-open", "1");
+        } catch {}
+        window.dispatchEvent(new CustomEvent("pre-simulation-start")); // Show engagement panel (redundant but safe)
+      }, 2500); // Stage 2: 2.5 seconds
+    }, 2500); // Stage 1: 2.5 seconds
+
     setActionable(false);
     setHypotheses([]);
     setSelected({});
-    setAwaitingFirstToken(true);
     append({ role: "user", content: trimmed });
   };
 
@@ -265,8 +249,6 @@ export default function LeftChatPanel() {
     sendPrompt(input);
     setInput("");
   };
-
-  const isLoading = status === "streaming";
 
   async function runEvaluateAll() {
     const picked = hypotheses.map((h, i) => ({ h, i })).filter(({ i }) => selected[i]);
@@ -309,59 +291,49 @@ export default function LeftChatPanel() {
             }
           }
         } catch {
-          // ignore per-stream failure
         } finally {
           finished += 1;
           if (finished === picked.length) setEvaluating(false);
         }
       });
     } finally {
-      // finished handled per stream
     }
   }
 
   return (
     <Card className="h-full flex flex-col border-0 rounded-none bg-transparent" style={{ backgroundColor: "transparent" }}>
-      {/* Title removed as requested */}
       <CardContent className="px-0 flex-1 flex flex-col gap-4 min-h-0">
-        {/* Messages */}
         <div ref={scrollContainerRef} className="flex-1 overflow-y-auto pr-0 chat-scrollbar">
           <div className="space-y-4 px-4">
             <div className="mx-auto w-full max-w-[800px] space-y-4">
-            {messages.length === 0 && null}
             {messages.map((message) => (
               <div key={message.id} className={`flex gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
                 <div className={`flex gap-3 ${message.role === "user" ? "max-w-[80%] flex-row-reverse" : "max-w-[92%] flex-row"}`}>
-                  {/* avatar removed */}
                   <div
                     className={`px-4 py-2 rounded-lg text-sm ${message.role === "user" ? "text-white" : "bg-transparent text-white"}`}
                     style={message.role === "user" ? { backgroundColor: "#4D4D4D" } : undefined}
                   >
                     <MarkdownRenderer
-                      content={message.parts
-                        .map((part) => (part.type === "text" ? String(part.text || "") : ""))
-                        .join("")}
+                      content={message.parts.map((part) => (part.type === "text" ? String(part.text || "") : "")).join("")}
                     />
-                    {/* 스트리밍 시작 후 첫 토큰 나오기 전: 회전 이모지 표시 */}
-                    {(() => {
-                      const isLast = message.id === messages[messages.length - 1]?.id;
-                      const isAssistant = message.role === "assistant";
-                      if (isLast && isAssistant && status === "streaming" && awaitingFirstToken) {
-                        return (
-                          <div className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
-                            <span className="inline-block animate-spin size-4 rounded-full border-2 border-zinc-300 border-t-zinc-600" />
-                            <span>Thinking…</span>
-                          </div>
-                        );
-                      }
-                      return null;
-                    })()}
                   </div>
                 </div>
               </div>
             ))}
 
-            {/* 가설 체크박스 + 실행 버튼 (마지막 메시지 아래) */}
+            {loadingStage && (
+              <div className="flex gap-3 justify-start">
+                <div className="flex gap-3 max-w-[92%]">
+                  <div className="px-4 py-2 rounded-lg bg-transparent text-white text-sm">
+                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                      <span className="inline-block animate-spin size-4 rounded-full border-2 border-zinc-300 border-t-zinc-600" />
+                      <span>{loadingStage === 'thinking' ? 'Thinking…' : 'Fetching data…'}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {(detecting || (actionable && !isLoading)) && (
               <div className="mt-2 space-y-2">
                 {detecting ? (
@@ -405,25 +377,10 @@ export default function LeftChatPanel() {
                 )}
               </div>
             )}
-
-            {isLoading && (
-              <div className="flex gap-3 justify-start">
-                <div className="flex gap-3 max-w-[92%]">
-                  <div className="px-4 py-2 rounded-lg bg-transparent text-white text-sm">
-                    <div className="flex space-x-1">
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: ".1s" }}></div>
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: ".2s" }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
             </div>
           </div>
         </div>
 
-        {/* Example prompts (shown before first message, just above input) */}
         {messages.length === 0 && (
           <div className="px-4">
             <div className="mx-auto w-full max-w-[800px]">
@@ -435,7 +392,7 @@ export default function LeftChatPanel() {
                     size="sm"
                     className="whitespace-normal h-auto py-2 max-w-[220px]"
                     onClick={() => sendPrompt(p)}
-                    disabled={isLoading}
+                    disabled={isLoading || !!loadingStage}
                     aria-label={`예시 질문 전송: ${p}`}
                   >
                     <span className="whitespace-normal text-left leading-snug">{p}</span>
@@ -446,19 +403,18 @@ export default function LeftChatPanel() {
           </div>
         )}
 
-        {/* Input */}
         <form onSubmit={handleSubmit} className="flex px-4">
           <div className="relative w-full max-w-[800px] mx-auto">
             <Input
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask anything"
-              disabled={isLoading}
+              disabled={isLoading || !!loadingStage}
               className="w-full pr-10 h-12 rounded-full"
               style={{ backgroundColor: "var(--chat-input-bg)" }}
               onKeyDown={(e) => {
                 if (e.key === "Enter" && !e.shiftKey) {
-                  if (!isLoading && input.trim()) {
+                  if (!isLoading && !loadingStage && input.trim()) {
                     e.preventDefault();
                     handleSubmit(e as any);
                   }
@@ -469,7 +425,7 @@ export default function LeftChatPanel() {
               type="submit"
               size="icon"
               className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-white text-black hover:bg-white/90"
-              disabled={isLoading || !input.trim()}
+              disabled={isLoading || !input.trim() || !!loadingStage}
               aria-label="Send message"
             >
               <ArrowUp size={14} />

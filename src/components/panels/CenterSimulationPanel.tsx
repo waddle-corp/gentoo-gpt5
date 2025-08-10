@@ -109,10 +109,41 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   }, []);
 
   useEffect(() => {
-    // Ensure sections appear as soon as simulation starts, even if main listeners haven't attached yet
-    const onStartOnly = () => setHasStarted(true);
-    window.addEventListener("eval-start", onStartOnly as EventListener);
-    return () => window.removeEventListener("eval-start", onStartOnly as EventListener);
+    console.log("[CenterPanel] Attaching event listeners.");
+
+    const onStart = () => {
+      console.log("[CenterPanel] Received 'eval-start' event. Opening panel.");
+      setHasStarted(true);
+    };
+    
+    const onPreStart = () => {
+      console.log("[CenterPanel] Received 'pre-simulation-start' event. Opening panel.");
+      setHasStarted(true);
+    };
+    
+    window.addEventListener("eval-start", onStart);
+    window.addEventListener("pre-simulation-start", onPreStart);
+
+    // Fallback: poll localStorage briefly to catch missed events
+    const interval = setInterval(() => {
+      try {
+        const flag = typeof window !== 'undefined' ? localStorage.getItem('pre-sim-open') : null;
+        if (flag === '1') {
+          console.log('[CenterPanel] Fallback detected localStorage flag. Opening panel.');
+          setHasStarted(true);
+          localStorage.removeItem('pre-sim-open');
+        }
+      } catch {}
+    }, 300);
+
+    setTimeout(() => clearInterval(interval), 6000); // stop polling after 6s
+
+    return () => {
+      console.log("[CenterPanel] Cleaning up event listeners.");
+      window.removeEventListener("eval-start", onStart);
+      window.removeEventListener("pre-simulation-start", onPreStart);
+      clearInterval(interval);
+    }
   }, []);
 
   useEffect(() => {
