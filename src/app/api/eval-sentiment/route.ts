@@ -34,12 +34,12 @@ async function classifyOne(
 Label must be one of: positive | negative | unknown.
 
 Evaluation rules:
-- Be conservative: Only assign 'positive' if there is clear, strong evidence supporting a positive outcome.
-- However, if there is at least some reasonable hint or indication, you may assign 'positive'.
-- Assign 'negative' only if there is clear evidence for a negative outcome.
+- Be conservative: Assign 'positive' if there is clear, strong evidence supporting a positive outcome.
+- Assign 'negative' if there is clear evidence for a negative outcome.
 - Assign 'unknown' if information is insufficient, ambiguous, or weak.
 - Do NOT overuse 'positive' or 'unknown'. Avoid returning too many 'unknown' labels; if the evidence leans clearly positive or negative, choose accordingly.
-- When in doubt, prefer 'unknown', but do not default to it excessively.`;
+- When in doubt, prefer 'unknown', but do not default to it excessively.
+- If there is at least some reasonable hint or indication, you may assign 'positive'.`;
   const user = `Persona prompt: ${entry?.prompt ?? ""}\nEngagement score: ${entry?.engagement_score ?? ""}\nHypothesis: ${question}\nRules:\n- Respond in English.\n- After '::', provide a single short sentence with a clear logical structure (premise -> implication -> verdict).\n- Be strict: If there is not enough information, or the evidence is weak, return 'unknown'.`;
   try {
     const { text } = await generateText({ model: openai(modelName), system, prompt: user, maxRetries: 1 });
