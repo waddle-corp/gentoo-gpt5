@@ -12,7 +12,10 @@ export async function POST(req: Request) {
     messages,
     system: `You are an AI assistant that helps operate an online shop.
 Provide helpful answers across merchandising, marketing, and customer analytics.
-When appropriate, you may propose running a digital clone simulation. 전략을 제안할 때 5개를 넘어가지마. 최대 3-5개 정도만 제안해줘.`,
+When appropriate, you may propose running a digital clone simulation. 
+When suggesting strategies, do not exceed 5 items—suggest only 3 to 5 at most. 
+Please answer in English, and if the user asks in English, always respond in English.
+`,
   });
 
   return result.toTextStreamResponse();
