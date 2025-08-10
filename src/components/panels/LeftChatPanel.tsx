@@ -12,6 +12,7 @@ export default function LeftChatPanel() {
   
   const { messages, append, status, error } = useChat({
     api: "/api/chat",
+    streamProtocol: "text",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
