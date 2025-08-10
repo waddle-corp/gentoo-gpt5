@@ -56,6 +56,12 @@ Only suggest these four strategies; do not mention any others.
     model: openai("gpt-5-mini"),
     system: systemPrompt,
     messages: messages,
+    reasoning: {
+      effort: "minimal",
+    },
+    text: {
+      verbosity: "low", // 예시: 'high'로 설정. 필요에 따라 변경하세요.
+    },
   });
 
   // 텍스트 스트림 응답을 반환합니다.
