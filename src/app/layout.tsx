@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Button } from "@/components/ui/button";
-import { Share2, History, PanelsTopLeft } from "lucide-react";
+import TopbarActions from "@/components/TopbarActions";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,18 +34,7 @@ export default function RootLayout({
             <div className="h-4 w-px bg-border" />
             <div className="font-semibold">Oracle of Delphi for Shopify Stores</div>
           </div>
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" aria-label="History">
-              <History className="w-4 h-4" />
-            </Button>
-            <Button variant="ghost" size="icon" aria-label="Layout">
-              <PanelsTopLeft className="w-4 h-4" />
-            </Button>
-            <Button variant="outline" size="sm" aria-label="Share">
-              <Share2 className="w-4 h-4" />
-              <span className="sr-only">Share</span>
-            </Button>
-          </div>
+          <TopbarActions />
         </header>
         <div className="flex-1 min-h-0">{children}</div>
       </body>
