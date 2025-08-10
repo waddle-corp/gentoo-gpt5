@@ -98,7 +98,7 @@ export default function CenterSimulationPanel({ embedded }: Props) {
   );
 
   return (
-    <Card className="h-full overflow-hidden">
+    <Card className="h-full overflow-hidden border-0 rounded-none bg-transparent">
       <CardHeader className="py-4 px-4 md:px-6">
         <CardTitle>Simulation Results</CardTitle>
       </CardHeader>
