@@ -1,83 +1,118 @@
 {
     "user_id": "user_00034",
-    "raw_engagement_score": 13,
-    "normalized_engagement_score": 8,
+    "raw_engagement_score": 14,
+    "normalized_engagement_score": 9,
     "activities": [
         {
-            "id": "5c3233a4-af4c-4716-95d0-00823fe63c17",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00034",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00034_707937",
-                "total_amount": 75000,
-                "items": [
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
-                    },
-                    {
-                        "product_id": "PROD_OLIVE_001",
-                        "quantity": 1,
-                        "price": 25000
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T13:57:01.707941"
-        },
-        {
-            "id": "91b42d96-3665-4c9e-81d9-725bc444f9ac",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00034",
-            "event_name": "search",
-            "event_data": {
-                "query": "구독",
-                "search_results_count": 0,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T13:57:01.707944"
-        },
-        {
-            "id": "6942c1f1-4fa3-41d9-985f-182160fa3aa9",
+            "id": "9b699737-4471-43a1-af9a-6374d9a77c4e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00034",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "category": "구독",
-                "product_name": "월간 북클럽 베이직",
-                "view_duration_seconds": 27
+                "product_id": "03320",
+                "category": "cyber-monday-gift",
+                "product_name": "Sprinkles - Pastel Small Paper Plates (Multi-Color Pack)",
+                "price": 11.0,
+                "product_url": "https://www.aldeahome.com/products/sprinkles-pastel-small-paper-plates-multi-color-pack",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/ba982b44de8432ce7740f824574e2a21b1b8bacd602fcdf84d0883fa462a9a90.jpg?v=1623251794",
+                "view_duration_seconds": 30
             },
-            "created_time": "2025-08-09T13:57:01.707947"
-        },
-        {
-            "id": "3b579567-2529-458e-b8c5-465ca9bc404b",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00034",
-            "event_name": "search",
-            "event_data": {
-                "query": "건강식품",
-                "search_results_count": 15,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
-            },
-            "created_time": "2025-08-09T13:57:01.707951"
+            "created_time": "2025-08-09T20:05:50.690763"
         }
     ],
     "reviews": [],
-    "subscriptions": [
+    "subscriptions": [],
+    "dialogues": [
         {
-            "subscription_id": "3820d94d-c704-4ddc-b260-66b344556256",
-            "customer_id": "user_00034",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2024-04-26",
-            "end_date": "2024-10-23",
-            "status": "cancelled"
+            "Id": "34fa6995-05cc-44b3-a12e-ecde48593708",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "UserId": "user_00034",
+            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the types of recipes included in the Mocktail Club by Derick Santiago (Card Deck), product ID 05796? I'm curious if there are any unique or seasonal options.",
+            "CreatedTime": "2025-08-09T20:18:34.172676",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "533a78b9-e798-4908-93a1-c306b71bf196",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "UserId": "user_00034",
+            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Mocktail Club by Derick Santiago (Card Deck) features a beautiful collection of 75 alcohol-free recipes. While the specific types of recipes are not detailed in the provided information, it includes classic drinks, new flavor concoctions, and twists on old favorites. This variety suggests a range of options that could include unique and seasonal flavors, perfect for any occasion. \n\nYou can explore more about the card deck and purchase it for $19.99 [here](https://www.aldeahome.com/products/mocktail-club-by-derick-santiago-card-deck).",
+            "CreatedTime": "2025-08-09T20:18:37.717256",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "022206e7-93b1-405a-a7b6-2c4bde7b7f9a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "UserId": "user_00034",
+            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are there any specific mocktail recipes in the Mocktail Club by Derick Santiago (Card Deck) that are particularly popular or highly recommended? Also, does the product ID 05796 include any tips for presentation or garnishing?",
+            "CreatedTime": "2025-08-09T20:18:38.761852",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a61c8732-569a-4047-823c-da3e23d5ce3c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "UserId": "user_00034",
+            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The provided information does not specify particular popular or highly recommended mocktail recipes from the Mocktail Club by Derick Santiago (Card Deck), nor does it mention tips for presentation or garnishing. However, given the nature of the card deck, it likely includes a variety of creative mocktails that could be perfect for entertaining.\n\nFor more details and to purchase the card deck for $19.99, you can visit the product page [here](https://www.aldeahome.com/products/mocktail-club-by-derick-santiago-card-deck).",
+            "CreatedTime": "2025-08-09T20:18:41.624757",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "22d0de66-e49c-4867-aef1-ec3ee7a4a18f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "UserId": "user_00034",
+            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any customer reviews or testimonials for the Mocktail Club by Derick Santiago (Card Deck), product ID 05796, that can give me an idea of how others have enjoyed the recipes?",
+            "CreatedTime": "2025-08-09T20:18:42.851926",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "57e7c091-ca90-4c3a-9e1f-58d3081861be",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "UserId": "user_00034",
+            "session_id": "35af7870-f5e5-474e-8e9e-2b8eb7a72950",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The provided information does not include any customer reviews or testimonials for the Mocktail Club by Derick Santiago (Card Deck). For insights into how others have enjoyed the recipes, I recommend checking the product page for any customer feedback or reviews that may be available. You can find more details and potentially customer comments by visiting the product link [here](https://www.aldeahome.com/products/mocktail-club-by-derick-santiago-card-deck).",
+            "CreatedTime": "2025-08-09T20:18:45.312235",
+            "ItemId": "05796",
+            "Thumbs": null,
+            "Channel": "web"
         }
     ],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.338099"
+    "profile_generated_at": "2025-08-09T20:54:53.191997"
 }

@@ -1,145 +1,113 @@
 {
     "user_id": "user_00065",
-    "raw_engagement_score": 32,
-    "normalized_engagement_score": 15,
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 14,
     "activities": [
         {
-            "id": "bceb6f1c-14cd-41a5-986d-c23eecca8500",
+            "id": "a894f2c1-2823-46f9-bfa1-fd40919f7667",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00065",
-            "event_name": "purchase_completed",
+            "event_name": "product_view",
             "event_data": {
-                "order_id": "ORDER_user_00065_708303",
-                "total_amount": 25000,
-                "items": [
-                    {
-                        "product_id": "PROD_OLIVE_001",
-                        "quantity": 1,
-                        "price": 25000
-                    }
-                ],
-                "payment_method": "credit_card"
+                "product_id": "06198",
+                "category": "halloween",
+                "product_name": "Halloween Pumpkin Rope Trick or Treat Basket",
+                "price": 28.0,
+                "product_url": "https://www.aldeahome.com/products/halloween-pumpkin-rope-trick-or-treat-basket",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/aaaf1faadedf8c01d917839f73f1e1c2d0aee160f32b2c254b545e48356e0430.jpg?v=1725725643",
+                "view_duration_seconds": 27
             },
-            "created_time": "2025-08-09T13:57:01.708307"
+            "created_time": "2025-08-09T20:05:50.741442"
         },
         {
-            "id": "7673f62b-a55d-44c6-aa1f-e915dda39cef",
+            "id": "8cdfba17-4820-49c9-9eef-63b7dd3609e2",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00065",
-            "event_name": "add_to_cart",
+            "event_name": "search",
             "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "quantity": 3,
-                "price": 15000
+                "query": "gifts-under-50",
+                "search_results_count": 87,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.708310"
-        },
-        {
-            "id": "e2cd88e9-233f-4c2b-9da2-b599e3bcd450",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00065",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "quantity": 2,
-                "price": 15000
-            },
-            "created_time": "2025-08-09T13:57:01.708314"
+            "created_time": "2025-08-09T20:05:50.743891"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "57a6039c-ba59-40fd-b1e0-7028f2909387",
+            "customer_id": "user_00065",
+            "product_id": "05575",
+            "rating": 5,
+            "review_title": "Super satisfied!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-06-06T20:52:52.182245",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "7e605a0c-9743-47e8-954b-a92c897103b3",
+            "Id": "a5965958-e98c-42d8-810a-cd9f7f7aecc5",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
+            "DialogueId": "8b686b31-8a07-4722-b82b-405dc9de291a",
             "UserId": "user_00065",
-            "session_id": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
-            "Intent": "정보",
+            "session_id": "8b686b31-8a07-4722-b82b-405dc9de291a",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "이번 주 베스트셀러는 뭔가요?",
-            "CreatedTime": "2025-08-09T14:32:57.513076",
+            "Content": "Can you tell me if the Unicorn Chalk (Product ID: 00206) is suitable for outdoor use on various surfaces, or will it only work on sidewalks?",
+            "CreatedTime": "2025-08-09T20:22:11.343841",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "e4cb387e-a644-44ce-86b8-d857a1c74cd1",
+            "Id": "eac9ebee-22b5-4c08-a210-90d0e774351b",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
+            "DialogueId": "8b686b31-8a07-4722-b82b-405dc9de291a",
             "UserId": "user_00065",
-            "session_id": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
+            "session_id": "8b686b31-8a07-4722-b82b-405dc9de291a",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "이번 주 베스트셀러는 스페셜티 원두 커피 200g입니다. 많은 고객님들께서 좋아하시는 상품으로, 풍부한 맛과 향이 특징입니다. 더 궁금한 점이 있으면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:32:58.779043",
-            "ItemId": "PROD_COFFEE_001",
+            "Content": "The Unicorn Chalk is designed as handmade sidewalk chalk, which means it is primarily intended for outdoor use on sidewalks. However, being eco-friendly, non-toxic, and washable, it may also work on other outdoor surfaces. It's best to test a small area first to see how it performs. \n\nFor more details, you can check out the product here: [Unicorn Chalk](https://www.aldeahome.com/products/rainbow-unicorn-horn-handmade-sidewalk-chalk-best-seller), priced at $32.95.",
+            "CreatedTime": "2025-08-09T20:22:13.741372",
+            "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "40094d2e-703e-4535-8261-462b0aa55744",
+            "Id": "1c047c42-a480-4569-a1b6-559800073a7c",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
+            "DialogueId": "8b686b31-8a07-4722-b82b-405dc9de291a",
             "UserId": "user_00065",
-            "session_id": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
+            "session_id": "8b686b31-8a07-4722-b82b-405dc9de291a",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "이 커피는 어떤 원두로 만들어졌나요? 그리고 가격도 알려주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:32:59.677260",
+            "Content": "What colors are included in the Unicorn Chalk (Product ID: 00206) set, and are they all suitable for creating vibrant outdoor art?",
+            "CreatedTime": "2025-08-09T20:22:14.583140",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "d1ee6842-f65c-48ac-95b1-a5023c0f57af",
+            "Id": "414301a1-75f8-4028-adea-6ab933b77d05",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
+            "DialogueId": "8b686b31-8a07-4722-b82b-405dc9de291a",
             "UserId": "user_00065",
-            "session_id": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
+            "session_id": "8b686b31-8a07-4722-b82b-405dc9de291a",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "스페셜티 원두 커피 200g은 에티오피아와 콜롬비아 원두로 혼합되어 만들어졌습니다. 각각의 원두가 가지고 있는 독특한 맛과 향을 잘 살리고 있습니다. 가격은 15,000원입니다. 추가로 궁금한 점이 있으면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:01.175331",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "f3454b4c-d030-4c53-963b-d3ebbfeac614",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
-            "UserId": "user_00065",
-            "session_id": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "이 커피의 추천 추출 방법은 무엇인가요?",
-            "CreatedTime": "2025-08-09T14:33:01.783751",
-            "ItemId": null,
+            "Content": "The Unicorn Chalk set includes three colors: a Gold Unicorn Horn (white chalk), a warm rainbow horn, and a cool rainbow horn. These colors are designed to be vibrant and are suitable for creating colorful outdoor art on sidewalks. \n\nYou can find more information about the product here: [Unicorn Chalk](https://www.aldeahome.com/products/rainbow-unicorn-horn-handmade-sidewalk-chalk-best-seller), priced at $32.95.",
+            "CreatedTime": "2025-08-09T20:22:17.489247",
+            "ItemId": "00206",
             "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "f7ac018a-9c93-4801-8f1a-7949d9c68b98",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
-            "UserId": "user_00065",
-            "session_id": "67b4a1a7-c484-4208-ab1e-b8c3a5e0623d",
-            "Intent": "일반",
-            "Role": "assistant",
-            "Content": "스페셜티 원두 커피는 드립 방식과 프렌치 프레스 추출 방법으로 즐기시면 최상의 맛을 느낄 수 있습니다. 드립 방식은 깔끔하고 풍부한 맛을, 프렌치 프레스는 바디감 있는 풍미를 강조해 줍니다. 두 방법 모두 원두의 특성을 잘 살릴 수 있으니, 취향에 맞게 선택해 보세요! 추가 질문이 있으시면 언제든지 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:33:04.450377",
-            "ItemId": null,
-            "Thumbs": "up",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.389348"
+    "profile_generated_at": "2025-08-09T20:54:53.205179"
 }

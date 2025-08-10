@@ -1,124 +1,185 @@
 {
     "user_id": "user_00070",
-    "raw_engagement_score": 15,
-    "normalized_engagement_score": 8,
+    "raw_engagement_score": 45,
+    "normalized_engagement_score": 29,
     "activities": [
         {
-            "id": "e3b0887c-11fc-4368-b014-60d1c37ddcb3",
+            "id": "7a9832fc-c622-4032-916c-19d303fd6a2f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00070",
-            "event_name": "login",
+            "event_name": "purchase_completed",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.235.131"
+                "order_id": "ORDER_user_00070_743993",
+                "total_amount": 237.0,
+                "items": [
+                    {
+                        "product_id": "00502",
+                        "quantity": 1,
+                        "price": 189.0
+                    },
+                    {
+                        "product_id": "06989",
+                        "quantity": 1,
+                        "price": 48.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708353"
+            "created_time": "2025-08-09T20:05:50.743998"
         },
         {
-            "id": "49308952-6a03-49a2-b4d2-2e05ae56ed64",
+            "id": "2637ddd5-8bf9-4810-9bf4-5790c8f7aaa6",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00070",
-            "event_name": "login",
+            "event_name": "purchase_completed",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.86.83"
+                "order_id": "ORDER_user_00070_744001",
+                "total_amount": 904.98,
+                "items": [
+                    {
+                        "product_id": "06125",
+                        "quantity": 1,
+                        "price": 874.98
+                    },
+                    {
+                        "product_id": "04322",
+                        "quantity": 1,
+                        "price": 30.0
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708357"
+            "created_time": "2025-08-09T20:05:50.744006"
+        },
+        {
+            "id": "aca323af-5575-4d30-a8bf-09a2413a77fb",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00070",
+            "event_name": "search",
+            "event_data": {
+                "query": "U-Locker Necklace",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T20:05:50.746454"
+        },
+        {
+            "id": "e1cdda6d-a287-4eab-881b-379fc5d3ca8a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00070",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07023",
+                "quantity": 1,
+                "price": 24.0
+            },
+            "created_time": "2025-08-09T20:05:50.746460"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "749ef1c1-3088-4ec2-86ed-4e833e935fc2",
+            "customer_id": "user_00070",
+            "product_id": "02298",
+            "rating": 1,
+            "review_title": "Do not recommend",
+            "review_content": "The quality of Bunny Plush wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2025-04-02T20:52:52.182268",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "e87b6443-07a1-4d77-9eb9-665c9a40c062",
+            "Id": "6757762c-4ae5-46a9-ae38-83635b9138bf",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
             "UserId": "user_00070",
-            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
-            "Intent": "정보",
+            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "책 구독 서비스에 대해 궁금합니다.",
-            "CreatedTime": "2025-08-09T14:33:13.580331",
+            "Content": "Can you tell me more about the sizing options for the Ice Grey Garter Stitch Cardigan Sweater Baby & Toddler: 0-6 months (Product ID: 07041)? Is it true to size for infants in that age range?",
+            "CreatedTime": "2025-08-09T20:22:33.160562",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "8cdacf2a-bef0-493d-8bb9-2fd0fe31815a",
+            "Id": "9fea15d9-688e-4b41-8e1d-9bdc760b36b0",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
             "UserId": "user_00070",
-            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
-            "Intent": "제공",
-            "Role": "assistant",
-            "Content": "저희 쇼핑몰에서는 다양한 책 구독 서비스를 제공하고 있습니다. 정기적으로 새로운 책을 받아보실 수 있으며, 장르나 주제를 선택할 수 있는 옵션도 있습니다. 구독에 따라 할인 혜택이나 특별한 이벤트에 참여할 수도 있습니다. \n\n특히, 요즘 베스트셀러 소설인 '시간의 틈새'와 같은 인기 도서도 포함될 수 있으니, 관심이 있으시면 구독 서비스를 고려해 보시는 것도 좋습니다. 추가로 궁금한 사항이 있으시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:15.702541",
-            "ItemId": "PROD_BOOK_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "f53c315c-0c6b-4aea-a4b9-949a5be06699",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
-            "UserId": "user_00070",
-            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "구독 서비스의 가격대는 어떻게 되나요?",
-            "CreatedTime": "2025-08-09T14:33:16.349509",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "149a6cf0-851c-44f6-bbbd-dde6b4f2e99d",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
-            "UserId": "user_00070",
-            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "구독 서비스의 가격대는 제공되는 도서의 종류와 구독 기간에 따라 다릅니다. 일반적으로 월 구독 시 10,000원부터 시작하여, 프리미엄 옵션의 경우 30,000원 이상까지 다양합니다. \n\n특정 장르나 주제에 따라 가격이 달라질 수 있으니, 구체적인 정보가 필요하시면 저희 웹사이트를 방문하시거나 고객센터에 문의해 주시면 자세히 안내해 드리겠습니다. 다른 질문이 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:19.205122",
+            "Content": "The Ice Grey Garter Stitch Cardigan Sweater is specifically designed for babies and toddlers in the 0-6 months size range. This product should fit true to size for infants within that age, ensuring a comfortable fit. If you're looking for a cozy and warm sweater for a little one, this is a great choice! \n\nFor more details or to make a purchase, you can visit the product page [here](https://www.aldeahome.com/products/ice-grey-garter-stitch-cardigan-sweater-baby-toddler-0-6-months). The price is $46.00.",
+            "CreatedTime": "2025-08-09T20:22:35.767780",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "db764899-facb-4cd3-9dad-0e91543c7091",
+            "Id": "21af0f10-e39d-4242-8946-5b96bd6617ed",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
             "UserId": "user_00070",
-            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
-            "Intent": "추천",
+            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "혹시 구독 서비스에 포함되는 도서의 종류나 추천 도서 목록을 알고 싶으신가요?",
-            "CreatedTime": "2025-08-09T14:33:20.006868",
+            "Content": "Is the Ice Grey Garter Stitch Cardigan Sweater Baby & Toddler: 0-6 months (Product ID: 07041) suitable for layering over other outfits, or is it meant to be worn on its own?",
+            "CreatedTime": "2025-08-09T20:22:36.953870",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "2006a7fa-7f2a-44d1-b7b1-e8715384eb7d",
+            "Id": "e44c595e-9e5b-45ee-a452-35ab88eebb6d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
+            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
             "UserId": "user_00070",
-            "session_id": "69500015-3862-4bc8-8ec3-ee5af9cb04db",
-            "Intent": "추천",
+            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "네, 구독 서비스에 포함되는 도서의 종류는 다양합니다! 일반적으로 소설, 비소설, 자기계발서, 아동 도서 등 여러 장르를 선택할 수 있습니다. \n\n추천 도서 목록 중에는 요즘 많은 사랑을 받고 있는 베스트셀러 소설 '시간의 틈새'도 포함될 수 있습니다. 이 외에도 인기 작가의 신작이나 독립 출판 도서 등 다양한 선택지가 마련되어 있습니다.\n\n구독 시 어떤 장르를 선호하시는지에 따라 맞춤형 도서를 추천받을 수 있으니, 이를 참고하시면 좋을 것 같습니다. 더 궁금한 점이 있으시면 언제든지 질문해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:22.639261",
+            "Content": "The Ice Grey Garter Stitch Cardigan Sweater is designed to be cozy and warm, making it suitable for layering over other outfits. Its thick and soft garter stitch material allows it to be worn comfortably over onesies or other clothing, providing added warmth for your little one. It would be a lovely addition to any outfit, whether worn on its own or layered. \n\nFor more details or to purchase, you can visit the product page [here](https://www.aldeahome.com/products/ice-grey-garter-stitch-cardigan-sweater-baby-toddler-0-6-months) for $46.00.",
+            "CreatedTime": "2025-08-09T20:22:39.955196",
             "ItemId": null,
-            "Thumbs": "up",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9ca9f68c-48cc-4e04-80d2-c8c91fbbaa20",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
+            "UserId": "user_00070",
+            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Ice Grey Garter Stitch Cardigan Sweater Baby & Toddler: 0-6 months (Product ID: 07041) is machine washable, or does it require special care when cleaning?",
+            "CreatedTime": "2025-08-09T20:22:41.350135",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c6637322-b64a-43c0-b617-00a892655cce",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
+            "UserId": "user_00070",
+            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Ice Grey Garter Stitch Cardigan Sweater requires special care when cleaning. It should be cold hand washed to maintain its quality and shape. It's important to avoid machine washing to ensure the longevity of the sweater. \n\nFor more information or to purchase, you can visit the product page [here](https://www.aldeahome.com/products/ice-grey-garter-stitch-cardigan-sweater-baby-toddler-0-6-months) for $46.00.",
+            "CreatedTime": "2025-08-09T20:22:44.459262",
+            "ItemId": null,
+            "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.398718"
+    "profile_generated_at": "2025-08-09T20:54:53.206824"
 }

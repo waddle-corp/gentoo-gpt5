@@ -1,126 +1,68 @@
 {
     "user_id": "user_00024",
-    "raw_engagement_score": 19,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 8,
+    "normalized_engagement_score": 6,
     "activities": [
         {
-            "id": "23dd32b8-53a2-4cad-a614-f6dccda7b334",
+            "id": "d517d3ea-2786-42f6-b8bb-d411d85c2b7c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00024",
             "event_name": "search",
             "event_data": {
-                "query": "구독",
-                "search_results_count": 11,
-                "filters_applied": []
+                "query": "Holden Hearts the teddy bear",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.707822"
+            "created_time": "2025-08-09T20:05:50.680966"
         },
         {
-            "id": "cc2d55fa-575f-422d-b3d1-086f442913ed",
+            "id": "0eb9e911-c3c7-4414-9abe-2a161f8abb1b",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00024",
-            "event_name": "add_to_cart",
+            "event_name": "product_view",
             "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "quantity": 3,
-                "price": 50000
+                "product_id": "02533",
+                "category": "crib-sheets-changing-covers",
+                "product_name": "Pencil Dot Fitted Sheet",
+                "price": 44.0,
+                "product_url": "https://www.aldeahome.com/products/pencil-dot-fitted-sheet",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/PENCIL_MATT_MINI.jpg?v=1572391895",
+                "view_duration_seconds": 71
             },
-            "created_time": "2025-08-09T13:57:01.707825"
+            "created_time": "2025-08-09T20:05:50.680980"
+        },
+        {
+            "id": "d8adfabe-7d02-4e72-b241-71651c3e9356",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00024",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "06869",
+                "category": "newborn-basics",
+                "product_name": "Lemon Baby Dress + Bloomer (Organic Jersey): LEMON / 18-24M",
+                "price": 48.0,
+                "product_url": "https://www.aldeahome.com/products/lemon-baby-dress-bloomer-organic-jersey-lemon-18-24m",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/3ddb7f7d0852dea938dd08c74224da88f6293124df2e5dae9b8af0606654c25e_c9f077e2-5a8b-409b-b94d-61ce902a2f1b.jpg?v=1745507343",
+                "view_duration_seconds": 14
+            },
+            "created_time": "2025-08-09T20:05:50.680984"
+        },
+        {
+            "id": "7e8c9fe3-3437-4173-9326-bd11af96e947",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00024",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.237.214"
+            },
+            "created_time": "2025-08-09T20:05:50.680989"
         }
     ],
     "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "84fb7bd8-a051-45bc-9236-d1bbceac70a5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "UserId": "user_00024",
-            "session_id": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "안녕하세요. 좋은 올리브유 추천 좀 해주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:29:55.256276",
-            "ItemId": null,
-            "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "fa4a34b3-177d-48fc-bb9e-7b5453fc3bb0",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "UserId": "user_00024",
-            "session_id": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "안녕하세요! 좋은 올리브유를 찾고 계시군요. 저희 쇼핑몰에서는 다양한 품질 좋은 올리브유를 취급하고 있습니다. 특히, 신선한 첫 번째 압착 올리브유가 추천드립니다. 풍부한 향과 맛이 요리에 더욱 깊이를 더해줍니다. \n\n혹시 요리에 사용할 용도나 선호하는 맛이 있으시면 말씀해 주시면 더 맞춤형 추천을 드릴 수 있습니다!",
-            "CreatedTime": "2025-08-09T14:29:57.632125",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a8a3266c-5173-42ef-b2c9-398ca3b02862",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "UserId": "user_00024",
-            "session_id": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "첫 번째 압착 올리브유가 어떤 브랜드가 좋을까요?",
-            "CreatedTime": "2025-08-09T14:29:58.246985",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0bcb223b-f957-4ba9-9607-2c97aa5e52d3",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "UserId": "user_00024",
-            "session_id": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "첫 번째 압착 올리브유로 추천드리는 브랜드는 '카스티야'와 '에보라'입니다. 두 브랜드 모두 품질이 우수하고 향이 풍부하여 샐러드 드레싱이나 요리에 잘 어울립니다. \n\n또한, '유기농 아카시아 꿀 1kg'와 함께 사용하시면 건강한 디저트나 드레싱을 만들기에도 좋습니다. 원하시는 브랜드가 있으시면 말씀해 주시면 더 찾아보겠습니다!",
-            "CreatedTime": "2025-08-09T14:30:00.237668",
-            "ItemId": "PROD_HONEY_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "5bec2ecd-1a50-49e6-a466-d53535ad3021",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "UserId": "user_00024",
-            "session_id": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "혹시 올리브유의 용도가 어떤 건지 궁금합니다. 샐러드용, 요리용, 아니면 다른 용도로 사용할 계획이신가요?",
-            "CreatedTime": "2025-08-09T14:30:01.251517",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "5da5b2c6-5bbc-4aaf-b309-fb65f4b63d34",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "UserId": "user_00024",
-            "session_id": "bf7dc0d4-21c9-46dc-99c5-9e74d36e5203",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "올리브유는 다양한 용도로 사용할 수 있습니다. 주로 다음과 같은 용도로 많이 쓰입니다:\n\n1. **샐러드 드레싱**: 신선한 샐러드에 뿌려 맛을 더해줍니다.\n2. **요리**: 볶음, 구이, 찜 등 여러 요리에 활용할 수 있습니다.\n3. **마리네이드**: 고기나 생선을 재울 때 사용하면 풍미를 더해줍니다.\n4. **빵 디핑**: 신선한 빵과 함께 올리브유를 디핑하여 즐길 수 있습니다.\n5. **소스 및 드레싱**: 다양한 소스나 드레싱의 베이스로 사용합니다.\n\n어떤 용도로 사용하고 싶으신지에 따라 선택하시면 좋습니다. 필요하시면 '월간 북클럽 베이직' 상품과 함께 추천도 해드릴 수 있습니다!",
-            "CreatedTime": "2025-08-09T14:30:05.470619",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.320802"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.187416"
 }

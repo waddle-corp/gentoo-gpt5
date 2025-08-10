@@ -1,146 +1,69 @@
 {
     "user_id": "user_00083",
-    "raw_engagement_score": 32,
-    "normalized_engagement_score": 15,
+    "raw_engagement_score": 10,
+    "normalized_engagement_score": 7,
     "activities": [
         {
-            "id": "e2139595-40ff-4cfe-8d7e-dc260e7ed41f",
+            "id": "4438f8ff-b536-42d0-84bb-0f4a5a733870",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00083",
-            "event_name": "search",
+            "event_name": "product_view",
             "event_data": {
-                "query": "올리브유",
-                "search_results_count": 5,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
+                "product_id": "00039",
+                "category": "a-little-something-for-mom",
+                "product_name": "The Essentials Set",
+                "price": 148.0,
+                "product_url": "https://www.aldeahome.com/products/the-essentials-set",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/PUREMAMAEssentialsSet_BestSeller_gifting_png.jpg?v=1728273689",
+                "view_duration_seconds": 58
             },
-            "created_time": "2025-08-09T13:57:01.708571"
+            "created_time": "2025-08-09T20:05:50.763824"
         },
         {
-            "id": "5ddcbe38-7607-4b0f-ac67-720ac52f1edb",
+            "id": "d5a15488-a3f3-4035-8fbd-cb423587d2d9",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00083",
             "event_name": "search",
             "event_data": {
-                "query": "건강식품",
-                "search_results_count": 20,
+                "query": "Mommy & Me Care Gift Set",
+                "search_results_count": 1,
                 "filters_applied": [
                     "리뷰 많은 순"
                 ]
             },
-            "created_time": "2025-08-09T13:57:01.708575"
+            "created_time": "2025-08-09T20:05:50.766380"
         },
         {
-            "id": "3b1ca275-ad3d-4bef-a5bf-22526dcd28b4",
+            "id": "68c949c0-a767-4678-aca6-3e1ddd1d99b2",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00083",
-            "event_name": "add_to_cart",
+            "event_name": "product_view",
             "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "quantity": 1,
-                "price": 25000
+                "product_id": "05105",
+                "category": "exclude",
+                "product_name": "Rash Guard Banana 3-6M",
+                "price": 29.5,
+                "product_url": "https://www.aldeahome.com/products/baby-one-piece-rash-guard-3-6m-banana",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/848bed4754ba728278c76ba409f095beb5d9102afbab11b38f8166efbd6dc7d1_dfc58370-b742-48c8-8fc4-098aa2148cc4.jpg?v=1717996741",
+                "view_duration_seconds": 25
             },
-            "created_time": "2025-08-09T13:57:01.708578"
+            "created_time": "2025-08-09T20:05:50.766391"
         },
         {
-            "id": "70a42dff-4a94-45d4-a984-01aabd95218c",
+            "id": "f7431aa8-c091-477a-82ff-6bc1f83d27bf",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00083",
-            "event_name": "add_to_cart",
+            "event_name": "search",
             "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "quantity": 1,
-                "price": 15000
+                "query": "sacred Space",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T13:57:01.708582"
-        },
-        {
-            "id": "199e6f63-b56e-4fe4-8033-04d0a6868587",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00083",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.161.70"
-            },
-            "created_time": "2025-08-09T13:57:01.708586"
+            "created_time": "2025-08-09T20:05:50.768898"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "d06b14b7-11ad-446e-9933-3d4cc6d1b17e",
-            "customer_id": "user_00083",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "rating": 2,
-            "review_title": "기대 이하였어요",
-            "review_content": "분기별 올리브유 구독 프리미엄 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2024-08-28T14:00:03.216363",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "0b1ceaec-7c1f-4d1c-b2e8-bb542f2b27c7",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f8f1ece6-014a-4168-8d70-3c8f95d3b847",
-            "UserId": "user_00083",
-            "session_id": "f8f1ece6-014a-4168-8d70-3c8f95d3b847",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "책 구독 서비스에 대해 궁금합니다.",
-            "CreatedTime": "2025-08-09T14:34:24.644659",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "9f180022-bcd7-4605-99c6-4e8fcf02b914",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f8f1ece6-014a-4168-8d70-3c8f95d3b847",
-            "UserId": "user_00083",
-            "session_id": "f8f1ece6-014a-4168-8d70-3c8f95d3b847",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "책 구독 서비스는 일정한 구독료를 지불하고 정기적으로 책을 받아보는 서비스입니다. 보통 매달 새로운 책을 추천받거나 선택할 수 있으며, 다양한 장르와 주제를 제공합니다. 구독자는 자신의 취향에 맞는 책을 선택하거나, 서비스 측에서 추천한 책을 받을 수 있습니다.\n\n이용 방법은 보통 다음과 같습니다:\n1. 구독 신청: 원하는 구독 서비스를 선택하고 가입합니다.\n2. 취향 설정: 선호하는 장르나 주제를 설정합니다.\n3. 정기 배송: 매달 또는 정기적으로 책이 배송됩니다.\n\n추가적으로 궁금한 점이 있으면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:34:27.647238",
-            "ItemId": "PROD_OLIVE_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "117f03fd-8fdc-445d-bf95-36cadf9213f8",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f8f1ece6-014a-4168-8d70-3c8f95d3b847",
-            "UserId": "user_00083",
-            "session_id": "f8f1ece6-014a-4168-8d70-3c8f95d3b847",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "다양한 책을 선택할 수 있는 건 좋은데, 어떤 장르나 테마를 주로 다루나요?",
-            "CreatedTime": "2025-08-09T14:34:28.690138",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "52063a36-9893-4787-821f-9bff396f3ede",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f8f1ece6-014a-4168-8d70-3c8f95d3b847",
-            "UserId": "user_00083",
-            "session_id": "f8f1ece6-014a-4168-8d70-3c8f95d3b847",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "책 구독 서비스에서는 다양한 장르와 테마를 다룹니다. 일반적으로 포함되는 장르는 다음과 같습니다:\n\n1. **소설**: 현대 소설, 고전 문학, 미스터리, 판타지, 로맨스 등\n2. **비즈니스**: 경영, 마케팅, 자기계발, 경제학 등\n3. **자기계발**: 심리학, 동기부여, 웰빙 등\n4. **과학 및 기술**: 과학, 공학, 컴퓨터, 환경 등\n5. **비소설**: 역사, 전기, 사회 문제, 여행 등\n6. **어린이 및 청소년**: 다양한 연령대에 맞춘 도서\n\n각 서비스마다 특화된 테마가 있을 수 있으니, 가입 전에 제공하는 장르를 확인해 보시는 것이 좋습니다. 또한, 특정 주제나 작가에 맞춘 구독 서비스도 많이 있으니 관심 있는 분야에 맞춰 선택할 수 있습니다. 추가로 궁금한 점이 있으시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:34:32.670258",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.419200"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.210880"
 }

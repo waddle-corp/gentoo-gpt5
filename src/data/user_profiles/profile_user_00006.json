@@ -1,96 +1,45 @@
 {
     "user_id": "user_00006",
-    "raw_engagement_score": 18,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 7,
+    "normalized_engagement_score": 5,
     "activities": [
         {
-            "id": "eb2d1f5e-7775-48e9-9548-ff7c37ad0784",
+            "id": "dcc20f34-e0fa-49b7-bc25-d7a812628e8f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00006",
-            "event_name": "purchase_completed",
+            "event_name": "login",
             "event_data": {
-                "order_id": "ORDER_user_00006_707537",
-                "total_amount": 40000,
-                "items": [
-                    {
-                        "product_id": "PROD_OLIVE_001",
-                        "quantity": 1,
-                        "price": 25000
-                    },
-                    {
-                        "product_id": "PROD_BOOK_002",
-                        "quantity": 1,
-                        "price": 15000
-                    }
-                ],
-                "payment_method": "credit_card"
+                "login_method": "email_password",
+                "ip_address": "192.168.149.151"
             },
-            "created_time": "2025-08-09T13:57:01.707542"
+            "created_time": "2025-08-09T20:05:50.644734"
+        },
+        {
+            "id": "2391f5ec-0fbd-4814-aa11-cac131cd6ce8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00006",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.169.6"
+            },
+            "created_time": "2025-08-09T20:05:50.644738"
+        },
+        {
+            "id": "ea6fc75a-d537-4125-8352-da898d977a25",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00006",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06328",
+                "quantity": 3,
+                "price": 18.0
+            },
+            "created_time": "2025-08-09T20:05:50.644747"
         }
     ],
     "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "2009d844-cbf5-4349-a1fe-377f64b3a37f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "a940a26c-7ada-495f-bfe1-9eedecb303ee",
-            "UserId": "user_00006",
-            "session_id": "a940a26c-7ada-495f-bfe1-9eedecb303ee",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "안녕하세요. 좋은 올리브유 추천 좀 해주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:28:31.781665",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "2bf72da2-b90b-4d4b-bae1-977b3c542d25",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "a940a26c-7ada-495f-bfe1-9eedecb303ee",
-            "UserId": "user_00006",
-            "session_id": "a940a26c-7ada-495f-bfe1-9eedecb303ee",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "안녕하세요! 좋은 올리브유를 찾으신다면, '엑스트라 버진 올리브유'를 추천드립니다. 이 제품은 품질이 높고 풍미가 뛰어나 요리에 적합합니다. 또한 샐러드 드레싱으로도 훌륭합니다. \n\n혹시 다른 제품이나 정보가 필요하시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:28:33.642193",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "dceb4b71-ee9d-4caa-ac14-81b5744c4f87",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "a940a26c-7ada-495f-bfe1-9eedecb303ee",
-            "UserId": "user_00006",
-            "session_id": "a940a26c-7ada-495f-bfe1-9eedecb303ee",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "추천해 주셔서 감사합니다! 특정 브랜드가 있다면 더 알아보고 싶어요. 어떤 브랜드가 좋은지 추천해 주실 수 있을까요?",
-            "CreatedTime": "2025-08-09T14:28:34.455699",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "9af4bb06-f79b-4b30-bcb0-3df609f4b1f8",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "a940a26c-7ada-495f-bfe1-9eedecb303ee",
-            "UserId": "user_00006",
-            "session_id": "a940a26c-7ada-495f-bfe1-9eedecb303ee",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "물론입니다! 추천드릴 만한 좋은 올리브유 브랜드는 다음과 같습니다:\n\n1. **카스텔베트라노 (Castelvetrano)** - 이탈리아산 올리브유로, 풍미가 깊고 부드러운 맛이 특징입니다.\n2. **프리무스 (Primus)** - 스페인산 엑스트라 버진 올리브유로, 향이 강하고 다양한 요리에 잘 어울립니다.\n3. **콜론나 (Colonna)** - 이탈리아 브랜드로, 다양한 종류의 올리브유를 제공하며, 특히 품질이 뛰어납니다.\n\n이 외에도 다양한 브랜드가 있으니 취향에 맞는 제품을 찾아보세요! 추가로 궁금한 사항이 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:28:37.325877",
-            "ItemId": "PROD_HONEY_001",
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.283854"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.178369"
 }

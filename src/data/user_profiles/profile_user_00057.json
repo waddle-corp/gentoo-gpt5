@@ -1,214 +1,62 @@
 {
     "user_id": "user_00057",
-    "raw_engagement_score": 47,
-    "normalized_engagement_score": 21,
+    "raw_engagement_score": 10,
+    "normalized_engagement_score": 7,
     "activities": [
         {
-            "id": "1a3e60d5-a974-402d-a173-f579c96a12e8",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00057",
-            "event_name": "search",
-            "event_data": {
-                "query": "건강식품",
-                "search_results_count": 11,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
-            },
-            "created_time": "2025-08-09T13:57:01.708198"
-        },
-        {
-            "id": "64dbf4f9-2d58-44f8-b728-cf0687e1a5ef",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00057",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00057_708200",
-                "total_amount": 85000,
-                "items": [
-                    {
-                        "product_id": "SUB_OLIVE_PREMIUM",
-                        "quantity": 1,
-                        "price": 70000
-                    },
-                    {
-                        "product_id": "PROD_BOOK_002",
-                        "quantity": 1,
-                        "price": 15000
-                    }
-                ],
-                "payment_method": "credit_card"
-            },
-            "created_time": "2025-08-09T13:57:01.708204"
-        },
-        {
-            "id": "3295c646-680d-47d4-9f9e-d411664b5360",
+            "id": "6a9a7b14-493d-49e0-9dc4-81289485ba22",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00057",
             "event_name": "login",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.234.70"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.94.127"
             },
-            "created_time": "2025-08-09T13:57:01.708207"
+            "created_time": "2025-08-09T20:05:50.727039"
         },
         {
-            "id": "56c4745b-15de-439d-8119-e451089bbd80",
+            "id": "14a49d5c-6527-4bc8-8572-eaf8f9801adf",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00057",
-            "event_name": "purchase_completed",
+            "event_name": "search",
             "event_data": {
-                "order_id": "ORDER_user_00057_708210",
-                "total_amount": 85000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_002",
-                        "quantity": 1,
-                        "price": 15000
-                    },
-                    {
-                        "product_id": "SUB_OLIVE_PREMIUM",
-                        "quantity": 1,
-                        "price": 70000
-                    }
-                ],
-                "payment_method": "naver_pay"
+                "query": "12-Piece Mini Puzzle | Go Gorilla",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.708214"
+            "created_time": "2025-08-09T20:05:50.729458"
         },
         {
-            "id": "dc27ca64-7f76-4201-b566-538c47ed4bba",
+            "id": "6aa1eade-82d1-4f2b-9140-0650b8fe8ba8",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00057",
-            "event_name": "purchase_completed",
+            "event_name": "search",
             "event_data": {
-                "order_id": "ORDER_user_00057_708216",
-                "total_amount": 50000,
-                "items": [
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
-                    }
-                ],
-                "payment_method": "credit_card"
+                "query": "12-Piece Mini Puzzle | Go Gorilla",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T13:57:01.708219"
+            "created_time": "2025-08-09T20:05:50.731764"
+        },
+        {
+            "id": "0f63c9c4-ad45-405a-b2ba-b4613e2ef8b0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00057",
+            "event_name": "search",
+            "event_data": {
+                "query": "Boho Floral Bubble Baby Romper (Organic Muslin): NATURAL / 0-3M",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-09T20:05:50.734137"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "c4e9c55e-52fa-41a7-a234-97c20bd24746",
-            "customer_id": "user_00057",
-            "product_id": "PROD_BOOK_002",
-            "rating": 1,
-            "review_title": "실망했어요",
-            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
-            "created_at": "2025-01-10T14:00:03.216295",
-            "is_deleted": false
-        }
-    ],
-    "subscriptions": [
-        {
-            "subscription_id": "2451888a-d634-4108-a3a3-03d48b2912be",
-            "customer_id": "user_00057",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "start_date": "2024-07-10",
-            "end_date": "2025-07-05",
-            "status": "cancelled"
-        }
-    ],
-    "dialogues": [
-        {
-            "Id": "e3d162c7-f9ce-4245-9a5e-4b402cde58d4",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "UserId": "user_00057",
-            "session_id": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "유기농 제품도 있나요?",
-            "CreatedTime": "2025-08-09T14:32:26.531668",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "61d9585e-d5f2-488f-b0ca-01e306fae70b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "UserId": "user_00057",
-            "session_id": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "Intent": "일반",
-            "Role": "assistant",
-            "Content": "네, 저희 쇼핑몰에서는 다양한 유기농 제품을 취급하고 있습니다. 식료품, 뷰티 제품 등 여러 카테고리에서 유기농 옵션을 찾아보실 수 있습니다. 관심 있는 특정 제품군이 있다면 말씀해 주시면 더 구체적으로 안내해 드리겠습니다!",
-            "CreatedTime": "2025-08-09T14:32:28.488344",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d68b3c43-9646-45d1-80f6-bcc41fcec626",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "UserId": "user_00057",
-            "session_id": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "어떤 유기농 식료품이 있는지 추천해 주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:32:29.148906",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "b1e21d6e-248f-43cd-b7f9-179e019e92b0",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "UserId": "user_00057",
-            "session_id": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "물론입니다! 저희 쇼핑몰에서 인기 있는 유기농 식료품 몇 가지를 추천해 드릴게요:\n\n1. **유기농 쌀** - 건강하고 맛있는 유기농 쌀을 선택해 보세요.\n2. **유기농 과일** - 신선한 유기농 사과, 바나나, 딸기 등을 제공합니다.\n3. **유기농 채소** - 비타민이 풍부한 유기농 시금치, 당근 등을 구입할 수 있습니다.\n4. **유기농 견과류** - 간식으로 좋은 유기농 아몬드, 호두 등을 추천합니다.\n5. **유기농 허브차** - 유기농 허브로 만든 차로 자연의 맛을 느껴보세요.\n\n이 외에도 다양한 유기농 식료품이 준비되어 있으니, 필요하신 제품이 있다면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:32:33.205623",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "b1ed0a24-18ce-49f1-8916-8aaeac804347",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "UserId": "user_00057",
-            "session_id": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "혹시 유기농 제품의 가격대나 세일 정보도 알 수 있을까요?",
-            "CreatedTime": "2025-08-09T14:32:33.866432",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "f54b32a3-c1d4-432c-84a0-990a79420260",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "UserId": "user_00057",
-            "session_id": "3eeb3511-fbe9-476f-becd-141f38f786e5",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "유기농 제품의 가격대는 제품 종류와 브랜드에 따라 다양합니다. 일반적으로 유기농 식료품은 대략 5,000원에서 30,000원 사이의 가격대에서 구매할 수 있습니다.\n\n세일 정보는 주기적으로 업데이트되며, 특정 유기농 제품에 대해 할인 이벤트가 진행될 때가 많습니다. 현재 진행 중인 세일이나 프로모션에 대한 정보는 저희 웹사이트의 '세일' 섹션에서 확인하실 수 있습니다.\n\n추가로, '월간 북클럽 베이직' 구독 상품에 가입하시면 유기농 제품을 포함한 다양한 상품에 대한 특별 할인 혜택도 받으실 수 있습니다. 궁금한 점이 더 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:32:37.722764",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.376274"
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.202574"
 }

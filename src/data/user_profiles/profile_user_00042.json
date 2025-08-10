@@ -1,74 +1,127 @@
 {
     "user_id": "user_00042",
-    "raw_engagement_score": 13,
-    "normalized_engagement_score": 8,
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 11,
     "activities": [
         {
-            "id": "09ee9c6a-bfa6-42ca-a03b-b66c0a942c0b",
+            "id": "83b2e68e-8f16-492f-8580-a749d5195dee",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00042",
             "event_name": "login",
             "event_data": {
                 "login_method": "email_password",
-                "ip_address": "192.168.13.36"
+                "ip_address": "192.168.227.74"
             },
-            "created_time": "2025-08-09T13:57:01.708034"
+            "created_time": "2025-08-09T20:05:50.702732"
         },
         {
-            "id": "9efb3787-904f-4719-af87-cb823ef2d491",
+            "id": "a03acf9c-8042-485c-b256-8a65aac5ced5",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00042",
-            "event_name": "product_view",
+            "event_name": "search",
             "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "category": "자기계발",
-                "product_name": "성공하는 사람들의 7가지 습관",
-                "view_duration_seconds": 29
+                "query": "세일",
+                "search_results_count": 0,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.708037"
+            "created_time": "2025-08-09T20:05:50.704940"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "58cb1464-609a-4ac3-8679-db5d92a4e31f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "UserId": "user_00042",
+            "session_id": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the unique practices featured in 'Recipes for Good Luck' (Product ID: 01676)? I'm curious about how different individuals incorporate superstitions into their success.",
+            "CreatedTime": "2025-08-09T20:19:01.715232",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
         },
         {
-            "id": "a3ff7b5d-e3af-49ae-a309-cc96e0c3ac84",
+            "Id": "3ba66f8e-98b6-4085-9539-6f432d58b208",
+            "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "chat_user_id": "user_00042",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00042_708040",
-                "total_amount": 15000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_002",
-                        "quantity": 1,
-                        "price": 15000
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T13:57:01.708043"
-        }
-    ],
-    "reviews": [
+            "DialogueId": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "UserId": "user_00042",
+            "session_id": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "'Recipes for Good Luck' explores the unique practices, superstitions, and rituals of extraordinary individuals across various fields, including creatives, politicians, scientists, and athletes. The book reveals how these individuals have made their own luck through quirky superstitions, pre-performance rituals, and other distinctive habits that contribute to their success. \n\nFor example, it discusses what Maya Angelou did to keep her creative flow, the lucky charms of a NASA engineer, and the preparation rituals of musician Thom Yorke before a concert. This visual compendium celebrates these fascinating practices through engaging text and charming illustrations.\n\nIf you're interested in purchasing the book, it is priced at $19.95. You can find it at this URL: [Recipes for Good Luck](https://www.aldeahome.com/products/recipes-for-good-luck).",
+            "CreatedTime": "2025-08-09T20:19:04.661575",
+            "ItemId": "01676",
+            "Thumbs": null,
+            "Channel": "web"
+        },
         {
-            "review_id": "fb948cfe-1919-4ac7-b3e2-30615bb7b202",
-            "customer_id": "user_00042",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "rating": 1,
-            "review_title": "비추천합니다",
-            "review_content": "월간 북클럽 베이직 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2025-07-23T14:00:03.216247",
-            "is_deleted": false
-        }
-    ],
-    "subscriptions": [
+            "Id": "8ee6edf6-ff10-47e7-b691-304b60e4388e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "UserId": "user_00042",
+            "session_id": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any specific examples of superstitions or rituals highlighted in 'Recipes for Good Luck' (Product ID: 01676) that you think are particularly interesting or unusual?",
+            "CreatedTime": "2025-08-09T20:19:05.640911",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
         {
-            "subscription_id": "049f4645-b4d4-4def-b5ee-fccd5f07bb86",
-            "customer_id": "user_00042",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2024-04-30",
-            "end_date": "2024-08-28",
-            "status": "cancelled"
+            "Id": "880fc374-3a11-434b-8941-c8c4004b5fed",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "UserId": "user_00042",
+            "session_id": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "While I can't provide specific examples directly from the book, 'Recipes for Good Luck' highlights a variety of intriguing superstitions and rituals that individuals incorporate into their lives for success. The book showcases how different people, like creatives and athletes, have unique ways of preparing for important moments, whether it's through specific lucky charms, particular routines, or pre-performance habits that they believe enhance their luck and performance.\n\nThese practices often reflect the personalities and backgrounds of the individuals, making them both interesting and unusual. The blend of quirky superstitions with practical rituals offers a fascinating look at how belief in luck can play a role in achieving success.\n\nIf you want to explore these unique stories and illustrations further, you can purchase the book for $19.95 at this URL: [Recipes for Good Luck](https://www.aldeahome.com/products/recipes-for-good-luck).",
+            "CreatedTime": "2025-08-09T20:19:08.994403",
+            "ItemId": "01676",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6ba241e8-91af-4662-aa8b-e6ee135470df",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "UserId": "user_00042",
+            "session_id": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Are there any notable quotes or insights from famous individuals in 'Recipes for Good Luck' (Product ID: 01676) that stand out regarding their beliefs about luck and success?",
+            "CreatedTime": "2025-08-09T20:19:09.957885",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1ed8f800-ee90-4167-b107-58ea2433f83f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "UserId": "user_00042",
+            "session_id": "50a3802c-1d19-4b7d-be32-41ca3909d14a",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific quotes or insights from 'Recipes for Good Luck' to share, but the book features notable individuals who discuss their beliefs about luck and success through their unique rituals and practices. It captures how various creatives, politicians, scientists, and athletes attribute their achievements to a combination of hard work and the superstitions or rituals they follow.\n\nThe insights provided by these individuals reflect their personal philosophies and the significance they place on the concept of luck in their lives. To discover these fascinating perspectives, I recommend reading the book.\n\nYou can get your copy of 'Recipes for Good Luck' for $19.95 at this URL: [Recipes for Good Luck](https://www.aldeahome.com/products/recipes-for-good-luck).",
+            "CreatedTime": "2025-08-09T20:19:14.540109",
+            "ItemId": "01676",
+            "Thumbs": "up",
+            "Channel": "web"
         }
     ],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.351476"
+    "profile_generated_at": "2025-08-09T20:54:53.195873"
 }

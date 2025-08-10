@@ -1,88 +1,125 @@
 {
     "user_id": "user_00064",
-    "raw_engagement_score": 49,
-    "normalized_engagement_score": 21,
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 12,
     "activities": [
         {
-            "id": "d8e29364-c6a8-4bf2-85f6-f74e72cbef29",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00064",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "quantity": 2,
-                "price": 25000
-            },
-            "created_time": "2025-08-09T13:57:01.708288"
-        },
-        {
-            "id": "6704f89d-80b6-428a-9aa6-07cd1e0218ff",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00064",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
-                "quantity": 3,
-                "price": 70000
-            },
-            "created_time": "2025-08-09T13:57:01.708291"
-        },
-        {
-            "id": "e8f6eff9-53e9-4714-8098-26a0ab2ac46c",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00064",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00064_708294",
-                "total_amount": 35000,
-                "items": [
-                    {
-                        "product_id": "PROD_OLIVE_002",
-                        "quantity": 1,
-                        "price": 35000
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T13:57:01.708297"
-        },
-        {
-            "id": "a77a5f1a-6314-4a75-be3e-a0008739940a",
+            "id": "596bfa04-3b0a-4f8a-ac24-41ede354b505",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00064",
             "event_name": "search",
             "event_data": {
-                "query": "베스트셀러",
-                "search_results_count": 11,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "query": "Como Tomo",
+                "search_results_count": 2,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T13:57:01.708301"
+            "created_time": "2025-08-09T20:05:50.741426"
         }
     ],
     "reviews": [
         {
-            "review_id": "ede4904d-e803-4bff-9a36-cbe8761b41a1",
+            "review_id": "2d979da1-9eb0-4fdc-9a2b-2467ce0c3314",
             "customer_id": "user_00064",
-            "product_id": "PROD_BOOK_002",
-            "rating": 2,
-            "review_title": "실망했어요",
-            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
-            "created_at": "2024-08-14T14:00:03.216305",
+            "product_id": "02647",
+            "rating": 1,
+            "review_title": "Below expectations",
+            "review_content": "The quality of STEAMED DUMPLINGS Christmas Ornament wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2024-08-14T20:52:52.182240",
             "is_deleted": false
         }
     ],
-    "subscriptions": [
+    "subscriptions": [],
+    "dialogues": [
         {
-            "subscription_id": "aee7c7ab-8f11-4039-a3e8-89ab20c579aa",
-            "customer_id": "user_00064",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "start_date": "2025-04-15",
-            "end_date": "2027-12-31",
-            "status": "active"
+            "Id": "ac29b8ca-a117-4b6d-b8d9-dea37ae8adc9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "UserId": "user_00064",
+            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "Can you tell me if the Duck Racer (Product ID: 05922) is suitable for outdoor use, or is it recommended for indoor play only?",
+            "CreatedTime": "2025-08-09T20:22:00.024468",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3bc753ba-42d6-43f4-9ce8-74d28385a8b0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "UserId": "user_00064",
+            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Duck Racer is designed for competitive fun and is suitable for both indoor and outdoor play. Its gently curved design makes it easy for children to hold and push, making it a versatile toy for various play environments. \n\nYou can purchase the Duck Racer for $15.00 at this link: [Duck Racer](https://www.aldeahome.com/products/duck-racer-3).",
+            "CreatedTime": "2025-08-09T20:22:02.134547",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "005a1b38-47e4-4ee4-9b7b-d08b023e6163",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "UserId": "user_00064",
+            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Duck Racer (Product ID: 05922) durable enough to withstand rough outdoor play, or should I supervise my kids while they use it outside?",
+            "CreatedTime": "2025-08-09T20:22:02.986909",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "c21e5123-b5cd-4cd6-b7b4-a37a812307fa",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "UserId": "user_00064",
+            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "While the Duck Racer is designed for fun and can be used outdoors, it's always a good practice to supervise children during play, especially in rough outdoor conditions. This ensures that they are using the toy safely and helps prevent any potential damage from rough handling.\n\nYou can get the Duck Racer for $15.00 here: [Duck Racer](https://www.aldeahome.com/products/duck-racer-3).",
+            "CreatedTime": "2025-08-09T20:22:04.702902",
+            "ItemId": "05922",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8c726a7d-6bf5-42e6-947e-967243408e08",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "UserId": "user_00064",
+            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you let me know what materials the Duck Racer (Product ID: 05922) is made from? I'm concerned about its safety and durability for outdoor use.",
+            "CreatedTime": "2025-08-09T20:22:05.585491",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "427e02d1-ba71-46a8-8dcc-86787f03acf0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "UserId": "user_00064",
+            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I currently don't have specific information about the materials used in the Duck Racer. However, toys designed for outdoor play are typically made from durable and safe materials suitable for children. It's always a good idea to check the product details or packaging for specific material information, especially if safety is a concern.\n\nYou can still purchase the Duck Racer for $15.00 at this link: [Duck Racer](https://www.aldeahome.com/products/duck-racer-3). If you have any safety concerns, consider reaching out to the manufacturer for more detailed material specifications.",
+            "CreatedTime": "2025-08-09T20:22:09.682319",
+            "ItemId": "05922",
+            "Thumbs": null,
+            "Channel": "web"
         }
     ],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.387704"
+    "profile_generated_at": "2025-08-09T20:54:53.204824"
 }

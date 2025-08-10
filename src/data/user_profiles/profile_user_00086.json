@@ -1,121 +1,111 @@
 {
     "user_id": "user_00086",
-    "raw_engagement_score": 22,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 41,
+    "normalized_engagement_score": 27,
     "activities": [
         {
-            "id": "6004dc8f-8c88-4093-833c-92903a4aee6f",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00086",
-            "event_name": "search",
-            "event_data": {
-                "query": "구독",
-                "search_results_count": 17,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T13:57:01.709050"
-        },
-        {
-            "id": "ff4ef49b-1937-4336-8187-5f903e2cc0f7",
+            "id": "394d964a-b94b-4b45-913b-b38b476bdbb1",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00086",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00086_709054",
-                "total_amount": 43000,
+                "order_id": "ORDER_user_00086_771344",
+                "total_amount": 42.0,
                 "items": [
                     {
-                        "product_id": "PROD_BOOK_001",
+                        "product_id": "02980",
                         "quantity": 1,
-                        "price": 18000
+                        "price": 17.0
                     },
                     {
-                        "product_id": "PROD_OLIVE_001",
+                        "product_id": "04830",
                         "quantity": 1,
-                        "price": 25000
+                        "price": 25.0
                     }
                 ],
-                "payment_method": "kakao_pay"
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T13:57:01.709057"
+            "created_time": "2025-08-09T20:05:50.771352"
         },
         {
-            "id": "bd8c676f-7b99-49e0-b564-3e3894ee19a3",
+            "id": "088928db-cb57-477a-a603-9f41987aede1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00086",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04618",
+                "category": "exclude",
+                "product_name": "toddler backpack dinosaur",
+                "price": 34.95,
+                "product_url": "https://www.aldeahome.com/products/toddler-backpack-dinosaur",
+                "thumbnail_url": "",
+                "view_duration_seconds": 55
+            },
+            "created_time": "2025-08-09T20:05:50.771358"
+        },
+        {
+            "id": "4dcf12bd-efa0-4027-937d-d6399abfdced",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00086",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00086_771361",
+                "total_amount": 88.0,
+                "items": [
+                    {
+                        "product_id": "07188",
+                        "quantity": 1,
+                        "price": 88.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.771366"
+        },
+        {
+            "id": "177af41b-6342-418c-8de4-aaa06e5341e1",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00086",
             "event_name": "login",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.182.234"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.254.201"
             },
-            "created_time": "2025-08-09T13:57:01.709061"
+            "created_time": "2025-08-09T20:05:50.771370"
+        },
+        {
+            "id": "045407a8-f722-4c5a-9bf4-72c3f22ad6bf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00086",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00086_771372",
+                "total_amount": 24.0,
+                "items": [
+                    {
+                        "product_id": "06675",
+                        "quantity": 1,
+                        "price": 24.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T20:05:50.771377"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "5a47ecd7-4d70-4c34-ac4b-b5e315904d4e",
+            "customer_id": "user_00086",
+            "product_id": "07136",
+            "rating": 4,
+            "review_title": "Highly recommend",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2024-09-25T20:52:52.182317",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "6ec572b9-5087-4175-af75-b2e1794f8ed1",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e001ab64-c594-43f2-88e2-28260c163796",
-            "UserId": "user_00086",
-            "session_id": "e001ab64-c594-43f2-88e2-28260c163796",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "챗봇과 대화하는 것이 처음인데, 어떤 기능을 사용할 수 있나요?",
-            "CreatedTime": "2025-08-09T14:34:53.571429",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "992a580a-31bb-4cbf-8f5f-cd1a36769d6a",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e001ab64-c594-43f2-88e2-28260c163796",
-            "UserId": "user_00086",
-            "session_id": "e001ab64-c594-43f2-88e2-28260c163796",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "안녕하세요! 처음 뵙겠습니다. 저와의 대화에서는 상품 추천, 정보 제공, 구매 문의, 주문 상태 확인, 반품 및 교환 안내 등 다양한 기능을 이용하실 수 있습니다. 궁금한 점이 있다면 무엇이든 물어보세요! 예를 들어, '프리미엄 엑스트라 버진 올리브유 500ml'에 대한 정보도 제공해 드릴 수 있습니다.",
-            "CreatedTime": "2025-08-09T14:34:55.698707",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0386a7d4-6c9e-4e4c-a120-fd0f47a221ff",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e001ab64-c594-43f2-88e2-28260c163796",
-            "UserId": "user_00086",
-            "session_id": "e001ab64-c594-43f2-88e2-28260c163796",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "그 상품에 대해 더 알고 싶어요. 영양 성분이나 추천 요리 방법이 있을까요?",
-            "CreatedTime": "2025-08-09T14:34:56.902968",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "f830f044-465f-48c3-a040-444f9b1382c6",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e001ab64-c594-43f2-88e2-28260c163796",
-            "UserId": "user_00086",
-            "session_id": "e001ab64-c594-43f2-88e2-28260c163796",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "프리미엄 엑스트라 버진 올리브유 500ml는 고품질 올리브에서 Cold Press 방식으로 추출한 기름으로, 풍부한 풍미와 영양 성분을 자랑합니다. \n\n**영양 성분 (100ml 기준)**:\n- 칼로리: 약 900kcal\n- 지방: 100g (포화지방: 14g, 불포화지방: 86g)\n- 비타민 E: 14mg\n\n**추천 요리 방법**:\n1. **드레싱**: 샐러드에 직접 뿌려 신선한 맛을 더하세요.\n2. **마리네이드**: 고기나 생선을 재울 때 사용하면 풍미가 살아납니다.\n3. **파스타**: 삶은 파스타에 올리브유와 마늘을 더해 간단한 요리를 만들어 보세요.\n4. **구이**: 채소를 올리브유에 버무려 구우면 더욱 맛있습니다.\n\n추가적으로, '유기농 아카시아 꿀 1kg'와 함께 드시면 건강하고 맛있는 요리를 완성",
-            "CreatedTime": "2025-08-09T14:35:00.415709",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.424465"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.211526"
 }

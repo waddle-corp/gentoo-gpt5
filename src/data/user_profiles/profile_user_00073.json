@@ -1,96 +1,106 @@
 {
     "user_id": "user_00073",
-    "raw_engagement_score": 24,
-    "normalized_engagement_score": 12,
+    "raw_engagement_score": 32,
+    "normalized_engagement_score": 21,
     "activities": [
         {
-            "id": "5215ce25-facb-46b3-9599-19ea570daff0",
+            "id": "2e80d9b1-09c6-4d25-91ae-78521e1a4e2c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00073",
             "event_name": "search",
             "event_data": {
-                "query": "구독",
-                "search_results_count": 14,
+                "query": "Booties Bear Multi",
+                "search_results_count": 1,
                 "filters_applied": [
                     "가격 낮은 순"
                 ]
             },
-            "created_time": "2025-08-09T13:57:01.708378"
+            "created_time": "2025-08-09T20:05:50.751245"
         },
         {
-            "id": "b4390686-8072-4b7c-99d6-61250a37fbc3",
+            "id": "577f49a6-e69b-4c97-bd60-a0e5309cfedd",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00073",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00073_708381",
-                "total_amount": 75000,
+                "order_id": "ORDER_user_00073_751258",
+                "total_amount": 18.0,
                 "items": [
                     {
-                        "product_id": "PROD_OLIVE_001",
+                        "product_id": "01770",
                         "quantity": 1,
-                        "price": 25000
-                    },
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
+                        "price": 18.0
                     }
                 ],
-                "payment_method": "credit_card"
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708385"
+            "created_time": "2025-08-09T20:05:50.751269"
         },
         {
-            "id": "bac29745-981e-4e43-8a72-f2b7249c6f96",
+            "id": "60cae661-7f7a-49e2-a85d-e42770ea6ed4",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00073",
-            "event_name": "product_view",
+            "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "category": "올리브유",
-                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
-                "view_duration_seconds": 11
+                "product_id": "04753",
+                "quantity": 3,
+                "price": 36.0
             },
-            "created_time": "2025-08-09T13:57:01.708388"
+            "created_time": "2025-08-09T20:05:50.751274"
         },
         {
-            "id": "d67998ab-db75-4ee1-b5ea-5148f462e2e5",
+            "id": "0bd6f026-ca2b-453a-9b87-8c33ca722230",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00073",
-            "event_name": "search",
+            "event_name": "purchase_completed",
             "event_data": {
-                "query": "올리브유",
-                "search_results_count": 9,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "order_id": "ORDER_user_00073_751277",
+                "total_amount": 19.0,
+                "items": [
+                    {
+                        "product_id": "03196",
+                        "quantity": 1,
+                        "price": 19.0
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708392"
-        },
-        {
-            "id": "04966bff-dd32-4c0b-b996-179d878304d3",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00073",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.33.17"
-            },
-            "created_time": "2025-08-09T13:57:01.708396"
+            "created_time": "2025-08-09T20:05:50.751283"
         }
     ],
     "reviews": [],
-    "subscriptions": [
+    "subscriptions": [],
+    "dialogues": [
         {
-            "subscription_id": "9e321ac0-495b-4ae2-beef-e56d376fc998",
-            "customer_id": "user_00073",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "start_date": "2023-10-13",
-            "end_date": "2026-09-27",
-            "status": "paused"
+            "Id": "e2c3fd53-1f92-4e92-b27f-3046cbe28cd3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b1c84b91-893e-4f69-b0b2-4f6bc80b0700",
+            "UserId": "user_00073",
+            "session_id": "b1c84b91-893e-4f69-b0b2-4f6bc80b0700",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Swirl Menorah (Product ID: 03457) suitable for outdoor use, or is it primarily designed for indoor use only?",
+            "CreatedTime": "2025-08-09T20:23:00.025714",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1572405b-a1c5-4ba1-a0a9-816ea3ab479c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b1c84b91-893e-4f69-b0b2-4f6bc80b0700",
+            "UserId": "user_00073",
+            "session_id": "b1c84b91-893e-4f69-b0b2-4f6bc80b0700",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Swirl Menorah is primarily designed for indoor use. It is made from eco-friendly bamboo, which may not be suitable for outdoor conditions. For more information, you can check the product details [here](https://www.aldeahome.com/products/swirl-menorah). The price is $125.00.",
+            "CreatedTime": "2025-08-09T20:23:01.667731",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
         }
     ],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.403253"
+    "profile_generated_at": "2025-08-09T20:54:53.207683"
 }

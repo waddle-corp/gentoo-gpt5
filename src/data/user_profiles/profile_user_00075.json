@@ -1,105 +1,179 @@
 {
     "user_id": "user_00075",
     "raw_engagement_score": 36,
-    "normalized_engagement_score": 16,
+    "normalized_engagement_score": 24,
     "activities": [
         {
-            "id": "d48a7899-d728-40ec-8cd6-09da5e8a96df",
+            "id": "6fb62724-370c-4cf5-b2e2-60b433d6e29c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00075",
-            "event_name": "purchase_completed",
+            "event_name": "login",
             "event_data": {
-                "order_id": "ORDER_user_00075_708412",
-                "total_amount": 60000,
-                "items": [
-                    {
-                        "product_id": "PROD_OLIVE_002",
-                        "quantity": 1,
-                        "price": 35000
-                    },
-                    {
-                        "product_id": "PROD_OLIVE_001",
-                        "quantity": 1,
-                        "price": 25000
-                    }
-                ],
-                "payment_method": "credit_card"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.110.68"
             },
-            "created_time": "2025-08-09T13:57:01.708416"
+            "created_time": "2025-08-09T20:05:50.751310"
         },
         {
-            "id": "1b446798-2f05-4f62-b90d-cc10d6512f42",
+            "id": "506489ce-275b-413f-9a1d-128d155401b1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00075",
+            "event_name": "search",
+            "event_data": {
+                "query": "Love Under the Stars",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T20:05:50.753793"
+        },
+        {
+            "id": "aeb6e0c9-8635-4932-9ccb-ad55ceb8d44f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00075",
             "event_name": "login",
             "event_data": {
                 "login_method": "social_google",
-                "ip_address": "192.168.173.241"
+                "ip_address": "192.168.30.217"
             },
-            "created_time": "2025-08-09T13:57:01.708420"
+            "created_time": "2025-08-09T20:05:50.753800"
         },
         {
-            "id": "fe8c1b73-e97d-4fe9-83cd-1bc390d3aa0c",
+            "id": "9fcd35f9-0511-4640-af09-9d6fe83be9e2",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00075",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00075_708423",
-                "total_amount": 75000,
+                "order_id": "ORDER_user_00075_753805",
+                "total_amount": 18.0,
                 "items": [
                     {
-                        "product_id": "PROD_OLIVE_001",
+                        "product_id": "05524",
                         "quantity": 1,
-                        "price": 25000
-                    },
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
+                        "price": 18.0
                     }
                 ],
                 "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708426"
+            "created_time": "2025-08-09T20:05:50.753812"
         },
         {
-            "id": "8a4ba8f0-90fc-4bd8-a727-991a0687c468",
+            "id": "f2661327-8ed3-4465-8148-a4be98f2d333",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00075",
-            "event_name": "search",
+            "event_name": "login",
             "event_data": {
-                "query": "구독",
-                "search_results_count": 9,
-                "filters_applied": []
+                "login_method": "social_google",
+                "ip_address": "192.168.189.19"
             },
-            "created_time": "2025-08-09T13:57:01.708430"
-        },
-        {
-            "id": "ff739924-c764-42fe-959a-7f75608853ec",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00075",
-            "event_name": "search",
-            "event_data": {
-                "query": "베스트셀러",
-                "search_results_count": 8,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T13:57:01.708438"
+            "created_time": "2025-08-09T20:05:50.753816"
         }
     ],
     "reviews": [
         {
-            "review_id": "fda7abfe-b632-46a4-afe4-e8a7a3a86f95",
+            "review_id": "21c0346c-e65b-4f09-90db-7a6d25f46455",
             "customer_id": "user_00075",
-            "product_id": "PROD_OLIVE_001",
-            "rating": 5,
-            "review_title": "대만족!",
-            "review_content": "프리미엄 엑스트라 버진 올리브유 500ml은 최고입니다! 왜 이제 알았을까요.",
-            "created_at": "2024-09-13T14:00:03.216331",
+            "product_id": "06935",
+            "rating": 4,
+            "review_title": "Love it!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-06-11T20:52:52.182282",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.406077"
+    "dialogues": [
+        {
+            "Id": "34900124-e25a-4308-ad1c-6a90047682c9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "UserId": "user_00075",
+            "session_id": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the materials used in the Matera Glider Recliner (Product ID: 01086) and how it compares to other gliders in terms of comfort?",
+            "CreatedTime": "2025-08-09T20:23:06.468009",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d1a8d52d-a735-4007-b3a6-38c034d157b1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "UserId": "user_00075",
+            "session_id": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Matera Glider Recliner is handcrafted and sustainably made using the highest quality materials, which contribute to its plush and luxurious feel. It combines features from two of our best-selling gliders, offering a smooth recline and pillowy-soft cushions for superior comfort. \n\nIn comparison to other gliders, the Matera stands out due to its combination of a soft back and seat cushioning, along with a reliable reclining mechanism that allows for ultimate relaxation. This design ensures that sinking into the chair feels exceptionally comfortable, making it a perfect choice for lounging.\n\nFor more details, you can view the Matera Glider Recliner [here](https://www.aldeahome.com/products/matera-glider-recliner). The price is $1695.00.",
+            "CreatedTime": "2025-08-09T20:23:09.103373",
+            "ItemId": "01086",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "262d33df-b4cd-42a4-811e-5e0f34f84c42",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "UserId": "user_00075",
+            "session_id": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "What options do I have for customizing the Matera Glider Recliner (Product ID: 01086) in terms of fabric or color choices?",
+            "CreatedTime": "2025-08-09T20:23:10.281448",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e4ca346e-61c9-4b26-8599-ca983d299afb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "UserId": "user_00075",
+            "session_id": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Currently, specific information about customization options for fabric or color choices for the Matera Glider Recliner is not provided. It's best to check directly on the product page or contact customer support for detailed options regarding customization. \n\nYou can view the Matera Glider Recliner and any available options [here](https://www.aldeahome.com/products/matera-glider-recliner). The price is $1695.00.",
+            "CreatedTime": "2025-08-09T20:23:12.271232",
+            "ItemId": "01086",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3f9556a9-910b-46e2-901c-4a8fdfe4b692",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "UserId": "user_00075",
+            "session_id": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any care instructions for maintaining the Matera Glider Recliner (Product ID: 01086), especially regarding the fabric and cushions?",
+            "CreatedTime": "2025-08-09T20:23:13.210857",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "cad0ef09-88a0-49c1-8bbc-850e5b20d2c7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "UserId": "user_00075",
+            "session_id": "66ebc4dc-0cae-4958-bc71-2d583165d77d",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "Specific care instructions for the Matera Glider Recliner are not detailed in the provided information. However, to maintain its fabric and cushions, it’s generally recommended to:\n\n1. **Regularly Vacuum**: Use a soft brush attachment to remove dust and debris.\n2. **Spot Clean**: Use a mild detergent with water for any stains, and blot gently with a clean cloth.\n3. **Avoid Direct Sunlight**: Keep the recliner out of direct sunlight to prevent fading.\n4. **Fluff Cushions**: Regularly fluff the cushions to maintain their shape and comfort.\n\nFor more detailed care instructions, please refer to the manufacturer's guidelines or consult customer support. You can check out the Matera Glider Recliner [here](https://www.aldeahome.com/products/matera-glider-recliner), priced at $1695.00.",
+            "CreatedTime": "2025-08-09T20:23:16.575315",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T20:54:53.208079"
 }

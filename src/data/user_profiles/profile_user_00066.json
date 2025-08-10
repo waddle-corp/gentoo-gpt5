@@ -1,164 +1,118 @@
 {
     "user_id": "user_00066",
-    "raw_engagement_score": 33,
-    "normalized_engagement_score": 15,
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 18,
     "activities": [
         {
-            "id": "2fccb831-2677-46af-a49a-a7883cb5f8ac",
+            "id": "b885e2b4-72b6-4dc7-9d93-d679f5f98e77",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00066",
-            "event_name": "product_view",
+            "event_name": "login",
             "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "category": "소설",
-                "product_name": "베스트셀러 소설: 시간의 틈새",
-                "view_duration_seconds": 49
+                "login_method": "social_google",
+                "ip_address": "192.168.33.189"
             },
-            "created_time": "2025-08-09T13:57:01.708317"
+            "created_time": "2025-08-09T20:05:50.743897"
         },
         {
-            "id": "1cf99fa9-6d45-4d32-8168-df98d3b2c6fe",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00066",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "category": "올리브유",
-                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
-                "view_duration_seconds": 26
-            },
-            "created_time": "2025-08-09T13:57:01.708320"
-        },
-        {
-            "id": "0ac23ce5-f892-4691-80bb-3db34e607a47",
+            "id": "f272b0e5-e52b-4516-a48b-0ea34c2a259e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00066",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "quantity": 1,
-                "price": 25000
+                "product_id": "02163",
+                "quantity": 3,
+                "price": 199.95
             },
-            "created_time": "2025-08-09T13:57:01.708324"
+            "created_time": "2025-08-09T20:05:50.743903"
         },
         {
-            "id": "01e646cc-4326-4518-8ae1-455e194ae8ac",
+            "id": "8d58a5a8-3d28-4197-b443-b4fc40ce0d96",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00066",
-            "event_name": "product_view",
+            "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "category": "구독",
-                "product_name": "월간 북클럽 베이직",
-                "view_duration_seconds": 82
+                "product_id": "03167",
+                "quantity": 2,
+                "price": 130.0
             },
-            "created_time": "2025-08-09T13:57:01.708327"
+            "created_time": "2025-08-09T20:05:50.743908"
         }
     ],
     "reviews": [
         {
-            "review_id": "bfe1a2bf-5f06-4f9c-9aa1-98965919f62c",
+            "review_id": "9ca2de68-76e9-42db-91fe-d4c1fdc4665a",
             "customer_id": "user_00066",
-            "product_id": "PROD_OLIVE_002",
-            "rating": 5,
-            "review_title": "적극 추천합니다",
-            "review_content": "유기농 엑스트라 버진 올리브유 750ml은 최고입니다! 왜 이제 알았을까요.",
-            "created_at": "2025-04-15T14:00:03.216310",
+            "product_id": "03311",
+            "rating": 4,
+            "review_title": "Super satisfied!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-02-13T20:52:52.182251",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "24bbfd76-e5b8-4946-88cc-0ad9940bd99b",
+            "Id": "a5780be8-c4f7-437a-843a-0dae0d6132d4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
+            "DialogueId": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
             "UserId": "user_00066",
-            "session_id": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
-            "Intent": "일반",
+            "session_id": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "혹시 지금 할인하는 상품이 있나요?",
-            "CreatedTime": "2025-08-09T14:33:04.450441",
+            "Content": "Can you tell me more about the ease of use of the Skittle Waiters Friend Bottle Opener - Sky Blue & Dark Gray (Product ID: 00011)?",
+            "CreatedTime": "2025-08-09T20:22:18.504520",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "0cd39f5d-6c79-4b9a-8f66-af14ced28044",
+            "Id": "0eb401e3-17f5-4000-865b-4340020d8947",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
+            "DialogueId": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
             "UserId": "user_00066",
-            "session_id": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
+            "session_id": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "네, 현재 다양한 상품에서 할인 이벤트가 진행 중입니다. 특히 '프리미엄 엑스트라 버진 올리브유 500ml'가 할인 중이니, 건강한 요리를 원하신다면 좋은 기회입니다. 더 궁금한 상품이 있다면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:06.228769",
+            "Content": "The Skittle Waiters Friend Bottle Opener - Sky Blue & Dark Gray is designed for ease of use, featuring a simple yet effective corkscrew mechanism that allows you to open your favorite bottles of wine effortlessly. Its compact size (15x4.5x1.5cm) makes it easy to handle, and the high-grade metal construction ensures durability while providing a stylish touch to your barware collection. The contemporary design not only looks good but also enhances functionality, making it a practical choice for any occasion. \n\nIf you're interested, the price is $34.99, and you can find it [here](https://www.aldeahome.com/products/skittle-waiters-friend-bottle-opener-sky-blue-dark-gray).",
+            "CreatedTime": "2025-08-09T20:22:21.120807",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "12f42c5e-3416-4c2d-8c93-114cb85fd570",
+            "Id": "49203f02-0391-4c39-a584-ffc416964a7f",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
+            "DialogueId": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
             "UserId": "user_00066",
-            "session_id": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
+            "session_id": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
             "Intent": "정보",
             "Role": "user",
-            "Content": "그럼 그 올리브유는 원래 가격이 얼마였나요? 할인된 가격은 얼마인지 알 수 있을까요?",
-            "CreatedTime": "2025-08-09T14:33:07.439987",
+            "Content": "Do you have any customer reviews or feedback on the Skittle Waiters Friend Bottle Opener - Sky Blue & Dark Gray (Product ID: 00011)? I'm curious about how well it performs in real-life use.",
+            "CreatedTime": "2025-08-09T20:22:22.365294",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "714d5f04-4fd3-4770-9d25-02f5df846ba8",
+            "Id": "35611d74-cc07-4a07-8123-4d7b8163eefb",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
+            "DialogueId": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
             "UserId": "user_00066",
-            "session_id": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
-            "Intent": "정보",
+            "session_id": "1db38ad3-60aa-4c4a-b5a8-51ebd44632b7",
+            "Intent": "추천",
             "Role": "assistant",
-            "Content": "'프리미엄 엑스트라 버진 올리브유 500ml'의 원래 가격은 20,000원입니다. 현재 할인된 가격은 15,000원으로, 25% 할인된 가격입니다. 더 궁금한 점이 있으면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:08.817536",
+            "Content": "I'm sorry, but I don't have access to customer reviews or feedback for the Skittle Waiters Friend Bottle Opener - Sky Blue & Dark Gray. However, it is designed for ease of use and crafted from high-grade metals, which suggests it should perform well in real-life situations. If you'd like to learn more or make a purchase, it is priced at $34.99 and can be found [here](https://www.aldeahome.com/products/skittle-waiters-friend-bottle-opener-sky-blue-dark-gray).",
+            "CreatedTime": "2025-08-09T20:22:24.375720",
             "ItemId": null,
             "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "f1e4a1ae-a328-4ba2-92bc-7bec633ac474",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
-            "UserId": "user_00066",
-            "session_id": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "할인된 가격으로 구매하고 싶은데, 어떻게 주문할 수 있나요?",
-            "CreatedTime": "2025-08-09T14:33:09.536194",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "61dbff88-1774-4ffa-9cb3-866d9d5e4787",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
-            "UserId": "user_00066",
-            "session_id": "5d44b170-f1bc-4f3f-81f5-20702af785a3",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "할인된 가격으로 '프리미엄 엑스트라 버진 올리브유 500ml'를 구매하시려면, 아래 단계를 따라 주세요:\n\n1. 쇼핑몰 홈페이지에 접속하세요.\n2. 검색창에 '프리미엄 엑스트라 버진 올리브유 500ml'를 입력하세요.\n3. 상품 페이지에서 '장바구니에 담기' 버튼을 클릭하세요.\n4. 장바구니로 이동하여 '주문하기' 버튼을 클릭하세요.\n5. 배송 정보와 결제 정보를 입력한 후, 주문을 완료하시면 됩니다.\n\n주문 과정에서 도움이 필요하시면 언제든지 문의해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:12.035123",
-            "ItemId": null,
-            "Thumbs": "up",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.391321"
+    "profile_generated_at": "2025-08-09T20:54:53.205544"
 }

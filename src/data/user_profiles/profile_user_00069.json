@@ -1,44 +1,60 @@
 {
     "user_id": "user_00069",
-    "raw_engagement_score": 5,
-    "normalized_engagement_score": 4,
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "6e93fdc0-ad4d-4fd3-a8be-844cd40e6577",
+            "id": "2b04e114-c5b0-4546-b442-3da63b880fa2",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00069",
-            "event_name": "product_view",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
-                "category": "구독",
-                "product_name": "분기별 올리브유 구독 프리미엄",
-                "view_duration_seconds": 51
+                "order_id": "ORDER_user_00069_743975",
+                "total_amount": 32.0,
+                "items": [
+                    {
+                        "product_id": "07415",
+                        "quantity": 1,
+                        "price": 32.0
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708349"
+            "created_time": "2025-08-09T20:05:50.743980"
+        },
+        {
+            "id": "21141d89-565b-48a4-bec5-466094eca85f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00069",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00069_743984",
+                "total_amount": 64.0,
+                "items": [
+                    {
+                        "product_id": "03093",
+                        "quantity": 1,
+                        "price": 64.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.743989"
         }
     ],
     "reviews": [
         {
-            "review_id": "96c27d20-4892-469a-982f-701755231b45",
+            "review_id": "4adef292-d3ac-43ce-b600-564936adb11f",
             "customer_id": "user_00069",
-            "product_id": "PROD_OLIVE_001",
-            "rating": 4,
-            "review_title": "인생템 등극",
-            "review_content": "프리미엄 엑스트라 버진 올리브유 500ml은 최고입니다! 왜 이제 알았을까요.",
-            "created_at": "2025-05-10T14:00:03.216316",
+            "product_id": "00242",
+            "rating": 1,
+            "review_title": "Do not recommend",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-07-19T20:52:52.182262",
             "is_deleted": false
         }
     ],
-    "subscriptions": [
-        {
-            "subscription_id": "a5801907-1009-46e5-99d8-f4499be76d4c",
-            "customer_id": "user_00069",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2024-01-30",
-            "end_date": "2024-10-26",
-            "status": "cancelled"
-        }
-    ],
+    "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.396738"
+    "profile_generated_at": "2025-08-09T20:54:53.206655"
 }

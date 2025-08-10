@@ -1,102 +1,151 @@
 {
     "user_id": "user_00068",
-    "raw_engagement_score": 24,
-    "normalized_engagement_score": 12,
+    "raw_engagement_score": 33,
+    "normalized_engagement_score": 22,
     "activities": [
         {
-            "id": "ee1af23a-652b-4f9a-ab08-a95062a12893",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00068",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
-                "quantity": 1,
-                "price": 70000
-            },
-            "created_time": "2025-08-09T13:57:01.708334"
-        },
-        {
-            "id": "43b9b777-ff7b-49c1-b79f-325f1fe6d6f9",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00068",
-            "event_name": "search",
-            "event_data": {
-                "query": "올리브유",
-                "search_results_count": 17,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T13:57:01.708338"
-        },
-        {
-            "id": "2af91afe-003e-4494-9636-95f9a42123d4",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00068",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
-                "quantity": 1,
-                "price": 70000
-            },
-            "created_time": "2025-08-09T13:57:01.708342"
-        },
-        {
-            "id": "2e608f4a-5189-448d-81fd-8fdb19c35d13",
+            "id": "012468b7-7c48-4206-a217-00013d83cda1",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00068",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "category": "올리브유",
-                "product_name": "유기농 엑스트라 버진 올리브유 750ml",
-                "view_duration_seconds": 99
+                "product_id": "07131",
+                "category": "party-games",
+                "product_name": "Round Tower Tumbling Blocks",
+                "price": 25.0,
+                "product_url": "https://www.aldeahome.com/products/round-tower-tumbling-blocks",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/0810073342842_1_jpg.jpg?v=1698119623",
+                "view_duration_seconds": 88
             },
-            "created_time": "2025-08-09T13:57:01.708346"
-        }
-    ],
-    "reviews": [],
-    "subscriptions": [
+            "created_time": "2025-08-09T20:05:50.743951"
+        },
         {
-            "subscription_id": "33a237c0-ff40-4b9c-988c-715f8bf4dbde",
-            "customer_id": "user_00068",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "start_date": "2025-06-19",
-            "end_date": "2027-03-11",
-            "status": "paused"
+            "id": "d2419376-a35e-45f9-ac44-5a4438fb9809",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00068",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00068_743955",
+                "total_amount": 192.99,
+                "items": [
+                    {
+                        "product_id": "00560",
+                        "quantity": 1,
+                        "price": 172.99
+                    },
+                    {
+                        "product_id": "03752",
+                        "quantity": 1,
+                        "price": 20.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T20:05:50.743961"
+        },
+        {
+            "id": "a2af24d3-5111-4639-ad79-aa8c6b9d637e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00068",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07454",
+                "quantity": 3,
+                "price": 49.95
+            },
+            "created_time": "2025-08-09T20:05:50.743965"
+        },
+        {
+            "id": "cfd7973e-d9f5-4cd9-b85f-4ceb4b7ed9c7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00068",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03897",
+                "category": "exclude",
+                "product_name": "Mini Mat (Infant / Toddler 9+ months)",
+                "price": 24.95,
+                "product_url": "https://www.aldeahome.com/products/mini-mat-infant-toddler-9-months",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/8d963aef7b7702acfea2682c88e138eb6faa0a2973d11a3aa732fa45c8f77f51.png?v=1720823706",
+                "view_duration_seconds": 93
+            },
+            "created_time": "2025-08-09T20:05:50.743971"
         }
     ],
+    "reviews": [
+        {
+            "review_id": "77def68d-6ddd-445e-8ad0-091762acbffb",
+            "customer_id": "user_00068",
+            "product_id": "00211",
+            "rating": 2,
+            "review_title": "Disappointed",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2024-11-15T20:52:52.182257",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
     "dialogues": [
         {
-            "Id": "969c9dbf-3cd5-4381-a9fe-8a16c6d141ec",
+            "Id": "8e0f43d1-7b86-4974-99cd-58f8c80ac9e3",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "79064c67-86dc-45a4-9975-4a54b0d065cc",
+            "DialogueId": "15aead49-e53f-4484-857d-7bb221579cd5",
             "UserId": "user_00068",
-            "session_id": "79064c67-86dc-45a4-9975-4a54b0d065cc",
-            "Intent": "정보",
+            "session_id": "15aead49-e53f-4484-857d-7bb221579cd5",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "계정 정보를 변경하고 싶은데 어떻게 해야 하나요?",
-            "CreatedTime": "2025-08-09T14:33:12.035208",
+            "Content": "Is \"Cat's First Baby\" (Product ID: 01399) suitable for young children, and what age group is it recommended for?",
+            "CreatedTime": "2025-08-09T20:22:25.166046",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "9235bcda-086e-404f-9bd6-6a1a87deaec4",
+            "Id": "423dbdcd-b78b-4f13-a84a-756a40f2b333",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "79064c67-86dc-45a4-9975-4a54b0d065cc",
+            "DialogueId": "15aead49-e53f-4484-857d-7bb221579cd5",
             "UserId": "user_00068",
-            "session_id": "79064c67-86dc-45a4-9975-4a54b0d065cc",
+            "session_id": "15aead49-e53f-4484-857d-7bb221579cd5",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "\"Cat's First Baby\" is a delightful board book that captures the wonder of a new family member through a cat's perspective, making it suitable for young children. While the specific age recommendation isn't provided, board books like this are typically ideal for toddlers and preschoolers, generally ages 1-5. It’s a great choice for introducing the concept of a new sibling in a fun and engaging way! \n\nYou can purchase it for $9.99 at this link: [Cat's First Baby](https://www.aldeahome.com/products/cats-first-baby-1).",
+            "CreatedTime": "2025-08-09T20:22:28.561742",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3e2c7761-dc21-408d-a3ec-430c31e0dce4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "15aead49-e53f-4484-857d-7bb221579cd5",
+            "UserId": "user_00068",
+            "session_id": "15aead49-e53f-4484-857d-7bb221579cd5",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if \"Cat's First Baby\" (Product ID: 01399) includes any interactive elements or activities for children, or is it primarily a storybook?",
+            "CreatedTime": "2025-08-09T20:22:29.750703",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "065c7acd-9813-4196-9fdc-638fa4139af7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "15aead49-e53f-4484-857d-7bb221579cd5",
+            "UserId": "user_00068",
+            "session_id": "15aead49-e53f-4484-857d-7bb221579cd5",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "계정 정보를 변경하시려면, 쇼핑몰 홈페이지에 로그인 후 '마이페이지'로 이동하신 다음 '회원정보 수정' 또는 '계정 설정' 섹션을 찾아주세요. 거기서 필요한 정보를 업데이트하실 수 있습니다. 추가적인 도움이 필요하시면 고객센터에 문의해 주세요!",
-            "CreatedTime": "2025-08-09T14:33:13.580305",
+            "Content": "\"Cat's First Baby\" is primarily a storybook that captures the humor and wonder of a new family member through a cat's eyes. It does not specifically mention any interactive elements or activities. The focus is on storytelling, making it a delightful read for young children as they explore the narrative and illustrations. \n\nFor more details or to purchase, you can find it for $9.99 at this link: [Cat's First Baby](https://www.aldeahome.com/products/cats-first-baby-1).",
+            "CreatedTime": "2025-08-09T20:22:32.052740",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.394740"
+    "profile_generated_at": "2025-08-09T20:54:53.206126"
 }

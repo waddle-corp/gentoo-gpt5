@@ -1,182 +1,69 @@
 {
     "user_id": "user_00014",
-    "raw_engagement_score": 49,
-    "normalized_engagement_score": 21,
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 15,
     "activities": [
         {
-            "id": "eca4dfc7-ce0b-4a58-ba8d-59005f748969",
+            "id": "d28d5243-0fc6-41b8-9182-846b7446b66c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00014",
-            "event_name": "login",
+            "event_name": "search",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.3.199"
+                "query": "Day of the Dead Corkscrew",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.707661"
+            "created_time": "2025-08-09T20:05:50.657066"
         },
         {
-            "id": "78aa9dc0-5e5e-4f48-80c8-d525b56217fb",
+            "id": "b3d3608b-375b-4e16-b2c3-6d2888b475d0",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00014",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00014_707664",
-                "total_amount": 65000,
+                "order_id": "ORDER_user_00014_657073",
+                "total_amount": 28.0,
                 "items": [
                     {
-                        "product_id": "PROD_BOOK_002",
+                        "product_id": "05471",
                         "quantity": 1,
-                        "price": 15000
-                    },
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
+                        "price": 28.0
                     }
                 ],
-                "payment_method": "kakao_pay"
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T13:57:01.707668"
+            "created_time": "2025-08-09T20:05:50.657084"
         },
         {
-            "id": "179d15f5-3a97-43ff-9170-4ae526708c0f",
+            "id": "a503fcd3-4fc2-4567-9172-94729144f136",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00014",
-            "event_name": "product_view",
+            "event_name": "search",
             "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "category": "올리브유",
-                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
-                "view_duration_seconds": 113
+                "query": "Moonlight Slumber Little Dreamer Breathe-Thru Crib Mattress Cover",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.707671"
-        },
-        {
-            "id": "3d25ff12-2c4a-447c-a0c7-9c7e052b8299",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00014",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "quantity": 2,
-                "price": 35000
-            },
-            "created_time": "2025-08-09T13:57:01.707675"
-        },
-        {
-            "id": "f5f9d52e-6d5a-4bc3-92a4-dea08a3571fe",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00014",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.120.239"
-            },
-            "created_time": "2025-08-09T13:57:01.707679"
+            "created_time": "2025-08-09T20:05:50.659459"
         }
     ],
-    "reviews": [],
-    "subscriptions": [
+    "reviews": [
         {
-            "subscription_id": "469b69d0-9a55-4ca2-bfec-61a8ad6dfc78",
+            "review_id": "0c375ebe-e81a-44bb-a890-8cf6fdf331ac",
             "customer_id": "user_00014",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "start_date": "2025-07-09",
-            "end_date": "2028-03-25",
-            "status": "active"
+            "product_id": "01318",
+            "rating": 2,
+            "review_title": "Disappointed",
+            "review_content": "The quality of Monte In-Stock Bed Sale: Dorma Full Bed Denim Blue wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2025-01-20T20:52:52.182084",
+            "is_deleted": false
         }
     ],
-    "dialogues": [
-        {
-            "Id": "6a6c9ed6-183a-45ad-9775-a3b8296c9cc1",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "UserId": "user_00014",
-            "session_id": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "새로 나온 책이 있나요?",
-            "CreatedTime": "2025-08-09T14:29:00.419038",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "09b8f80a-4a16-4ad6-aa8b-15e9268465ec",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "UserId": "user_00014",
-            "session_id": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "네, 최근에 출간된 책 중 하나는 '베스트셀러 소설: 시간의 틈새'입니다. 이 책은 흥미로운 스토리와 매력적인 캐릭터로 많은 독자들의 사랑을 받고 있습니다. 관심이 있으시다면 더 자세한 정보를 드릴 수 있습니다!",
-            "CreatedTime": "2025-08-09T14:29:01.966170",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e7a73a12-df40-41bd-8dbb-1ddbfb6b6a5a",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "UserId": "user_00014",
-            "session_id": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "이 책에 대해 좀 더 알려줄 수 있을까요? 주제나 내용이 어떤지 궁금해요.",
-            "CreatedTime": "2025-08-09T14:29:02.636282",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "cd68bb88-b96a-4ed5-ba87-73cae4a456a5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "UserId": "user_00014",
-            "session_id": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "'베스트셀러 소설: 시간의 틈새'는 시간 여행을 주제로 한 스릴러 소설입니다. 주인공은 우연히 시간을 넘나드는 능력을 얻게 되면서 과거와 현재를 연결하는 흥미진진한 사건에 휘말리게 됩니다. \n\n소설은 시간의 흐름과 선택의 중요성을 탐구하며, 주인공이 각 시대에서 마주하는 도전과 갈등을 통해 성장하는 과정을 그립니다. 예측할 수 없는 전개와 긴장감 넘치는 스토리로 독자들을 사로잡고 있습니다. \n\n더 궁금한 점이 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:29:05.124945",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "b1539e01-90ef-4421-af75-fcb159fd710e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "UserId": "user_00014",
-            "session_id": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "혹시 이 책을 구매할 수 있는 방법이나 가격에 대해 알고 싶어요.",
-            "CreatedTime": "2025-08-09T14:29:05.734440",
-            "ItemId": null,
-            "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "c20dce1d-4976-4a08-b370-40776f053bb5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "UserId": "user_00014",
-            "session_id": "e02ea992-437a-49f4-847a-cd2bcacb7e56",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "이 책은 저희 쇼핑몰에서 구매하실 수 있습니다. 가격은 15,000원입니다. \n\n주문은 웹사이트를 통해 쉽게 하실 수 있으며, 결제 후 빠른 배송을 제공합니다. 만약 여러 권의 책을 정기적으로 구매하신다면, '월간 북클럽 베이직' 구독 상품을 고려해 보시는 것도 좋습니다. 이 상품은 매달 새로 나온 책을 정기적으로 받아보실 수 있어요. 더 궁금한 점이 있으시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:29:08.389148",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
-            "Thumbs": "down",
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.301862"
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.182332"
 }

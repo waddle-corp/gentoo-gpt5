@@ -1,124 +1,131 @@
 {
     "user_id": "user_00079",
-    "raw_engagement_score": 21,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "d84e1389-6440-4cd8-8030-1f1c3f1ae422",
+            "id": "cf6b5357-31e0-4fc4-b3c1-12c33c027714",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00079",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.69.13"
+            },
+            "created_time": "2025-08-09T20:05:50.758808"
+        },
+        {
+            "id": "5db6b974-f39d-4a76-8b9e-001ea538ebe9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00079",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07303",
+                "category": "plush",
+                "product_name": "Glimmers the plush unicorn",
+                "price": 21.0,
+                "product_url": "https://www.aldeahome.com/products/glimmers-the-plush-unicorn",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/71e82a28cc93d2e8085623cad28eedf198355d78e2e70cd820dc0c29c993bfb2.jpg?v=1742883031",
+                "view_duration_seconds": 91
+            },
+            "created_time": "2025-08-09T20:05:50.758814"
+        },
+        {
+            "id": "e5ff526c-0260-4014-bc18-e8ad60b1b7f2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00079",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00079_758821",
+                "total_amount": 29.95,
+                "items": [
+                    {
+                        "product_id": "07157",
+                        "quantity": 1,
+                        "price": 9.95
+                    },
+                    {
+                        "product_id": "00018",
+                        "quantity": 1,
+                        "price": 20.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-09T20:05:50.758830"
+        },
+        {
+            "id": "0969e472-5388-4426-b774-fd10b2118a51",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00079",
             "event_name": "login",
             "event_data": {
                 "login_method": "social_google",
-                "ip_address": "192.168.169.119"
+                "ip_address": "192.168.141.25"
             },
-            "created_time": "2025-08-09T13:57:01.708506"
+            "created_time": "2025-08-09T20:05:50.758835"
+        },
+        {
+            "id": "eddf6934-a63a-4e7c-908a-e50308aae6fc",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00079",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07827",
+                "category": "wall-decor",
+                "product_name": "Under The Sea Wall Decals | Large",
+                "price": 102.0,
+                "product_url": "https://www.aldeahome.com/products/wall-decals-decor-l-under-the-sea",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/0ccea7a44fb3a269697e06caa25eb172e5a7d6c677c5cb75f43620b7544b49d6.jpg?v=1682186453",
+                "view_duration_seconds": 117
+            },
+            "created_time": "2025-08-09T20:05:50.758839"
         }
     ],
     "reviews": [
         {
-            "review_id": "b0a2a5f4-504d-45c8-b7c0-cc4d762e74ff",
+            "review_id": "5585a549-0572-47a3-9f9c-75bdf51fb291",
             "customer_id": "user_00079",
-            "product_id": "PROD_BOOK_002",
-            "rating": 4,
-            "review_title": "정말 좋아요!",
-            "review_content": "성공하는 사람들의 7가지 습관은 최고입니다! 왜 이제 알았을까요.",
-            "created_at": "2025-05-04T14:00:03.216349",
+            "product_id": "01407",
+            "rating": 2,
+            "review_title": "Do not recommend",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2024-08-30T20:52:52.182303",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "d83c886f-8ae5-4d8d-9f81-125bc42d96da",
+            "Id": "33bf84b7-e502-42d8-be3b-78048fef7b67",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "be677340-7267-48a1-b7c2-2f1eb923ea21",
+            "DialogueId": "90c61b28-d19b-4d6a-8bd5-27a8d3f0438c",
             "UserId": "user_00079",
-            "session_id": "be677340-7267-48a1-b7c2-2f1eb923ea21",
-            "Intent": "추천",
+            "session_id": "90c61b28-d19b-4d6a-8bd5-27a8d3f0438c",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "챗봇과 대화하는 것이 처음인데, 어떤 기능을 사용할 수 있나요?",
-            "CreatedTime": "2025-08-09T14:33:54.132935",
+            "Content": "Can you tell me more about the educational benefits of the Wooden Farm Spot-the-Difference Puzzle (Product ID: 06400) for children?",
+            "CreatedTime": "2025-08-09T20:23:28.662610",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "f44ffcb6-804c-4d71-a60b-e2ddebe668a8",
+            "Id": "ba035075-b609-41a8-a8f1-b8f4287d1759",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "be677340-7267-48a1-b7c2-2f1eb923ea21",
+            "DialogueId": "90c61b28-d19b-4d6a-8bd5-27a8d3f0438c",
             "UserId": "user_00079",
-            "session_id": "be677340-7267-48a1-b7c2-2f1eb923ea21",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "안녕하세요! 처음 뵙겠습니다. 저와의 대화에서는 다음과 같은 기능을 이용하실 수 있습니다:\n\n1. **상품 추천**: 원하시는 상품이나 카테고리를 말씀해 주시면 추천해 드립니다.\n2. **상품 정보 제공**: 특정 상품에 대한 상세 정보를 알려드릴 수 있습니다.\n3. **주문 및 배송 문의**: 주문 상태나 배송 관련 질문에 답변해 드립니다.\n4. **고객 서비스 안내**: 반품, 교환, 환불 등의 절차에 대해 안내해 드립니다.\n\n궁금한 점이나 필요한 정보가 있다면 말씀해 주세요! 예를 들어, '유기농 아카시아 꿀 1kg'와 같은 상품에 대해 궁금하신 점이 있으신가요?",
-            "CreatedTime": "2025-08-09T14:33:57.039413",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "6d4d09bb-ec37-49f7-aff2-91fc90bcb212",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "be677340-7267-48a1-b7c2-2f1eb923ea21",
-            "UserId": "user_00079",
-            "session_id": "be677340-7267-48a1-b7c2-2f1eb923ea21",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "유기농 아카시아 꿀에 대해 좀 더 자세히 알고 싶어요. 어떤 효과가 있나요?",
-            "CreatedTime": "2025-08-09T14:33:58.056540",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "56c9e542-8638-4616-b562-d5cae174e647",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "be677340-7267-48a1-b7c2-2f1eb923ea21",
-            "UserId": "user_00079",
-            "session_id": "be677340-7267-48a1-b7c2-2f1eb923ea21",
+            "session_id": "90c61b28-d19b-4d6a-8bd5-27a8d3f0438c",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "유기농 아카시아 꿀은 다양한 건강 효과로 잘 알려져 있습니다. 주요 효과는 다음과 같습니다:\n\n1. **소화 촉진**: 아카시아 꿀은 소화 효소를 활성화해 소화에 도움을 줄 수 있습니다.\n2. **항산화 효과**: 풍부한 항산화 물질이 포함되어 있어, 세포 손상을 방지하는 데 기여할 수 있습니다.\n3. **면역력 강화**: 천연 항균 성분이 있어 면역력을 높이는 데 도움을 줄 수 있습니다.\n4. **피부 건강**: 보습 및 진정 효과가 있어 피부 관리에도 좋습니다.\n\n또한, 아카시아 꿀은 맛이 부드럽고 달콤해 다양한 요리에 활용할 수 있습니다. 건강과 맛을 동시에 챙길 수 있는 좋은 선택입니다! 다른 궁금한 점이나 필요하신 정보가 있으시면 언제든지 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:34:01.846741",
+            "Content": "The Wooden Farm Spot-the-Difference Puzzle is designed to provide various educational benefits for children ages 3 and up. Here are some key advantages:\n\n1. **Concentration and Focus**: As children work to find the differences in the puzzle, they practice maintaining their attention on a task, which helps improve their concentration skills.\n\n2. **Observation Skills**: The activity encourages children to carefully observe details, enhancing their ability to notice differences and similarities in visual information.\n\n3. **Problem-Solving**: Figuring out where the differences are requires critical thinking and problem-solving skills, promoting cognitive development.\n\n4. **Fine Motor Skills**: Manipulating the puzzle pieces helps develop fine motor skills and hand-eye coordination, essential for young children.\n\n5. **Imaginative Play**: The farm theme introduces children to animals and farm life, sparking their imagination and encouraging storytelling.\n\nOverall, the Wooden Farm Spot-the-Difference Puzzle offers a fun and engaging way for children to learn while playing. \n\nIf you're interested in purchasing it, the price is $9.99, and you can find it [here](https://www.aldeahome.com/products/wooden-farm-spot-the-difference-puzzle).",
+            "CreatedTime": "2025-08-09T20:23:32.751318",
             "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "f98424c7-e8ef-4e6f-be5c-2d351a4cafb3",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "be677340-7267-48a1-b7c2-2f1eb923ea21",
-            "UserId": "user_00079",
-            "session_id": "be677340-7267-48a1-b7c2-2f1eb923ea21",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "유기농 아카시아 꿀을 구매하고 싶은데, 어떤 옵션이 있는지 알려주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:34:02.879249",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "f31b4e28-83e9-4b9f-86c2-41c234a1b13f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "be677340-7267-48a1-b7c2-2f1eb923ea21",
-            "UserId": "user_00079",
-            "session_id": "be677340-7267-48a1-b7c2-2f1eb923ea21",
-            "Intent": "일반",
-            "Role": "assistant",
-            "Content": "유기농 아카시아 꿀은 보통 여러 가지 용량과 포장 옵션으로 제공됩니다. 일반적으로 다음과 같은 옵션이 있을 수 있습니다:\n\n1. **용량**: 250g, 500g, 1kg 등 다양한 용량이 있습니다.\n2. **포장 형태**: 유리병, 플라스틱 용기 등으로 제공되며, 일부 제품은 편리한 짜먹는 패키지로도 판매됩니다.\n3. **품질 인증**: 유기농 인증을 받은 제품인지 확인할 수 있습니다.\n\n각 상품의 상세 페이지에서 가격 및 재고 상태를 확인하실 수 있습니다. 구체적으로 어떤 용량이나 포장을 원하시는지 말씀해 주시면 더 자세히 안내해 드릴 수 있습니다!",
-            "CreatedTime": "2025-08-09T14:34:06.265773",
-            "ItemId": null,
-            "Thumbs": null,
+            "Thumbs": "down",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.412675"
+    "profile_generated_at": "2025-08-09T20:54:53.209347"
 }

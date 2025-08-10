@@ -1,125 +1,143 @@
 {
     "user_id": "user_00031",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 12,
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 11,
     "activities": [
         {
-            "id": "3b730cc8-ce17-4052-959d-001b58096c22",
+            "id": "2920169f-2589-44b8-864b-99570cc34c13",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00031",
-            "event_name": "add_to_cart",
+            "event_name": "search",
             "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "quantity": 1,
-                "price": 15000
+                "query": "Nuna LUMN Harness Booster Seat",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.707903"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-09T20:05:50.688244"
+        },
         {
-            "review_id": "51323513-69dd-4eb7-8662-769a0ab6f669",
-            "customer_id": "user_00031",
-            "product_id": "PROD_OLIVE_001",
-            "rating": 4,
-            "review_title": "적극 추천합니다",
-            "review_content": "진심으로 추천합니다. 기대 이상의 효과를 봤어요.",
-            "created_at": "2024-09-26T14:00:03.216210",
-            "is_deleted": false
+            "id": "30826e9b-255f-461e-9a4e-d090851bef0e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00031",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04409",
+                "category": "exclude",
+                "product_name": "DJ Mixer Board",
+                "price": 65.0,
+                "product_url": "https://www.aldeahome.com/products/dj-mixer-board",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/1bcc73aa95168cb6560a647f097ecde0914a681655add1e8acb68f7d93a73873.png?v=1686580489",
+                "view_duration_seconds": 63
+            },
+            "created_time": "2025-08-09T20:05:50.688250"
+        },
+        {
+            "id": "1ba79440-2bf9-4f39-80a3-cf658c589ae6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00031",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.176.136"
+            },
+            "created_time": "2025-08-09T20:05:50.688255"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "94c8e133-e48a-47cd-940d-8665ab586c2d",
+            "Id": "bd3c2413-a7e7-4c92-8868-120fe2772480",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "UserId": "user_00031",
-            "session_id": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
-            "Intent": "탐색",
+            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "안녕하세요. 좋은 올리브유 추천 좀 해주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:30:37.793214",
+            "Content": "Is the 'Mom Tile Coffee Mug' (Product ID: 06774) dishwasher safe, or does it require hand washing?",
+            "CreatedTime": "2025-08-09T20:18:23.719361",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "8643649a-565a-4833-8f95-f60b2a9f14a8",
+            "Id": "e45f4b29-ff32-4825-a1a4-41ee42b65bde",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "UserId": "user_00031",
-            "session_id": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "안녕하세요! 올리브유를 찾고 계시군요. 저희 쇼핑몰에서는 고급스러운 맛과 향을 자랑하는 '프리미엄 엑스트라 버진 올리브유'를 추천드립니다. 이 제품은 샐러드 드레싱이나 요리에 활용하기 좋습니다. \n\n혹시 더 궁금한 점이나 다른 상품을 찾으시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:30:39.809801",
-            "ItemId": "SUB_BOOKCLUB_BASIC",
+            "Content": "The product information does not specify if the 'Mom Tile Coffee Mug' is dishwasher safe or requires hand washing. For the best care, I recommend hand washing to preserve the design and material integrity. If you need further details, please check the manufacturer's instructions or contact customer support.",
+            "CreatedTime": "2025-08-09T20:18:25.340776",
+            "ItemId": "06774",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "7a11ab7e-d5b0-445c-928a-77e28abd7ada",
+            "Id": "ea67423c-f119-4021-a187-8036d08f37b1",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "UserId": "user_00031",
-            "session_id": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "이 올리브유는 어떤 특징이 있나요? 가격대도 알고 싶어요!",
-            "CreatedTime": "2025-08-09T14:30:40.452910",
+            "Content": "Can you tell me if the 'Mom Tile Coffee Mug' (Product ID: 06774) comes in any other colors or styles?",
+            "CreatedTime": "2025-08-09T20:18:26.270010",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "72f1dfc2-6f68-4528-9f82-f56ce8a4c5c8",
+            "Id": "0e4d49de-4251-49d7-9681-bc022b687a5e",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "UserId": "user_00031",
-            "session_id": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "'프리미엄 엑스트라 버진 올리브유 500ml'는 다음과 같은 특징이 있습니다:\n\n1. **고품질**: 100% 엑스트라 버진 올리브유로, 신선한 올리브에서 Cold Press 방식으로 추출하여 최상의 품질을 유지합니다.\n2. **맛과 향**: 올리브의 풍부한 맛과 향이 있어 요리에 깊이를 더해줍니다.\n3. **건강**: 오메가-3와 비타민 E가 풍부하여 건강에도 좋습니다.\n\n가격은 현재 15,000원입니다. 혹시 더 궁금한 점이나 다른 상품이 필요하시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:30:43.205451",
-            "ItemId": "PROD_OLIVE_001",
-            "Thumbs": null,
+            "Content": "The product information provided does not indicate that the 'Mom Tile Coffee Mug' is available in any other colors or styles. It appears to be offered in a single design featuring a hand-lettered \"Mom\" on both sides of the mug. For additional options, you may want to check the retailer's website or contact customer support for more details.",
+            "CreatedTime": "2025-08-09T20:18:27.994896",
+            "ItemId": null,
+            "Thumbs": "down",
             "Channel": "web"
         },
         {
-            "Id": "dfde892e-af32-46fe-904b-85cac69e0088",
+            "Id": "e155f16d-413a-4aed-8ce7-be2ed2841933",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "UserId": "user_00031",
-            "session_id": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "혹시 이 올리브유를 구매할 때 어떤 요리에 사용해보면 좋을까요? 추천해 주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:30:44.027958",
+            "Content": "Can you let me know if the 'Mom Tile Coffee Mug' (Product ID: 06774) has any special promotions or discounts available right now?",
+            "CreatedTime": "2025-08-09T20:18:29.077223",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "0e5cd358-59fb-4916-ad31-176ce0e424ad",
+            "Id": "6667c49c-1992-42bb-b4a0-cd2a537dd1ec",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "UserId": "user_00031",
-            "session_id": "f69bf632-2051-46fb-b2c2-9d8720f2108d",
+            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "물론입니다! '프리미엄 엑스트라 버진 올리브유'는 다양한 요리에 활용할 수 있습니다. 몇 가지 추천 요리는 다음과 같습니다:\n\n1. **샐러드 드레싱**: 신선한 채소 위에 뿌려 맛있는 드레싱으로 활용하세요.\n2. **파스타**: 삶은 파스타에 직접 뿌려서 풍미를 더하거나, 소스와 함께 사용해 보세요.\n3. **구이 요리**: 닭고기, 생선, 채소 등을 구울 때 바르거나 마리네이드로 사용하면 좋습니다.\n4. **브레드 디핑**: 빵을 조각 내어 올리브유와 발사믹 식초를 곁들여 디핑 소스로 즐기세요.\n\n이 외에도 다양한 요리에 활용할 수 있으니, 창의적으로 사용해 보세요! 추가로 궁금한 점이 있으면 언제든지 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:30:48.083040",
+            "Content": "The product information provided does not mention any current promotions or discounts for the 'Mom Tile Coffee Mug.' To find out about any available promotions, I recommend checking the retailer's website or contacting customer support directly for the most up-to-date information.",
+            "CreatedTime": "2025-08-09T20:18:30.143693",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.333405"
+    "profile_generated_at": "2025-08-09T20:54:53.191103"
 }

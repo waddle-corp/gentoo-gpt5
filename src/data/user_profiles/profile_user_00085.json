@@ -1,141 +1,61 @@
 {
     "user_id": "user_00085",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 12,
+    "raw_engagement_score": 7,
+    "normalized_engagement_score": 5,
     "activities": [
         {
-            "id": "42f0f7ef-f49a-4533-80ae-c151355c0799",
+            "id": "03006e72-5d82-4691-8085-47d578ae76f9",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00085",
-            "event_name": "search",
+            "event_name": "login",
             "event_data": {
-                "query": "건강식품",
-                "search_results_count": 11,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
+                "login_method": "email_password",
+                "ip_address": "192.168.250.75"
             },
-            "created_time": "2025-08-09T13:57:01.709043"
+            "created_time": "2025-08-09T20:05:50.768959"
         },
         {
-            "id": "79850c74-25af-48db-9927-09613fefc97e",
+            "id": "f9659e96-21f9-4407-bb7a-aca50e495ccd",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00085",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "05144",
+                "category": "exclude",
+                "product_name": "Mini Golf - Full Set",
+                "price": 40.0,
+                "product_url": "https://www.aldeahome.com/products/mini-golf-full-set-2",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/fc0301793016e3668d0b85daad62429a00ceebadf53007f83b1956401ddee1b5.jpg?v=1719985415",
+                "view_duration_seconds": 106
+            },
+            "created_time": "2025-08-09T20:05:50.768964"
+        },
+        {
+            "id": "8949d72c-2432-46a5-a43a-09fdd150b0a5",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00085",
             "event_name": "search",
             "event_data": {
-                "query": "건강식품",
-                "search_results_count": 16,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
+                "query": "Gordie the grey plush Persian cat",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T13:57:01.709046"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-09T20:05:50.771332"
+        },
         {
-            "review_id": "0467ddcf-d20d-435e-bc88-bd8d8442eef2",
-            "customer_id": "user_00085",
-            "product_id": "PROD_OLIVE_002",
-            "rating": 3,
-            "review_title": "정말 만족합니다!",
-            "review_content": "친구에게 선물했는데 아주 좋아했어요. {product['product_name']} 덕분에 센스 있다는 소리 들었네요!",
-            "created_at": "2025-03-26T14:00:03.216367",
-            "is_deleted": false
+            "id": "52c0ea09-84c5-49c8-96b0-3d500f35e15e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00085",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.168.40"
+            },
+            "created_time": "2025-08-09T20:05:50.771337"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "d2ab3a43-4c2b-4c09-8892-a9ce105aa29f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "UserId": "user_00085",
-            "session_id": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "새로 나온 책이 있나요?",
-            "CreatedTime": "2025-08-09T14:34:45.661066",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "4aac9839-da24-41b4-9c0c-644b20a5c0c2",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "UserId": "user_00085",
-            "session_id": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "현재 저희 쇼핑몰에서는 새로 나온 책에 대한 정보는 제공하지 않지만, 다양한 상품을 취급하고 있습니다. 혹시 다른 카테고리의 상품이나 특정한 상품에 대해 궁금하신 점이 있으신가요? 예를 들어, 건강 관련 제품인 유기농 아카시아 꿀 1kg 같은 식품도 추천해 드릴 수 있습니다.",
-            "CreatedTime": "2025-08-09T14:34:47.639558",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "274958ce-0da9-44ca-8d43-f492755e4f41",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "UserId": "user_00085",
-            "session_id": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "새로 나온 책에 대해 궁금한데, 어떤 장르의 책을 찾고 계신가요?",
-            "CreatedTime": "2025-08-09T14:34:48.372632",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "622f47b0-2ae0-4700-8bf7-cd45dc279619",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "UserId": "user_00085",
-            "session_id": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "새로 나온 책에 대한 정보는 제공하지 못하지만, 원하는 장르를 말씀해 주시면 비슷한 상품이나 관련 추천을 해드릴 수 있습니다. 예를 들어, 자기계발서나 소설 같은 장르가 있으면 말씀해 주세요. 다른 상품에 대해서도 궁금한 점이 있으신가요? 예를 들어, 스페셜티 원두 커피 200g 같은 식품도 추천해 드릴 수 있습니다.",
-            "CreatedTime": "2025-08-09T14:34:50.381501",
-            "ItemId": "PROD_COFFEE_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "adb40d39-0df4-45a4-9092-f4bb0df5964a",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "UserId": "user_00085",
-            "session_id": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "저는 소설 장르의 새로 나온 책을 찾고 있어요. 어떤 추천이 있을까요?",
-            "CreatedTime": "2025-08-09T14:34:51.312740",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e45e1035-9f01-438e-a763-de5b1509fd27",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "UserId": "user_00085",
-            "session_id": "9f85ab59-1e12-4f16-a6e6-420aa1322e0d",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "소설 장르의 새로 나온 책은 현재 제공할 수 없지만, 최근 인기를 끌고 있는 '베스트셀러 소설: 시간의 틈새'를 추천드립니다. 이 책은 흥미로운 이야기와 깊이 있는 캐릭터들로 많은 독자들에게 사랑받고 있습니다. 더 궁금한 사항이 있거나 다른 장르의 책을 찾고 계신다면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:34:53.571340",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.422657"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.211383"
 }

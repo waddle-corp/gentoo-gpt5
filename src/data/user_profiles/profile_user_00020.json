@@ -1,156 +1,129 @@
 {
     "user_id": "user_00020",
-    "raw_engagement_score": 31,
-    "normalized_engagement_score": 15,
+    "raw_engagement_score": 36,
+    "normalized_engagement_score": 24,
     "activities": [
         {
-            "id": "04c260ac-6c1c-490b-a7e8-9ba289e83aa7",
+            "id": "0541fad8-b26f-4399-b6de-c9b46a4ca313",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00020",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "category": "자기계발",
-                "product_name": "성공하는 사람들의 7가지 습관",
-                "view_duration_seconds": 57
+                "product_id": "07321",
+                "category": "plush",
+                "product_name": "Little Nibble 12\" Bunny - Gray",
+                "price": 34.95,
+                "product_url": "https://www.aldeahome.com/products/little-nibble-12-bunny-gray",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/fa90a6a39a731fb0445ccfb31471c71242bbead1d75c387f3a8b18b0f1953493.jpg?v=1748532812",
+                "view_duration_seconds": 95
             },
-            "created_time": "2025-08-09T13:57:01.707764"
+            "created_time": "2025-08-09T20:05:50.671229"
         },
         {
-            "id": "85ea3c6a-c076-4047-a1b3-0b0ef27b4c0f",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00020",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00020_707766",
-                "total_amount": 53000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_001",
-                        "quantity": 1,
-                        "price": 18000
-                    },
-                    {
-                        "product_id": "PROD_OLIVE_002",
-                        "quantity": 1,
-                        "price": 35000
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T13:57:01.707771"
-        },
-        {
-            "id": "20c452ba-2cad-485d-802e-ab28de082fbd",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00020",
-            "event_name": "search",
-            "event_data": {
-                "query": "새로운 책",
-                "search_results_count": 3,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T13:57:01.707774"
-        },
-        {
-            "id": "c4f5fab7-db8e-4229-8c66-0cc391ff5c6b",
+            "id": "93283963-833d-4454-9560-965fb5a2033a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00020",
             "event_name": "login",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.202.52"
+                "login_method": "email_password",
+                "ip_address": "192.168.57.87"
             },
-            "created_time": "2025-08-09T13:57:01.707778"
+            "created_time": "2025-08-09T20:05:50.671233"
         },
         {
-            "id": "20dbf343-f99c-4272-8a98-89b8c6c0a495",
+            "id": "6e4448cc-4836-4cb0-8ef2-1f6dad786492",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00020",
-            "event_name": "product_view",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "category": "자기계발",
-                "product_name": "성공하는 사람들의 7가지 습관",
-                "view_duration_seconds": 47
+                "order_id": "ORDER_user_00020_671238",
+                "total_amount": 39.95,
+                "items": [
+                    {
+                        "product_id": "06711",
+                        "quantity": 1,
+                        "price": 39.95
+                    }
+                ],
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T13:57:01.707782"
+            "created_time": "2025-08-09T20:05:50.671247"
+        },
+        {
+            "id": "34a31fae-a6dd-4510-8677-0f04c613b330",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00020",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00020_671251",
+                "total_amount": 25.0,
+                "items": [
+                    {
+                        "product_id": "04304",
+                        "quantity": 1,
+                        "price": 25.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.671257"
+        },
+        {
+            "id": "c37f49ba-95b6-449b-8968-86729f5ada5b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00020",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.131.190"
+            },
+            "created_time": "2025-08-09T20:05:50.671261"
         }
     ],
     "reviews": [
         {
-            "review_id": "3fb32c44-ce19-4e99-8b1a-4b52ac69b750",
+            "review_id": "0ecf679e-cbf4-485b-8f46-c3d3cdd119fc",
             "customer_id": "user_00020",
-            "product_id": "PROD_OLIVE_002",
-            "rating": 1,
-            "review_title": "비추천합니다",
-            "review_content": "유기농 엑스트라 버진 올리브유 750ml 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2025-02-15T14:00:03.216184",
+            "product_id": "01449",
+            "rating": 4,
+            "review_title": "Best purchase ever",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-04-03T20:52:52.182101",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "6024495a-417a-427d-944c-e6948e3753ff",
+            "Id": "bd8c14cd-a959-468f-8a33-9afa0d30406a",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "DialogueId": "88c1e8dc-cda4-44a2-a0c9-e454063a8aa2",
             "UserId": "user_00020",
-            "session_id": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "이벤트는 없나요?",
-            "CreatedTime": "2025-08-09T14:29:39.735224",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d095b290-3c82-4cd6-abc6-1d56547c79d0",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
-            "UserId": "user_00020",
-            "session_id": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
-            "Intent": "제공",
-            "Role": "assistant",
-            "Content": "현재 진행 중인 이벤트는 없습니다. 하지만 가끔씩 특별 할인이나 프로모션을 진행하니, 자주 확인해 주세요. 스페셜티 원두 커피 200g과 같은 인기 상품도 할인 대상이 될 수 있습니다!",
-            "CreatedTime": "2025-08-09T14:29:40.970709",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0d01bdd4-e159-413a-9277-2ce8d35991bb",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
-            "UserId": "user_00020",
-            "session_id": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "session_id": "88c1e8dc-cda4-44a2-a0c9-e454063a8aa2",
             "Intent": "일반",
             "Role": "user",
-            "Content": "그럼 다음 이벤트는 언제쯤 있을까요? 미리 알아두고 싶어요!",
-            "CreatedTime": "2025-08-09T14:29:41.779844",
+            "Content": "What are the unique features of the Twist - Light Blue candle (Product ID: 02938) that set it apart from traditional candles?",
+            "CreatedTime": "2025-08-09T20:17:28.577362",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "945dfa2f-be72-4c3b-8c47-4061eb098f53",
+            "Id": "845297dc-783a-4d73-8b7e-b1e95b3f3804",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "DialogueId": "88c1e8dc-cda4-44a2-a0c9-e454063a8aa2",
             "UserId": "user_00020",
-            "session_id": "a9ad9bfc-73b4-46f9-8b55-bdaad81c12ff",
+            "session_id": "88c1e8dc-cda4-44a2-a0c9-e454063a8aa2",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "다음 이벤트 일정은 아직 확정되지 않았습니다. 보통 월말이나 특별한 기념일에 맞춰 이벤트를 진행하는 경우가 많습니다. 저희 쇼핑몰의 뉴스레터를 구독하시면 최신 소식과 이벤트 정보를 빠르게 받아보실 수 있습니다. 스페셜티 원두 커피 200g 같은 인기 상품도 이벤트에 포함될 수 있으니, 관심 가져주세요!",
-            "CreatedTime": "2025-08-09T14:29:43.802450",
-            "ItemId": null,
+            "Content": "The Twist - Light Blue candle stands out from traditional candles due to its innovative design that combines both the base and the candle into a single flexible wax shape. This allows for a unique double-ended structure that can be bent and twisted, creating a new typology that merges form, function, and fun. Its flexibility not only enhances the aesthetic appeal but also offers versatility in styling compared to the usual straight candles. \n\nIf you're interested, the price is $40.00, and you can find more details at this link: [Twist - Light Blue](https://www.aldeahome.com/products/twist-light-blue).",
+            "CreatedTime": "2025-08-09T20:17:31.185793",
+            "ItemId": "02938",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.313555"
+    "profile_generated_at": "2025-08-09T20:54:53.185170"
 }

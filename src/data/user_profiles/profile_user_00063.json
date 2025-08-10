@@ -1,146 +1,141 @@
 {
     "user_id": "user_00063",
-    "raw_engagement_score": 31,
-    "normalized_engagement_score": 15,
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 18,
     "activities": [
         {
-            "id": "a34d9c00-ff9c-4c29-8fee-0e7b9db0ca3e",
+            "id": "3c7bc656-22fd-4b99-bf67-6234dcf5eeb9",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00063",
-            "event_name": "purchase_completed",
+            "event_name": "product_view",
             "event_data": {
-                "order_id": "ORDER_user_00063_708278",
-                "total_amount": 70000,
-                "items": [
-                    {
-                        "product_id": "SUB_OLIVE_PREMIUM",
-                        "quantity": 1,
-                        "price": 70000
-                    }
-                ],
-                "payment_method": "kakao_pay"
+                "product_id": "06908",
+                "category": "newborn-basics",
+                "product_name": "If You can Smell that Change my Diaper Baby Socks | Quirky: 0-6mo",
+                "price": 7.95,
+                "product_url": "https://www.aldeahome.com/products/if-you-can-smell-that-change-my-diaper-baby-socks-quirky-0-6mo",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/53b6018c5dfdc77b4a89b2c15753ea5fe3a959426def4fa21644d87b72625473_c61f2931-9154-4924-a726-f941d88e33c9.jpg?v=1743519172",
+                "view_duration_seconds": 103
             },
-            "created_time": "2025-08-09T13:57:01.708281"
+            "created_time": "2025-08-09T20:05:50.738842"
         },
         {
-            "id": "07de3b75-210e-4fe9-9c79-57e0ae975802",
+            "id": "d8f16ea6-75fc-48e1-b0e5-53c507a45744",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00063",
-            "event_name": "search",
+            "event_name": "add_to_cart",
             "event_data": {
-                "query": "베스트셀러",
-                "search_results_count": 2,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "product_id": "01099",
+                "quantity": 3,
+                "price": 980.0
             },
-            "created_time": "2025-08-09T13:57:01.708285"
+            "created_time": "2025-08-09T20:05:50.738846"
         }
     ],
     "reviews": [
         {
-            "review_id": "ff414264-8920-4f9f-adcc-161b4acccd70",
+            "review_id": "e19e7143-6587-487c-b937-bb0aa9f58e53",
             "customer_id": "user_00063",
-            "product_id": "SUB_OLIVE_PREMIUM",
+            "product_id": "05237",
             "rating": 2,
-            "review_title": "실망했어요",
-            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
-            "created_at": "2025-01-23T14:00:03.216301",
+            "review_title": "Do not recommend",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2024-12-27T20:52:52.182234",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "3fc0ccd6-c3c8-42c1-b448-731efa8b0ef9",
+            "Id": "89cae17e-9919-4a94-8914-33b96c20fb6a",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
+            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
             "UserId": "user_00063",
-            "session_id": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
+            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Rainbow Block Thank You Card (Product ID: 04173) is available for bulk purchase, and if so, what are the pricing options?",
+            "CreatedTime": "2025-08-09T20:21:51.798838",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "ade0a11b-1336-471d-aae6-0bde7583dda5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "UserId": "user_00063",
+            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I currently do not have information regarding bulk purchase options or pricing for the Rainbow Block Thank You Card. However, the individual price for the card is $5.50. For specific bulk purchase inquiries, I recommend contacting customer support directly or checking the website for more details. You can view the card [here](https://www.aldeahome.com/products/rainbow-block-thank-you-card).",
+            "CreatedTime": "2025-08-09T20:21:53.588423",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6bc6321b-fe4e-4d1d-b6e3-b0e50591f13f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "UserId": "user_00063",
+            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Do you know if there's a discount for purchasing multiple units of the Rainbow Block Thank You Card (Product ID: 04173)? I'm considering buying several for an event.",
+            "CreatedTime": "2025-08-09T20:21:54.625816",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "55dc4a00-bddf-41d8-aa77-30d118549cf1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "UserId": "user_00063",
+            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don’t have information about discounts for purchasing multiple units of the Rainbow Block Thank You Card. The price for each card is $5.50. For any potential discounts or bulk pricing, please check the website or reach out to customer support directly. You can view the card [here](https://www.aldeahome.com/products/rainbow-block-thank-you-card).",
+            "CreatedTime": "2025-08-09T20:21:56.409314",
+            "ItemId": "04173",
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "ed6809d4-4378-4b28-b9ab-d16879d60619",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
+            "UserId": "user_00063",
+            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "안녕하세요. 좋은 올리브유 추천 좀 해주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:32:46.292467",
+            "Content": "Can you let me know how quickly I can receive the Rainbow Block Thank You Card (Product ID: 04173) if I place an order today?",
+            "CreatedTime": "2025-08-09T20:21:57.306711",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "d4f7d963-4c3b-4960-9c8c-704ea7443a4c",
+            "Id": "50da8c2b-775e-4c1c-aba7-f800b87cd1cb",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
+            "DialogueId": "82bbe899-37cf-4403-b1ff-d38aa957488a",
             "UserId": "user_00063",
-            "session_id": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
+            "session_id": "82bbe899-37cf-4403-b1ff-d38aa957488a",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "안녕하세요! 좋은 올리브유를 찾고 계시군요. 고급스러운 맛과 향을 가진 '엑스트라 버진 올리브유'를 추천드립니다. 샐러드 드레싱이나 요리에 활용하기에 아주 적합합니다. \n\n혹시 스페셜티 원두 커피 200g도 함께 고려해 보시면, 올리브유와 함께 즐기는 아침 식사에 잘 어울릴 것입니다. 추가 질문이 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:32:48.410410",
-            "ItemId": "PROD_COFFEE_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a5287f6a-cf28-448e-bfe9-1c51bfc1e709",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
-            "UserId": "user_00063",
-            "session_id": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "엑스트라 버진 올리브유 중에서 어떤 브랜드가 추천되나요?",
-            "CreatedTime": "2025-08-09T14:32:49.287722",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "c8f399da-09ac-428a-97a0-a6d46156f887",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
-            "UserId": "user_00063",
-            "session_id": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "엑스트라 버진 올리브유 중에서 추천할 만한 브랜드는 '프리미엄 엑스트라 버진 올리브유'입니다. 이 브랜드는 고품질 올리브를 사용하여 깊고 풍부한 맛을 자랑합니다. 샐러드, 파스타, 구이 등 다양한 요리에 잘 어울립니다.\n\n다른 브랜드도 필요하시다면, '안토니오 카리오'나 '카스티야'와 같은 브랜드도 품질이 뛰어납니다. 궁금한 점이 있으면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:32:51.949642",
-            "ItemId": "PROD_OLIVE_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "51592803-5063-4db5-8428-5807d006dcc2",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
-            "UserId": "user_00063",
-            "session_id": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "혹시 올리브유를 구입하기 전에 어떤 용도로 사용할지 미리 생각해 보셨나요? 샐러드 드레싱이나 요리에 따라 추천 브랜드가 달라질 수 있습니다.",
-            "CreatedTime": "2025-08-09T14:32:53.006172",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "8f432a3b-be26-44b8-bffd-765bcbac864a",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
-            "UserId": "user_00063",
-            "session_id": "365ef7c0-c7e7-4c78-9ac8-4a841ed6b08d",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "맞습니다! 올리브유를 사용할 용도에 따라 추천하는 브랜드가 달라질 수 있습니다.\n\n1. **샐러드 드레싱**: 신선한 맛과 향이 중요한 만큼, '프리미엄 엑스트라 버진 올리브유'를 추천합니다. 이 제품은 부드럽고 고소한 맛이 특징입니다.\n\n2. **요리용 (볶음, 구이 등)**: 요리에 활용할 경우, '카스티야' 브랜드의 올리브유가 좋습니다. 강한 맛과 내열성이 뛰어나 다양한 요리에 잘 어울립니다.\n\n3. **빵이나 디핑 소스**: '안토니오 카리오'의 올리브유는 풍미가 깊어 빵과 함께 즐기기 좋습니다.\n\n어떤 용도로 사용할지에 따라 선택하시면 더욱 만족하실 거예요! 추가 질문이 있으시면 언제든지 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:32:57.512990",
-            "ItemId": null,
+            "Content": "I don't have specific shipping information regarding the delivery time for the Rainbow Block Thank You Card. For the fastest and most accurate details about shipping times, I recommend checking the shipping policy on the website or contacting customer support directly. You can view the card [here](https://www.aldeahome.com/products/rainbow-block-thank-you-card).",
+            "CreatedTime": "2025-08-09T20:21:59.221271",
+            "ItemId": "04173",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.386191"
+    "profile_generated_at": "2025-08-09T20:54:53.204451"
 }

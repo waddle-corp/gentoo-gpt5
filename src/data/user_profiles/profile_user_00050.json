@@ -1,126 +1,74 @@
 {
     "user_id": "user_00050",
-    "raw_engagement_score": 18,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 16,
+    "normalized_engagement_score": 11,
     "activities": [
         {
-            "id": "01a4ec80-0468-48ee-98bd-1339daf075d4",
+            "id": "97b976d2-b50b-46b4-8f3c-4b452f9eef93",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00050",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04398",
+                "category": "exclude",
+                "product_name": "Flashing Spiky Ball, Bouncy, Squeezy, Tactile Toy",
+                "price": 4.0,
+                "product_url": "https://www.aldeahome.com/products/flashing-spiky-ball-bouncy-squeezy-tactile-toy",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/9a9304e3e8709d3276ab6d9587e95076179a88eba1a207f30e3ae455317c29bd.jpg?v=1722467263",
+                "view_duration_seconds": 57
+            },
+            "created_time": "2025-08-09T20:05:50.722187"
+        },
+        {
+            "id": "1cdc9a56-8c23-4d16-a58c-0f49b4fd9171",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00050",
+            "event_name": "search",
+            "event_data": {
+                "query": "Lil’ Loteria: A Bilingual Picture Word Bingo Game (Bilingual: English and Spanish)",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T20:05:50.724374"
+        },
+        {
+            "id": "7b4d483d-f4e6-4c94-b890-b9221638ec33",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00050",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00050_724389",
+                "total_amount": 55.5,
+                "items": [
+                    {
+                        "product_id": "01359",
+                        "quantity": 1,
+                        "price": 48.0
+                    },
+                    {
+                        "product_id": "04048",
+                        "quantity": 1,
+                        "price": 7.5
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-09T20:05:50.724407"
+        },
+        {
+            "id": "24df1c70-0200-458b-a742-2aa04195c9cf",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00050",
             "event_name": "login",
             "event_data": {
                 "login_method": "social_google",
-                "ip_address": "192.168.237.184"
+                "ip_address": "192.168.180.173"
             },
-            "created_time": "2025-08-09T13:57:01.708140"
-        },
-        {
-            "id": "bbf5a036-7b0d-4723-aa96-ad847107a987",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00050",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.191.205"
-            },
-            "created_time": "2025-08-09T13:57:01.708144"
-        },
-        {
-            "id": "855b0e83-e967-4462-a98d-f11020d57ee4",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00050",
-            "event_name": "search",
-            "event_data": {
-                "query": "건강식품",
-                "search_results_count": 12,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T13:57:01.708147"
+            "created_time": "2025-08-09T20:05:50.724413"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "23572cba-1313-480c-9564-f96bc072e51f",
-            "customer_id": "user_00050",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "rating": 1,
-            "review_title": "실망했어요",
-            "review_content": "월간 북클럽 베이직 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2025-01-17T14:00:03.216275",
-            "is_deleted": false
-        }
-    ],
-    "subscriptions": [
-        {
-            "subscription_id": "1684ab94-c113-4434-b6c2-5a3855ac2181",
-            "customer_id": "user_00050",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2025-01-15",
-            "end_date": "2025-07-14",
-            "status": "expired"
-        }
-    ],
-    "dialogues": [
-        {
-            "Id": "4ab6df93-f806-4255-9043-89b1a0dc0a8c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "db99d28f-f1e3-4939-b8e2-0369134f47cc",
-            "UserId": "user_00050",
-            "session_id": "db99d28f-f1e3-4939-b8e2-0369134f47cc",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "계정 정보를 변경하고 싶은데 어떻게 해야 하나요?",
-            "CreatedTime": "2025-08-09T14:31:57.433967",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d629145a-1444-49e7-aa34-5ff1d460b3cc",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "db99d28f-f1e3-4939-b8e2-0369134f47cc",
-            "UserId": "user_00050",
-            "session_id": "db99d28f-f1e3-4939-b8e2-0369134f47cc",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "계정 정보를 변경하시려면, 먼저 쇼핑몰에 로그인하신 후 '내 계정' 또는 '회원정보 수정' 섹션으로 이동하세요. 거기서 원하는 정보를 수정하실 수 있습니다. 만약 추가적인 도움이 필요하시거나 문제가 발생한다면, 고객 서비스 센터에 연락해 주시면 안내해 드리겠습니다.",
-            "CreatedTime": "2025-08-09T14:31:58.990244",
-            "ItemId": "PROD_COFFEE_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "dc93fb5a-c2d4-4f69-94b2-1633877ca103",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "db99d28f-f1e3-4939-b8e2-0369134f47cc",
-            "UserId": "user_00050",
-            "session_id": "db99d28f-f1e3-4939-b8e2-0369134f47cc",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "비밀번호도 변경할 수 있나요?",
-            "CreatedTime": "2025-08-09T14:31:59.857417",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a62db496-d0be-442c-8b11-f14734fd103e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "db99d28f-f1e3-4939-b8e2-0369134f47cc",
-            "UserId": "user_00050",
-            "session_id": "db99d28f-f1e3-4939-b8e2-0369134f47cc",
-            "Intent": "CS",
-            "Role": "assistant",
-            "Content": "네, 비밀번호도 변경하실 수 있습니다. '내 계정' 섹션에 들어가시면 '비밀번호 변경' 옵션을 찾으실 수 있습니다. 현재 비밀번호와 새 비밀번호를 입력하신 후 변경하시면 됩니다. 추가로 도움이 필요하시면 언제든지 문의해 주세요!",
-            "CreatedTime": "2025-08-09T14:32:01.413968",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.364579"
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.199144"
 }

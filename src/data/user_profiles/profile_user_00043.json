@@ -1,72 +1,200 @@
 {
     "user_id": "user_00043",
-    "raw_engagement_score": 19,
-    "normalized_engagement_score": 10,
+    "raw_engagement_score": 46,
+    "normalized_engagement_score": 30,
     "activities": [
         {
-            "id": "999dc70a-e998-4003-bf3a-95f6819ed1d7",
+            "id": "8906f405-9a70-4c9b-9f7b-90b9e9a5e478",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00043",
             "event_name": "login",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.23.64"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.159.167"
             },
-            "created_time": "2025-08-09T13:57:01.708050"
+            "created_time": "2025-08-09T20:05:50.704946"
         },
         {
-            "id": "fff43839-431d-4d9f-9b58-d81fbc7e83fa",
+            "id": "51230c4e-c3c8-43aa-bd7a-fd1ed4589d08",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00043",
-            "event_name": "search",
+            "event_name": "purchase_completed",
             "event_data": {
-                "query": "올리브유",
-                "search_results_count": 8,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
+                "order_id": "ORDER_user_00043_704954",
+                "total_amount": 34.95,
+                "items": [
+                    {
+                        "product_id": "01588",
+                        "quantity": 1,
+                        "price": 16.95
+                    },
+                    {
+                        "product_id": "02251",
+                        "quantity": 1,
+                        "price": 18.0
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T13:57:01.708054"
+            "created_time": "2025-08-09T20:05:50.704965"
         },
         {
-            "id": "46b46ad6-7a17-4eaf-ade7-ed7de1af3c06",
+            "id": "b11ee1e6-4c0a-48f9-9ff9-6d72a836a402",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00043",
-            "event_name": "add_to_cart",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "quantity": 1,
-                "price": 35000
+                "order_id": "ORDER_user_00043_704970",
+                "total_amount": 97.99,
+                "items": [
+                    {
+                        "product_id": "00808",
+                        "quantity": 1,
+                        "price": 58.0
+                    },
+                    {
+                        "product_id": "04028",
+                        "quantity": 1,
+                        "price": 39.99
+                    }
+                ],
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T13:57:01.708057"
+            "created_time": "2025-08-09T20:05:50.704975"
         },
         {
-            "id": "11515159-8399-4b2e-8958-4fdc352f804b",
+            "id": "31b25328-c40a-4990-ad82-289221b7a0b5",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00043",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "category": "구독",
-                "product_name": "월간 북클럽 베이직",
-                "view_duration_seconds": 30
+                "product_id": "06280",
+                "category": "ornaments",
+                "product_name": "Whisky & Gin Glitter Ornaments",
+                "price": 24.0,
+                "product_url": "https://www.aldeahome.com/products/whisky-gin-glitter-ornament-2-assorted-4-5h",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/84ffa3d45d58702956cba9b633bfc89722b277c89b5b98564a20dd57f465c1a5.jpg?v=1731947204",
+                "view_duration_seconds": 79
             },
-            "created_time": "2025-08-09T13:57:01.708061"
+            "created_time": "2025-08-09T20:05:50.704980"
+        },
+        {
+            "id": "e53c8abf-6e03-4490-8af1-771c678e6393",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00043",
+            "event_name": "search",
+            "event_data": {
+                "query": "Pure - Tap Tap Xylophone",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T20:05:50.707462"
         }
     ],
     "reviews": [
         {
-            "review_id": "9d32d67e-9e0c-4731-9585-cca12dffa801",
+            "review_id": "149648c1-dad4-4408-8357-3d4aae476b5a",
             "customer_id": "user_00043",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "rating": 4,
-            "review_title": "인생템 등극",
-            "review_content": "진심으로 추천합니다. 기대 이상의 효과를 봤어요.",
-            "created_at": "2025-07-30T14:00:03.216252",
+            "product_id": "00722",
+            "rating": 3,
+            "review_title": "Highly recommended",
+            "review_content": "Honestly, I had high hopes, but Golf Ball Ice Molds isn't quite my taste. I'll try something else next time.",
+            "created_at": "2024-10-04T20:52:52.182182",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T14:57:54.352894"
+    "dialogues": [
+        {
+            "Id": "a2cc57d2-d985-4494-925e-2b6a49626926",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "UserId": "user_00043",
+            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Could you tell me if the Strawberry Flower Hair Clips (Product ID: 05042) come in different sizes or just one size?",
+            "CreatedTime": "2025-08-09T20:19:15.394575",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "44c5a4fa-8026-412b-ad67-550b5a2d79aa",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "UserId": "user_00043",
+            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Strawberry Flower Hair Clips (Product ID: 05042) are currently available in just one size. If you would like to purchase them, they are priced at $21.99. You can find them at this link: [Strawberry Flower Hair Clips](https://www.aldeahome.com/products/spr24-strawberry-flower-hair-clips).",
+            "CreatedTime": "2025-08-09T20:19:17.053153",
+            "ItemId": "05042",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a0c87486-e4e7-49b9-9d69-1ddfdc259ed0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "UserId": "user_00043",
+            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are the Strawberry Flower Hair Clips (Product ID: 05042) suitable for toddlers, or would they be better for older children?",
+            "CreatedTime": "2025-08-09T20:19:17.914785",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "dc4161d6-bb9b-40dc-a860-a67c2cfd75c0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "UserId": "user_00043",
+            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "Intent": "일반",
+            "Role": "assistant",
+            "Content": "The Strawberry Flower Hair Clips (Product ID: 05042) are designed to be suitable for toddlers and can also be great for older children. Their colorful and playful design makes them perfect for adding a fun touch to little ones' hairstyles. If you're interested, they are priced at $21.99, and you can find them here: [Strawberry Flower Hair Clips](https://www.aldeahome.com/products/spr24-strawberry-flower-hair-clips).",
+            "CreatedTime": "2025-08-09T20:19:20.260959",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "f7007b9f-842f-43cb-9cf9-db140a120b04",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "UserId": "user_00043",
+            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are the Strawberry Flower Hair Clips (Product ID: 05042) easy to use for little hands, or do they require adult assistance to put them in?",
+            "CreatedTime": "2025-08-09T20:19:21.255859",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9e0be687-11db-4754-a7b1-8c6c4745196d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "UserId": "user_00043",
+            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Strawberry Flower Hair Clips (Product ID: 05042) are designed to be user-friendly, making them relatively easy for little hands to use. However, depending on the child's dexterity, some may still require a bit of adult assistance to secure them properly. They are perfect for adding a fun touch to hairstyles! They are priced at $21.99, and you can check them out here: [Strawberry Flower Hair Clips](https://www.aldeahome.com/products/spr24-strawberry-flower-hair-clips).",
+            "CreatedTime": "2025-08-09T20:19:23.572981",
+            "ItemId": "05042",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-09T20:54:53.196496"
 }

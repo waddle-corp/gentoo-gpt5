@@ -1,135 +1,34 @@
 {
     "user_id": "user_00033",
-    "raw_engagement_score": 51,
-    "normalized_engagement_score": 22,
+    "raw_engagement_score": 12,
+    "normalized_engagement_score": 8,
     "activities": [
         {
-            "id": "75d55c6f-698b-4091-9c7a-bc83550901c1",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00033",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00033_707923",
-                "total_amount": 25000,
-                "items": [
-                    {
-                        "product_id": "PROD_OLIVE_001",
-                        "quantity": 1,
-                        "price": 25000
-                    }
-                ],
-                "payment_method": "credit_card"
-            },
-            "created_time": "2025-08-09T13:57:01.707927"
-        },
-        {
-            "id": "86e08973-b3bf-439e-9e0c-8fa1d4c4bc3d",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00033",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "quantity": 1,
-                "price": 50000
-            },
-            "created_time": "2025-08-09T13:57:01.707930"
-        },
-        {
-            "id": "cdec59cf-c212-4c0c-a37f-b70bfa61be23",
+            "id": "89e763d3-8c2f-48b9-81a6-985b3d284a7c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00033",
             "event_name": "search",
             "event_data": {
-                "query": "구독",
-                "search_results_count": 8,
+                "query": "adventure begins blue mug",
+                "search_results_count": 1,
                 "filters_applied": []
             },
-            "created_time": "2025-08-09T13:57:01.707934"
+            "created_time": "2025-08-09T20:05:50.690750"
         }
     ],
     "reviews": [
         {
-            "review_id": "7a11f037-9322-43e1-bee3-e4c6f07de23c",
+            "review_id": "e283f4ae-4311-4ea0-9f76-acc6e4f7b83a",
             "customer_id": "user_00033",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "rating": 1,
-            "review_title": "실망했어요",
-            "review_content": "월간 북클럽 베이직 품질이 생각보다 안 좋네요. 돈이 아깝습니다.",
-            "created_at": "2025-06-11T14:00:03.216215",
+            "product_id": "04882",
+            "rating": 5,
+            "review_title": "Highly recommend",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2024-10-28T20:52:52.182145",
             "is_deleted": false
         }
     ],
-    "subscriptions": [
-        {
-            "subscription_id": "c4d3eecb-e44b-4673-a049-94496df1829f",
-            "customer_id": "user_00033",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "start_date": "2024-10-09",
-            "end_date": "2026-12-28",
-            "status": "active"
-        }
-    ],
-    "dialogues": [
-        {
-            "Id": "2bf00c75-ed9c-4169-a901-3450d5a2ab6e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e1c363bb-3e25-45bd-a5dd-dfd14804c8f1",
-            "UserId": "user_00033",
-            "session_id": "e1c363bb-3e25-45bd-a5dd-dfd14804c8f1",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "이벤트는 없나요?",
-            "CreatedTime": "2025-08-09T14:30:56.295036",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "c5e56a8d-6c0e-4d6c-b94f-4404dc795c1e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e1c363bb-3e25-45bd-a5dd-dfd14804c8f1",
-            "UserId": "user_00033",
-            "session_id": "e1c363bb-3e25-45bd-a5dd-dfd14804c8f1",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "현재 진행 중인 이벤트는 없습니다. 하지만 특별 할인이나 프로모션이 있을 경우, 홈페이지나 뉴스레터를 통해 안내해 드릴 예정입니다. 혹시 다른 궁금한 점이나 상품 추천이 필요하신가요?",
-            "CreatedTime": "2025-08-09T14:30:58.020204",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "9450afa5-a40e-491a-8e64-1574ca0c5fa9",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e1c363bb-3e25-45bd-a5dd-dfd14804c8f1",
-            "UserId": "user_00033",
-            "session_id": "e1c363bb-3e25-45bd-a5dd-dfd14804c8f1",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "다른 상품 추천이 있나요? 요즘 인기 있는 제품이 궁금해요.",
-            "CreatedTime": "2025-08-09T14:30:58.681025",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "1bdae4e6-8dbe-4804-9b0b-0fdd99af2a17",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "e1c363bb-3e25-45bd-a5dd-dfd14804c8f1",
-            "UserId": "user_00033",
-            "session_id": "e1c363bb-3e25-45bd-a5dd-dfd14804c8f1",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "요즘 인기 있는 제품 중 하나는 '유기농 아카시아 꿀 1kg'입니다. 이 꿀은 자연에서 얻은 순수한 맛과 건강 효능으로 많은 분들께 사랑받고 있습니다. 또한, 다양한 요리에 활용할 수 있어 실용적입니다. 다른 카테고리의 인기 상품이나 궁금한 점이 있으시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:31:00.836619",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T14:57:54.336630"
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-09T20:54:53.191815"
 }

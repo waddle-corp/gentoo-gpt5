@@ -1,191 +1,163 @@
 {
     "user_id": "user_00082",
-    "raw_engagement_score": 40,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "62662abe-5541-4e5b-837a-eb0ebb42af7a",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00082",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "SUB_BOOKCLUB_BASIC",
-                "category": "구독",
-                "product_name": "월간 북클럽 베이직",
-                "view_duration_seconds": 43
-            },
-            "created_time": "2025-08-09T13:57:01.708551"
-        },
-        {
-            "id": "1d16701b-7cb4-42c7-8ba9-25ab529ccf4b",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00082",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "category": "올리브유",
-                "product_name": "유기농 엑스트라 버진 올리브유 750ml",
-                "view_duration_seconds": 68
-            },
-            "created_time": "2025-08-09T13:57:01.708554"
-        },
-        {
-            "id": "725fb618-f6d0-4506-b13d-cf64d2bb92c9",
+            "id": "14d89c11-e853-470c-87bc-ace23a262514",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00082",
             "event_name": "login",
             "event_data": {
                 "login_method": "email_password",
-                "ip_address": "192.168.184.196"
+                "ip_address": "192.168.143.42"
             },
-            "created_time": "2025-08-09T13:57:01.708558"
+            "created_time": "2025-08-09T20:05:50.761360"
         },
         {
-            "id": "9505e7fe-b29c-4ac2-9a68-7ad34ca7661e",
+            "id": "ee39adfe-4bfc-432e-b95b-9e71b248f9b2",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00082",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "category": "소설",
-                "product_name": "베스트셀러 소설: 시간의 틈새",
-                "view_duration_seconds": 98
+                "product_id": "00768",
+                "category": "bassinets",
+                "product_name": "Bilia Bassinet with insert",
+                "price": 229.0,
+                "product_url": "https://www.aldeahome.com/products/signature-bilia-bassinet",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/ScreenShot2021-05-26at7.28.26AM-857362.jpg?v=1672590997",
+                "view_duration_seconds": 53
             },
-            "created_time": "2025-08-09T13:57:01.708561"
+            "created_time": "2025-08-09T20:05:50.761365"
         },
         {
-            "id": "091d02dd-e394-4b56-8710-c67a3eb62b55",
+            "id": "76f56c99-65af-4f71-92e0-4f62f3a725af",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00082",
-            "event_name": "purchase_completed",
+            "event_name": "login",
             "event_data": {
-                "order_id": "ORDER_user_00082_708563",
-                "total_amount": 18000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_001",
-                        "quantity": 1,
-                        "price": 18000
-                    }
-                ],
-                "payment_method": "naver_pay"
+                "login_method": "email_password",
+                "ip_address": "192.168.220.151"
             },
-            "created_time": "2025-08-09T13:57:01.708567"
+            "created_time": "2025-08-09T20:05:50.761369"
+        },
+        {
+            "id": "40ac4686-d28d-4899-b932-173e0d4fe2cc",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00082",
+            "event_name": "search",
+            "event_data": {
+                "query": "Money Bag Ornament",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-09T20:05:50.763816"
         }
     ],
     "reviews": [
         {
-            "review_id": "e5f1c759-f9de-4f8b-8e92-da8cbe04301d",
+            "review_id": "9782a462-fc63-4867-84cc-39e3b26d8e44",
             "customer_id": "user_00082",
-            "product_id": "PROD_BOOK_001",
-            "rating": 1,
-            "review_title": "기대 이하였어요",
-            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
-            "created_at": "2025-02-23T14:00:03.216358",
+            "product_id": "00890",
+            "rating": 2,
+            "review_title": "Disappointed",
+            "review_content": "The quality of Shuggle Washy Jug wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2025-05-18T20:52:52.182311",
             "is_deleted": false
         }
     ],
-    "subscriptions": [
-        {
-            "subscription_id": "c55f054a-294f-4974-beff-454996a4e5e5",
-            "customer_id": "user_00082",
-            "product_id": "SUB_OLIVE_PREMIUM",
-            "start_date": "2023-12-02",
-            "end_date": "2026-08-18",
-            "status": "paused"
-        }
-    ],
+    "subscriptions": [],
     "dialogues": [
         {
-            "Id": "bb329c6b-9032-4f45-b8a3-a7da8ecc59df",
+            "Id": "636a9814-4317-4ec4-a715-8d62c9dc944f",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
+            "DialogueId": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
             "UserId": "user_00082",
-            "session_id": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
+            "session_id": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
             "Intent": "정보",
             "Role": "user",
-            "Content": "이벤트는 없나요?",
-            "CreatedTime": "2025-08-09T14:34:15.066782",
+            "Content": "Can you tell me more about the scent profile of the TANSY • 100% BOTANICAL BATH BOMB • (Product ID: 01970)? I'm curious about how the essential oils blend works together.",
+            "CreatedTime": "2025-08-09T20:23:46.730054",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "f49c2ca9-1fd5-4ab5-8456-5f641f829f51",
+            "Id": "e27b9501-57dc-4410-87f8-c9cc80c0634c",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
+            "DialogueId": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
             "UserId": "user_00082",
-            "session_id": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
-            "Intent": "제공",
-            "Role": "assistant",
-            "Content": "현재 진행 중인 이벤트는 없습니다. 하지만 주기적으로 다양한 프로모션을 진행하니, 자주 방문해 주시면 좋습니다! 혹시 특별히 찾고 계신 상품이 있으신가요? 예를 들어, '프리미엄 엑스트라 버진 올리브유 500ml' 같은 제품이요?",
-            "CreatedTime": "2025-08-09T14:34:18.735012",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "98b2bb5b-0454-4c35-8447-0f64fdb7d696",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
-            "UserId": "user_00082",
-            "session_id": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
+            "session_id": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
             "Intent": "정보",
-            "Role": "user",
-            "Content": "아니요, 특별한 상품은 없어요. 다른 이벤트는 언제쯤 있을까요?",
-            "CreatedTime": "2025-08-09T14:34:19.473603",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "6af2a9dd-8884-48b2-8f76-6fe2e2690b33",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
-            "UserId": "user_00082",
-            "session_id": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
-            "Intent": "제공",
             "Role": "assistant",
-            "Content": "정확한 일정은 아직 정해지지 않았지만, 보통 월별 또는 계절에 맞춰 이벤트를 진행합니다. 다음 이벤트 소식은 저희 웹사이트나 뉴스레터를 통해 확인하실 수 있습니다. 관심 있는 상품이나 특정 카테고리가 있다면, 해당 상품이 포함된 이벤트가 있을 때 우선적으로 알려드릴 수 있어요!",
-            "CreatedTime": "2025-08-09T14:34:21.384175",
-            "ItemId": "PROD_BOOK_001",
+            "Content": "The TANSY • 100% BOTANICAL BATH BOMB • features a delightful and soothing scent profile thanks to its unique blend of essential oils. The scent is a harmonious combination of:\n\n- **Chamomile**: Known for its calming properties, providing a sweet, apple-like fragrance.\n- **Lavender**: Offers a floral and herbaceous aroma that promotes relaxation.\n- **Blue Tansy**: Adds a sweet, fruity, and slightly herbal scent, enhancing tranquility.\n- **Litsea Cubeba**: Contributes a fresh, citrusy note that uplifts the mood.\n- **Geranium**: Provides a rosy, green aroma that balances the blend.\n- **Palmarosa**: Adds a sweet, floral scent known for its calming effects.\n- **Calendula**: Complements with a light, herbal fragrance, promoting a sense of well-being.\n\nTogether, these essential oils create a nourishing and luxurious bathing experience, perfect for relaxation and stress relief. The TANSY bath bomb is priced at $10.00, and you can find more information [here](https://www.aldeahome.com/products/tansy-100-botanical-bath-bomb).",
+            "CreatedTime": "2025-08-09T20:23:52.224468",
+            "ItemId": "01970",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "f1279583-2007-455d-9d27-ad88185a85ad",
+            "Id": "8fa73046-4a87-4490-affe-fd78b81916fb",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
+            "DialogueId": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
             "UserId": "user_00082",
-            "session_id": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
+            "session_id": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
             "Intent": "일반",
             "Role": "user",
-            "Content": "혹시 뉴스레터 구독 방법을 알려주실 수 있나요? 이벤트 소식을 놓치고 싶지 않아서요.",
-            "CreatedTime": "2025-08-09T14:34:22.401291",
+            "Content": "Are there any specific skin benefits associated with the ingredients in the TANSY • 100% BOTANICAL BATH BOMB • (Product ID: 01970)? I'm interested in how it might help with relaxation and skin nourishment.",
+            "CreatedTime": "2025-08-09T20:23:53.644408",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "593bbb4b-1d25-4fbb-89ad-52d180afddc5",
+            "Id": "77b4cd92-f84a-47bf-b02a-c51cef14c0c6",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
+            "DialogueId": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
             "UserId": "user_00082",
-            "session_id": "9c7e67c1-7339-43aa-9c3f-17ce747e3782",
+            "session_id": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "뉴스레터 구독은 매우 간단합니다! 저희 웹사이트 하단에 있는 '뉴스레터 구독' 섹션에서 이메일 주소를 입력하신 후 '구독' 버튼을 클릭하시면 됩니다. 구독하시면 이벤트 소식, 특별 할인 및 신상품 정보 등을 받아보실 수 있습니다. 놓치지 마세요! 추가로 궁금한 점이 있으시면 언제든지 말씀해 주세요.",
-            "CreatedTime": "2025-08-09T14:34:24.644573",
+            "Content": "Yes, the ingredients in the TANSY • 100% BOTANICAL BATH BOMB • provide several skin benefits while also promoting relaxation:\n\n1. **Jojoba Oil**: Mimics the skin's natural oils, providing deep hydration without clogging pores. It helps soothe and moisturize the skin.\n\n2. **Avocado Oil**: Rich in vitamins A, D, and E, it nourishes the skin and has anti-inflammatory properties, making it great for soothing dry or irritated skin.\n\n3. **Witch Hazel**: Known for its astringent and anti-inflammatory properties, it helps reduce skin irritation and redness, promoting a calm complexion.\n\n4. **Cocoa Butter**: A natural moisturizer that helps to hydrate and protect the skin, leaving it soft and smooth.\n\n5. **Essential Oils**: The calming scents from chamomile and lavender not only provide aromatherapy benefits that aid in relaxation but also have skin-soothing properties.\n\nTogether, these ingredients make the TANSY bath bomb a perfect choice for a relaxing bath while nourishing your skin. Enjoy a soothing experience that both relaxes your mind and nurtures your skin! The bath bomb is available for $10.00, and you can learn more [here](https://www.al",
+            "CreatedTime": "2025-08-09T20:23:58.559725",
+            "ItemId": "01970",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "837ed528-ec83-425b-b118-6aa77555978b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
+            "UserId": "user_00082",
+            "session_id": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "Are there any specific recommendations on how to use the TANSY • 100% BOTANICAL BATH BOMB • (Product ID: 01970) for the best bath experience?",
+            "CreatedTime": "2025-08-09T20:23:59.904479",
             "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1ae07a0c-ea91-4446-b67e-56c6ceed0dd1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
+            "UserId": "user_00082",
+            "session_id": "1fc310cd-9cfa-4c08-8734-3a4373f3a9c0",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "For the best experience with the TANSY • 100% BOTANICAL BATH BOMB •, follow these recommendations:\n\n1. **Fill the Tub**: Start by filling your bathtub with warm water. The ideal temperature is subjective, but ensure it's comfortable for you.\n\n2. **Unwrap the Bath Bomb**: Remove any packaging from the bath bomb before dropping it into the water.\n\n3. **Drop and Relax**: Gently place the TANSY bath bomb into the tub and watch it fizz and dissolve, releasing its wonderful scents and skin-nourishing ingredients. \n\n4. **Soak**: Allow yourself to soak for at least 20-30 minutes to fully enjoy the aromatherapy benefits and let your skin absorb the nourishing oils.\n\n5. **Hydrate**: Consider having a glass of water nearby to stay hydrated during your relaxing bath.\n\n6. **Rinse Off**: After soaking, rinse your skin with fresh water to wash away any residue and enjoy the soft, nourished feel of your skin.\n\n7. **Enjoy the Afterglow**: Take a moment to relax after your bath, allowing the calming effects of the essential oils to linger.\n\nThis way, you can maximize both relaxation and skin nourishment. The TANSY",
+            "CreatedTime": "2025-08-09T20:24:04.732239",
+            "ItemId": "01970",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.417755"
+    "profile_generated_at": "2025-08-09T20:54:53.210537"
 }

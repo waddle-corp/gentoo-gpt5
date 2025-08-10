@@ -1,108 +1,126 @@
 {
     "user_id": "user_00060",
-    "raw_engagement_score": 24,
-    "normalized_engagement_score": 12,
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 15,
     "activities": [
         {
-            "id": "3b399895-1751-42e5-a62b-d23e1a5736f5",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00060",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.140.193"
-            },
-            "created_time": "2025-08-09T13:57:01.708241"
-        },
-        {
-            "id": "9e22af0f-7d02-41d5-ad9e-3d817e99ff9a",
+            "id": "a1ec3e73-9a18-4a1c-9a9d-fe1c2bb60c2f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00060",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00060_708243",
-                "total_amount": 50000,
+                "order_id": "ORDER_user_00060_734200",
+                "total_amount": 338.99,
                 "items": [
                     {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
+                        "product_id": "04741",
                         "quantity": 1,
-                        "price": 50000
+                        "price": 199.99
+                    },
+                    {
+                        "product_id": "07552",
+                        "quantity": 1,
+                        "price": 139.0
                     }
                 ],
-                "payment_method": "naver_pay"
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T13:57:01.708247"
-        },
-        {
-            "id": "03549f8b-b244-4dd4-a9d7-c6b84c789feb",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00060",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "PROD_OLIVE_001",
-                "category": "올리브유",
-                "product_name": "프리미엄 엑스트라 버진 올리브유 500ml",
-                "view_duration_seconds": 57
-            },
-            "created_time": "2025-08-09T13:57:01.708250"
-        },
-        {
-            "id": "2eb4bc45-f499-4206-8949-7b4d05c87ffb",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00060",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "PROD_BOOK_001",
-                "quantity": 1,
-                "price": 18000
-            },
-            "created_time": "2025-08-09T13:57:01.708254"
-        },
-        {
-            "id": "5b7a2d12-c4b3-43fc-bc37-642776bde299",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00060",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.61.119"
-            },
-            "created_time": "2025-08-09T13:57:01.708257"
+            "created_time": "2025-08-09T20:05:50.734205"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "eecbe25b-ef44-402f-83d9-0cd45991764c",
+            "Id": "b68dcb7e-737a-4cfa-aac1-0cfc2423be02",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d3b160b3-4d21-4022-b359-7cc328a90d36",
+            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
             "UserId": "user_00060",
-            "session_id": "d3b160b3-4d21-4022-b359-7cc328a90d36",
-            "Intent": "탐색",
+            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
+            "Intent": "추천",
             "Role": "user",
-            "Content": "챗봇과 대화하는 것이 처음인데, 어떤 기능을 사용할 수 있나요?",
-            "CreatedTime": "2025-08-09T14:32:44.489406",
+            "Content": "Is the Monkey Rug (Product ID: 03208) suitable for outdoor use, or is it recommended only for indoor spaces?",
+            "CreatedTime": "2025-08-09T20:21:34.069368",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "b5fd84e1-9e2c-4ce9-8823-1373caa677f0",
+            "Id": "2d0f4739-42ce-4a61-87e6-e8f53a415122",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d3b160b3-4d21-4022-b359-7cc328a90d36",
+            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
             "UserId": "user_00060",
-            "session_id": "d3b160b3-4d21-4022-b359-7cc328a90d36",
+            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "안녕하세요! 처음 뵙겠습니다. 저는 쇼핑몰의 AI 점원으로, 상품 추천, 정보 제공, 고객 서비스 안내 등을 도와드릴 수 있습니다. 궁금한 점이나 필요하신 상품이 있다면 말씀해 주세요! 예를 들어, 유기농 아카시아 꿀 1kg 같은 식품에 대한 정보도 제공해 드릴 수 있습니다.",
-            "CreatedTime": "2025-08-09T14:32:46.292394",
+            "Content": "The Monkey Rug is designed as a unique accent for indoor spaces and is not specifically recommended for outdoor use. It is charming and great for pets and kids, making it perfect for indoor areas. If you're interested, it is priced at $65.00, and you can find more information [here](https://www.aldeahome.com/products/monkey-rug).",
+            "CreatedTime": "2025-08-09T20:21:36.224156",
             "ItemId": null,
-            "Thumbs": "up",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8ec3c7c6-0a9c-49de-9001-17f33f39cd82",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
+            "UserId": "user_00060",
+            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Monkey Rug (Product ID: 03208) is machine washable, or how should it be cleaned to maintain its quality?",
+            "CreatedTime": "2025-08-09T20:21:37.233196",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8a08f8f8-0324-4e6d-b99c-46fdabc175d7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
+            "UserId": "user_00060",
+            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The cleaning instructions for the Monkey Rug are not provided, but since it is 100% handmade, it is likely that it should be cleaned gently. For maintenance, it’s recommended to spot clean or use a vacuum to remove dirt and debris without machine washing. Always refer to specific care instructions if available. If you would like to purchase the Monkey Rug, it is priced at $65.00, and you can find it [here](https://www.aldeahome.com/products/monkey-rug).",
+            "CreatedTime": "2025-08-09T20:21:39.801563",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "072401f8-75ad-46c1-a408-d5e8db651936",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
+            "UserId": "user_00060",
+            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you let me know the dimensions of the Monkey Rug (Product ID: 03208) again? I'm trying to see if it will fit in the space I have in mind.",
+            "CreatedTime": "2025-08-09T20:21:40.785628",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f9292577-954d-4083-b04a-ffae41c74d83",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0377eb36-d0b7-470b-9027-91ff46915a59",
+            "UserId": "user_00060",
+            "session_id": "0377eb36-d0b7-470b-9027-91ff46915a59",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Monkey Rug measures approximately 28\" tall by 33\" wide. This size makes it a charming addition to various spaces. If you're interested in purchasing it, the price is $65.00, and you can find more details [here](https://www.aldeahome.com/products/monkey-rug).",
+            "CreatedTime": "2025-08-09T20:21:42.669214",
+            "ItemId": null,
+            "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.381294"
+    "profile_generated_at": "2025-08-09T20:54:53.203508"
 }

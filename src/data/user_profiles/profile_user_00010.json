@@ -1,133 +1,142 @@
 {
     "user_id": "user_00010",
-    "raw_engagement_score": 29,
-    "normalized_engagement_score": 14,
+    "raw_engagement_score": 23,
+    "normalized_engagement_score": 15,
     "activities": [
         {
-            "id": "2fb7cb6b-0d06-4b86-bfa1-aa250c0a269d",
+            "id": "8a6005dd-f190-4c71-adcf-698f6b26093c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00010",
-            "event_name": "product_view",
+            "event_name": "search",
             "event_data": {
-                "product_id": "PROD_BOOK_002",
-                "category": "자기계발",
-                "product_name": "성공하는 사람들의 7가지 습관",
-                "view_duration_seconds": 90
+                "query": "Wubbanub Pacifier",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.707598"
+            "created_time": "2025-08-09T20:05:50.647219"
         },
         {
-            "id": "dd9386de-5095-47ca-bcf1-7bfcc13ae8ce",
+            "id": "5207d22d-5e7b-4c07-b0e3-0aea588d413d",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00010",
-            "event_name": "purchase_completed",
+            "event_name": "add_to_cart",
             "event_data": {
-                "order_id": "ORDER_user_00010_707601",
-                "total_amount": 105000,
-                "items": [
-                    {
-                        "product_id": "SUB_OLIVE_PREMIUM",
-                        "quantity": 1,
-                        "price": 70000
-                    },
-                    {
-                        "product_id": "PROD_OLIVE_002",
-                        "quantity": 1,
-                        "price": 35000
-                    }
-                ],
-                "payment_method": "kakao_pay"
+                "product_id": "00446",
+                "quantity": 2,
+                "price": 200.0
             },
-            "created_time": "2025-08-09T13:57:01.707606"
+            "created_time": "2025-08-09T20:05:50.647227"
         },
         {
-            "id": "c6d47f44-d59d-4c8c-9bb4-5c4ef9c9e035",
+            "id": "0399572f-e6b7-4bce-939f-53b6ce1743ca",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00010",
-            "event_name": "purchase_completed",
+            "event_name": "search",
             "event_data": {
-                "order_id": "ORDER_user_00010_707609",
-                "total_amount": 65000,
-                "items": [
-                    {
-                        "product_id": "SUB_BOOKCLUB_BASIC",
-                        "quantity": 1,
-                        "price": 50000
-                    },
-                    {
-                        "product_id": "PROD_BOOK_002",
-                        "quantity": 1,
-                        "price": 15000
-                    }
-                ],
-                "payment_method": "credit_card"
+                "query": "Bird Ruffle Baby Girl Tunic Dress & Bodysuit (Organic): Navy Blue / 12-18M",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T13:57:01.707613"
+            "created_time": "2025-08-09T20:05:50.649545"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "fa412238-4580-4496-a852-5f909aeb654c",
+            "Id": "a92ad3bd-093f-44ed-bd70-bd317ddfea36",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "528a7dd1-d09f-4781-bdea-528409c6b58f",
+            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
             "UserId": "user_00010",
-            "session_id": "528a7dd1-d09f-4781-bdea-528409c6b58f",
-            "Intent": "정보",
+            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "계정 정보를 변경하고 싶은데 어떻게 해야 하나요?",
-            "CreatedTime": "2025-08-09T14:28:54.512366",
+            "Content": "Is the 'Bananas Enamel Mug' (Product ID: 05143) suitable for both hot and cold beverages, and how does the enamel material hold up over time?",
+            "CreatedTime": "2025-08-09T20:16:44.461247",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "1755f38b-de59-4810-b7b2-785f85625abc",
+            "Id": "5e4bff55-84aa-40d8-9714-6fe6d3d80768",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "528a7dd1-d09f-4781-bdea-528409c6b58f",
+            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
             "UserId": "user_00010",
-            "session_id": "528a7dd1-d09f-4781-bdea-528409c6b58f",
+            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "계정 정보를 변경하시려면, 쇼핑몰 로그인 후 '마이 페이지'로 이동해 주세요. 거기서 '회원 정보 수정' 옵션을 선택하시면 됩니다. 필요한 정보를 업데이트하고 저장하시면 변경이 완료됩니다. 추가 도움이 필요하시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:28:55.828583",
-            "ItemId": "PROD_OLIVE_001",
-            "Thumbs": "down",
+            "Content": "Yes, the 'Bananas Enamel Mug' is suitable for both hot and cold beverages, making it a versatile choice for your mealtimes. The enamel material is durable and designed to withstand regular use, though it’s important to note that it should not be microwaved. For more information or to purchase, you can visit [this link](https://www.aldeahome.com/products/bananas-enamel-mug). The price is $20.00.",
+            "CreatedTime": "2025-08-09T20:16:46.464534",
+            "ItemId": "05143",
+            "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "d8413066-751e-4f73-83fd-085d913712d3",
+            "Id": "2a94d53d-ef6f-4763-8e1e-acd5ac5194e6",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "528a7dd1-d09f-4781-bdea-528409c6b58f",
+            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
             "UserId": "user_00010",
-            "session_id": "528a7dd1-d09f-4781-bdea-528409c6b58f",
-            "Intent": "정보",
+            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "변경할 정보가 특정한 것이면, 예를 들어 비밀번호나 이메일 주소 같은 것이라면, 그 부분에 대해 좀 더 상세히 안내해 주실 수 있나요?",
-            "CreatedTime": "2025-08-09T14:28:56.696703",
+            "Content": "Can you tell me if the 'Bananas Enamel Mug' (Product ID: 05143) is available in any other colors or designs?",
+            "CreatedTime": "2025-08-09T20:16:47.337394",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "c2cdbe2c-3cb3-4d80-81e4-fcc33e40d9b2",
+            "Id": "d3f93a26-47ac-479e-a77d-b16979547f46",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "528a7dd1-d09f-4781-bdea-528409c6b58f",
+            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
             "UserId": "user_00010",
-            "session_id": "528a7dd1-d09f-4781-bdea-528409c6b58f",
+            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "물론입니다! 비밀번호나 이메일 주소를 변경하시려면 다음과 같은 절차를 따라주세요:\n\n1. **로그인**: 쇼핑몰 계정에 로그인합니다.\n2. **마이 페이지**: 상단 메뉴에서 '마이 페이지'를 클릭합니다.\n3. **정보 수정**: '회원 정보 수정' 또는 '비밀번호 변경' 옵션을 선택합니다.\n4. **비밀번호 변경**: 현재 비밀번호와 새 비밀번호를 입력하고 저장합니다.\n5. **이메일 주소 변경**: 이메일 주소 변경란에 새 이메일 주소를 입력하고 확인 후 저장합니다.\n\n변경 후에는 새로운 정보가 적용되었는지 확인해 주시기 바랍니다. 추가로 궁금한 점이 있으면 언제든지 문의해 주세요!",
-            "CreatedTime": "2025-08-09T14:29:00.418990",
+            "Content": "The 'Bananas Enamel Mug' features colorful banana illustrations and is currently offered only in that design. There are no mentions of other colors or designs available for this specific product. If you're interested, you can find more details and purchase it for $20.00 at [this link](https://www.aldeahome.com/products/bananas-enamel-mug).",
+            "CreatedTime": "2025-08-09T20:16:49.046565",
             "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "54c7417e-e968-4760-8a7f-50d82581037e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
+            "UserId": "user_00010",
+            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are there any specific care instructions for the 'Bananas Enamel Mug' (Product ID: 05143) to ensure it stays in good condition?",
+            "CreatedTime": "2025-08-09T20:16:49.821889",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3eee23d2-ecc7-41e0-b1cf-ba5b820800a9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
+            "UserId": "user_00010",
+            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, to ensure the 'Bananas Enamel Mug' stays in good condition, it is dishwasher safe, which makes cleaning easy. However, it’s important to avoid microwaving it, as enamel mugs are not microwave-safe. Following these care instructions will help maintain its appearance and durability. You can purchase the mug for $20.00 at [this link](https://www.aldeahome.com/products/bananas-enamel-mug).",
+            "CreatedTime": "2025-08-09T20:16:51.643710",
+            "ItemId": "05143",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.293083"
+    "profile_generated_at": "2025-08-09T20:54:53.180342"
 }

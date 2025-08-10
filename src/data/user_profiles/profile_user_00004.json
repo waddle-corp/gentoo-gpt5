@@ -1,192 +1,164 @@
 {
     "user_id": "user_00004",
-    "raw_engagement_score": 65,
-    "normalized_engagement_score": 28,
+    "raw_engagement_score": 32,
+    "normalized_engagement_score": 21,
     "activities": [
         {
-            "id": "df46ea47-c624-42f4-b749-dec2a5db16bf",
+            "id": "763224ab-eb10-4f71-8009-945bb1c81af9",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00004",
-            "event_name": "purchase_completed",
+            "event_name": "login",
             "event_data": {
-                "order_id": "ORDER_user_00004_707494",
-                "total_amount": 53000,
-                "items": [
-                    {
-                        "product_id": "PROD_BOOK_001",
-                        "quantity": 1,
-                        "price": 18000
-                    },
-                    {
-                        "product_id": "PROD_OLIVE_002",
-                        "quantity": 1,
-                        "price": 35000
-                    }
-                ],
-                "payment_method": "credit_card"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.247.10"
             },
-            "created_time": "2025-08-09T13:57:01.707503"
+            "created_time": "2025-08-09T20:05:50.639406"
         },
         {
-            "id": "09f88c65-c83b-4330-9fb8-49d00ee2d783",
+            "id": "75527deb-5a04-4627-9831-206b6dcc6a1e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00004",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "00382",
+                "quantity": 3,
+                "price": 32.95
+            },
+            "created_time": "2025-08-09T20:05:50.639410"
+        },
+        {
+            "id": "94b11701-cca6-4f62-a56a-fc1117c23b7a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00004",
             "event_name": "search",
             "event_data": {
-                "query": "올리브유",
-                "search_results_count": 10,
+                "query": "Mermaid",
+                "search_results_count": 59,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-09T20:05:50.642226"
+        },
+        {
+            "id": "2c9c574e-01b2-4577-b7fc-5453c94e0ec8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00004",
+            "event_name": "search",
+            "event_data": {
+                "query": "4th-of-july",
+                "search_results_count": 18,
                 "filters_applied": [
                     "리뷰 많은 순"
                 ]
             },
-            "created_time": "2025-08-09T13:57:01.707508"
-        },
-        {
-            "id": "ea086edc-44b3-4c1c-af1f-3b04e16e08d6",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00004",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00004_707512",
-                "total_amount": 25000,
-                "items": [
-                    {
-                        "product_id": "PROD_OLIVE_001",
-                        "quantity": 1,
-                        "price": 25000
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T13:57:01.707520"
-        },
-        {
-            "id": "ffd80168-3af1-4d72-9112-24477eef839e",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00004",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "PROD_OLIVE_002",
-                "quantity": 3,
-                "price": 35000
-            },
-            "created_time": "2025-08-09T13:57:01.707524"
-        },
-        {
-            "id": "822588ac-63a8-45de-a282-0155d71bc8b7",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00004",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "SUB_OLIVE_PREMIUM",
-                "quantity": 1,
-                "price": 70000
-            },
-            "created_time": "2025-08-09T13:57:01.707528"
+            "created_time": "2025-08-09T20:05:50.644714"
         }
     ],
-    "reviews": [],
-    "subscriptions": [
+    "reviews": [
         {
-            "subscription_id": "e28e039c-103c-4001-9f20-9da33daa825b",
+            "review_id": "1758e53c-f363-48e0-8c04-14a534374550",
             "customer_id": "user_00004",
-            "product_id": "SUB_BOOKCLUB_BASIC",
-            "start_date": "2025-03-13",
-            "end_date": "2026-01-07",
-            "status": "active"
+            "product_id": "00680",
+            "rating": 3,
+            "review_title": "A bit disappointing",
+            "review_content": "This back-to-school product is excellent. Don't hesitate to buy Sharks Lunch Box!",
+            "created_at": "2025-06-30T20:52:52.182051",
+            "is_deleted": false
         }
     ],
+    "subscriptions": [],
     "dialogues": [
         {
-            "Id": "2f2fea94-3ef4-4ab7-82bc-e575425b641d",
+            "Id": "7291d85b-abf9-4822-b900-ea9bc573dbd7",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
             "UserId": "user_00004",
-            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
-            "Intent": "정보",
+            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "유기농 제품도 있나요?",
-            "CreatedTime": "2025-08-09T14:28:26.041481",
+            "Content": "Can you tell me if the Terry Wipes 6 pack (Product ID: 06790) are safe to use on sensitive newborn skin?",
+            "CreatedTime": "2025-08-09T20:15:53.408324",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "d4db1684-907f-4924-b2ec-0e94c6438e53",
+            "Id": "59b1cce3-c923-45ef-bf9a-986b4e56ec87",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
             "UserId": "user_00004",
-            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "네, 저희 쇼핑몰에서는 다양한 유기농 제품을 취급하고 있습니다. 유기농 식품, 스킨케어 제품 등 여러 종류가 있으니 필요하신 제품을 말씀해 주시면 추천해 드릴 수 있습니다!",
-            "CreatedTime": "2025-08-09T14:28:27.317664",
-            "ItemId": "PROD_BOOK_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a83cff8d-cbe6-4a6a-b180-40893bb88748",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
-            "UserId": "user_00004",
-            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "어떤 유기농 식품이 가장 인기 있나요?",
-            "CreatedTime": "2025-08-09T14:28:27.889576",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "1fe51d63-57e7-4340-9519-36d20a1d879f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
-            "UserId": "user_00004",
-            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "가장 인기 있는 유기농 식품 중 하나는 유기농 커피입니다. 특히 '스페셜티 원두 커피 200g'는 많은 고객님들께서 좋아하시는 제품입니다. 이 외에도 유기농 쌀, 과일, 채소 등 다양한 제품이 인기가 있습니다. 어떤 종류에 관심이 있으신가요?",
-            "CreatedTime": "2025-08-09T14:28:29.410729",
-            "ItemId": "PROD_COFFEE_001",
+            "Content": "Yes, the Terry Wipes 6 pack is made from ultra-soft organic cotton, making them gentle enough for everyday use on sensitive newborn skin. They are specifically designed to be safe and comfortable for babies. You can purchase them for $18.00 at the following link: [Terry Wipes 6 pack](https://www.aldeahome.com/products/terry-wipes-2).",
+            "CreatedTime": "2025-08-09T20:15:55.086051",
+            "ItemId": "06790",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "c4fb0240-4ca3-418c-88c9-04c1709778d6",
+            "Id": "845348ac-6066-40f8-8d67-ea4b9d618fec",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
             "UserId": "user_00004",
-            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are the Terry Wipes 6 pack (Product ID: 06790) machine washable, and how many times can they typically be reused before needing to be replaced?",
+            "CreatedTime": "2025-08-09T20:15:56.248861",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1126b56c-a04e-49cb-9411-911c448e2a03",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "UserId": "user_00004",
+            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Terry Wipes 6 pack is machine washable and super absorbent, making them suitable for repeated use. While the exact number of uses before needing to be replaced can vary based on usage and care, they are designed to be durable for many washes. Generally, you can expect to use them several times before they show signs of wear. For more details, you can view the product here: [Terry Wipes 6 pack](https://www.aldeahome.com/products/terry-wipes-2) for $18.00.",
+            "CreatedTime": "2025-08-09T20:15:58.278208",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ff368b03-7a57-479c-9f20-3583f3f36079",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "UserId": "user_00004",
+            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
             "Intent": "추천",
             "Role": "user",
-            "Content": "유기농 과일에 대해 더 알고 싶어요. 어떤 종류가 있나요?",
-            "CreatedTime": "2025-08-09T14:28:30.107446",
+            "Content": "What is the best way to wash and care for the Terry Wipes 6 pack (Product ID: 06790) to ensure they last as long as possible?",
+            "CreatedTime": "2025-08-09T20:15:59.221736",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "70847dc6-7fdc-4840-bb72-037dbedbad02",
+            "Id": "3ba8e2af-1136-4d53-86fa-b159798e647e",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "678ead77-db35-41d1-8f09-7678a76f19d6",
+            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
             "UserId": "user_00004",
-            "session_id": "678ead77-db35-41d1-8f09-7678a76f19d6",
-            "Intent": "제공",
+            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "유기농 과일로는 사과, 바나나, 오렌지, 포도, 딸기 등이 있습니다. 저희 쇼핑몰에서는 계절에 따라 신선한 유기농 과일을 제공합니다. 각 과일의 특징이나 가격 등을 알고 싶으시면 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:28:31.781577",
-            "ItemId": null,
-            "Thumbs": null,
+            "Content": "To ensure the Terry Wipes 6 pack lasts as long as possible, follow these care instructions:\n\n1. **Machine Wash**: Wash them in a machine on a gentle cycle with mild detergent.\n2. **Cold Water**: Use cold water to help preserve the fabric and prevent shrinking.\n3. **Avoid Bleach**: Do not use bleach or fabric softeners, as these can damage the organic cotton fibers.\n4. **Tumble Dry Low**: If using a dryer, tumble dry on low heat. Alternatively, air drying is a great option to maintain their quality.\n5. **Store Properly**: Store them in a clean, dry place when not in use.\n\nBy following these guidelines, you can maximize the life of your Terry Wipes. For more information, you can view the product here: [Terry Wipes 6 pack](https://www.aldeahome.com/products/terry-wipes-2) for $18.00.",
+            "CreatedTime": "2025-08-09T20:16:02.569663",
+            "ItemId": "06790",
+            "Thumbs": "up",
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.278298"
+    "profile_generated_at": "2025-08-09T20:54:53.176539"
 }

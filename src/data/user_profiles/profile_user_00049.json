@@ -1,97 +1,125 @@
 {
     "user_id": "user_00049",
-    "raw_engagement_score": 17,
-    "normalized_engagement_score": 9,
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "a711f43b-9102-4948-87e5-006403e7ef15",
+            "id": "3de486de-6554-4a27-997b-97b86e30bb1a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00049",
             "event_name": "search",
             "event_data": {
-                "query": "건강식품",
-                "search_results_count": 5,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "query": "Don't Worry Be Yonce",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T13:57:01.708136"
+            "created_time": "2025-08-09T20:05:50.722178"
         }
     ],
     "reviews": [
         {
-            "review_id": "bd6d7d7f-12d8-4d22-885e-5937b770b105",
+            "review_id": "a099e1ed-de82-4dba-866e-944b1d6ed0be",
             "customer_id": "user_00049",
-            "product_id": "PROD_BOOK_001",
-            "rating": 2,
-            "review_title": "기대 이하였어요",
-            "review_content": "광고와는 다르게 만족스럽지 않았어요. 다시 구매할 의사는 없습니다.",
-            "created_at": "2024-08-10T14:00:03.216269",
+            "product_id": "06118",
+            "rating": 4,
+            "review_title": "Best purchase ever",
+            "review_content": "Hotel Chamber Pillow – Dual Core Support – Luxurious Comfort is fantastic! I wish I'd found it sooner.",
+            "created_at": "2025-07-03T20:52:52.182204",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "50242809-3d4f-4f58-90d4-e67f59f68185",
+            "Id": "bd895118-af0b-4179-9f5b-1f218f2e0467",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
             "UserId": "user_00049",
-            "session_id": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
-            "Intent": "정보",
+            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "이벤트는 없나요?",
-            "CreatedTime": "2025-08-09T14:31:53.254821",
+            "Content": "Can you tell me about the weight limit and age range suitable for the Nuna BRYN High Chair (Product ID: 05572)?",
+            "CreatedTime": "2025-08-09T20:20:03.860246",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "83f23c7f-94c4-4340-afd0-bb0977ea9b97",
+            "Id": "b5477e2d-3838-4885-b386-3f6fa226701a",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
             "UserId": "user_00049",
-            "session_id": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I'm sorry, but I don't have specific information regarding the weight limit and age range for the Nuna BRYN High Chair. However, you can find more details about the product and its specifications on the official product page: [Nuna BRYN High Chair](https://www.aldeahome.com/products/nuna-bryn-high-chair). The price is $500.00.",
+            "CreatedTime": "2025-08-09T20:20:05.474227",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "afe25aca-257c-4fae-80e1-4d87507af671",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "UserId": "user_00049",
+            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Nuna BRYN High Chair (Product ID: 05572) is easy to clean and maintain?",
+            "CreatedTime": "2025-08-09T20:20:06.429691",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "1a9fcf29-b125-4489-8f38-e9b6b6fe9b6b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "UserId": "user_00049",
+            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "현재 진행 중인 특별 이벤트는 없습니다. 하지만 정기적으로 프로모션과 할인 행사를 진행하니 자주 확인해 주시면 좋겠습니다. 혹시 특정 상품에 대해 궁금한 점이 있으시면 말씀해 주세요! 예를 들어, 베스트셀러 소설인 '시간의 틈새' 같은 책도 추천해 드릴 수 있습니다.",
-            "CreatedTime": "2025-08-09T14:31:54.942939",
-            "ItemId": "PROD_BOOK_001",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "c7cc73f9-7ae3-46a3-90e9-6fea5c075655",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
-            "UserId": "user_00049",
-            "session_id": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "그럼 다음 이벤트는 언제쯤 있을까요? 미리 알림 신청할 수 있는 방법이 있나요?",
-            "CreatedTime": "2025-08-09T14:31:55.777420",
+            "Content": "I don't have specific details on the cleaning and maintenance of the Nuna BRYN High Chair. However, high chairs generally tend to have features that make them easier to clean. For precise information, I recommend checking the product page for any cleaning instructions or care recommendations: [Nuna BRYN High Chair](https://www.aldeahome.com/products/nuna-bryn-high-chair). The price is $500.00.",
+            "CreatedTime": "2025-08-09T20:20:08.257089",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "0ab4bf80-7087-49de-8669-d8c98b4ff5c7",
+            "Id": "e02584dc-d18f-4edf-bdbd-a63184d71572",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
+            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
             "UserId": "user_00049",
-            "session_id": "f3654cc1-7edf-4513-8cf1-1f4681ab0b6b",
-            "Intent": "제공",
+            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "What materials is the Nuna BRYN High Chair (Product ID: 05572) made from, and are they safe for babies?",
+            "CreatedTime": "2025-08-09T20:20:09.047981",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "dca5f408-a3b6-45c7-b85f-dd3ccedb6050",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "UserId": "user_00049",
+            "session_id": "84a6ddfa-8d78-4d69-b4db-129dfe638d3c",
+            "Intent": "추천",
             "Role": "assistant",
-            "Content": "다음 이벤트 일정은 아직 정해지지 않았습니다. 하지만 저희 쇼핑몰의 뉴스레터에 가입하시면 새로운 이벤트와 프로모션 소식을 가장 먼저 받아보실 수 있습니다. 홈페이지 하단에서 뉴스레터 구독을 신청하실 수 있습니다. 추가적으로 궁금한 점이 있으시면 언제든지 말씀해 주세요!",
-            "CreatedTime": "2025-08-09T14:31:57.433895",
-            "ItemId": "PROD_COFFEE_001",
+            "Content": "I don’t have specific information on the materials used in the Nuna BRYN High Chair or their safety for babies. For detailed information regarding the materials and safety features, I recommend visiting the product page: [Nuna BRYN High Chair](https://www.aldeahome.com/products/nuna-bryn-high-chair). The price is $500.00.",
+            "CreatedTime": "2025-08-09T20:20:10.504619",
+            "ItemId": "05572",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T14:57:54.362959"
+    "profile_generated_at": "2025-08-09T20:54:53.198729"
 }
