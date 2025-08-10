@@ -1,0 +1,171 @@
+{
+    "user_id": "user_00104",
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "7679862e-35cc-419d-b084-35760411e586",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00104",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03072",
+                "category": "cyber-monday-gift",
+                "product_name": "Leopard Ankle Socks",
+                "price": 9.95,
+                "product_url": "https://www.aldeahome.com/products/leopard-ankle-socks",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/c9031730c274b925216520f400c2bb88.jpg?v=1572391788",
+                "view_duration_seconds": 113
+            },
+            "created_time": "2025-08-10T01:32:25.512300"
+        },
+        {
+            "id": "411bdb23-6244-433b-967f-c9f174820e73",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00104",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.49.2"
+            },
+            "created_time": "2025-08-10T01:32:25.512304"
+        },
+        {
+            "id": "beeda1d3-3f07-4a57-aade-6e83ef8750c8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00104",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "04212",
+                "quantity": 3,
+                "price": 11.99
+            },
+            "created_time": "2025-08-10T01:32:25.512308"
+        },
+        {
+            "id": "a953c87d-9ffd-49f9-9687-d070a63207e5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00104",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.218.140"
+            },
+            "created_time": "2025-08-10T01:32:25.512312"
+        },
+        {
+            "id": "296bf1b0-67db-4741-a485-efbc3758a2ce",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00104",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00104_512314",
+                "total_amount": 24.0,
+                "items": [
+                    {
+                        "product_id": "00399",
+                        "quantity": 1,
+                        "price": 24.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.512319"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "273a7ebb-0178-4bef-82ef-d7af162a24df",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "UserId": "user_00104",
+            "session_id": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can the UPPAbaby Ridge Performance Rain Shield (Product ID: 07490) be used in snowy conditions, or is it primarily for rain and wind protection?",
+            "CreatedTime": "2025-08-10T01:42:31.055712",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "eb7faea6-5380-403d-82a2-e57ab9500e75",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "UserId": "user_00104",
+            "session_id": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the UPPAbaby Ridge Performance Rain Shield is designed to protect your child from various weather conditions, including rain, wind, and snow. It offers a comprehensive shield against inclement weather, ensuring your child stays dry and comfortable. \n\nIf you're interested, the price is $59.99, and you can find more information and purchase it [here](https://www.aldeahome.com/products/performance-rain-shield-for-ridge).",
+            "CreatedTime": "2025-08-10T01:42:32.878676",
+            "ItemId": "07490",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9ca3f7c3-f1f9-42d6-9993-e6619b0af029",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "UserId": "user_00104",
+            "session_id": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Does the UPPAbaby Ridge Performance Rain Shield (Product ID: 07490) have any ventilation features to prevent condensation inside?",
+            "CreatedTime": "2025-08-10T01:42:33.726620",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e77e53d6-cb0b-4019-820b-0ca58d8218c4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "UserId": "user_00104",
+            "session_id": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The UPPAbaby Ridge Performance Rain Shield does not explicitly mention ventilation features to prevent condensation inside. Its primary design focuses on protecting your child from wind, rain, and snow. For specific ventilation needs, it may be best to check the product details or consult the manufacturer directly.\n\nIf you're interested in this rain shield, it is priced at $59.99. You can find more information and purchase it [here](https://www.aldeahome.com/products/performance-rain-shield-for-ridge).",
+            "CreatedTime": "2025-08-10T01:42:36.238852",
+            "ItemId": "07490",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e96670cb-8da9-428c-833f-b0acaf58b00b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "UserId": "user_00104",
+            "session_id": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the UPPAbaby Ridge Performance Rain Shield (Product ID: 07490) is easy to install on the Ridge stroller, or does it require any special tools?",
+            "CreatedTime": "2025-08-10T01:42:37.298840",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "a350f4b2-59f7-4f9c-a2cc-1f8400748c44",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "UserId": "user_00104",
+            "session_id": "27d66ebb-44b3-4c4a-be2b-bec8698e74cc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The UPPAbaby Ridge Performance Rain Shield is designed for easy installation on the Ridge stroller, and it does not require any special tools. It is tailored to fit the Ridge stroller seamlessly, allowing for quick and straightforward setup. \n\nIf you're interested, it is available for $59.99. You can find more details and purchase it [here](https://www.aldeahome.com/products/performance-rain-shield-for-ridge).",
+            "CreatedTime": "2025-08-10T01:42:39.232419",
+            "ItemId": "07490",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.887122"
+}

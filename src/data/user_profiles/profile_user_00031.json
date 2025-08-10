@@ -1,143 +1,100 @@
 {
     "user_id": "user_00031",
-    "raw_engagement_score": 17,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 35,
+    "normalized_engagement_score": 21,
     "activities": [
         {
-            "id": "2920169f-2589-44b8-864b-99570cc34c13",
+            "id": "58134c43-402c-419f-9fb6-0617a0c905f7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00031",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00031_397785",
+                "total_amount": 22.0,
+                "items": [
+                    {
+                        "product_id": "01042",
+                        "quantity": 1,
+                        "price": 22.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.397789"
+        },
+        {
+            "id": "6bcc0768-d989-46c5-9d8e-fbc88365f145",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00031",
             "event_name": "search",
             "event_data": {
-                "query": "Nuna LUMN Harness Booster Seat",
+                "query": "Rooted Candles",
                 "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.688244"
+            "created_time": "2025-08-10T01:32:25.400218"
         },
         {
-            "id": "30826e9b-255f-461e-9a4e-d090851bef0e",
+            "id": "51ab3708-8d75-42e4-9ee6-2b011af9da63",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00031",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "04409",
-                "category": "exclude",
-                "product_name": "DJ Mixer Board",
-                "price": 65.0,
-                "product_url": "https://www.aldeahome.com/products/dj-mixer-board",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/1bcc73aa95168cb6560a647f097ecde0914a681655add1e8acb68f7d93a73873.png?v=1686580489",
-                "view_duration_seconds": 63
+                "product_id": "07072",
+                "category": "newborn-basics",
+                "product_name": "PLAY ALL DAY ONESIE",
+                "price": 25.95,
+                "product_url": "https://www.aldeahome.com/products/play-all-day-onesie",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/PlayallDayBabyOnesiesweetpeaandco-5_5000x_png.jpg?v=1660146935",
+                "view_duration_seconds": 47
             },
-            "created_time": "2025-08-09T20:05:50.688250"
+            "created_time": "2025-08-10T01:32:25.400223"
         },
         {
-            "id": "1ba79440-2bf9-4f39-80a3-cf658c589ae6",
+            "id": "fa5a62a5-2701-4595-a018-0be004a3d23a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00031",
-            "event_name": "login",
+            "event_name": "purchase_completed",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.176.136"
+                "order_id": "ORDER_user_00031_400226",
+                "total_amount": 25.99,
+                "items": [
+                    {
+                        "product_id": "04421",
+                        "quantity": 1,
+                        "price": 25.99
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.688255"
+            "created_time": "2025-08-10T01:32:25.400230"
+        },
+        {
+            "id": "053d8fc7-2b9e-4bae-ace5-336cf4d9537c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00031",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02954",
+                "quantity": 3,
+                "price": 90.0
+            },
+            "created_time": "2025-08-10T01:32:25.400234"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "d2ae1bc2-7fa1-4be9-bc16-20cfd9db89e6",
+            "customer_id": "user_00031",
+            "product_id": "00506",
+            "rating": 1,
+            "review_title": "Below expectations",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2024-10-08T01:32:54.168803",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "bd3c2413-a7e7-4c92-8868-120fe2772480",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "UserId": "user_00031",
-            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Is the 'Mom Tile Coffee Mug' (Product ID: 06774) dishwasher safe, or does it require hand washing?",
-            "CreatedTime": "2025-08-09T20:18:23.719361",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e45f4b29-ff32-4825-a1a4-41ee42b65bde",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "UserId": "user_00031",
-            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The product information does not specify if the 'Mom Tile Coffee Mug' is dishwasher safe or requires hand washing. For the best care, I recommend hand washing to preserve the design and material integrity. If you need further details, please check the manufacturer's instructions or contact customer support.",
-            "CreatedTime": "2025-08-09T20:18:25.340776",
-            "ItemId": "06774",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "ea67423c-f119-4021-a187-8036d08f37b1",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "UserId": "user_00031",
-            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me if the 'Mom Tile Coffee Mug' (Product ID: 06774) comes in any other colors or styles?",
-            "CreatedTime": "2025-08-09T20:18:26.270010",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0e4d49de-4251-49d7-9681-bc022b687a5e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "UserId": "user_00031",
-            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The product information provided does not indicate that the 'Mom Tile Coffee Mug' is available in any other colors or styles. It appears to be offered in a single design featuring a hand-lettered \"Mom\" on both sides of the mug. For additional options, you may want to check the retailer's website or contact customer support for more details.",
-            "CreatedTime": "2025-08-09T20:18:27.994896",
-            "ItemId": null,
-            "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "e155f16d-413a-4aed-8ce7-be2ed2841933",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "UserId": "user_00031",
-            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you let me know if the 'Mom Tile Coffee Mug' (Product ID: 06774) has any special promotions or discounts available right now?",
-            "CreatedTime": "2025-08-09T20:18:29.077223",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "6667c49c-1992-42bb-b4a0-cd2a537dd1ec",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "UserId": "user_00031",
-            "session_id": "76f0defa-dd32-43d0-928d-03efd1924d22",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The product information provided does not mention any current promotions or discounts for the 'Mom Tile Coffee Mug.' To find out about any available promotions, I recommend checking the retailer's website or contacting customer support directly for the most up-to-date information.",
-            "CreatedTime": "2025-08-09T20:18:30.143693",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.191103"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.858418"
 }

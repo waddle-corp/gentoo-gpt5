@@ -1,0 +1,27 @@
+{
+    "user_id": "user_00175",
+    "raw_engagement_score": 2,
+    "normalized_engagement_score": 2,
+    "activities": [
+        {
+            "id": "b7fb3367-1d15-4e7f-8a27-4d38c869cf7e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00175",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03585",
+                "category": "decor",
+                "product_name": "Banka Mundi 4x6 Multicolor Double Picture Frame - Bone, Wood",
+                "price": 38.95,
+                "product_url": "https://www.aldeahome.com/products/banka-mundi-4x6-multicolor-double-picture-frame-bone-wood",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/91a3a5d7ef3df0c0452c6dfac415ba7cd25fd99559c0b22567679a190b3469ff.jpg?v=1750618736",
+                "view_duration_seconds": 11
+            },
+            "created_time": "2025-08-10T01:32:25.616071"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.907609"
+}

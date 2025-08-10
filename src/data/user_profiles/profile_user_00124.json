@@ -1,0 +1,161 @@
+{
+    "user_id": "user_00124",
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "bafbb0b3-3309-4aee-a417-4f63e855f000",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00124",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06717",
+                "quantity": 3,
+                "price": 41.77
+            },
+            "created_time": "2025-08-10T01:32:25.542600"
+        },
+        {
+            "id": "aeb06aca-4067-413a-9753-bcffd75cad59",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00124",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02202",
+                "quantity": 3,
+                "price": 5.95
+            },
+            "created_time": "2025-08-10T01:32:25.542604"
+        },
+        {
+            "id": "da6ebbad-724b-4584-a478-703e43372a7b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00124",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.232.40"
+            },
+            "created_time": "2025-08-10T01:32:25.542608"
+        },
+        {
+            "id": "98cb174b-90ba-48d8-a81d-5d5b7e077262",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00124",
+            "event_name": "search",
+            "event_data": {
+                "query": "ezpz Mini Cup + Straw Training System",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.544848"
+        },
+        {
+            "id": "fcf0ba6b-e804-4691-b2fb-f7d3614f8f4e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00124",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07275",
+                "quantity": 1,
+                "price": 37.0
+            },
+            "created_time": "2025-08-10T01:32:25.544852"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "a76d7796-82f9-446e-acd4-178c31df97fd",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "32d58392-a72e-4606-a756-30e413586e1c",
+            "UserId": "user_00124",
+            "session_id": "32d58392-a72e-4606-a756-30e413586e1c",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Could you please tell me what materials are used to make the Sea horse (Product ID: 07261)?",
+            "CreatedTime": "2025-08-10T01:45:01.193101",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e9decaca-a6d1-4769-801f-888925106240",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "32d58392-a72e-4606-a756-30e413586e1c",
+            "UserId": "user_00124",
+            "session_id": "32d58392-a72e-4606-a756-30e413586e1c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I'm sorry, but I don't have specific information about the materials used to make the Sea horse (Product ID: 07261). However, you can view more details and possibly find that information on the product page here: [Sea horse - $29.99](https://www.aldeahome.com/products/sea-horse).",
+            "CreatedTime": "2025-08-10T01:45:02.772801",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "eb2e9dde-96c6-487a-9423-04d96cd34b09",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "32d58392-a72e-4606-a756-30e413586e1c",
+            "UserId": "user_00124",
+            "session_id": "32d58392-a72e-4606-a756-30e413586e1c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Sea horse (Product ID: 07261) is machine washable, or do I need to clean it by hand?",
+            "CreatedTime": "2025-08-10T01:45:03.603722",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bd037a48-58fb-4de0-9e33-9a35f4b0fa61",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "32d58392-a72e-4606-a756-30e413586e1c",
+            "UserId": "user_00124",
+            "session_id": "32d58392-a72e-4606-a756-30e413586e1c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific information regarding whether the Sea horse (Product ID: 07261) is machine washable or requires hand cleaning. I recommend checking the care instructions on the product page for more details: [Sea horse - $29.99](https://www.aldeahome.com/products/sea-horse).",
+            "CreatedTime": "2025-08-10T01:45:04.726416",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c6b4bf1f-9886-4ee7-988e-8a26e5223451",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "32d58392-a72e-4606-a756-30e413586e1c",
+            "UserId": "user_00124",
+            "session_id": "32d58392-a72e-4606-a756-30e413586e1c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Sea horse (Product ID: 07261) has any safety certifications, especially for children?",
+            "CreatedTime": "2025-08-10T01:45:05.585907",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c135a528-cea6-4283-b752-4b7d189ae520",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "32d58392-a72e-4606-a756-30e413586e1c",
+            "UserId": "user_00124",
+            "session_id": "32d58392-a72e-4606-a756-30e413586e1c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have information regarding any safety certifications for the Sea horse (Product ID: 07261), especially for children. For detailed safety information, please refer to the product page: [Sea horse - $29.99](https://www.aldeahome.com/products/sea-horse).",
+            "CreatedTime": "2025-08-10T01:45:07.110278",
+            "ItemId": "07261",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.894497"
+}

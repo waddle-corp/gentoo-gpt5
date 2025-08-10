@@ -1,71 +1,75 @@
 {
     "user_id": "user_00094",
-    "raw_engagement_score": 20,
-    "normalized_engagement_score": 13,
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 10,
     "activities": [
         {
-            "id": "564ee249-12d3-4d82-917e-898de0b20cc5",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00094",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "07243",
-                "category": "plush",
-                "product_name": "Zora Zebra Stuffed Plush Animal for Kids, 12 Inches",
-                "price": 39.0,
-                "product_url": "https://www.aldeahome.com/products/zora-zebra-stuffed-plush-animal-for-kids-12-inches",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/a64df18468771225713456832fedca941227f21f8b725e8c56e5791e4b520591.jpg?v=1739942558",
-                "view_duration_seconds": 71
-            },
-            "created_time": "2025-08-09T20:05:50.783716"
-        },
-        {
-            "id": "f4ff8ef6-4265-483e-8ad8-c4539732788e",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00094",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00094_783719",
-                "total_amount": 28.0,
-                "items": [
-                    {
-                        "product_id": "03236",
-                        "quantity": 1,
-                        "price": 28.0
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.783724"
-        },
-        {
-            "id": "5bad015c-aec8-4a0e-9aaf-1a529a1725c3",
+            "id": "2efb06b8-1707-421f-8824-50135fc6da98",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00094",
             "event_name": "search",
             "event_data": {
-                "query": "labor-day-sale",
-                "search_results_count": 315,
+                "query": "The Cocktail Canteen",
+                "search_results_count": 1,
                 "filters_applied": [
                     "리뷰 많은 순"
                 ]
             },
-            "created_time": "2025-08-09T20:05:50.786179"
+            "created_time": "2025-08-10T01:32:25.496339"
+        },
+        {
+            "id": "1862563a-6db8-486b-8827-8df46f54b6ba",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00094",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07713",
+                "quantity": 3,
+                "price": 119.0
+            },
+            "created_time": "2025-08-10T01:32:25.496343"
+        },
+        {
+            "id": "b5857da8-b9a8-44eb-981a-2567029dca4d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00094",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03817",
+                "category": "drinkin",
+                "product_name": "Canvas Home Champagne Coupe, Set of 4",
+                "price": 78.0,
+                "product_url": "https://www.aldeahome.com/products/canvas-home-champagne-coupe-set-of-4",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/58ef3c6287ea492e1048704b2bd797115525f57283aad4a711ad0f79b30f0b20.jpg?v=1647994106",
+                "view_duration_seconds": 61
+            },
+            "created_time": "2025-08-10T01:32:25.496347"
+        },
+        {
+            "id": "cc49afcf-32be-4a27-944d-c4e94ec3b0f8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00094",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.188.242"
+            },
+            "created_time": "2025-08-10T01:32:25.496351"
         }
     ],
     "reviews": [
         {
-            "review_id": "e8de75e3-ffbc-4d0d-9c42-44bc2a7db3f0",
+            "review_id": "ee786343-b394-4b1e-8724-c52c5f2d80d3",
             "customer_id": "user_00094",
-            "product_id": "02836",
-            "rating": 1,
-            "review_title": "Disappointed",
-            "review_content": "The quality of Indie Twin Bassinet wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2025-04-02T20:52:52.182345",
+            "product_id": "07656",
+            "rating": 2,
+            "review_title": "Below expectations",
+            "review_content": "The quality of Under the Sea Wall Decals wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2025-08-02T01:32:54.168950",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.213125"
+    "profile_generated_at": "2025-08-10T01:53:50.883632"
 }

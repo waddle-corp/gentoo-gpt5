@@ -1,142 +1,34 @@
 {
     "user_id": "user_00010",
-    "raw_engagement_score": 23,
-    "normalized_engagement_score": 15,
+    "raw_engagement_score": 10,
+    "normalized_engagement_score": 6,
     "activities": [
         {
-            "id": "8a6005dd-f190-4c71-adcf-698f6b26093c",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00010",
-            "event_name": "search",
-            "event_data": {
-                "query": "Wubbanub Pacifier",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.647219"
-        },
-        {
-            "id": "5207d22d-5e7b-4c07-b0e3-0aea588d413d",
+            "id": "67bce874-485a-496c-bbc7-0eecb13d385e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00010",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "00446",
+                "product_id": "00069",
                 "quantity": 2,
-                "price": 200.0
+                "price": 14.0
             },
-            "created_time": "2025-08-09T20:05:50.647227"
-        },
-        {
-            "id": "0399572f-e6b7-4bce-939f-53b6ce1743ca",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00010",
-            "event_name": "search",
-            "event_data": {
-                "query": "Bird Ruffle Baby Girl Tunic Dress & Bodysuit (Organic): Navy Blue / 12-18M",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.649545"
+            "created_time": "2025-08-10T01:32:25.372671"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "8f7b0dae-8261-4016-b75d-11a481d21b8a",
+            "customer_id": "user_00010",
+            "product_id": "05112",
+            "rating": 1,
+            "review_title": "Disappointed",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2024-09-21T01:32:54.168755",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "a92ad3bd-093f-44ed-bd70-bd317ddfea36",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "UserId": "user_00010",
-            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Is the 'Bananas Enamel Mug' (Product ID: 05143) suitable for both hot and cold beverages, and how does the enamel material hold up over time?",
-            "CreatedTime": "2025-08-09T20:16:44.461247",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "5e4bff55-84aa-40d8-9714-6fe6d3d80768",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "UserId": "user_00010",
-            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "Yes, the 'Bananas Enamel Mug' is suitable for both hot and cold beverages, making it a versatile choice for your mealtimes. The enamel material is durable and designed to withstand regular use, though it’s important to note that it should not be microwaved. For more information or to purchase, you can visit [this link](https://www.aldeahome.com/products/bananas-enamel-mug). The price is $20.00.",
-            "CreatedTime": "2025-08-09T20:16:46.464534",
-            "ItemId": "05143",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "2a94d53d-ef6f-4763-8e1e-acd5ac5194e6",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "UserId": "user_00010",
-            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me if the 'Bananas Enamel Mug' (Product ID: 05143) is available in any other colors or designs?",
-            "CreatedTime": "2025-08-09T20:16:47.337394",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d3f93a26-47ac-479e-a77d-b16979547f46",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "UserId": "user_00010",
-            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The 'Bananas Enamel Mug' features colorful banana illustrations and is currently offered only in that design. There are no mentions of other colors or designs available for this specific product. If you're interested, you can find more details and purchase it for $20.00 at [this link](https://www.aldeahome.com/products/bananas-enamel-mug).",
-            "CreatedTime": "2025-08-09T20:16:49.046565",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "54c7417e-e968-4760-8a7f-50d82581037e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "UserId": "user_00010",
-            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Are there any specific care instructions for the 'Bananas Enamel Mug' (Product ID: 05143) to ensure it stays in good condition?",
-            "CreatedTime": "2025-08-09T20:16:49.821889",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "3eee23d2-ecc7-41e0-b1cf-ba5b820800a9",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "UserId": "user_00010",
-            "session_id": "3508e86e-79ab-4575-b218-fbe3d5b68a48",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "Yes, to ensure the 'Bananas Enamel Mug' stays in good condition, it is dishwasher safe, which makes cleaning easy. However, it’s important to avoid microwaving it, as enamel mugs are not microwave-safe. Following these care instructions will help maintain its appearance and durability. You can purchase the mug for $20.00 at [this link](https://www.aldeahome.com/products/bananas-enamel-mug).",
-            "CreatedTime": "2025-08-09T20:16:51.643710",
-            "ItemId": "05143",
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.180342"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.846009"
 }

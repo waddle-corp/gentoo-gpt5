@@ -1,160 +1,149 @@
 {
     "user_id": "user_00016",
-    "raw_engagement_score": 28,
-    "normalized_engagement_score": 18,
+    "raw_engagement_score": 35,
+    "normalized_engagement_score": 21,
     "activities": [
         {
-            "id": "e2adc96f-a470-4448-9cd6-bfa160fe9fec",
+            "id": "f3a03f51-8552-4c40-a7c3-6d07bc595846",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00016",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "05611",
-                "quantity": 3,
-                "price": 69.95
-            },
-            "created_time": "2025-08-09T20:05:50.663975"
-        },
-        {
-            "id": "111060f3-8764-48a4-88f8-6a2b69e3452d",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00016",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "00246",
+                "product_id": "03999",
                 "quantity": 2,
-                "price": 19.9
+                "price": 8.0
             },
-            "created_time": "2025-08-09T20:05:50.663980"
+            "created_time": "2025-08-10T01:32:25.375115"
         },
         {
-            "id": "1ee4f1e8-6cb9-4d9d-bc24-50dc216366a9",
+            "id": "2d2a32d3-ec92-4b83-a18a-f149c7e81508",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00016",
-            "event_name": "login",
+            "event_name": "purchase_completed",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.231.17"
+                "order_id": "ORDER_user_00016_375119",
+                "total_amount": 37.96,
+                "items": [
+                    {
+                        "product_id": "02677",
+                        "quantity": 1,
+                        "price": 15.97
+                    },
+                    {
+                        "product_id": "03730",
+                        "quantity": 1,
+                        "price": 21.99
+                    }
+                ],
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.663985"
-        },
-        {
-            "id": "ad1d4c6e-b997-496b-8a27-a52c666a1d25",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00016",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "03559",
-                "quantity": 1,
-                "price": 169.75
-            },
-            "created_time": "2025-08-09T20:05:50.663989"
-        },
-        {
-            "id": "39086be9-1433-41c2-acb0-12e7ea1b041f",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00016",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.221.97"
-            },
-            "created_time": "2025-08-09T20:05:50.663993"
+            "created_time": "2025-08-10T01:32:25.375124"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "bcb182b2-f82f-4cc3-b21f-0b1012800c71",
+            "customer_id": "user_00016",
+            "product_id": "04364",
+            "rating": 4,
+            "review_title": "Love it!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2024-11-18T01:32:54.168772",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "aede8aa4-209c-45c3-be5d-bc66610da21f",
+            "Id": "e98e7326-6356-4532-a3ef-5736d638cd85",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
+            "DialogueId": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
             "UserId": "user_00016",
-            "session_id": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
-            "Intent": "일반",
+            "session_id": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "Can you tell me more about the age range suitable for the 'Little Wonders Weather' (Product ID: 01589) board book?",
-            "CreatedTime": "2025-08-09T20:17:14.071065",
+            "Content": "Can you tell me more about the materials used in the Wimmer Ferguson Mind-Shapes (Product ID: 04270) and if they are safe for infants?",
+            "CreatedTime": "2025-08-10T01:34:42.674525",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "aa5ee4c3-3de5-4d84-9b6e-c5533359e1d7",
+            "Id": "2cef14bd-6ba6-4d29-9ca6-c561d7e6cd22",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
+            "DialogueId": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
             "UserId": "user_00016",
-            "session_id": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
+            "session_id": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The 'Little Wonders Weather' board book is designed for babies and toddlers, making it suitable for very young children who are curious about weather phenomena like rain, wind, sunshine, and snow. It's a great way to help them understand and appreciate the natural world around them. \n\nThe price for this book is $9.99, and you can find it at this link: [Little Wonders Weather](https://www.aldeahome.com/products/little-wonders-weather).",
-            "CreatedTime": "2025-08-09T20:17:16.297535",
-            "ItemId": "01589",
+            "Content": "The Wimmer Ferguson Mind-Shapes are designed with safety in mind, meeting or exceeding EN71 and CPSIA safety regulations, which ensures they are safe for infants. However, specific details about the materials used in the product are not provided. The shapes are made for play and feature high-contrast graphics and noise makers, promoting sensory development for babies. \n\nIf you have any further questions or need assistance, feel free to ask! The price for the Wimmer Ferguson Mind-Shapes is $28.00, and you can find more information at this [link](https://www.aldeahome.com/products/skwish-natural-unboxed-1).",
+            "CreatedTime": "2025-08-10T01:34:45.435628",
+            "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "e043aebf-4675-499c-ad7a-ca81830a8f07",
+            "Id": "d2f3b9fc-c1b8-40cd-9bd6-77515148518b",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
+            "DialogueId": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
             "UserId": "user_00016",
-            "session_id": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
-            "Intent": "일반",
+            "session_id": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
+            "Intent": "추천",
             "Role": "user",
-            "Content": "Is 'Little Wonders Weather' (Product ID: 01589) interactive in any way, or does it include activities to engage my child while learning about weather?",
-            "CreatedTime": "2025-08-09T20:17:17.200471",
+            "Content": "Do the Wimmer Ferguson Mind-Shapes (Product ID: 04270) have any age recommendations for use, and are they suitable for teething infants?",
+            "CreatedTime": "2025-08-10T01:34:46.567780",
             "ItemId": null,
-            "Thumbs": "down",
+            "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "1aa2a9d2-01ac-4a25-b12d-81c8c67a10a8",
+            "Id": "86842969-8799-4e31-95b6-71f86b430463",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
+            "DialogueId": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
             "UserId": "user_00016",
-            "session_id": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
+            "session_id": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "The 'Little Wonders Weather' board book primarily focuses on introducing children to various weather phenomena, such as rain, wind, sunshine, and snow. While it is designed to spark curiosity and help children understand the natural world, it does not explicitly mention interactive elements or activities within the book itself. \n\nHowever, you can enhance the learning experience by engaging your child in related outdoor activities, like splashing in puddles or building a snowman, as suggested in the book. This can make the exploration of weather even more interactive and fun!\n\nThe book is priced at $9.99, and you can view it here: [Little Wonders Weather](https://www.aldeahome.com/products/little-wonders-weather).",
-            "CreatedTime": "2025-08-09T20:17:20.316558",
-            "ItemId": "01589",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "32792404-0519-4622-8fa3-8d00a6bb4f36",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
-            "UserId": "user_00016",
-            "session_id": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Does 'Little Wonders Weather' (Product ID: 01589) have any illustrations or colorful visuals that might help keep my child's attention while reading?",
-            "CreatedTime": "2025-08-09T20:17:21.108578",
+            "Content": "The Wimmer Ferguson Mind-Shapes do not have specific age recommendations mentioned in the provided information. However, they are designed for infants and encourage sensory play, which generally makes them suitable for young children. \n\nWhile the product does not explicitly state that they are intended for teething, it is important to note that they are soft shapes intended for play. If you're looking for a product specifically for teething, you may want to consider dedicated teething toys. \n\nIf you have more questions or need further assistance, feel free to ask! The price for the Wimmer Ferguson Mind-Shapes is $28.00, and you can find more details at this [link](https://www.aldeahome.com/products/skwish-natural-unboxed-1).",
+            "CreatedTime": "2025-08-10T01:34:50.411235",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "1441ceb5-a793-4873-940b-f4814f31d68b",
+            "Id": "da56fc73-fdba-40e6-a676-33d1e1373a19",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
+            "DialogueId": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
             "UserId": "user_00016",
-            "session_id": "685c7d58-7c39-4d7e-b8f3-82366d79ed5e",
+            "session_id": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Are the Wimmer Ferguson Mind-Shapes (Product ID: 04270) lightweight and easy for infants to hold and carry during playtime?",
+            "CreatedTime": "2025-08-10T01:34:51.259547",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "27950b77-76ed-410f-b344-31260e6d20ee",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
+            "UserId": "user_00016",
+            "session_id": "8cce4f75-3253-4aac-bc50-9323f58acc0d",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "Yes, 'Little Wonders Weather' features illustrations and colorful visuals that are designed to engage young children and keep their attention while reading. The vibrant imagery helps to illustrate different weather phenomena, making the learning experience more enjoyable for babies and toddlers. \n\nThe book is priced at $9.99, and you can check it out at this link: [Little Wonders Weather](https://www.aldeahome.com/products/little-wonders-weather).",
-            "CreatedTime": "2025-08-09T20:17:22.994743",
+            "Content": "Yes, the Wimmer Ferguson Mind-Shapes are designed to be lightweight and easy for infants to hold and carry during playtime. The set includes three soft shapes (triangle, circle, and cube), which are easy for little hands to grasp. This makes them ideal for encouraging exploration and sensory development. \n\nIf you have any more questions or need further assistance, just let me know! The price for the Wimmer Ferguson Mind-Shapes is $28.00, and you can find more information at this [link](https://www.aldeahome.com/products/skwish-natural-unboxed-1).",
+            "CreatedTime": "2025-08-10T01:34:53.528434",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.183104"
+    "profile_generated_at": "2025-08-10T01:53:50.849447"
 }

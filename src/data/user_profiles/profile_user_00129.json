@@ -1,0 +1,70 @@
+{
+    "user_id": "user_00129",
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "e979a013-9ed4-4155-b330-2cfd323c2ccf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00129",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00129_547074",
+                "total_amount": 74.95,
+                "items": [
+                    {
+                        "product_id": "00611",
+                        "quantity": 1,
+                        "price": 60.0
+                    },
+                    {
+                        "product_id": "02737",
+                        "quantity": 1,
+                        "price": 14.95
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.547078"
+        },
+        {
+            "id": "d662b7af-85fd-4224-b3a8-c721bcb95b6f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00129",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "00757",
+                "category": "bassinets",
+                "product_name": "Stokke Snoozi Bassinet",
+                "price": 479.0,
+                "product_url": "https://www.aldeahome.com/products/snoozi™-bassinet",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/Snoozi_SandyBeige_HighPos_230503_3094_eCom.jpg?v=1731501475",
+                "view_duration_seconds": 108
+            },
+            "created_time": "2025-08-10T01:32:25.547082"
+        },
+        {
+            "id": "498b6f3f-ac62-4ffe-8bd2-7e14b31b1b44",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00129",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00129_547084",
+                "total_amount": 99.5,
+                "items": [
+                    {
+                        "product_id": "03409",
+                        "quantity": 1,
+                        "price": 99.5
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.547088"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.896096"
+}

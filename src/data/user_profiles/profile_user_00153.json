@@ -1,0 +1,171 @@
+{
+    "user_id": "user_00153",
+    "raw_engagement_score": 39,
+    "normalized_engagement_score": 23,
+    "activities": [
+        {
+            "id": "689e0da6-1ea6-4704-a0bd-282595a41f9f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00153",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00153_581344",
+                "total_amount": 39.0,
+                "items": [
+                    {
+                        "product_id": "03875",
+                        "quantity": 1,
+                        "price": 39.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.581348"
+        },
+        {
+            "id": "d8f3c7d1-e1e8-4058-af3c-c9c9922b3f76",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00153",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00153_581351",
+                "total_amount": 44.95,
+                "items": [
+                    {
+                        "product_id": "04711",
+                        "quantity": 1,
+                        "price": 20.0
+                    },
+                    {
+                        "product_id": "07248",
+                        "quantity": 1,
+                        "price": 24.95
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.581355"
+        },
+        {
+            "id": "ba62d2d6-dbc2-462e-a445-256aa8485809",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00153",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03104",
+                "quantity": 3,
+                "price": 32.0
+            },
+            "created_time": "2025-08-10T01:32:25.581359"
+        },
+        {
+            "id": "7d448599-98cc-47f9-b148-5b8a80c8fda2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00153",
+            "event_name": "search",
+            "event_data": {
+                "query": "Design + Draw Fashionistas",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.583700"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "217145d2-dbd5-4af6-80e7-ad79cf249bfc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "UserId": "user_00153",
+            "session_id": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "What age range is the Vroom Bus (Product ID: 02245) suitable for, and does it come in any other colors?",
+            "CreatedTime": "2025-08-10T01:47:53.690474",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "35919ebd-6a2e-41ea-9f83-8cf5bdd220a0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "UserId": "user_00153",
+            "session_id": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Vroom Bus is designed for young children, typically suitable for ages 1 and up. As for colors, the product information does not specify any other colors available for the Vroom Bus. \n\nIf you're interested in purchasing, it's priced at $28.00. You can find more details [here](https://www.aldeahome.com/products/vroom-bus).",
+            "CreatedTime": "2025-08-10T01:47:55.894022",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3f587514-77aa-4c36-980c-eca7d2412aa4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "UserId": "user_00153",
+            "session_id": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Vroom Bus (Product ID: 02245) is made from any specific materials, and is it safe for toddlers to play with?",
+            "CreatedTime": "2025-08-10T01:47:56.999029",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6e2b6ae3-7a95-4a5b-ba0e-d2848d9201ec",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "UserId": "user_00153",
+            "session_id": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Vroom Bus is specifically designed to be safe for toddlers, featuring materials that are suitable for young children. While the exact materials are not detailed in the provided information, it is intended for easy grabbing, gripping, and play, which suggests it is made with child safety in mind. \n\nIt's a great option for developing fine motor skills and hand-eye coordination in a safe manner. If you have any more questions or would like to purchase the Vroom Bus, it is priced at $28.00 and you can find it [here](https://www.aldeahome.com/products/vroom-bus).",
+            "CreatedTime": "2025-08-10T01:48:00.169806",
+            "ItemId": "02245",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ef15e019-3a10-46ce-aeea-cb931fcbd189",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "UserId": "user_00153",
+            "session_id": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you confirm if the Vroom Bus (Product ID: 02245) is easy to clean, and what is the recommended cleaning method for it?",
+            "CreatedTime": "2025-08-10T01:48:01.258677",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "737fb4c3-cf73-4cf5-a3f7-e28de4a2d92c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "UserId": "user_00153",
+            "session_id": "603aafb4-80dd-41c4-aaef-fd51b7d315ee",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The provided information does not specify the cleaning method or ease of cleaning for the Vroom Bus. However, generally, toys like the Vroom Bus are often made from materials that can be wiped clean with a damp cloth. For specific cleaning instructions, it's best to check the packaging or any care instructions that may come with the product.\n\nIf you're interested in purchasing the Vroom Bus, it is priced at $28.00 and available [here](https://www.aldeahome.com/products/vroom-bus).",
+            "CreatedTime": "2025-08-10T01:48:04.161963",
+            "ItemId": "02245",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.902412"
+}

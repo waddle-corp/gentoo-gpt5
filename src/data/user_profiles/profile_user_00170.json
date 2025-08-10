@@ -1,0 +1,45 @@
+{
+    "user_id": "user_00170",
+    "raw_engagement_score": 7,
+    "normalized_engagement_score": 5,
+    "activities": [
+        {
+            "id": "d093cd90-4b0d-4376-80dd-872b1bb98769",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00170",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.78.164"
+            },
+            "created_time": "2025-08-10T01:32:25.611711"
+        },
+        {
+            "id": "73a0f779-0474-4cb9-9da6-ee38288fe4f1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00170",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07086",
+                "quantity": 2,
+                "price": 18.0
+            },
+            "created_time": "2025-08-10T01:32:25.611715"
+        },
+        {
+            "id": "f7e19e0b-5b83-4994-a861-6b93ecf539dd",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00170",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.98.49"
+            },
+            "created_time": "2025-08-10T01:32:25.611718"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.906530"
+}

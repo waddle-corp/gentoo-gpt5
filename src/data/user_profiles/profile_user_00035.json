@@ -1,75 +1,34 @@
 {
     "user_id": "user_00035",
-    "raw_engagement_score": 24,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 6,
+    "normalized_engagement_score": 4,
     "activities": [
         {
-            "id": "1649d06a-a897-4e3b-bacd-603c144e70c5",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00035",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00035_690770",
-                "total_amount": 13.0,
-                "items": [
-                    {
-                        "product_id": "04259",
-                        "quantity": 1,
-                        "price": 13.0
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.690781"
-        },
-        {
-            "id": "25384c85-f2cc-40cb-8d92-838b2e5928a5",
+            "id": "d4c384bf-49bd-435e-b9c5-6997ab4d59f4",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00035",
             "event_name": "login",
             "event_data": {
                 "login_method": "social_kakao",
-                "ip_address": "192.168.171.145"
+                "ip_address": "192.168.36.238"
             },
-            "created_time": "2025-08-09T20:05:50.690786"
+            "created_time": "2025-08-10T01:32:25.402529"
         },
         {
-            "id": "400d264c-bcd8-4193-9905-1bc506ba8485",
+            "id": "5c91afa4-7781-41d7-ac84-d462c730be0d",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00035",
-            "event_name": "login",
+            "event_name": "add_to_cart",
             "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.251.37"
+                "product_id": "03794",
+                "quantity": 3,
+                "price": 104.99
             },
-            "created_time": "2025-08-09T20:05:50.690791"
-        },
-        {
-            "id": "be111f90-f8d2-4840-ab5c-0fe0df5bdec6",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00035",
-            "event_name": "search",
-            "event_data": {
-                "query": "Rainbow Shells | Magical Water Wings",
-                "search_results_count": 1,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T20:05:50.693197"
+            "created_time": "2025-08-10T01:32:25.402533"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "f5f17069-c115-4c26-9201-6aecc4781039",
-            "customer_id": "user_00035",
-            "product_id": "00184",
-            "rating": 5,
-            "review_title": "Super satisfied!",
-            "review_content": "Bath Salts |  Of the Sea is fantastic! I wish I'd found it sooner.",
-            "created_at": "2024-09-24T20:52:52.182151",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.192740"
+    "profile_generated_at": "2025-08-10T01:53:50.861075"
 }

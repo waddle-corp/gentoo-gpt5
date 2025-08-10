@@ -1,0 +1,121 @@
+{
+    "user_id": "user_00143",
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "92501ac5-b655-4ce1-b5db-193adc65d235",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00143",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03539",
+                "category": "danica-studios",
+                "product_name": "Amulet Trinket Tray",
+                "price": 15.0,
+                "product_url": "https://www.aldeahome.com/products/amulet-trinket-tray",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/c2aa88eab64cd01f18aa2a3768f23c31e0d7671db2ed0bffda7878f1e24f7228.jpg?v=1729875239",
+                "view_duration_seconds": 40
+            },
+            "created_time": "2025-08-10T01:32:25.568059"
+        },
+        {
+            "id": "5e63e611-4935-44b0-9d09-55b2a1d9a5b2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00143",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.186.228"
+            },
+            "created_time": "2025-08-10T01:32:25.568063"
+        },
+        {
+            "id": "ff67741a-ee90-4ae4-a659-1853368ca228",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00143",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "02860",
+                "category": "cyber-monday-gift",
+                "product_name": "Heddle Woven Floor Mats",
+                "price": 150.0,
+                "product_url": "https://www.aldeahome.com/products/heddle-woven-floor-mats",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/ScreenShot2020-04-20at7.27.06AM.png?v=1587393595",
+                "view_duration_seconds": 14
+            },
+            "created_time": "2025-08-10T01:32:25.568067"
+        },
+        {
+            "id": "45b5b61e-2e41-4612-86a6-bc33ff47c386",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00143",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00143_568070",
+                "total_amount": 44.99,
+                "items": [
+                    {
+                        "product_id": "04784",
+                        "quantity": 1,
+                        "price": 9.99
+                    },
+                    {
+                        "product_id": "07814",
+                        "quantity": 1,
+                        "price": 35.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.568074"
+        },
+        {
+            "id": "bb2a5fad-2146-4fcb-a923-f32c00bb2991",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00143",
+            "event_name": "search",
+            "event_data": {
+                "query": "Step & Sprout™ 3-in-1 Activity Walker - First Forest™",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.570145"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "db5fff91-9cca-4ca8-b625-40f0a0b4c7cb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9a9242d5-f242-4919-a495-5b8d4d60c9e3",
+            "UserId": "user_00143",
+            "session_id": "9a9242d5-f242-4919-a495-5b8d4d60c9e3",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Cowboy Hotdog Tattoo (Product ID: 04268) is safe for sensitive skin?",
+            "CreatedTime": "2025-08-10T01:46:55.974975",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f6e9302d-da4c-4761-8fbe-e723a84d73f4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9a9242d5-f242-4919-a495-5b8d4d60c9e3",
+            "UserId": "user_00143",
+            "session_id": "9a9242d5-f242-4919-a495-5b8d4d60c9e3",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Cowboy Hotdog Tattoo is made with cruelty-free and vegan ink, which is generally safer for sensitive skin. However, it's always a good idea to do a patch test on a small area of skin before applying the tattoo to ensure there are no allergic reactions. If you have very sensitive skin, consult with a dermatologist for personalized advice. \n\nYou can purchase the Cowboy Hotdog Tattoo for $5.50 here: [Cowboy Hotdog Tattoo](https://www.aldeahome.com/products/cowboy-hotdog-tattoo).",
+            "CreatedTime": "2025-08-10T01:46:58.625239",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.900005"
+}

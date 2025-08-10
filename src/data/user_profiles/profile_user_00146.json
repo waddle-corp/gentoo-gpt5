@@ -1,0 +1,143 @@
+{
+    "user_id": "user_00146",
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "9be80482-ba2e-4199-a6b4-a61809b15d75",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00146",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.148.234"
+            },
+            "created_time": "2025-08-10T01:32:25.576717"
+        },
+        {
+            "id": "9da0094f-093a-4023-ab9a-adf0b6a7531e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00146",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00146_576720",
+                "total_amount": 20.0,
+                "items": [
+                    {
+                        "product_id": "03079",
+                        "quantity": 1,
+                        "price": 20.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.576724"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "81ff4104-c5fa-4a72-9f6c-4c9c6880921c",
+            "customer_id": "user_00146",
+            "product_id": "03990",
+            "rating": 3,
+            "review_title": "Very satisfied!",
+            "review_content": "I use it every day. I can't live without Amanita Spoon Rest. Definitely repurchasing!",
+            "created_at": "2024-11-08T01:32:54.169074",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "ff6e72d7-cae4-49a5-9e1d-3d4fb3c67aeb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "UserId": "user_00146",
+            "session_id": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the sizing options available for the Pineapple Embroidered Pointelle Knit Baby Romper (Product ID: 06901)?",
+            "CreatedTime": "2025-08-10T01:47:09.384430",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5a901386-820e-4818-af93-86d7b7fdbab3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "UserId": "user_00146",
+            "session_id": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I'm sorry, but I don't have specific information on the sizing options for the Pineapple Embroidered Pointelle Knit Baby Romper. However, you can find more details, including potential sizing information, on the product page [here](https://www.aldeahome.com/products/pineapple-embroidered-pointelle-knit-baby-romper). The romper is made of 100% organic cotton and is designed to be ultra-soft and comfortable for your baby. If you have any other questions, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:47:11.630009",
+            "ItemId": "06901",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ba9a30f2-fc3f-44ca-8c82-aad4edff1b32",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "UserId": "user_00146",
+            "session_id": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you confirm what age range the Pineapple Embroidered Pointelle Knit Baby Romper (Product ID: 06901) is suitable for? I'm looking to buy it as a gift and want to make sure it fits the intended recipient.",
+            "CreatedTime": "2025-08-10T01:47:12.863666",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c6b0d6e4-3a37-4bcd-bf7c-bdd5e14a5490",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "UserId": "user_00146",
+            "session_id": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don’t have specific information regarding the age range for the Pineapple Embroidered Pointelle Knit Baby Romper. I recommend checking the product page [here](https://www.aldeahome.com/products/pineapple-embroidered-pointelle-knit-baby-romper) for any available details on sizing and age recommendations. If you need further assistance, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:47:15.376127",
+            "ItemId": "06901",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "09ec463f-cf11-491f-837e-05b6b5c9ee7e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "UserId": "user_00146",
+            "session_id": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Could you let me know if the Pineapple Embroidered Pointelle Knit Baby Romper (Product ID: 06901) is machine washable, or does it require special care when cleaning?",
+            "CreatedTime": "2025-08-10T01:47:16.757978",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "71ddea0f-2b2a-4885-a1a7-951f9f9f1d31",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "UserId": "user_00146",
+            "session_id": "97265f0d-67a3-4dc3-a095-e756f6b134f5",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don’t have specific care instructions for the Pineapple Embroidered Pointelle Knit Baby Romper. For detailed cleaning information, I recommend checking the product page [here](https://www.aldeahome.com/products/pineapple-embroidered-pointelle-knit-baby-romper). Typically, organic cotton garments are machine washable, but it’s best to verify for optimal care. If you have any other questions, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:47:19.679676",
+            "ItemId": "06901",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.900899"
+}

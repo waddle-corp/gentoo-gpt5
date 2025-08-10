@@ -34,7 +34,7 @@ Return ONLY 3-5 markdown bullets. DO NOT include a 'Next actions' section.`;
     const prompt = `Chart context:\n- Totals: ${JSON.stringify(stats)}\n- By score (1..30): ${JSON.stringify(byScore)}\nGuidelines:\n- Mention skew/peaks/imbalance.\n- Point to obvious cohorts.\n- Keep it scannable. No next actions.`;
 
     const run = async () => {
-      const { text } = await generateText({ model: openai("gpt-4o-mini"), system, prompt, temperature: 0.3, maxRetries: 0 });
+      const { text } = await generateText({ model: openai("gpt-4o"), system, prompt, temperature: 0.3, maxRetries: 0 });
       return (text ?? "").trim();
     };
 
@@ -42,7 +42,7 @@ Return ONLY 3-5 markdown bullets. DO NOT include a 'Next actions' section.`;
     try {
       text = await run();
       if (!text || text.length < 10) {
-        text = await generateText({ model: openai("gpt-4o-mini"), system, prompt, temperature: 0.5, maxRetries: 0 }).then((r) => (r.text ?? "").trim());
+        text = await generateText({ model: openai("gpt-4o"), system, prompt, temperature: 0.5, maxRetries: 0 }).then((r) => (r.text ?? "").trim());
       }
     } catch {}
 

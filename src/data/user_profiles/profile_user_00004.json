@@ -1,164 +1,145 @@
 {
     "user_id": "user_00004",
-    "raw_engagement_score": 32,
-    "normalized_engagement_score": 21,
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 10,
     "activities": [
         {
-            "id": "763224ab-eb10-4f71-8009-945bb1c81af9",
+            "id": "edd940ed-4ee3-4874-b7d7-4171a0dee02f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00004",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "05356",
+                "category": "exclude",
+                "product_name": "A Short Guide to a Happy Life",
+                "price": 12.99,
+                "product_url": "https://www.aldeahome.com/products/a-short-guide-to-a-happy-life",
+                "thumbnail_url": "",
+                "view_duration_seconds": 71
+            },
+            "created_time": "2025-08-10T01:32:25.368099"
+        },
+        {
+            "id": "848f5e86-0902-451a-88ad-2764a2ba5278",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00004",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03663",
+                "category": "dinosaur",
+                "product_name": "Denny the Dinosaur Plush Brontosaurus",
+                "price": 21.0,
+                "product_url": "https://www.aldeahome.com/products/denny-the-dinosaur-plush-brontosaurus",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/f5f40239f27856f17b4bad3f4943c3bcc474132eca35e49b20d3a03acb7aed1f.jpg?v=1721779680",
+                "view_duration_seconds": 63
+            },
+            "created_time": "2025-08-10T01:32:25.368106"
+        },
+        {
+            "id": "3b8cb21b-64cd-4847-9a07-a1bbd813961a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00004",
             "event_name": "login",
             "event_data": {
                 "login_method": "social_kakao",
-                "ip_address": "192.168.247.10"
+                "ip_address": "192.168.195.176"
             },
-            "created_time": "2025-08-09T20:05:50.639406"
-        },
-        {
-            "id": "75527deb-5a04-4627-9831-206b6dcc6a1e",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00004",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "00382",
-                "quantity": 3,
-                "price": 32.95
-            },
-            "created_time": "2025-08-09T20:05:50.639410"
-        },
-        {
-            "id": "94b11701-cca6-4f62-a56a-fc1117c23b7a",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00004",
-            "event_name": "search",
-            "event_data": {
-                "query": "Mermaid",
-                "search_results_count": 59,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.642226"
-        },
-        {
-            "id": "2c9c574e-01b2-4577-b7fc-5453c94e0ec8",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00004",
-            "event_name": "search",
-            "event_data": {
-                "query": "4th-of-july",
-                "search_results_count": 18,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.644714"
+            "created_time": "2025-08-10T01:32:25.368110"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "1758e53c-f363-48e0-8c04-14a534374550",
-            "customer_id": "user_00004",
-            "product_id": "00680",
-            "rating": 3,
-            "review_title": "A bit disappointing",
-            "review_content": "This back-to-school product is excellent. Don't hesitate to buy Sharks Lunch Box!",
-            "created_at": "2025-06-30T20:52:52.182051",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "7291d85b-abf9-4822-b900-ea9bc573dbd7",
+            "Id": "5326238e-525b-4dc8-ab2f-2df1447a4fef",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "DialogueId": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "UserId": "user_00004",
-            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "session_id": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "Intent": "일반",
             "Role": "user",
-            "Content": "Can you tell me if the Terry Wipes 6 pack (Product ID: 06790) are safe to use on sensitive newborn skin?",
-            "CreatedTime": "2025-08-09T20:15:53.408324",
+            "Content": "Can you tell me more about the materials used in the Gantosaurus Rex Handpuppet (Product ID: 03729)? Are they safe for young children?",
+            "CreatedTime": "2025-08-10T01:33:42.281894",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "59b1cce3-c923-45ef-bf9a-986b4e56ec87",
+            "Id": "69cbef96-0007-49c4-b364-9672b0e1a005",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "DialogueId": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "UserId": "user_00004",
-            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "session_id": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "Yes, the Terry Wipes 6 pack is made from ultra-soft organic cotton, making them gentle enough for everyday use on sensitive newborn skin. They are specifically designed to be safe and comfortable for babies. You can purchase them for $18.00 at the following link: [Terry Wipes 6 pack](https://www.aldeahome.com/products/terry-wipes-2).",
-            "CreatedTime": "2025-08-09T20:15:55.086051",
-            "ItemId": "06790",
-            "Thumbs": null,
+            "Content": "The Gantosaurus Rex Handpuppet is made of soft cotton and linen, which are generally safe materials for young children. The puppet is designed for fun imaginary play, and its soft fabric makes it suitable for kids. Additionally, it stands on its own, providing a unique play experience. If you're interested in purchasing it, the price is $40.00, and you can find it [here](https://www.aldeahome.com/products/gantosaurus-rex-handpuppet).",
+            "CreatedTime": "2025-08-10T01:33:45.327022",
+            "ItemId": "03729",
+            "Thumbs": "up",
             "Channel": "web"
         },
         {
-            "Id": "845348ac-6066-40f8-8d67-ea4b9d618fec",
+            "Id": "fd71ae17-d2ad-428a-9345-bccdc5027b0d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "DialogueId": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "UserId": "user_00004",
-            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
-            "Intent": "일반",
+            "session_id": "fdea974b-a640-46a6-9be0-34c734aa17ae",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "Are the Terry Wipes 6 pack (Product ID: 06790) machine washable, and how many times can they typically be reused before needing to be replaced?",
-            "CreatedTime": "2025-08-09T20:15:56.248861",
+            "Content": "Are there any care instructions for the Gantosaurus Rex Handpuppet (Product ID: 03729)? Can it be washed or cleaned easily?",
+            "CreatedTime": "2025-08-10T01:33:46.260640",
             "ItemId": null,
-            "Thumbs": null,
+            "Thumbs": "down",
             "Channel": "web"
         },
         {
-            "Id": "1126b56c-a04e-49cb-9411-911c448e2a03",
+            "Id": "f01ba4b6-0098-4720-93f1-b0636cfc44d4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "DialogueId": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "UserId": "user_00004",
-            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "session_id": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "Yes, the Terry Wipes 6 pack is machine washable and super absorbent, making them suitable for repeated use. While the exact number of uses before needing to be replaced can vary based on usage and care, they are designed to be durable for many washes. Generally, you can expect to use them several times before they show signs of wear. For more details, you can view the product here: [Terry Wipes 6 pack](https://www.aldeahome.com/products/terry-wipes-2) for $18.00.",
-            "CreatedTime": "2025-08-09T20:15:58.278208",
+            "Content": "The care instructions for the Gantosaurus Rex Handpuppet are not explicitly provided in the product details. However, since it is made of cotton and linen, it is generally advisable to spot clean with a damp cloth or hand wash it gently in cold water. Avoid harsh detergents and let it air dry to maintain its quality. If you have specific concerns, it's best to check the packaging or contact the manufacturer for detailed care instructions.",
+            "CreatedTime": "2025-08-10T01:33:47.889550",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "ff368b03-7a57-479c-9f20-3583f3f36079",
+            "Id": "f8061bc6-8f1d-460e-bb8b-10873cb517e4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "DialogueId": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "UserId": "user_00004",
-            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "session_id": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "Intent": "추천",
             "Role": "user",
-            "Content": "What is the best way to wash and care for the Terry Wipes 6 pack (Product ID: 06790) to ensure they last as long as possible?",
-            "CreatedTime": "2025-08-09T20:15:59.221736",
+            "Content": "Can you tell me if the Gantosaurus Rex Handpuppet (Product ID: 03729) is suitable for outdoor play, or is it recommended for indoor use only?",
+            "CreatedTime": "2025-08-10T01:33:48.971296",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "3ba8e2af-1136-4d53-86fa-b159798e647e",
+            "Id": "27e8d234-609e-49af-92fe-796edcab1c37",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "DialogueId": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "UserId": "user_00004",
-            "session_id": "83e4324b-d581-4b4a-aafd-19a1f3ddbe7a",
+            "session_id": "fdea974b-a640-46a6-9be0-34c734aa17ae",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "To ensure the Terry Wipes 6 pack lasts as long as possible, follow these care instructions:\n\n1. **Machine Wash**: Wash them in a machine on a gentle cycle with mild detergent.\n2. **Cold Water**: Use cold water to help preserve the fabric and prevent shrinking.\n3. **Avoid Bleach**: Do not use bleach or fabric softeners, as these can damage the organic cotton fibers.\n4. **Tumble Dry Low**: If using a dryer, tumble dry on low heat. Alternatively, air drying is a great option to maintain their quality.\n5. **Store Properly**: Store them in a clean, dry place when not in use.\n\nBy following these guidelines, you can maximize the life of your Terry Wipes. For more information, you can view the product here: [Terry Wipes 6 pack](https://www.aldeahome.com/products/terry-wipes-2) for $18.00.",
-            "CreatedTime": "2025-08-09T20:16:02.569663",
-            "ItemId": "06790",
-            "Thumbs": "up",
+            "Content": "The Gantosaurus Rex Handpuppet is designed primarily for imaginative play, which makes it more suitable for indoor use. While it may withstand some outdoor play in a safe environment, it's best to keep it indoors to maintain its quality and prevent damage, as the materials may not hold up well against outdoor conditions. For the best experience, using it in a cool jungle adventure indoors would be ideal!",
+            "CreatedTime": "2025-08-10T01:33:51.166949",
+            "ItemId": "03729",
+            "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.176539"
+    "profile_generated_at": "2025-08-10T01:53:50.839621"
 }

@@ -1,0 +1,138 @@
+{
+    "user_id": "user_00115",
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "a354e9ea-f636-4a9f-96b7-86572ef92655",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00115",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02628",
+                "quantity": 2,
+                "price": 25.0
+            },
+            "created_time": "2025-08-10T01:32:25.530858"
+        },
+        {
+            "id": "c91a7ecb-019a-41b4-ac5d-6e1a3ee453eb",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00115",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00115_530861",
+                "total_amount": 56.99,
+                "items": [
+                    {
+                        "product_id": "03006",
+                        "quantity": 1,
+                        "price": 15.0
+                    },
+                    {
+                        "product_id": "05409",
+                        "quantity": 1,
+                        "price": 41.99
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.530865"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "3e099e12-d83f-4108-bb50-921f1c59afdd",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "UserId": "user_00115",
+            "session_id": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the ML Nightstand (Product ID: 01119) is available for immediate shipping?",
+            "CreatedTime": "2025-08-10T01:44:04.870652",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8c8f5a9f-348c-4281-adb9-bb8fec43ce44",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "UserId": "user_00115",
+            "session_id": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have information regarding the availability for immediate shipping. Please check the product page [here](https://www.aldeahome.com/products/ml-nightstand) or contact customer support for details on shipping options. The ML Nightstand is priced at $310.00.",
+            "CreatedTime": "2025-08-10T01:44:05.941190",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1cdb75da-823e-4e7c-8e5b-7fd7908a2275",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "UserId": "user_00115",
+            "session_id": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you let me know what the estimated delivery time is for the ML Nightstand (Product ID: 01119) if I place an order today?",
+            "CreatedTime": "2025-08-10T01:44:06.853741",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e2bba9ba-3eae-45fc-a981-e2c36d20729f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "UserId": "user_00115",
+            "session_id": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don’t have specific information about the estimated delivery time for the ML Nightstand. I recommend checking the product page [here](https://www.aldeahome.com/products/ml-nightstand) or contacting customer support for the most accurate delivery estimates after placing your order. The ML Nightstand is priced at $310.00.",
+            "CreatedTime": "2025-08-10T01:44:08.205194",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "071f321e-96f3-4d24-ba74-5bbb012cb3de",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "UserId": "user_00115",
+            "session_id": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the ML Nightstand (Product ID: 01119) comes with a warranty, and if so, what it covers?",
+            "CreatedTime": "2025-08-10T01:44:09.155165",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "95304ad3-1cb9-481f-aff2-663237ca876e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "UserId": "user_00115",
+            "session_id": "1db45e9f-b564-4545-858d-c3f8c0f24733",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have information regarding the warranty details for the ML Nightstand. Please refer to the product page [here](https://www.aldeahome.com/products/ml-nightstand) or contact customer support for specific warranty information and coverage details. The ML Nightstand is priced at $310.00.",
+            "CreatedTime": "2025-08-10T01:44:10.483388",
+            "ItemId": "01119",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.891690"
+}

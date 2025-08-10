@@ -1,55 +1,125 @@
 {
     "user_id": "user_00076",
-    "raw_engagement_score": 8,
-    "normalized_engagement_score": 6,
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 11,
     "activities": [
         {
-            "id": "c2eca09e-c500-49f8-9040-ca5d7c77ddfa",
+            "id": "b3e60cc4-783c-446a-97d9-368308afaa6c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00076",
-            "event_name": "login",
+            "event_name": "add_to_cart",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.170.181"
+                "product_id": "03067",
+                "quantity": 1,
+                "price": 55.0
             },
-            "created_time": "2025-08-09T20:05:50.753821"
+            "created_time": "2025-08-10T01:32:25.475265"
         },
         {
-            "id": "5d54128a-8cd9-4731-b805-d41cf8755e3e",
+            "id": "fae29c04-0910-4279-a77c-ff81b060231f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00076",
             "event_name": "login",
             "event_data": {
                 "login_method": "email_password",
-                "ip_address": "192.168.31.111"
+                "ip_address": "192.168.57.146"
             },
-            "created_time": "2025-08-09T20:05:50.753825"
+            "created_time": "2025-08-10T01:32:25.475269"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "99554a71-e5dd-46e7-954f-5eb144ea9005",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "UserId": "user_00076",
+            "session_id": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the Princess Mouse Felt Holiday Ornament (Product ID: 06275) suitable for outdoor use, or is it designed only for indoor decoration?",
+            "CreatedTime": "2025-08-10T01:39:41.721485",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
         },
         {
-            "id": "828115b0-8039-4e1f-8520-f595b78a43b0",
+            "Id": "cc6126fd-3b07-4369-bbed-d42bd445e79d",
+            "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "chat_user_id": "user_00076",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.224.170"
-            },
-            "created_time": "2025-08-09T20:05:50.753829"
-        }
-    ],
-    "reviews": [
+            "DialogueId": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "UserId": "user_00076",
+            "session_id": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Princess Mouse Felt Holiday Ornament is designed for indoor decoration. It is made of wool felt and is not suitable for outdoor use. For more information, you can view the product [here](https://www.aldeahome.com/products/princess-mouse-ornament-5-5h). The price is $24.00.",
+            "CreatedTime": "2025-08-10T01:39:43.010960",
+            "ItemId": "06275",
+            "Thumbs": null,
+            "Channel": "web"
+        },
         {
-            "review_id": "3cf6e44f-1d2e-4d1a-9950-f7cb329569e5",
-            "customer_id": "user_00076",
-            "product_id": "04454",
-            "rating": 1,
-            "review_title": "Below expectations",
-            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2024-12-30T20:52:52.182289",
-            "is_deleted": false
+            "Id": "05e4717e-7ace-4c54-97db-a167a436a03d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "UserId": "user_00076",
+            "session_id": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Princess Mouse Felt Holiday Ornament (Product ID: 06275) can be personalized or customized in any way?",
+            "CreatedTime": "2025-08-10T01:39:43.968772",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "12c0d915-194e-41b5-bc01-36cc0e61d560",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "UserId": "user_00076",
+            "session_id": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Princess Mouse Felt Holiday Ornament is not customizable or personalized. It comes as is, with a beautiful design featuring a glittery skirt and silver accents. For more details, you can check the product [here](https://www.aldeahome.com/products/princess-mouse-ornament-5-5h), and it is priced at $24.00.",
+            "CreatedTime": "2025-08-10T01:39:45.472365",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5be04926-6f08-40a0-b12b-d799eedb516d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "UserId": "user_00076",
+            "session_id": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Princess Mouse Felt Holiday Ornament (Product ID: 06275) durable enough to withstand being displayed on a tree with kids around, or should I be cautious about where I place it?",
+            "CreatedTime": "2025-08-10T01:39:47.113875",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2cdf6be5-5e3a-48b1-a151-68109c8e2137",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "UserId": "user_00076",
+            "session_id": "e3e57c57-b7fc-4cf1-b60e-a78049cbebbc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "While the Princess Mouse Felt Holiday Ornament is made from wool felt, which gives it a charming look, it is important to note that it may not be very durable against rough handling, especially with kids around. It is advisable to place it in a location on the tree where it won't be easily knocked over or grabbed. For more details, you can view the ornament [here](https://www.aldeahome.com/products/princess-mouse-ornament-5-5h), and it is priced at $24.00.",
+            "CreatedTime": "2025-08-10T01:39:49.442071",
+            "ItemId": "06275",
+            "Thumbs": null,
+            "Channel": "web"
         }
     ],
-    "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.208463"
+    "profile_generated_at": "2025-08-10T01:53:50.877493"
 }

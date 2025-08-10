@@ -1,71 +1,51 @@
 {
     "user_id": "user_00013",
-    "raw_engagement_score": 16,
-    "normalized_engagement_score": 11,
+    "raw_engagement_score": 12,
+    "normalized_engagement_score": 8,
     "activities": [
         {
-            "id": "dfbb32ab-f504-41c7-ba50-6db86aa29a02",
+            "id": "02a8510d-7ddd-4b2c-a2a0-abf545be9e1e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00013",
-            "event_name": "search",
+            "event_name": "add_to_cart",
             "event_data": {
-                "query": "Two Dogs Art Print",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "product_id": "05610",
+                "quantity": 3,
+                "price": 24.0
             },
-            "created_time": "2025-08-09T20:05:50.654584"
+            "created_time": "2025-08-10T01:32:25.372689"
         },
         {
-            "id": "c9f4b1cd-cb4e-46a2-809a-2d243bdd0af4",
+            "id": "d9e2605f-383a-416d-bdad-2e6e53708e2a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00013",
-            "event_name": "purchase_completed",
+            "event_name": "add_to_cart",
             "event_data": {
-                "order_id": "ORDER_user_00013_654597",
-                "total_amount": 59.99,
-                "items": [
-                    {
-                        "product_id": "04761",
-                        "quantity": 1,
-                        "price": 59.99
-                    }
-                ],
-                "payment_method": "kakao_pay"
+                "product_id": "07189",
+                "quantity": 3,
+                "price": 34.0
             },
-            "created_time": "2025-08-09T20:05:50.654619"
+            "created_time": "2025-08-10T01:32:25.372693"
         },
         {
-            "id": "495d3a8e-1262-41d1-852a-b16d83e78dd7",
+            "id": "782ce2cf-46cb-417b-b20c-9958890c76de",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00013",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "00265",
-                "category": "arts-crafts",
-                "product_name": "Crafting with Feminism: 25 Girl-Powered Projects to Smash the Patriarchy",
-                "price": 14.99,
-                "product_url": "https://www.aldeahome.com/products/crafting-with-feminism-25-girl-powered-projects-to-smash-the-patriarchy",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/lf_b7353ee8-724e-46d6-938c-5ec2c7c40499.jpg?v=1656345609",
-                "view_duration_seconds": 61
+                "product_id": "05323",
+                "category": "exclude",
+                "product_name": "Happier At Home",
+                "price": 26.0,
+                "product_url": "https://www.aldeahome.com/products/happier-at-home",
+                "thumbnail_url": "",
+                "view_duration_seconds": 24
             },
-            "created_time": "2025-08-09T20:05:50.654626"
-        },
-        {
-            "id": "4be3c4c2-013a-4ae9-8f61-aec36a5c88c3",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00013",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.208.153"
-            },
-            "created_time": "2025-08-09T20:05:50.654631"
+            "created_time": "2025-08-10T01:32:25.372697"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.181946"
+    "profile_generated_at": "2025-08-10T01:53:50.847589"
 }

@@ -1,0 +1,94 @@
+{
+    "user_id": "user_00133",
+    "raw_engagement_score": 16,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "d9e211b4-bb1b-482e-a48e-c7d0ba825504",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00133",
+            "event_name": "search",
+            "event_data": {
+                "query": "Sea Salt Grapefruit Soap",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.554081"
+        },
+        {
+            "id": "9430abdc-209b-42e1-ba9c-3ec56232336b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00133",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.5.212"
+            },
+            "created_time": "2025-08-10T01:32:25.554085"
+        },
+        {
+            "id": "6d345780-de05-46a4-8617-897f282a2873",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00133",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "00987",
+                "category": "bibs",
+                "product_name": "Pale Mauve Silicone & Stainless Steel Toddler Cutlery Set",
+                "price": 15.0,
+                "product_url": "https://www.aldeahome.com/products/pale-mauve-silicone-stainless-steel-toddler-cutlery-set",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/f69b7476bc287343ba8dcf37e7a51af0fa52e23f7c83c6fa0cef3ef94479418a.jpg?v=1746732344",
+                "view_duration_seconds": 31
+            },
+            "created_time": "2025-08-10T01:32:25.554089"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "1315d7c6-b6cb-4340-9ddc-f90ca9d46954",
+            "customer_id": "user_00133",
+            "product_id": "01783",
+            "rating": 3,
+            "review_title": "Not great",
+            "review_content": "This california-dreaming product is excellent. Don't hesitate to buy Ms Bunny Tea Towel!",
+            "created_at": "2025-06-23T01:32:54.169036",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "11b1a179-ddd1-4f71-a520-dfb685a3231d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "45684306-5a1c-4648-b959-5441b2dd645c",
+            "UserId": "user_00133",
+            "session_id": "45684306-5a1c-4648-b959-5441b2dd645c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the age suitability for the Magnetic Fishing Mermaid (Product ID: 03158)? Is it really designed for children as young as 2 years old?",
+            "CreatedTime": "2025-08-10T01:46:13.467356",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "34df9d40-e143-48ad-9013-6980219fc8e3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "45684306-5a1c-4648-b959-5441b2dd645c",
+            "UserId": "user_00133",
+            "session_id": "45684306-5a1c-4648-b959-5441b2dd645c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Magnetic Fishing Mermaid is designed for children aged 2 years and older. This game is intended to support early learning experiences, helping young children develop their observational skills and coordination through play. It's a fun and engaging way for toddlers to enjoy fishing while interacting with colorful, magnetic wooden fish. \n\nIf you're interested in purchasing it, the price is $18.95, and you can find it at this link: [Magnetic Fishing Mermaid](https://www.aldeahome.com/products/magnetic-fishing-mermaid).",
+            "CreatedTime": "2025-08-10T01:46:15.414726",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.897253"
+}

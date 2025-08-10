@@ -1,0 +1,27 @@
+{
+    "user_id": "user_00197",
+    "raw_engagement_score": 2,
+    "normalized_engagement_score": 2,
+    "activities": [
+        {
+            "id": "3b452274-8803-4552-b7df-95fefe4763a8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00197",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "06772",
+                "category": "mothers-day-gifts-under-50",
+                "product_name": "Leaping Leopards",
+                "price": 32.0,
+                "product_url": "https://www.aldeahome.com/products/leaping-leopards",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/DPZ-1004-LEAPING-LEOPARDS-PUZZLE-SET_3000x_jpg.jpg?v=1652128246",
+                "view_duration_seconds": 114
+            },
+            "created_time": "2025-08-10T01:32:25.656901"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.912219"
+}

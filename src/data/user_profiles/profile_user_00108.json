@@ -1,0 +1,120 @@
+{
+    "user_id": "user_00108",
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "809355ce-fa8a-420e-97ab-d96a9d6e2701",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00108",
+            "event_name": "search",
+            "event_data": {
+                "query": "Britax One4Life ClickTight All-in-One Car Seat",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.519297"
+        },
+        {
+            "id": "5e01974a-0a64-4a99-85f1-4a3b992e31bf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00108",
+            "event_name": "search",
+            "event_data": {
+                "query": "Rocket Ship Baby Shoes",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.521657"
+        },
+        {
+            "id": "cb6943ec-978c-484a-8aee-a89424c06668",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00108",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.140.19"
+            },
+            "created_time": "2025-08-10T01:32:25.521661"
+        },
+        {
+            "id": "9e42943e-43cb-41e5-98fa-63bfb29777e6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00108",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.119.46"
+            },
+            "created_time": "2025-08-10T01:32:25.521665"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "8902a78d-891e-4d50-93d0-f900064404fd",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29bc14c1-b810-4567-94d8-9126b9a48470",
+            "UserId": "user_00108",
+            "session_id": "29bc14c1-b810-4567-94d8-9126b9a48470",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the sizing and fit of the Yoga Mat Socks (Product ID: 00056)? Are they truly one size fits all?",
+            "CreatedTime": "2025-08-10T01:43:07.308994",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "44b584d3-ce6d-404f-9f40-e03ad94cb336",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29bc14c1-b810-4567-94d8-9126b9a48470",
+            "UserId": "user_00108",
+            "session_id": "29bc14c1-b810-4567-94d8-9126b9a48470",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Yoga Mat Socks are indeed designed as a \"one size fits all\" option, making them versatile and suitable for various foot sizes. They offer a fun and comfy fit, perfect for yoga enthusiasts or anyone looking for cozy socks. If you would like to purchase them, they are priced at $12.95. You can find more information and make a purchase at this link: [Yoga Mat Socks](https://www.aldeahome.com/products/yoga-mat-socks).",
+            "CreatedTime": "2025-08-10T01:43:13.240853",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "32ca93bc-3bf4-414b-be83-5aa5dee465fc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29bc14c1-b810-4567-94d8-9126b9a48470",
+            "UserId": "user_00108",
+            "session_id": "29bc14c1-b810-4567-94d8-9126b9a48470",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are the Yoga Mat Socks (Product ID: 00056) machine washable, and how do they hold up after multiple washes?",
+            "CreatedTime": "2025-08-10T01:43:14.215272",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b058af52-7552-4bad-8f60-a764b536b805",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29bc14c1-b810-4567-94d8-9126b9a48470",
+            "UserId": "user_00108",
+            "session_id": "29bc14c1-b810-4567-94d8-9126b9a48470",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The specific washing instructions for the Yoga Mat Socks aren't provided in the information available. However, typically, socks are machine washable. For the best results and to ensure they hold up well after multiple washes, it's recommended to wash them in cold water and tumble dry on low heat. Always check the care label if available. If you’re interested in purchasing, they are priced at $12.95, and you can find them here: [Yoga Mat Socks](https://www.aldeahome.com/products/yoga-mat-socks).",
+            "CreatedTime": "2025-08-10T01:43:16.834118",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.888532"
+}

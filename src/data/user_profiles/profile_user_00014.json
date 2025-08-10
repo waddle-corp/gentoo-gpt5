@@ -1,69 +1,73 @@
 {
     "user_id": "user_00014",
-    "raw_engagement_score": 22,
-    "normalized_engagement_score": 15,
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 10,
     "activities": [
         {
-            "id": "d28d5243-0fc6-41b8-9182-846b7446b66c",
+            "id": "a6aac81f-4d2f-4790-a7e4-a21c922f2142",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00014",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.46.6"
+            },
+            "created_time": "2025-08-10T01:32:25.372703"
+        },
+        {
+            "id": "540809a4-4618-4bb0-b146-41ec9796ba68",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00014",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "00153",
+                "category": "apparel-1",
+                "product_name": "Animal Pocket Baby Cardigan",
+                "price": 50.0,
+                "product_url": "https://www.aldeahome.com/products/animal-pocket-button-cardigan-baby-sweater-organic-cotton",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/cfe577ea62028b73d592fd6e002b5820580c4e2266dc1cf25861ca66ca930135.jpg?v=1729481697",
+                "view_duration_seconds": 93
+            },
+            "created_time": "2025-08-10T01:32:25.372707"
+        },
+        {
+            "id": "52ae6c4b-4a0d-402e-bc05-524d9322d842",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00014",
             "event_name": "search",
             "event_data": {
-                "query": "Day of the Dead Corkscrew",
+                "query": "Ferry Boat - Green/White",
                 "search_results_count": 1,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.657066"
+            "created_time": "2025-08-10T01:32:25.375096"
         },
         {
-            "id": "b3d3608b-375b-4e16-b2c3-6d2888b475d0",
+            "id": "1737afaf-694d-4b7d-92af-a09790ceeb41",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00014",
-            "event_name": "purchase_completed",
+            "event_name": "add_to_cart",
             "event_data": {
-                "order_id": "ORDER_user_00014_657073",
-                "total_amount": 28.0,
-                "items": [
-                    {
-                        "product_id": "05471",
-                        "quantity": 1,
-                        "price": 28.0
-                    }
-                ],
-                "payment_method": "naver_pay"
+                "product_id": "05757",
+                "quantity": 2,
+                "price": 79.99
             },
-            "created_time": "2025-08-09T20:05:50.657084"
-        },
-        {
-            "id": "a503fcd3-4fc2-4567-9172-94729144f136",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00014",
-            "event_name": "search",
-            "event_data": {
-                "query": "Moonlight Slumber Little Dreamer Breathe-Thru Crib Mattress Cover",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.659459"
+            "created_time": "2025-08-10T01:32:25.375100"
         }
     ],
     "reviews": [
         {
-            "review_id": "0c375ebe-e81a-44bb-a890-8cf6fdf331ac",
+            "review_id": "d787cd1a-a865-4318-a096-e0645a60e62c",
             "customer_id": "user_00014",
-            "product_id": "01318",
+            "product_id": "03588",
             "rating": 2,
-            "review_title": "Disappointed",
-            "review_content": "The quality of Monte In-Stock Bed Sale: Dorma Full Bed Denim Blue wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2025-01-20T20:52:52.182084",
+            "review_title": "Do not recommend",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-01-18T01:32:54.168766",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.182332"
+    "profile_generated_at": "2025-08-10T01:53:50.848054"
 }

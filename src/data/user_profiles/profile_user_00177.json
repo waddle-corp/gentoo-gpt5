@@ -1,0 +1,106 @@
+{
+    "user_id": "user_00177",
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 12,
+    "activities": [
+        {
+            "id": "53063de7-2947-45bb-8d0f-760ed328088c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00177",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "04469",
+                "quantity": 3,
+                "price": 10.0
+            },
+            "created_time": "2025-08-10T01:32:25.620542"
+        },
+        {
+            "id": "09108669-d2ed-4215-9c76-7c6849bf3fe5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00177",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.8.17"
+            },
+            "created_time": "2025-08-10T01:32:25.620546"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "edb8707c-3950-42b3-af62-b65d36f31e79",
+            "customer_id": "user_00177",
+            "product_id": "03526",
+            "rating": 2,
+            "review_title": "Below expectations",
+            "review_content": "The quality of Fun Twin Bed Trundle wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2024-10-14T01:32:54.169138",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "965eafbd-6040-492a-a9c9-48e3d11838ff",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6f7a4846-1068-418e-90c5-d86a10124418",
+            "UserId": "user_00177",
+            "session_id": "6f7a4846-1068-418e-90c5-d86a10124418",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the sensory features of the Stego Organic Fabric with Crinkle (Product ID: 04743) and how it aids in early development for babies?",
+            "CreatedTime": "2025-08-10T01:50:09.334599",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d238d93b-48b3-4ee9-ab77-7dd919c3a353",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6f7a4846-1068-418e-90c5-d86a10124418",
+            "UserId": "user_00177",
+            "session_id": "6f7a4846-1068-418e-90c5-d86a10124418",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Stego Organic Fabric with Crinkle is designed to provide a delightful sensory experience for babies. Its crinkle feature produces a satisfying sound that engages infants, keeping them entertained and focused. The combination of textures from the organic cotton velour and the crinkle material stimulates tactile exploration.\n\nIn terms of early development, this toy helps to stimulate motor skills as babies grasp, hold, and manipulate it. The vibrant colors and the stegosaurus shape promote visual tracking and coordination. Overall, it's an excellent tool for enhancing sensory development and encouraging focus in babies aged 0 months and up.\n\nThe price of the Stego Organic Fabric with Crinkle is $8.50. You can find more information and purchase it [here](https://www.aldeahome.com/products/stego-organic-fabric-with-crinkle).",
+            "CreatedTime": "2025-08-10T01:50:12.473217",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "fd8b30dd-7dd3-4b2a-a25b-76f51ae1684e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6f7a4846-1068-418e-90c5-d86a10124418",
+            "UserId": "user_00177",
+            "session_id": "6f7a4846-1068-418e-90c5-d86a10124418",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can the Stego Organic Fabric with Crinkle (Product ID: 04743) be safely washed, and if so, what are the recommended care instructions to maintain its quality?",
+            "CreatedTime": "2025-08-10T01:50:13.476793",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "54145d81-e359-4a13-b6e5-1d68e351a9b3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "6f7a4846-1068-418e-90c5-d86a10124418",
+            "UserId": "user_00177",
+            "session_id": "6f7a4846-1068-418e-90c5-d86a10124418",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The specific washing and care instructions for the Stego Organic Fabric with Crinkle are not provided in the product information. However, for most organic cotton toys, it is generally recommended to wash them in cold water on a gentle cycle and air dry to maintain quality. \n\nTo ensure the best care, you may want to check any tags or packaging that accompany the product for detailed instructions. If you're looking to purchase, the price is $8.50, and you can find it [here](https://www.aldeahome.com/products/stego-organic-fabric-with-crinkle).",
+            "CreatedTime": "2025-08-10T01:50:16.052845",
+            "ItemId": "04743",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.907833"
+}

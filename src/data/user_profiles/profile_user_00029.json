@@ -1,86 +1,118 @@
 {
     "user_id": "user_00029",
-    "raw_engagement_score": 18,
-    "normalized_engagement_score": 12,
+    "raw_engagement_score": 16,
+    "normalized_engagement_score": 10,
     "activities": [
         {
-            "id": "bd6b3707-8541-41b9-978a-bb574fc6cd99",
+            "id": "e23beec6-9d8a-45fd-8df2-94f02801b4cd",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00029",
-            "event_name": "search",
+            "event_name": "product_view",
             "event_data": {
-                "query": "Retro Balloon Kit",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "product_id": "07777",
+                "category": "viverano-organics",
+                "product_name": "Bear Organic Baby Lovey",
+                "price": 30.0,
+                "product_url": "https://www.aldeahome.com/products/bear-organic-baby-lovey-security-blanket-cuddle-cloth",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/778420aa84e2956f45cd4a709b782d160f11f23f2083ec773641fc4a772820f2.png?v=1723647838",
+                "view_duration_seconds": 92
             },
-            "created_time": "2025-08-09T20:05:50.685854"
-        },
-        {
-            "id": "0ea25686-e4da-4d38-8397-46b1bb9ec7ee",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00029",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00029_685863",
-                "total_amount": 5.5,
-                "items": [
-                    {
-                        "product_id": "04412",
-                        "quantity": 1,
-                        "price": 5.5
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.685879"
-        },
-        {
-            "id": "4e03abba-5d1c-463a-9bd7-c699ea585d37",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00029",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.228.30"
-            },
-            "created_time": "2025-08-09T20:05:50.685884"
+            "created_time": "2025-08-10T01:32:25.391010"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "c91d78c6-a88f-464f-8dfb-a62238acbb2a",
+            "Id": "48804277-e85b-41ad-84ab-d39de340cf37",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "ff3f1ab7-6f5a-4d2f-b3e4-303121a7290f",
+            "DialogueId": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
             "UserId": "user_00029",
-            "session_id": "ff3f1ab7-6f5a-4d2f-b3e4-303121a7290f",
-            "Intent": "탐색",
+            "session_id": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "Can you tell me how many cards are included in the 'You're Amazing ThoughtFulls for Kids' (Product ID: 02302) set?",
-            "CreatedTime": "2025-08-09T20:18:12.517099",
+            "Content": "Can you tell me more about the glowing feature of the Mystical Moon Portal Fairy Door (Product ID: 02516)? How bright does it glow in the dark?",
+            "CreatedTime": "2025-08-10T01:35:41.657202",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "cc4fff71-d9df-43d8-b5ad-c8000684c655",
+            "Id": "b2831f81-2cde-4e5c-803f-2e7a971b574e",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "ff3f1ab7-6f5a-4d2f-b3e4-303121a7290f",
+            "DialogueId": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
             "UserId": "user_00029",
-            "session_id": "ff3f1ab7-6f5a-4d2f-b3e4-303121a7290f",
+            "session_id": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Mystical Moon Portal Fairy Door glows in the dark, adding a whimsical touch to your space. However, specific details about how bright it glows are not provided. It is important to note that this door is designed for indoor use and is not recommended for outdoor settings. If you're interested in purchasing it, you can find it for $38.00 at this link: [Mystical Moon Portal Fairy Door](https://www.aldeahome.com/products/mystical-moon-portal-fairy-door).",
+            "CreatedTime": "2025-08-10T01:35:43.672245",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "0d8dc178-a2c2-48ec-82f5-7b1ad4010689",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
+            "UserId": "user_00029",
+            "session_id": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can the Mystical Moon Portal Fairy Door (Product ID: 02516) be used in a child's room, and is it safe for them to be around since it’s made of wood and has painted details?",
+            "CreatedTime": "2025-08-10T01:35:44.739706",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "df85401f-b17c-4906-aa77-45742c36ea90",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
+            "UserId": "user_00029",
+            "session_id": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The 'You're Amazing ThoughtFulls for Kids' set includes 30 encouraging pop-open cards. Each card features uplifting sentiments to support and delight children. If you need more information or want to purchase it, you can find it for $7.95 at this link: [You're Amazing ThoughtFulls for Kids](https://www.aldeahome.com/products/youre-amazing-thoughtfulls-for-kids).",
-            "CreatedTime": "2025-08-09T20:18:14.179290",
-            "ItemId": "02302",
+            "Content": "Yes, the Mystical Moon Portal Fairy Door is suitable for a child's room. It is made from premium red cedar wood and features acrylic paint, which is generally safe. However, since it is a handcrafted item, it's always a good idea to supervise young children around decorative objects. The door can add a magical touch to their space while being safe for indoor use. If you're interested, it is priced at $38.00, and you can view it here: [Mystical Moon Portal Fairy Door](https://www.aldeahome.com/products/mystical-moon-portal-fairy-door).",
+            "CreatedTime": "2025-08-10T01:35:47.184492",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "c6839ddc-8556-46a6-8c24-d3a019a7fd43",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
+            "UserId": "user_00029",
+            "session_id": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Is the Mystical Moon Portal Fairy Door (Product ID: 02516) available in different colors or designs, or is it only offered as shown? Also, do you have any recommendations for where to place it in a child's room?",
+            "CreatedTime": "2025-08-10T01:35:48.508651",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "298d9df5-de35-4e17-bb2e-f2b08f88056e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
+            "UserId": "user_00029",
+            "session_id": "a0fdadc4-e7d6-4246-b76a-7f44a1836883",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Mystical Moon Portal Fairy Door is offered only as shown, and there are no different colors or designs available at this time. \n\nFor placement in a child's room, consider putting it at the base of a wall or in a corner near a bookshelf or play area to create an enchanting focal point. You can also mount it at a height that allows children to easily see and enjoy it, sparking their imagination. If you're interested in purchasing it, it's available for $38.00 at this link: [Mystical Moon Portal Fairy Door](https://www.aldeahome.com/products/mystical-moon-portal-fairy-door).",
+            "CreatedTime": "2025-08-10T01:35:50.863841",
+            "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.190247"
+    "profile_generated_at": "2025-08-10T01:53:50.857161"
 }

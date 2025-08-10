@@ -1,60 +1,123 @@
 {
     "user_id": "user_00069",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "2b04e114-c5b0-4546-b442-3da63b880fa2",
+            "id": "e5f7a924-4b15-4fd6-a681-2df9d9f4f67d",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00069",
-            "event_name": "purchase_completed",
+            "event_name": "search",
             "event_data": {
-                "order_id": "ORDER_user_00069_743975",
-                "total_amount": 32.0,
-                "items": [
-                    {
-                        "product_id": "07415",
-                        "quantity": 1,
-                        "price": 32.0
-                    }
-                ],
-                "payment_method": "naver_pay"
+                "query": "Pantone Espresso Cup",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.743980"
+            "created_time": "2025-08-10T01:32:25.463557"
         },
         {
-            "id": "21141d89-565b-48a4-bec5-466094eca85f",
+            "id": "363fa9f0-6bd1-4610-ae9b-8368169f191c",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00069",
-            "event_name": "purchase_completed",
+            "event_name": "search",
             "event_data": {
-                "order_id": "ORDER_user_00069_743984",
-                "total_amount": 64.0,
-                "items": [
-                    {
-                        "product_id": "03093",
-                        "quantity": 1,
-                        "price": 64.0
-                    }
-                ],
-                "payment_method": "kakao_pay"
+                "query": "Cactus Scene gift bag",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.743989"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-10T01:32:25.465866"
+        },
         {
-            "review_id": "4adef292-d3ac-43ce-b600-564936adb11f",
-            "customer_id": "user_00069",
-            "product_id": "00242",
-            "rating": 1,
-            "review_title": "Do not recommend",
-            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2025-07-19T20:52:52.182262",
-            "is_deleted": false
+            "id": "1b344104-a02d-489a-bbf3-f51715080323",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00069",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.213.126"
+            },
+            "created_time": "2025-08-10T01:32:25.465871"
+        },
+        {
+            "id": "ec275554-de01-4a34-9bba-6a7771947bbd",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00069",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "02823",
+                "quantity": 1,
+                "price": 9.95
+            },
+            "created_time": "2025-08-10T01:32:25.465875"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.206655"
+    "dialogues": [
+        {
+            "Id": "09861199-7794-4742-8244-6fbc85d83209",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d75d23f9-257e-4ad8-b67c-eca135f17c0e",
+            "UserId": "user_00069",
+            "session_id": "d75d23f9-257e-4ad8-b67c-eca135f17c0e",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Hiker Mouse Big Sister (Product ID: 06635) is suitable for young children?",
+            "CreatedTime": "2025-08-10T01:39:18.033773",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e573ca89-2cc2-4358-a712-3c4f201908bf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d75d23f9-257e-4ad8-b67c-eca135f17c0e",
+            "UserId": "user_00069",
+            "session_id": "d75d23f9-257e-4ad8-b67c-eca135f17c0e",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Hiker Mouse Big Sister is designed for children and is a charming addition to any child's toy collection. It is part of the Maileg collection, which typically features high-quality, whimsical toys suitable for young kids. However, it's always best to check the specific age recommendations and safety guidelines associated with the product. \n\nIf you're interested in purchasing, the price is $42.95, and you can find it [here](https://www.aldeahome.com/products/hiker-mouse-big-sister-1).",
+            "CreatedTime": "2025-08-10T01:39:20.423685",
+            "ItemId": "06635",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "81137945-9a93-454b-8640-1d25ef28698a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d75d23f9-257e-4ad8-b67c-eca135f17c0e",
+            "UserId": "user_00069",
+            "session_id": "d75d23f9-257e-4ad8-b67c-eca135f17c0e",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "What materials is the Hiker Mouse Big Sister (Product ID: 06635) made from, and are there any specific care instructions I should follow?",
+            "CreatedTime": "2025-08-10T01:39:21.215471",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bd9c43d7-d9ba-4b0c-bd39-0e760855e227",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d75d23f9-257e-4ad8-b67c-eca135f17c0e",
+            "UserId": "user_00069",
+            "session_id": "d75d23f9-257e-4ad8-b67c-eca135f17c0e",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "Unfortunately, I don't have specific details about the materials used for the Hiker Mouse Big Sister or any care instructions associated with it. Generally, Maileg toys are made with high-quality fabrics and materials meant to be durable and safe for children. \n\nFor care, it's common for soft toys to be surface washable or to have specific washing instructions, so I recommend checking the product packaging or contacting the retailer for precise details on care. \n\nIf you're considering purchasing, the price is $42.95, and you can view the product [here](https://www.aldeahome.com/products/hiker-mouse-big-sister-1).",
+            "CreatedTime": "2025-08-10T01:39:23.406260",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.874878"
 }

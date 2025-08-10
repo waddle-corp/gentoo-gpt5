@@ -1,125 +1,120 @@
 {
     "user_id": "user_00064",
-    "raw_engagement_score": 18,
-    "normalized_engagement_score": 12,
+    "raw_engagement_score": 14,
+    "normalized_engagement_score": 9,
     "activities": [
         {
-            "id": "596bfa04-3b0a-4f8a-ac24-41ede354b505",
+            "id": "dd90ff3b-e4a6-47eb-89eb-d120c129d74f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00064",
-            "event_name": "search",
+            "event_name": "product_view",
             "event_data": {
-                "query": "Como Tomo",
-                "search_results_count": 2,
-                "filters_applied": []
+                "product_id": "07598",
+                "category": "teethers-pacifiers",
+                "product_name": "Rubbabu Whacky 4\" Ball Assortment 6-unit display",
+                "price": 9.99,
+                "product_url": "https://www.aldeahome.com/products/rubbabu-whacky-4-ball-assortment-6-unit-display",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/0536c50b0346c7cb5f823807095a262cd42cd314239d47761d2d77b3bc6f56b7.jpg?v=1739254818",
+                "view_duration_seconds": 112
             },
-            "created_time": "2025-08-09T20:05:50.741426"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-10T01:32:25.454069"
+        },
         {
-            "review_id": "2d979da1-9eb0-4fdc-9a2b-2467ce0c3314",
-            "customer_id": "user_00064",
-            "product_id": "02647",
-            "rating": 1,
-            "review_title": "Below expectations",
-            "review_content": "The quality of STEAMED DUMPLINGS Christmas Ornament wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2024-08-14T20:52:52.182240",
-            "is_deleted": false
+            "id": "528a51f7-c3e8-4088-9638-0e2c94d551db",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00064",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "01566",
+                "category": "board-books-1",
+                "product_name": "Touch and Explore: Pets",
+                "price": 14.99,
+                "product_url": "https://www.aldeahome.com/products/touch-and-explore-pets",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/d10cc59022c697e45b6c34224bcf1c193a6839f059e6a797eddbf6c9beebebed.jpg?v=1721675738",
+                "view_duration_seconds": 40
+            },
+            "created_time": "2025-08-10T01:32:25.454073"
+        },
+        {
+            "id": "aa1a5ac6-2d3f-4ca8-b267-a919cd3729f5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00064",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03024",
+                "category": "cyber-monday-gift",
+                "product_name": "EGGPLANT Christmas Ornament",
+                "price": 16.97,
+                "product_url": "https://www.aldeahome.com/products/eggplant-christmas-ornament",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/GO-6698_1_jpg.jpg?v=1694136616",
+                "view_duration_seconds": 50
+            },
+            "created_time": "2025-08-10T01:32:25.454077"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "ac29b8ca-a117-4b6d-b8d9-dea37ae8adc9",
+            "Id": "c7f2d36d-3fbb-4982-81df-4bd412702d33",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "DialogueId": "4ed4b366-0de5-41dc-a5c4-6c2de359eb3b",
             "UserId": "user_00064",
-            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "session_id": "4ed4b366-0de5-41dc-a5c4-6c2de359eb3b",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the 'Car, Mouse - Coral' (Product ID: 03749) is suitable for outdoor play, or is it recommended for indoor use only?",
+            "CreatedTime": "2025-08-10T01:38:53.923632",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "61856e19-f43c-4b85-b137-75207c331260",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "4ed4b366-0de5-41dc-a5c4-6c2de359eb3b",
+            "UserId": "user_00064",
+            "session_id": "4ed4b366-0de5-41dc-a5c4-6c2de359eb3b",
             "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The 'Car, Mouse - Coral' is primarily designed for indoor use, as it is a miniature toy intended for play with Maileg mice. While it may be durable, outdoor play is not specifically recommended. For the best experience, it's ideal to keep it indoors. If you need further information or recommendations, feel free to ask! \n\nYou can purchase it for $38.00 [here](https://www.aldeahome.com/products/miniature-grocery-box-copy).",
+            "CreatedTime": "2025-08-10T01:38:55.707231",
+            "ItemId": "03749",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0ac22b9e-f857-48c9-b909-f199e022a8c2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "4ed4b366-0de5-41dc-a5c4-6c2de359eb3b",
+            "UserId": "user_00064",
+            "session_id": "4ed4b366-0de5-41dc-a5c4-6c2de359eb3b",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Can you tell me if the Duck Racer (Product ID: 05922) is suitable for outdoor use, or is it recommended for indoor play only?",
-            "CreatedTime": "2025-08-09T20:22:00.024468",
+            "Content": "Is the 'Car, Mouse - Coral' (Product ID: 03749) suitable for children of all ages, or is there a recommended age range for safe play?",
+            "CreatedTime": "2025-08-10T01:38:56.936639",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "3bc753ba-42d6-43f4-9ce8-74d28385a8b0",
+            "Id": "0b01a942-b99b-4ddf-94d5-9c147a21f2c9",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
+            "DialogueId": "4ed4b366-0de5-41dc-a5c4-6c2de359eb3b",
             "UserId": "user_00064",
-            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
-            "Intent": "정보",
+            "session_id": "4ed4b366-0de5-41dc-a5c4-6c2de359eb3b",
+            "Intent": "추천",
             "Role": "assistant",
-            "Content": "The Duck Racer is designed for competitive fun and is suitable for both indoor and outdoor play. Its gently curved design makes it easy for children to hold and push, making it a versatile toy for various play environments. \n\nYou can purchase the Duck Racer for $15.00 at this link: [Duck Racer](https://www.aldeahome.com/products/duck-racer-3).",
-            "CreatedTime": "2025-08-09T20:22:02.134547",
-            "ItemId": null,
-            "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "005a1b38-47e4-4ee4-9b7b-d08b023e6163",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
-            "UserId": "user_00064",
-            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Is the Duck Racer (Product ID: 05922) durable enough to withstand rough outdoor play, or should I supervise my kids while they use it outside?",
-            "CreatedTime": "2025-08-09T20:22:02.986909",
-            "ItemId": null,
-            "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "c21e5123-b5cd-4cd6-b7b4-a37a812307fa",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
-            "UserId": "user_00064",
-            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "While the Duck Racer is designed for fun and can be used outdoors, it's always a good practice to supervise children during play, especially in rough outdoor conditions. This ensures that they are using the toy safely and helps prevent any potential damage from rough handling.\n\nYou can get the Duck Racer for $15.00 here: [Duck Racer](https://www.aldeahome.com/products/duck-racer-3).",
-            "CreatedTime": "2025-08-09T20:22:04.702902",
-            "ItemId": "05922",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "8c726a7d-6bf5-42e6-947e-967243408e08",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
-            "UserId": "user_00064",
-            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Can you let me know what materials the Duck Racer (Product ID: 05922) is made from? I'm concerned about its safety and durability for outdoor use.",
-            "CreatedTime": "2025-08-09T20:22:05.585491",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "427e02d1-ba71-46a8-8dcc-86787f03acf0",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d0261fdc-b802-437a-abec-98b4992c30b2",
-            "UserId": "user_00064",
-            "session_id": "d0261fdc-b802-437a-abec-98b4992c30b2",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "I currently don't have specific information about the materials used in the Duck Racer. However, toys designed for outdoor play are typically made from durable and safe materials suitable for children. It's always a good idea to check the product details or packaging for specific material information, especially if safety is a concern.\n\nYou can still purchase the Duck Racer for $15.00 at this link: [Duck Racer](https://www.aldeahome.com/products/duck-racer-3). If you have any safety concerns, consider reaching out to the manufacturer for more detailed material specifications.",
-            "CreatedTime": "2025-08-09T20:22:09.682319",
-            "ItemId": "05922",
+            "Content": "The 'Car, Mouse - Coral' is a toy designed for children, but specific age recommendations are not provided in the product information. Generally, it is best suited for children who can safely play with small toys, typically ages 3 and up, to avoid any choking hazards. Always supervise young children during play. \n\nIf you decide to purchase, it is available for $38.00 [here](https://www.aldeahome.com/products/miniature-grocery-box-copy).",
+            "CreatedTime": "2025-08-10T01:38:59.082965",
+            "ItemId": "03749",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.204824"
+    "profile_generated_at": "2025-08-10T01:53:50.872473"
 }

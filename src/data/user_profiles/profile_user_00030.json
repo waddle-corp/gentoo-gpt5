@@ -1,147 +1,119 @@
 {
     "user_id": "user_00030",
     "raw_engagement_score": 25,
-    "normalized_engagement_score": 16,
+    "normalized_engagement_score": 15,
     "activities": [
         {
-            "id": "fcfe4ebc-7f47-4f8c-ace7-0b7f1c4278bb",
+            "id": "951b3706-6eba-4ffa-81de-b4b70602b468",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00030",
-            "event_name": "login",
+            "event_name": "product_view",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.168.99"
+                "product_id": "06286",
+                "category": "ornaments",
+                "product_name": "Sea Animal Finger Puppet",
+                "price": 11.0,
+                "product_url": "https://www.aldeahome.com/products/assorted-sea-animal-finger-puppet-set",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/7a17a1dbe668391b2b69e6fbf12f65475de6ac8034e9bedd4715e204d408d420.jpg?v=1731602300",
+                "view_duration_seconds": 15
             },
-            "created_time": "2025-08-09T20:05:50.685889"
+            "created_time": "2025-08-10T01:32:25.391014"
         },
         {
-            "id": "46a7cbdb-7474-4890-b701-742f7ea0bd16",
+            "id": "3a85a0f6-b24b-4820-8e65-787e51cedaea",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00030",
-            "event_name": "add_to_cart",
+            "event_name": "search",
             "event_data": {
-                "product_id": "05858",
-                "quantity": 2,
-                "price": 36.0
+                "query": "usa giant poster",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.685893"
+            "created_time": "2025-08-10T01:32:25.393403"
         },
         {
-            "id": "01b34faa-f0f7-49ad-83c1-55562ccef6c0",
+            "id": "bd1011f5-25db-4074-b843-19587b166dd0",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00030",
-            "event_name": "login",
+            "event_name": "search",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.88.234"
+                "query": "Bartholomew Bear Blankie",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.685898"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-10T01:32:25.395715"
+        },
         {
-            "review_id": "4c64ef11-6bf1-4831-85bd-c2964daae339",
-            "customer_id": "user_00030",
-            "product_id": "05386",
-            "rating": 2,
-            "review_title": "Do not recommend",
-            "review_content": "The quality of Blush Pink Diaper Pail wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2025-02-23T20:52:52.182133",
-            "is_deleted": false
+            "id": "2f3b5b84-b547-41cd-a044-9388aab40d4c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00030",
+            "event_name": "search",
+            "event_data": {
+                "query": "추천",
+                "search_results_count": 0,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.397773"
+        },
+        {
+            "id": "22ed9f00-f8f0-4559-a673-1917a2c421cb",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00030",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00030_397777",
+                "total_amount": 7.0,
+                "items": [
+                    {
+                        "product_id": "00913",
+                        "quantity": 1,
+                        "price": 7.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.397782"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "af13a371-48db-47c8-92e2-8060e004941b",
+            "Id": "3e27bedc-0918-485b-a2fb-34697a909a50",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
+            "DialogueId": "5b167fe6-47d2-4bef-bd5b-6b1f53160beb",
             "UserId": "user_00030",
-            "session_id": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
-            "Intent": "정보",
+            "session_id": "5b167fe6-47d2-4bef-bd5b-6b1f53160beb",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Can you tell me more about the materials used in the Fantasy Blocks (Product ID: 02713)? I'm curious if they're safe for children.",
-            "CreatedTime": "2025-08-09T20:18:15.410082",
+            "Content": "Can you tell me more about the assorted styles available for the Lumberjack Christmas Ornament (Product ID: 02957)?",
+            "CreatedTime": "2025-08-10T01:35:51.662577",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "577cb628-0bbb-4abd-abff-86a3e7a39965",
+            "Id": "d37e9b1f-9324-427c-acc8-66c1d8efeeab",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
+            "DialogueId": "5b167fe6-47d2-4bef-bd5b-6b1f53160beb",
             "UserId": "user_00030",
-            "session_id": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
+            "session_id": "5b167fe6-47d2-4bef-bd5b-6b1f53160beb",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Fantasy Blocks are made from high-quality materials that are safe for children. While specific material details are not provided, products from PlanToys, the manufacturer, are known for their commitment to using sustainable, non-toxic materials that are free from harmful chemicals. This ensures that the blocks are safe for kids to play with. If you're interested in purchasing, they are priced at $50.00. You can find them here: [Fantasy Blocks](https://www.aldeahome.com/products/fantasy-blocks).",
-            "CreatedTime": "2025-08-09T20:18:17.391774",
-            "ItemId": "02713",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "3684b5f6-ac40-487a-b5b3-75606ff849bf",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
-            "UserId": "user_00030",
-            "session_id": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "Are the Fantasy Blocks (Product ID: 02713) suitable for toddlers, or are they recommended for older children?",
-            "CreatedTime": "2025-08-09T20:18:18.276854",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "cefca097-9482-4773-96e9-f6294fd72cc4",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
-            "UserId": "user_00030",
-            "session_id": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Fantasy Blocks are suitable for toddlers as they are designed to be safe and engaging for young children. The set consists of 60 pieces, which encourages creativity and imaginative play, making them ideal for toddlers and older children alike. If you're considering a purchase, they are priced at $50.00. You can view them here: [Fantasy Blocks](https://www.aldeahome.com/products/fantasy-blocks).",
-            "CreatedTime": "2025-08-09T20:18:20.091947",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "8a716a4b-cc12-4f3f-9429-159a953ffd25",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
-            "UserId": "user_00030",
-            "session_id": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Are the Fantasy Blocks (Product ID: 02713) compatible with other building toys, or can they be used on their own?",
-            "CreatedTime": "2025-08-09T20:18:21.041404",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0aa41d38-1b59-4be7-b6b6-17c01e16aa87",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
-            "UserId": "user_00030",
-            "session_id": "b163bc70-fb1a-49d7-8e93-d29c0b226fe8",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Fantasy Blocks can be used on their own for imaginative play and creativity. While they are primarily designed as standalone building toys, many children enjoy combining them with other building toys to create even more elaborate structures and scenes. This versatility allows for enhanced playtime experiences. If you're interested, the price is $50.00. You can find more details here: [Fantasy Blocks](https://www.aldeahome.com/products/fantasy-blocks).",
-            "CreatedTime": "2025-08-09T20:18:22.943856",
-            "ItemId": "02713",
+            "Content": "The Lumberjack Christmas Ornament (Product ID: 02957) comes in assorted styles, but specific details about the different styles are not provided. Each ornament is sold individually, allowing you to choose the one that best fits your holiday decor. \n\nYou can view and purchase the ornament for $20.00 at this link: [Lumberjack Christmas Ornament](https://www.aldeahome.com/products/lumberjack-christmas-ornament). \n\nIf you have any other questions, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:35:54.195396",
+            "ItemId": "02957",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.190619"
+    "profile_generated_at": "2025-08-10T01:53:50.857823"
 }

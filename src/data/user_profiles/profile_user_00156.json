@@ -1,0 +1,54 @@
+{
+    "user_id": "user_00156",
+    "raw_engagement_score": 9,
+    "normalized_engagement_score": 6,
+    "activities": [
+        {
+            "id": "d447441b-ea39-4794-bc4c-4c93a6756f41",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00156",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03531",
+                "quantity": 3,
+                "price": 18.0
+            },
+            "created_time": "2025-08-10T01:32:25.588257"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "04f44edd-6bc9-4fd7-9fa2-f82a5e2c8c98",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1e9ae3f2-dee1-4f45-b521-c319bacce74d",
+            "UserId": "user_00156",
+            "session_id": "1e9ae3f2-dee1-4f45-b521-c319bacce74d",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the Luxe Baby Blanket (Product ID: 01340) available in different colors or patterns?",
+            "CreatedTime": "2025-08-10T01:48:15.810417",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4d126d46-0919-4255-ae21-5b270b1f01dd",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "1e9ae3f2-dee1-4f45-b521-c319bacce74d",
+            "UserId": "user_00156",
+            "session_id": "1e9ae3f2-dee1-4f45-b521-c319bacce74d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Luxe Baby Blanket (Product ID: 01340) is not specified to be available in different colors or patterns based on the provided information. It is described as a luxurious blanket made from chic faux fur with a satin border. For any further details on colors or patterns, please check the product page or reach out to customer support. \n\nYou can view the Luxe Baby Blanket here: [Luxe Baby Blanket](https://www.aldeahome.com/products/luxe-baby-blanket). The price is $94.00.",
+            "CreatedTime": "2025-08-10T01:48:18.522128",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.903157"
+}

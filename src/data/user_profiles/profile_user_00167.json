@@ -1,0 +1,169 @@
+{
+    "user_id": "user_00167",
+    "raw_engagement_score": 38,
+    "normalized_engagement_score": 23,
+    "activities": [
+        {
+            "id": "7696ecef-4797-4b65-852d-4f09e497d324",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00167",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.142.51"
+            },
+            "created_time": "2025-08-10T01:32:25.607132"
+        },
+        {
+            "id": "886b938a-ea44-4179-895b-6e75fb25aff3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00167",
+            "event_name": "search",
+            "event_data": {
+                "query": "Dusty Pony (Vegan Angora) Soft Toy 14\"/ 36cm",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.609365"
+        },
+        {
+            "id": "070eef69-acc4-4fd3-9eea-bc13bde711c8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00167",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "05051",
+                "quantity": 3,
+                "price": 10.5
+            },
+            "created_time": "2025-08-10T01:32:25.609369"
+        },
+        {
+            "id": "253a9745-833e-4e13-b65d-5d632381177b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00167",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00167_609372",
+                "total_amount": 69.99,
+                "items": [
+                    {
+                        "product_id": "02501",
+                        "quantity": 1,
+                        "price": 69.99
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.609381"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "ecb4e7c0-f318-495e-b11f-6b329a083b83",
+            "customer_id": "user_00167",
+            "product_id": "07790",
+            "rating": 4,
+            "review_title": "Best purchase ever",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2024-09-29T01:32:54.169114",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "fab1e1c9-0208-492e-9b00-93bc31ad8a98",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "UserId": "user_00167",
+            "session_id": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Britax Willow S Infant Car Seat + Alpine Base (Product ID: 05672) is suitable for newborns?",
+            "CreatedTime": "2025-08-10T01:49:15.952903",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "58c19eb1-f7c0-44c5-bdf8-965aefae3e8e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "UserId": "user_00167",
+            "session_id": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "Yes, the Britax Willow S Infant Car Seat + Alpine Base is suitable for newborns as it is designed for rear-facing use, which is recommended for infants. It features a 5-point harness and a RightSize system that allows for adjustments at the hips, shoulders, and between the legs, ensuring a secure fit for your newborn. \n\nIf you need more information or would like to purchase it, the price is $269.99, and you can find it here: [Britax Willow S Infant Car Seat + Alpine Base](https://www.aldeahome.com/products/britax-willow-s-infant-car-seat-with-alpine-base).",
+            "CreatedTime": "2025-08-10T01:49:19.096189",
+            "ItemId": "05672",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7d3a1473-8707-4818-9be6-13e47ee0ee39",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "UserId": "user_00167",
+            "session_id": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "What is the weight limit for the Britax Willow S Infant Car Seat + Alpine Base (Product ID: 05672), and how long can my baby use it before needing to switch to a different car seat?",
+            "CreatedTime": "2025-08-10T01:49:20.672356",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "3a7a2539-d458-4fdf-85a6-c2637e7bb54c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "UserId": "user_00167",
+            "session_id": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Britax Willow S Infant Car Seat + Alpine Base is designed to accommodate infants up to 35 pounds. Typically, you can use this car seat for your baby until they reach the weight limit or until their head is within one inch of the top of the car seat. This usually allows for use until about 1 to 2 years of age, depending on the child's growth. \n\nFor safety, it's important to transition to a different car seat that suits their size and age once they exceed these limits. If you have any more questions or need assistance, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:49:23.333254",
+            "ItemId": "05672",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "abfe2f05-63d2-447e-91f4-1f7810b81d6b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "UserId": "user_00167",
+            "session_id": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Britax Willow S Infant Car Seat + Alpine Base (Product ID: 05672) is easy to install in different vehicles?",
+            "CreatedTime": "2025-08-10T01:49:24.248070",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b4e1b912-ed99-4aed-8562-6dcf7e814774",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "UserId": "user_00167",
+            "session_id": "29c3611b-5e23-41f4-9abf-e1e98d96f35a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Britax Willow S Infant Car Seat + Alpine Base is designed for easy installation in different vehicles. It features ClickTight technology, which helps ensure that the car seat can be securely installed with confidence on the first try and beyond. This user-friendly installation method allows for a straightforward setup, making it easier for parents to switch the car seat between various vehicles if needed. If you have any other questions or need further assistance, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:49:26.435788",
+            "ItemId": "05672",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.905622"
+}

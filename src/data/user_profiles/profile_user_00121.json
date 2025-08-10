@@ -1,0 +1,141 @@
+{
+    "user_id": "user_00121",
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "b248760e-a795-49e9-abad-b19dc7370ca2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00121",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "00178",
+                "quantity": 1,
+                "price": 44.0
+            },
+            "created_time": "2025-08-10T01:32:25.542577"
+        },
+        {
+            "id": "f0269820-7d9c-4730-a2bf-e14d012c87d7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00121",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "06858",
+                "category": "newborn-basics",
+                "product_name": "Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 3T",
+                "price": 47.5,
+                "product_url": "https://www.aldeahome.com/products/organic-baby-kids-pippa-chambray-short-sleeve-shirt-dress-3t",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/3a2a414cd6145b66f050459e1494a7033e9e3d20634871cc2f024ef4a1733977_0799f1d8-cb86-4c11-9232-e48405ebb243.jpg?v=1745507590",
+                "view_duration_seconds": 96
+            },
+            "created_time": "2025-08-10T01:32:25.542582"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "2f953bfd-4407-4fec-aebd-13b1819fcd7e",
+            "customer_id": "user_00121",
+            "product_id": "06478",
+            "rating": 3,
+            "review_title": "A bit disappointing",
+            "review_content": "Honestly, I had high hopes, but KeaBabies 5-Pack Urban Burp Cloths: Wilderness isn't quite my taste. I'll try something else next time.",
+            "created_at": "2025-06-16T01:32:54.169012",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "c5097b31-5030-43cc-a8ca-c62ed9aae9da",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8029c957-6d82-40de-9a73-4647703867a0",
+            "UserId": "user_00121",
+            "session_id": "8029c957-6d82-40de-9a73-4647703867a0",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can the Veer Infant Car Seat Adapter for &Jog + &Roll Frames (Product ID: 05561) be used with both the &Roll and &Jog frames simultaneously, or is it limited to one at a time?",
+            "CreatedTime": "2025-08-10T01:44:33.424082",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "59590001-ebc9-4a81-aa9d-3de17948c5d6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8029c957-6d82-40de-9a73-4647703867a0",
+            "UserId": "user_00121",
+            "session_id": "8029c957-6d82-40de-9a73-4647703867a0",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Veer Infant Car Seat Adapter for &Jog + &Roll Frames can be used with both frames, but not simultaneously. You can attach it to either the &Roll frame or the &Jog frame, but it is limited to one at a time. \n\nIf you have the Second Seat Adapter Kit, you can use up to two infant car seats on the &Roll frame. \n\nFor more details, you can check the product [here](https://www.aldeahome.com/products/veer-switchback-infant-car-seat-adapter). The price is $49.00.",
+            "CreatedTime": "2025-08-10T01:44:35.372538",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "681bc52e-26c6-4e16-92b5-ffb5c2a65c3a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8029c957-6d82-40de-9a73-4647703867a0",
+            "UserId": "user_00121",
+            "session_id": "8029c957-6d82-40de-9a73-4647703867a0",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "Is the Veer Infant Car Seat Adapter for &Jog + &Roll Frames (Product ID: 05561) compatible with all infant car seat brands, or are there specific models that it works best with?",
+            "CreatedTime": "2025-08-10T01:44:36.447378",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "7d373f3a-50ca-4be3-9a12-879ecd8972a7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8029c957-6d82-40de-9a73-4647703867a0",
+            "UserId": "user_00121",
+            "session_id": "8029c957-6d82-40de-9a73-4647703867a0",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Veer Infant Car Seat Adapter for &Jog + &Roll Frames is designed to work specifically with certain infant car seat models. It is not universally compatible with all brands. For optimal use, it's best to check the manufacturer's specifications or guidelines to see which infant car seats are compatible with this adapter.\n\nIf you need more information, feel free to ask! You can view the product [here](https://www.aldeahome.com/products/veer-switchback-infant-car-seat-adapter) for further details. The price is $49.00.",
+            "CreatedTime": "2025-08-10T01:44:38.440228",
+            "ItemId": "05561",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "eb3ed33f-3a00-4444-802e-48c8ac98978f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8029c957-6d82-40de-9a73-4647703867a0",
+            "UserId": "user_00121",
+            "session_id": "8029c957-6d82-40de-9a73-4647703867a0",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me which specific infant car seat models are compatible with the Veer Infant Car Seat Adapter for &Jog + &Roll Frames (Product ID: 05561)? I'm looking to make sure my car seat will fit properly.",
+            "CreatedTime": "2025-08-10T01:44:42.209467",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "cceaa223-150f-4ba0-92fe-eb82d19b87f0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "8029c957-6d82-40de-9a73-4647703867a0",
+            "UserId": "user_00121",
+            "session_id": "8029c957-6d82-40de-9a73-4647703867a0",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "Unfortunately, I don't have specific information on the exact infant car seat models that are compatible with the Veer Infant Car Seat Adapter for &Jog + &Roll Frames. I recommend checking the manufacturer's website or product manual for a list of compatible infant car seat models to ensure that your car seat will fit properly.\n\nIf you have any other questions, feel free to ask! You can view the product [here](https://www.aldeahome.com/products/veer-switchback-infant-car-seat-adapter), and the price is $49.00.",
+            "CreatedTime": "2025-08-10T01:44:46.286996",
+            "ItemId": "05561",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.893458"
+}

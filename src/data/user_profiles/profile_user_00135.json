@@ -1,0 +1,94 @@
+{
+    "user_id": "user_00135",
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 12,
+    "activities": [
+        {
+            "id": "84aa1f94-d04b-49b4-ba4c-b413318145d6",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00135",
+            "event_name": "search",
+            "event_data": {
+                "query": "Cybex Aton G Swivel Infant Car Seat",
+                "search_results_count": 2,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.556365"
+        },
+        {
+            "id": "36878114-7adb-44e4-9c22-d74199929a22",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00135",
+            "event_name": "search",
+            "event_data": {
+                "query": "Dr. Set with Wooden Stethoscope",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.558654"
+        },
+        {
+            "id": "385d0bea-5f14-40f4-bdc1-7f455d738047",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00135",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00135_558657",
+                "total_amount": 35.0,
+                "items": [
+                    {
+                        "product_id": "05439",
+                        "quantity": 1,
+                        "price": 25.0
+                    },
+                    {
+                        "product_id": "04666",
+                        "quantity": 1,
+                        "price": 10.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.558663"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "67dafa31-9fca-487f-a75b-c2a4ea346d31",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "73bd08a0-7f4c-4577-b636-f7d2ad7487fa",
+            "UserId": "user_00135",
+            "session_id": "73bd08a0-7f4c-4577-b636-f7d2ad7487fa",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Hamish Hedgehog (Product ID: 06401) suitable for young children, and does it have any safety certifications?",
+            "CreatedTime": "2025-08-10T01:46:26.544605",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ee6ca3f9-6d33-4562-b1aa-99601f158c4f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "73bd08a0-7f4c-4577-b636-f7d2ad7487fa",
+            "UserId": "user_00135",
+            "session_id": "73bd08a0-7f4c-4577-b636-f7d2ad7487fa",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Hamish Hedgehog is designed as a soft toy and is generally suitable for young children. However, it is important to check specific safety certifications based on the manufacturer's guidelines or packaging. For the best information regarding safety certifications, please refer to the product details on the retailer's website or contact the manufacturer directly. \n\nIf you would like to purchase the Hamish Hedgehog, it is priced at $75.00, and you can find it [here](https://www.aldeahome.com/products/hamish-hedgehog).",
+            "CreatedTime": "2025-08-10T01:46:29.340948",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.897836"
+}

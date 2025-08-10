@@ -1,0 +1,145 @@
+{
+    "user_id": "user_00200",
+    "raw_engagement_score": 31,
+    "normalized_engagement_score": 19,
+    "activities": [
+        {
+            "id": "4ff25fb0-11e5-4bed-8f76-12816eeb05d9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00200",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00200_656929",
+                "total_amount": 83.0,
+                "items": [
+                    {
+                        "product_id": "04589",
+                        "quantity": 1,
+                        "price": 65.0
+                    },
+                    {
+                        "product_id": "04161",
+                        "quantity": 1,
+                        "price": 18.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.656933"
+        },
+        {
+            "id": "2d2f1390-8f94-4a59-b5b2-e520b53df5cc",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00200",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00200_656935",
+                "total_amount": 24.99,
+                "items": [
+                    {
+                        "product_id": "05635",
+                        "quantity": 1,
+                        "price": 24.99
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.656940"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "f4495e94-b4bf-400f-b95c-04b0b6ef2759",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "UserId": "user_00200",
+            "session_id": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the scent profile of the Good Vibes Reed Diffuser (Product ID: 00112) and how long the fragrance typically lasts?",
+            "CreatedTime": "2025-08-10T01:52:14.431684",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4dd78b86-a0cc-4928-8db5-3bc1e972381d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "UserId": "user_00200",
+            "session_id": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Good Vibes Reed Diffuser features a delightful scent profile that includes top notes of rhubarb and orange, middle notes of ginger and cinnamon, and base notes of cedar, vanilla, and clover. This combination creates a fruity and musky fragrance that is both uplifting and inviting.\n\nThe diffuser comes with natural reeds that can last up to 4 months, providing a consistent and enjoyable aroma for your space during that time. \n\nIf you're interested in purchasing, it is priced at $50.00. You can find more details and make a purchase at this link: [Good Vibes Reed Diffuser](https://www.aldeahome.com/products/good-vibes-reed-diffuser).",
+            "CreatedTime": "2025-08-10T01:52:17.221819",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8ecb96b5-e5f4-49a2-8354-479c32e1609c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "UserId": "user_00200",
+            "session_id": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any specific tips on how to maximize the fragrance longevity of the Good Vibes Reed Diffuser (Product ID: 00112)? Also, can I adjust the intensity of the scent?",
+            "CreatedTime": "2025-08-10T01:52:18.832721",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "528d0c92-d98f-431a-b9f0-07ab96fe2799",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "UserId": "user_00200",
+            "session_id": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "To maximize the fragrance longevity of the Good Vibes Reed Diffuser, consider the following tips:\n\n1. **Placement**: Position the diffuser in areas with good airflow, such as near a fan or open window, to help disperse the scent more effectively.\n\n2. **Turn the Reeds**: Regularly flip the reeds (about once a week) to expose the saturated ends to the air. This will help release the fragrance and keep it fresh.\n\n3. **Avoid Direct Sunlight**: Keep the diffuser out of direct sunlight and away from heat sources, as this can cause the liquid to evaporate more quickly.\n\n4. **Limit Exposure to Dust**: Keep the area around the diffuser clean to prevent dust buildup, which can affect the scent throw.\n\nAs for adjusting the intensity of the scent, you can control it by adjusting the number of reeds you use. For a stronger fragrance, use all the reeds provided; for a milder scent, use fewer reeds.\n\nIf you're interested in purchasing the Good Vibes Reed Diffuser, it is priced at $50.00. You can find more information and make a purchase here: [Good Vibes Reed Diffuser](https://www.aldeahome.com/products/good-vibes-reed-diffuser",
+            "CreatedTime": "2025-08-10T01:52:24.374045",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "1ea0f3c4-c593-4ed4-90ca-df6d7494f157",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "UserId": "user_00200",
+            "session_id": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Good Vibes Reed Diffuser (Product ID: 00112) comes in different sizes or variations, or is it only available in the 7fl oz size?",
+            "CreatedTime": "2025-08-10T01:52:25.592473",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2b5aa0d3-d92e-4a3e-b519-6b98b08ceddf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "UserId": "user_00200",
+            "session_id": "aa64c85a-066d-4c79-b322-7d5abdfe2fbc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Good Vibes Reed Diffuser (Product ID: 00112) is only available in the 7fl oz size. There are no different sizes or variations offered for this product. If you're interested in purchasing it, it is priced at $50.00. You can find more details and make a purchase here: [Good Vibes Reed Diffuser](https://www.aldeahome.com/products/good-vibes-reed-diffuser).",
+            "CreatedTime": "2025-08-10T01:52:27.846435",
+            "ItemId": "00112",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.912709"
+}

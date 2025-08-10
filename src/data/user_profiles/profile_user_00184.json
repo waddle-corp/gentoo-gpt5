@@ -1,0 +1,35 @@
+{
+    "user_id": "user_00184",
+    "raw_engagement_score": 10,
+    "normalized_engagement_score": 6,
+    "activities": [
+        {
+            "id": "64b97cb7-50fa-41fc-bd58-48aefcf591b9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00184",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00184_636529",
+                "total_amount": 60.94,
+                "items": [
+                    {
+                        "product_id": "00738",
+                        "quantity": 1,
+                        "price": 34.99
+                    },
+                    {
+                        "product_id": "04417",
+                        "quantity": 1,
+                        "price": 25.95
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.636534"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.909515"
+}

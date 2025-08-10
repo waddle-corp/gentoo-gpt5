@@ -1,111 +1,41 @@
 {
     "user_id": "user_00086",
-    "raw_engagement_score": 41,
-    "normalized_engagement_score": 27,
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 11,
     "activities": [
         {
-            "id": "394d964a-b94b-4b45-913b-b38b476bdbb1",
+            "id": "341dfe59-158a-41c0-96bf-b9ea7d66907f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00086",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00086_771344",
-                "total_amount": 42.0,
+                "order_id": "ORDER_user_00086_487217",
+                "total_amount": 10.0,
                 "items": [
                     {
-                        "product_id": "02980",
+                        "product_id": "05697",
                         "quantity": 1,
-                        "price": 17.0
-                    },
-                    {
-                        "product_id": "04830",
-                        "quantity": 1,
-                        "price": 25.0
+                        "price": 10.0
                     }
                 ],
-                "payment_method": "naver_pay"
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.771352"
-        },
-        {
-            "id": "088928db-cb57-477a-a603-9f41987aede1",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00086",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "04618",
-                "category": "exclude",
-                "product_name": "toddler backpack dinosaur",
-                "price": 34.95,
-                "product_url": "https://www.aldeahome.com/products/toddler-backpack-dinosaur",
-                "thumbnail_url": "",
-                "view_duration_seconds": 55
-            },
-            "created_time": "2025-08-09T20:05:50.771358"
-        },
-        {
-            "id": "4dcf12bd-efa0-4027-937d-d6399abfdced",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00086",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00086_771361",
-                "total_amount": 88.0,
-                "items": [
-                    {
-                        "product_id": "07188",
-                        "quantity": 1,
-                        "price": 88.0
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.771366"
-        },
-        {
-            "id": "177af41b-6342-418c-8de4-aaa06e5341e1",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00086",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.254.201"
-            },
-            "created_time": "2025-08-09T20:05:50.771370"
-        },
-        {
-            "id": "045407a8-f722-4c5a-9bf4-72c3f22ad6bf",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00086",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00086_771372",
-                "total_amount": 24.0,
-                "items": [
-                    {
-                        "product_id": "06675",
-                        "quantity": 1,
-                        "price": 24.0
-                    }
-                ],
-                "payment_method": "credit_card"
-            },
-            "created_time": "2025-08-09T20:05:50.771377"
+            "created_time": "2025-08-10T01:32:25.487222"
         }
     ],
     "reviews": [
         {
-            "review_id": "5a47ecd7-4d70-4c34-ac4b-b5e315904d4e",
+            "review_id": "cd5e90b9-b546-4e77-bd22-03fbe367aa2e",
             "customer_id": "user_00086",
-            "product_id": "07136",
+            "product_id": "04932",
             "rating": 4,
-            "review_title": "Highly recommend",
+            "review_title": "Love it!",
             "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2024-09-25T20:52:52.182317",
+            "created_at": "2025-01-21T01:32:54.168927",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.211526"
+    "profile_generated_at": "2025-08-10T01:53:50.881091"
 }

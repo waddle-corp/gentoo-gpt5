@@ -1,172 +1,93 @@
 {
     "user_id": "user_00028",
-    "raw_engagement_score": 33,
-    "normalized_engagement_score": 22,
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "f64c424b-16be-4919-a716-9ed4effd46c9",
+            "id": "e492ca07-09cd-4ba3-a898-6fac64519292",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00028",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03835",
+                "quantity": 3,
+                "price": 129.95
+            },
+            "created_time": "2025-08-10T01:32:25.390980"
+        },
+        {
+            "id": "f2cd59bc-3966-4670-9301-cf18bcbbc213",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00028",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.59.134"
+            },
+            "created_time": "2025-08-10T01:32:25.390984"
+        },
+        {
+            "id": "d2abab1d-8283-4149-bc40-deaeff4c6047",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00028",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00028_681059",
-                "total_amount": 17.99,
+                "order_id": "ORDER_user_00028_390990",
+                "total_amount": 327.5,
                 "items": [
                     {
-                        "product_id": "07689",
+                        "product_id": "07580",
                         "quantity": 1,
-                        "price": 17.99
+                        "price": 42.5
+                    },
+                    {
+                        "product_id": "01137",
+                        "quantity": 1,
+                        "price": 285.0
                     }
                 ],
-                "payment_method": "kakao_pay"
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T20:05:50.681065"
+            "created_time": "2025-08-10T01:32:25.390994"
         },
         {
-            "id": "df8abe29-74b9-4311-bfd0-d16bae66c6a0",
+            "id": "670b45d0-a56d-42e8-8166-2076baf47823",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00028",
             "event_name": "login",
             "event_data": {
                 "login_method": "email_password",
-                "ip_address": "192.168.19.135"
+                "ip_address": "192.168.12.107"
             },
-            "created_time": "2025-08-09T20:05:50.681069"
+            "created_time": "2025-08-10T01:32:25.390998"
         },
         {
-            "id": "967d33c4-6045-42ac-bc83-6e562d018c3e",
+            "id": "ad2be8cc-fae3-40d1-93c6-c88d86a7d971",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00028",
-            "event_name": "product_view",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "00339",
-                "category": "arts-crafts",
-                "product_name": "Double Sided Twin Crayons",
-                "price": 7.95,
-                "product_url": "https://www.aldeahome.com/products/double-sided-twin-crayons",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/DJ8874_TwinCrayons_2.jpg?v=1588116355",
-                "view_duration_seconds": 82
+                "order_id": "ORDER_user_00028_391001",
+                "total_amount": 42.99,
+                "items": [
+                    {
+                        "product_id": "06182",
+                        "quantity": 1,
+                        "price": 17.99
+                    },
+                    {
+                        "product_id": "02705",
+                        "quantity": 1,
+                        "price": 25.0
+                    }
+                ],
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T20:05:50.681073"
-        },
-        {
-            "id": "4aef453f-631b-4a69-b355-0a71789e8685",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00028",
-            "event_name": "search",
-            "event_data": {
-                "query": "Beaba Multi Milk Baby Bottle & Jar Warmer",
-                "search_results_count": 2,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T20:05:50.683422"
-        },
-        {
-            "id": "1b65142c-c2ab-4359-a5a0-01bbf635c965",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00028",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "05724",
-                "quantity": 2,
-                "price": 34.99
-            },
-            "created_time": "2025-08-09T20:05:50.683432"
+            "created_time": "2025-08-10T01:32:25.391005"
         }
     ],
     "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "8cfa2bf7-830c-4bfa-b326-addbc278f732",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "UserId": "user_00028",
-            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me how long the scent of the Mokara Reed Diffuser (Product ID: 07815) typically lasts in a room?",
-            "CreatedTime": "2025-08-09T20:18:02.939608",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "02a40966-aa6f-4360-877d-e3a5dc32f32e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "UserId": "user_00028",
-            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Mokara Reed Diffuser typically lasts for 4-6 months, providing a continuous and pleasant fragrance for your space. If you're looking to enhance your home with this beautiful scent, it's priced at $30.00. You can find more information and purchase it [here](https://www.aldeahome.com/products/mokara-100ml-diffuser).",
-            "CreatedTime": "2025-08-09T20:18:04.859829",
-            "ItemId": "07815",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "13ed9b01-a070-45ec-9a92-8b0547631c2f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "UserId": "user_00028",
-            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Is the fragrance of the Mokara Reed Diffuser (Product ID: 07815) strong enough for larger spaces, or is it better suited for smaller rooms?",
-            "CreatedTime": "2025-08-09T20:18:05.806636",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "09ff992e-c5cd-4660-947d-48e48c8c9b1d",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "UserId": "user_00028",
-            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Mokara Reed Diffuser is designed to create a signature fragrance in spaces requiring minimal effort, which means it can work well in both small and larger rooms. However, its effectiveness may vary based on room size and ventilation. For larger spaces, you might consider placing multiple diffusers to achieve a more pronounced scent. It's priced at $30.00, and you can find it [here](https://www.aldeahome.com/products/mokara-100ml-diffuser).",
-            "CreatedTime": "2025-08-09T20:18:08.163443",
-            "ItemId": "07815",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0aa6fafc-1113-4f80-860c-ecdcdc73b657",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "UserId": "user_00028",
-            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Does the Mokara Reed Diffuser (Product ID: 07815) come in different sizes or scents, or is it only available in this specific formulation?",
-            "CreatedTime": "2025-08-09T20:18:09.171519",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a8a69d2f-b400-4a60-a1fe-5d5902a3411d",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "UserId": "user_00028",
-            "session_id": "1249aac7-8fb5-42df-8980-cb2ce5e0d9b3",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Mokara Reed Diffuser (Product ID: 07815) is only available in this specific formulation and size. It features a unique scent blend of orchid, tuberose, freesia, and white lily. If you're interested, it's priced at $30.00, and you can find more details [here](https://www.aldeahome.com/products/mokara-100ml-diffuser).",
-            "CreatedTime": "2025-08-09T20:18:11.207896",
-            "ItemId": "07815",
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.189641"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.856664"
 }

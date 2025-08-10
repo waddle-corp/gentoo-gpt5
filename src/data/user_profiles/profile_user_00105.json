@@ -1,0 +1,94 @@
+{
+    "user_id": "user_00105",
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "0ee0641c-0744-4bdb-be18-a03b1238614f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00105",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00105_512322",
+                "total_amount": 60.99,
+                "items": [
+                    {
+                        "product_id": "07763",
+                        "quantity": 1,
+                        "price": 44.0
+                    },
+                    {
+                        "product_id": "04552",
+                        "quantity": 1,
+                        "price": 16.99
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.512327"
+        },
+        {
+            "id": "9a7fc39f-dce1-44e3-b802-b377807b5d13",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00105",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "06892",
+                "category": "newborn-basics",
+                "product_name": "HAWKSBILL: Organic Romper/Jumpsuit-Turtle print",
+                "price": 42.0,
+                "product_url": "https://www.aldeahome.com/products/hawksbill-organic-romper-jumpsuit-turtle-print",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/1e91b366b2a9a8f87795e309b5e9e60472291962fcece42a655c051112f93664.jpg?v=1744641993",
+                "view_duration_seconds": 99
+            },
+            "created_time": "2025-08-10T01:32:25.512331"
+        },
+        {
+            "id": "ccffeb4f-e27e-4691-b056-4f41c2955699",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00105",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "00664",
+                "quantity": 2,
+                "price": 24.95
+            },
+            "created_time": "2025-08-10T01:32:25.512334"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "d37a2631-62cc-4fae-8c8f-e986918fe75c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a2d90618-e0c8-4a5c-a979-34fe28506e8c",
+            "UserId": "user_00105",
+            "session_id": "a2d90618-e0c8-4a5c-a979-34fe28506e8c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the materials used in the San Francisco Giants - Baby Rattles 2-Pack (Product ID: 04844)? Are they safe for infants?",
+            "CreatedTime": "2025-08-10T01:42:40.251252",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c1778885-a2f6-490e-91d7-392b9bca88f4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a2d90618-e0c8-4a5c-a979-34fe28506e8c",
+            "UserId": "user_00105",
+            "session_id": "a2d90618-e0c8-4a5c-a979-34fe28506e8c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific information about the materials used in the San Francisco Giants - Baby Rattles 2-Pack (Product ID: 04844). However, since these rattles are designed for infants, they are typically made with child-safe materials that are non-toxic and safe for babies to handle. \n\nThese rattles are intended to promote growth and development through play, helping with grasping and fine motor skills. If you have concerns about safety, I recommend checking the product details on the manufacturer's website or contacting the seller directly for more information.\n\nYou can find the product here: [San Francisco Giants - Baby Rattles 2-Pack](https://www.aldeahome.com/products/san-francisco-giants-baby-rattles-2-pack) for additional details. The price is $18.00.",
+            "CreatedTime": "2025-08-10T01:42:43.110733",
+            "ItemId": "04844",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.887530"
+}

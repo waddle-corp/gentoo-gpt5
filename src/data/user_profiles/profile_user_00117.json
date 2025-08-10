@@ -1,0 +1,140 @@
+{
+    "user_id": "user_00117",
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 15,
+    "activities": [
+        {
+            "id": "593aaf52-8a2e-4db1-a521-7be8c0d99e45",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00117",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "05307",
+                "quantity": 3,
+                "price": 170.0
+            },
+            "created_time": "2025-08-10T01:32:25.535660"
+        },
+        {
+            "id": "6f9e1871-7db2-4cb6-919e-eca8a8fa6e87",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00117",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03657",
+                "quantity": 3,
+                "price": 20.0
+            },
+            "created_time": "2025-08-10T01:32:25.535663"
+        },
+        {
+            "id": "3cee09e0-36a5-4040-8f41-09171efd8dd7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00117",
+            "event_name": "search",
+            "event_data": {
+                "query": "WAFFLE//DOG CLOTHING//APPAREL: Cream / L",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.537905"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "d1bbf42f-6165-474c-adce-874ce022b6a6",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "UserId": "user_00117",
+            "session_id": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can the 7\" Silicone Suction Plate - 2 Pack (Product ID: 03334) be used in the dishwasher for easy cleaning?",
+            "CreatedTime": "2025-08-10T01:44:20.887966",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7365619e-f64e-49f9-9068-536fc1046ab8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "UserId": "user_00117",
+            "session_id": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the 7\" Silicone Suction Plate - 2 Pack can be used in the dishwasher for easy cleaning. They are made with premium, food-grade silicone, making them durable and convenient for everyday use. \n\nThe price is $26.00, and you can find more information and purchase them [here](https://www.aldeahome.com/products/7-silicone-suction-plate-2-pack).",
+            "CreatedTime": "2025-08-10T01:44:22.581742",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "098c2a09-233f-4cbf-97a2-abbd37c1c17f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "UserId": "user_00117",
+            "session_id": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Are the 7\" Silicone Suction Plates (Product ID: 03334) available in different colors, or do they only come in one color option?",
+            "CreatedTime": "2025-08-10T01:44:23.324808",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9913cae4-71a8-4374-a4da-8279efe9b44d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "UserId": "user_00117",
+            "session_id": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The product information provided does not specify if the 7\" Silicone Suction Plates (Product ID: 03334) are available in different colors. It is best to check the product page for any additional details or color options. You can view more information and purchase them [here](https://www.aldeahome.com/products/7-silicone-suction-plate-2-pack).",
+            "CreatedTime": "2025-08-10T01:44:25.646700",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bef45b62-37c2-402b-a23c-bfcd75551667",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "UserId": "user_00117",
+            "session_id": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any specific care instructions for the 7\" Silicone Suction Plate - 2 Pack (Product ID: 03334) to ensure they last a long time?",
+            "CreatedTime": "2025-08-10T01:44:26.465800",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "dd82afad-3792-49ae-9a47-b1daafdfa582",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "UserId": "user_00117",
+            "session_id": "60d3fd68-93c9-4f97-beeb-f2b31346bf83",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The specific care instructions for the 7\" Silicone Suction Plate - 2 Pack (Product ID: 03334) are not detailed in the information provided. However, generally, silicone products should be cleaned in the dishwasher or can be hand washed with mild soap and water. To ensure longevity, avoid using sharp utensils that could damage the surface. \n\nFor more information and to purchase, you can visit the product page [here](https://www.aldeahome.com/products/7-silicone-suction-plate-2-pack).",
+            "CreatedTime": "2025-08-10T01:44:28.587284",
+            "ItemId": "03334",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.892403"
+}

@@ -1,126 +1,150 @@
 {
     "user_id": "user_00008",
-    "raw_engagement_score": 24,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "87e33efa-6076-4a47-a9df-b06704cbedd8",
+            "id": "c62da077-6b1e-4921-8e7a-d753736bc497",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00008",
-            "event_name": "purchase_completed",
+            "event_name": "login",
             "event_data": {
-                "order_id": "ORDER_user_00008_644764",
-                "total_amount": 31.99,
-                "items": [
-                    {
-                        "product_id": "01464",
-                        "quantity": 1,
-                        "price": 7.99
-                    },
-                    {
-                        "product_id": "05019",
-                        "quantity": 1,
-                        "price": 24.0
-                    }
-                ],
-                "payment_method": "kakao_pay"
+                "login_method": "social_google",
+                "ip_address": "192.168.139.195"
             },
-            "created_time": "2025-08-09T20:05:50.644783"
+            "created_time": "2025-08-10T01:32:25.368199"
+        },
+        {
+            "id": "011f6970-ffbc-4d3f-ba5a-3fae97f994bb",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00008",
+            "event_name": "search",
+            "event_data": {
+                "query": "Evil Eye Warmies",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.370436"
+        },
+        {
+            "id": "cb325c15-c873-4c0b-bef5-9c0d6ec915e2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00008",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06240",
+                "quantity": 2,
+                "price": 20.0
+            },
+            "created_time": "2025-08-10T01:32:25.370440"
+        },
+        {
+            "id": "c4713bc0-d742-42f8-99d5-211ccceb0ba5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00008",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.143.21"
+            },
+            "created_time": "2025-08-10T01:32:25.370444"
         }
     ],
     "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "a212cad9-fd13-4628-917a-b548f1a978f1",
+            "Id": "cb3a6c53-2a1f-4626-9539-5f9ddbf85b4d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
+            "DialogueId": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
             "UserId": "user_00008",
-            "session_id": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
+            "session_id": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "Can you tell me more about the sizing options available for the Bamboo Organic Cotton Sleep & Play Footie - Sandstone (Product ID: 07078)?",
-            "CreatedTime": "2025-08-09T20:16:21.237037",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "a15a647b-f493-4308-a549-bd7d0411291f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
-            "UserId": "user_00008",
-            "session_id": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Bamboo Organic Cotton Sleep & Play Footie - Sandstone is designed for newborns and is available in sizes suitable for ages 0-6 months. This footie features a luxuriously soft material that is breathable and antimicrobial, making it perfect for your little one. For more details about the product, you can visit the product page [here](https://www.aldeahome.com/products/bamboo-organic-cotton-sleep-play-footie-sandstone). The price is $38.00.",
-            "CreatedTime": "2025-08-09T20:16:24.060968",
+            "Content": "Is the Fresh & Messy Sippy Cup | Isla the Mermaid (Product ID: 04535) dishwasher safe for easy cleaning?",
+            "CreatedTime": "2025-08-10T01:34:07.488497",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "1dba98f8-6b7e-48e4-b430-5b10ca49141d",
+            "Id": "0ebaf52c-83ad-4288-bbb2-eb8439558e4c",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
+            "DialogueId": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
             "UserId": "user_00008",
-            "session_id": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Are there any care instructions for the Bamboo Organic Cotton Sleep & Play Footie - Sandstone (Product ID: 07078) to ensure it stays in good condition?",
-            "CreatedTime": "2025-08-09T20:16:24.923787",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "7261d870-391a-4b58-9c86-16e05077f70c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
-            "UserId": "user_00008",
-            "session_id": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
+            "session_id": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
             "Intent": "추천",
             "Role": "assistant",
-            "Content": "While specific care instructions are not provided, for Bamboo Organic Cotton items, it's generally recommended to:\n\n- Wash in cold water on a gentle cycle.\n- Use a mild detergent.\n- Avoid bleach.\n- Tumble dry on low or hang to dry to maintain softness and shape.\n\nFor the best care, please check the label on the product when you receive it. You can find the Bamboo Organic Cotton Sleep & Play Footie - Sandstone for $38.00 [here](https://www.aldeahome.com/products/bamboo-organic-cotton-sleep-play-footie-sandstone).",
-            "CreatedTime": "2025-08-09T20:16:27.991335",
-            "ItemId": null,
+            "Content": "The product information does not specify whether the Fresh & Messy Sippy Cup | Isla the Mermaid is dishwasher safe. For the best care, it's recommended to refer to the manufacturer’s guidelines or packaging. You can also check the product page for any additional cleaning instructions. If you need further assistance, feel free to ask! \n\nFor your reference, the price is $13.95, and you can view the product [here](https://www.aldeahome.com/products/fresh-messy-sippy-cup-isla-the-mermaid).",
+            "CreatedTime": "2025-08-10T01:34:09.904694",
+            "ItemId": "04535",
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "0d982d60-068b-40ff-9875-12db838f08dc",
+            "Id": "ee5c1729-d2e8-40f8-8669-7eddbfb66b8d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
+            "DialogueId": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
             "UserId": "user_00008",
-            "session_id": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
-            "Intent": "일반",
+            "session_id": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Are there any other colors or patterns available for the Bamboo Organic Cotton Sleep & Play Footie - Sandstone (Product ID: 07078), or is it just offered in this sandstone color?",
-            "CreatedTime": "2025-08-09T20:16:29.001836",
+            "Content": "Can you tell me if the Fresh & Messy Sippy Cup | Isla the Mermaid (Product ID: 04535) is made of BPA-free materials?",
+            "CreatedTime": "2025-08-10T01:34:10.918282",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "5f50f1d0-611d-4df8-91c2-93d48f86417a",
+            "Id": "3dffa7d7-c2f5-4d2c-8966-f04a18293efa",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
+            "DialogueId": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
             "UserId": "user_00008",
-            "session_id": "6f45ae5c-1882-4e38-b9a6-090a0ffd16ad",
+            "session_id": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Bamboo Organic Cotton Sleep & Play Footie - Sandstone is specifically offered in the sandstone color. There are no additional colors or patterns mentioned for this particular product. If you're interested in this item, you can find it priced at $38.00 [here](https://www.aldeahome.com/products/bamboo-organic-cotton-sleep-play-footie-sandstone).",
-            "CreatedTime": "2025-08-09T20:16:30.554867",
-            "ItemId": "07078",
+            "Content": "The product information does not explicitly mention whether the Fresh & Messy Sippy Cup | Isla the Mermaid is made of BPA-free materials. For specific details regarding materials and safety, it's best to check the product page or the manufacturer's guidelines. \n\nIf you have any other questions or need further assistance, feel free to ask! The price is $13.95, and you can view the product [here](https://www.aldeahome.com/products/fresh-messy-sippy-cup-isla-the-mermaid).",
+            "CreatedTime": "2025-08-10T01:34:13.078225",
+            "ItemId": "04535",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2966adc3-6ded-42e4-a2d2-c6ff517e395a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
+            "UserId": "user_00008",
+            "session_id": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you confirm if the Fresh & Messy Sippy Cup | Isla the Mermaid (Product ID: 04535) is suitable for both hot and cold beverages?",
+            "CreatedTime": "2025-08-10T01:34:14.392869",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "72700feb-b651-42e5-9a4e-903e507567ca",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
+            "UserId": "user_00008",
+            "session_id": "0a4f877e-1cc7-46c6-8e57-de581fa6072d",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The product information provided does not specify whether the Fresh & Messy Sippy Cup | Isla the Mermaid is suitable for both hot and cold beverages. It is recommended to refer to the manufacturer's guidelines or product packaging for this specific detail.\n\nIf you have any other questions or need further assistance, feel free to ask! The price is $13.95, and you can view the product [here](https://www.aldeahome.com/products/fresh-messy-sippy-cup-isla-the-mermaid).",
+            "CreatedTime": "2025-08-10T01:34:16.661862",
+            "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.179047"
+    "profile_generated_at": "2025-08-10T01:53:50.843913"
 }

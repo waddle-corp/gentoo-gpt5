@@ -1,200 +1,118 @@
 {
     "user_id": "user_00043",
-    "raw_engagement_score": 46,
-    "normalized_engagement_score": 30,
+    "raw_engagement_score": 15,
+    "normalized_engagement_score": 9,
     "activities": [
         {
-            "id": "8906f405-9a70-4c9b-9f7b-90b9e9a5e478",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00043",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.159.167"
-            },
-            "created_time": "2025-08-09T20:05:50.704946"
-        },
-        {
-            "id": "51230c4e-c3c8-43aa-bd7a-fd1ed4589d08",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00043",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00043_704954",
-                "total_amount": 34.95,
-                "items": [
-                    {
-                        "product_id": "01588",
-                        "quantity": 1,
-                        "price": 16.95
-                    },
-                    {
-                        "product_id": "02251",
-                        "quantity": 1,
-                        "price": 18.0
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.704965"
-        },
-        {
-            "id": "b11ee1e6-4c0a-48f9-9ff9-6d72a836a402",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00043",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00043_704970",
-                "total_amount": 97.99,
-                "items": [
-                    {
-                        "product_id": "00808",
-                        "quantity": 1,
-                        "price": 58.0
-                    },
-                    {
-                        "product_id": "04028",
-                        "quantity": 1,
-                        "price": 39.99
-                    }
-                ],
-                "payment_method": "credit_card"
-            },
-            "created_time": "2025-08-09T20:05:50.704975"
-        },
-        {
-            "id": "31b25328-c40a-4990-ad82-289221b7a0b5",
+            "id": "f1739c5b-cefc-472a-aae5-304c6ec05103",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00043",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "06280",
-                "category": "ornaments",
-                "product_name": "Whisky & Gin Glitter Ornaments",
-                "price": 24.0,
-                "product_url": "https://www.aldeahome.com/products/whisky-gin-glitter-ornament-2-assorted-4-5h",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/84ffa3d45d58702956cba9b633bfc89722b277c89b5b98564a20dd57f465c1a5.jpg?v=1731947204",
-                "view_duration_seconds": 79
+                "product_id": "07398",
+                "category": "puzzle-stack-score",
+                "product_name": "Mermaid 40pc Jigsaw inn Shaped Box",
+                "price": 18.95,
+                "product_url": "https://www.aldeahome.com/products/mermaid-40pc-jigsaw-inn-shaped-box",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/826d7a2bf5f5f2e391315e46f323158dae4893a564bf530573a6410a70ce8557.jpg?v=1747851127",
+                "view_duration_seconds": 111
             },
-            "created_time": "2025-08-09T20:05:50.704980"
-        },
-        {
-            "id": "e53c8abf-6e03-4490-8af1-771c678e6393",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00043",
-            "event_name": "search",
-            "event_data": {
-                "query": "Pure - Tap Tap Xylophone",
-                "search_results_count": 1,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T20:05:50.707462"
+            "created_time": "2025-08-10T01:32:25.414250"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "149648c1-dad4-4408-8357-3d4aae476b5a",
-            "customer_id": "user_00043",
-            "product_id": "00722",
-            "rating": 3,
-            "review_title": "Highly recommended",
-            "review_content": "Honestly, I had high hopes, but Golf Ball Ice Molds isn't quite my taste. I'll try something else next time.",
-            "created_at": "2024-10-04T20:52:52.182182",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "a2cc57d2-d985-4494-925e-2b6a49626926",
+            "Id": "91f22e85-6fbc-468c-a4f8-32fbcedd67e5",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "DialogueId": "0518f842-8e18-446f-87de-1ebbe12f2583",
             "UserId": "user_00043",
-            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "session_id": "0518f842-8e18-446f-87de-1ebbe12f2583",
             "Intent": "일반",
             "Role": "user",
-            "Content": "Could you tell me if the Strawberry Flower Hair Clips (Product ID: 05042) come in different sizes or just one size?",
-            "CreatedTime": "2025-08-09T20:19:15.394575",
+            "Content": "Can you tell me more about the scents included in the Potion Perfume Gift Box Set (Product ID: 06336)?",
+            "CreatedTime": "2025-08-10T01:37:09.690462",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "44c5a4fa-8026-412b-ad67-550b5a2d79aa",
+            "Id": "072cacef-ba8d-49fe-b86f-732514f1d44e",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "DialogueId": "0518f842-8e18-446f-87de-1ebbe12f2583",
             "UserId": "user_00043",
-            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "session_id": "0518f842-8e18-446f-87de-1ebbe12f2583",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Strawberry Flower Hair Clips (Product ID: 05042) are currently available in just one size. If you would like to purchase them, they are priced at $21.99. You can find them at this link: [Strawberry Flower Hair Clips](https://www.aldeahome.com/products/spr24-strawberry-flower-hair-clips).",
-            "CreatedTime": "2025-08-09T20:19:17.053153",
-            "ItemId": "05042",
+            "Content": "The Potion Perfume Gift Box Set includes all four Potion Perfumes, each in 5ml (.16oz) roller bottles. While specific scent descriptions are not provided, all perfumes are blended with care, hand-poured in Austin, Texas, and made with high-quality ingredients. The set is cruelty-free and vegan. \n\nFor more details or to view the product, you can visit the following link: [Potion Perfume Gift Box Set](https://www.aldeahome.com/products/potion-perfume-gift-box-set). The price is $72.00.",
+            "CreatedTime": "2025-08-10T01:37:12.045193",
+            "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "a0c87486-e4e7-49b9-9d69-1ddfdc259ed0",
+            "Id": "41d8680a-128b-4784-a0e3-505fea8b0bdd",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "DialogueId": "0518f842-8e18-446f-87de-1ebbe12f2583",
             "UserId": "user_00043",
-            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
-            "Intent": "일반",
+            "session_id": "0518f842-8e18-446f-87de-1ebbe12f2583",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Are the Strawberry Flower Hair Clips (Product ID: 05042) suitable for toddlers, or would they be better for older children?",
-            "CreatedTime": "2025-08-09T20:19:17.914785",
+            "Content": "Are there any specific notes or characteristics of each scent in the Potion Perfume Gift Box Set (Product ID: 06336) that I should know about before purchasing?",
+            "CreatedTime": "2025-08-10T01:37:13.318039",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "dc4161d6-bb9b-40dc-a860-a67c2cfd75c0",
+            "Id": "5accdd86-871c-4673-99ea-24552500b7d6",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "DialogueId": "0518f842-8e18-446f-87de-1ebbe12f2583",
             "UserId": "user_00043",
-            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
-            "Intent": "일반",
+            "session_id": "0518f842-8e18-446f-87de-1ebbe12f2583",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Strawberry Flower Hair Clips (Product ID: 05042) are designed to be suitable for toddlers and can also be great for older children. Their colorful and playful design makes them perfect for adding a fun touch to little ones' hairstyles. If you're interested, they are priced at $21.99, and you can find them here: [Strawberry Flower Hair Clips](https://www.aldeahome.com/products/spr24-strawberry-flower-hair-clips).",
-            "CreatedTime": "2025-08-09T20:19:20.260959",
-            "ItemId": null,
+            "Content": "Unfortunately, specific notes or characteristics of each scent in the Potion Perfume Gift Box Set are not detailed in the provided information. However, the perfumes are made with high-quality ingredients and are cruelty-free and vegan. Each scent is designed to provide a unique aromatic experience. \n\nFor more details or to make a purchase, you can visit the product page here: [Potion Perfume Gift Box Set](https://www.aldeahome.com/products/potion-perfume-gift-box-set) for $72.00.",
+            "CreatedTime": "2025-08-10T01:37:16.573188",
+            "ItemId": "06336",
             "Thumbs": "up",
             "Channel": "web"
         },
         {
-            "Id": "f7007b9f-842f-43cb-9cf9-db140a120b04",
+            "Id": "963da46e-73b2-40ba-a555-4ec9c4332148",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "DialogueId": "0518f842-8e18-446f-87de-1ebbe12f2583",
             "UserId": "user_00043",
-            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
-            "Intent": "일반",
+            "session_id": "0518f842-8e18-446f-87de-1ebbe12f2583",
+            "Intent": "추천",
             "Role": "user",
-            "Content": "Are the Strawberry Flower Hair Clips (Product ID: 05042) easy to use for little hands, or do they require adult assistance to put them in?",
-            "CreatedTime": "2025-08-09T20:19:21.255859",
+            "Content": "Can you tell me if the Potion Perfume Gift Box Set (Product ID: 06336) is suitable for sensitive skin, or do you have any recommendations for those with allergies?",
+            "CreatedTime": "2025-08-10T01:37:17.508976",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "9e0be687-11db-4754-a7b1-8c6c4745196d",
+            "Id": "b5b9b63e-8911-4ffc-b3cf-dfb0d396be91",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
+            "DialogueId": "0518f842-8e18-446f-87de-1ebbe12f2583",
             "UserId": "user_00043",
-            "session_id": "eb46f5d3-b58a-4c72-b82d-c8c234f2586e",
-            "Intent": "정보",
+            "session_id": "0518f842-8e18-446f-87de-1ebbe12f2583",
+            "Intent": "추천",
             "Role": "assistant",
-            "Content": "The Strawberry Flower Hair Clips (Product ID: 05042) are designed to be user-friendly, making them relatively easy for little hands to use. However, depending on the child's dexterity, some may still require a bit of adult assistance to secure them properly. They are perfect for adding a fun touch to hairstyles! They are priced at $21.99, and you can check them out here: [Strawberry Flower Hair Clips](https://www.aldeahome.com/products/spr24-strawberry-flower-hair-clips).",
-            "CreatedTime": "2025-08-09T20:19:23.572981",
-            "ItemId": "05042",
+            "Content": "The Potion Perfume Gift Box Set is made with high-quality ingredients and is cruelty-free and vegan. However, it does contain fragrance components, which can sometimes irritate sensitive skin or trigger allergies. Since specific allergen information is not provided, it is recommended for individuals with sensitive skin or allergies to perform a patch test before using the product.\n\nIf you have concerns, consulting with a dermatologist or healthcare professional is advisable. For more information or to purchase, you can visit: [Potion Perfume Gift Box Set](https://www.aldeahome.com/products/potion-perfume-gift-box-set) for $72.00.",
+            "CreatedTime": "2025-08-10T01:37:19.787748",
+            "ItemId": "06336",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.196496"
+    "profile_generated_at": "2025-08-10T01:53:50.864781"
 }

@@ -1,0 +1,154 @@
+{
+    "user_id": "user_00142",
+    "raw_engagement_score": 29,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "9b5cf686-ad65-49ff-b6c2-834cb272b338",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00142",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "00588",
+                "category": "back-to-school",
+                "product_name": "Cantaloupe Weekday Lunch Tote",
+                "price": 28.95,
+                "product_url": "https://www.aldeahome.com/products/cantaloupe-weekday-lunch-tote",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/94c28400f0f8d3eb3d2c612e4d3556ea7ab158a68f79523470aebdbff6ae8e0a.jpg?v=1748196765",
+                "view_duration_seconds": 15
+            },
+            "created_time": "2025-08-10T01:32:25.565717"
+        },
+        {
+            "id": "46863d7d-a153-48be-819e-c857833ec28e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00142",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "06605",
+                "quantity": 3,
+                "price": 69.0
+            },
+            "created_time": "2025-08-10T01:32:25.565721"
+        },
+        {
+            "id": "fd3aea99-3c60-4fda-95c3-51d85849a2d2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00142",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00142_565724",
+                "total_amount": 49.0,
+                "items": [
+                    {
+                        "product_id": "04960",
+                        "quantity": 1,
+                        "price": 40.0
+                    },
+                    {
+                        "product_id": "00183",
+                        "quantity": 1,
+                        "price": 9.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.565728"
+        },
+        {
+            "id": "61adb4bc-7021-475a-8fab-09477510368f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00142",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "02924",
+                "category": "cyber-monday-gift",
+                "product_name": "Pizza Cutter & Serving Board",
+                "price": 55.95,
+                "product_url": "https://www.aldeahome.com/products/pizza-cutter-serving-board",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/Screenshot2021-07-17at16-11-41879580c9902940509693c9c67bb6f983jpg_JPEGImage_489x495pixels.png?v=1626564836",
+                "view_duration_seconds": 79
+            },
+            "created_time": "2025-08-10T01:32:25.565732"
+        },
+        {
+            "id": "65ba9674-c85d-457b-9f4d-0107d6eb2b9a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00142",
+            "event_name": "search",
+            "event_data": {
+                "query": "Kobo Seeds Collection",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.568055"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "c433a2de-89ed-4be2-9aab-012df7ffd1c5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "89a904f7-2b50-4013-b053-0b145d4756a7",
+            "UserId": "user_00142",
+            "session_id": "89a904f7-2b50-4013-b053-0b145d4756a7",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the materials used in the FLAVORED CONDOM Christmas Ornament (Product ID: 02691)?",
+            "CreatedTime": "2025-08-10T01:46:50.494652",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "523b2f98-ae98-4580-97ea-0894d2e70276",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "89a904f7-2b50-4013-b053-0b145d4756a7",
+            "UserId": "user_00142",
+            "session_id": "89a904f7-2b50-4013-b053-0b145d4756a7",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I'm sorry, but I don't have specific information about the materials used in the FLAVORED CONDOM Christmas Ornament. However, you can find more details and make a purchase through the following link: [FLAVORED CONDOM Christmas Ornament](https://www.aldeahome.com/products/flavored-condom-christmas-ornament). The price is $9.97.",
+            "CreatedTime": "2025-08-10T01:46:52.637792",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "bc7443fa-8c90-4040-be25-004e5ddf47c8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "89a904f7-2b50-4013-b053-0b145d4756a7",
+            "UserId": "user_00142",
+            "session_id": "89a904f7-2b50-4013-b053-0b145d4756a7",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the FLAVORED CONDOM Christmas Ornament (Product ID: 02691) safe for outdoor use, or is it designed for indoor decoration only?",
+            "CreatedTime": "2025-08-10T01:46:53.549627",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "db417ad0-0767-410d-aa27-00f423a60939",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "89a904f7-2b50-4013-b053-0b145d4756a7",
+            "UserId": "user_00142",
+            "session_id": "89a904f7-2b50-4013-b053-0b145d4756a7",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have specific information regarding the safety or suitability of the FLAVORED CONDOM Christmas Ornament for outdoor use. It is best suited for indoor decoration. For more details and to make a purchase, you can visit [FLAVORED CONDOM Christmas Ornament](https://www.aldeahome.com/products/flavored-condom-christmas-ornament) for $9.97.",
+            "CreatedTime": "2025-08-10T01:46:55.260505",
+            "ItemId": "02691",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.899678"
+}

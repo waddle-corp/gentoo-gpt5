@@ -1,167 +1,39 @@
 {
     "user_id": "user_00072",
-    "raw_engagement_score": 32,
-    "normalized_engagement_score": 21,
+    "raw_engagement_score": 7,
+    "normalized_engagement_score": 5,
     "activities": [
         {
-            "id": "44732d6f-351b-40f8-a8c9-91655f50caed",
+            "id": "6d3ad52a-dd70-4e11-99fc-b0d105373bbb",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00072",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "02637",
-                "category": "cyber-monday-gift",
-                "product_name": "BRIO World Three Wagon Cargo Train",
-                "price": 34.0,
-                "product_url": "https://www.aldeahome.com/products/copy-of-speedy-bullet-train",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/3_4ff79ad5-a17a-4cc3-acd7-62d394953d70.jpg?v=1608167368",
-                "view_duration_seconds": 94
+                "product_id": "06891",
+                "category": "newborn-basics",
+                "product_name": "HAWKSBILL: Organic Onesie/Bodysuit- Turtle print",
+                "price": 30.0,
+                "product_url": "https://www.aldeahome.com/products/hawksbill-organic-onesie-bodysuit-turtle-print",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/4d69865f57a51dd0a6ce455ccc32b866cd0f4da90585e47cd7511d54b96557e5.jpg?v=1744642005",
+                "view_duration_seconds": 93
             },
-            "created_time": "2025-08-09T20:05:50.746471"
+            "created_time": "2025-08-10T01:32:25.468183"
         },
         {
-            "id": "8acb6df1-b4c2-470c-86df-b0f267a1d06d",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00072",
-            "event_name": "search",
-            "event_data": {
-                "query": "Lil’ Loteria: A Bilingual Picture Word Bingo Game (Bilingual: English and Spanish)",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.748597"
-        },
-        {
-            "id": "3c0e8e8e-66c6-4b10-b198-eb330d62941c",
+            "id": "db8fca43-c850-4510-9318-28c7524c0c97",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00072",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "00362",
-                "quantity": 1,
-                "price": 42.0
-            },
-            "created_time": "2025-08-09T20:05:50.748603"
-        },
-        {
-            "id": "e763aa0c-50a3-4e2e-a6f2-46aef576bf96",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00072",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "01735",
+                "product_id": "02738",
                 "quantity": 2,
-                "price": 559.2
+                "price": 65.0
             },
-            "created_time": "2025-08-09T20:05:50.748607"
+            "created_time": "2025-08-10T01:32:25.468187"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "aac7a8f6-51e1-4da7-a99c-7353171301ea",
-            "customer_id": "user_00072",
-            "product_id": "03038",
-            "rating": 1,
-            "review_title": "Disappointed",
-            "review_content": "The quality of Travel Trios wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2024-12-13T20:52:52.182274",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "88227576-60a6-4fb0-9d5d-d2e2c20c54d2",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "UserId": "user_00072",
-            "session_id": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me more about the care instructions for the Waves Towel (Product ID: 03427)?",
-            "CreatedTime": "2025-08-09T20:22:45.762906",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "57acb895-4bd6-41c1-8f7e-b934a11e9387",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "UserId": "user_00072",
-            "session_id": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The care instructions for the Waves Towel are as follows:\n\n- Machine wash on cool\n- Tumble dry on low heat\n\nAdditionally, the Waves Towel is colorfast and becomes more absorbent with each wash. Since each towel is carefully handcrafted, please note that measurements may vary slightly from the description.\n\nIf you're interested in purchasing, the Waves Towel is priced at $35.00. You can find it [here](https://www.aldeahome.com/products/waves-towel).",
-            "CreatedTime": "2025-08-09T20:22:48.039093",
-            "ItemId": "03427",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d4fae997-dda9-46f6-b60b-1561a9f974d5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "UserId": "user_00072",
-            "session_id": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "Intent": "추천",
-            "Role": "user",
-            "Content": "Are there any specific washing tips to keep the Waves Towel (Product ID: 03427) in the best condition, or can it be washed with other towels?",
-            "CreatedTime": "2025-08-09T20:22:49.088698",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a7594323-a163-4e6c-b92d-1b91adbbbab8",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "UserId": "user_00072",
-            "session_id": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "To keep the Waves Towel in the best condition, it's recommended to wash it separately or with similar colors to avoid any potential color bleeding. Here are some specific washing tips:\n\n- Use a cool machine wash for the best results.\n- Avoid using bleach or harsh detergents.\n- Tumble dry on low heat to protect the fabric's integrity.\n- Since the towel is colorfast and becomes more absorbent with each wash, regular washing will enhance its quality.\n\nBy following these tips, you can help maintain the towel's appearance and functionality over time. If you're interested in purchasing, the Waves Towel is priced at $35.00 and can be found [here](https://www.aldeahome.com/products/waves-towel).",
-            "CreatedTime": "2025-08-09T20:22:53.543020",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a1915654-26a0-4bbf-8114-5a52eb9a9350",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "UserId": "user_00072",
-            "session_id": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me what makes the Waves Towel (Product ID: 03427) more absorbent with each wash? Are there any specific features that contribute to this quality?",
-            "CreatedTime": "2025-08-09T20:22:54.693768",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "492cec04-a308-4828-a33b-9d1a522d3b2e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "UserId": "user_00072",
-            "session_id": "8ae0b98a-7cb8-4459-8835-fada4b48bd7a",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Waves Towel becomes more absorbent with each wash due to its construction and the materials used. Here are some specific features that contribute to this quality:\n\n1. **100% Finest Cotton**: The use of premium cotton fibers enhances absorbency as the towel softens and opens up with each wash.\n\n2. **Hand-loomed and Flat-woven**: This traditional weaving technique allows for a lightweight yet highly absorbent towel that improves in performance over time.\n\n3. **Oeko-Tex Certified**: This certification ensures that the towel is free from harmful substances, contributing to its durability and longevity during washes.\n\nRegular washing helps to maintain the towel's texture and enhances its absorbency, making it a practical choice for daily use. If you're interested, the Waves Towel is priced at $35.00 and can be found [here](https://www.aldeahome.com/products/waves-towel).",
-            "CreatedTime": "2025-08-09T20:22:59.112369",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.207279"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.876191"
 }

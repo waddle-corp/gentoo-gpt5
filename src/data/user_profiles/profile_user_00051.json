@@ -1,131 +1,185 @@
 {
     "user_id": "user_00051",
-    "raw_engagement_score": 30,
-    "normalized_engagement_score": 20,
+    "raw_engagement_score": 35,
+    "normalized_engagement_score": 21,
     "activities": [
         {
-            "id": "fa936ee7-3bbe-41b0-8eed-bde5aeebdbe7",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00051",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00051_724418",
-                "total_amount": 26.95,
-                "items": [
-                    {
-                        "product_id": "03836",
-                        "quantity": 1,
-                        "price": 26.95
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.724426"
-        },
-        {
-            "id": "3a18505a-b1fe-42c6-92c2-140f7a13bf5e",
+            "id": "92efc042-68b6-4112-9283-440c97151615",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00051",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "00839",
-                "category": "bath-storage-and-grooming",
-                "product_name": "Mustela Baby Oil",
-                "price": 12.5,
-                "product_url": "https://www.aldeahome.com/products/mustela-baby-oil",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/oik.jpg?v=1621029304",
-                "view_duration_seconds": 106
+                "product_id": "02628",
+                "category": "cyber-monday-gift",
+                "product_name": "Beehives",
+                "price": 25.0,
+                "product_url": "https://www.aldeahome.com/products/beehives",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/4125-plan-toys-learning-education-wooden-beehive-765544.jpg?v=1634852460",
+                "view_duration_seconds": 60
             },
-            "created_time": "2025-08-09T20:05:50.724433"
+            "created_time": "2025-08-10T01:32:25.428379"
         },
         {
-            "id": "2222b746-b46d-44ac-a294-200f6851a826",
+            "id": "57e3acc5-bb99-488c-b218-8a6b73bda6b2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00051",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "02557",
+                "category": "cyber-monday-gift",
+                "product_name": "Sophie La Giraffe | So'Pure Teether",
+                "price": 24.95,
+                "product_url": "https://www.aldeahome.com/products/sophie-the-giraffe-so-pure-teether",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/e5b26e59fa894d4bb2595ec65682ba80.jpg?v=1719960608",
+                "view_duration_seconds": 53
+            },
+            "created_time": "2025-08-10T01:32:25.428383"
+        },
+        {
+            "id": "f00e1de8-6d89-498d-a0c0-f2910b931d7e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00051",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04828",
+                "category": "exclude",
+                "product_name": "Travel Solid Cologne Red Label",
+                "price": 20.0,
+                "product_url": "https://www.aldeahome.com/products/travel-solid-cologne-red-label",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/a286b68dc4b1bf3affe1bc5b98b90159a1117bf8493fbe42f03fb9d66d12661a.jpg?v=1720105910",
+                "view_duration_seconds": 100
+            },
+            "created_time": "2025-08-10T01:32:25.428387"
+        },
+        {
+            "id": "01ba5a16-0f55-4d46-b6db-13600856b2be",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00051",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00051_724439",
-                "total_amount": 71.0,
+                "order_id": "ORDER_user_00051_428391",
+                "total_amount": 89.99,
                 "items": [
                     {
-                        "product_id": "01832",
+                        "product_id": "02604",
                         "quantity": 1,
-                        "price": 26.0
+                        "price": 20.0
                     },
                     {
-                        "product_id": "06155",
+                        "product_id": "06083",
                         "quantity": 1,
-                        "price": 45.0
+                        "price": 69.99
                     }
                 ],
-                "payment_method": "kakao_pay"
+                "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.724445"
+            "created_time": "2025-08-10T01:32:25.428396"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "0072561f-9001-4a31-b3e7-ee24042f1947",
+            "customer_id": "user_00051",
+            "product_id": "05807",
+            "rating": 3,
+            "review_title": "Great as a gift",
+            "review_content": "This exclude product is excellent. Don't hesitate to buy Baby Sun Hat!",
+            "created_at": "2025-05-05T01:32:54.168834",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "8f37163c-70bc-457f-826c-795d89c2662d",
+            "Id": "32eb14ac-2eac-45f5-96b7-6bafbdfdf6d6",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "DialogueId": "e231758f-7660-4ace-a050-6c8f39b2f502",
             "UserId": "user_00051",
-            "session_id": "816f9da1-99b8-4225-978b-9c562fc87aaa",
-            "Intent": "일반",
+            "session_id": "e231758f-7660-4ace-a050-6c8f39b2f502",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "Can you tell me if the Beastie Bigfoot Sasquatch & Yeti Best Friends Birthday Card (Product ID: 02220) comes with any special features, like additional designs or themes?",
-            "CreatedTime": "2025-08-09T20:20:11.652074",
+            "Content": "Can you tell me if the book 'City Walks with Kids: San Francisco' (Product ID: 01622) includes any specific walking routes or tips for families visiting popular attractions?",
+            "CreatedTime": "2025-08-10T01:37:54.849464",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "9a121038-3ef4-4e70-9e30-68cc1f296ce1",
+            "Id": "1b52fd56-5eb2-4818-9c50-c2009dc63460",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "DialogueId": "e231758f-7660-4ace-a050-6c8f39b2f502",
             "UserId": "user_00051",
-            "session_id": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "session_id": "e231758f-7660-4ace-a050-6c8f39b2f502",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Beastie Bigfoot Sasquatch & Yeti Best Friends Birthday Card does not have additional designs or themes mentioned. It features a blank interior, allowing you to write your own message. The card is made from FSC-certified, recycled paper and comes with a matching recycled envelope. It is professionally printed and packaged in a clear cello sleeve. \n\nFor more details, you can view the card [here](https://www.aldeahome.com/products/beastie-bigfoot-sasquatch-yeti-best-friends-birthday-card). The price is $5.50.",
-            "CreatedTime": "2025-08-09T20:20:13.703692",
+            "Content": "Yes, the book 'City Walks with Kids: San Francisco' includes specific walking routes and tips tailored for families. It features walks that cover popular attractions such as The Embarcadero, Golden Gate Park, Ocean Beach, and The Exploratorium, making it a great resource for family-friendly exploration in San Francisco.\n\nYou can purchase it for $14.95 at this link: [City Walks with Kids: San Francisco](https://www.aldeahome.com/products/city-walks-with-kids-san-francisco).",
+            "CreatedTime": "2025-08-10T01:37:57.409016",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "69d5e6e7-00d6-44d0-a9a2-068121f89203",
+            "Id": "d5cda498-adf7-47ec-a358-ed2aec5286b4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "DialogueId": "e231758f-7660-4ace-a050-6c8f39b2f502",
             "UserId": "user_00051",
-            "session_id": "816f9da1-99b8-4225-978b-9c562fc87aaa",
-            "Intent": "일반",
+            "session_id": "e231758f-7660-4ace-a050-6c8f39b2f502",
+            "Intent": "추천",
             "Role": "user",
-            "Content": "Is the Beastie Bigfoot Sasquatch & Yeti Best Friends Birthday Card (Product ID: 02220) suitable for kids, or is it more geared towards adults?",
-            "CreatedTime": "2025-08-09T20:20:14.810541",
+            "Content": "Are there any age recommendations or difficulty levels for the walking routes in 'City Walks with Kids: San Francisco' (Product ID: 01622)? I want to make sure they are suitable for my kids.",
+            "CreatedTime": "2025-08-10T01:37:58.539291",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "19648640-4337-4707-9b45-b7ec93b064dc",
+            "Id": "706bb286-31a7-4807-a9f3-d22136cdc60b",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "DialogueId": "e231758f-7660-4ace-a050-6c8f39b2f502",
             "UserId": "user_00051",
-            "session_id": "816f9da1-99b8-4225-978b-9c562fc87aaa",
+            "session_id": "e231758f-7660-4ace-a050-6c8f39b2f502",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The book 'City Walks with Kids: San Francisco' is designed specifically for families, making the routes generally suitable for children. While specific age recommendations or difficulty levels are not provided, the walks are tailored to be family-friendly, ensuring a fun and engaging experience for kids. \n\nFor more details, you can explore the book further at this link: [City Walks with Kids: San Francisco](https://www.aldeahome.com/products/city-walks-with-kids-san-francisco) for $14.95.",
+            "CreatedTime": "2025-08-10T01:38:00.871035",
+            "ItemId": "01622",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "db506b5d-96e1-4939-9cbb-d3d8bbfea4de",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e231758f-7660-4ace-a050-6c8f39b2f502",
+            "UserId": "user_00051",
+            "session_id": "e231758f-7660-4ace-a050-6c8f39b2f502",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me how many different walking routes are included in 'City Walks with Kids: San Francisco' (Product ID: 01622)? I’m interested in knowing the variety of options for our family outings.",
+            "CreatedTime": "2025-08-10T01:38:01.845312",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "29dbb29a-3321-4818-8187-e3d03f3eccbb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e231758f-7660-4ace-a050-6c8f39b2f502",
+            "UserId": "user_00051",
+            "session_id": "e231758f-7660-4ace-a050-6c8f39b2f502",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Beastie Bigfoot Sasquatch & Yeti Best Friends Birthday Card is whimsical and features playful characters, making it suitable for both kids and adults. Its fun theme of Bigfoot and Yeti as best friends can appeal to children, while also being appreciated by adults who enjoy quirky or humorous cards. Overall, it is a versatile card that can be used for a variety of age groups. \n\nYou can find it for $5.50 [here](https://www.aldeahome.com/products/beastie-bigfoot-sasquatch-yeti-best-friends-birthday-card).",
-            "CreatedTime": "2025-08-09T20:20:16.649999",
+            "Content": "The book 'City Walks with Kids: San Francisco' includes a variety of walking routes specifically designed for families. While the exact number of routes isn't specified, it features several key locations such as The Embarcadero, Golden Gate Park, Ocean Beach, and The Exploratorium, which offers a good range of options for family outings.\n\nFor more information, you can check it out here: [City Walks with Kids: San Francisco](https://www.aldeahome.com/products/city-walks-with-kids-san-francisco) for $14.95.",
+            "CreatedTime": "2025-08-10T01:38:04.713686",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.199522"
+    "profile_generated_at": "2025-08-10T01:53:50.868108"
 }

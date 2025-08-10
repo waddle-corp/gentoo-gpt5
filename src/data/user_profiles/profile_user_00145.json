@@ -1,0 +1,132 @@
+{
+    "user_id": "user_00145",
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 11,
+    "activities": [
+        {
+            "id": "b3c28d27-dec4-471b-a7b6-dbc303762757",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00145",
+            "event_name": "search",
+            "event_data": {
+                "query": "Bumbleride Twin Bumper Bar (Set of 2)",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.576708"
+        },
+        {
+            "id": "62126480-a2bb-4e6d-9efa-378fae300c57",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00145",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "06487",
+                "category": "tonies",
+                "product_name": "Miffy",
+                "price": 19.99,
+                "product_url": "https://www.aldeahome.com/products/miffy",
+                "thumbnail_url": "",
+                "view_duration_seconds": 88
+            },
+            "created_time": "2025-08-10T01:32:25.576713"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "b9b29f19-3c20-4654-a5ee-45d827373e68",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "UserId": "user_00145",
+            "session_id": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Wave Sleeper NB (Product ID: 06828) comes in different colors or patterns?",
+            "CreatedTime": "2025-08-10T01:47:01.919258",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f6c875ce-b008-428c-a6ce-44d2d4e98cdf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "UserId": "user_00145",
+            "session_id": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The information provided does not specify if the Wave Sleeper NB comes in different colors or patterns. It is best to visit the product page for the most accurate details. You can view the Wave Sleeper NB [here](https://www.aldeahome.com/products/organic-baby-peyton-footed-sleeper-wave-stripe-rain-nb) for additional options or variations. The price is $38.00.",
+            "CreatedTime": "2025-08-10T01:47:03.580273",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "fece7b1e-2077-40a8-bbba-58d81085ba7a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "UserId": "user_00145",
+            "session_id": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you let me know if the Wave Sleeper NB (Product ID: 06828) is available in larger sizes, or is it only for newborns?",
+            "CreatedTime": "2025-08-10T01:47:04.301154",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "61164ffd-722d-4dfe-9e31-ccac23488186",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "UserId": "user_00145",
+            "session_id": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Wave Sleeper NB is specifically designed for newborns, and the information provided does not indicate that larger sizes are available. For more details on sizing options, you may want to check the product page [here](https://www.aldeahome.com/products/organic-baby-peyton-footed-sleeper-wave-stripe-rain-nb). The price is $38.00.",
+            "CreatedTime": "2025-08-10T01:47:05.764659",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "eceba67a-596e-47d7-a0a9-4ce41c07da5f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "UserId": "user_00145",
+            "session_id": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Wave Sleeper NB (Product ID: 06828) is suitable for sensitive skin, given that it's made from organic materials?",
+            "CreatedTime": "2025-08-10T01:47:06.576352",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "ba78e700-4309-4134-8252-a4b4e8346d03",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "UserId": "user_00145",
+            "session_id": "cce9a2ec-0bfe-4846-b231-eec888c3c334",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Wave Sleeper NB is made from organic materials, which typically makes it a good option for sensitive skin. Organic fabrics are often softer and free from harmful chemicals, making them gentler on delicate skin. For further details, you can visit the product page [here](https://www.aldeahome.com/products/organic-baby-peyton-footed-sleeper-wave-stripe-rain-nb). The price is $38.00.",
+            "CreatedTime": "2025-08-10T01:47:08.379081",
+            "ItemId": "06828",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.900615"
+}

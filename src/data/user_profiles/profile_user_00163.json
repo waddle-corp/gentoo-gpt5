@@ -1,0 +1,53 @@
+{
+    "user_id": "user_00163",
+    "raw_engagement_score": 5,
+    "normalized_engagement_score": 3,
+    "activities": [
+        {
+            "id": "fc69fa34-8226-4016-a632-7f1a2dd60dab",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00163",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.151.169"
+            },
+            "created_time": "2025-08-10T01:32:25.602337"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "a8579f16-3521-431b-bb1b-bee37ff8d995",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f3a7562d-1786-47d4-a949-f941c751600b",
+            "UserId": "user_00163",
+            "session_id": "f3a7562d-1786-47d4-a949-f941c751600b",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Deer Pull Toy (Product ID: 00567) is suitable for outdoor use, or is it designed primarily for indoor play?",
+            "CreatedTime": "2025-08-10T01:49:04.503562",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4765ee2e-6ca3-4cfd-8a81-e3df864ce8cf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f3a7562d-1786-47d4-a949-f941c751600b",
+            "UserId": "user_00163",
+            "session_id": "f3a7562d-1786-47d4-a949-f941c751600b",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Deer Pull Toy is primarily designed for playtime indoors. While it is durable, it is best suited for indoor use to preserve its condition. If you're interested, it is priced at $14.00. You can find more information and purchase it [here](https://www.aldeahome.com/products/deer-pull-toy).",
+            "CreatedTime": "2025-08-10T01:49:06.439814",
+            "ItemId": "00567",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.904749"
+}

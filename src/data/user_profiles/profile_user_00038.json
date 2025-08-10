@@ -1,82 +1,138 @@
 {
     "user_id": "user_00038",
     "raw_engagement_score": 23,
-    "normalized_engagement_score": 15,
+    "normalized_engagement_score": 14,
     "activities": [
         {
-            "id": "5f407c10-3b29-4eeb-b99b-ae56abad090b",
+            "id": "55d12e3d-d915-4bb9-b7d9-1b4b8e6c23fc",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00038",
-            "event_name": "login",
+            "event_name": "add_to_cart",
             "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.111.196"
+                "product_id": "06163",
+                "quantity": 2,
+                "price": 16.95
             },
-            "created_time": "2025-08-09T20:05:50.693246"
+            "created_time": "2025-08-10T01:32:25.404999"
         },
         {
-            "id": "3d1a1d0a-f9b6-4cc9-96c0-92a656c5a999",
+            "id": "102a35a1-f96c-4a0c-8929-049b6fe59b4a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00038",
             "event_name": "search",
             "event_data": {
-                "query": "베스트셀러",
-                "search_results_count": 0,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "query": "Eiffel Tower with Cherry Blossoms Paint-by-Number Kit",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.695349"
+            "created_time": "2025-08-10T01:32:25.407216"
         },
         {
-            "id": "fc0b3c42-52ee-4c31-ad6c-c0d8379c9da8",
+            "id": "a9069bb7-7b1e-4168-b0fa-9207271ca87a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00038",
-            "event_name": "product_view",
+            "event_name": "search",
             "event_data": {
-                "product_id": "01809",
-                "category": "camping",
-                "product_name": "Veer Cruiser Nap System",
-                "price": 109.0,
-                "product_url": "https://www.aldeahome.com/products/veer-cruiser-nap-system-bassinet",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/veer-cruiser-nap-system_7e514807-1fd1-43fb-b6cc-97f9c7dc9d88.jpg?v=1716598348",
-                "view_duration_seconds": 71
+                "query": "The Original Woombie in  Eucalyptus Pulp Fabric",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.695355"
-        },
-        {
-            "id": "a9fe90ff-c345-4a3f-b4d7-acb3f2b54d04",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00038",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00038_695359",
-                "total_amount": 12.95,
-                "items": [
-                    {
-                        "product_id": "07207",
-                        "quantity": 1,
-                        "price": 12.95
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.695367"
+            "created_time": "2025-08-10T01:32:25.409471"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "e1244f97-acc3-48bf-91b0-7a777bc8a446",
-            "customer_id": "user_00038",
-            "product_id": "00718",
-            "rating": 3,
-            "review_title": "Good for daily use",
-            "review_content": "Honestly, I had high hopes, but Vanilla Latte Itzy Mini™ Diaper Bag Backpack isn't quite my taste. I'll try something else next time.",
-            "created_at": "2025-07-23T20:52:52.182169",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.193834"
+    "dialogues": [
+        {
+            "Id": "c7ac25d3-9a3b-462c-8a91-824be8379e43",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "UserId": "user_00038",
+            "session_id": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can the Metro+ Compact City Stroller (Product ID: 02134) be used for newborns, and is it compatible with car seats?",
+            "CreatedTime": "2025-08-10T01:36:27.533280",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "483e8268-9033-48dc-9735-a9fda7152d54",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "UserId": "user_00038",
+            "session_id": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Metro+ Compact City Stroller is newborn-ready and compatible with car seats, making it a great option for infants. It is designed to accommodate children from 0 to 4 years old (up to 22 kg). \n\nYou can find more information and purchase it for $299.00 at this link: [Metro+ Compact City Stroller](https://www.aldeahome.com/products/metro-compact-city-stroller).",
+            "CreatedTime": "2025-08-10T01:36:29.679540",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1f458077-569c-4725-9b81-375c9dec80f7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "UserId": "user_00038",
+            "session_id": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "What car seats are compatible with the Metro+ Compact City Stroller (Product ID: 02134), and do you offer any adapters for them?",
+            "CreatedTime": "2025-08-10T01:36:32.192737",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "69886d94-349d-4d7d-b7dc-6fba6a4bc5dd",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "UserId": "user_00038",
+            "session_id": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Metro+ Compact City Stroller is compatible with various car seats; however, the specific car seats compatible with this stroller are not listed in the provided information. I recommend checking the manufacturer's website or contacting customer support for a detailed list of compatible car seats.\n\nAs for adapters, the provided information does not specify whether adapters are available for car seats. Please visit the product page or reach out to customer support for further assistance regarding adapters. \n\nYou can view the stroller here: [Metro+ Compact City Stroller](https://www.aldeahome.com/products/metro-compact-city-stroller).",
+            "CreatedTime": "2025-08-10T01:36:34.589983",
+            "ItemId": "02134",
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "86128eb4-1f90-4a01-a677-1d6b8237f415",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "UserId": "user_00038",
+            "session_id": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Metro+ Compact City Stroller (Product ID: 02134) has any safety features, such as a harness system or brakes?",
+            "CreatedTime": "2025-08-10T01:36:36.795635",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "003c283a-e9cc-46ba-b633-6182f16bb306",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "UserId": "user_00038",
+            "session_id": "7d2ab9f0-4de2-409a-8d1b-96bbda87c212",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The provided information does not explicitly mention the specific safety features of the Metro+ Compact City Stroller, such as the harness system or brakes. However, most strollers typically include safety features like a secure harness system and a brake mechanism for added safety.\n\nFor detailed safety information, I recommend checking the product page or contacting customer support for specific safety features of the Metro+ Compact City Stroller.\n\nYou can find more information about the stroller here: [Metro+ Compact City Stroller](https://www.aldeahome.com/products/metro-compact-city-stroller).",
+            "CreatedTime": "2025-08-10T01:36:38.844020",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.862382"
 }

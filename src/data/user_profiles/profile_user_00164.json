@@ -1,0 +1,27 @@
+{
+    "user_id": "user_00164",
+    "raw_engagement_score": 2,
+    "normalized_engagement_score": 2,
+    "activities": [
+        {
+            "id": "b2175aaf-6c22-46c3-aedb-9c54341b61b2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00164",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "07026",
+                "category": "newborn-basics",
+                "product_name": "Pocket Sweater Knit Baby Legging Pants (Organic Cotton): Heather Grey / 18-24M",
+                "price": 24.0,
+                "product_url": "https://www.aldeahome.com/products/pocket-sweater-knit-baby-legging-pants-organic-cotton-heather-grey-18-24m",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/8be0a2d3550825ee73a25ee74f57f66eac8c2d01b74c94a5a6260d469c7bd8e2_e583fec2-45e2-4db8-920b-3b42b053ee5f.jpg?v=1737442300",
+                "view_duration_seconds": 82
+            },
+            "created_time": "2025-08-10T01:32:25.602342"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.904869"
+}

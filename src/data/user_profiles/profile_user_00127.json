@@ -1,0 +1,180 @@
+{
+    "user_id": "user_00127",
+    "raw_engagement_score": 37,
+    "normalized_engagement_score": 22,
+    "activities": [
+        {
+            "id": "3ef5aafb-3b0f-4626-913e-3d036750be1b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00127",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "01109",
+                "quantity": 1,
+                "price": 39.99
+            },
+            "created_time": "2025-08-10T01:32:25.544902"
+        },
+        {
+            "id": "f2c84450-27a2-430d-8621-c4fce93d0381",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00127",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07623",
+                "quantity": 1,
+                "price": 9.99
+            },
+            "created_time": "2025-08-10T01:32:25.544906"
+        },
+        {
+            "id": "554f179f-a78f-4a3b-a290-642affee5c7c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00127",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00127_544909",
+                "total_amount": 44.0,
+                "items": [
+                    {
+                        "product_id": "01706",
+                        "quantity": 1,
+                        "price": 10.0
+                    },
+                    {
+                        "product_id": "00507",
+                        "quantity": 1,
+                        "price": 34.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.544913"
+        },
+        {
+            "id": "5a4c4434-566e-4a66-bfa6-571636a57575",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00127",
+            "event_name": "search",
+            "event_data": {
+                "query": "Baby Side Pocket Sweater Knit Pants (Organic Cotton): Cafe Latte / 18-24 Month",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.547059"
+        },
+        {
+            "id": "3e6c97de-ecd2-4245-9279-691010a39480",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00127",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04171",
+                "category": "exclude",
+                "product_name": "Woodland Snail Salt and Pepper",
+                "price": 19.95,
+                "product_url": "https://www.aldeahome.com/products/woodland-snail-salt-and-pepper",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/DYSPEWOOSNLO_PROD_GB_72-scaled.jpg?v=1729025584",
+                "view_duration_seconds": 45
+            },
+            "created_time": "2025-08-10T01:32:25.547063"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "ba9c01fd-fec7-4f8c-819c-eb3ee40446c1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "UserId": "user_00127",
+            "session_id": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me how long the scent lasts with the Verbena Drizzle Diffuser (Product ID: 01838)?",
+            "CreatedTime": "2025-08-10T01:45:30.028465",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "85057ab5-1e19-49cf-a952-4a6c5c7e3437",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "UserId": "user_00127",
+            "session_id": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific information on how long the scent lasts for the Verbena Drizzle Diffuser. However, it's designed to spread a lovely and calming scent throughout your home. For the best experience, it's often recommended to place it in a well-ventilated area and to regularly flip the wooden sticks to enhance the fragrance. \n\nIf you're interested in purchasing it, the Verbena Drizzle Diffuser is priced at $18.95. You can find more details and buy it [here](https://www.aldeahome.com/products/verbena-drizzle-diffuser).",
+            "CreatedTime": "2025-08-10T01:45:32.307302",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "0c122356-3569-42ec-a022-b73e0593c793",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "UserId": "user_00127",
+            "session_id": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the Verbena Drizzle Diffuser (Product ID: 01838) refillable, or do I need to purchase a new one once the scent runs out?",
+            "CreatedTime": "2025-08-10T01:45:33.228053",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6b8be597-cca4-4ab5-9760-ed7328c829b2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "UserId": "user_00127",
+            "session_id": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Verbena Drizzle Diffuser is not specified as refillable, which typically means that once the scent runs out, you would need to purchase a new one. If you enjoy the fragrance, you can always get another diffuser. \n\nThe current price is $18.95, and you can find it [here](https://www.aldeahome.com/products/verbena-drizzle-diffuser).",
+            "CreatedTime": "2025-08-10T01:45:35.037652",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6521b1ae-84fa-4876-9c2d-93722575a9ec",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "UserId": "user_00127",
+            "session_id": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Are there any special care instructions for the Verbena Drizzle Diffuser (Product ID: 01838) to ensure it lasts longer?",
+            "CreatedTime": "2025-08-10T01:45:35.842421",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "28f6a4c7-9efc-4fbe-878a-6dfb52b6b7ba",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "UserId": "user_00127",
+            "session_id": "c51122ac-955c-4cb7-9ece-d712806de1a5",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "While specific care instructions for the Verbena Drizzle Diffuser are not provided, here are some general tips to help ensure it lasts longer:\n\n1. **Placement**: Keep the diffuser in a well-ventilated area to help disperse the scent effectively.\n2. **Flip the Sticks**: Regularly flip the wooden sticks to enhance fragrance diffusion.\n3. **Avoid Direct Sunlight**: Keep it out of direct sunlight or heat sources, as this can affect the scent and the diffuser's longevity.\n4. **Check Fluid Level**: Monitor the liquid level and replace the diffuser once it's run out for the best experience.\n\nFor more information or to purchase, the Verbena Drizzle Diffuser is priced at $18.95 and available [here](https://www.aldeahome.com/products/verbena-drizzle-diffuser).",
+            "CreatedTime": "2025-08-10T01:45:38.831801",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.895462"
+}

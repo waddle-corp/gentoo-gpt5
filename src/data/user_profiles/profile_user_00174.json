@@ -1,0 +1,153 @@
+{
+    "user_id": "user_00174",
+    "raw_engagement_score": 29,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "d9778891-1e47-4770-b22d-309d1e2a549c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00174",
+            "event_name": "search",
+            "event_data": {
+                "query": "KeaBabies Luxe Baby Hooded Towel: Petite / KeaStory",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.616059"
+        },
+        {
+            "id": "45fc81c8-8901-40bb-89e6-d8439775ee71",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00174",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "05210",
+                "category": "exclude",
+                "product_name": "Godinger | Claro Wine Decanter",
+                "price": 20.0,
+                "product_url": "https://www.aldeahome.com/products/claro-wine-decanter-gifts-for-her",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/ae4c23562390063bc1d3dfdcdacd49b0cf0745706bd1cd23a75e0e1c69ff0a81.jpg?v=1729698847",
+                "view_duration_seconds": 80
+            },
+            "created_time": "2025-08-10T01:32:25.616063"
+        },
+        {
+            "id": "4158bc7e-928b-45c9-8294-1ace7bf34638",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00174",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07166",
+                "quantity": 1,
+                "price": 34.0
+            },
+            "created_time": "2025-08-10T01:32:25.616067"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "aeb31682-5463-491d-9563-eb039b8e29a4",
+            "customer_id": "user_00174",
+            "product_id": "04269",
+            "rating": 3,
+            "review_title": "Very satisfied!",
+            "review_content": "Fast shipping and great quality. I especially love the details on Silly Snail Hair Clips - Pink and Purple.",
+            "created_at": "2024-08-10T01:32:54.169133",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "95647f2c-8155-4e3d-8386-946e34168bd7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "UserId": "user_00174",
+            "session_id": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Light Green Pterodactyl (Product ID: 07267) suitable for very young children, and what safety certifications does it have?",
+            "CreatedTime": "2025-08-10T01:49:59.277840",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e823d687-cf7c-4a1b-9ca0-336e592716d3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "UserId": "user_00174",
+            "session_id": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Light Green Pterodactyl is suitable for very young children. It has several safety certifications, including ASTM, SOR, CE, UKCA, and AUS/NZ, ensuring it meets all current standards for chemical components and safety for children's products. \n\nIf you're interested, you can view the product [here](https://www.aldeahome.com/products/dino-plush-toy-light-green-pterodactyl). The price is $25.95.",
+            "CreatedTime": "2025-08-10T01:50:01.370876",
+            "ItemId": "07267",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5b96b2aa-a47d-4ea0-aa60-3d9a5d8f391b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "UserId": "user_00174",
+            "session_id": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the materials used in the Light Green Pterodactyl (Product ID: 07267)? Are they hypoallergenic?",
+            "CreatedTime": "2025-08-10T01:50:02.424965",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6c0bbbfe-8666-4366-a1ee-1dc868f71afe",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "UserId": "user_00174",
+            "session_id": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don’t have specific details about the materials used in the Light Green Pterodactyl. However, it is important to note that it has received safety certifications like ASTM, SOR, CE, UKCA, and AUS/NZ, which suggest that it meets high safety standards suitable for children's products. For hypoallergenic properties, I would recommend checking directly with the manufacturer or retailer for specific material information. \n\nIf you're interested in purchasing, the Light Green Pterodactyl is priced at $25.95, and you can find it [here](https://www.aldeahome.com/products/dino-plush-toy-light-green-pterodactyl).",
+            "CreatedTime": "2025-08-10T01:50:05.150725",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5aca111d-cb2d-402e-ba6d-144e09a226ed",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "UserId": "user_00174",
+            "session_id": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me if the Light Green Pterodactyl (Product ID: 07267) is machine washable, or how to best clean it?",
+            "CreatedTime": "2025-08-10T01:50:06.146906",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f205d5b7-f2b0-4c40-8fdf-2aad4479cc66",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "UserId": "user_00174",
+            "session_id": "0b62b3a4-aad4-40cf-8a99-9cc61a5f6926",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I do not have specific information regarding whether the Light Green Pterodactyl is machine washable or the best cleaning methods. For plush toys, it is generally recommended to check the care label if available or consult with the manufacturer for the best cleaning instructions. \n\nIf you're looking to purchase, the Light Green Pterodactyl is priced at $25.95, and you can view it [here](https://www.aldeahome.com/products/dino-plush-toy-light-green-pterodactyl).",
+            "CreatedTime": "2025-08-10T01:50:08.188421",
+            "ItemId": "07267",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.907310"
+}

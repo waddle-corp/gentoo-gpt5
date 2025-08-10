@@ -1,0 +1,161 @@
+{
+    "user_id": "user_00126",
+    "raw_engagement_score": 33,
+    "normalized_engagement_score": 20,
+    "activities": [
+        {
+            "id": "b077edbd-fe6e-49eb-b052-5c39bda2c5b2",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00126",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.11.86"
+            },
+            "created_time": "2025-08-10T01:32:25.544884"
+        },
+        {
+            "id": "a9ea84b8-fe75-430e-8db5-f7225522fe18",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00126",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "05104",
+                "quantity": 3,
+                "price": 29.5
+            },
+            "created_time": "2025-08-10T01:32:25.544888"
+        },
+        {
+            "id": "bafe1b1f-7a4a-4f98-8b54-d6e37a117849",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00126",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "03977",
+                "quantity": 1,
+                "price": 7.0
+            },
+            "created_time": "2025-08-10T01:32:25.544891"
+        },
+        {
+            "id": "cf16e7f4-ca4a-4565-b2f4-d9b6bcfa4e78",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00126",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00126_544894",
+                "total_amount": 47.0,
+                "items": [
+                    {
+                        "product_id": "04316",
+                        "quantity": 1,
+                        "price": 15.0
+                    },
+                    {
+                        "product_id": "04079",
+                        "quantity": 1,
+                        "price": 32.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.544898"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "2ae3b521-523f-4f4a-afac-871ca8113ea4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "03873888-0371-4651-ae1d-83ec780ef540",
+            "UserId": "user_00126",
+            "session_id": "03873888-0371-4651-ae1d-83ec780ef540",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the safety features of the Counting Colors in the Sea (Tuffy Teether Indestructible) (Product ID: 01467) for teething babies?",
+            "CreatedTime": "2025-08-10T01:45:16.353566",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "53a7cd7a-57c2-4b03-9e56-477ed40413d8",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "03873888-0371-4651-ae1d-83ec780ef540",
+            "UserId": "user_00126",
+            "session_id": "03873888-0371-4651-ae1d-83ec780ef540",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The **Counting Colors in the Sea (Tuffy Teether Indestructible)** is designed with several safety features specifically for teething babies. It has a built-in teether that is safe for babies to chew on, ensuring it can withstand everything that curious little mouths might do. The pages are made to be paper-like but are rip-proof and washable, making them easy to clean and durable. This makes it a safe option for teething infants and busy toddlers. \n\nFor more information, you can check out the product [here](https://www.aldeahome.com/products/counting-colors-in-the-sea-tuffy-teether-indestructible). The price is **$8.99**.",
+            "CreatedTime": "2025-08-10T01:45:19.587623",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6a4df43b-c436-4ee8-a577-c3fe6084a2ae",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "03873888-0371-4651-ae1d-83ec780ef540",
+            "UserId": "user_00126",
+            "session_id": "03873888-0371-4651-ae1d-83ec780ef540",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "Can you tell me if the **Counting Colors in the Sea (Tuffy Teether Indestructible)** (Product ID: 01467) is suitable for babies who are just starting to teethe, or is it recommended for older infants?",
+            "CreatedTime": "2025-08-10T01:45:20.731534",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "4570cd70-99b5-433c-8005-80597a02910a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "03873888-0371-4651-ae1d-83ec780ef540",
+            "UserId": "user_00126",
+            "session_id": "03873888-0371-4651-ae1d-83ec780ef540",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The **Counting Colors in the Sea (Tuffy Teether Indestructible)** is suitable for babies who are just starting to teethe. Its built-in teether is designed for teething infants, making it a great choice for those early stages of teething. The washable and chewable design ensures it's safe and easy for little ones to handle. This makes it an ideal first book for babies as they experience teething and begin exploring their world. \n\nFor more details, you can visit the product page [here](https://www.aldeahome.com/products/counting-colors-in-the-sea-tuffy-teether-indestructible). The price is **$8.99**.",
+            "CreatedTime": "2025-08-10T01:45:23.891376",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "91814fc7-c2b9-4a74-99e1-847e8a718901",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "03873888-0371-4651-ae1d-83ec780ef540",
+            "UserId": "user_00126",
+            "session_id": "03873888-0371-4651-ae1d-83ec780ef540",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Are there any other similar books for infants that are also chewable and durable, like the **Counting Colors in the Sea (Tuffy Teether Indestructible)** (Product ID: 01467)? I'm looking for more options for my baby.",
+            "CreatedTime": "2025-08-10T01:45:25.236112",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6e24e681-ec2e-4343-8824-d847b212440a",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "03873888-0371-4651-ae1d-83ec780ef540",
+            "UserId": "user_00126",
+            "session_id": "03873888-0371-4651-ae1d-83ec780ef540",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I currently only have information about the **Counting Colors in the Sea (Tuffy Teether Indestructible)**, which is a chewable and durable option for infants. However, if you're looking for similar products, I recommend checking with the retailer for additional titles in the same category or series, as they often have a variety of chewable and indestructible books suitable for teething babies. \n\nFor the **Counting Colors in the Sea**, you can find more details [here](https://www.aldeahome.com/products/counting-colors-in-the-sea-tuffy-teether-indestructible) at a price of **$8.99**. If you're interested in exploring more options, consider asking the retailer directly for their recommendations!",
+            "CreatedTime": "2025-08-10T01:45:29.064199",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.895147"
+}

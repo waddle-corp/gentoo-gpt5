@@ -1,0 +1,154 @@
+{
+    "user_id": "user_00141",
+    "raw_engagement_score": 29,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "75ed5ced-fb84-4a38-8e06-f3af35dd708e",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00141",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "01334",
+                "category": "labor-day-sale-2021",
+                "product_name": "Stokke YOYO Newborn Shell",
+                "price": 349.0,
+                "product_url": "https://www.aldeahome.com/products/stokke-yoyo-newborn-shell",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/648303_001_leadimage.jpg?v=1749932858",
+                "view_duration_seconds": 77
+            },
+            "created_time": "2025-08-10T01:32:25.565701"
+        },
+        {
+            "id": "07130ac1-08f3-422f-8703-6a363d0fcc25",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00141",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "00417",
+                "quantity": 3,
+                "price": 22.0
+            },
+            "created_time": "2025-08-10T01:32:25.565705"
+        },
+        {
+            "id": "2b06fa7e-b66a-4822-bff8-7b03eda468b3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00141",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00141_565708",
+                "total_amount": 29.5,
+                "items": [
+                    {
+                        "product_id": "05787",
+                        "quantity": 1,
+                        "price": 5.5
+                    },
+                    {
+                        "product_id": "01853",
+                        "quantity": 1,
+                        "price": 24.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.565713"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "31f69450-1bcb-4a42-bf26-f55a8c81ffe2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "UserId": "user_00141",
+            "session_id": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "What are the main features of the Fresh from Garden (Product ID: 05320), and how does it differ from similar products?",
+            "CreatedTime": "2025-08-10T01:46:41.939486",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "889119ac-b5d4-46c4-ba93-2795902bfa1b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "UserId": "user_00141",
+            "session_id": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'Fresh from Garden' is priced at $40.00 and offers a unique value for those looking for quality garden produce. While specific features and comparisons to similar products are not detailed, you can explore it further through the product URL: [Fresh from Garden](https://www.aldeahome.com/products/fresh-from-garden). This link provides additional information that could highlight its distinct qualities. If you have more specific questions or need assistance with something else, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:46:44.189202",
+            "ItemId": "05320",
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "0e301c82-f21d-4af3-b205-cc5578e9698c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "UserId": "user_00141",
+            "session_id": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the ingredients or components used in the 'Fresh from Garden' (Product ID: 05320) and how they contribute to its quality?",
+            "CreatedTime": "2025-08-10T01:46:45.244343",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5acb3f70-27a3-4aac-a7cb-3ca6dc5ec679",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "UserId": "user_00141",
+            "session_id": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don't have specific details about the ingredients or components used in the 'Fresh from Garden' (Product ID: 05320). However, the product is priced at $40.00, which often reflects quality and care in sourcing ingredients. For more information about its quality and any unique components, I recommend checking the product page here: [Fresh from Garden](https://www.aldeahome.com/products/fresh-from-garden). If you have any other questions, let me know!",
+            "CreatedTime": "2025-08-10T01:46:46.950657",
+            "ItemId": "05320",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "19d81f6c-ad8d-43f2-8f90-68fb88f18a0f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "UserId": "user_00141",
+            "session_id": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you provide details about the sourcing process for the ingredients in the 'Fresh from Garden' (Product ID: 05320)? I’m interested in knowing how they ensure quality and freshness.",
+            "CreatedTime": "2025-08-10T01:46:48.069658",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2d543cec-c426-45ee-95dc-dd4d6354690d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "UserId": "user_00141",
+            "session_id": "3507ff0a-22a9-44ab-95be-927a0ba26c8e",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don’t have specific details about the sourcing process for the ingredients in the 'Fresh from Garden' (Product ID: 05320). However, quality and freshness are typically emphasized in products like this. For more detailed information on how they ensure quality and freshness, I recommend visiting the product page: [Fresh from Garden](https://www.aldeahome.com/products/fresh-from-garden). If you have any other questions, feel free to ask!",
+            "CreatedTime": "2025-08-10T01:46:49.753618",
+            "ItemId": "05320",
+            "Thumbs": "up",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.899255"
+}

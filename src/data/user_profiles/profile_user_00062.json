@@ -1,174 +1,88 @@
 {
     "user_id": "user_00062",
-    "raw_engagement_score": 36,
-    "normalized_engagement_score": 24,
+    "raw_engagement_score": 22,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "e9f106f2-de19-4584-92b4-a0d39230633c",
+            "id": "8ff989e8-e16d-4a28-b3df-2ecd06c556b2",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00062",
             "event_name": "search",
             "event_data": {
-                "query": "베스트셀러",
-                "search_results_count": 0,
+                "query": "astro baby towel",
+                "search_results_count": 1,
                 "filters_applied": [
                     "리뷰 많은 순"
                 ]
             },
-            "created_time": "2025-08-09T20:05:50.736345"
+            "created_time": "2025-08-10T01:32:25.451710"
         },
         {
-            "id": "b7b63703-fa71-41d0-8725-d30e84b392ec",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00062",
-            "event_name": "search",
-            "event_data": {
-                "query": "Donut Van",
-                "search_results_count": 1,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T20:05:50.738812"
-        },
-        {
-            "id": "0d91d8b6-155a-4d0b-8e96-4314b7ef6112",
+            "id": "ca2f4f49-bf73-4c18-bd64-17755f95d88e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00062",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "01126",
-                "category": "labor-day-sale-2021",
-                "product_name": "Rabbit Play Chairs (2)",
-                "price": 340.0,
-                "product_url": "https://www.aldeahome.com/products/rabbit-play-chairs",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/f57cd6e6ddf9e5b29e0acad6d158e713.jpg?v=1572391789",
-                "view_duration_seconds": 93
+                "product_id": "01066",
+                "category": "black-friday-2023",
+                "product_name": "Toddler Tower",
+                "price": 199.0,
+                "product_url": "https://www.aldeahome.com/products/toddler-tower",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/DD_ToddlerTower_Sage_Angle_1600x_jpg.jpg?v=1659211023",
+                "view_duration_seconds": 39
             },
-            "created_time": "2025-08-09T20:05:50.738819"
+            "created_time": "2025-08-10T01:32:25.451714"
         },
         {
-            "id": "c4819bcf-2cb0-4b83-81e9-0d5e5c982f07",
+            "id": "c89132ba-46ce-4b5d-afb7-55918d587da8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00062",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "00715",
+                "category": "bags",
+                "product_name": "Squishable Caterpillar Crossbody Purse",
+                "price": 45.0,
+                "product_url": "https://www.aldeahome.com/products/caterpillar-purse",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/crossbody_caterpillar.webp?v=1731386176",
+                "view_duration_seconds": 90
+            },
+            "created_time": "2025-08-10T01:32:25.451718"
+        },
+        {
+            "id": "1c748ad1-04b6-4af2-ac24-fcb2a9983523",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00062",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07375",
+                "quantity": 3,
+                "price": 16.5
+            },
+            "created_time": "2025-08-10T01:32:25.451722"
+        },
+        {
+            "id": "19a853c2-0b1e-4af8-9ace-c1133716f98a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00062",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00062_738825",
-                "total_amount": 16.5,
+                "order_id": "ORDER_user_00062_451725",
+                "total_amount": 32.0,
                 "items": [
                     {
-                        "product_id": "03332",
+                        "product_id": "07064",
                         "quantity": 1,
-                        "price": 16.5
+                        "price": 32.0
                     }
                 ],
                 "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T20:05:50.738835"
+            "created_time": "2025-08-10T01:32:25.451732"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "75bcd47e-9d59-45cd-bd39-45fc9fb5cf56",
-            "customer_id": "user_00062",
-            "product_id": "05931",
-            "rating": 3,
-            "review_title": "Very satisfied!",
-            "review_content": "I gave it as a gift and they loved it. Thanks to Dulce Amor Earrings, I got called thoughtful!",
-            "created_at": "2024-09-06T20:52:52.182229",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "7b31091b-a0b8-42de-87bd-59718272089f",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "UserId": "user_00062",
-            "session_id": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you provide more details about the features of the Wishcraft (Product ID: 04953) and how it can be used?",
-            "CreatedTime": "2025-08-09T20:21:43.538513",
-            "ItemId": null,
-            "Thumbs": "down",
-            "Channel": "web"
-        },
-        {
-            "Id": "f665be3f-8544-4b71-92c0-a463d177c993",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "UserId": "user_00062",
-            "session_id": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Wishcraft is priced at $16.99 and is designed to inspire creativity and imagination. While specific features are not detailed, it can be used in various ways to enhance your creative projects, whether for crafting or personal expression. \n\nFor more information and to make a purchase, you can visit the product page: [Wishcraft](https://www.aldeahome.com/products/wishcraft).",
-            "CreatedTime": "2025-08-09T20:21:45.464703",
-            "ItemId": "04953",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "7fe8b67c-ed2a-4d98-9ae3-529d561d4819",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "UserId": "user_00062",
-            "session_id": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me what materials the Wishcraft (Product ID: 04953) is made from, and if it's suitable for children to use?",
-            "CreatedTime": "2025-08-09T20:21:46.281288",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "50eba268-8dc2-4927-b73d-7f3e5d00b584",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "UserId": "user_00062",
-            "session_id": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "I don't have specific details about the materials used in the Wishcraft (Product ID: 04953) or its suitability for children. However, you can find more information regarding its features and safety by visiting the product page: [Wishcraft](https://www.aldeahome.com/products/wishcraft). If you have any other questions or need assistance, feel free to ask!",
-            "CreatedTime": "2025-08-09T20:21:47.877958",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0a1bc764-3b71-4425-a4da-82aa0d4e68b1",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "UserId": "user_00062",
-            "session_id": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you confirm if the Wishcraft (Product ID: 04953) is safe for children under 10, and what specific age recommendations are there for its use?",
-            "CreatedTime": "2025-08-09T20:21:48.964896",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "8fd425f3-8ae2-42c3-aaf5-d90973571a4b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "UserId": "user_00062",
-            "session_id": "5346c697-a9d5-4c0d-8485-f3aac0c9dc65",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "I don't have specific information regarding the safety of the Wishcraft (Product ID: 04953) for children under 10 or age recommendations for its use. I recommend checking the product page for more details or contacting customer support for specific safety guidelines. You can visit the product page here: [Wishcraft](https://www.aldeahome.com/products/wishcraft). If you have any other questions, feel free to ask!",
-            "CreatedTime": "2025-08-09T20:21:50.942932",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.204058"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.871809"
 }

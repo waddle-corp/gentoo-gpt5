@@ -1,0 +1,132 @@
+{
+    "user_id": "user_00122",
+    "raw_engagement_score": 29,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "435fb497-ed01-4afe-8b31-7cdd099d899f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00122",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00122_542585",
+                "total_amount": 6.0,
+                "items": [
+                    {
+                        "product_id": "04016",
+                        "quantity": 1,
+                        "price": 6.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.542589"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "e3dca0a3-4319-40f8-8faa-4bac74d90e88",
+            "customer_id": "user_00122",
+            "product_id": "04525",
+            "rating": 5,
+            "review_title": "Highly recommend",
+            "review_content": "Pure Emu Oil | 1 Fl Oz is fantastic! I wish I'd found it sooner.",
+            "created_at": "2024-08-23T01:32:54.169017",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "e5dcab22-e563-4125-901f-6dd9f55da43e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "546db605-181c-4454-b0dc-accb4118373d",
+            "UserId": "user_00122",
+            "session_id": "546db605-181c-4454-b0dc-accb4118373d",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "What are the dimensions of The CHECKER CABANA STRIPE Pup-ana™ Tent (Product ID: 07117), and is it easy to set up in the backyard?",
+            "CreatedTime": "2025-08-10T01:44:47.279188",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "56dc6b02-dcb4-4bb9-a87d-50f156528dc3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "546db605-181c-4454-b0dc-accb4118373d",
+            "UserId": "user_00122",
+            "session_id": "546db605-181c-4454-b0dc-accb4118373d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The dimensions of The CHECKER CABANA STRIPE Pup-ana™ Tent are approximately 40 inches tall, 26 inches wide, and 36 inches deep. It is designed for easy setup, making it a great addition to your backyard for your pups. \n\nFor more details or to purchase, you can visit the product page [here](https://www.aldeahome.com/products/the-checker-cabana-stripe-pup-ana™-tent). The price is $55.00.",
+            "CreatedTime": "2025-08-10T01:44:49.778280",
+            "ItemId": "07117",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "da787cb1-2783-4f33-9e69-0118a0353657",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "546db605-181c-4454-b0dc-accb4118373d",
+            "UserId": "user_00122",
+            "session_id": "546db605-181c-4454-b0dc-accb4118373d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if The CHECKER CABANA STRIPE Pup-ana™ Tent (Product ID: 07117) is waterproof or water-resistant? I want to make sure it can handle some splashes during pool time!",
+            "CreatedTime": "2025-08-10T01:44:50.905978",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "11b7f739-343a-4ef8-8e99-ed89e76fc0be",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "546db605-181c-4454-b0dc-accb4118373d",
+            "UserId": "user_00122",
+            "session_id": "546db605-181c-4454-b0dc-accb4118373d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The CHECKER CABANA STRIPE Pup-ana™ Tent is made from 100% polyester fabric, which typically offers some level of water resistance, but it is not explicitly stated to be waterproof. It should handle splashes during pool time, but for extended exposure to water, you may want to take precautions. \n\nYou can check out more details or purchase it [here](https://www.aldeahome.com/products/the-checker-cabana-stripe-pup-ana™-tent) for $55.00.",
+            "CreatedTime": "2025-08-10T01:44:54.183637",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "efdf4ff0-4fa7-469f-83ec-e04f3b67dd89",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "546db605-181c-4454-b0dc-accb4118373d",
+            "UserId": "user_00122",
+            "session_id": "546db605-181c-4454-b0dc-accb4118373d",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Does The CHECKER CABANA STRIPE Pup-ana™ Tent (Product ID: 07117) come in different colors or patterns, or is it only available in the checker cabana stripe design?",
+            "CreatedTime": "2025-08-10T01:44:55.309385",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "3e885f3a-4284-43a0-8a2c-d1f9544f2262",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "546db605-181c-4454-b0dc-accb4118373d",
+            "UserId": "user_00122",
+            "session_id": "546db605-181c-4454-b0dc-accb4118373d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The CHECKER CABANA STRIPE Pup-ana™ Tent is specifically available only in the CHECKER CABANA STRIPE design as part of THE HOTEL MINNIDIP Collection. There are no other colors or patterns mentioned for this particular product. \n\nFor more information or to purchase, visit the product page [here](https://www.aldeahome.com/products/the-checker-cabana-stripe-pup-ana™-tent) for $55.00.",
+            "CreatedTime": "2025-08-10T01:44:57.569924",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.893976"
+}

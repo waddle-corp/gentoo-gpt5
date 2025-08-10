@@ -1,0 +1,126 @@
+{
+    "user_id": "user_00114",
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "bfb7927c-8112-4e4b-a78a-615100163d38",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00114",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00114_530849",
+                "total_amount": 42.95,
+                "items": [
+                    {
+                        "product_id": "04807",
+                        "quantity": 1,
+                        "price": 13.95
+                    },
+                    {
+                        "product_id": "01964",
+                        "quantity": 1,
+                        "price": 29.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.530854"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "bdf0c6e3-fc2a-432b-b7f7-2fed357d18b2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "UserId": "user_00114",
+            "session_id": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the contents and target age group for the SF A Book Of Numbers (Product ID: 04099)?",
+            "CreatedTime": "2025-08-10T01:43:55.726115",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "295c950a-f7c2-4efc-86a1-a7036bcaad27",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "UserId": "user_00114",
+            "session_id": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The SF A Book Of Numbers is a great resource for learning about numbers. While I don't have specific details on the contents, it is designed to help children understand numerical concepts in a fun and engaging way. This book is ideal for early learners, typically targeting preschool to early elementary-aged children. \n\nThe price of the SF A Book Of Numbers is $7.99. You can find more information and purchase it [here](https://www.aldeahome.com/products/sf-a-book-of-numbers).",
+            "CreatedTime": "2025-08-10T01:43:57.757646",
+            "ItemId": "04099",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ad8bbd05-efdf-423b-8d03-031680db7773",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "UserId": "user_00114",
+            "session_id": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the SF A Book Of Numbers (Product ID: 04099) suitable for children who are just starting to learn numbers, or is it more advanced? Also, does it include any interactive elements or activities?",
+            "CreatedTime": "2025-08-10T01:43:58.815419",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "a40356ee-9a9c-4e5d-ba47-266ca7c6688c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "UserId": "user_00114",
+            "session_id": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The SF A Book Of Numbers is suitable for children who are just starting to learn numbers, making it perfect for early learners, such as preschoolers. While I don't have specific information about interactive elements or activities included in the book, it is generally designed to engage young children in understanding numbers in a fun way.\n\nIf you're looking for a resource to help introduce numbers to young children, the SF A Book Of Numbers would be a great choice. The price is $7.99, and you can find it [here](https://www.aldeahome.com/products/sf-a-book-of-numbers).",
+            "CreatedTime": "2025-08-10T01:44:00.989479",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "619e3469-7ee2-4de2-becd-294a2ec51356",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "UserId": "user_00114",
+            "session_id": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the SF A Book Of Numbers (Product ID: 04099) includes colorful illustrations or visuals to help engage children while they learn?",
+            "CreatedTime": "2025-08-10T01:44:01.879135",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3c474112-1c6f-4533-a833-c42fa2021b92",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "UserId": "user_00114",
+            "session_id": "3b796205-0688-425d-9354-a34f245f4ddb",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "While I don't have specific details about the illustrations in the SF A Book Of Numbers, books designed for early learners typically include colorful visuals to engage children and make learning more enjoyable. This would likely be the case for this book as well, as it aims to help children understand numbers in a fun way.\n\nThe SF A Book Of Numbers is priced at $7.99, and you can find more information and purchase it [here](https://www.aldeahome.com/products/sf-a-book-of-numbers).",
+            "CreatedTime": "2025-08-10T01:44:04.133391",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.891369"
+}

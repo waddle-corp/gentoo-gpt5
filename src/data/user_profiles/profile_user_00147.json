@@ -1,0 +1,22 @@
+{
+    "user_id": "user_00147",
+    "raw_engagement_score": 1,
+    "normalized_engagement_score": 1,
+    "activities": [
+        {
+            "id": "c9636806-3529-4a45-895a-abcf41ed26d5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00147",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.97.70"
+            },
+            "created_time": "2025-08-10T01:32:25.576729"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.901193"
+}

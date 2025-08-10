@@ -1,0 +1,160 @@
+{
+    "user_id": "user_00132",
+    "raw_engagement_score": 30,
+    "normalized_engagement_score": 18,
+    "activities": [
+        {
+            "id": "461154b6-580e-4181-8cd2-ea916c4fcae8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00132",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00132_551740",
+                "total_amount": 69.0,
+                "items": [
+                    {
+                        "product_id": "02292",
+                        "quantity": 1,
+                        "price": 69.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.551744"
+        },
+        {
+            "id": "300488e5-6f80-4515-8459-9a61b6e3ea0f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00132",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04805",
+                "category": "exclude",
+                "product_name": "Lemons | Cotton Floppy Sun Hat",
+                "price": 28.0,
+                "product_url": "https://www.aldeahome.com/products/lemons-cotton-floppy-sun-hat",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/8f810b960fc41983defe280b188d104bc27b808001e2e74d739e15c7321f7360.jpg?v=1719684239",
+                "view_duration_seconds": 75
+            },
+            "created_time": "2025-08-10T01:32:25.551748"
+        },
+        {
+            "id": "298d9fa7-c908-4728-ab48-1711d4be9c55",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00132",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "05539",
+                "quantity": 3,
+                "price": 6.0
+            },
+            "created_time": "2025-08-10T01:32:25.551752"
+        },
+        {
+            "id": "c5352119-0453-4e24-8fe7-8d0b7cb5ec8b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00132",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.231.50"
+            },
+            "created_time": "2025-08-10T01:32:25.551756"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "d04b88ac-aaed-4c1c-adfa-798043242867",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "UserId": "user_00132",
+            "session_id": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the techniques or practices included in the 'Little Bok of Sleep' (Product ID: 01447) that help improve sleep quality?",
+            "CreatedTime": "2025-08-10T01:46:03.598015",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "660aa80f-34fa-49ab-abe6-b8d4aeb7fcd7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "UserId": "user_00132",
+            "session_id": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The 'Little Bok of Sleep' focuses on the importance of not just the quantity but also the quality of sleep. It emphasizes reconnecting with oneself and finding inner stillness, which are essential for deep and restful sleep. While the specific techniques or practices are not detailed in the provided information, it suggests the incorporation of mindfulness and yoga practices that are popular for promoting relaxation and inner peace. \n\nIf you're interested in purchasing the book, it is priced at $10.99. You can find it [here](https://www.aldeahome.com/products/little-bok-of-sleep).",
+            "CreatedTime": "2025-08-10T01:46:05.785353",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "001f5ea0-d02b-4eca-bdcc-ef8af721ff09",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "UserId": "user_00132",
+            "session_id": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Does the 'Little Bok of Sleep' (Product ID: 01447) include any specific exercises or routines for mindfulness or yoga that I can try before bedtime?",
+            "CreatedTime": "2025-08-10T01:46:06.795529",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "cdfa982e-dc5b-43cb-be2b-f8092f3a7d1c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "UserId": "user_00132",
+            "session_id": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The provided information does not specify any particular exercises or routines for mindfulness or yoga included in the 'Little Bok of Sleep.' However, it does highlight the importance of reconnecting with oneself and finding inner stillness, which aligns with common mindfulness and yoga practices that can be beneficial for improving sleep quality.\n\nTo explore these techniques further, you might consider purchasing the book for detailed insights. It is priced at $10.99 and can be found [here](https://www.aldeahome.com/products/little-bok-of-sleep).",
+            "CreatedTime": "2025-08-10T01:46:08.970394",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "76275198-d23b-471c-9049-9f67e47241a5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "UserId": "user_00132",
+            "session_id": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any customer reviews or testimonials for the 'Little Bok of Sleep' (Product ID: 01447) that highlight how effective the techniques are for improving sleep quality?",
+            "CreatedTime": "2025-08-10T01:46:10.805173",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d6f8dc7a-e2eb-4020-b60a-3698f047eb43",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "UserId": "user_00132",
+            "session_id": "14a6d8b5-cb08-4c6f-8daf-293ff272ff27",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The provided information does not include any customer reviews or testimonials for the 'Little Bok of Sleep.' For feedback on the effectiveness of the techniques discussed in the book, you may want to check the product page or other review platforms where customers share their experiences. \n\nIf you're interested in the book, it is available for $10.99. You can view it [here](https://www.aldeahome.com/products/little-bok-of-sleep).",
+            "CreatedTime": "2025-08-10T01:46:12.547067",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.896758"
+}

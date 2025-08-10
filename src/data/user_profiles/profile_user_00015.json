@@ -1,177 +1,141 @@
 {
     "user_id": "user_00015",
-    "raw_engagement_score": 42,
-    "normalized_engagement_score": 27,
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 13,
     "activities": [
         {
-            "id": "2caabc47-f3b6-4386-a384-63617201f872",
+            "id": "d0431af9-e2ba-4513-9a1c-40c731af82a5",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00015",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "02493",
+                "product_id": "05597",
                 "quantity": 2,
-                "price": 68.0
+                "price": 49.0
             },
-            "created_time": "2025-08-09T20:05:50.659472"
+            "created_time": "2025-08-10T01:32:25.375104"
         },
         {
-            "id": "54e7f7b5-2690-4af5-8c48-bc163ffbb65b",
+            "id": "acc582d1-4f53-47f6-ab28-ee68bd96367f",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00015",
-            "event_name": "purchase_completed",
+            "event_name": "product_view",
             "event_data": {
-                "order_id": "ORDER_user_00015_659480",
-                "total_amount": 41.95,
-                "items": [
-                    {
-                        "product_id": "00143",
-                        "quantity": 1,
-                        "price": 33.95
-                    },
-                    {
-                        "product_id": "04694",
-                        "quantity": 1,
-                        "price": 8.0
-                    }
-                ],
-                "payment_method": "naver_pay"
+                "product_id": "04203",
+                "category": "exclude",
+                "product_name": "San Francisco Giant Poster",
+                "price": 21.5,
+                "product_url": "https://www.aldeahome.com/products/san-francisco-giant-poster-1",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/fdbcac998412381730723d41e06a1d05df09a5802aa0dbc79301bea5a7f1fda8.png?v=1715921286",
+                "view_duration_seconds": 101
             },
-            "created_time": "2025-08-09T20:05:50.659490"
+            "created_time": "2025-08-10T01:32:25.375108"
         },
         {
-            "id": "64be405a-e4f8-440c-aeaf-918b05c849d2",
+            "id": "c366de41-4680-48dd-9073-03f583649256",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00015",
-            "event_name": "search",
+            "event_name": "login",
             "event_data": {
-                "query": "Lets Go Explore White/Black Trucker Hat",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "login_method": "email_password",
+                "ip_address": "192.168.86.251"
             },
-            "created_time": "2025-08-09T20:05:50.661783"
-        },
-        {
-            "id": "d6bdf068-83a9-4d02-a329-95ec9c4a7391",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00015",
-            "event_name": "search",
-            "event_data": {
-                "query": "Ice Cream Robots Sleeveless Shortie Baby Romper (Organic): Dove White / 6-12M",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "가격 낮은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.663964"
+            "created_time": "2025-08-10T01:32:25.375111"
         }
     ],
-    "reviews": [
-        {
-            "review_id": "320191c8-eec5-4c06-8431-ee970f1ed475",
-            "customer_id": "user_00015",
-            "product_id": "02538",
-            "rating": 4,
-            "review_title": "Love it!",
-            "review_content": "Triangle Crib Sheet - Black is fantastic! I wish I'd found it sooner.",
-            "created_at": "2024-12-20T20:52:52.182090",
-            "is_deleted": false
-        }
-    ],
+    "reviews": [],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "dd174361-a263-4c60-9750-b292ac378906",
+            "Id": "7a2f15e1-eeb4-4f6f-b52e-892cd1cd5e4e",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "DialogueId": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
             "UserId": "user_00015",
-            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Could you tell me more about the level of difficulty for the Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle (Product ID: 05959)?",
-            "CreatedTime": "2025-08-09T20:17:02.166903",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "13b0acc8-adab-4855-b32c-0ca6656afeba",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
-            "UserId": "user_00015",
-            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle offers a moderate level of difficulty suitable for puzzle enthusiasts. With 500 pieces, it provides a challenge while also being accessible for those who enjoy puzzling. Additionally, this puzzle includes 3 mini shaped puzzles within, adding an extra twist to the classic format. The unique and intricate designs inspired by Frank Lloyd Wright’s artwork may require some focus and attention to detail, making it a rewarding experience for puzzlers. \n\nIf you're interested, the price is $19.99. You can find it [here](https://www.aldeahome.com/products/frank-lloyd-wright-organic-geometry-500-piece-multi-puzzle).",
-            "CreatedTime": "2025-08-09T20:17:06.002425",
-            "ItemId": "05959",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "27c3b6a1-2b46-410c-bea3-032a7a4df43e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
-            "UserId": "user_00015",
-            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Are there any customer reviews or ratings for the Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle (Product ID: 05959) that could give me an idea of others' experiences with it?",
-            "CreatedTime": "2025-08-09T20:17:07.165012",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "80a9db24-10b7-40b2-917d-3b4c07c46b55",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
-            "UserId": "user_00015",
-            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "I currently don't have access to customer reviews or ratings for the Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle. However, you can often find feedback on the product page or by searching for it on popular review sites. Many customers appreciate the unique design and the challenge it presents, given the intricate patterns associated with Frank Lloyd Wright's artwork. If you have any specific questions or need further information, feel free to ask! \n\nYou can view the product [here](https://www.aldeahome.com/products/frank-lloyd-wright-organic-geometry-500-piece-multi-puzzle) for more details.",
-            "CreatedTime": "2025-08-09T20:17:09.990735",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "d16c469d-4421-492f-ab40-799fd287d37c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
-            "UserId": "user_00015",
-            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "session_id": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "What are the dimensions of the finished Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle (Product ID: 05959) once it's completed?",
-            "CreatedTime": "2025-08-09T20:17:11.070030",
+            "Content": "Is the FARM | PULL ALONG TRACTOR (Product ID: 06357) suitable for toddlers, and what age range do you recommend for this toy?",
+            "CreatedTime": "2025-08-10T01:34:30.248368",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "cd146ee8-d36b-4089-b0bf-5a90d4cc41e1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
+            "UserId": "user_00015",
+            "session_id": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "Yes, the FARM | PULL ALONG TRACTOR is suitable for toddlers. It is designed to be a great walking aid for little ones, making it perfect for young children who are just starting to walk. The recommended age range for this toy is typically 1 to 3 years old. \n\nYou can purchase the FARM | PULL ALONG TRACTOR for $25.00 at this link: [FARM | PULL ALONG TRACTOR](https://www.aldeahome.com/products/farm-pull-along-tractor-early-learning-toy).",
+            "CreatedTime": "2025-08-10T01:34:32.450597",
+            "ItemId": "06357",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3dce4673-65c3-430a-97d7-9917470b4f6c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
+            "UserId": "user_00015",
+            "session_id": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Is the FARM | PULL ALONG TRACTOR (Product ID: 06357) made from safe materials for toddlers, and is it easy to clean?",
+            "CreatedTime": "2025-08-10T01:34:33.352690",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "946ceffe-5d84-4483-b8c8-6f6a24c97f08",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
+            "UserId": "user_00015",
+            "session_id": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the FARM | PULL ALONG TRACTOR is made from safe materials suitable for toddlers. It features silicone wheels, which are gentle on surfaces and contribute to its safety. As for cleaning, wooden toys like this one are generally easy to clean with a damp cloth. Make sure to avoid soaking it in water to preserve the integrity of the wood. \n\nIf you're interested, you can find the FARM | PULL ALONG TRACTOR for $25.00 here: [FARM | PULL ALONG TRACTOR](https://www.aldeahome.com/products/farm-pull-along-tractor-early-learning-toy).",
+            "CreatedTime": "2025-08-10T01:34:37.799020",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "dbafe2df-a774-47cf-8cf7-0e711f6ae7c7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
+            "UserId": "user_00015",
+            "session_id": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the durability of the FARM | PULL ALONG TRACTOR (Product ID: 06357)? How well does it hold up against rough play from toddlers?",
+            "CreatedTime": "2025-08-10T01:34:38.926312",
             "ItemId": null,
             "Thumbs": "up",
             "Channel": "web"
         },
         {
-            "Id": "9f5bd8e9-13b5-4cec-b09b-8cf3a4c3a086",
+            "Id": "2172ef99-c32e-4084-8bd5-10aadce4f60d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "DialogueId": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
             "UserId": "user_00015",
-            "session_id": "d1886e34-3f7f-4e1f-93bf-01819cbf7173",
+            "session_id": "65f8d255-4ffa-4177-99b3-527f15aba0c6",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The finished dimensions of the Frank Lloyd Wright Organic Geometry 500 Piece Multi-Puzzle are 20 x 20 inches. This square format makes it a visually striking piece once completed. If you have any other questions or need more information, feel free to ask! You can view the puzzle [here](https://www.aldeahome.com/products/frank-lloyd-wright-organic-geometry-500-piece-multi-puzzle).",
-            "CreatedTime": "2025-08-09T20:17:13.186057",
-            "ItemId": "05959",
+            "Content": "The FARM | PULL ALONG TRACTOR is designed with durability in mind, making it suitable for the rough play often associated with toddlers. It is made from sturdy wood, which can withstand the wear and tear of daily use. The silicone wheels also contribute to its durability by preventing damage to surfaces and ensuring a smooth pull along. \n\nOverall, this toy is built to endure the adventurous play of young children, providing both fun and longevity. If you're interested in purchasing it, the FARM | PULL ALONG TRACTOR is available for $25.00 here: [FARM | PULL ALONG TRACTOR](https://www.aldeahome.com/products/farm-pull-along-tractor-early-learning-toy).",
+            "CreatedTime": "2025-08-10T01:34:41.706766",
+            "ItemId": "06357",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.182635"
+    "profile_generated_at": "2025-08-10T01:53:50.848683"
 }

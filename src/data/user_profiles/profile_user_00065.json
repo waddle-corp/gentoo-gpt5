@@ -1,113 +1,127 @@
 {
     "user_id": "user_00065",
-    "raw_engagement_score": 21,
-    "normalized_engagement_score": 14,
+    "raw_engagement_score": 24,
+    "normalized_engagement_score": 15,
     "activities": [
         {
-            "id": "a894f2c1-2823-46f9-bfa1-fd40919f7667",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00065",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "06198",
-                "category": "halloween",
-                "product_name": "Halloween Pumpkin Rope Trick or Treat Basket",
-                "price": 28.0,
-                "product_url": "https://www.aldeahome.com/products/halloween-pumpkin-rope-trick-or-treat-basket",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/aaaf1faadedf8c01d917839f73f1e1c2d0aee160f32b2c254b545e48356e0430.jpg?v=1725725643",
-                "view_duration_seconds": 27
-            },
-            "created_time": "2025-08-09T20:05:50.741442"
-        },
-        {
-            "id": "8cdfba17-4820-49c9-9eef-63b7dd3609e2",
+            "id": "f3c90f32-bb8f-455c-ab3b-9e40f4a6a2fb",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00065",
             "event_name": "search",
             "event_data": {
-                "query": "gifts-under-50",
-                "search_results_count": 87,
+                "query": "GT 10 Orange",
+                "search_results_count": 1,
                 "filters_applied": [
                     "리뷰 많은 순"
                 ]
             },
-            "created_time": "2025-08-09T20:05:50.743891"
+            "created_time": "2025-08-10T01:32:25.456485"
         }
     ],
     "reviews": [
         {
-            "review_id": "57a6039c-ba59-40fd-b1e0-7028f2909387",
+            "review_id": "085ea827-184e-4a14-8604-dd4dc3fb1fc1",
             "customer_id": "user_00065",
-            "product_id": "05575",
-            "rating": 5,
-            "review_title": "Super satisfied!",
+            "product_id": "00664",
+            "rating": 4,
+            "review_title": "Highly recommend",
             "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2025-06-06T20:52:52.182245",
+            "created_at": "2025-01-13T01:32:54.168873",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "a5965958-e98c-42d8-810a-cd9f7f7aecc5",
+            "Id": "d4bce395-45da-46df-a9b6-4bf792ff08b4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "8b686b31-8a07-4722-b82b-405dc9de291a",
+            "DialogueId": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
             "UserId": "user_00065",
-            "session_id": "8b686b31-8a07-4722-b82b-405dc9de291a",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if the Unicorn Chalk (Product ID: 00206) is suitable for outdoor use on various surfaces, or will it only work on sidewalks?",
-            "CreatedTime": "2025-08-09T20:22:11.343841",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "eac9ebee-22b5-4c08-a210-90d0e774351b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8b686b31-8a07-4722-b82b-405dc9de291a",
-            "UserId": "user_00065",
-            "session_id": "8b686b31-8a07-4722-b82b-405dc9de291a",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Unicorn Chalk is designed as handmade sidewalk chalk, which means it is primarily intended for outdoor use on sidewalks. However, being eco-friendly, non-toxic, and washable, it may also work on other outdoor surfaces. It's best to test a small area first to see how it performs. \n\nFor more details, you can check out the product here: [Unicorn Chalk](https://www.aldeahome.com/products/rainbow-unicorn-horn-handmade-sidewalk-chalk-best-seller), priced at $32.95.",
-            "CreatedTime": "2025-08-09T20:22:13.741372",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "1c047c42-a480-4569-a1b6-559800073a7c",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "8b686b31-8a07-4722-b82b-405dc9de291a",
-            "UserId": "user_00065",
-            "session_id": "8b686b31-8a07-4722-b82b-405dc9de291a",
+            "session_id": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
             "Intent": "탐색",
             "Role": "user",
-            "Content": "What colors are included in the Unicorn Chalk (Product ID: 00206) set, and are they all suitable for creating vibrant outdoor art?",
-            "CreatedTime": "2025-08-09T20:22:14.583140",
+            "Content": "Can you tell me if the Elephant On Moon Wall Lamp (Product ID: 06576) requires any special batteries, or do you provide them with the purchase?",
+            "CreatedTime": "2025-08-10T01:38:59.977569",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "414301a1-75f8-4028-adea-6ab933b77d05",
+            "Id": "8c09eab4-6d2f-43c0-883a-14d3b5354b0f",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "8b686b31-8a07-4722-b82b-405dc9de291a",
+            "DialogueId": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
             "UserId": "user_00065",
-            "session_id": "8b686b31-8a07-4722-b82b-405dc9de291a",
+            "session_id": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Elephant On Moon Wall Lamp is battery-powered, but the information provided does not specify if special batteries are required or if they are included with the purchase. I recommend checking the product details or reaching out directly to the seller for clarification. You can view the product [here](https://www.aldeahome.com/products/lumidreams-elephant-on-moon-wall-lamp).",
+            "CreatedTime": "2025-08-10T01:39:01.610631",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "d77fa9b4-edab-4645-ad7a-d2293830962c",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
+            "UserId": "user_00065",
+            "session_id": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Is the Elephant On Moon Wall Lamp (Product ID: 06576) easy to mount on the wall, and does it come with the necessary mounting hardware?",
+            "CreatedTime": "2025-08-10T01:39:03.084770",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "41665b5e-fb26-45f2-b3a2-ce024c74604e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
+            "UserId": "user_00065",
+            "session_id": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Unicorn Chalk set includes three colors: a Gold Unicorn Horn (white chalk), a warm rainbow horn, and a cool rainbow horn. These colors are designed to be vibrant and are suitable for creating colorful outdoor art on sidewalks. \n\nYou can find more information about the product here: [Unicorn Chalk](https://www.aldeahome.com/products/rainbow-unicorn-horn-handmade-sidewalk-chalk-best-seller), priced at $32.95.",
-            "CreatedTime": "2025-08-09T20:22:17.489247",
-            "ItemId": "00206",
-            "Thumbs": "down",
+            "Content": "The provided information does not specify whether the Elephant On Moon Wall Lamp includes the necessary mounting hardware or details about its ease of mounting. For specific mounting instructions or hardware inclusion, it would be best to check the product details on the website or contact the seller directly. You can find the product [here](https://www.aldeahome.com/products/lumidreams-elephant-on-moon-wall-lamp).",
+            "CreatedTime": "2025-08-10T01:39:04.770217",
+            "ItemId": "06576",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "20172c47-90ab-4437-984f-5c20ea925dd5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
+            "UserId": "user_00065",
+            "session_id": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me what the dimensions of the Elephant On Moon Wall Lamp (Product ID: 06576) are? I want to make sure it fits well on my child's wall.",
+            "CreatedTime": "2025-08-10T01:39:05.703561",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "596706e1-580a-440b-aa50-a3e66bc5b7a2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
+            "UserId": "user_00065",
+            "session_id": "f5326230-eeb9-4d18-b441-69c5dda9fdfe",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The provided information does not include the dimensions of the Elephant On Moon Wall Lamp. For accurate dimensions, I recommend checking the product details on the website or contacting the seller directly. You can view the product [here](https://www.aldeahome.com/products/lumidreams-elephant-on-moon-wall-lamp).",
+            "CreatedTime": "2025-08-10T01:39:07.149339",
+            "ItemId": "06576",
+            "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.205179"
+    "profile_generated_at": "2025-08-10T01:53:50.872922"
 }

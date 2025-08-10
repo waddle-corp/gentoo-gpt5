@@ -1,110 +1,79 @@
 {
     "user_id": "user_00048",
     "raw_engagement_score": 20,
-    "normalized_engagement_score": 13,
+    "normalized_engagement_score": 12,
     "activities": [
         {
-            "id": "3de2af80-ae80-4b1c-94dd-5e0be6058893",
+            "id": "4554eb21-7658-47e8-adf0-5b26467af864",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00048",
-            "event_name": "login",
+            "event_name": "add_to_cart",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.90.57"
+                "product_id": "07345",
+                "quantity": 2,
+                "price": 43.75
             },
-            "created_time": "2025-08-09T20:05:50.719763"
+            "created_time": "2025-08-10T01:32:25.423756"
         },
         {
-            "id": "a92b1592-a993-426f-922f-d0a7517d56e4",
+            "id": "c55a4f81-c728-4c4c-bf0b-e8f538a805c0",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00048",
-            "event_name": "product_view",
+            "event_name": "search",
             "event_data": {
-                "product_id": "05446",
-                "category": "exclude",
-                "product_name": "Sippy Cup with Straw | Sage",
-                "price": 14.95,
-                "product_url": "https://www.aldeahome.com/products/sippy-cup-with-straw-color-sage",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/22d13b5bc70a5583e480a92e2eb616da181237fa393857039c484beabaa4b388.jpg?v=1715636045",
-                "view_duration_seconds": 19
+                "query": "Cybex Aton G Swivel Infant Car Seat",
+                "search_results_count": 2,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.719770"
+            "created_time": "2025-08-10T01:32:25.426028"
         }
     ],
     "reviews": [
         {
-            "review_id": "95ef1043-6f63-4283-b713-186be4a3c1de",
+            "review_id": "63dd5878-72e5-4944-b7dc-b56219722c9a",
             "customer_id": "user_00048",
-            "product_id": "03537",
+            "product_id": "03260",
             "rating": 4,
             "review_title": "Love it!",
             "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2024-09-03T20:52:52.182195",
+            "created_at": "2025-07-15T01:32:54.168829",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "b2c2f083-5a9c-4f7e-ba24-9a1efef836d5",
+            "Id": "d2cd3601-52e7-4924-9f36-f17e12c1ac3b",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "1dd7bce8-3d3e-4a2d-9d7f-5dce83aa4695",
+            "DialogueId": "53f2c5ca-5bbc-410e-8022-9a216a0b1671",
             "UserId": "user_00048",
-            "session_id": "1dd7bce8-3d3e-4a2d-9d7f-5dce83aa4695",
+            "session_id": "53f2c5ca-5bbc-410e-8022-9a216a0b1671",
             "Intent": "정보",
             "Role": "user",
-            "Content": "Can you tell me more about the size options available for the Stay-On Baby Boots | Midnight (Product ID: 07499)?",
-            "CreatedTime": "2025-08-09T20:19:58.465201",
+            "Content": "Can you tell me more about the color options available for the Sculptural Huge Artemis Greek Goddess Bust Candle 6.5x5in (Product ID: 01925)?",
+            "CreatedTime": "2025-08-10T01:37:40.596327",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "8117bac2-e90c-4ba9-9393-61d3e9e5ce12",
+            "Id": "ff27bcb4-4ff1-4a39-8d30-dec2973a0671",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "1dd7bce8-3d3e-4a2d-9d7f-5dce83aa4695",
+            "DialogueId": "53f2c5ca-5bbc-410e-8022-9a216a0b1671",
             "UserId": "user_00048",
-            "session_id": "1dd7bce8-3d3e-4a2d-9d7f-5dce83aa4695",
+            "session_id": "53f2c5ca-5bbc-410e-8022-9a216a0b1671",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Stay-On Baby Boots | Midnight (Product ID: 07499) are designed with an adjustable fit that accommodates your baby's growth. They are available in sizes 6-12 months and up. The two-part closure ensures that the boots stay on securely, making them perfect for active babies. \n\nFor more details, you can check the product [here](https://www.aldeahome.com/products/bamboo-organic-cotton-stay-on-boots-midnight). The price is $19.00.",
-            "CreatedTime": "2025-08-09T20:20:00.410002",
-            "ItemId": "07499",
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "03c37d5c-27f9-48a0-a9c6-d939fa646de7",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1dd7bce8-3d3e-4a2d-9d7f-5dce83aa4695",
-            "UserId": "user_00048",
-            "session_id": "1dd7bce8-3d3e-4a2d-9d7f-5dce83aa4695",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Are there any color options available for the Stay-On Baby Boots | Midnight (Product ID: 07499), or is it only offered in this color?",
-            "CreatedTime": "2025-08-09T20:20:01.360121",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "4df0ca0d-e8ba-415e-9861-33c278db6ea5",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "1dd7bce8-3d3e-4a2d-9d7f-5dce83aa4695",
-            "UserId": "user_00048",
-            "session_id": "1dd7bce8-3d3e-4a2d-9d7f-5dce83aa4695",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Stay-On Baby Boots | Midnight (Product ID: 07499) is only offered in the Midnight color. If you're interested in these boots, you can find more information and purchase them for $19.00 [here](https://www.aldeahome.com/products/bamboo-organic-cotton-stay-on-boots-midnight).",
-            "CreatedTime": "2025-08-09T20:20:02.843699",
+            "Content": "The Sculptural Huge Artemis Greek Goddess Bust Candle 6.5x5in comes in various color options, and each listing features photos of the color palette. Since each candle is 100% handmade, there may be minor imperfections, and the color may vary slightly from what is depicted. For more detailed information and to view the available colors, you can check out the product page [here](https://www.aldeahome.com/products/sculptural-huge-artemis-greek-goddess-bust-candle-6-5x5in). \n\nThe price for this candle is $70.00.",
+            "CreatedTime": "2025-08-10T01:37:42.774075",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.198288"
+    "profile_generated_at": "2025-08-10T01:53:50.867284"
 }

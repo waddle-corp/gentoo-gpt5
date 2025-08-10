@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
 import { User as UserIcon, X as CloseIcon } from "lucide-react";
 import { ChartContainer, ChartTooltip, ChartTooltipContentProps } from "@/components/ui/chart";
 import { ResponsiveContainer, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
@@ -205,7 +205,8 @@ export default function CenterSimulationPanel() {
         if (!title) return;
         setHasSimulated(true);
         // 완료된 보드 기준으로 인사이트/넥스트 액션 생성
-        const b = (boards || []).find((bb) => bb.name === title) || boards[0];
+        const curBoards = boardsRef.current || [];
+        const b = curBoards.find((bb) => bb.name === title) || curBoards[0];
         const bubbles = b?.bubbles || [];
         if (bubbles.length > 0) {
           loadInsightsFor(bubbles);
@@ -357,6 +358,8 @@ export default function CenterSimulationPanel() {
   const [nextCache, setNextCache] = useState<Record<string, string>>({});
   const [lastReason, setLastReason] = useState<string>("");
   const [lastIndexForModal, setLastIndexForModal] = useState<number | null>(null);
+  const boardsRef = useRef<Board[]>(boards);
+  useEffect(() => { boardsRef.current = boards; }, [boards]);
 
   function mdToHtml(md: string): string {
     const esc = (md || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");

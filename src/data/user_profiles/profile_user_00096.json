@@ -1,36 +1,157 @@
 {
     "user_id": "user_00096",
-    "raw_engagement_score": 4,
-    "normalized_engagement_score": 3,
+    "raw_engagement_score": 27,
+    "normalized_engagement_score": 16,
     "activities": [
         {
-            "id": "26ef52d5-2fcc-406f-ac97-fbb0e875d2fc",
+            "id": "6764d6da-1b5f-41e5-9980-20b253c5a1bf",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00096",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "03052",
+                "category": "cyber-monday-gift",
+                "product_name": "THE NUTCRACKER 5",
+                "price": 21.97,
+                "product_url": "https://www.aldeahome.com/products/the-nutcracker-5",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/WO-2889_1_jpg.jpg?v=1663704288",
+                "view_duration_seconds": 81
+            },
+            "created_time": "2025-08-10T01:32:25.498606"
+        },
+        {
+            "id": "0093d004-7663-4502-84a3-f402b71482c8",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00096",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04399",
+                "category": "exclude",
+                "product_name": "Edwin Elephant",
+                "price": 42.0,
+                "product_url": "https://www.aldeahome.com/products/beehive-honey-copy",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/Screenshot2025-03-30at11.01.42AM.png?v=1743357736",
+                "view_duration_seconds": 86
+            },
+            "created_time": "2025-08-10T01:32:25.498610"
+        },
+        {
+            "id": "db07bd2c-5063-4848-b2d0-3e7cfb3cd9ba",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00096",
             "event_name": "search",
             "event_data": {
-                "query": "Unicorn Jabber Ball",
+                "query": "Organic Cotton Oval Baby Crib Mattress (53.7x27.5x3) for Stokke Sleepi V3",
                 "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.791133"
-        },
-        {
-            "id": "61e751db-dee5-4152-93a3-da31767b94d1",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00096",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_kakao",
-                "ip_address": "192.168.131.220"
-            },
-            "created_time": "2025-08-09T20:05:50.791142"
+            "created_time": "2025-08-10T01:32:25.500729"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "0fc02a49-3404-4ee8-b932-0c2aa205b6c5",
+            "customer_id": "user_00096",
+            "product_id": "03272",
+            "rating": 5,
+            "review_title": "Best purchase ever",
+            "review_content": "Add guardrail is fantastic! I wish I'd found it sooner.",
+            "created_at": "2024-09-27T01:32:54.168960",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.213667"
+    "dialogues": [
+        {
+            "Id": "13c11f3b-693d-470c-b558-eef85fc920bf",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "15a69009-ead0-459c-be52-bed444792c2a",
+            "UserId": "user_00096",
+            "session_id": "15a69009-ead0-459c-be52-bed444792c2a",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the noise reduction capabilities of the Baby Earmuffs Solids Noise Attenuation Ear Warmers for Kids: Azalea (Product ID: 00382)? Are they suitable for very loud environments?",
+            "CreatedTime": "2025-08-10T01:41:45.177417",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1f3ba333-c000-407d-8681-79f98b963403",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "15a69009-ead0-459c-be52-bed444792c2a",
+            "UserId": "user_00096",
+            "session_id": "15a69009-ead0-459c-be52-bed444792c2a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Baby Earmuffs Solids Noise Attenuation Ear Warmers for Kids: Azalea are designed to provide effective noise reduction, safeguarding your little one's ears from harmful loud sounds while still allowing some ambient noise. They are suitable for use in various environments, including those with higher noise levels, making them a good choice for outings where loud noises may be present. However, they are not specifically rated for extreme noise levels, so for very loud environments, it's advisable to monitor your child's comfort and safety.\n\nFor more details or to purchase, you can visit the product page [here](https://www.aldeahome.com/products/baby-earmuffs-solids-noise-attenuation-ear-warmers-for-kids-azalea). The price is $32.95.",
+            "CreatedTime": "2025-08-10T01:41:48.251048",
+            "ItemId": "00382",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "1a6d864a-b60a-4ef1-9da0-d08a3cd3a53e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "15a69009-ead0-459c-be52-bed444792c2a",
+            "UserId": "user_00096",
+            "session_id": "15a69009-ead0-459c-be52-bed444792c2a",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Are the Baby Earmuffs Solids Noise Attenuation Ear Warmers for Kids: Azalea (Product ID: 00382) adjustable to fit different head sizes, or do they come in a specific size?",
+            "CreatedTime": "2025-08-10T01:41:49.395942",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "3d8edcf2-e1dd-4df5-b322-da643bfc6109",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "15a69009-ead0-459c-be52-bed444792c2a",
+            "UserId": "user_00096",
+            "session_id": "15a69009-ead0-459c-be52-bed444792c2a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Baby Earmuffs Solids Noise Attenuation Ear Warmers for Kids: Azalea feature a low-profile design and a soft, leather-like covered headband that provides a gentle fit. While the product information does not specify whether they are fully adjustable, the design typically accommodates various head sizes comfortably. They are made to ensure safety and comfort for your little one. \n\nFor more information, you can check the product page [here](https://www.aldeahome.com/products/baby-earmuffs-solids-noise-attenuation-ear-warmers-for-kids-azalea), where they are priced at $32.95.",
+            "CreatedTime": "2025-08-10T01:41:51.893395",
+            "ItemId": "00382",
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "d31b3ff7-c109-4a38-b9d2-5ba62422fcd9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "15a69009-ead0-459c-be52-bed444792c2a",
+            "UserId": "user_00096",
+            "session_id": "15a69009-ead0-459c-be52-bed444792c2a",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Baby Earmuffs Solids Noise Attenuation Ear Warmers for Kids: Azalea (Product ID: 00382) come in different colors or if they are only available in the Azalea option?",
+            "CreatedTime": "2025-08-10T01:41:53.998842",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "47e36c19-e342-479a-b9c2-65ecfc3bf063",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "15a69009-ead0-459c-be52-bed444792c2a",
+            "UserId": "user_00096",
+            "session_id": "15a69009-ead0-459c-be52-bed444792c2a",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Baby Earmuffs Solids Noise Attenuation Ear Warmers for Kids: Azalea are specifically listed in the Azalea color option. The provided information does not indicate that they are available in different colors. For more details, you can visit the product page [here](https://www.aldeahome.com/products/baby-earmuffs-solids-noise-attenuation-ear-warmers-for-kids-azalea), where they are priced at $32.95.",
+            "CreatedTime": "2025-08-10T01:41:56.037925",
+            "ItemId": "00382",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.884157"
 }

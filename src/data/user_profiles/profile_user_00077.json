@@ -1,115 +1,144 @@
 {
     "user_id": "user_00077",
-    "raw_engagement_score": 33,
-    "normalized_engagement_score": 22,
+    "raw_engagement_score": 34,
+    "normalized_engagement_score": 21,
     "activities": [
         {
-            "id": "31df217b-12b6-47bb-be2d-959cf865d9cf",
+            "id": "842057eb-7c12-475c-9ef9-8e57d668fe9d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00077",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "01063",
+                "quantity": 1,
+                "price": 199.0
+            },
+            "created_time": "2025-08-10T01:32:25.475273"
+        },
+        {
+            "id": "049edf6b-4946-4cde-872d-41f7c0c9e572",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00077",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00077_753833",
-                "total_amount": 55.0,
+                "order_id": "ORDER_user_00077_475276",
+                "total_amount": 19.95,
                 "items": [
                     {
-                        "product_id": "06968",
+                        "product_id": "05977",
                         "quantity": 1,
-                        "price": 20.0
-                    },
-                    {
-                        "product_id": "07058",
-                        "quantity": 1,
-                        "price": 35.0
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.753838"
-        },
-        {
-            "id": "34cfcbbf-183a-4703-b512-6e0119cf7708",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00077",
-            "event_name": "search",
-            "event_data": {
-                "query": "Little Artist Board Book Set",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.756214"
-        },
-        {
-            "id": "51b324cd-4872-44eb-80f7-49e4e1c30285",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00077",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00077_756220",
-                "total_amount": 51.95,
-                "items": [
-                    {
-                        "product_id": "05135",
-                        "quantity": 1,
-                        "price": 30.0
-                    },
-                    {
-                        "product_id": "02485",
-                        "quantity": 1,
-                        "price": 21.95
+                        "price": 19.95
                     }
                 ],
                 "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T20:05:50.756227"
+            "created_time": "2025-08-10T01:32:25.475280"
         }
     ],
     "reviews": [
         {
-            "review_id": "e13808eb-8ae8-43be-bcfc-eae62e9fc5d2",
+            "review_id": "4baa9e7f-8050-4749-9f6d-32a330ef1017",
             "customer_id": "user_00077",
-            "product_id": "05684",
-            "rating": 2,
-            "review_title": "Do not recommend",
-            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2025-02-27T20:52:52.182295",
+            "product_id": "02974",
+            "rating": 3,
+            "review_title": "Good for daily use",
+            "review_content": "This cyber-monday-gift product is excellent. Don't hesitate to buy JEWELED LIPSTICK Christmas Ornament!",
+            "created_at": "2025-07-22T01:32:54.168897",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "8b8c79d4-a1bc-43e1-8e8a-42ccb8b9c609",
+            "Id": "129528d4-2022-47ea-9baa-300258d16226",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "b2642bf2-ad4b-44f9-b475-e5e6096037a5",
+            "DialogueId": "2b839727-5749-4d2f-a860-5c0e6ba37620",
             "UserId": "user_00077",
-            "session_id": "b2642bf2-ad4b-44f9-b475-e5e6096037a5",
-            "Intent": "일반",
+            "session_id": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "Intent": "정보",
             "Role": "user",
-            "Content": "Can you tell me if the Trails Cushion (Product ID: 03207) comes with a cushion fill, or do I need to purchase it separately?",
-            "CreatedTime": "2025-08-09T20:23:17.556606",
+            "Content": "Could you tell me more about the types of DIY projects and rituals included in 'Basic Witches' (Product ID: 06223)?",
+            "CreatedTime": "2025-08-10T01:39:50.366536",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "1d72fcb3-c2a8-4587-bda8-447e4731abac",
+            "Id": "73a854f4-da74-40f7-a221-517ed09e5f37",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "b2642bf2-ad4b-44f9-b475-e5e6096037a5",
+            "DialogueId": "2b839727-5749-4d2f-a860-5c0e6ba37620",
             "UserId": "user_00077",
-            "session_id": "b2642bf2-ad4b-44f9-b475-e5e6096037a5",
-            "Intent": "추천",
+            "session_id": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Trails Cushion does not come with a cushion fill included. It is recommended to use a Euro sized cushion fill (65cm x 65cm), which can be easily purchased separately. \n\nYou can find the Trails Cushion for $77.00 at this link: [Trails Cushion](https://www.aldeahome.com/products/trails-cushion).",
-            "CreatedTime": "2025-08-09T20:23:19.147775",
+            "Content": "'Basic Witches' is a magical lifestyle guide that includes various DIY projects, rituals, and spells designed to enhance your life. While the specific types of projects aren't detailed in the provided information, the book covers topics such as:\n\n- Creating stylish crystal accessories to boost your energy.\n- Spells and incantations for banishing negativity and toxic relationships.\n- Recipes for herbal \"potions\" to increase stamina and overall well-being.\n\nIf you're interested, you can purchase 'Basic Witches' for $15.99 at [this link](https://www.aldeahome.com/products/basic-witches).",
+            "CreatedTime": "2025-08-10T01:39:53.257280",
+            "ItemId": "06223",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "e4fe538e-2b4e-401f-9c2a-727fb2a93309",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "UserId": "user_00077",
+            "session_id": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if 'Basic Witches' (Product ID: 06223) includes any tips for beginners who are new to witchcraft?",
+            "CreatedTime": "2025-08-10T01:39:54.208729",
             "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "9aaae4ab-93ec-4d4e-8ae4-cc222cc05887",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "UserId": "user_00077",
+            "session_id": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "While the provided information doesn’t specify if 'Basic Witches' includes tips specifically for beginners, the book is designed as a lifestyle guide that likely includes accessible advice on rituals and spells, making it suitable for those new to witchcraft. It covers various topics such as DIY projects and incantations, which can be helpful for novices. \n\nIf you're interested in exploring it further, you can get 'Basic Witches' for $15.99 at [this link](https://www.aldeahome.com/products/basic-witches).",
+            "CreatedTime": "2025-08-10T01:39:56.302071",
+            "ItemId": "06223",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "d31eed99-6e19-4fdd-a737-be4115029b86",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "UserId": "user_00077",
+            "session_id": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Does 'Basic Witches' (Product ID: 06223) include any specific sections on how to choose the right crystals for beginners?",
+            "CreatedTime": "2025-08-10T01:39:57.161217",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b96cd021-cd47-454c-8af1-14ee02c43246",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "UserId": "user_00077",
+            "session_id": "2b839727-5749-4d2f-a860-5c0e6ba37620",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The provided information does not specify if 'Basic Witches' includes specific sections on choosing the right crystals for beginners. However, the book does cover powering up stylish crystals, which may include guidance on selection and usage. \n\nIf you want to explore this further, you can purchase 'Basic Witches' for $15.99 at [this link](https://www.aldeahome.com/products/basic-witches).",
+            "CreatedTime": "2025-08-10T01:39:58.849466",
+            "ItemId": "06223",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.208616"
+    "profile_generated_at": "2025-08-10T01:53:50.877862"
 }

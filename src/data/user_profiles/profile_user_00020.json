@@ -1,129 +1,107 @@
 {
     "user_id": "user_00020",
-    "raw_engagement_score": 36,
-    "normalized_engagement_score": 24,
+    "raw_engagement_score": 23,
+    "normalized_engagement_score": 14,
     "activities": [
         {
-            "id": "0541fad8-b26f-4399-b6de-c9b46a4ca313",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00020",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "07321",
-                "category": "plush",
-                "product_name": "Little Nibble 12\" Bunny - Gray",
-                "price": 34.95,
-                "product_url": "https://www.aldeahome.com/products/little-nibble-12-bunny-gray",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/fa90a6a39a731fb0445ccfb31471c71242bbead1d75c387f3a8b18b0f1953493.jpg?v=1748532812",
-                "view_duration_seconds": 95
-            },
-            "created_time": "2025-08-09T20:05:50.671229"
-        },
-        {
-            "id": "93283963-833d-4454-9560-965fb5a2033a",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00020",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.57.87"
-            },
-            "created_time": "2025-08-09T20:05:50.671233"
-        },
-        {
-            "id": "6e4448cc-4836-4cb0-8ef2-1f6dad786492",
+            "id": "8f74540f-1ce1-476c-b745-bcdb34887b47",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00020",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00020_671238",
-                "total_amount": 39.95,
+                "order_id": "ORDER_user_00020_379760",
+                "total_amount": 99.99,
                 "items": [
                     {
-                        "product_id": "06711",
+                        "product_id": "06579",
                         "quantity": 1,
-                        "price": 39.95
-                    }
-                ],
-                "payment_method": "credit_card"
-            },
-            "created_time": "2025-08-09T20:05:50.671247"
-        },
-        {
-            "id": "34a31fae-a6dd-4510-8677-0f04c613b330",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00020",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00020_671251",
-                "total_amount": 25.0,
-                "items": [
+                        "price": 40.0
+                    },
                     {
-                        "product_id": "04304",
+                        "product_id": "03406",
                         "quantity": 1,
-                        "price": 25.0
+                        "price": 59.99
                     }
                 ],
                 "payment_method": "naver_pay"
             },
-            "created_time": "2025-08-09T20:05:50.671257"
-        },
-        {
-            "id": "c37f49ba-95b6-449b-8968-86729f5ada5b",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00020",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.131.190"
-            },
-            "created_time": "2025-08-09T20:05:50.671261"
+            "created_time": "2025-08-10T01:32:25.379765"
         }
     ],
     "reviews": [
         {
-            "review_id": "0ecf679e-cbf4-485b-8f46-c3d3cdd119fc",
+            "review_id": "779646f1-7e2b-495e-8062-59c8a5f365b0",
             "customer_id": "user_00020",
-            "product_id": "01449",
-            "rating": 4,
-            "review_title": "Best purchase ever",
-            "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2025-04-03T20:52:52.182101",
+            "product_id": "02731",
+            "rating": 1,
+            "review_title": "Do not recommend",
+            "review_content": "The quality of Polka Puppy Jack In The Box wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2025-06-07T01:32:54.168787",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "bd8c14cd-a959-468f-8a33-9afa0d30406a",
+            "Id": "2a439900-ab90-47bd-8a02-9d4c93706b63",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "88c1e8dc-cda4-44a2-a0c9-e454063a8aa2",
+            "DialogueId": "e42b9830-58df-41da-9ad5-caf353713f66",
             "UserId": "user_00020",
-            "session_id": "88c1e8dc-cda4-44a2-a0c9-e454063a8aa2",
+            "session_id": "e42b9830-58df-41da-9ad5-caf353713f66",
             "Intent": "일반",
             "Role": "user",
-            "Content": "What are the unique features of the Twist - Light Blue candle (Product ID: 02938) that set it apart from traditional candles?",
-            "CreatedTime": "2025-08-09T20:17:28.577362",
+            "Content": "Can you tell me if the 'Small Playground Ball | Dinosaurs' (Product ID: 03695) comes with a pump for inflation, or do I need to purchase one separately?",
+            "CreatedTime": "2025-08-10T01:35:03.153350",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "845297dc-783a-4d73-8b7e-b1e95b3f3804",
+            "Id": "32ea9fda-bf49-4c11-bc8a-cdb8b85881d4",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "88c1e8dc-cda4-44a2-a0c9-e454063a8aa2",
+            "DialogueId": "e42b9830-58df-41da-9ad5-caf353713f66",
             "UserId": "user_00020",
-            "session_id": "88c1e8dc-cda4-44a2-a0c9-e454063a8aa2",
+            "session_id": "e42b9830-58df-41da-9ad5-caf353713f66",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Twist - Light Blue candle stands out from traditional candles due to its innovative design that combines both the base and the candle into a single flexible wax shape. This allows for a unique double-ended structure that can be bent and twisted, creating a new typology that merges form, function, and fun. Its flexibility not only enhances the aesthetic appeal but also offers versatility in styling compared to the usual straight candles. \n\nIf you're interested, the price is $40.00, and you can find more details at this link: [Twist - Light Blue](https://www.aldeahome.com/products/twist-light-blue).",
-            "CreatedTime": "2025-08-09T20:17:31.185793",
-            "ItemId": "02938",
+            "Content": "The 'Small Playground Ball | Dinosaurs' does not come with a pump for inflation; it is delivered deflated. You will need to purchase a pump separately if you don't have one. \n\nYou can find the ball for $13.00 at this link: [Small Playground Ball | Dinosaurs](https://www.aldeahome.com/products/di431l-small-playground-ball-dinosaurs).",
+            "CreatedTime": "2025-08-10T01:35:05.070195",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "25dd5668-4961-4998-a6ad-423a2fbc8542",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e42b9830-58df-41da-9ad5-caf353713f66",
+            "UserId": "user_00020",
+            "session_id": "e42b9830-58df-41da-9ad5-caf353713f66",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "Is the 'Small Playground Ball | Dinosaurs' (Product ID: 03695) suitable for young children, and what age range do you recommend for safe play?",
+            "CreatedTime": "2025-08-10T01:35:06.126240",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "180311d5-1f74-4668-a4c7-e413ae8bf151",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "e42b9830-58df-41da-9ad5-caf353713f66",
+            "UserId": "user_00020",
+            "session_id": "e42b9830-58df-41da-9ad5-caf353713f66",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The 'Small Playground Ball | Dinosaurs' is designed for playful activities, making it suitable for young children. While specific age recommendations are not provided, it is generally appropriate for toddlers and preschoolers, typically around ages 3 and up, as long as they are supervised during play. Always ensure that children are playing safely with any toys. \n\nYou can purchase it for $13.00 here: [Small Playground Ball | Dinosaurs](https://www.aldeahome.com/products/di431l-small-playground-ball-dinosaurs).",
+            "CreatedTime": "2025-08-10T01:35:09.476070",
+            "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.185170"
+    "profile_generated_at": "2025-08-10T01:53:50.852036"
 }

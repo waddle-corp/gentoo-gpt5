@@ -1,0 +1,23 @@
+{
+    "user_id": "user_00109",
+    "raw_engagement_score": 3,
+    "normalized_engagement_score": 2,
+    "activities": [
+        {
+            "id": "1e843646-defa-40bb-b056-52d7e1dac7ec",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00109",
+            "event_name": "search",
+            "event_data": {
+                "query": "Baby/Toddler Lion Costume",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.524061"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.888860"
+}

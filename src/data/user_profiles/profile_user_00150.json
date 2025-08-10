@@ -1,0 +1,157 @@
+{
+    "user_id": "user_00150",
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "5f1377ee-8a0f-4104-ad4a-4bec559bd10d",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00150",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.55.35"
+            },
+            "created_time": "2025-08-10T01:32:25.576745"
+        },
+        {
+            "id": "e8921ee5-e4de-4dcf-9bc5-4ba5df3f8b52",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00150",
+            "event_name": "search",
+            "event_data": {
+                "query": "Magnetic Fishing Mermaid",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.579097"
+        },
+        {
+            "id": "271e5510-8b7c-4f61-85b8-34e131335f58",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00150",
+            "event_name": "search",
+            "event_data": {
+                "query": "Newborn Baby Blue Angora Knit Bonnet",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.581321"
+        },
+        {
+            "id": "8a9c59b0-586e-41ce-a16c-d8240d18f9e0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00150",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04873",
+                "category": "exclude",
+                "product_name": "Pomegranate & Lemon Rind - Just Bee Candles: 3.5 oz tin (up to 20 hrs of clean burning)",
+                "price": 15.99,
+                "product_url": "https://www.aldeahome.com/products/pomegranate-lemon-rind-just-bee-candles-3-5-oz-tin-up-to-20-hrs-of-clean-burning",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/99497e6232b05f9515f164721e06a7aad0bd6951f6c8180f6f9d4827693adeef.jpg?v=1721746984",
+                "view_duration_seconds": 25
+            },
+            "created_time": "2025-08-10T01:32:25.581325"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "18af4984-213d-4d80-92dd-cabce055ef72",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "UserId": "user_00150",
+            "session_id": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Bumblebee Wash Mit (Product ID: 00797) is suitable for infants with sensitive skin?",
+            "CreatedTime": "2025-08-10T01:47:29.961940",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "002ee3df-6181-4b25-9915-ab82c85c917f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "UserId": "user_00150",
+            "session_id": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Bumblebee Wash Mit is made from soft terry cloth, making it gentle on a baby's delicate skin. It is designed to be suitable for infants, ensuring a gentle scrub while leaving the skin clean and refreshed. \n\nIf you're interested, the price is $4.00. You can find more information and purchase it [here](https://www.aldeahome.com/products/wash-cloth-bumble-bee).",
+            "CreatedTime": "2025-08-10T01:47:32.282210",
+            "ItemId": "00797",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b3b4895d-4eca-48e5-9898-061fc59d4c44",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "UserId": "user_00150",
+            "session_id": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Bumblebee Wash Mit (Product ID: 00797) machine washable, and how should I care for it to ensure it lasts?",
+            "CreatedTime": "2025-08-10T01:47:33.006148",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "32596deb-ecf9-4793-adc7-c062926c9646",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "UserId": "user_00150",
+            "session_id": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "Yes, the Bumblebee Wash Mit is machine washable, which makes it easy to clean. To ensure it lasts, it's a good idea to wash it on a gentle cycle and avoid using harsh detergents. Air drying or tumble drying on a low setting will also help maintain its softness and quality over time. \n\nIf you're interested in purchasing it, the price is $4.00. You can find it [here](https://www.aldeahome.com/products/wash-cloth-bumble-bee).",
+            "CreatedTime": "2025-08-10T01:47:34.936016",
+            "ItemId": "00797",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "95f0ad22-050f-43fc-8a4c-037df0d0568e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "UserId": "user_00150",
+            "session_id": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the Bumblebee Wash Mit (Product ID: 00797) comes in different colors or designs, or is it only available in the bumblebee style?",
+            "CreatedTime": "2025-08-10T01:47:35.970777",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "495dd300-30f4-47f4-ad33-618008317d8e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "UserId": "user_00150",
+            "session_id": "bd4fd4e7-c2cd-4bd6-978f-b10947373a8d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Bumblebee Wash Mit (Product ID: 00797) is only available in the bumblebee style. There are no mentions of different colors or designs for this particular product. \n\nIf you'd like to purchase it, the price is $4.00, and you can find it [here](https://www.aldeahome.com/products/wash-cloth-bumble-bee).",
+            "CreatedTime": "2025-08-10T01:47:37.639736",
+            "ItemId": "00797",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.901696"
+}

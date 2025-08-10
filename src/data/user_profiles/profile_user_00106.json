@@ -1,0 +1,133 @@
+{
+    "user_id": "user_00106",
+    "raw_engagement_score": 25,
+    "normalized_engagement_score": 15,
+    "activities": [
+        {
+            "id": "d628a5ae-9ec5-40bf-9090-50e0daca0387",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00106",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07323",
+                "quantity": 1,
+                "price": 12.5
+            },
+            "created_time": "2025-08-10T01:32:25.512338"
+        },
+        {
+            "id": "34a3050e-1cd4-45e1-87ab-569c3abda66a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00106",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00106_512341",
+                "total_amount": 22.0,
+                "items": [
+                    {
+                        "product_id": "03920",
+                        "quantity": 1,
+                        "price": 22.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.512345"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "8e50f04e-0c82-42f4-af2c-e392d4f498e4",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "UserId": "user_00106",
+            "session_id": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can you tell me more about the fragrance options available for the Seasonal Petite Pedestal Candle (Product ID: 01848)?",
+            "CreatedTime": "2025-08-10T01:42:43.880001",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "3c6b3482-d8bb-4ed3-a919-5b4d0f2adc00",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "UserId": "user_00106",
+            "session_id": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Seasonal Petite Pedestal Candle features a delightful fragrance that embodies the warmth of the Holidays. However, specific fragrance options were not provided in the product information. \n\nIf you're interested in purchasing it, the price is $12.00, and you can find more details [here](https://www.aldeahome.com/products/seasonal-petite-pedestal-candle).",
+            "CreatedTime": "2025-08-10T01:42:45.399699",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ed0a5ca0-02a1-4a26-a00e-bed58faa08c1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "UserId": "user_00106",
+            "session_id": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are there any other seasonal candles similar to the Seasonal Petite Pedestal Candle (Product ID: 01848) that you would recommend?",
+            "CreatedTime": "2025-08-10T01:42:46.315210",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6d3ca2a5-d835-4015-b25d-77716e995864",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "UserId": "user_00106",
+            "session_id": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The product information provided does not specify other seasonal candles similar to the Seasonal Petite Pedestal Candle. However, if you're looking for a charming addition to your holiday decor, the Seasonal Petite Pedestal Candle itself is a great choice with its enchanting design and warm fragrance.\n\nFor more details or to purchase, it's available for $12.00 [here](https://www.aldeahome.com/products/seasonal-petite-pedestal-candle).",
+            "CreatedTime": "2025-08-10T01:42:48.451104",
+            "ItemId": "01848",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "6b66f7eb-109e-4e04-bdef-a04098e50ba3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "UserId": "user_00106",
+            "session_id": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Seasonal Petite Pedestal Candle (Product ID: 01848) is available for shipping internationally, and if so, what the shipping costs might be?",
+            "CreatedTime": "2025-08-10T01:42:49.711069",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5247ccf1-e2fc-4e9f-b26d-b8561987ef01",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "UserId": "user_00106",
+            "session_id": "2d6113d1-9cb9-4bd1-9656-984c9ca82de5",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The provided product information does not include details about international shipping or associated costs for the Seasonal Petite Pedestal Candle. For inquiries about shipping options, including international availability and costs, I recommend checking directly on the website or contacting customer support for more specific information. \n\nYou can view the product and its details [here](https://www.aldeahome.com/products/seasonal-petite-pedestal-candle).",
+            "CreatedTime": "2025-08-10T01:42:55.118513",
+            "ItemId": "01848",
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.887847"
+}

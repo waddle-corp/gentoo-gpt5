@@ -1,0 +1,102 @@
+{
+    "user_id": "user_00140",
+    "raw_engagement_score": 21,
+    "normalized_engagement_score": 13,
+    "activities": [
+        {
+            "id": "8c4f5eab-9b82-45c0-b2c2-411b734443f1",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00140",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.247.237"
+            },
+            "created_time": "2025-08-10T01:32:25.561043"
+        },
+        {
+            "id": "d2357021-bdd2-46d9-a095-dcc811bf0a87",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00140",
+            "event_name": "search",
+            "event_data": {
+                "query": "Rex  the T-Rex",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.563356"
+        },
+        {
+            "id": "3398d7c6-b95d-49f3-82a4-2311ee853353",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00140",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "04948",
+                "quantity": 2,
+                "price": 45.0
+            },
+            "created_time": "2025-08-10T01:32:25.563360"
+        },
+        {
+            "id": "d821e350-4b66-4e7d-8c24-1b9029ed0d6f",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00140",
+            "event_name": "search",
+            "event_data": {
+                "query": "Twisted Piller Candle Magenta",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.565696"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "bd1adb78-c4ee-4bb5-a613-dd5eb254cd25",
+            "customer_id": "user_00140",
+            "product_id": "06244",
+            "rating": 1,
+            "review_title": "Below expectations",
+            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
+            "created_at": "2025-07-26T01:32:54.169064",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "142149bc-4985-49f5-a13b-036542eab929",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "446112cf-5da1-46ba-b33b-3b2e07703a3c",
+            "UserId": "user_00140",
+            "session_id": "446112cf-5da1-46ba-b33b-3b2e07703a3c",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Can the Travel Drying Rack (Product ID: 03266) accommodate larger bottle sizes, or is it primarily designed for smaller items?",
+            "CreatedTime": "2025-08-10T01:46:38.561376",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "ee97419a-818a-4594-85fe-9ed3077d8789",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "446112cf-5da1-46ba-b33b-3b2e07703a3c",
+            "UserId": "user_00140",
+            "session_id": "446112cf-5da1-46ba-b33b-3b2e07703a3c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The Travel Drying Rack is designed to hold items upright for drying, including bottles, nipples, valves, and breast pump parts. While it is compact and fits easily in a diaper bag, it can accommodate standard bottle sizes. However, larger bottles may not fit as securely. For the best results, it's recommended to use it with standard-sized bottles. \n\nIf you're interested, the Travel Drying Rack is priced at $16.95. You can find more information and purchase it here: [Travel Drying Rack](https://www.aldeahome.com/products/travel-drying-rack).",
+            "CreatedTime": "2025-08-10T01:46:40.983491",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.898761"
+}

@@ -1,0 +1,125 @@
+{
+    "user_id": "user_00157",
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 12,
+    "activities": [
+        {
+            "id": "c289c1ad-9569-437f-9d08-5056f5ece42a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00157",
+            "event_name": "search",
+            "event_data": {
+                "query": "Moon Phase Card",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.590647"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "a892b828-18cf-4b71-8ee5-f367bd4e8cd7",
+            "customer_id": "user_00157",
+            "product_id": "00617",
+            "rating": 2,
+            "review_title": "Do not recommend",
+            "review_content": "The quality of Spaceman Toddler Backpack wasn't as good as I expected. It feels like a waste of money.",
+            "created_at": "2025-07-06T01:32:54.169089",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "f6471b24-9814-47fa-8986-f911230b0191",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "UserId": "user_00157",
+            "session_id": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 18-24M (Product ID: 06854) true to size, or should I order a larger size for my child?",
+            "CreatedTime": "2025-08-10T01:48:19.677158",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5784ab16-470f-426a-a456-2345a49180de",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "UserId": "user_00157",
+            "session_id": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 18-24M is designed to be true to size. However, if your child is on the taller side or you prefer a looser fit for comfort, you might consider ordering a larger size. If you have any specific concerns about sizing, feel free to ask! \n\nFor more details, you can check the product here: [Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 18-24M](https://www.aldeahome.com/products/organic-baby-kids-pippa-chambray-short-sleeve-shirt-dress-18-24m) priced at $47.50.",
+            "CreatedTime": "2025-08-10T01:48:22.628973",
+            "ItemId": "06854",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "cd61ec13-1539-405b-ae30-fde273643188",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "UserId": "user_00157",
+            "session_id": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 18-24M (Product ID: 06854) is machine washable, and what the care instructions are?",
+            "CreatedTime": "2025-08-10T01:48:23.714759",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "63b475c7-b69c-466a-9e31-aac3c38b92c0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "UserId": "user_00157",
+            "session_id": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The care instructions for the Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 18-24M typically recommend machine washing. However, specific care instructions such as water temperature and drying methods are not provided in the information available. I recommend checking the label on the dress once received for the most accurate guidance or contacting customer support for detailed care instructions.\n\nFor more details about the dress, you can visit the product page: [Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 18-24M](https://www.aldeahome.com/products/organic-baby-kids-pippa-chambray-short-sleeve-shirt-dress-18-24m) priced at $47.50.",
+            "CreatedTime": "2025-08-10T01:48:26.435272",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "33398cbd-442a-4b2d-a396-5fed4d7fc8e0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "UserId": "user_00157",
+            "session_id": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you let me know what colors are available for the Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 18-24M (Product ID: 06854)?",
+            "CreatedTime": "2025-08-10T01:48:27.347216",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "871fc465-0cc9-47b0-ad5b-ac83b66ef94e",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "UserId": "user_00157",
+            "session_id": "a6537ffe-8427-45cd-bd47-aa11452ed869",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 18-24M is available in a chambray color. Unfortunately, there is no additional information available regarding other color options for this dress. \n\nFor more details, you can visit the product page: [Organic Baby & Kids Pippa Chambray Short Sleeve Shirt Dress: 18-24M](https://www.aldeahome.com/products/organic-baby-kids-pippa-chambray-short-sleeve-shirt-dress-18-24m) priced at $47.50.",
+            "CreatedTime": "2025-08-10T01:48:31.605523",
+            "ItemId": "06854",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.903281"
+}

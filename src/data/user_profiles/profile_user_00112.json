@@ -1,0 +1,143 @@
+{
+    "user_id": "user_00112",
+    "raw_engagement_score": 26,
+    "normalized_engagement_score": 16,
+    "activities": [
+        {
+            "id": "3ed76555-efff-463b-a354-9287cf80a085",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00112",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "01085",
+                "category": "black-friday-2023",
+                "product_name": "Joya Rocker QUICK SHIP EDITION",
+                "price": 1695.0,
+                "product_url": "https://www.aldeahome.com/products/faux-sheepskin-joya-rocker",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/ScreenShot2022-12-21at11.05.32AM.png?v=1671649551",
+                "view_duration_seconds": 106
+            },
+            "created_time": "2025-08-10T01:32:25.526440"
+        },
+        {
+            "id": "0a80d5ff-7346-4737-b624-a4f0246e71c5",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00112",
+            "event_name": "search",
+            "event_data": {
+                "query": "추천",
+                "search_results_count": 0,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.528500"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "7f5f1a67-356a-4de0-8152-307cad40e033",
+            "customer_id": "user_00112",
+            "product_id": "07574",
+            "rating": 4,
+            "review_title": "Highly recommend",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-01-22T01:32:54.168993",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "d0d17b82-1d8e-4a37-b98f-3da2c1f79295",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "UserId": "user_00112",
+            "session_id": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the Mushroom Light | Small (Product ID: 07459) is suitable for outdoor use, or is it designed only for indoor settings?",
+            "CreatedTime": "2025-08-10T01:43:35.593423",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "06a3181d-ce74-4b98-99f7-35d3fe04f1ea",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "UserId": "user_00112",
+            "session_id": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Mushroom Light | Small is designed for indoor use only. It provides a lovely all-round, diffuse glow and is made of porcelain, which is not suitable for outdoor conditions. If you're interested in purchasing it, the price is $13.00, and you can find it [here](https://www.aldeahome.com/products/medium-mushroom-light).",
+            "CreatedTime": "2025-08-10T01:43:37.176029",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "120aead4-8e55-4021-99d2-cad28bc22848",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "UserId": "user_00112",
+            "session_id": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Mushroom Light | Small (Product ID: 07459) available in different colors or styles, or is it only offered in one design?",
+            "CreatedTime": "2025-08-10T01:43:38.019346",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f13df47f-6683-42f6-b93d-3b751da70bce",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "UserId": "user_00112",
+            "session_id": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Mushroom Light | Small is only offered in one design and does not have different colors or styles available. It features a charming mushroom shape made from porcelain. If you're interested in purchasing it, the price is $13.00, and you can find it [here](https://www.aldeahome.com/products/medium-mushroom-light).",
+            "CreatedTime": "2025-08-10T01:43:40.787295",
+            "ItemId": "07459",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "690bb6fd-4627-4d8f-a31c-3fc06b41f526",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "UserId": "user_00112",
+            "session_id": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me how long the batteries last for the Mushroom Light | Small (Product ID: 07459), and if they are easy to replace?",
+            "CreatedTime": "2025-08-10T01:43:41.624559",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b4fc7afe-6d9e-43e8-a906-c8cc135dea61",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "UserId": "user_00112",
+            "session_id": "3b79edad-914c-4663-b9b6-ace799524d22",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The specific battery life for the Mushroom Light | Small is not provided, but it uses LR44 batteries, which are generally known for decent longevity. Replacing the batteries is typically straightforward, allowing for easy maintenance of the light. If you're interested in purchasing it, the price is $13.00, and you can find it [here](https://www.aldeahome.com/products/medium-mushroom-light).",
+            "CreatedTime": "2025-08-10T01:43:43.349154",
+            "ItemId": "07459",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.890558"
+}

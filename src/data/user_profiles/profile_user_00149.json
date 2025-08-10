@@ -1,0 +1,113 @@
+{
+    "user_id": "user_00149",
+    "raw_engagement_score": 13,
+    "normalized_engagement_score": 8,
+    "activities": [
+        {
+            "id": "ecdc07c3-0ba4-4895-9a1b-512e2798ff28",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00149",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_kakao",
+                "ip_address": "192.168.14.239"
+            },
+            "created_time": "2025-08-10T01:32:25.576741"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "2470f11c-e8f0-4427-8f54-4ddf38ec5fb3",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "04cdb441-2410-43ca-966d-358003176f7c",
+            "UserId": "user_00149",
+            "session_id": "04cdb441-2410-43ca-966d-358003176f7c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "What sizes are available for the Dinosaur Long Sleeve Romper (Product ID: 03081), and is it suitable for winter wear?",
+            "CreatedTime": "2025-08-10T01:47:20.570986",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2098b509-0049-4b76-b04f-343e9b3e62f5",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "04cdb441-2410-43ca-966d-358003176f7c",
+            "UserId": "user_00149",
+            "session_id": "04cdb441-2410-43ca-966d-358003176f7c",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Dinosaur Long Sleeve Romper (Product ID: 03081) is available in the following sizes: 3 months, 6 months, and 12 months. With its long sleeves and 100% organic cotton material, it is suitable for winter wear, providing warmth and comfort for your little one. \n\nYou can view the product [here](https://www.aldeahome.com/products/dinosaur-long-sleeve-romper). The price is $38.00.",
+            "CreatedTime": "2025-08-10T01:47:22.996105",
+            "ItemId": "03081",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "24f05368-a533-4e30-950f-b6508e30de36",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "04cdb441-2410-43ca-966d-358003176f7c",
+            "UserId": "user_00149",
+            "session_id": "04cdb441-2410-43ca-966d-358003176f7c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about the care instructions for the Dinosaur Long Sleeve Romper (Product ID: 03081)? Is it machine washable?",
+            "CreatedTime": "2025-08-10T01:47:23.923256",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "14b0e219-954f-45e0-8319-2e3cb604aba7",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "04cdb441-2410-43ca-966d-358003176f7c",
+            "UserId": "user_00149",
+            "session_id": "04cdb441-2410-43ca-966d-358003176f7c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don’t have specific care instructions for the Dinosaur Long Sleeve Romper (Product ID: 03081). However, since it is made of 100% organic cotton, it is generally advisable to machine wash it in cold water and tumble dry on low. I recommend checking the product label or the retailer’s website for the most accurate care instructions.\n\nYou can view the product [here](https://www.aldeahome.com/products/dinosaur-long-sleeve-romper), and it is priced at $38.00.",
+            "CreatedTime": "2025-08-10T01:47:26.158193",
+            "ItemId": "03081",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "72aa833d-0c72-4126-9163-11711d1c0a83",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "04cdb441-2410-43ca-966d-358003176f7c",
+            "UserId": "user_00149",
+            "session_id": "04cdb441-2410-43ca-966d-358003176f7c",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Dinosaur Long Sleeve Romper (Product ID: 03081) available for shipping internationally, and if so, what are the shipping costs?",
+            "CreatedTime": "2025-08-10T01:47:26.826650",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "b27b252b-56b8-411b-abeb-b52becaf8225",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "04cdb441-2410-43ca-966d-358003176f7c",
+            "UserId": "user_00149",
+            "session_id": "04cdb441-2410-43ca-966d-358003176f7c",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "I don’t have specific information about international shipping or costs for the Dinosaur Long Sleeve Romper (Product ID: 03081). I recommend checking the retailer's website or contacting their customer support for details regarding international shipping availability and associated costs.\n\nYou can view the product [here](https://www.aldeahome.com/products/dinosaur-long-sleeve-romper), and the price is $38.00.",
+            "CreatedTime": "2025-08-10T01:47:29.039970",
+            "ItemId": "03081",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.901428"
+}

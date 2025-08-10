@@ -1,0 +1,163 @@
+{
+    "user_id": "user_00113",
+    "raw_engagement_score": 31,
+    "normalized_engagement_score": 19,
+    "activities": [
+        {
+            "id": "126732e1-9a2f-4606-8f0f-1bbcd5958cf0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00113",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00113_528503",
+                "total_amount": 22.5,
+                "items": [
+                    {
+                        "product_id": "06771",
+                        "quantity": 1,
+                        "price": 22.5
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.528508"
+        },
+        {
+            "id": "55ce4d0f-b1c0-4bc9-afb0-959410a0a91b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00113",
+            "event_name": "search",
+            "event_data": {
+                "query": "Well-Read Black Girl",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.530838"
+        },
+        {
+            "id": "3e8968d7-8ce6-48c8-ab74-b2a599d07a72",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00113",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07289",
+                "quantity": 3,
+                "price": 29.0
+            },
+            "created_time": "2025-08-10T01:32:25.530842"
+        },
+        {
+            "id": "16ef58c6-4a07-45c0-9b99-612e7e1daba7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00113",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04986",
+                "category": "exclude",
+                "product_name": "Ivey the Reindeer",
+                "price": 41.99,
+                "product_url": "https://www.aldeahome.com/products/ivey-the-reindeer",
+                "thumbnail_url": "",
+                "view_duration_seconds": 70
+            },
+            "created_time": "2025-08-10T01:32:25.530846"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "85532419-0cfd-473d-842c-80d6510293d0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "UserId": "user_00113",
+            "session_id": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the printing process used for the 'Thank Yoo Owl Letterpress Thank You Card' (Product ID: 04357)? I'm curious about the metallic inks mentioned in the description.",
+            "CreatedTime": "2025-08-10T01:43:44.670404",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "ea6332e7-7b24-465d-b7d4-e7b039757690",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "UserId": "user_00113",
+            "session_id": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'Thank Yoo Owl Letterpress Thank You Card' is printed using a letterpress technique, which involves pressing the design into the paper to create a tactile impression. This particular card features metallic inks, which give a shimmering effect and add an elegant touch to the design. The card measures A2 (4.25″ x 5.5″) and comes with a coordinating envelope. It's hand printed in Columbus, OH, USA, ensuring a unique quality for each card. \n\nIf you're interested in purchasing, the card is available for $6.00. You can find it at this link: [Thank Yoo Owl Letterpress Thank You Card](https://www.aldeahome.com/products/thank-yoo-owl-letterpress-thank-you-card).",
+            "CreatedTime": "2025-08-10T01:43:48.062575",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "a701dddd-d0c5-4f64-973c-91f8529f6627",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "UserId": "user_00113",
+            "session_id": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me if the 'Thank Yoo Owl Letterpress Thank You Card' (Product ID: 04357) is suitable for sending through the mail, or is it more of a keepsake card?",
+            "CreatedTime": "2025-08-10T01:43:49.366764",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "837bf280-1b7b-45f4-b3fe-561ead7e8a88",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "UserId": "user_00113",
+            "session_id": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'Thank Yoo Owl Letterpress Thank You Card' is suitable for sending through the mail. It is a folded card that measures A2 (4.25″ x 5.5″) and comes with a coordinating envelope, making it perfect for mailing. While it has a charming design that could also serve as a keepsake, it is designed to be used as a thank you card that you can send to someone special. If you're interested, it's priced at $6.00 and available here: [Thank Yoo Owl Letterpress Thank You Card](https://www.aldeahome.com/products/thank-yoo-owl-letterpress-thank-you-card).",
+            "CreatedTime": "2025-08-10T01:43:51.959911",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "7cbdffa3-00e3-4c82-97f8-b90f30274f59",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "UserId": "user_00113",
+            "session_id": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any discounts available if I want to purchase multiple 'Thank Yoo Owl Letterpress Thank You Cards' (Product ID: 04357)?",
+            "CreatedTime": "2025-08-10T01:43:52.933978",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c2dcd535-63cd-4442-9c7f-3776db2eb0bb",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "UserId": "user_00113",
+            "session_id": "b9307ed1-9653-4547-a1f9-15e5744b3105",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "I don't have information regarding discounts for purchasing multiple 'Thank Yoo Owl Letterpress Thank You Cards'. It’s best to check the store's website or contact customer service directly for any current promotions or bulk purchase discounts. The card is priced at $6.00 each, and you can view it here: [Thank Yoo Owl Letterpress Thank You Card](https://www.aldeahome.com/products/thank-yoo-owl-letterpress-thank-you-card).",
+            "CreatedTime": "2025-08-10T01:43:54.925069",
+            "ItemId": "04357",
+            "Thumbs": "down",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.890988"
+}

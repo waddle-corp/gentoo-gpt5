@@ -1,185 +1,39 @@
 {
     "user_id": "user_00070",
-    "raw_engagement_score": 45,
-    "normalized_engagement_score": 29,
+    "raw_engagement_score": 7,
+    "normalized_engagement_score": 5,
     "activities": [
         {
-            "id": "7a9832fc-c622-4032-916c-19d303fd6a2f",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00070",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00070_743993",
-                "total_amount": 237.0,
-                "items": [
-                    {
-                        "product_id": "00502",
-                        "quantity": 1,
-                        "price": 189.0
-                    },
-                    {
-                        "product_id": "06989",
-                        "quantity": 1,
-                        "price": 48.0
-                    }
-                ],
-                "payment_method": "kakao_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.743998"
-        },
-        {
-            "id": "2637ddd5-8bf9-4810-9bf4-5790c8f7aaa6",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00070",
-            "event_name": "purchase_completed",
-            "event_data": {
-                "order_id": "ORDER_user_00070_744001",
-                "total_amount": 904.98,
-                "items": [
-                    {
-                        "product_id": "06125",
-                        "quantity": 1,
-                        "price": 874.98
-                    },
-                    {
-                        "product_id": "04322",
-                        "quantity": 1,
-                        "price": 30.0
-                    }
-                ],
-                "payment_method": "naver_pay"
-            },
-            "created_time": "2025-08-09T20:05:50.744006"
-        },
-        {
-            "id": "aca323af-5575-4d30-a8bf-09a2413a77fb",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00070",
-            "event_name": "search",
-            "event_data": {
-                "query": "U-Locker Necklace",
-                "search_results_count": 1,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T20:05:50.746454"
-        },
-        {
-            "id": "e1cdda6d-a287-4eab-881b-379fc5d3ca8a",
+            "id": "ec9c2a8f-dc1a-4759-9e45-3778df7d5058",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00070",
             "event_name": "add_to_cart",
             "event_data": {
-                "product_id": "07023",
-                "quantity": 1,
-                "price": 24.0
+                "product_id": "05885",
+                "quantity": 3,
+                "price": 6.0
             },
-            "created_time": "2025-08-09T20:05:50.746460"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-10T01:32:25.465879"
+        },
         {
-            "review_id": "749ef1c1-3088-4ec2-86ed-4e833e935fc2",
-            "customer_id": "user_00070",
-            "product_id": "02298",
-            "rating": 1,
-            "review_title": "Do not recommend",
-            "review_content": "The quality of Bunny Plush wasn't as good as I expected. It feels like a waste of money.",
-            "created_at": "2025-04-02T20:52:52.182268",
-            "is_deleted": false
+            "id": "b483899f-fc33-4f4c-a361-c51fb1f08362",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00070",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "02681",
+                "category": "cyber-monday-gift",
+                "product_name": "Puzzle & Match Rainbow",
+                "price": 20.0,
+                "product_url": "https://www.aldeahome.com/products/puzzle-match-rainbow",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/Puzz_MatchRainbowWoodenPuzzle1_jpg.jpg?v=1716999839",
+                "view_duration_seconds": 16
+            },
+            "created_time": "2025-08-10T01:32:25.465883"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "6757762c-4ae5-46a9-ae38-83635b9138bf",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "UserId": "user_00070",
-            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me more about the sizing options for the Ice Grey Garter Stitch Cardigan Sweater Baby & Toddler: 0-6 months (Product ID: 07041)? Is it true to size for infants in that age range?",
-            "CreatedTime": "2025-08-09T20:22:33.160562",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "9fea15d9-688e-4b41-8e1d-9bdc760b36b0",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "UserId": "user_00070",
-            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Ice Grey Garter Stitch Cardigan Sweater is specifically designed for babies and toddlers in the 0-6 months size range. This product should fit true to size for infants within that age, ensuring a comfortable fit. If you're looking for a cozy and warm sweater for a little one, this is a great choice! \n\nFor more details or to make a purchase, you can visit the product page [here](https://www.aldeahome.com/products/ice-grey-garter-stitch-cardigan-sweater-baby-toddler-0-6-months). The price is $46.00.",
-            "CreatedTime": "2025-08-09T20:22:35.767780",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "21af0f10-e39d-4242-8946-5b96bd6617ed",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "UserId": "user_00070",
-            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Is the Ice Grey Garter Stitch Cardigan Sweater Baby & Toddler: 0-6 months (Product ID: 07041) suitable for layering over other outfits, or is it meant to be worn on its own?",
-            "CreatedTime": "2025-08-09T20:22:36.953870",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e44c595e-9e5b-45ee-a452-35ab88eebb6d",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "UserId": "user_00070",
-            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Ice Grey Garter Stitch Cardigan Sweater is designed to be cozy and warm, making it suitable for layering over other outfits. Its thick and soft garter stitch material allows it to be worn comfortably over onesies or other clothing, providing added warmth for your little one. It would be a lovely addition to any outfit, whether worn on its own or layered. \n\nFor more details or to purchase, you can visit the product page [here](https://www.aldeahome.com/products/ice-grey-garter-stitch-cardigan-sweater-baby-toddler-0-6-months) for $46.00.",
-            "CreatedTime": "2025-08-09T20:22:39.955196",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "9ca9f68c-48cc-4e04-80d2-c8c91fbbaa20",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "UserId": "user_00070",
-            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if the Ice Grey Garter Stitch Cardigan Sweater Baby & Toddler: 0-6 months (Product ID: 07041) is machine washable, or does it require special care when cleaning?",
-            "CreatedTime": "2025-08-09T20:22:41.350135",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "c6637322-b64a-43c0-b617-00a892655cce",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "UserId": "user_00070",
-            "session_id": "ce8719e6-b5c1-488b-9ae6-ae27216b1379",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The Ice Grey Garter Stitch Cardigan Sweater requires special care when cleaning. It should be cold hand washed to maintain its quality and shape. It's important to avoid machine washing to ensure the longevity of the sweater. \n\nFor more information or to purchase, you can visit the product page [here](https://www.aldeahome.com/products/ice-grey-garter-stitch-cardigan-sweater-baby-toddler-0-6-months) for $46.00.",
-            "CreatedTime": "2025-08-09T20:22:44.459262",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.206824"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.875422"
 }

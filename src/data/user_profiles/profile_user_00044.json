@@ -1,178 +1,72 @@
 {
     "user_id": "user_00044",
-    "raw_engagement_score": 31,
-    "normalized_engagement_score": 20,
+    "raw_engagement_score": 15,
+    "normalized_engagement_score": 9,
     "activities": [
         {
-            "id": "e75b77c7-d735-49a4-8959-390e4bd1c1c1",
+            "id": "cd2b8492-6fdf-49c0-bfd5-21f94d32d579",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00044",
-            "event_name": "purchase_completed",
+            "event_name": "search",
             "event_data": {
-                "order_id": "ORDER_user_00044_707479",
-                "total_amount": 50.0,
-                "items": [
-                    {
-                        "product_id": "06632",
-                        "quantity": 1,
-                        "price": 35.0
-                    },
-                    {
-                        "product_id": "06884",
-                        "quantity": 1,
-                        "price": 15.0
-                    }
-                ],
-                "payment_method": "kakao_pay"
+                "query": "Magical Melon",
+                "search_results_count": 1,
+                "filters_applied": []
             },
-            "created_time": "2025-08-09T20:05:50.707492"
+            "created_time": "2025-08-10T01:32:25.416659"
         },
         {
-            "id": "ebe1591b-0054-4155-9db0-2976a589e893",
+            "id": "75c57dbe-a99e-4d30-a82a-f6b89a8487d4",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00044",
             "event_name": "login",
             "event_data": {
                 "login_method": "social_kakao",
-                "ip_address": "192.168.244.168"
+                "ip_address": "192.168.120.102"
             },
-            "created_time": "2025-08-09T20:05:50.707497"
+            "created_time": "2025-08-10T01:32:25.416664"
         },
         {
-            "id": "da36d6c4-3b68-439f-a64b-e399379755a8",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00044",
-            "event_name": "search",
-            "event_data": {
-                "query": "Dazzle Aventurine Cheese Board",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
-            },
-            "created_time": "2025-08-09T20:05:50.710173"
-        },
-        {
-            "id": "e4ca28f4-6714-47e4-92b3-f11bf9335314",
+            "id": "397fdfb0-2930-4759-867b-74f9ae571539",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00044",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "02951",
-                "category": "cyber-monday-gift",
-                "product_name": "Black Agate Geometric Earrings",
-                "price": 36.0,
-                "product_url": "https://www.aldeahome.com/products/xine12-black-agate-geometric-earrings",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/abc1079457f5aaba9c1ddc199542069bc63d3cce8aacb8f8035227690e7360b7.jpg?v=1724356823",
-                "view_duration_seconds": 46
+                "product_id": "02499",
+                "category": "costumes",
+                "product_name": "Ladybug Wings",
+                "price": 68.0,
+                "product_url": "https://www.aldeahome.com/products/ladybug-wings-1",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/02d94a600ab671eb7aaba2f3780810771444aa7d60a0fda14501d39d1ef4bbf0.jpg?v=1724803378",
+                "view_duration_seconds": 63
             },
-            "created_time": "2025-08-09T20:05:50.710185"
+            "created_time": "2025-08-10T01:32:25.416669"
         },
         {
-            "id": "299eebb3-1254-4243-a719-e280672663a2",
+            "id": "18f0fb1f-3f51-496c-b0c1-d9053a94630d",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00044",
             "event_name": "login",
             "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.61.70"
+                "login_method": "social_kakao",
+                "ip_address": "192.168.89.85"
             },
-            "created_time": "2025-08-09T20:05:50.710189"
+            "created_time": "2025-08-10T01:32:25.416677"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "38f6a9e8-6194-4749-867a-175f6bb92f76",
+            "customer_id": "user_00044",
+            "product_id": "00772",
+            "rating": 4,
+            "review_title": "Super satisfied!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-02-03T01:32:54.168823",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "dd55e35f-bff9-499a-9af5-eebcb60a9b50",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "UserId": "user_00044",
-            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "Intent": "정보",
-            "Role": "user",
-            "Content": "Can you tell me more about the scent profile of the candle can blackberry (Product ID: 05282) and how long it typically lasts when burned?",
-            "CreatedTime": "2025-08-09T20:19:24.532015",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "ce049342-1889-4374-a9b2-5d6573899f51",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "UserId": "user_00044",
-            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The **candle can blackberry** features a delightful and rich blackberry scent, perfect for creating a warm and inviting atmosphere. While the specific burn time isn't provided, most high-quality candles typically last around 40 to 50 hours. \n\nYou can purchase the candle for **$26.95** at the following link: [candle can blackberry](https://www.aldeahome.com/products/candle-can-blackberry-2). If you have any more questions, feel free to ask!",
-            "CreatedTime": "2025-08-09T20:19:26.699403",
-            "ItemId": "05282",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "27b3e957-da46-4766-8252-5d0e81dea7cd",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "UserId": "user_00044",
-            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Does the **candle can blackberry** (Product ID: 05282) have any specific ingredients or wax type that contribute to its scent or burn quality?",
-            "CreatedTime": "2025-08-09T20:19:27.711004",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "ed3b9d56-e485-4410-a058-9bf391e68e03",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "UserId": "user_00044",
-            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The specific ingredients or wax type for the **candle can blackberry** (Product ID: 05282) are not provided in the available information. However, many scented candles typically use a blend of high-quality wax and fragrance oils to enhance scent and burn quality. \n\nFor the best experience, it’s often recommended to check the product details on the website or packaging for more information. If you have any further questions or need assistance, feel free to ask! You can find the candle for **$26.95** here: [candle can blackberry](https://www.aldeahome.com/products/candle-can-blackberry-2).",
-            "CreatedTime": "2025-08-09T20:19:31.176276",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "a6576835-e998-4fca-9371-1764b4edf294",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "UserId": "user_00044",
-            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Can you tell me if the **candle can blackberry** (Product ID: 05282) is made with natural ingredients or if it contains any synthetic additives?",
-            "CreatedTime": "2025-08-09T20:19:32.464088",
-            "ItemId": null,
-            "Thumbs": "up",
-            "Channel": "web"
-        },
-        {
-            "Id": "bc381584-f6ed-4adc-88b6-94f0b386515b",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "UserId": "user_00044",
-            "session_id": "3b66a36e-7eb3-4b68-8730-453fda9c992b",
-            "Intent": "추천",
-            "Role": "assistant",
-            "Content": "The available information does not specify whether the **candle can blackberry** (Product ID: 05282) is made with natural ingredients or if it contains synthetic additives. For detailed information regarding the ingredients used in the candle, I recommend checking the product details on the website or the packaging.\n\nIf you have any more questions or need further assistance, feel free to ask! You can purchase the candle for **$26.95** at this link: [candle can blackberry](https://www.aldeahome.com/products/candle-can-blackberry-2).",
-            "CreatedTime": "2025-08-09T20:19:36.890347",
-            "ItemId": "05282",
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.196891"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.865529"
 }

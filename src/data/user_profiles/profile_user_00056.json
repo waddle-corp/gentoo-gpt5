@@ -1,141 +1,164 @@
 {
     "user_id": "user_00056",
-    "raw_engagement_score": 21,
-    "normalized_engagement_score": 14,
+    "raw_engagement_score": 33,
+    "normalized_engagement_score": 20,
     "activities": [
         {
-            "id": "56b7122e-ef77-452a-b60e-d2305df4e61c",
+            "id": "613696f8-1361-438d-9f46-95c5bd0b7791",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00056",
-            "event_name": "product_view",
+            "event_name": "search",
             "event_data": {
-                "product_id": "05562",
-                "category": "exclude",
-                "product_name": "Maxi-Cosi Vehicle Seat Protector",
-                "price": 54.99,
-                "product_url": "https://www.aldeahome.com/products/maxi-cosi-vehicle-seat-protector",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/TS375EMJ_VehicleSeat_Protector_Bty_L_092220_1_1_d0b51021-b38a-4976-b415-9eb84ae6c3d4.jpg?v=1716651857",
-                "view_duration_seconds": 29
+                "query": "Red Firefighter Costume",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.727024"
+            "created_time": "2025-08-10T01:32:25.432865"
         },
         {
-            "id": "a1367ba4-10c6-49f0-94e3-3ee57b3c5cfa",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00056",
-            "event_name": "add_to_cart",
-            "event_data": {
-                "product_id": "02334",
-                "quantity": 3,
-                "price": 6.0
-            },
-            "created_time": "2025-08-09T20:05:50.727030"
-        },
-        {
-            "id": "70c458f9-dcaf-49c4-ba8a-6ffc7308cbc4",
+            "id": "d63e3772-5c45-42e2-a5f3-0b8316c7d63e",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00056",
             "event_name": "login",
             "event_data": {
                 "login_method": "email_password",
-                "ip_address": "192.168.53.123"
+                "ip_address": "192.168.30.139"
             },
-            "created_time": "2025-08-09T20:05:50.727034"
+            "created_time": "2025-08-10T01:32:25.432869"
+        },
+        {
+            "id": "f1bb3046-8159-4f98-a77e-8415747ca79c",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00056",
+            "event_name": "search",
+            "event_data": {
+                "query": "Design + Draw Fashionistas",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.435196"
+        },
+        {
+            "id": "99d96ac9-e5dd-40d6-9db3-873b94867ac9",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00056",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "05441",
+                "quantity": 3,
+                "price": 25.0
+            },
+            "created_time": "2025-08-10T01:32:25.435200"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "158bef79-4e95-4b1e-b589-8b10fb3287db",
+            "customer_id": "user_00056",
+            "product_id": "07299",
+            "rating": 3,
+            "review_title": "Exceeded expectations",
+            "review_content": "I gave it as a gift and they loved it. Thanks to Teeny Benedict, I got called thoughtful!",
+            "created_at": "2025-02-06T01:32:54.168853",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "2d157f2c-e5fc-4922-a68f-4d9a398f94e4",
+            "Id": "f7e43ea9-28d9-43c0-94b7-30e766080a7d",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "DialogueId": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
             "UserId": "user_00056",
-            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
-            "Intent": "정보",
+            "session_id": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
+            "Intent": "일반",
             "Role": "user",
-            "Content": "Can you tell me more about the size and color options available for the French Bulldog - 100304 (Product ID: 05064)?",
-            "CreatedTime": "2025-08-09T20:21:11.462418",
+            "Content": "Can you tell me if the 'Ping the Panda' (Product ID: 07305) is suitable for young children, considering its bean bag weighted bottom?",
+            "CreatedTime": "2025-08-10T01:38:19.383395",
             "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "5a6d4308-7b3e-492e-b2b2-5214df1467c9",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
-            "UserId": "user_00056",
-            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "I'm sorry, but I can only provide information about the 'twisty stix oil pastels'. The twisty stix oil pastels are priced at $7.95 and come in twelve vibrant colors, perfect for coloring, drawing, and blending. If you have any questions about the twisty stix oil pastels or need assistance with that product, feel free to ask! You can find more details and purchase them [here](https://www.aldeahome.com/products/twisty-stix-oil-pastels).",
-            "CreatedTime": "2025-08-09T20:21:13.587394",
-            "ItemId": "00304",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "611a1c32-2b6a-4096-a2ea-cc277b06ac20",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
-            "UserId": "user_00056",
-            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
-            "Intent": "탐색",
-            "Role": "user",
-            "Content": "Are the twisty stix oil pastels (Product ID: 00304) suitable for beginners, or are they more geared towards experienced artists?",
-            "CreatedTime": "2025-08-09T20:21:14.560817",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "db40f88d-9855-4115-bf22-5697c9ebd1e0",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
-            "UserId": "user_00056",
-            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The twisty stix oil pastels are suitable for both beginners and experienced artists. They offer a no-mess solution to traditional oil pastels, making them easy to use for those just starting out. Additionally, their smooth coloring and blending capabilities cater to more experienced artists as well. Overall, they are versatile and can enhance any artist's creative experience. If you're interested, they are priced at $7.95. You can find more information and purchase them [here](https://www.aldeahome.com/products/twisty-stix-oil-pastels).",
-            "CreatedTime": "2025-08-09T20:21:17.022799",
-            "ItemId": "00304",
             "Thumbs": "up",
             "Channel": "web"
         },
         {
-            "Id": "be9b04de-b883-4bd0-b88b-99485475fcfb",
+            "Id": "81dbc490-c5d5-41c5-a41d-ebaba8403964",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "DialogueId": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
             "UserId": "user_00056",
-            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "session_id": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
             "Intent": "정보",
-            "Role": "user",
-            "Content": "Do the twisty stix oil pastels (Product ID: 00304) come with any special storage or packaging options to keep them organized?",
-            "CreatedTime": "2025-08-09T20:21:18.298181",
+            "Role": "assistant",
+            "Content": "Yes, 'Ping the Panda' is suitable for young children. It has a child-safe inner bean bag that provides a weighted bottom, making it extra cuddly and huggable while ensuring safety during play. The plush materials are soft and the panda is designed to be cuddly, making it a great companion for kids. \n\nYou can find more information and purchase it for $21.00 at this link: [Ping the Panda](https://www.aldeahome.com/products/ping-the-panda).",
+            "CreatedTime": "2025-08-10T01:38:21.430116",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "7ab20e08-dcc0-4569-9daa-dc87af8da3c6",
+            "Id": "b61e7a6c-9227-4dcf-a1d3-6f0ce9e96a64",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "DialogueId": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
             "UserId": "user_00056",
-            "session_id": "f5b49b81-c9e8-41cd-a2bf-355b5137931b",
+            "session_id": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Does 'Ping the Panda' (Product ID: 07305) come in any other colors or styles, or is it only available in the classic panda design?",
+            "CreatedTime": "2025-08-10T01:38:22.430414",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "54b84fe9-b6b2-4956-8356-79f44d5ed96f",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
+            "UserId": "user_00056",
+            "session_id": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The twisty stix oil pastels do not have specific details about special storage or packaging options mentioned, but their twist-up action design makes them easy to store and use, helping to keep your hands clean. This design also allows for convenient organization, as they can be easily kept in a drawer or art supply case. If you're looking for a neat way to manage your art supplies, the twisty stix oil pastels themselves are a practical choice. They are priced at $7.95, and you can view more details or purchase them [here](https://www.aldeahome.com/products/twisty-stix-oil-pastels).",
-            "CreatedTime": "2025-08-09T20:21:21.167549",
-            "ItemId": "00304",
+            "Content": "'Ping the Panda' is only available in the classic panda design. There are no other colors or styles listed for this product. It features the adorable 10.5\" tall panda look with ultra-soft fur and a cuddly body. \n\nIf you're interested, you can check it out for $21.00 at this link: [Ping the Panda](https://www.aldeahome.com/products/ping-the-panda).",
+            "CreatedTime": "2025-08-10T01:38:24.166676",
+            "ItemId": null,
+            "Thumbs": "up",
+            "Channel": "web"
+        },
+        {
+            "Id": "73879a76-2ad4-4fe4-8c57-50c75602d694",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
+            "UserId": "user_00056",
+            "session_id": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Is there a specific age recommendation for 'Ping the Panda' (Product ID: 07305), or is it suitable for all ages? Additionally, how should I care for it to keep it looking nice?",
+            "CreatedTime": "2025-08-10T01:38:25.221776",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "11e8e11c-61fb-41be-892d-5ac43e3d2812",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
+            "UserId": "user_00056",
+            "session_id": "9b00134f-3484-4bd1-8e14-ca11c5c083c1",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "'Ping the Panda' is suitable for all ages, making it a great choice for children as well as adults who love plush toys. \n\nTo care for your 'Ping the Panda' and keep it looking nice, it is surface washable. This means you can clean it by wiping the surface with a damp cloth and mild soap, avoiding any harsh cleaning methods. \n\nIf you would like to purchase 'Ping the Panda', it is available for $21.00 at this link: [Ping the Panda](https://www.aldeahome.com/products/ping-the-panda).",
+            "CreatedTime": "2025-08-10T01:38:27.687308",
+            "ItemId": "07305",
             "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.202032"
+    "profile_generated_at": "2025-08-10T01:53:50.869775"
 }

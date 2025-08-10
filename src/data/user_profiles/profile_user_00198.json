@@ -1,0 +1,34 @@
+{
+    "user_id": "user_00198",
+    "raw_engagement_score": 6,
+    "normalized_engagement_score": 4,
+    "activities": [
+        {
+            "id": "085cc9c8-01d4-468c-b57f-071f442838e0",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00198",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "email_password",
+                "ip_address": "192.168.27.74"
+            },
+            "created_time": "2025-08-10T01:32:25.656905"
+        },
+        {
+            "id": "cbc1e5e2-f4cb-4e02-8bd7-583c526fe6cb",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00198",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "01778",
+                "quantity": 2,
+                "price": 19.99
+            },
+            "created_time": "2025-08-10T01:32:25.656909"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.912328"
+}

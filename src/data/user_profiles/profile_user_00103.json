@@ -1,0 +1,74 @@
+{
+    "user_id": "user_00103",
+    "raw_engagement_score": 17,
+    "normalized_engagement_score": 10,
+    "activities": [
+        {
+            "id": "1989f9b1-6ef6-4308-8f9f-ed1443d1f55b",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00103",
+            "event_name": "search",
+            "event_data": {
+                "query": "KeaBabies Luxe Baby Hooded Towel: Petite / KeaStory",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.509959"
+        },
+        {
+            "id": "803d4aa2-cad0-4eb1-bf72-e1596f1d18cb",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00103",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.188.94"
+            },
+            "created_time": "2025-08-10T01:32:25.509963"
+        },
+        {
+            "id": "af46953f-7a9e-41aa-893e-6b46e42c8802",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00103",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00103_509967",
+                "total_amount": 42.75,
+                "items": [
+                    {
+                        "product_id": "07334",
+                        "quantity": 1,
+                        "price": 15.75
+                    },
+                    {
+                        "product_id": "07652",
+                        "quantity": 1,
+                        "price": 27.0
+                    }
+                ],
+                "payment_method": "naver_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.509975"
+        },
+        {
+            "id": "b1cdcdac-87d5-4699-858e-1ac4563e3b13",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00103",
+            "event_name": "search",
+            "event_data": {
+                "query": "Because I Had A Teacher",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.512295"
+        }
+    ],
+    "reviews": [],
+    "subscriptions": [],
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.886596"
+}

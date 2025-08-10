@@ -1,131 +1,115 @@
 {
     "user_id": "user_00079",
-    "raw_engagement_score": 25,
-    "normalized_engagement_score": 16,
+    "raw_engagement_score": 20,
+    "normalized_engagement_score": 12,
     "activities": [
         {
-            "id": "cf6b5357-31e0-4fc4-b3c1-12c33c027714",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00079",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "email_password",
-                "ip_address": "192.168.69.13"
-            },
-            "created_time": "2025-08-09T20:05:50.758808"
-        },
-        {
-            "id": "5db6b974-f39d-4a76-8b9e-001ea538ebe9",
+            "id": "cdfffb40-b004-49f4-8518-f6f2e7176063",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00079",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "07303",
-                "category": "plush",
-                "product_name": "Glimmers the plush unicorn",
-                "price": 21.0,
-                "product_url": "https://www.aldeahome.com/products/glimmers-the-plush-unicorn",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/71e82a28cc93d2e8085623cad28eedf198355d78e2e70cd820dc0c29c993bfb2.jpg?v=1742883031",
-                "view_duration_seconds": 91
+                "product_id": "05046",
+                "category": "exclude",
+                "product_name": "Isla Premium Muslin Nursing Cover",
+                "price": 38.0,
+                "product_url": "https://www.aldeahome.com/products/isla-premium-muslin-nursing-cover",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/8a205925726a1785a2bf76aef63ebe341c96d8a47eafdd82f0a47cf873648f8c.jpg?v=1716511320",
+                "view_duration_seconds": 88
             },
-            "created_time": "2025-08-09T20:05:50.758814"
+            "created_time": "2025-08-10T01:32:25.477613"
         },
         {
-            "id": "e5ff526c-0260-4014-bc18-e8ad60b1b7f2",
+            "id": "e07e2abd-b99c-4ffb-9f17-04dda177e055",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00079",
-            "event_name": "purchase_completed",
+            "event_name": "search",
             "event_data": {
-                "order_id": "ORDER_user_00079_758821",
-                "total_amount": 29.95,
-                "items": [
-                    {
-                        "product_id": "07157",
-                        "quantity": 1,
-                        "price": 9.95
-                    },
-                    {
-                        "product_id": "00018",
-                        "quantity": 1,
-                        "price": 20.0
-                    }
-                ],
-                "payment_method": "credit_card"
+                "query": "Alphabet Abacus",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "가격 낮은 순"
+                ]
             },
-            "created_time": "2025-08-09T20:05:50.758830"
+            "created_time": "2025-08-10T01:32:25.480063"
         },
         {
-            "id": "0969e472-5388-4426-b774-fd10b2118a51",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00079",
-            "event_name": "login",
-            "event_data": {
-                "login_method": "social_google",
-                "ip_address": "192.168.141.25"
-            },
-            "created_time": "2025-08-09T20:05:50.758835"
-        },
-        {
-            "id": "eddf6934-a63a-4e7c-908a-e50308aae6fc",
+            "id": "140a3652-ebee-4ed2-b40d-232b4a6a20dc",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00079",
             "event_name": "product_view",
             "event_data": {
-                "product_id": "07827",
-                "category": "wall-decor",
-                "product_name": "Under The Sea Wall Decals | Large",
-                "price": 102.0,
-                "product_url": "https://www.aldeahome.com/products/wall-decals-decor-l-under-the-sea",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/products/0ccea7a44fb3a269697e06caa25eb172e5a7d6c677c5cb75f43620b7544b49d6.jpg?v=1682186453",
-                "view_duration_seconds": 117
+                "product_id": "06308",
+                "category": "ornaments",
+                "product_name": "VINTAGE ARCADE Christmas Arcade",
+                "price": 20.0,
+                "product_url": "https://www.aldeahome.com/products/vintage-arcade-christmas-arcade",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/GO-6429_1_jpg_1.jpg?v=1694126707",
+                "view_duration_seconds": 76
             },
-            "created_time": "2025-08-09T20:05:50.758839"
+            "created_time": "2025-08-10T01:32:25.480068"
+        },
+        {
+            "id": "1c275117-a0fd-454f-99a0-ad62cb07f303",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00079",
+            "event_name": "product_view",
+            "event_data": {
+                "product_id": "04882",
+                "category": "exclude",
+                "product_name": "Rose Pointelle Kimono Organic Newborn Bodysuit | Ballet",
+                "price": 30.0,
+                "product_url": "https://www.aldeahome.com/products/organic-newborn-rose-pointelle-kimono-bodysuit-ballet",
+                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/cd67f714fc0404d0f7306087b2888e50c3ad4b72f5e7f7c5d3f00095df9d8b9a.jpg?v=1722125033",
+                "view_duration_seconds": 103
+            },
+            "created_time": "2025-08-10T01:32:25.480072"
         }
     ],
     "reviews": [
         {
-            "review_id": "5585a549-0572-47a3-9f9c-75bdf51fb291",
+            "review_id": "34b2952b-6f51-429a-8d62-328ce6177ca8",
             "customer_id": "user_00079",
-            "product_id": "01407",
-            "rating": 2,
-            "review_title": "Do not recommend",
-            "review_content": "Unlike the ads, I wasn't satisfied. I wouldn't buy it again.",
-            "created_at": "2024-08-30T20:52:52.182303",
+            "product_id": "05585",
+            "rating": 3,
+            "review_title": "Would buy again",
+            "review_content": "Honestly, I had high hopes, but Nuna TAVO Child Tray isn't quite my taste. I'll try something else next time.",
+            "created_at": "2025-01-17T01:32:54.168901",
             "is_deleted": false
         }
     ],
     "subscriptions": [],
     "dialogues": [
         {
-            "Id": "33bf84b7-e502-42d8-be3b-78048fef7b67",
+            "Id": "a217f2e1-98ff-4113-898c-6b72d26c2d14",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "90c61b28-d19b-4d6a-8bd5-27a8d3f0438c",
+            "DialogueId": "6518662d-2dc4-4a15-bd66-833b8e078398",
             "UserId": "user_00079",
-            "session_id": "90c61b28-d19b-4d6a-8bd5-27a8d3f0438c",
-            "Intent": "일반",
+            "session_id": "6518662d-2dc4-4a15-bd66-833b8e078398",
+            "Intent": "탐색",
             "Role": "user",
-            "Content": "Can you tell me more about the educational benefits of the Wooden Farm Spot-the-Difference Puzzle (Product ID: 06400) for children?",
-            "CreatedTime": "2025-08-09T20:23:28.662610",
+            "Content": "Can you tell me if the Banwood Classic Helmet - Matte Navy (50-54 cm) is suitable for both boys and girls, and what age range it typically fits? Product ID: 07454.",
+            "CreatedTime": "2025-08-10T01:40:07.744259",
             "ItemId": null,
             "Thumbs": null,
             "Channel": "web"
         },
         {
-            "Id": "ba035075-b609-41a8-a8f1-b8f4287d1759",
+            "Id": "fd9d7ec7-2786-4480-b0da-0bad8a9d7fbc",
             "ChatbotId": 1,
             "shop_id": "main_shop_1",
-            "DialogueId": "90c61b28-d19b-4d6a-8bd5-27a8d3f0438c",
+            "DialogueId": "6518662d-2dc4-4a15-bd66-833b8e078398",
             "UserId": "user_00079",
-            "session_id": "90c61b28-d19b-4d6a-8bd5-27a8d3f0438c",
+            "session_id": "6518662d-2dc4-4a15-bd66-833b8e078398",
             "Intent": "정보",
             "Role": "assistant",
-            "Content": "The Wooden Farm Spot-the-Difference Puzzle is designed to provide various educational benefits for children ages 3 and up. Here are some key advantages:\n\n1. **Concentration and Focus**: As children work to find the differences in the puzzle, they practice maintaining their attention on a task, which helps improve their concentration skills.\n\n2. **Observation Skills**: The activity encourages children to carefully observe details, enhancing their ability to notice differences and similarities in visual information.\n\n3. **Problem-Solving**: Figuring out where the differences are requires critical thinking and problem-solving skills, promoting cognitive development.\n\n4. **Fine Motor Skills**: Manipulating the puzzle pieces helps develop fine motor skills and hand-eye coordination, essential for young children.\n\n5. **Imaginative Play**: The farm theme introduces children to animals and farm life, sparking their imagination and encouraging storytelling.\n\nOverall, the Wooden Farm Spot-the-Difference Puzzle offers a fun and engaging way for children to learn while playing. \n\nIf you're interested in purchasing it, the price is $9.99, and you can find it [here](https://www.aldeahome.com/products/wooden-farm-spot-the-difference-puzzle).",
-            "CreatedTime": "2025-08-09T20:23:32.751318",
+            "Content": "Yes, the Banwood Classic Helmet - Matte Navy (50-54 cm) is suitable for both boys and girls. It is designed to fit toddlers, typically accommodating head sizes ranging from 50 to 54 cm. This helmet is perfect for keeping your little ones safe while riding. \n\nIf you're interested, the price is $49.95. You can find more information or purchase it [here](https://www.aldeahome.com/products/banwood-classic-helmet-matte-navy-50-54-cm).",
+            "CreatedTime": "2025-08-10T01:40:10.045986",
             "ItemId": null,
-            "Thumbs": "down",
+            "Thumbs": null,
             "Channel": "web"
         }
     ],
-    "profile_generated_at": "2025-08-09T20:54:53.209347"
+    "profile_generated_at": "2025-08-10T01:53:50.878607"
 }

@@ -1,0 +1,163 @@
+{
+    "user_id": "user_00159",
+    "raw_engagement_score": 45,
+    "normalized_engagement_score": 27,
+    "activities": [
+        {
+            "id": "1a012d59-52a2-4fb6-b80e-f52ff2cdb908",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00159",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00159_595223",
+                "total_amount": 23.96,
+                "items": [
+                    {
+                        "product_id": "02988",
+                        "quantity": 1,
+                        "price": 15.97
+                    },
+                    {
+                        "product_id": "01512",
+                        "quantity": 1,
+                        "price": 7.99
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.595228"
+        },
+        {
+            "id": "59b6968a-606a-40db-8f1d-8dd274450a8a",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00159",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "07684",
+                "quantity": 3,
+                "price": 19.99
+            },
+            "created_time": "2025-08-10T01:32:25.595231"
+        },
+        {
+            "id": "e8fb625d-064b-4795-b5f4-bad8eaa6f258",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00159",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00159_595234",
+                "total_amount": 36.95,
+                "items": [
+                    {
+                        "product_id": "07349",
+                        "quantity": 1,
+                        "price": 36.95
+                    }
+                ],
+                "payment_method": "kakao_pay"
+            },
+            "created_time": "2025-08-10T01:32:25.595238"
+        },
+        {
+            "id": "198d16ae-1f3b-4774-86b0-411807fbbc85",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00159",
+            "event_name": "search",
+            "event_data": {
+                "query": "Puzzle Blocks - Wild Animals",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.597562"
+        },
+        {
+            "id": "45c630f8-d14c-4ddd-9196-00dd12edb413",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00159",
+            "event_name": "login",
+            "event_data": {
+                "login_method": "social_google",
+                "ip_address": "192.168.11.11"
+            },
+            "created_time": "2025-08-10T01:32:25.597566"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "33c0c7fe-ddb0-4669-9494-0e65620a506a",
+            "customer_id": "user_00159",
+            "product_id": "01138",
+            "rating": 5,
+            "review_title": "Best purchase ever",
+            "review_content": "Moses Pod Lounger is fantastic! I wish I'd found it sooner.",
+            "created_at": "2025-04-09T01:32:54.169093",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "a0b1c383-1e80-4552-b0aa-cd0e7cf8bc01",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d96f0270-518e-4352-84b4-e601c187180d",
+            "UserId": "user_00159",
+            "session_id": "d96f0270-518e-4352-84b4-e601c187180d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me more about how the light feature works in the Light at Night Spott Stegosaurus Stuffed Plush, 11 Inches (Product ID: 07242)?",
+            "CreatedTime": "2025-08-10T01:48:43.588962",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "de29767a-b4a4-4774-bc3b-d57c06afe1e9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d96f0270-518e-4352-84b4-e601c187180d",
+            "UserId": "user_00159",
+            "session_id": "d96f0270-518e-4352-84b4-e601c187180d",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The Light at Night Spott Stegosaurus Stuffed Plush features a light that shines through its tummy, providing a comforting glow. It has three modes: \n\n1. **ON Mode**: The light stays on continuously.\n2. **TIMER Mode**: The light turns off automatically after 30 minutes, which is great for helping little ones fall asleep.\n3. **OFF Mode**: The light is deactivated and cannot be turned on.\n\nYou can easily control the light by pressing Spott's tummy. This plush not only serves as a cuddly friend but also as a night light to help keep kids feeling safe in the dark. \n\nIf you're interested, it is priced at $60.00, and you can find more information and purchase it [here](https://www.aldeahome.com/products/light-at-night-spott-stegosaurus-stuffed-plush-11-inches).",
+            "CreatedTime": "2025-08-10T01:48:46.907598",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "315d3b56-bcb5-4ca3-adc1-d32d7b91e4f0",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d96f0270-518e-4352-84b4-e601c187180d",
+            "UserId": "user_00159",
+            "session_id": "d96f0270-518e-4352-84b4-e601c187180d",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the Light at Night Spott Stegosaurus Stuffed Plush, 11 Inches (Product ID: 07242) machine washable, or do I need to clean it by hand?",
+            "CreatedTime": "2025-08-10T01:48:47.939555",
+            "ItemId": null,
+            "Thumbs": "down",
+            "Channel": "web"
+        },
+        {
+            "Id": "1d23c2c3-6e94-47fa-915e-a87c98f01156",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "d96f0270-518e-4352-84b4-e601c187180d",
+            "UserId": "user_00159",
+            "session_id": "d96f0270-518e-4352-84b4-e601c187180d",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "The product information does not specify whether the Light at Night Spott Stegosaurus Stuffed Plush is machine washable. To ensure the best care for the plush, it is generally recommended to clean it by hand. This helps maintain its features, including the light function. If you want to be certain, you might check any care tags on the product or consult the manufacturer for detailed cleaning instructions. \n\nIf you're interested in purchasing it, the price is $60.00, and you can find it [here](https://www.aldeahome.com/products/light-at-night-spott-stegosaurus-stuffed-plush-11-inches).",
+            "CreatedTime": "2025-08-10T01:48:50.629361",
+            "ItemId": "07242",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.903894"
+}

@@ -1,0 +1,146 @@
+{
+    "user_id": "user_00168",
+    "raw_engagement_score": 34,
+    "normalized_engagement_score": 21,
+    "activities": [
+        {
+            "id": "578d99d6-a979-467d-8598-c317968c0ca3",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00168",
+            "event_name": "search",
+            "event_data": {
+                "query": "Lil' Cleo the Siamese Cat",
+                "search_results_count": 1,
+                "filters_applied": [
+                    "리뷰 많은 순"
+                ]
+            },
+            "created_time": "2025-08-10T01:32:25.611695"
+        },
+        {
+            "id": "2a0b64e0-5bfd-4d90-861f-b5d65d0a7628",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00168",
+            "event_name": "purchase_completed",
+            "event_data": {
+                "order_id": "ORDER_user_00168_611698",
+                "total_amount": 85.0,
+                "items": [
+                    {
+                        "product_id": "02887",
+                        "quantity": 1,
+                        "price": 85.0
+                    }
+                ],
+                "payment_method": "credit_card"
+            },
+            "created_time": "2025-08-10T01:32:25.611702"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": "d75423c8-55c4-4c42-9136-3e9b0979628c",
+            "customer_id": "user_00168",
+            "product_id": "05853",
+            "rating": 5,
+            "review_title": "Love it!",
+            "review_content": "I genuinely recommend it. It performed better than I expected.",
+            "created_at": "2025-03-08T01:32:54.169119",
+            "is_deleted": false
+        }
+    ],
+    "subscriptions": [],
+    "dialogues": [
+        {
+            "Id": "7b49b582-8fdd-46ca-a58d-7019e71c29b2",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "805cb105-3b32-4764-be61-37340913d533",
+            "UserId": "user_00168",
+            "session_id": "805cb105-3b32-4764-be61-37340913d533",
+            "Intent": "정보",
+            "Role": "user",
+            "Content": "Can you tell me more about the materials used in 'It's A Toss Up' (Product ID: 07412) juggling balls? Are they suitable for beginners?",
+            "CreatedTime": "2025-08-10T01:49:27.487682",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "f76dd2ca-b370-4852-b860-38fe22dbfb99",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "805cb105-3b32-4764-be61-37340913d533",
+            "UserId": "user_00168",
+            "session_id": "805cb105-3b32-4764-be61-37340913d533",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "'It's A Toss Up' includes three hand-stitched professional juggling balls, designed with bright and cheery colors that make them visually appealing. While specific material details aren't provided, professional juggling balls are typically made with durable materials that can withstand regular use.\n\nThese juggling balls are indeed suitable for beginners, as they are designed to be inviting and easy to handle. \n\nYou can purchase 'It's A Toss Up' for $24.50 at this link: [It's A Toss Up](https://www.aldeahome.com/products/its-a-toss-up).",
+            "CreatedTime": "2025-08-10T01:49:29.958322",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "5195f88c-b5c9-442d-bd35-4ad3918fdf31",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "805cb105-3b32-4764-be61-37340913d533",
+            "UserId": "user_00168",
+            "session_id": "805cb105-3b32-4764-be61-37340913d533",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Are there any specific juggling techniques or tips for beginners that would work well with 'It's A Toss Up' (Product ID: 07412)? Additionally, do you have any instructional resources or videos available?",
+            "CreatedTime": "2025-08-10T01:49:31.002580",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "14928c68-392d-440e-8095-dcf103ace431",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "805cb105-3b32-4764-be61-37340913d533",
+            "UserId": "user_00168",
+            "session_id": "805cb105-3b32-4764-be61-37340913d533",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "While I don't have specific instructional resources or videos available, I can suggest a few basic juggling techniques for beginners that would work well with 'It's A Toss Up' juggling balls:\n\n1. **Start with One Ball**: Practice tossing one ball from one hand to the other. Focus on the height and aim of your toss.\n\n2. **Two Balls**: Once comfortable with one ball, try juggling two balls. Hold one ball in each hand and toss one ball to the opposite hand while the other ball remains in its original hand.\n\n3. **Three Balls**: When you're ready to add the third ball, start with two balls in your dominant hand and one ball in the other. Toss one ball from your dominant hand, then a ball from your other hand, and finally the second ball from your dominant hand.\n\n4. **Practice**: Consistent practice is key. Work on maintaining a steady rhythm and focus on your catching technique.\n\nYou can find many instructional videos online by searching for beginner juggling tutorials. They often provide visual guidance that can be very helpful!\n\nIf you're interested in purchasing 'It's A Toss Up', it's available for $24.50 at this link: [It's A Toss Up](https://www.aldeahome.com/products/its-a-toss",
+            "CreatedTime": "2025-08-10T01:49:35.928116",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "8aadbf16-d5db-4a88-854d-8e5504ad278d",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "805cb105-3b32-4764-be61-37340913d533",
+            "UserId": "user_00168",
+            "session_id": "805cb105-3b32-4764-be61-37340913d533",
+            "Intent": "추천",
+            "Role": "user",
+            "Content": "Are there any specific age recommendations for using 'It's A Toss Up' (Product ID: 07412), or is it suitable for all ages?",
+            "CreatedTime": "2025-08-10T01:49:37.018583",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c525a2ee-bb34-414c-81a4-fdfc6d9b9b81",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "805cb105-3b32-4764-be61-37340913d533",
+            "UserId": "user_00168",
+            "session_id": "805cb105-3b32-4764-be61-37340913d533",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "'It's A Toss Up' juggling balls are generally suitable for all ages, making them a fun option for both kids and adults. However, it's advisable for younger children to be supervised while using them, especially if they are just starting to learn juggling techniques. \n\nIf you're looking for a fun and engaging activity for a variety of age groups, 'It's A Toss Up' is a great choice! You can purchase it for $24.50 at this link: [It's A Toss Up](https://www.aldeahome.com/products/its-a-toss-up).",
+            "CreatedTime": "2025-08-10T01:49:39.687672",
+            "ItemId": "07412",
+            "Thumbs": null,
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.905945"
+}

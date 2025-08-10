@@ -1,69 +1,156 @@
 {
     "user_id": "user_00083",
-    "raw_engagement_score": 10,
-    "normalized_engagement_score": 7,
+    "raw_engagement_score": 40,
+    "normalized_engagement_score": 24,
     "activities": [
         {
-            "id": "4438f8ff-b536-42d0-84bb-0f4a5a733870",
+            "id": "bf9912f9-9dab-4ee2-8e90-bbf840743898",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00083",
-            "event_name": "product_view",
+            "event_name": "purchase_completed",
             "event_data": {
-                "product_id": "00039",
-                "category": "a-little-something-for-mom",
-                "product_name": "The Essentials Set",
-                "price": 148.0,
-                "product_url": "https://www.aldeahome.com/products/the-essentials-set",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/PUREMAMAEssentialsSet_BestSeller_gifting_png.jpg?v=1728273689",
-                "view_duration_seconds": 58
+                "order_id": "ORDER_user_00083_482463",
+                "total_amount": 39.0,
+                "items": [
+                    {
+                        "product_id": "01328",
+                        "quantity": 1,
+                        "price": 39.0
+                    }
+                ],
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.763824"
+            "created_time": "2025-08-10T01:32:25.482467"
         },
         {
-            "id": "d5a15488-a3f3-4035-8fbd-cb423587d2d9",
+            "id": "7a5374d9-240c-4610-a059-37ab08416f9a",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00083",
-            "event_name": "search",
+            "event_name": "purchase_completed",
             "event_data": {
-                "query": "Mommy & Me Care Gift Set",
-                "search_results_count": 1,
-                "filters_applied": [
-                    "리뷰 많은 순"
-                ]
+                "order_id": "ORDER_user_00083_482470",
+                "total_amount": 314.9,
+                "items": [
+                    {
+                        "product_id": "03504",
+                        "quantity": 1,
+                        "price": 299.95
+                    },
+                    {
+                        "product_id": "05353",
+                        "quantity": 1,
+                        "price": 14.95
+                    }
+                ],
+                "payment_method": "kakao_pay"
             },
-            "created_time": "2025-08-09T20:05:50.766380"
-        },
-        {
-            "id": "68c949c0-a767-4678-aca6-3e1ddd1d99b2",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00083",
-            "event_name": "product_view",
-            "event_data": {
-                "product_id": "05105",
-                "category": "exclude",
-                "product_name": "Rash Guard Banana 3-6M",
-                "price": 29.5,
-                "product_url": "https://www.aldeahome.com/products/baby-one-piece-rash-guard-3-6m-banana",
-                "thumbnail_url": "https://cdn.shopify.com/s/files/1/0036/1585/0547/files/848bed4754ba728278c76ba409f095beb5d9102afbab11b38f8166efbd6dc7d1_dfc58370-b742-48c8-8fc4-098aa2148cc4.jpg?v=1717996741",
-                "view_duration_seconds": 25
-            },
-            "created_time": "2025-08-09T20:05:50.766391"
-        },
-        {
-            "id": "f7431aa8-c091-477a-82ff-6bc1f83d27bf",
-            "shop_id": "main_shop_1",
-            "chat_user_id": "user_00083",
-            "event_name": "search",
-            "event_data": {
-                "query": "sacred Space",
-                "search_results_count": 1,
-                "filters_applied": []
-            },
-            "created_time": "2025-08-09T20:05:50.768898"
+            "created_time": "2025-08-10T01:32:25.482474"
         }
     ],
-    "reviews": [],
+    "reviews": [
+        {
+            "review_id": "0cf8c7b0-f31b-4239-b10a-224b5c3ec1e0",
+            "customer_id": "user_00083",
+            "product_id": "03532",
+            "rating": 3,
+            "review_title": "Very satisfied!",
+            "review_content": "I gave it as a gift and they loved it. Thanks to Amulet Embroidered Dishtowel, I got called thoughtful!",
+            "created_at": "2024-09-19T01:32:54.168911",
+            "is_deleted": false
+        }
+    ],
     "subscriptions": [],
-    "dialogues": [],
-    "profile_generated_at": "2025-08-09T20:54:53.210880"
+    "dialogues": [
+        {
+            "Id": "71d7d602-0c08-4b81-a115-1976839e7d77",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "UserId": "user_00083",
+            "session_id": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Can you tell me if the 'Welcome to Spooky Town 500 Piece Family Puzzle' (Product ID: 02324) is suitable for young children, or is it better for older kids and adults?",
+            "CreatedTime": "2025-08-10T01:40:42.789534",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "c3c94530-dbea-4578-becb-37874d7cf4e1",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "UserId": "user_00083",
+            "session_id": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The 'Welcome to Spooky Town 500 Piece Family Puzzle' is designed to be a fun challenge suitable for the whole family, making it appropriate for older kids and adults. While younger children may enjoy the colorful and spooky illustration, the 500-piece count may be more challenging for them. It can be a great family activity for those who are comfortable with puzzles! \n\nIf you're interested in purchasing it, the price is $14.99. You can find it [here](https://www.aldeahome.com/products/welcome-to-spooky-town-500-piece-family-puzzle).",
+            "CreatedTime": "2025-08-10T01:40:45.634107",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "2047c0b6-dd07-4418-8656-029ee651e4e9",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "UserId": "user_00083",
+            "session_id": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "Intent": "탐색",
+            "Role": "user",
+            "Content": "Are there any specific age recommendations for the 'Welcome to Spooky Town 500 Piece Family Puzzle' (Product ID: 02324), or is it generally considered safe for kids around 7 or 8 years old?",
+            "CreatedTime": "2025-08-10T01:40:46.689532",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "134d9ad7-0c5d-4806-82c9-b640fb2cf94b",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "UserId": "user_00083",
+            "session_id": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "Intent": "추천",
+            "Role": "assistant",
+            "Content": "While there are no specific age recommendations provided for the 'Welcome to Spooky Town 500 Piece Family Puzzle,' it is generally considered suitable for older kids and adults. Children around 7 or 8 years old may find the 500-piece count to be a bit challenging, but it could also be a fun family activity if they have some experience with puzzles. Supervision and assistance can make it a great bonding experience! \n\nYou can purchase it for $14.99 [here](https://www.aldeahome.com/products/welcome-to-spooky-town-500-piece-family-puzzle).",
+            "CreatedTime": "2025-08-10T01:40:49.048147",
+            "ItemId": "02324",
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "999629b6-b886-49a0-ab78-88a52d001c40",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "UserId": "user_00083",
+            "session_id": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "Intent": "일반",
+            "Role": "user",
+            "Content": "Is the 'Welcome to Spooky Town 500 Piece Family Puzzle' (Product ID: 02324) made with non-toxic materials, making it safe for children, especially those around 7 or 8 years old?",
+            "CreatedTime": "2025-08-10T01:40:50.403435",
+            "ItemId": null,
+            "Thumbs": null,
+            "Channel": "web"
+        },
+        {
+            "Id": "57dfe1bf-ca25-4d4d-ad34-40700eef69bc",
+            "ChatbotId": 1,
+            "shop_id": "main_shop_1",
+            "DialogueId": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "UserId": "user_00083",
+            "session_id": "de8b862b-bcd5-495a-adaf-4061d2a20ddc",
+            "Intent": "정보",
+            "Role": "assistant",
+            "Content": "The product information provided does not specify whether the 'Welcome to Spooky Town 500 Piece Family Puzzle' is made with non-toxic materials. However, puzzles designed for family use, especially those aimed at a younger audience, typically adhere to safety standards. It is generally advisable to check the packaging or the manufacturer's website for specific safety information regarding materials used. \n\nIf you're considering it for children around 7 or 8 years old, it’s a good practice to ensure that any puzzle is certified safe for that age group. You can purchase it for $14.99 [here](https://www.aldeahome.com/products/welcome-to-spooky-town-500-piece-family-puzzle).",
+            "CreatedTime": "2025-08-10T01:40:53.261709",
+            "ItemId": "02324",
+            "Thumbs": "up",
+            "Channel": "web"
+        }
+    ],
+    "profile_generated_at": "2025-08-10T01:53:50.879930"
 }

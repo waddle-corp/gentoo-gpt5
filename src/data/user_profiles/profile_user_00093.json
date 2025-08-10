@@ -1,132 +1,54 @@
 {
     "user_id": "user_00093",
-    "raw_engagement_score": 31,
-    "normalized_engagement_score": 20,
+    "raw_engagement_score": 18,
+    "normalized_engagement_score": 11,
     "activities": [
         {
-            "id": "596d4d74-9c32-49c7-9741-969f8a182ea9",
+            "id": "3637a3c2-daf5-4085-9ad8-ad51a81f60b7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00093",
+            "event_name": "search",
+            "event_data": {
+                "query": "The Original Woombie in  Eucalyptus Pulp Fabric",
+                "search_results_count": 1,
+                "filters_applied": []
+            },
+            "created_time": "2025-08-10T01:32:25.493981"
+        },
+        {
+            "id": "ff21a9d4-b3ea-4242-ab6e-44fe804fa403",
             "shop_id": "main_shop_1",
             "chat_user_id": "user_00093",
             "event_name": "purchase_completed",
             "event_data": {
-                "order_id": "ORDER_user_00093_783702",
-                "total_amount": 15.0,
+                "order_id": "ORDER_user_00093_493984",
+                "total_amount": 24.0,
                 "items": [
                     {
-                        "product_id": "06216",
+                        "product_id": "02985",
                         "quantity": 1,
-                        "price": 15.0
+                        "price": 24.0
                     }
                 ],
-                "payment_method": "naver_pay"
+                "payment_method": "credit_card"
             },
-            "created_time": "2025-08-09T20:05:50.783711"
-        }
-    ],
-    "reviews": [
+            "created_time": "2025-08-10T01:32:25.493988"
+        },
         {
-            "review_id": "e64c4f48-e3a7-4242-a997-9866b1a7db2c",
-            "customer_id": "user_00093",
-            "product_id": "07253",
-            "rating": 5,
-            "review_title": "Best purchase ever",
-            "review_content": "I genuinely recommend it. It performed better than I expected.",
-            "created_at": "2025-03-06T20:52:52.182339",
-            "is_deleted": false
+            "id": "06667bc7-999a-4cae-8b8e-b2f7df8e54b7",
+            "shop_id": "main_shop_1",
+            "chat_user_id": "user_00093",
+            "event_name": "add_to_cart",
+            "event_data": {
+                "product_id": "01906",
+                "quantity": 3,
+                "price": 42.0
+            },
+            "created_time": "2025-08-10T01:32:25.493992"
         }
     ],
+    "reviews": [],
     "subscriptions": [],
-    "dialogues": [
-        {
-            "Id": "e6f74fc0-d448-478c-a876-a9dc70c7d095",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "UserId": "user_00093",
-            "session_id": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if the 'Cry Baby on Board Holographic Vinyl Sticker' (Product ID: 05875) is weather-resistant for outdoor use?",
-            "CreatedTime": "2025-08-09T20:24:23.618962",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "0644d28c-c939-456f-98bf-f0395461a685",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "UserId": "user_00093",
-            "session_id": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The product information does not specify whether the 'Cry Baby on Board Holographic Vinyl Sticker' is weather-resistant for outdoor use. However, vinyl stickers are generally durable and can withstand some outdoor conditions. For exact details regarding weather resistance, please check with the manufacturer or seller. \n\nYou can purchase the sticker for $3.50 at this link: [Cry Baby on Board Holographic Vinyl Sticker](https://www.aldeahome.com/products/cry-baby-on-board-holographic-vinyl-sticker).",
-            "CreatedTime": "2025-08-09T20:24:26.290285",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "b6229a1d-f908-4641-b347-6525cb8cf3ee",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "UserId": "user_00093",
-            "session_id": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Do you know if the 'Cry Baby on Board Holographic Vinyl Sticker' (Product ID: 05875) can be easily removed without leaving residue?",
-            "CreatedTime": "2025-08-09T20:24:27.339784",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "2544f95f-aeb1-4b1d-afef-2448584da28e",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "UserId": "user_00093",
-            "session_id": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The product information does not provide details about whether the 'Cry Baby on Board Holographic Vinyl Sticker' can be easily removed without leaving residue. Typically, vinyl stickers may leave some residue depending on the surface and duration of application. For specific details, it’s best to consult the manufacturer or seller directly. \n\nYou can check out the sticker for $3.50 here: [Cry Baby on Board Holographic Vinyl Sticker](https://www.aldeahome.com/products/cry-baby-on-board-holographic-vinyl-sticker).",
-            "CreatedTime": "2025-08-09T20:24:29.892537",
-            "ItemId": "05875",
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "e72317c2-eb96-4b91-b7c4-cf1a0e3c18ca",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "UserId": "user_00093",
-            "session_id": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "Intent": "일반",
-            "Role": "user",
-            "Content": "Can you tell me if the 'Cry Baby on Board Holographic Vinyl Sticker' (Product ID: 05875) is easy to apply without bubbles or creases?",
-            "CreatedTime": "2025-08-09T20:24:30.918608",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        },
-        {
-            "Id": "9f2a4424-d9ad-42c4-8027-d850bc8edb98",
-            "ChatbotId": 1,
-            "shop_id": "main_shop_1",
-            "DialogueId": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "UserId": "user_00093",
-            "session_id": "0e73f593-77e9-446d-ad92-173bd2002d20",
-            "Intent": "정보",
-            "Role": "assistant",
-            "Content": "The product information does not specify whether the 'Cry Baby on Board Holographic Vinyl Sticker' is easy to apply without bubbles or creases. Generally, applying vinyl stickers can be done smoothly, but the ease of application may depend on the surface and technique used. For tips on application or specific details, it would be best to refer to the manufacturer or seller.\n\nYou can purchase the sticker for $3.50 at this link: [Cry Baby on Board Holographic Vinyl Sticker](https://www.aldeahome.com/products/cry-baby-on-board-holographic-vinyl-sticker).",
-            "CreatedTime": "2025-08-09T20:24:33.043636",
-            "ItemId": null,
-            "Thumbs": null,
-            "Channel": "web"
-        }
-    ],
-    "profile_generated_at": "2025-08-09T20:54:53.212780"
+    "dialogues": [],
+    "profile_generated_at": "2025-08-10T01:53:50.883404"
 }
