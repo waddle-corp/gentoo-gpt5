@@ -187,6 +187,20 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
           return dedup;
         });
         setActive((cur) => (cur === 0 ? 1 : cur));
+
+        // Prefetch insights/next actions silently so they are ready at done
+        try {
+          if (!insightsPrefetchRef.current[title]) {
+            insightsPrefetchRef.current[title] = true;
+            const bubbles = new Array(promptsCount).fill("unknown") as BubbleState[];
+            loadInsightsFor(bubbles).catch(() => {});
+          }
+          if (!nextPrefetchRef.current[title]) {
+            nextPrefetchRef.current[title] = true;
+            const bubbles = new Array(promptsCount).fill("unknown") as BubbleState[];
+            loadNextFor(bubbles).catch(() => {});
+          }
+        } catch {}
       } catch {}
     }
 
@@ -413,6 +427,8 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [doneMap, setDoneMap] = useState<Record<string, boolean>>({});
   const insightsInFlightRef = useRef<Record<string, boolean>>({});
   const nextInFlightRef = useRef<Record<string, boolean>>({});
+  const insightsPrefetchRef = useRef<Record<string, boolean>>({});
+  const nextPrefetchRef = useRef<Record<string, boolean>>({});
 
   function mdToHtml(md: string): string {
     const esc = (md || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -555,10 +571,21 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   return (
     <Card className="min-h-full border-0 rounded-none bg-transparent py-3">
       <CardContent className="space-y-3 min-h-0 px-3">
-        <div className="flex items-center gap-1.5">
+        <div role="tablist" aria-label="Result boards" className="flex items-end gap-1.5 border-b border-border">
           {boards.map((b, i) => (
             b.name === "All" ? null : (
-              <button key={`${b.name}-${i}`} onClick={() => setActive(i)} className={`px-3 py-1 rounded-md text-sm ${i === active ? "bg-primary text-primary-foreground" : "border"}`}>
+              <button
+                key={`${b.name}-${i}`}
+                role="tab"
+                aria-selected={i === active}
+                aria-controls={`panel-${i}`}
+                onClick={() => setActive(i)}
+                className={`px-3 py-2 text-sm -mb-px border-b-2 transition-colors ${
+                  i === active
+                    ? "border-primary text-primary"
+                    : "border-transparent text-muted-foreground hover:text-foreground hover:border-muted"
+                }`}
+              >
                 {b.name}
               </button>
             )
@@ -566,7 +593,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
         </div>
 
         {hasStarted && (
-        <div className="space-y-3">
+        <div id={`panel-${active}`} role="tabpanel" aria-labelledby={`tab-${active}`} className="space-y-3">
           {/* Graph panel */}
           <div className="rounded-md text-sm bg-card/50 p-3">
             <div className="text-xs text-muted-foreground mb-2">Simulation results</div>
@@ -727,15 +754,13 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                     {lastReason && (
                       <div>
                         <div className="text-xs uppercase tracking-wide text-zinc-500">reason</div>
-                        <div className="mt-1 text-[12px] flex items-center gap-2">
+                        <div className="mt-1 text-sm flex items-center gap-2">
                           {(() => {
                             const s = lastIndexForModal != null ? boards[active]?.bubbles?.[lastIndexForModal] : undefined;
                             const color = s === "positive" ? "text-emerald-400" : s === "negative" ? "text-rose-400" : "text-zinc-400";
-                            const dot = s === "negative" ? "border-rose-400" : s === "unknown" ? "bg-zinc-500" : "bg-emerald-400";
                             return (
-                              <span className="inline-flex items-center gap-2">
-                                <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot} ${s === "negative" ? "bg-transparent border" : ""}`} />
-                                <span className={color}>{lastReason}</span>
+                              <span className={`inline-flex items-center ${color} text-sm`}>
+                                {lastReason}
                               </span>
                             );
                           })()}
@@ -833,12 +858,6 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                       </div>
                     )}
 
-                    {/**
-                     * Cart & Purchase totals (hidden for now)
-                     * Later use:
-                     *  - cart totals badges
-                     *  - horizontal bar chart comparing cart vs purchase totals
-                     */}
                   </div>
                 ) : (
                   <div className="text-sm text-destructive">No data</div>
