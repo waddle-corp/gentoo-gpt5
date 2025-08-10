@@ -23,7 +23,7 @@ The user ran a simulation for the following hypothesis: "${hypothesis || 'Not pr
 2.  **Category Discount Event**: A **10%** discount event for a specific category. Payload should be \`/sale/category_name\`.
 3.  **Category Coupon Event**: A **10%** coupon event for a specific category. Payload should be \`/coupon/category_name\`.
 4.  **Category Time Sale**: A 30-minute time sale for a specific category with a **10%** discount. Payload should be \`/timeSale/category_name\`.
-5.  **Start Example Search**: Type \`start-example\`, payload is a search query string. **This MUST be related to the hypothesis.**
+5.  **Start Example Search**: Type is \`start-example\`, and the payload should be a search query string that is directly related to the hypothesis. This action will be used as the initial example phrase shown when the Gentoo Chatbot starts, so the content must clearly indicate that it is a "Gentoo Chatbot start example" and must be relevant to the hypothesis. For example: "Add start example to Gentoo Chatbot: [start example]" (where [start example] is a search query related to the hypothesis).
 6.  **Initiate Chat**: Type \`chat\`, payload is an opening chat message. **This MUST be related to the hypothesis.**
 
 **CATEGORIES:**
