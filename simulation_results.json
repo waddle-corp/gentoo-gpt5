@@ -1,0 +1,2402 @@
+[
+  {
+    "clone_id": 0,
+    "user_id": "user_00001",
+    "persona": "user_00001",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently utilize the search feature to explore new products and have completed purchases in the past, indicatin... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.827
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'search'. Has completed purchases before. Frequently uses the search feature.)"
+      }
+    ],
+    "total_duration": 0.827,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 28
+    }
+  },
+  {
+    "clone_id": 1,
+    "user_id": "user_00002",
+    "persona": "user_00002",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently utilize the search feature to explore products, indicating a proactive approach to finding what you wa... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.395
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 4 activity events. The most frequent event is 'search'. Frequently uses the search feature.)"
+      }
+    ],
+    "total_duration": 0.395,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.55,
+      "reason": "score 기반 자동 판정",
+      "score": 6
+    }
+  },
+  {
+    "clone_id": 2,
+    "user_id": "user_00003",
+    "persona": "user_00003",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to browse and add items to your cart, tend to leave positive reviews when satisfied, and have a... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.522
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 2 activity events. The most frequent event is 'login'. Tends to add items to the cart.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.  Has 1 subscription records. 1 canceled subscriptions.)"
+      }
+    ],
+    "total_duration": 0.522,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.55,
+      "reason": "score 기반 자동 판정",
+      "score": 6
+    }
+  },
+  {
+    "clone_id": 3,
+    "user_id": "user_00004",
+    "persona": "user_00004",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for products, often add items to your cart, have a history of completed purchases and an active... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.244
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 5 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Tends to add items to the cart. Frequently uses the search feature.  Has 1 subscription records. Currently 1 active subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.244,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 1,
+      "reason": "score 기반 자동 판정",
+      "score": 28
+    }
+  },
+  {
+    "clone_id": 4,
+    "user_id": "user_00005",
+    "persona": "user_00005",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to the e-commerce site, showing a tendency to browse regularly, but may need additional incenti... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.647
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'login'.)"
+      }
+    ],
+    "total_duration": 0.647,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.47500000000000003,
+      "reason": "score 기반 자동 판정",
+      "score": 3
+    }
+  },
+  {
+    "clone_id": 5,
+    "user_id": "user_00006",
+    "persona": "user_00006",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently explore products before making purchases, have completed transactions in the past, and have engaged wi... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.352
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 1 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.  Chatted with the AI assistant 2 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.352,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 28
+    }
+  },
+  {
+    "clone_id": 6,
+    "user_id": "user_00007",
+    "persona": "user_00007",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in and use the search feature to find information, often leaving critical reviews when dissatisfie... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.249
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'login'. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 3 times. Primary intent: '정보'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.249,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 7,
+    "user_id": "user_00008",
+    "persona": "user_00008",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and actively seek recommendations through chat with the AI assistant, indicating a ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.745
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.  Chatted with the AI assistant 3 times. Primary intent: '추천'.)"
+      }
+    ],
+    "total_duration": 0.745,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.8,
+      "reason": "score 기반 자동 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 8,
+    "user_id": "user_00009",
+    "persona": "user_00009",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases but tend to be selective, as indicated by your average review rating of 3.0, sugges... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.641
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.  Has written 1 reviews (average rating: 3.0).)"
+      }
+    ],
+    "total_duration": 0.641,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.75,
+      "reason": "score 기반 자동 판정",
+      "score": 14
+    }
+  },
+  {
+    "clone_id": 9,
+    "user_id": "user_00010",
+    "persona": "user_00010",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and have engaged with the AI assistant for information, but tend to leave negative ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.764
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.  Chatted with the AI assistant 2 times. Primary intent: '정보'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.764,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.75,
+      "reason": "score 기반 자동 판정",
+      "score": 14
+    }
+  },
+  {
+    "clone_id": 10,
+    "user_id": "user_00011",
+    "persona": "user_00011",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently view products before making purchases, tend to leave positive reviews when satisfied, and are open to ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.644
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'product_view'. Has completed purchases before.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.  Has 1 subscription records. 1 canceled subscriptions.)"
+      }
+    ],
+    "total_duration": 0.644,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7250000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 13
+    }
+  },
+  {
+    "clone_id": 11,
+    "user_id": "user_00012",
+    "persona": "user_00012",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to the platform but tend to leave critical reviews when dissatisfied, indicating a tendency to ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.488
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'login'.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records.)"
+      }
+    ],
+    "total_duration": 0.488,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.575,
+      "reason": "score 기반 자동 판정",
+      "score": 7
+    }
+  },
+  {
+    "clone_id": 12,
+    "user_id": "user_00013",
+    "persona": "user_00013",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently view products and add items to your cart, have made previous purchases, and tend to leave positive rev... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.328
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'product_view'. Has completed purchases before. Tends to add items to the cart.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.)"
+      }
+    ],
+    "total_duration": 0.328,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7250000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 13
+    }
+  },
+  {
+    "clone_id": 13,
+    "user_id": "user_00014",
+    "persona": "user_00014",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to explore products, often add items to your cart but are cautious in making purchases, maintai... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.898
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 5 activity events. The most frequent event is 'login'. Has completed purchases before. Tends to add items to the cart.  Has 1 subscription records. Currently 1 active subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '탐색'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.898,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.925,
+      "reason": "score 기반 자동 판정",
+      "score": 21
+    }
+  },
+  {
+    "clone_id": 14,
+    "user_id": "user_00015",
+    "persona": "user_00015",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and often add items to your cart, demonstrating a tendency to seek information whil... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.816
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Tends to add items to the cart.  Has 1 subscription records.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.816,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.8500000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 18
+    }
+  },
+  {
+    "clone_id": 15,
+    "user_id": "user_00016",
+    "persona": "user_00016",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to explore new products, often using the search feature and adding items to your cart, while oc... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.671
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'login'. Tends to add items to the cart. Frequently uses the search feature.  Chatted with the AI assistant 3 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.671,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 16,
+    "user_id": "user_00017",
+    "persona": "user_00017",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and have an active subscription, showing a preference for personalized recommendati... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.749
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 2 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.  Has 1 subscription records. Currently 1 active subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '추천'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.749,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.9,
+      "reason": "score 기반 자동 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 17,
+    "user_id": "user_00018",
+    "persona": "user_00018",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart while seeking information through the AI assistant, indicating a tendency to ex... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.277
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 4 activity events. The most frequent event is 'add_to_cart'. Tends to add items to the cart.  Chatted with the AI assistant 1 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.277,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.625,
+      "reason": "score 기반 자동 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 18,
+    "user_id": "user_00019",
+    "persona": "user_00019",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and often utilize the search feature to find products, indicating a proactive shopp... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.706
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 3 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Frequently uses the search feature.  Has 1 subscription records.)"
+      }
+    ],
+    "total_duration": 0.706,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.6000000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 8
+    }
+  },
+  {
+    "clone_id": 19,
+    "user_id": "user_00020",
+    "persona": "user_00020",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently explore products through searches and views, have made past purchases, often leave critical reviews wh... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.342
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'product_view'. Has completed purchases before. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 2 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.342,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.775,
+      "reason": "score 기반 자동 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 20,
+    "user_id": "user_00021",
+    "persona": "user_00021",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently utilize the search feature to find products and tend to leave positive reviews when satisfied, reflect... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.682
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'search'. Frequently uses the search feature.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.)"
+      }
+    ],
+    "total_duration": 0.682,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.575,
+      "reason": "score 기반 자동 판정",
+      "score": 7
+    }
+  },
+  {
+    "clone_id": 21,
+    "user_id": "user_00022",
+    "persona": "user_00022",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products and utilize the search feature, tend to leave positive reviews but have provided some ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.824
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'product_view'. Frequently uses the search feature.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.  Chatted with the AI assistant 2 times. Primary intent: '일반'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.824,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 29
+    }
+  },
+  {
+    "clone_id": 22,
+    "user_id": "user_00023",
+    "persona": "user_00023",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and use the search feature, often expressing dissatisfaction through critical r... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.54
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 5 activity events. The most frequent event is 'add_to_cart'. Has completed purchases before. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records. Currently 1 active subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '일반'.)"
+      }
+    ],
+    "total_duration": 0.54,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 1,
+      "reason": "score 기반 자동 판정",
+      "score": 26
+    }
+  },
+  {
+    "clone_id": 23,
+    "user_id": "user_00024",
+    "persona": "user_00024",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for products and often add items to your cart, but you tend to leave negative feedback on AI re... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.496
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'search'. Tends to add items to the cart. Frequently uses the search feature.  Chatted with the AI assistant 3 times. Primary intent: '탐색'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.496,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 24,
+    "user_id": "user_00025",
+    "persona": "user_00025",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently explore products by searching and viewing them, often adding items to your cart, and while you have a ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.859
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'product_view'. Tends to add items to the cart. Frequently uses the search feature.  Has 1 subscription records. 1 canceled subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '탐색'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.859,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 27
+    }
+  },
+  {
+    "clone_id": 25,
+    "user_id": "user_00026",
+    "persona": "user_00026",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for information before making purchases, have interacted with the AI assistant but often leave ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.792
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'search'. Has completed purchases before. Frequently uses the search feature.  Chatted with the AI assistant 2 times. Primary intent: '정보'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.792,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 27
+    }
+  },
+  {
+    "clone_id": 26,
+    "user_id": "user_00027",
+    "persona": "user_00027",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and add items to your cart, have a subscription, and seek information through chat ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.411
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Tends to add items to the cart.  Has 1 subscription records.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.411,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.875,
+      "reason": "score 기반 자동 판정",
+      "score": 19
+    }
+  },
+  {
+    "clone_id": 27,
+    "user_id": "user_00028",
+    "persona": "user_00028",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently explore products by viewing them and adding items to your cart, and you engage with the AI assistant f... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.349
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'product_view'. Tends to add items to the cart.  Chatted with the AI assistant 3 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.349,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 28,
+    "user_id": "user_00029",
+    "persona": "user_00029",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to the platform, tend to leave positive reviews when satisfied, and while you have a subscripti... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.424
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'login'.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.  Has 1 subscription records. 1 canceled subscriptions.)"
+      }
+    ],
+    "total_duration": 0.424,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "score 기반 자동 판정",
+      "score": 4
+    }
+  },
+  {
+    "clone_id": 29,
+    "user_id": "user_00030",
+    "persona": "user_00030",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to access information and have made purchases in the past, showing a tendency to engage with th... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.614
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'login'. Has completed purchases before.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.614,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 30,
+    "user_id": "user_00031",
+    "persona": "user_00031",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart while exploring products, tend to leave positive reviews when satisfied, and en... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.62
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 1 activity events. The most frequent event is 'add_to_cart'. Tends to add items to the cart.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.  Chatted with the AI assistant 3 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.62,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7,
+      "reason": "score 기반 자동 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 31,
+    "user_id": "user_00032",
+    "persona": "user_00032",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products and add items to your cart, have made previous purchases, and often seek assistance fr... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.447
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'product_view'. Has completed purchases before. Tends to add items to the cart.  Chatted with the AI assistant 3 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.447,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.75,
+      "reason": "score 기반 자동 판정",
+      "score": 14
+    }
+  },
+  {
+    "clone_id": 32,
+    "user_id": "user_00033",
+    "persona": "user_00033",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for products and add items to your cart, but tend to leave critical reviews after purchases, in... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.681
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 3 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records. Currently 1 active subscriptions.  Chatted with the AI assistant 2 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.681,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.9500000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 22
+    }
+  },
+  {
+    "clone_id": 33,
+    "user_id": "user_00034",
+    "persona": "user_00034",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for products before making a purchase but have a history of canceling subscriptions, indicating... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.329
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 4 activity events. The most frequent event is 'search'. Has completed purchases before. Frequently uses the search feature.  Has 1 subscription records. 1 canceled subscriptions.)"
+      }
+    ],
+    "total_duration": 0.329,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.6000000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 8
+    }
+  },
+  {
+    "clone_id": 34,
+    "user_id": "user_00035",
+    "persona": "user_00035",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products and utilize the search feature, tend to leave critical reviews when dissatisfied, and ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.556
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 3 activity events. The most frequent event is 'product_view'. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 1 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.556,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.625,
+      "reason": "score 기반 자동 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 35,
+    "user_id": "user_00036",
+    "persona": "user_00036",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products and add items to your cart, often using the search feature to find specific items, and... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.857
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'product_view'. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.  Chatted with the AI assistant 2 times. Primary intent: '정보'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.857,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.75,
+      "reason": "score 기반 자동 판정",
+      "score": 14
+    }
+  },
+  {
+    "clone_id": 36,
+    "user_id": "user_00037",
+    "persona": "user_00037",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to explore new products, often leave positive reviews when satisfied, but are more critical of ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.973
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 1 activity events. The most frequent event is 'login'.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.  Chatted with the AI assistant 3 times. Primary intent: '탐색'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.973,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 26
+    }
+  },
+  {
+    "clone_id": 37,
+    "user_id": "user_00038",
+    "persona": "user_00038",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently use the search feature to explore products, often add items to your cart but have been hesitant to com... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.47
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'search'. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 3.0).  Chatted with the AI assistant 3 times. Primary intent: '일반'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.47,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.75,
+      "reason": "score 기반 자동 판정",
+      "score": 14
+    }
+  },
+  {
+    "clone_id": 38,
+    "user_id": "user_00039",
+    "persona": "user_00039",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and engage with the AI assistant for information, tend to leave positive review... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.813
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 3 activity events. The most frequent event is 'add_to_cart'. Tends to add items to the cart.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.  Has 1 subscription records. Currently 1 active subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.813,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.9500000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 22
+    }
+  },
+  {
+    "clone_id": 39,
+    "user_id": "user_00040",
+    "persona": "user_00040",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases, often adding items to your cart but taking your time before finalizing decisions. 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.764
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 3 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Tends to add items to the cart.)"
+      }
+    ],
+    "total_duration": 0.764,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.625,
+      "reason": "score 기반 자동 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 40,
+    "user_id": "user_00041",
+    "persona": "user_00041",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for items and add them to your cart, often leaving positive reviews when satisfied, indicating ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.42
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'search'. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.)"
+      }
+    ],
+    "total_duration": 0.42,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 25
+    }
+  },
+  {
+    "clone_id": 41,
+    "user_id": "user_00042",
+    "persona": "user_00042",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to the platform and have made purchases in the past, but you tend to leave critical reviews whe... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.301
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 3 activity events. The most frequent event is 'login'. Has completed purchases before.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records. 1 canceled subscriptions.)"
+      }
+    ],
+    "total_duration": 0.301,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.6000000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 8
+    }
+  },
+  {
+    "clone_id": 42,
+    "user_id": "user_00043",
+    "persona": "user_00043",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to browse and search for items, often adding products to your cart, and while you have written ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.39
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'login'. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.)"
+      }
+    ],
+    "total_duration": 0.39,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 23
+    }
+  },
+  {
+    "clone_id": 43,
+    "user_id": "user_00044",
+    "persona": "user_00044",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and actively seek recommendations through the AI assistant, showing a tendency to e... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.832
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 1 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.  Chatted with the AI assistant 3 times. Primary intent: '추천'.)"
+      }
+    ],
+    "total_duration": 0.832,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 44,
+    "user_id": "user_00045",
+    "persona": "user_00045",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products and add items to your cart but tend to leave critical reviews when dissatisfied, often... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.748
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'product_view'. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.748,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.75,
+      "reason": "score 기반 자동 판정",
+      "score": 14
+    }
+  },
+  {
+    "clone_id": 45,
+    "user_id": "user_00046",
+    "persona": "user_00046",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in and add items to your cart but express dissatisfaction through critical reviews; you have a his... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.998
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'login'. Has completed purchases before. Tends to add items to the cart.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records. 1 canceled subscriptions.  Chatted with the AI assistant 1 times. Primary intent: '일반'.)"
+      }
+    ],
+    "total_duration": 0.998,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 46,
+    "user_id": "user_00047",
+    "persona": "user_00047",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and are likely to engage with new promotions or events that align with your previou... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.335
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.)"
+      }
+    ],
+    "total_duration": 0.335,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 21
+    }
+  },
+  {
+    "clone_id": 47,
+    "user_id": "user_00048",
+    "persona": "user_00048",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart while actively using the search feature to gather information, have engaged wit... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.762
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'add_to_cart'. Tends to add items to the cart. Frequently uses the search feature.  Chatted with the AI assistant 3 times. Primary intent: '정보'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.762,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.75,
+      "reason": "score 기반 자동 판정",
+      "score": 14
+    }
+  },
+  {
+    "clone_id": 48,
+    "user_id": "user_00049",
+    "persona": "user_00049",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently use the search feature to find specific information, tend to leave critical reviews when dissatisfied,... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.203
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'search'. Frequently uses the search feature.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 2 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.203,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.625,
+      "reason": "score 기반 자동 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 49,
+    "user_id": "user_00050",
+    "persona": "user_00050",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in and use the search feature to gather information, tend to leave critical reviews when dissatisf... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.443
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'login'. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records.  Chatted with the AI assistant 2 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.443,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 50,
+    "user_id": "user_00051",
+    "persona": "user_00051",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse and add products to your cart while actively searching for items, but you're critical of your p... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.709
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'product_view'. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.)"
+      }
+    ],
+    "total_duration": 0.709,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 51,
+    "user_id": "user_00052",
+    "persona": "user_00052",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently utilize the search feature to gather information and have engaged with the AI assistant multiple times... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.426
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'search'. Frequently uses the search feature.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.426,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.6000000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 8
+    }
+  },
+  {
+    "clone_id": 52,
+    "user_id": "user_00053",
+    "persona": "user_00053",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently utilize the search feature to find specific products, indicating a preference for targeted shopping ex... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.372
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'search'. Frequently uses the search feature.)"
+      }
+    ],
+    "total_duration": 0.372,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "score 기반 자동 판정",
+      "score": 4
+    }
+  },
+  {
+    "clone_id": 53,
+    "user_id": "user_00054",
+    "persona": "user_00054",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently view products and add items to your cart while seeking information through chat interactions, indicati... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.845
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'product_view'. Tends to add items to the cart.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.845,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 54,
+    "user_id": "user_00055",
+    "persona": "user_00055",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to explore the store, have a history of satisfied purchases with a perfect review rating, and a... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.353
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'login'. Has completed purchases before.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.  Has 1 subscription records.)"
+      }
+    ],
+    "total_duration": 0.353,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 55,
+    "user_id": "user_00056",
+    "persona": "user_00056",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to explore new products, tend to leave critical reviews after purchases, and engage with AI ass... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.291
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 1 activity events. The most frequent event is 'login'.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 3 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.291,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 56,
+    "user_id": "user_00057",
+    "persona": "user_00057",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently use the search feature and have a history of completing purchases, but you tend to leave critical revi... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.642
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 5 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records. 1 canceled subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '정보'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.642,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.925,
+      "reason": "score 기반 자동 판정",
+      "score": 21
+    }
+  },
+  {
+    "clone_id": 57,
+    "user_id": "user_00058",
+    "persona": "user_00058",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently view products and add items to your cart, have a history of managing subscriptions, and often seek rec... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.423
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 3 activity events. The most frequent event is 'product_view'. Tends to add items to the cart.  Has 1 subscription records. 1 canceled subscriptions.  Chatted with the AI assistant 2 times. Primary intent: '추천'.)"
+      }
+    ],
+    "total_duration": 0.423,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.575,
+      "reason": "score 기반 자동 판정",
+      "score": 7
+    }
+  },
+  {
+    "clone_id": 58,
+    "user_id": "user_00059",
+    "persona": "user_00059",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to explore new products, showing a curiosity-driven shopping behavior, but engage minimally wit... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.425
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 2 activity events. The most frequent event is 'login'.  Chatted with the AI assistant 1 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.425,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.525,
+      "reason": "score 기반 자동 판정",
+      "score": 5
+    }
+  },
+  {
+    "clone_id": 59,
+    "user_id": "user_00060",
+    "persona": "user_00060",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log into the e-commerce site, often add items to your cart while exploring new products, and are likel... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.896
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'login'. Has completed purchases before. Tends to add items to the cart.  Chatted with the AI assistant 1 times. Primary intent: '탐색'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.896,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7,
+      "reason": "score 기반 자동 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 60,
+    "user_id": "user_00061",
+    "persona": "user_00061",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse various products, showing a strong interest in exploring options before making a purchase decis... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.42
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 4 activity events. The most frequent event is 'product_view'.)"
+      }
+    ],
+    "total_duration": 0.42,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.525,
+      "reason": "score 기반 자동 판정",
+      "score": 5
+    }
+  },
+  {
+    "clone_id": 61,
+    "user_id": "user_00062",
+    "persona": "user_00062",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently utilize the search feature to find products, indicating a preference for actively exploring options be... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.414
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'search'. Frequently uses the search feature.)"
+      }
+    ],
+    "total_duration": 0.414,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "score 기반 자동 판정",
+      "score": 4
+    }
+  },
+  {
+    "clone_id": 62,
+    "user_id": "user_00063",
+    "persona": "user_00063",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently explore products using the search feature and have a history of completing purchases, but you tend to ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.66
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Frequently uses the search feature.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 3 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.66,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.775,
+      "reason": "score 기반 자동 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 63,
+    "user_id": "user_00064",
+    "persona": "user_00064",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and utilize the search feature extensively, have a history of completed purchas... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.973
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 4 activity events. The most frequent event is 'add_to_cart'. Has completed purchases before. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records. Currently 1 active subscriptions.)"
+      }
+    ],
+    "total_duration": 0.973,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.925,
+      "reason": "score 기반 자동 판정",
+      "score": 21
+    }
+  },
+  {
+    "clone_id": 64,
+    "user_id": "user_00065",
+    "persona": "user_00065",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and have made purchases in the past, often seeking information through chat int... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.476
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'add_to_cart'. Has completed purchases before. Tends to add items to the cart.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.476,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.775,
+      "reason": "score 기반 자동 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 65,
+    "user_id": "user_00066",
+    "persona": "user_00066",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products and add items to your cart, often leaving positive reviews after satisfactory purchase... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.862
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'product_view'. Tends to add items to the cart.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.  Chatted with the AI assistant 3 times. Primary intent: '정보'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.862,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.775,
+      "reason": "score 기반 자동 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 66,
+    "user_id": "user_00067",
+    "persona": "user_00067",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart but have shown a tendency to cancel subscriptions, indicating a careful approac... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.967
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'add_to_cart'. Tends to add items to the cart.  Has 1 subscription records. 1 canceled subscriptions.)"
+      }
+    ],
+    "total_duration": 0.967,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.47500000000000003,
+      "reason": "score 기반 자동 판정",
+      "score": 3
+    }
+  },
+  {
+    "clone_id": 67,
+    "user_id": "user_00068",
+    "persona": "user_00068",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and utilize the search feature to gather information, showing a tendency to eng... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.349
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'add_to_cart'. Tends to add items to the cart. Frequently uses the search feature.  Has 1 subscription records.  Chatted with the AI assistant 1 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.349,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7,
+      "reason": "score 기반 자동 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 68,
+    "user_id": "user_00069",
+    "persona": "user_00069",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products and generally leave positive reviews when satisfied, but you tend to be cautious with ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.212
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'product_view'.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.  Has 1 subscription records. 1 canceled subscriptions.)"
+      }
+    ],
+    "total_duration": 0.212,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.5,
+      "reason": "score 기반 자동 판정",
+      "score": 4
+    }
+  },
+  {
+    "clone_id": 69,
+    "user_id": "user_00070",
+    "persona": "user_00070",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to the platform and engage with the AI assistant for information, showing a preference for help... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.447
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 2 activity events. The most frequent event is 'login'.  Chatted with the AI assistant 3 times. Primary intent: '정보'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.447,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.6000000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 8
+    }
+  },
+  {
+    "clone_id": 70,
+    "user_id": "user_00071",
+    "persona": "user_00071",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently use the search feature to gather information before making purchase decisions, and while you've comple... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.359
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'search'. Has completed purchases before. Frequently uses the search feature.  Chatted with the AI assistant 1 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.359,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 71,
+    "user_id": "user_00072",
+    "persona": "user_00072",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently view products and tend to leave critical reviews when dissatisfied, while actively seeking recommendat... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.421
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 1 activity events. The most frequent event is 'product_view'.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 2 times. Primary intent: '추천'.)"
+      }
+    ],
+    "total_duration": 0.421,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.625,
+      "reason": "score 기반 자동 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 72,
+    "user_id": "user_00073",
+    "persona": "user_00073",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently utilize the search feature to explore products, have made purchases in the past, and maintain an activ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.963
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'search'. Has completed purchases before. Frequently uses the search feature.  Has 1 subscription records.)"
+      }
+    ],
+    "total_duration": 0.963,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7,
+      "reason": "score 기반 자동 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 73,
+    "user_id": "user_00074",
+    "persona": "user_00074",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart before making purchases, generally leave positive reviews, and engage with cust... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.776
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'add_to_cart'. Has completed purchases before. Tends to add items to the cart.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.  Chatted with the AI assistant 3 times. Primary intent: '일반'.)"
+      }
+    ],
+    "total_duration": 0.776,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.8500000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 18
+    }
+  },
+  {
+    "clone_id": 74,
+    "user_id": "user_00075",
+    "persona": "user_00075",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for products and make purchases, often leaving positive reviews after your transactions, indica... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.432
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Frequently uses the search feature.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.)"
+      }
+    ],
+    "total_duration": 0.432,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.8,
+      "reason": "score 기반 자동 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 75,
+    "user_id": "user_00076",
+    "persona": "user_00076",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and add items to your cart, but tend to be selective in your reviews, often providi... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.696
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Tends to add items to the cart.  Has written 1 reviews (average rating: 3.0).)"
+      }
+    ],
+    "total_duration": 0.696,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.8,
+      "reason": "score 기반 자동 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 76,
+    "user_id": "user_00077",
+    "persona": "user_00077",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for products, have made past purchases, tend to leave positive reviews when satisfied, and ofte... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.486
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'search'. Has completed purchases before. Frequently uses the search feature.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.  Chatted with the AI assistant 3 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.486,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.8500000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 18
+    }
+  },
+  {
+    "clone_id": 77,
+    "user_id": "user_00078",
+    "persona": "user_00078",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and leave positive reviews when satisfied, but you tend to provide negative feedbac... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.344
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 3 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.  Has written 1 reviews (average rating: 5.0). Generally leaves positive reviews.  Has 1 subscription records.  Chatted with the AI assistant 3 times. Primary intent: '정보'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.344,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.9,
+      "reason": "score 기반 자동 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 78,
+    "user_id": "user_00079",
+    "persona": "user_00079",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to the site, have a tendency to leave positive reviews after your purchases, and often seek rec... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.743
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 1 activity events. The most frequent event is 'login'.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.  Chatted with the AI assistant 3 times. Primary intent: '추천'.)"
+      }
+    ],
+    "total_duration": 0.743,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 79,
+    "user_id": "user_00080",
+    "persona": "user_00080",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for products and actively add items to your cart, have made previous purchases with a tendency ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.554
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 5 activity events. The most frequent event is 'search'. Has completed purchases before. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 4.0). Generally leaves positive reviews.  Has 1 subscription records. Currently 1 active subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '일반'.)"
+      }
+    ],
+    "total_duration": 0.554,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 1,
+      "reason": "score 기반 자동 판정",
+      "score": 30
+    }
+  },
+  {
+    "clone_id": 80,
+    "user_id": "user_00081",
+    "persona": "user_00081",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse for products and actively add items to your cart, showing a strong preference for using the sea... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.752
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 5 activity events. The most frequent event is 'product_view'. Tends to add items to the cart. Frequently uses the search feature.)"
+      }
+    ],
+    "total_duration": 0.752,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.6000000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 8
+    }
+  },
+  {
+    "clone_id": 81,
+    "user_id": "user_00082",
+    "persona": "user_00082",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products and have made previous purchases, but tend to leave critical reviews when dissatisfied... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.796
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'product_view'. Has completed purchases before.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records.  Chatted with the AI assistant 3 times. Primary intent: '정보'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.796,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.8500000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 18
+    }
+  },
+  {
+    "clone_id": 82,
+    "user_id": "user_00083",
+    "persona": "user_00083",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently search for products and add items to your cart but tend to leave critical reviews when dissatisfied, w... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.8
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'search'. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 2 times. Primary intent: '정보'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.8,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.775,
+      "reason": "score 기반 자동 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 83,
+    "user_id": "user_00084",
+    "persona": "user_00084",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and utilize the search feature to explore options, have made purchases in the p... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.243
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'add_to_cart'. Has completed purchases before. Tends to add items to the cart. Frequently uses the search feature.  Chatted with the AI assistant 3 times. Primary intent: '일반'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.243,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.8,
+      "reason": "score 기반 자동 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 84,
+    "user_id": "user_00085",
+    "persona": "user_00085",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently use the search feature to find recommendations, have a moderate level of engagement reflected in your ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.434
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'search'. Frequently uses the search feature.  Has written 1 reviews (average rating: 3.0).  Chatted with the AI assistant 3 times. Primary intent: '추천'.)"
+      }
+    ],
+    "total_duration": 0.434,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7,
+      "reason": "score 기반 자동 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 85,
+    "user_id": "user_00086",
+    "persona": "user_00086",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently explore new products through search, have made previous purchases, and occasionally engage with the AI... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.728
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'search'. Has completed purchases before. Frequently uses the search feature.  Chatted with the AI assistant 2 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.728,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 86,
+    "user_id": "user_00087",
+    "persona": "user_00087",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products without making immediate purchases and tend to leave critical reviews when dissatisfie... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.522
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 1 activity events. The most frequent event is 'product_view'.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records.  Chatted with the AI assistant 2 times. Primary intent: '탐색'.)"
+      }
+    ],
+    "total_duration": 0.522,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.675,
+      "reason": "score 기반 자동 판정",
+      "score": 11
+    }
+  },
+  {
+    "clone_id": 87,
+    "user_id": "user_00088",
+    "persona": "user_00088",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products, maintain an active subscription, and engage with the AI assistant for information, su... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.684
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'product_view'.  Has 1 subscription records. Currently 1 active subscriptions.  Chatted with the AI assistant 2 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.684,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.775,
+      "reason": "score 기반 자동 판정",
+      "score": 15
+    }
+  },
+  {
+    "clone_id": 88,
+    "user_id": "user_00089",
+    "persona": "user_00089",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently explore product options through searching and viewing, often seeking information and guidance from the... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.956
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 2 activity events. The most frequent event is 'product_view'. Frequently uses the search feature.  Chatted with the AI assistant 3 times. Primary intent: '정보'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.956,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 89,
+    "user_id": "user_00090",
+    "persona": "user_00090",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart while seeking information and tend to leave average reviews, indicating a cauti... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.529
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 1 activity events. The most frequent event is 'add_to_cart'. Tends to add items to the cart.  Has written 1 reviews (average rating: 3.0).  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.529,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7,
+      "reason": "score 기반 자동 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 90,
+    "user_id": "user_00091",
+    "persona": "user_00091",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and actively use the search feature, but you often leave critical reviews and e... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.604
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'add_to_cart'. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.  Chatted with the AI assistant 2 times. Primary intent: '정보'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.604,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7250000000000001,
+      "reason": "score 기반 자동 판정",
+      "score": 13
+    }
+  },
+  {
+    "clone_id": 91,
+    "user_id": "user_00092",
+    "persona": "user_00092",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and complete purchases, have a history of subscriptions with one cancellation, ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.312
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 5 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before. Tends to add items to the cart.  Has 1 subscription records. 1 canceled subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '일반'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.312,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.9,
+      "reason": "score 기반 자동 판정",
+      "score": 20
+    }
+  },
+  {
+    "clone_id": 92,
+    "user_id": "user_00093",
+    "persona": "user_00093",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in and add items to your cart but tend to leave critical reviews, showing a preference for recomme... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.247
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'login'. Has completed purchases before. Tends to add items to the cart.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.  Has 1 subscription records.  Chatted with the AI assistant 3 times. Primary intent: '추천'. Left more positive feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.247,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.825,
+      "reason": "score 기반 자동 판정",
+      "score": 17
+    }
+  },
+  {
+    "clone_id": 93,
+    "user_id": "user_00094",
+    "persona": "user_00094",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently view products and add items to your cart, but tend to leave critical reviews when dissatisfied, indica... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.66
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 4 activity events. The most frequent event is 'product_view'. Tends to add items to the cart.  Has written 1 reviews (average rating: 2.0). Often leaves critical or dissatisfied reviews.)"
+      }
+    ],
+    "total_duration": 0.66,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.625,
+      "reason": "score 기반 자동 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 94,
+    "user_id": "user_00095",
+    "persona": "user_00095",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently complete purchases and seek information through the AI assistant, but you tend to provide negative fee... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.563
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 3 activity events. The most frequent event is 'purchase_completed'. Has completed purchases before.  Chatted with the AI assistant 3 times. Primary intent: '정보'. Left more negative feedback on AI responses.)"
+      }
+    ],
+    "total_duration": 0.563,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7,
+      "reason": "score 기반 자동 판정",
+      "score": 12
+    }
+  },
+  {
+    "clone_id": 95,
+    "user_id": "user_00096",
+    "persona": "user_00096",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently browse products and add items to your cart but have not completed a purchase, and you engage with the ... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.692
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 우선 선호도/가격대를 알려주시면 기본 옵션부터 추천드릴게요. (There are 3 activity events. The most frequent event is 'product_view'. Tends to add items to the cart.  Chatted with the AI assistant 2 times. Primary intent: '일반'.)"
+      }
+    ],
+    "total_duration": 0.692,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.625,
+      "reason": "score 기반 자동 판정",
+      "score": 9
+    }
+  },
+  {
+    "clone_id": 96,
+    "user_id": "user_00097",
+    "persona": "user_00097",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to gather information and have made purchases in the past, showing a tendency to engage with th... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.445
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 5 activity events. The most frequent event is 'login'. Has completed purchases before.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.445,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.8,
+      "reason": "score 기반 자동 판정",
+      "score": 16
+    }
+  },
+  {
+    "clone_id": 97,
+    "user_id": "user_00098",
+    "persona": "user_00098",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently log in to the site and have made purchases in the past, but tend to leave critical reviews when dissat... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.483
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'login'. Has completed purchases before.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.)"
+      }
+    ],
+    "total_duration": 0.483,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.65,
+      "reason": "score 기반 자동 판정",
+      "score": 10
+    }
+  },
+  {
+    "clone_id": 98,
+    "user_id": "user_00099",
+    "persona": "user_00099",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and have completed purchases in the past, actively engage with customer support... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.369
+      },
+      {
+        "role": "assistant",
+        "content": "지금 니즈에 맞는 옵션 몇 가지를 추천드릴게요. 예산/취향 알려주시면 더 정교하게 맞출 수 있어요. (There are 3 activity events. The most frequent event is 'add_to_cart'. Has completed purchases before. Tends to add items to the cart.  Has 1 subscription records. Currently 1 active subscriptions.  Chatted with the AI assistant 3 times. Primary intent: '정보'.)"
+      }
+    ],
+    "total_duration": 0.369,
+    "done": true,
+    "engagement": {
+      "engaged": true,
+      "confidence": 0.925,
+      "reason": "score 기반 자동 판정",
+      "score": 21
+    }
+  },
+  {
+    "clone_id": 99,
+    "user_id": "user_00100",
+    "persona": "user_00100",
+    "messages": [
+      {
+        "role": "user",
+        "content": "제 상황: You frequently add items to your cart and utilize the search feature, but your previous purchases indicate a tendency... 이에요. 오늘 어떤 제품을 보면 좋을까요?",
+        "turn_duration": 0.702
+      },
+      {
+        "role": "assistant",
+        "content": "간단히 방향부터 정리해볼게요. 검색/장바구니 이력 기준으로 무난한 선택부터 보시죠. (There are 4 activity events. The most frequent event is 'add_to_cart'. Has completed purchases before. Tends to add items to the cart. Frequently uses the search feature.  Has written 1 reviews (average rating: 1.0). Often leaves critical or dissatisfied reviews.)"
+      }
+    ],
+    "total_duration": 0.702,
+    "done": true,
+    "engagement": {
+      "engaged": false,
+      "confidence": 0.7,
+      "reason": "score 기반 자동 판정",
+      "score": 12
+    }
+  }
+]

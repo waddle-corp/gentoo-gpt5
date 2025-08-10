@@ -1,253 +1,137 @@
 "use client";
 
-import { useChat, type Message } from "@ai-sdk/react";
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { ArrowUp, User, Bot } from "lucide-react";
+import { useEffect, useState } from "react";
 
+type BubbleState = "unknown" | "positive" | "negative" | "pending";
+type PromptMeta = { idx: number; user_id: string; engagement_score: number };
+type Board = { name: string; bubbles: BubbleState[] };
 type Props = { embedded?: boolean };
 
-export default function LeftChatPanel({ embedded }: Props) {
-  const [input, setInput] = useState("");
-  
-  const { messages, append, status, error } = useChat({
-    api: "/api/chat",
-    streamProtocol: "text",
-  });
+export default function CenterSimulationPanel({ embedded }: Props) {
+  const [error, setError] = useState<string | null>(null);
+  const [promptsCount, setPromptsCount] = useState(0);
+  const [promptsMeta, setPromptsMeta] = useState<PromptMeta[]>([]);
+  const [boards, setBoards] = useState<Board[]>([{ name: "All", bubbles: [] }]);
+  const [active, setActive] = useState(0);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!input.trim() || status === "streaming") return;
-
-    append({ role: "user", content: input });
-    setInput("");
-  };
-
-  const isLoading = status === "streaming";
-
-  if (embedded) {
-    return (
-      <div className="h-full min-h-0 flex flex-col pb-0 bg-transparent overflow-hidden">
-        {/* Title removed as requested */}
-        <CardContent className="px-0 flex-1 flex flex-col gap-3 min-h-0 pb-4">
-        {/* Messages */}
-        <div className="flex-1 overflow-y-auto px-4 md:px-6 min-h-0">
-          <div className="space-y-4">
-            {messages.length === 0 && null}
-            {messages.map((message) => (
-              <div
-                key={message.id}
-                className={`flex gap-3 ${
-                  message.role === "user" ? "justify-end" : "justify-start"
-                }`}
-              >
-                <div
-                  className={`flex gap-3 max-w-[80%] ${
-                    message.role === "user" ? "flex-row-reverse" : "flex-row"
-                  }`}
-                >
-                  {message.role !== "user" && (
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center bg-muted text-muted-foreground">
-                      <Bot size={16} />
-                    </div>
-                  )}
-                  <div
-                    className={`px-4 py-2 rounded-lg ${
-                      message.role === "user"
-                        ? "bg-secondary text-secondary-foreground"
-                        : "bg-card text-foreground"
-                    }`}
-                  >
-                    <div className="whitespace-pre-wrap">
-                      {message.parts.map((part, index) => {
-                        if (part.type === "text") {
-                          return part.text;
-                        }
-                        return null;
-                      }).join("")}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-            {isLoading && (
-              <div className="flex gap-3 justify-start">
-                <div className="flex gap-3 max-w-[80%]">
-                  <div className="w-8 h-8 rounded-full bg-muted text-muted-foreground flex items-center justify-center">
-                    <Bot size={16} />
-                  </div>
-                  <div className="px-4 py-2 rounded-lg bg-card text-foreground">
-                    <div className="flex space-x-1">
-                      <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce"></div>
-                      <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: "0.1s" }}></div>
-                      <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Input */}
-        <form onSubmit={handleSubmit} className="flex">
-          <div className="w-full px-4 md:px-6">
-            <div className="relative">
-              <Textarea
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              disabled={isLoading}
-              rows={1}
-                className="min-h-12 max-h-28 pr-12 border border-[#3d3d3d] text-sm leading-normal py-3"
-                style={{ height: "auto", backgroundColor: "var(--chat-input-bg)" }}
-              onInput={(e) => {
-                const el = e.currentTarget as HTMLTextAreaElement;
-                el.style.height = "auto";
-                el.style.height = Math.min(el.scrollHeight, 28 * 4) + "px"; // 4 lines max
-              }}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" && !e.shiftKey) {
-                  e.preventDefault();
-                  if (!isLoading && input.trim()) {
-                    append({ role: "user", content: input });
-                    setInput("");
-                  }
-                }
-              }}
-            />
-            {input.length === 0 && (
-              <div className="pointer-events-none absolute inset-0 flex items-center px-3 pr-12 text-muted-foreground opacity-70 text-sm leading-none font-semibold">
-                Ask anything
-              </div>
-            )}
-            <Button
-              type="submit"
-              size="icon"
-              className="absolute right-3 top-1/2 -translate-y-1/2 size-8 rounded-full z-10 bg-white text-black hover:bg-white/90"
-              disabled={isLoading || !input.trim()}
-              aria-label="Send message"
-            >
-              <ArrowUp size={16} />
-            </Button>
-            </div>
-          </div>
-        </form>
-        </CardContent>
-      </div>
-    );
+  // 데이터 로드
+  async function loadPromptsMeta() {
+    try {
+      const res = await fetch("/api/simulate?prompts=1", { method: "GET" });
+      const data = await res.json();
+      if (!res.ok || !data?.ok) throw new Error(data?.error || `HTTP ${res.status}`);
+      const list: PromptMeta[] = Array.isArray(data.prompts) ? data.prompts : [];
+      setPromptsMeta(list);
+      setPromptsCount(list.length);
+      setBoards([{ name: "All", bubbles: new Array(list.length).fill("unknown") }]);
+      setActive(0);
+    } catch (e: any) {
+      setError(e?.message || String(e));
+    }
   }
 
+  useEffect(() => {
+    if (!embedded) loadPromptsMeta();
+  }, [embedded]);
+
+  // 이벤트 리스너
+  useEffect(() => {
+    if (embedded) return;
+    function onEvalResults(e: any) {
+      try {
+        const lists: string[][] = Array.isArray(e?.detail?.resultsList) ? e.detail.resultsList : [];
+        const titles: string[] = Array.isArray(e?.detail?.titles) ? e.detail.titles : [];
+        if (!lists.length) return;
+
+        const boardsFromLists: Board[] = lists.map((arr, idx) => {
+          const mapped = arr.map((v) =>
+            v === "positive" ? "positive" : v === "negative" ? "negative" : "unknown"
+          ) as BubbleState[];
+          const padded =
+            mapped.length < promptsCount
+              ? mapped.concat(new Array(promptsCount - mapped.length).fill("unknown"))
+              : mapped.slice(0, promptsCount);
+          return { name: titles[idx] || `H${idx + 1}`, bubbles: padded };
+        });
+        setBoards([{ name: "All", bubbles: boardsFromLists[0].bubbles }, ...boardsFromLists]);
+        setActive(1);
+      } catch {}
+    }
+    window.addEventListener("eval-results", onEvalResults as EventListener);
+    return () => window.removeEventListener("eval-results", onEvalResults as EventListener);
+  }, [promptsCount, embedded]);
+
+  const groupedByScore = (b: BubbleState[]) => {
+    const groups: number[][] = Array.from({ length: 30 }, () => []);
+    for (const meta of promptsMeta) {
+      const s = Math.max(1, Math.min(30, Number(meta.engagement_score) || 1));
+      groups[s - 1].push(meta.idx);
+    }
+    return groups;
+  };
+
+  const renderBubble = (state: BubbleState, idx: number) => {
+    const size = 16;
+    const style: React.CSSProperties = { width: size, height: size };
+    let cls = "border-2 rounded-full";
+    if (state === "unknown") cls += " border-gray-500 bg-gray-400";
+    else if (state === "pending") cls += " border-gray-300 bg-gray-200 animate-pulse";
+    else if (state === "positive") cls += " border-emerald-600 bg-emerald-500";
+    else if (state === "negative") cls += " border-rose-500 bg-transparent";
+    return <span key={`b-${idx}-${state}`} className={cls} style={style} />;
+  };
+
+  const renderColumn = (score: number, indices: number[], bubbles: BubbleState[]) => (
+    <div key={`col-${score}`} className="flex flex-col items-center gap-1">
+      <div className="flex flex-col gap-1 justify-end h-64">
+        {indices.map((i) => renderBubble(bubbles[i] ?? "unknown", i))}
+      </div>
+      <div className="text-[10px] text-muted-foreground">{score}</div>
+    </div>
+  );
+
   return (
-    <Card className="h-full flex flex-col pb-4">
-      {/* Title removed as requested */}
-      <CardContent className="px-4 flex-1 flex flex-col gap-3 min-h-0">
-        {/* Messages */}
-        <div className="flex-1 overflow-y-auto px-4 md:px-6">
-          <div className="space-y-4">
-            {messages.map((message) => (
-              <div
-                key={message.id}
-                className={`flex gap-3 ${
-                  message.role === "user" ? "justify-end" : "justify-start"
+    <Card className="h-full overflow-hidden">
+      <CardHeader className="py-4 px-4 md:px-6">
+        <CardTitle>Simulation Results</CardTitle>
+      </CardHeader>
+
+      {embedded ? (
+        <CardContent className="pb-4 px-0 min-h-0" />
+      ) : (
+        <CardContent className="pb-4 px-4 md:px-6 space-y-4">
+          <div className="flex items-center gap-2 flex-wrap">
+            {boards.map((b, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`px-3 py-1 rounded-md text-sm ${
+                  i === active ? "bg-primary text-primary-foreground" : "border"
                 }`}
               >
-                <div
-                  className={`flex gap-3 max-w-[80%] ${
-                    message.role === "user" ? "flex-row-reverse" : "flex-row"
-                  }`}
-                >
-                  {message.role !== "user" && (
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center bg-muted text-muted-foreground">
-                      <Bot size={16} />
-                    </div>
-                  )}
-                  <div
-                    className={`px-4 py-2 rounded-lg ${
-                      message.role === "user"
-                        ? "bg-secondary text-secondary-foreground"
-                        : "bg-card text-foreground"
-                    }`}
-                  >
-                    <div className="whitespace-pre-wrap">
-                      {message.parts
-                        .map((part, index) => {
-                          if (part.type === "text") {
-                            return part.text;
-                          }
-                          return null;
-                        })
-                        .join("")}
-                    </div>
-                  </div>
-                </div>
-              </div>
+                {b.name}
+              </button>
             ))}
-            {isLoading && (
-              <div className="flex gap-3 justify-start">
-                <div className="flex gap-3 max-w-[80%]">
-                  <div className="w-8 h-8 rounded-full bg-muted text-muted-foreground flex items-center justify-center">
-                    <Bot size={16} />
-                  </div>
-                  <div className="px-4 py-2 rounded-lg bg-card text-foreground">
-                    <div className="flex space-x-1">
-                      <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce"></div>
-                      <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: "0.1s" }}></div>
-                      <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
-        </div>
 
-        {/* Input */}
-        <form onSubmit={handleSubmit} className="flex">
-          <div className="w-full">
-            <div className="relative">
-              <Textarea
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              disabled={isLoading}
-              rows={1}
-                className="min-h-12 max-h-28 pr-12 border border-[#3d3d3d] text-sm leading-normal py-3"
-                style={{ height: "auto", backgroundColor: "var(--chat-input-bg)" }}
-              onInput={(e) => {
-                const el = e.currentTarget as HTMLTextAreaElement;
-                el.style.height = "auto";
-                el.style.height = Math.min(el.scrollHeight, 28 * 4) + "px"; // 4 lines max
-              }}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" && !e.shiftKey) {
-                  e.preventDefault();
-                  if (!isLoading && input.trim()) {
-                    append({ role: "user", content: input });
-                    setInput("");
-                  }
-                }
-              }}
-            />
-            {input.length === 0 && (
-              <div className="pointer-events-none absolute inset-0 flex items-center px-3 pr-12 text-muted-foreground opacity-70 text-sm leading-none">
-                Ask anything
+          <div className="text-xs text-muted-foreground">
+            가로축: engagement score (1~30), 원: 각 사용자 — 초록(Positive, 채움) / 빨강(비어있음, Negative) / 회색(Unknown)
+          </div>
+
+          <div className="overflow-x-auto">
+            <div className="min-w-[800px]">
+              <div className="flex items-end gap-2">
+                {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) =>
+                  renderColumn(idx + 1, indices, boards[active]?.bubbles || [])
+                )}
               </div>
-            )}
-            <Button
-              type="submit"
-              size="icon"
-              className="absolute right-3 top-1/2 -translate-y-1/2 size-8 rounded-full z-10 bg-white text-black hover:bg-white/90"
-              disabled={isLoading || !input.trim()}
-              aria-label="Send message"
-            >
-              <ArrowUp size={16} />
-            </Button>
             </div>
           </div>
-        </form>
-      </CardContent>
+
+          {error && <div className="text-sm text-red-500">에러: {error}</div>}
+        </CardContent>
+      )}
     </Card>
   );
 }
