@@ -59,6 +59,12 @@ function simpleSig(text: string): string {
   return `${s.length}|${s.slice(0, 64)}|${s.slice(-64)}`;
 }
 
+const EXAMPLE_PROMPTS: string[] = [
+  "How can I sell inventory for products other than my bestsellers?",
+  "If I want to boost sales for a specific product, what should I do?",
+  "What kind of promotional event should we run this fall? to increase total revenue?",
+];
+
 export default function LeftChatPanel() {
   const [input, setInput] = useState("");
   const [actionable, setActionable] = useState(false);
@@ -244,14 +250,19 @@ export default function LeftChatPanel() {
     }
   }, [detecting, actionable, hypotheses]);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!input.trim() || status === "streaming") return;
+  const sendPrompt = (text: string) => {
+    const trimmed = (text || "").trim();
+    if (!trimmed || status === "streaming") return;
     setActionable(false);
     setHypotheses([]);
     setSelected({});
     setAwaitingFirstToken(true);
-    append({ role: "user", content: input });
+    append({ role: "user", content: trimmed });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    sendPrompt(input);
     setInput("");
   };
 
@@ -410,6 +421,29 @@ export default function LeftChatPanel() {
             </div>
           </div>
         </div>
+
+        {/* Example prompts (shown before first message, just above input) */}
+        {messages.length === 0 && (
+          <div className="px-4">
+            <div className="mx-auto w-full max-w-[800px]">
+              <div className="flex flex-wrap gap-2">
+                {EXAMPLE_PROMPTS.map((p, i) => (
+                  <Button
+                    key={i}
+                    variant="outline"
+                    size="sm"
+                    className="whitespace-normal h-auto py-2 max-w-[220px]"
+                    onClick={() => sendPrompt(p)}
+                    disabled={isLoading}
+                    aria-label={`예시 질문 전송: ${p}`}
+                  >
+                    <span className="whitespace-normal text-left leading-snug">{p}</span>
+                  </Button>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Input */}
         <form onSubmit={handleSubmit} className="flex px-4">
