@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useEffect, useMemo, useState, useRef } from "react";
 import { User as UserIcon, X as CloseIcon } from "lucide-react";
 import { ChartContainer, ChartTooltip, ChartTooltipContentProps } from "@/components/ui/chart";
+import Image from "next/image";
 import { ResponsiveContainer, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
 
 type BubbleState = "unknown" | "positive" | "negative" | "pending";
@@ -345,6 +346,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
       setModalData(null);
       setProfile(null);
       setProfileLoading(true);
+      setAvatarError(false);
       setLastIndexForModal(index);
       const res = await fetch(`/api/prompts?idx=${index}`);
       const data = await res.json();
@@ -445,7 +447,8 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [hasStarted, setHasStarted] = useState(!!started);
   const [insightsCache, setInsightsCache] = useState<Record<string, string>>({});
   
-  type NextActionItem = { type: string; payload: string; content: string };
+  type NextActionItem = { type: 'ui' | 'chat' | 'start-example'; payload: string; content: string };
+  
   const [nextActions, setNextActions] = useState<NextActionItem[]>([]);
   const [nextLoading, setNextLoading] = useState(false);
   const [selectedActions, setSelectedActions] = useState<Record<number, boolean>>({});
@@ -453,9 +456,105 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [nextCache, setNextCache] = useState<Record<string, NextActionItem[]>>({});
   const [lastReason, setLastReason] = useState<string>("");
   const [lastIndexForModal, setLastIndexForModal] = useState<number | null>(null);
+  const [avatarError, setAvatarError] = useState(false);
+  // Success modal for custom-prompt upsert
+  const [cpModalOpen, setCpModalOpen] = useState(false);
+  const [cpModalData, setCpModalData] = useState<{ condition: string; answer: string } | null>(null);
+  const CUSTOM_PROMPT_CTA_URL = "https://preview--gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
 
   const insightsInFlightRef = useRef<Record<string, boolean>>({});
   const nextInFlightRef = useRef<Record<string, boolean>>({});
+
+  async function handleDeployClick() {
+    console.log("handleDeployClick");
+    try {
+      setDeploying(true);
+      const picked = nextActions.filter((_, i) => selectedActions[i]);
+      console.log("picked", picked);
+      if (picked.length > 0) {
+        const firstAction = picked[0];
+        console.log("firstAction", firstAction);
+        if (firstAction.type === 'start-example') {
+          console.log("firstAction.type", firstAction.type);
+          const raw = String(firstAction.payload || '');
+          const newExamples = raw
+            .split('/')
+            .map((s) => s.trim())
+            .filter(Boolean)
+            .slice(0, 3);
+          console.log("newExamples", newExamples);
+            if (newExamples.length > 0) {
+            const getRes = await fetch('/api/chatbot', { method: 'GET', cache: 'no-store' });
+            const getJson = await getRes.json();
+            if (!getRes.ok || !getJson?.ok) {
+              throw new Error(getJson?.error || `HTTP ${getRes.status}`);
+            }
+            const current = getJson?.data || {};
+            console.log("current", current);
+              // Merge policy:
+              // - Replace from the first index with newExamples while preserving the rest up to 3 items
+              // - Works when current examples length is 1~3 and new length is 1~3
+              const currentExamples = Array.isArray((current as any)?.examples)
+                ? ((current as any).examples as unknown[]).map((s) => String(s || '').trim()).filter(Boolean)
+                : [] as string[];
+              const merged = [...currentExamples];
+              for (let i = 0; i < Math.min(3, newExamples.length); i++) {
+                merged[i] = newExamples[i];
+              }
+              const finalExamples = merged.slice(0, Math.max(1, Math.min(3, merged.length)));
+              console.log("merge examples ->", { currentExamples, newExamples, finalExamples });
+              const putBody = { ...current, examples: finalExamples };
+            console.log("putBody", putBody);
+            const putRes = await fetch('/api/chatbot', {
+              method: 'PUT',
+              headers: { 'content-type': 'application/json' },
+              body: JSON.stringify(putBody),
+            });
+            const putJson = await putRes.json();
+            if (!putRes.ok || !putJson?.ok) throw new Error(putJson?.error || `HTTP ${putRes.status}`);
+          }
+        } else if (firstAction.type === 'ui') {
+          const demoBaseUrl = "https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
+          const finalUrl = demoBaseUrl + firstAction.payload;
+          window.open(finalUrl, "_blank", "noopener,noreferrer");
+        } else if (firstAction.type === 'chat') {
+          // Upsert to /api/custom-prompt/{shopId}
+          const condition = String(firstAction.payload || '').trim();
+          const answer = String(firstAction.content || '').trim();
+          if (condition && answer) {
+            const shopId = process.env.NEXT_PUBLIC_ALDEA_SHOP_ID;
+            const putBody = {
+              type: "cs",
+              activated: true,
+              condition,
+              answer,
+            } as const;
+            const res = await fetch(`/api/custom-prompt/${shopId}`, {
+              method: 'PUT',
+              headers: { 'content-type': 'application/json' },
+              body: JSON.stringify(putBody),
+            });
+            const json = await res.json().catch(() => ({}));
+            if (!res.ok || !json?.ok) {
+              throw new Error(json?.error || `HTTP ${res.status}`);
+            }
+            // Success → show modal with optional CTA
+            setCpModalData({ condition, answer });
+            setCpModalOpen(true);
+          }
+        }
+      }
+      console.log("deploy-actions");
+      const boardName = boards[active]?.name || "All";
+      await fetch("/api/deploy-actions", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ actions: picked, board: boardName }),
+      });
+    } finally {
+      setDeploying(false);
+    }
+  }
 
   function mdToHtml(md: string): string {
     const esc = (md || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -506,12 +605,14 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
       }
 
       const { stats, byScore } = summarizeFor(bubbles);
+      // collect reasons for this board (if available)
+      const reasons = (boardsRef.current || []).find((b) => b.name === key)?.reasons || [];
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), 12000);
       const res = await fetch("/api/insights", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ stats, byScore }),
+        body: JSON.stringify({ stats, byScore, reasons }),
         signal: controller.signal,
       });
       clearTimeout(timer);
@@ -668,11 +769,13 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                 </span>
               </div>
               <div className="overflow-x-auto">
-                <div className="w-max">
-                  <div className="flex items-end gap-2">
-                    {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) => renderColumn(idx + 1, indices, boards[active]?.bubbles || []))}
+                <div className="min-w-full flex justify-center">
+                  <div className="w-max">
+                    <div className="flex items-end gap-2">
+                      {groupedByScore(boards[active]?.bubbles || []).map((indices, idx) => renderColumn(idx + 1, indices, boards[active]?.bubbles || []))}
+                    </div>
+                    <div className="mt-2 text-[12px] text-muted-foreground text-center">Engagement Score (1~30)</div>
                   </div>
-                  <div className="mt-2 text-[12px] text-muted-foreground text-center">Engagement Score (1~30)</div>
                 </div>
               </div>
             </div>
@@ -731,36 +834,11 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
             </div>
             <div className="flex justify-end px-3 pb-3">
               <button
-                onClick={async () => {
-                  try {
-                    setDeploying(true);
-                    const picked = nextActions.filter((_, i) => selectedActions[i]);
-                    
-                    if (picked.length > 0) {
-                      const firstAction = picked[0];
-                      if (firstAction.type === 'ui') {
-                        const demoBaseUrl = "https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
-                        const finalUrl = demoBaseUrl + firstAction.payload;
-                        window.open(finalUrl, "_blank", "noopener,noreferrer");
-                      } else {
-                        console.log("Deploying action:", firstAction);
-                      }
-                    }
-                    
-                    const boardName = boards[active]?.name || "All";
-                    await fetch("/api/deploy-actions", {
-                      method: "POST",
-                      headers: { "content-type": "application/json" },
-                      body: JSON.stringify({ actions: picked, board: boardName }),
-                    });
-                  } finally {
-                    setDeploying(false);
-                  }
-                }}
+                onClick={handleDeployClick}
                 disabled={deploying || !Object.values(selectedActions).some(Boolean)}
               className="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-md hover:opacity-90 disabled:opacity-60 text-sm flex items-center gap-2"
               >
-                {deploying ? "Deploying…" : "Deploy"}
+                {deploying ? "Deploying to your shop…" : "Deploy to your shop"}
               </button>
             </div>
           </div>
@@ -775,8 +853,21 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                 <div className="flex items-start gap-3">
                   <div className="shrink-0">
                     <div className="size-12 rounded-full bg-gradient-to-br from-zinc-700 to-zinc-900 p-[2px]">
-                      <div className="grid size-full place-items-center rounded-full bg-neutral-950">
-                        <UserIcon className="size-6 text-zinc-300" />
+                      <div className="grid size-full place-items-center rounded-full bg-neutral-950 overflow-hidden">
+                        {modalData?.user_id && !avatarError ? (
+                          <div className="relative h-full w-full">
+                            <Image
+                              src={`/user_facepack/${modalData.user_id}.png`}
+                              alt={modalData?.user_id || "user"}
+                              fill
+                              sizes="48px"
+                              className="object-cover [transform:scale(1.1)]"
+                              onError={() => setAvatarError(true)}
+                            />
+                          </div>
+                        ) : (
+                          <UserIcon className="size-6 text-zinc-300" />
+                        )}
                       </div>
                     </div>
                   </div>
@@ -927,6 +1018,58 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                   </div>
                 ) : (
                   <div className="text-sm text-destructive">No data</div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Custom Prompt Success Modal */}
+        {cpModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+            <div className="w-full max-w-md rounded-xl border border-zinc-800 bg-neutral-950/90 p-6 shadow-2xl">
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="text-base font-semibold text-white">Custom prompt saved 🎉</div>
+                  <div className="mt-1 text-xs text-zinc-400">type: cs, activated: true</div>
+                </div>
+                <button
+                  className="rounded-md p-1 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/60"
+                  onClick={() => setCpModalOpen(false)}
+                  aria-label="Close"
+                >
+                  <CloseIcon className="size-4" />
+                </button>
+              </div>
+
+              {cpModalData && (
+                <div className="mt-4 space-y-3 text-sm">
+                  <div>
+                    <div className="text-xs uppercase tracking-wide text-zinc-500">CONDITION</div>
+                    <div className="mt-1 text-zinc-200">{cpModalData.condition}</div>
+                  </div>
+                  <div>
+                    <div className="text-xs uppercase tracking-wide text-zinc-500">ANSWER</div>
+                    <div className="mt-1 text-zinc-200 whitespace-pre-wrap">{cpModalData.answer}</div>
+                  </div>
+                </div>
+              )}
+
+              <div className="mt-6 flex justify-end gap-2">
+                <button
+                  onClick={() => setCpModalOpen(false)}
+                  className="px-4 py-2 rounded-md bg-zinc-800 text-zinc-100 hover:bg-zinc-700 text-sm"
+                >
+                  Close
+                </button>
+                {CUSTOM_PROMPT_CTA_URL && (
+                  <button
+                    onClick={() => window.open(CUSTOM_PROMPT_CTA_URL, '_blank', 'noopener,noreferrer')}
+                    className="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-500 text-sm"
+                    aria-label="Open preview"
+                  >
+                    Open preview to check chat update
+                  </button>
                 )}
               </div>
             </div>
