@@ -337,8 +337,9 @@ export default function LeftChatPanel() {
                       const isAssistant = message.role === "assistant";
                       if (isLast && isAssistant && status === "streaming" && awaitingFirstToken) {
                         return (
-                          <div className="mt-1 text-xs text-muted-foreground">
-                            <span className="inline-block animate-spin">🌀</span>
+                          <div className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
+                            <span className="inline-block animate-spin size-4 rounded-full border-2 border-zinc-300 border-t-zinc-600" />
+                            <span>Thinking…</span>
                           </div>
                         );
                       }

@@ -252,8 +252,10 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
         const bubbles = board?.bubbles || [];
 
         if (bubbles.length > 0) {
-          loadInsightsFor(bubbles, title);
-          loadNextFor(bubbles, title);
+          // Chain the calls: load insights, and only on completion, load next actions.
+          loadInsightsFor(bubbles, title).then(() => {
+            loadNextFor(bubbles, title);
+          });
         }
       } catch (err) {
         console.error("Error in onEvalDone:", err);
@@ -398,11 +400,13 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [hasSimulated, setHasSimulated] = useState(false);
   const [hasStarted, setHasStarted] = useState(!!started);
   const [insightsCache, setInsightsCache] = useState<Record<string, string>>({});
-  const [nextActions, setNextActions] = useState<string[]>([]);
+  
+  type NextActionItem = { type: 'ui' | 'chat'; payload: string; content: string };
+  const [nextActions, setNextActions] = useState<NextActionItem[]>([]);
   const [nextLoading, setNextLoading] = useState(false);
   const [selectedActions, setSelectedActions] = useState<Record<number, boolean>>({});
   const [deploying, setDeploying] = useState(false);
-  const [nextCache, setNextCache] = useState<Record<string, string>>({});
+  const [nextCache, setNextCache] = useState<Record<string, NextActionItem[]>>({});
   const [lastReason, setLastReason] = useState<string>("");
   const [lastIndexForModal, setLastIndexForModal] = useState<number | null>(null);
 
@@ -520,21 +524,19 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
         body: JSON.stringify({ stats, byScore }),
       });
       const data = await res.json();
-      const actionsText = String(data?.actions || "");
-      setNextCache((prev) => ({ ...prev, [key]: actionsText }));
+      if (!res.ok) throw new Error(data.error || "Failed to fetch next actions");
+
+      const items: NextActionItem[] = Array.isArray(data.actions) ? data.actions : [];
+      setNextCache((prev) => ({ ...prev, [key]: items }));
       
-      const items = actionsText.split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
       if (boardsRef.current?.[active]?.name === title) {
         setNextActions(items);
-        setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
+        setSelectedActions(Object.fromEntries(items.map((_, i) => [i, false])) as Record<number, boolean>);
+        console.log("Next Actions Loaded:", items); // Print full items for debugging
       }
-    } catch {
-      const fallback = ["Drill down high bins", "Inspect negatives", "Rerun refined cohorts"];
-      setNextCache((prev) => ({ ...prev, [key]: fallback.join('\n') }));
-      if (boardsRef.current?.[active]?.name === title) {
-        setNextActions(fallback);
-        setSelectedActions(Object.fromEntries(fallback.map((_, i) => [i, true])) as Record<number, boolean>);
-      }
+    } catch (err) {
+      console.error("Error loading next actions:", err);
+      // Fallback or error state
     } finally {
       if (boardsRef.current?.[active]?.name === title) {
         setNextLoading(false);
@@ -560,9 +562,8 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
     const nextKey = key + ":next";
     const cachedNext = nextCache[nextKey];
     if (cachedNext) {
-      const items = cachedNext.split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
-      setNextActions(items);
-      setSelectedActions(Object.fromEntries(items.map((_, i) => [i, true])) as Record<number, boolean>);
+      setNextActions(cachedNext);
+      setSelectedActions(Object.fromEntries(cachedNext.map((_, i) => [i, false])) as Record<number, boolean>);
       setNextLoading(false);
     } else {
       setNextActions([]);
@@ -678,7 +679,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                         checked={!!selectedActions[i]}
                         onChange={(e) => setSelectedActions((prev) => ({ ...prev, [i]: e.target.checked }))}
                       />
-                      <span className={`truncate ${selectedActions[i] ? "text-purple-400" : "text-white"}`}>{a}</span>
+                      <span className={`truncate ${selectedActions[i] ? "text-purple-400" : "text-white"}`}>{a.content}</span>
                     </label>
                   ))}
                 </div>
@@ -690,13 +691,21 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                   try {
                     setDeploying(true);
                     const picked = nextActions.filter((_, i) => selectedActions[i]);
+                    // For now, just open the demo link for the first selected action's payload
+                    if (picked.length > 0) {
+                      const firstAction = picked[0];
+                      const demoBaseUrl = "https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
+                      // The payload is already a relative URL like `/sale/candles`
+                      const finalUrl = demoBaseUrl + firstAction.payload;
+                      window.open(finalUrl, "_blank", "noopener,noreferrer");
+                    }
+                    
                     const boardName = boards[active]?.name || "All";
                     await fetch("/api/deploy-actions", {
                       method: "POST",
                       headers: { "content-type": "application/json" },
                       body: JSON.stringify({ actions: picked, board: boardName }),
                     });
-                    window.open("https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo", "_blank", "noopener,noreferrer");
                   } finally {
                     setDeploying(false);
                   }
