@@ -31,6 +31,8 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
     boardsRef.current = boards;
   }, [boards]);
   const [active, setActive] = useState(0);
+  const activeRef = useRef(active);
+  useEffect(() => { activeRef.current = active; }, [active]);
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalLoading, setModalLoading] = useState(false);
@@ -124,6 +126,15 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
     window.addEventListener("eval-start", onStart);
     window.addEventListener("pre-simulation-start", onPreStart);
 
+    function onRequestGraph() {
+      try {
+        const bubbles = boardsRef.current?.[activeRef.current]?.bubbles || [];
+        const groups = groupedByScore(bubbles);
+        window.dispatchEvent(new CustomEvent("open-engagement-graph", { detail: { bubbles, groups } }));
+      } catch {}
+    }
+    window.addEventListener("request-engagement-graph", onRequestGraph as EventListener);
+
     // Fallback: poll localStorage briefly to catch missed events
     const interval = setInterval(() => {
       try {
@@ -142,6 +153,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
       console.log("[CenterPanel] Cleaning up event listeners.");
       window.removeEventListener("eval-start", onStart);
       window.removeEventListener("pre-simulation-start", onPreStart);
+      window.removeEventListener("request-engagement-graph", onRequestGraph as EventListener);
       clearInterval(interval);
     }
   }, []);
@@ -728,7 +740,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                 aria-selected={i === active}
                 aria-controls={`panel-${i}`}
                 onClick={() => setActive(i)}
-                className={`px-3 py-2 text-sm -mb-px border-b-2 transition-colors ${
+                className={`px-3 py-2 text-xs -mb-px border-b-2 transition-colors ${
                   i === active
                     ? "border-primary text-primary"
                     : "border-transparent text-muted-foreground hover:text-foreground hover:border-muted"
@@ -744,8 +756,8 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
         <div id={`panel-${active}`} role="tabpanel" aria-labelledby={`tab-${active}`} className="space-y-3">
           {/* Graph panel */}
           <div className="rounded-md text-sm bg-card/50 p-3">
-            <div className="text-xs text-muted-foreground mb-2">Simulation results</div>
-            <div className="space-y-5">
+            <div className="text-base font-bold mb-2">Voting results of digital clones</div>
+            <div className="space-y-1">
               <div className="text-xs text-muted-foreground flex items-center gap-2.5 flex-wrap">
                 <span className="flex items-center gap-1">
                   <span className="inline-block w-3 h-3 rounded-full border-2 border-emerald-600 bg-emerald-500" />
@@ -774,8 +786,8 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
           </div>
           {/* Insights panel */}
           <div className="rounded-md text-sm bg-card/50">
-            <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Insights</div>
-            <div className="max-h-32 overflow-y-auto overscroll-contain px-3 pb-3">
+            <div className="px-3 pt-3 text-base font-bold mb-2">Summary</div>
+            <div className="h-40 overflow-y-auto overscroll-contain px-3 pb-3">
               {!hasSimulated ? (
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
@@ -794,8 +806,8 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
 
           {/* Next actions panel */}
           <div className="rounded-md text-sm bg-card/50">
-            <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Next actions</div>
-            <div className="max-h-fit overflow-visible px-3 pb-3">
+            <div className="px-3 pt-3 text-base font-bold mb-2">Vibe operations</div>
+            <div className="min-h-[7rem] max-h-[8rem] overflow-y-auto overscroll-contain px-3 pb-3">
               {!hasSimulated ? (
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
