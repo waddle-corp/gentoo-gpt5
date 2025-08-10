@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useEffect, useMemo, useState, useRef } from "react";
 import { User as UserIcon, X as CloseIcon } from "lucide-react";
 import { ChartContainer, ChartTooltip, ChartTooltipContentProps } from "@/components/ui/chart";
+import Image from "next/image";
 import { ResponsiveContainer, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
 
 type BubbleState = "unknown" | "positive" | "negative" | "pending";
@@ -301,6 +302,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
       setModalData(null);
       setProfile(null);
       setProfileLoading(true);
+      setAvatarError(false);
       setLastIndexForModal(index);
       const res = await fetch(`/api/prompts?idx=${index}`);
       const data = await res.json();
@@ -401,7 +403,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [hasStarted, setHasStarted] = useState(!!started);
   const [insightsCache, setInsightsCache] = useState<Record<string, string>>({});
   
-  type NextActionItem = { type: 'ui' | 'chat'; payload: string; content: string };
+  type NextActionItem = { type: 'ui' | 'chat' | 'startExampleText'; payload: string; content: string };
   const [nextActions, setNextActions] = useState<NextActionItem[]>([]);
   const [nextLoading, setNextLoading] = useState(false);
   const [selectedActions, setSelectedActions] = useState<Record<number, boolean>>({});
@@ -409,9 +411,62 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
   const [nextCache, setNextCache] = useState<Record<string, NextActionItem[]>>({});
   const [lastReason, setLastReason] = useState<string>("");
   const [lastIndexForModal, setLastIndexForModal] = useState<number | null>(null);
+  const [avatarError, setAvatarError] = useState(false);
 
   const insightsInFlightRef = useRef<Record<string, boolean>>({});
   const nextInFlightRef = useRef<Record<string, boolean>>({});
+
+  async function handleDeployClick() {
+    try {
+      setDeploying(true);
+      const picked = nextActions.filter((_, i) => selectedActions[i]);
+
+      if (picked.length > 0) {
+        const firstAction = picked[0];
+        if (firstAction.type === 'startExampleText') {
+          const raw = String(firstAction.payload || '');
+          const newExamples = raw
+            .split('/')
+            .map((s) => s.trim())
+            .filter(Boolean)
+            .slice(0, 3);
+
+          if (newExamples.length > 0) {
+            const getRes = await fetch('/api/chatbot', { method: 'GET', cache: 'no-store' });
+            const getJson = await getRes.json();
+            if (!getRes.ok || !getJson?.ok) {
+              throw new Error(getJson?.error || `HTTP ${getRes.status}`);
+            }
+            const current = getJson?.data || {};
+            const putBody = { ...current, examples: newExamples };
+            const putRes = await fetch('/api/chatbot', {
+              method: 'PUT',
+              headers: { 'content-type': 'application/json' },
+              body: JSON.stringify(putBody),
+            });
+            const putJson = await putRes.json();
+            if (!putRes.ok || !putJson?.ok) throw new Error(putJson?.error || `HTTP ${putRes.status}`);
+          }
+        } else if (firstAction.type === 'ui') {
+          const demoBaseUrl = "https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
+          const finalUrl = demoBaseUrl + firstAction.payload;
+          window.open(finalUrl, "_blank", "noopener,noreferrer");
+        } else if (firstAction.type === 'chat') {
+          const text = String(firstAction.payload || '').trim();
+          console.log('[deploy-chat] payload:', text);
+        }
+      }
+
+      const boardName = boards[active]?.name || "All";
+      await fetch("/api/deploy-actions", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ actions: picked, board: boardName }),
+      });
+    } finally {
+      setDeploying(false);
+    }
+  }
 
   function mdToHtml(md: string): string {
     const esc = (md || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -687,29 +742,7 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
             </div>
             <div className="flex justify-end px-3 pb-3">
               <button
-                onClick={async () => {
-                  try {
-                    setDeploying(true);
-                    const picked = nextActions.filter((_, i) => selectedActions[i]);
-                    // For now, just open the demo link for the first selected action's payload
-                    if (picked.length > 0) {
-                      const firstAction = picked[0];
-                      const demoBaseUrl = "https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo";
-                      // The payload is already a relative URL like `/sale/candles`
-                      const finalUrl = demoBaseUrl + firstAction.payload;
-                      window.open(finalUrl, "_blank", "noopener,noreferrer");
-                    }
-                    
-                    const boardName = boards[active]?.name || "All";
-                    await fetch("/api/deploy-actions", {
-                      method: "POST",
-                      headers: { "content-type": "application/json" },
-                      body: JSON.stringify({ actions: picked, board: boardName }),
-                    });
-                  } finally {
-                    setDeploying(false);
-                  }
-                }}
+                onClick={handleDeployClick}
                 disabled={deploying || !Object.values(selectedActions).some(Boolean)}
               className="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-md hover:opacity-90 disabled:opacity-60 text-sm flex items-center gap-2"
               >
@@ -728,8 +761,21 @@ export default function CenterSimulationPanel({ started }: CenterSimulationPanel
                 <div className="flex items-start gap-3">
                   <div className="shrink-0">
                     <div className="size-12 rounded-full bg-gradient-to-br from-zinc-700 to-zinc-900 p-[2px]">
-                      <div className="grid size-full place-items-center rounded-full bg-neutral-950">
-                        <UserIcon className="size-6 text-zinc-300" />
+                      <div className="grid size-full place-items-center rounded-full bg-neutral-950 overflow-hidden">
+                        {modalData?.user_id && !avatarError ? (
+                          <div className="relative h-full w-full">
+                            <Image
+                              src={`/user_facepack/${modalData.user_id}.png`}
+                              alt={modalData?.user_id || "user"}
+                              fill
+                              sizes="48px"
+                              className="object-cover [transform:scale(1.1)]"
+                              onError={() => setAvatarError(true)}
+                            />
+                          </div>
+                        ) : (
+                          <UserIcon className="size-6 text-zinc-300" />
+                        )}
                       </div>
                     </div>
                   </div>
