@@ -2,6 +2,7 @@ export const runtime = "nodejs";
 export const maxDuration = 60;
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+const BASE_URL_PROD = process.env.NEXT_PUBLIC_BASE_URL_PROD;
 
 export async function GET(req: Request) {
   try {
@@ -27,7 +28,9 @@ export async function GET(req: Request) {
     }
 
     // const extUrl = `${BASE_URL}/app/api/chatbot/v1/${partnerId}/${chatbotId}`;
-    const extUrl = `${BASE_URL}/app/api/chatbot/v1/6889c78b02f0e1e4d72979b6/506`;
+    const extUrl = `${BASE_URL_PROD}/app/api/chatbot/v1/${partnerId}/${chatbotId}`;
+    console.log("extUrl", extUrl);
+    // const extUrl = `${BASE_URL}/app/api/chatbot/v1/6889c78b02f0e1e4d72979b6/506`;
     const res = await fetch(extUrl, {
       method: "GET",
       headers: {
@@ -89,7 +92,8 @@ export async function PUT(req: Request) {
       );
     }
 
-    const extUrl = `${BASE_URL}/api/chatbot/v1/${partnerId}/${chatbotId}`;
+    // const extUrl = `${BASE_URL}/api/chatbot/v1/${partnerId}/${chatbotId}`;
+    const extUrl = `${BASE_URL_PROD}/api/chatbot/v1/${partnerId}/${chatbotId}`;
     const res = await fetch(extUrl, {
       method: "PUT",
       headers: {
