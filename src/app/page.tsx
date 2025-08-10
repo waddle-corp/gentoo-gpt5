@@ -64,8 +64,8 @@ export default function Home() {
         className={`grid h-full min-h-0 ${isResizing ? "select-none" : ""}`}
         style={{ gridTemplateColumns: `${leftWidthPx}px 6px 1fr` }}
       >
-        <div className="h-full min-h-0 border-r border-[#1f1f1f] overflow-hidden" style={{ backgroundColor: "var(--left-panel)" }}>
-          <LeftChatPanel embedded />
+        <div className="h-full min-h-0 overflow-hidden" style={{ backgroundColor: "#323232" }}>
+          <LeftChatPanel />
         </div>
         <div
           role="separator"

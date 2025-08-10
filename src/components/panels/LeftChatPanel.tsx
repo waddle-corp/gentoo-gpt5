@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Send, User, Bot } from "lucide-react";
+import { ArrowUp, User, Bot } from "lucide-react";
 
 function splitHypotheses(rawList: string[]): string[] {
   const joined = rawList.filter(Boolean).join("\n");
@@ -159,17 +159,13 @@ export default function LeftChatPanel() {
   }
 
   return (
-    <Card className="h-full flex flex-col">
-      <CardHeader>
-        <CardTitle>Owner ↔ LLM Chat</CardTitle>
-      </CardHeader>
+    <Card className="h-full flex flex-col border-0 rounded-none bg-transparent" style={{ backgroundColor: "transparent" }}>
+      {/* Title removed as requested */}
       <CardContent className="flex-1 flex flex-col gap-4 min-h-0">
         {/* Messages */}
         <div className="flex-1 overflow-y-auto pr-4">
           <div className="space-y-4">
-            {messages.length === 0 && (
-              <div className="text-center text-gray-500 py-8">상품이나 마케팅에 대한 질문을 해보세요</div>
-            )}
+            {messages.length === 0 && null}
             {messages.map((message) => (
               <div key={message.id} className={`flex gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
                 <div className={`flex gap-3 max-w-[80%] ${message.role === "user" ? "flex-row-reverse" : "flex-row"}`}>
@@ -244,11 +240,34 @@ export default function LeftChatPanel() {
         </div>
 
         {/* Input */}
-        <form onSubmit={handleSubmit} className="flex gap-2">
-          <Input value={input} onChange={(e) => setInput(e.target.value)} placeholder="질문을 입력하세요..." disabled={isLoading} className="flex-1" />
-          <Button type="submit" disabled={isLoading || !input.trim()}>
-            <Send size={16} />
-          </Button>
+        <form onSubmit={handleSubmit} className="flex">
+          <div className="relative w-full">
+            <Input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Ask anything"
+              disabled={isLoading}
+              className="w-full pr-10 h-12 rounded-full"
+              style={{ backgroundColor: "var(--chat-input-bg)" }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !e.shiftKey) {
+                  if (!isLoading && input.trim()) {
+                    e.preventDefault();
+                    handleSubmit(e as any);
+                  }
+                }
+              }}
+            />
+            <Button
+              type="submit"
+              size="icon"
+              className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg白 text-black hover:bg-white/90"
+              disabled={isLoading || !input.trim()}
+              aria-label="Send message"
+            >
+              <ArrowUp size={14} />
+            </Button>
+          </div>
         </form>
       </CardContent>
     </Card>
