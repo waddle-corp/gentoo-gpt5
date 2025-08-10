@@ -17,20 +17,28 @@ async function findPromptsFile(): Promise<string> {
 
 function normalizeLabel(text: string): "positive" | "negative" | "unknown" {
   const t = (text || "").toLowerCase();
-  if (/(positive|긍정|pos)/.test(t)) return "positive";
-  if (/(negative|부정|neg)/.test(t)) return "negative";
-  if (/(unknown|중립)/.test(t)) return "unknown";
+  if (/(^|\b)(positive|긍정|pos)(\b|$)/.test(t)) return "positive";
+  if (/(^|\b)(negative|부정|neg)(\b|$)/.test(t)) return "negative";
+  if (/(^|\b)(unknown|중립)(\b|$)/.test(t)) return "unknown";
   return "unknown";
 }
 
-async function classifyOne(modelName: string, question: string, entry: any): Promise<"positive" | "negative" | "unknown"> {
-  const system = `너는 전자상거래 시뮬레이션의 판정기다. 출력은 반드시 다음 중 하나의 단어만 반환하라: positive | negative | unknown`;
-  const user = `다음은 한 사용자의 페르소나 요약/프롬프트와, 상점 오너의 가설 질문이다.\n- Persona prompt: ${entry?.prompt ?? ""}\n- Engagement score: ${entry?.engagement_score ?? ""}\n- Hypothesis: ${question}\n판정: (positive|negative|unknown) 중 하나만 출력.`;
+async function classifyOne(
+  modelName: string,
+  question: string,
+  entry: any
+): Promise<{ label: "positive" | "negative" | "unknown"; reason: string }> {
+  const system = `You are a precise ecommerce simulation judge. Output format must be exactly:\n<label>::<one-sentence concise, logical reason in English>.\nLabel must be one of: positive | negative | unknown.`;
+  const user = `Persona prompt: ${entry?.prompt ?? ""}\nEngagement score: ${entry?.engagement_score ?? ""}\nHypothesis: ${question}\nRules:\n- Respond in English.\n- After '::', provide a single short sentence with a clear logical structure (premise -> implication -> verdict).`;
   try {
     const { text } = await generateText({ model: openai(modelName), system, prompt: user, maxRetries: 1 });
-    return normalizeLabel(text);
+    const out = String(text || "").trim();
+    const parts = out.split("::");
+    const label = normalizeLabel(parts[0] || "");
+    const reason = (parts.slice(1).join("::") || "").trim() || "Insufficient evidence for a confident judgment.";
+    return { label, reason };
   } catch {
-    return "unknown";
+    return { label: "unknown", reason: "Model call failed." };
   }
 }
 
@@ -40,25 +48,65 @@ export async function POST(req: Request) {
     const question: string = String(body?.question ?? "");
     const modelName: string = String(body?.model ?? "gpt-4o-mini");
     const concurrency: number = Math.max(1, Math.min(16, Number(body?.concurrency ?? 8)));
+    const stream: boolean = Boolean(body?.stream);
     if (!question.trim()) return new Response(JSON.stringify({ ok: false, error: "question이 비었습니다." }), { status: 400, headers: { "content-type": "application/json" } });
 
     const promptsPath = await findPromptsFile();
     const raw = await fs.readFile(promptsPath, "utf-8");
     const entries: any[] = JSON.parse(raw);
 
-    const results: Array<"positive" | "negative" | "unknown"> = new Array(entries.length).fill("unknown");
-    let next = 0;
-    async function worker() {
-      while (true) {
-        const idx = next++;
-        if (idx >= entries.length) break;
-        results[idx] = await classifyOne(modelName, question, entries[idx]);
+    if (!stream) {
+      const results: Array<"positive" | "negative" | "unknown"> = new Array(entries.length).fill("unknown");
+      const reasons: string[] = new Array(entries.length).fill("");
+      let next = 0;
+      async function worker() {
+        while (true) {
+          const idx = next++;
+          if (idx >= entries.length) break;
+          const r = await classifyOne(modelName, question, entries[idx]);
+          results[idx] = r.label;
+          reasons[idx] = r.reason;
+        }
       }
+      const workers = Array.from({ length: Math.min(concurrency, entries.length) }, () => worker());
+      await Promise.all(workers);
+      return Response.json({ ok: true, count: results.length, results, reasons });
     }
-    const workers = Array.from({ length: Math.min(concurrency, entries.length) }, () => worker());
-    await Promise.all(workers);
 
-    return Response.json({ ok: true, count: results.length, results });
+    const encoder = new TextEncoder();
+    const rs = new ReadableStream<Uint8Array>({
+      async start(controller) {
+        try {
+          // meta line
+          controller.enqueue(encoder.encode(JSON.stringify({ type: "meta", total: entries.length }) + "\n"));
+          let next = 0;
+          const worker = async () => {
+            while (true) {
+              const idx = next++;
+              if (idx >= entries.length) break;
+              const r = await classifyOne(modelName, question, entries[idx]);
+              controller.enqueue(encoder.encode(JSON.stringify({ idx, label: r.label, reason: r.reason }) + "\n"));
+            }
+          };
+          const workers = Array.from({ length: Math.min(concurrency, entries.length) }, () => worker());
+          await Promise.all(workers);
+          controller.enqueue(encoder.encode(JSON.stringify({ type: "done", count: entries.length }) + "\n"));
+          controller.close();
+        } catch (err) {
+          controller.enqueue(encoder.encode(JSON.stringify({ type: "error", message: (err as any)?.message || String(err) }) + "\n"));
+          controller.close();
+        }
+      },
+    });
+
+    return new Response(rs, {
+      headers: {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "no-cache, no-transform",
+        "x-accel-buffering": "no",
+        "connection": "keep-alive",
+      },
+    });
   } catch (err: any) {
     return new Response(JSON.stringify({ ok: false, error: err?.message || String(err) }), { status: 500, headers: { "content-type": "application/json" } });
   }
