@@ -62,6 +62,7 @@ export default function CenterSimulationPanel() {
         // 시뮬 결과 기반 인사이트 호출 (All 보드 기준)
         setHasSimulated(true);
         loadInsightsFor(boardsFromLists[0].bubbles);
+        loadNextFor(boardsFromLists[0].bubbles);
       } catch {}
     }
     window.addEventListener("eval-results", onEvalResults as EventListener);
@@ -158,6 +159,10 @@ export default function CenterSimulationPanel() {
   const [insightsLoading, setInsightsLoading] = useState(false);
   const [hasSimulated, setHasSimulated] = useState(false);
   const [insightsCache, setInsightsCache] = useState<Record<string, string>>({});
+  const [nextActions, setNextActions] = useState<string[]>([]);
+  const [selectedActions, setSelectedActions] = useState<Record<number, boolean>>({});
+  const [deploying, setDeploying] = useState(false);
+  const [nextCache, setNextCache] = useState<Record<string, string>>({});
 
   function mdToHtml(md: string): string {
     const esc = (md || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -209,12 +214,12 @@ export default function CenterSimulationPanel() {
       clearTimeout(timer);
       const data = await res.json();
       if (!res.ok || !data?.ok) throw new Error(data?.error || `HTTP ${res.status}`);
-      const html = mdToHtml(data.insights as string);
+      const html = mdToHtml(String(data.insights || ""));
       setInsights(html);
       const key = boards[active]?.name || "All";
       setInsightsCache((prev) => ({ ...prev, [key]: html }));
     } catch (e) {
-      // Fallback: 간단한 휴리스틱 인사이트
+      // 간단한 휴리스틱 폴백
       const { stats, byScore } = summarizeFor(bubbles);
       const top = [...byScore].sort((a, b) => (b.positive - b.negative) - (a.positive - a.negative)).slice(0, 2);
       const low = [...byScore].sort((a, b) => (a.positive - a.negative) - (b.positive - b.negative)).slice(0, 1);
@@ -222,14 +227,42 @@ export default function CenterSimulationPanel() {
         `- **Positives**: ${stats.p}/${stats.total}, **Negatives**: ${stats.n}, **Unknown**: ${stats.u}`,
         top.length ? `- High potential bins: ${top.map((t) => `${t.score}`).join(", ")}` : "",
         low.length ? `- Weak bin: ${low.map((t) => `${t.score}`).join(", ")}` : "",
-        `- Next actions: drill-down high bins; inspect negatives; rerun with refined cohorts.`,
-      ].filter(Boolean).join("\n");
+      ]
+        .filter(Boolean)
+        .join("\n");
       const html = mdToHtml(md);
       setInsights(html);
       const key = boards[active]?.name || "All";
       setInsightsCache((prev) => ({ ...prev, [key]: html }));
     } finally {
       setInsightsLoading(false);
+    }
+  }
+
+  async function loadNextFor(bubbles: BubbleState[]) {
+    const key = (boards[active]?.name || "All") + ":next";
+    const cached = nextCache[key];
+    if (cached) {
+      const items = cached.split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
+      setNextActions(items);
+      setSelectedActions({});
+      return;
+    }
+    const { stats, byScore } = summarizeFor(bubbles);
+    try {
+      const res = await fetch("/api/next-actions", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ stats, byScore }),
+      });
+      const data = await res.json();
+      const items = String(data?.actions || "").split("\n").map((l) => l.replace(/^[-\*]\s+/, "").trim()).filter(Boolean).slice(0, 6);
+      setNextActions(items);
+      setSelectedActions({});
+      setNextCache((prev) => ({ ...prev, [key]: String(data?.actions || "") }));
+    } catch {
+      setNextActions(["Drill down high bins", "Inspect negatives", "Rerun refined cohorts"]);
+      setSelectedActions({});
     }
   }
 
@@ -244,6 +277,8 @@ export default function CenterSimulationPanel() {
     } else if (activeBubbles.length > 0) {
       loadInsightsFor(activeBubbles);
     }
+    // Next actions도 병렬 로드/캐시
+    if (activeBubbles.length > 0) loadNextFor(activeBubbles);
   }, [activeBubbles, hasSimulated, active, boards, insightsCache]);
 
   return (
@@ -287,17 +322,65 @@ export default function CenterSimulationPanel() {
 
         {/* Insights */}
         {hasSimulated && (
-          <div className="rounded-md border text-sm bg-card/50">
-            <div className="px-3 pt-3 text-xs text-muted-foreground">Insights</div>
-            <div className="h-48 overflow-y-auto overscroll-contain px-3 pb-3">
-              {insightsLoading ? (
-                <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                  <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
-                  Generating insights…
-                </div>
-              ) : (
-                <div className="text-sm leading-5" dangerouslySetInnerHTML={{ __html: insights || "<p class=\"text-muted-foreground\">No insights yet.</p>" }} />
-              )}
+          <div className="grid grid-cols-1 gap-4">
+            <div className="rounded-md border text-sm bg-card/50">
+              <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Insights</div>
+              <div className="h-28 overflow-y-auto overscroll-contain px-3 pb-3">
+                {insightsLoading ? (
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
+                    Generating insights…
+                  </div>
+                ) : (
+                  <div className="text-sm leading-5 tracking-wide" dangerouslySetInnerHTML={{ __html: insights || "<p class=\"text-muted-foreground\">No insights yet.</p>" }} />
+                )}
+              </div>
+            </div>
+
+            <div className="rounded-md border text-sm bg-card/50">
+              <div className="px-3 pt-3 text-xs text-muted-foreground mb-2">Next actions</div>
+              <div className="max-h-24 overflow-y-auto overscroll-contain px-3 pb-3">
+                {nextActions.length === 0 ? (
+                  <div className="text-xs text-muted-foreground">No suggestions.</div>
+                ) : (
+                  <div className="flex flex-col gap-2 tracking-wide">
+                    {nextActions.map((a, i) => (
+                      <label key={i} className="flex items-center gap-2 text-sm">
+                        <input
+                          type="checkbox"
+                          className="size-4 rounded accent-indigo-500 focus:ring-2 focus:ring-purple-400/50"
+                          checked={!!selectedActions[i]}
+                          onChange={(e) => setSelectedActions((prev) => ({ ...prev, [i]: e.target.checked }))}
+                        />
+                        <span className={`truncate ${selectedActions[i] ? "text-purple-400" : "text-white"}`}>{a}</span>
+                      </label>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <div className="flex justify-end px-3 pb-3">
+                <button
+                  onClick={async () => {
+                    try {
+                      setDeploying(true);
+                      const picked = nextActions.filter((_, i) => selectedActions[i]);
+                      const boardName = boards[active]?.name || "All";
+                      await fetch("/api/deploy-actions", {
+                        method: "POST",
+                        headers: { "content-type": "application/json" },
+                        body: JSON.stringify({ actions: picked, board: boardName }),
+                      });
+                      window.open("https://gentoo-demo-shop-template.lovable.app/johanna_aldeahome_com_demo", "_blank", "noopener,noreferrer");
+                    } finally {
+                      setDeploying(false);
+                    }
+                  }}
+                  disabled={deploying || !Object.values(selectedActions).some(Boolean)}
+                  className="px-3 py-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow hover:opacity-90 disabled:opacity-60 text-xs"
+                >
+                  {deploying ? "Deploying…" : "Deploy"}
+                </button>
+              </div>
             </div>
           </div>
         )}
