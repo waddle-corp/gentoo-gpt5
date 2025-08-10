@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useEffect, useMemo, useState } from "react";
+import { User as UserIcon, X as CloseIcon } from "lucide-react";
 
 
 
@@ -58,7 +59,7 @@ export default function CenterSimulationPanel() {
         });
         setBoards([{ name: "All", bubbles: boardsFromLists[0].bubbles }, ...boardsFromLists]);
         setActive(1);
-      } catch {}
+      } catch { }
     }
     window.addEventListener("eval-results", onEvalResults as EventListener);
     return () => window.removeEventListener("eval-results", onEvalResults as EventListener);
@@ -91,7 +92,10 @@ export default function CenterSimulationPanel() {
       setModalData(null);
       const res = await fetch(`/api/prompts?idx=${index}`);
       const data = await res.json();
-      if (!res.ok || !data?.ok) throw new Error(data?.error || `HTTP ${res.status}`);
+      console.log('data', data);
+      if (!res.ok || !data?.ok) {
+        throw new Error(data?.error || `HTTP ${res.status}`);
+      }
       setModalData({ user_id: data.user_id, summary: data.summary, prompt: data.prompt, engagement_score: data.engagement_score });
     } catch (e: any) {
       setModalData({ user_id: String(index), summary: `Failed to load summary: ${e?.message || String(e)}` });
@@ -136,39 +140,67 @@ export default function CenterSimulationPanel() {
 
         {/* Modal */}
         {modalOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-            <div className="w-full max-w-lg rounded-md bg-background border p-4 shadow-lg">
-              <div className="flex items-center justify-between mb-2">
-                <div className="text-sm font-medium">User Detail</div>
-                <button className="text-xs text-muted-foreground" onClick={() => setModalOpen(false)}>Close</button>
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+            <div className="w-full max-w-xl rounded-xl border border-zinc-800 bg-neutral-950/90 p-5 shadow-2xl">
+              <div className="flex items-start justify-between">
+                <div className="flex items-start gap-3">
+                  <div className="shrink-0">
+                    <div className="size-12 rounded-full bg-gradient-to-br from-zinc-700 to-zinc-900 p-[2px]">
+                      <div className="grid size-full place-items-center rounded-full bg-neutral-950">
+                        <UserIcon className="size-6 text-zinc-300" />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-base font-semibold text-white">{modalData?.user_id ?? "User"}</div>
+                    {modalData?.engagement_score !== undefined && (
+                      <div className="mt-1 text-xs text-zinc-400">
+                        engagement
+                        <span
+                          className={`ml-2 inline-flex items-center rounded-full border border-zinc-700 px-2 py-0.5 text-[10px] ${
+                            (modalData?.engagement_score ?? 0) >= 20
+                              ? "bg-emerald-500/10 text-emerald-400"
+                              : (modalData?.engagement_score ?? 0) >= 10
+                              ? "bg-sky-500/10 text-sky-400"
+                              : "bg-zinc-800 text-zinc-300"
+                          }`}
+                        >
+                          {modalData?.engagement_score}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <button
+                  className="rounded-md p-1 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/60"
+                  onClick={() => setModalOpen(false)}
+                  aria-label="Close"
+                >
+                  <CloseIcon className="size-4" />
+                </button>
               </div>
-              {modalLoading ? (
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <span className="inline-block w-4 h-4 border-2 border-gray-300 border-t-gray-500 rounded-full animate-spin" />
-                  Loading…
-                </div>
-              ) : modalData ? (
-                <div className="space-y-2 text-sm">
-                  <div className="text-muted-foreground">user_id: <span className="text-foreground">{modalData.user_id}</span></div>
-                  {modalData.engagement_score !== undefined && (
-                    <div className="text-muted-foreground">engagement: <span className="text-foreground">{modalData.engagement_score}</span></div>
-                  )}
-                  {modalData.summary && (
-                    <div>
-                      <div className="text-muted-foreground">summary</div>
-                      <div className="mt-1 whitespace-pre-wrap">{modalData.summary}</div>
-                    </div>
-                  )}
-                  {modalData.prompt && (
-                    <div>
-                      <div className="text-muted-foreground">prompt</div>
-                      <div className="mt-1 whitespace-pre-wrap">{modalData.prompt}</div>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <div className="text-sm text-destructive">No data</div>
-              )}
+
+              <div className="mt-4">
+                {modalLoading ? (
+                  <div className="flex items-center gap-2 text-sm text-zinc-400">
+                    <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-zinc-600 border-t-zinc-300" />
+                    Loading…
+                  </div>
+                ) : modalData ? (
+                  <div className="space-y-2 text-sm">
+                    {modalData.summary && (
+                      <div>
+                        <div className="text-xs uppercase tracking-wide text-zinc-500">summary</div>
+                        <div className="mt-2 whitespace-pre-wrap leading-relaxed text-zinc-200">
+                          {modalData.summary}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="text-sm text-destructive">No data</div>
+                )}
+              </div>
             </div>
           </div>
         )}
